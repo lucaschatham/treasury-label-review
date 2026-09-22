@@ -1,4 +1,5 @@
 import { createWorker } from "tesseract.js";
+import { reviewSummary } from "./summary.js";
 import { reviewLabel, REQUIRED_WARNING } from "./review.js";
 import { validateFiles, parseManifest, buildJobs } from "./batch.js";
 
@@ -138,9 +139,7 @@ function renderResult(file, text, findings, seconds, confidence) {
   addText(head, "span", `${seconds.toFixed(1)} s to read`, "time");
   const summary = addText(card, "p", "", "summary attention");
   const updateSummary = () => {
-    const count = findings.filter((item) =>
-      ["review", "mismatch"].includes(item.status),
-    ).length;
+    const { pending: count } = reviewSummary(findings);
     summary.textContent = count
       ? `${count} check${count === 1 ? " needs" : "s need"} attention`
       : "Checks complete. Ready for your final decision.";
@@ -193,11 +192,11 @@ function renderResult(file, text, findings, seconds, confidence) {
         ),
       );
       checkbox.addEventListener("change", () => {
-        finding.status = checkbox.checked ? "match" : "review";
-        badge.textContent = checkbox.checked ? "HUMAN CHECKED" : "REVIEW";
-        badge.className = `badge ${finding.status}`;
+        // Human observations are useful, but cannot establish automated compliance.
+        finding.humanConfirmed = checkbox.checked;
+        badge.textContent = "REVIEW";
         found.textContent = checkbox.checked
-          ? "Appearance confirmed by reviewer"
+          ? "Reviewer confirmed appearance. Automated verification remains unresolved."
           : "Visual confirmation required";
         updateSummary();
       });
