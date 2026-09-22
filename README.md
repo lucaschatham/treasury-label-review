@@ -36,7 +36,7 @@ npm run preview
 
 - **Vite and plain JavaScript:** a small static application with no account or installation required for reviewers.
 - **Tesseract.js 7:** browser OCR with the English model, worker, and WebAssembly core hosted alongside the app. The engine starts loading while the reviewer enters data and is reused across reviews.
-- **Deterministic matching:** case and punctuation normalization for text fields, contextual numeric ABV extraction and proof consistency, equivalent metric volumes, exact government warning wording, and a mandatory visual appearance check.
+- **Deterministic matching:** case and punctuation normalization for text fields, contextual numeric ABV extraction and proof consistency, equivalent metric and US fluid-ounce volumes, exact government warning wording, and a mandatory visual appearance check.
 - **Batch queue:** up to 300 images, with optional per-image CSV application data. Processing is sequential to bound memory, results appear as each image finishes, and a stop control ends after the current image.
 - **Node's test runner:** regression coverage for normalization, warning strictness, quantities, ABV, CSV mapping, and input limits.
 - **Vercel:** static hosting on an unlisted custom subdomain. Deployments currently use the CLI; GitHub automatic deployments are not configured.
@@ -51,7 +51,7 @@ For updates, verify `.vercel/project.json` names `treasury-label-review`, then r
 - Warning text comparison preserves every word and internal punctuation, but tolerates a dropped final period in OCR.
 - An OCR text match does **not** prove boldness or physical font size. Warning appearance remains a separate required review item with the original image available at full size. A checkbox records the reviewer's confirmation; the app never claims AI verified typography.
 - OCR mistakes, glare, curvature, stylized fonts, and poor photos can obscure correct text. Missing or ambiguous evidence becomes **Review**; a clear quantity difference becomes **Mismatch**. Low OCR confidence creates a separate review finding.
-- Net contents supports mL, cL, and L, including spelled-out metric units. Unsupported units require manual review. Regulatory product-specific tolerances are not used to excuse a discrepancy between the application and artwork.
+- Net contents supports mL, cL, L, and US fluid ounces, including spelled-out units. Plain ounces are ambiguous and require review. Cross-unit conversion accepts rounding to a whole milliliter (for example, 12 US fl oz and 355 mL); differences within the same unit system still require an exact numeric match. Unsupported units require manual review. Regulatory product-specific tolerances are not used to excuse a discrepancy between the application and artwork.
 - Images must be PNG, JPEG, or WebP, at most 10 MB each and 200 MB per batch. Images above 40 megapixels are rejected after decoding; OCR bounds the longest side to 1800 pixels. Reducing large images can lose tiny text, so the original remains available for visual review.
 - The five-second target is measured from **Review labels** to the first result, including any unfinished engine setup and image preparation. This is shown separately from per-image reading time. Hardware, connection, model cache, and image complexity affect latency. A 300-image batch is not expected to finish in five seconds.
 - Images and application data stay in browser memory and are cleared on reload. The browser may cache the OCR model. There is no application persistence or analytics.

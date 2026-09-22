@@ -201,3 +201,22 @@ test("text evidence shows artwork spelling rather than application spelling", ()
   assert.equal(result[0].found, 'STONE’S THROW');
   assert.equal(result[1].found, 'KENTUCKY STRAIGHT BOURBON WHISKEY');
 });
+
+test("compares US fluid ounces and rejects weight ounces", () => {
+  const quantity = (text, volume = '12 fl oz') => reviewLabel(text, { ...application, volume }).find(x => x.field === 'Net contents');
+  assert.equal(quantity('12 FL. OZ.').status, 'match');
+  assert.equal(quantity('16 fluid ounces').status, 'mismatch');
+  assert.equal(quantity('12 oz').status, 'review');
+  assert.equal(quantity('12 fl oz\n16 fl oz').status, 'review');
+  assert.equal(quantity('12 fl oz', '354.88235475 mL').status, 'match');
+});
+
+test("allows whole-milliliter conversion rounding but not different quantities", () => {
+  const quantity = (text, volume) => reviewLabel(text, { ...application, volume }).find(x => x.field === 'Net contents').status;
+  assert.equal(quantity('12 fl oz', '355 mL'), 'match');
+  assert.equal(quantity('355 mL', '12 fl oz'), 'match');
+  assert.equal(quantity('12 fl oz / 355 mL', '355 mL'), 'match');
+  assert.equal(quantity('12 fl oz', '356 mL'), 'mismatch');
+  assert.equal(quantity('354 mL', '355 mL'), 'mismatch');
+  assert.equal(quantity('12 fl oz / 356 mL', '355 mL'), 'review');
+});

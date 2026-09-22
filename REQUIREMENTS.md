@@ -76,3 +76,5 @@ Do not promise an unpublished evaluator score.
 - [Superseded internal gates](evidence/superseded-acceptance-plan.md): historical only.
 - Cloudflare main MCP authentication succeeded after the historical auth failure;
   this does not establish vision correctness, speed, or capacity.
+
+- [300-image OCR diagnostic](evidence/ocr-corpus-run.md): all images processed without errors in 150.533 seconds. This establishes Node pipeline execution only. Browser batch proof, automated typography, and unresolved extraction cases remain open. US fluid-ounce comparison now has unit and browser regression evidence.

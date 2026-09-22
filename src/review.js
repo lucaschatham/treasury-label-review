@@ -22,16 +22,16 @@ const entry = (field, status, found, detail, expected = "") => ({
 });
 const unique = (values) => [...new Set(values)];
 const volumePattern =
-  /\b(\d+(?:\.\d+)?)\s*(millilit(?:er|re)s?|ml|centilit(?:er|re)s?|cl|lit(?:er|re)s?|l)\b/gi;
+  /\b(\d+(?:\.\d+)?)\s*(millilit(?:er|re)s?|ml|centilit(?:er|re)s?|cl|lit(?:er|re)s?|l|fl\.?\s*oz|fluid\s+ounces?)\b/gi;
 const toMilliliters = (number, unit) =>
   Number(number) *
-  (/^(ml|milli)/i.test(unit) ? 1 : /^(cl|centi)/i.test(unit) ? 10 : 1000);
+  (/^fl/i.test(unit) ? 29.5735295625 : /^(ml|milli)/i.test(unit) ? 1 : /^(cl|centi)/i.test(unit) ? 10 : 1000);
 
 export function parseVolume(value) {
   const match = String(value)
     .trim()
     .match(
-      /^(\d+(?:\.\d+)?)\s*(millilit(?:er|re)s?|ml|centilit(?:er|re)s?|cl|lit(?:er|re)s?|l)$/i,
+      /^(\d+(?:\.\d+)?)\s*(millilit(?:er|re)s?|ml|centilit(?:er|re)s?|cl|lit(?:er|re)s?|l|fl\.?\s*oz|fluid\s+ounces?)\.?$/i,
     );
   return match ? toMilliliters(match[1], match[2]) : null;
 }
@@ -129,16 +129,29 @@ export function reviewLabel(rawText, application) {
     textFinding(text, "Class / type", application.type),
     alcoholFinding(rawText, application.abv),
   ];
-  const volumeValues = unique(
-    [...text.matchAll(volumePattern)].map((match) =>
-      toMilliliters(match[1], match[2]),
-    ),
-  );
+  const quantities = [...text.matchAll(volumePattern)].map((match) => ({
+    ml: toMilliliters(match[1], match[2]),
+    fluidOunces: /^fl/i.test(match[2]),
+  }));
   const expectedVolume = parseVolume(application.volume);
+  const expectedQuantity = {
+    ml: expectedVolume,
+    fluidOunces: /(?:fl\.?\s*oz|fluid\s+ounces?)/i.test(application.volume),
+  };
+  const sameQuantity = (a, b) => {
+    if (Math.abs(a.ml - b.ml) < 0.01) return true;
+    if (a.fluidOunces === b.fluidOunces) return false;
+    // Allow conversion rounded to a whole mL, not regulatory fill tolerances.
+    const metric = a.fluidOunces ? b.ml : a.ml;
+    const converted = a.fluidOunces ? a.ml : b.ml;
+    return Number.isInteger(metric) && Math.round(converted) === metric;
+  };
+  const conflicting = quantities.some((a) => quantities.some((b) => !sameQuantity(a, b)));
+  const volumeValues = unique(quantities.map((quantity) => quantity.ml));
   const volumeStatus =
-    volumeValues.length !== 1 || expectedVolume === null
+    !quantities.length || conflicting || expectedVolume === null
       ? "review"
-      : Math.abs(volumeValues[0] - expectedVolume) < 0.01
+      : quantities.every((quantity) => sameQuantity(quantity, expectedQuantity))
         ? "match"
         : "mismatch";
   results.push(
@@ -149,7 +162,7 @@ export function reviewLabel(rawText, application) {
         ? volumeValues.map((value) => `${value} mL`).join(", ")
         : "Not found",
       volumeStatus === "match"
-        ? "Equivalent metric quantity matches."
+        ? "Equivalent quantity matches (fluid ounces are US units)."
         : volumeStatus === "mismatch"
           ? "The quantity differs from the application."
           : "Confirm quantity and units visually; the text is missing, ambiguous, or uses unsupported units.",
