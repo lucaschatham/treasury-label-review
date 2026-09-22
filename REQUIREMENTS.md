@@ -1,46 +1,78 @@
-# Assignment coverage
+# Assignment benchmark and execution checklist
 
-## Sequential acceptance ledger (2026-09-22)
+## Source and objective
 
-The coverage descriptions below describe the existing prototype, not proof that the expanded acceptance gates pass. The release baseline is `a79989d8aee671edfd2e16c462ed82c0f382b0fe`. Work proceeds on `requirement-gates`. No replacement deployment is authorized until the release checks pass.
+Use only [the original assignment](ASSIGNMENT.md), preserved from
+`treasurytakehome-rgb/instructions` revision
+`62bd63cd2f6b5af088b1d3c3b039c48cfcb012ef`, as the product rubric.
 
-| Gate                                               | Status     | Evidence / remaining work                                                                                                                                                                                                                                                                                                                                                                                 |
-| -------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0: fixture corpus and typography feasibility       | BLOCKED    | Synthetic corpus generator and ground-truth tests added. Cloudflare CLI authentication failed with `Failed to fetch auth token: 400 Bad Request` and `Not logged in.` The normal OAuth login reached Cloudflare sign-in, then timed out awaiting authorization. No inference calls have run. Account plan, model-license acceptance, accuracy, repeatability, latency, and quota usage remain unverified. |
-| 1: exact warning, uppercase and automated boldness | NOT TESTED | Existing app has a manual appearance check. Await Gate 0 before implementing automated typography.                                                                                                                                                                                                                                                                                                        |
-| 2: complete field comparisons                      | NOT TESTED | Existing regressions pass; multiline brands, ABV prefix notation and fluid ounces remain known gaps.                                                                                                                                                                                                                                                                                                      |
-| 3: held-out accuracy                               | NOT TESTED | Corpus split is defined before model tuning. Synthetic coverage is not evidence of real-commercial-label accuracy.                                                                                                                                                                                                                                                                                        |
-| 4: complete results in approximately five seconds  | NOT TESTED | Prior 0.6-second sample result excludes automated cloud typography and does not satisfy this gate.                                                                                                                                                                                                                                                                                                        |
-| 5: 300 actual complete reviews                     | NOT TESTED | Prior count-validation test and three-image run do not satisfy this gate.                                                                                                                                                                                                                                                                                                                                 |
-| 6: usability and failures                          | NOT TESTED | Re-run the complete task list after implementing prior gates.                                                                                                                                                                                                                                                                                                                                             |
-| 7: integration, review and release                 | NOT TESTED | Keep current deployment intact; no production changes in this checkpoint.                                                                                                                                                                                                                                                                                                                                 |
+Deliver a working, standalone AI-powered prototype that compares alcohol-label
+artwork with application details, gives useful findings in about five seconds,
+handles batch uploads, and is simple for nontechnical reviewers. Provide source,
+setup instructions, documented assumptions, and an accessible deployed URL.
 
-Gate 0 protocol and reproduction instructions: [fixture documentation](test/fixtures/README.md). A PASS requires recorded input hashes, implementation commit, environment, actual results and limitations. A manual override, incomplete run, mock model or cached copy cannot satisfy automated acceptance.
+The following acceptance examples operationalize the assignment. They are our
+verification choices, not additional requirements or a claim about a hidden grader.
 
-Scope source: the supplied [GitHub assignment](https://github.com/treasurytakehome-rgb/instructions), checked against upstream revision `62bd63cd2f6b5af088b1d3c3b039c48cfcb012ef` on 2026-09-22. The brief prioritizes a working core and documented trade-offs. This mapping distinguishes the stated workflow from optional ideas and background context.
+## Execute in this order
 
-| Assignment detail                                                           | Implementation and verification                                                                                                                                                                                                                                        |
-| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Source repository; setup/run instructions; approach, tools, and assumptions | Source and preserved assignment are in this repository. README describes install, development, build, tools, deployment, and limitations.                                                                                                                              |
-| A working deployed prototype evaluators can access                          | Public HTTPS custom domain; no evaluator login or API key. Sample button runs real OCR.                                                                                                                                                                                |
-| Compare application fields with label artwork                               | Brand, type, ABV, net contents, producer/address, country for imports, and warning text. Each result shows the expected value and evidence.                                                                                                                            |
-| Dave's capitalization example                                               | Case and punctuation normalization accepts STONE'S THROW versus Stone's Throw. Whole-token comparisons avoid matching a brand inside a longer word. Regression tested.                                                                                                 |
-| Jenny's exact warning, uppercase and bold heading                           | Full wording and uppercase heading are checked from OCR. A separate appearance finding stays unresolved until the reviewer confirms boldness and appearance against the original image. This is a documented limitation of text OCR, not an automatic typography pass. |
-| Sarah's roughly five-second response target                                 | Engine preload/reuse and bounded OCR image dimensions. The UI measures click-to-first-result, including pending setup. Performance is sampled in browser checks, not guaranteed for every image/device.                                                                |
-| Simple interface for mixed technical comfort                                | One form, a sample button, one review button, explicit text statuses, original artwork and reference warning. Batch CSV remains optional.                                                                                                                              |
-| Batch upload, including the mentioned 200–300 applications                  | Queue accepts 300 images within stated size limits, with one expected-data row per exact filename. Results stream into the page individually. No 300-image performance claim is made.                                                                                  |
-| Common label elements listed in additional context                          | All listed fields are represented. Blank producer/address and any ABV exception remain human review items. Country is conditional on import status.                                                                                                                    |
-| Firewall restrictions                                                       | No cloud OCR or runtime CDN/font requests. Worker, core, English model, and application assets share the app's origin.                                                                                                                                                 |
-| OLD TOM DISTILLERY sample                                                   | Included complete synthetic image with 45% ABV, 90 proof, 750 mL, type, producer/address, and warning. Also included wrong-ABV and title-case-warning variants.                                                                                                        |
-| Error handling                                                              | File/count/size validation, CSV header/data/mapping checks, per-image decoding failures, low-confidence warning, failed-image counts, stop control, and clearing stale results after edits.                                                                            |
-| Bad angles, glare, and lighting                                             | Explicitly described as potentially outside prototype scope. No promise of photo restoration; uncertain extraction is sent to review.                                                                                                                                  |
-| Azure, .NET, COLA, FedRAMP, production retention                            | Background context rather than required prototype integrations. The brief allows any language/framework and expressly requests a standalone proof of concept.                                                                                                          |
+For each item: inspect the implementation, reproduce the gap, fix it, test the
+complete user flow, and record evidence before marking it passed. Keep the live
+prototype available while preparing the replacement.
 
-## Acceptance evidence
+| ID | Assignment source and outcome | Concrete work and evidence to finish | Current status |
+| --- | --- | --- | --- |
+| 1 | Sarah: compare artwork with application. Additional context lists brand, class/type, alcohol content, net contents, producer/address, import country. | Verify observed artwork against each submitted field. Exercise correct and incorrect values, missing information, domestic/imported cases, and explicitly identified alcohol-content exceptions. Show uncertainty honestly. Fix extraction/comparison failures demonstrated by those cases. | PARTIAL: fields exist; broader correctness remains unverified. |
+| 2 | Dave: STONE'S THROW and Stone's Throw mean the same brand. | Verify this exact capitalization example and a genuinely different brand through image review. Do not let normalization conceal an actual difference. | PARTIAL: deterministic regression passes; record end-to-end evidence. |
+| 3 | Jenny: warning must be exact, with GOVERNMENT WARNING: uppercase and bold. | Verify correct, missing, altered-wording, title-case, and regular-weight warning artwork. Implement the missing boldness check. Keep unresolved readings visibly unresolved; human confirmation does not prove automated detection. Explain any OCR normalization in assumptions. | INCOMPLETE: boldness remains manual. |
+| 4 | Sample: OLD TOM DISTILLERY, Kentucky Straight Bourbon Whiskey, 45% Alc./Vol. (90 Proof), 750 mL, standard warning. | Run the supplied-style sample through the full implementation, including warning appearance. Confirm the artwork and submitted values agree. | PARTIAL: sample OCR works; complete warning check missing. |
+| 5 | Sarah: results in about five seconds. | Time Review click through all required findings on clear representative artwork. Include startup conditions and report environment, actual timings, and limitations. Fix sustained delays. | UNVERIFIED: observed fast sample excludes automated boldness. |
+| 6 | Sarah: batch uploads in the context of 200–300 applications. | Upload a batch with separate application values, complete processing, and verify correct association and retained results. Demonstrate the mentioned scale using actual image reviews. Report duration and size limits. | PARTIAL: queue and CSV mapping exist; full-scale operation unverified. |
+| 7 | Sarah: clean, obvious interface for mixed technical comfort. Evaluation: UX and error handling. | Verify sample, upload, entering details, finding a discrepancy, inspecting artwork, batch review, and recovering from invalid/unreadable input. Check narrow layout and keyboard operation as practical usability evidence. | PARTIAL: focused local UI checks pass; final integrated flow remains. |
+| 8 | Marcus: standalone prototype, sensible security, firewall awareness. Technical requirements allow any stack. | Keep credentials out of client code, avoid sensitive-data storage, and verify/document runtime network dependencies. If cloud processing is added, explain it accurately and handle failure visibly. | PARTIAL: local OCR currently uses same-origin assets; recheck final architecture. |
+| 9 | Deliverable 1: all source, README setup/run instructions, brief approach/tools/assumptions. Evaluation: code quality and appropriate scope. | Ensure submitted repository contains the final implementation. Reproduce setup/build/tests from clean source and verify documentation reflects actual behavior and trade-offs. Review changed code and resolve confirmed defects. | PARTIAL: repository/docs exist; final source and reproduction pending. |
+| 10 | Deliverable 2: working deployed URL evaluators can access and test. | Deploy the tested implementation to the app project, verify anonymous access and correct/incorrect/batch flows, and confirm deployment corresponds to submitted source. Provide repository and application URLs. | PARTIAL: baseline deployed; latest UI and remaining fixes are not released. |
 
-- `npm test`: comparison and batch-validation regression tests.
-- `npm run build`: production static bundle, including locally hosted OCR assets.
-- Browser checks: real OCR of the complete synthetic sample; incorrect ABV and title-case warning; manual appearance confirmation; stale results cleared when inputs change; CSV batch override.
-- Before release: structured autoreview of the complete implementation against the original instructions. Accepted findings are fixed and re-reviewed.
+## Scope boundaries from the assignment
 
-A prototype can demonstrate the specified workflow without production government infrastructure. Passing the evaluator remains their decision; the documented manual typography check and image-dependent latency must remain visible in the submission.
+- Azure, .NET, COLA integration, FedRAMP, government production retention, and
+  enterprise procurement are background context, not prototype deliverables.
+- Recovery of badly angled, poorly lit, or glare-obscured photographs is explicitly
+  described as potentially outside scope. A useful unreadable-image response is
+  sufficient without promising image restoration.
+- The common-field list is reference context. Address it in the prototype and
+  explain assumptions; do not build a complete beverage-regulation engine.
+- Additional label fixtures and TTB research are encouraged. No particular fixture
+  count, font matrix, external usability recruitment, percentile, or cold/warm trial
+  count is prescribed.
+- Multiline brands, ABV prefix notation, and US fluid ounces are useful test cases,
+  not separately enumerated assignment requirements. Fix them when necessary for
+  the supported label workflow; do not represent them as explicit rubric items.
+- Cloudflare, a particular vision model, a 1 MB crop limit, 10-second timeout,
+  200 MB aggregate batch threshold, and cloud quota experiments are implementation
+  decisions. They must not become independent product requirements.
+
+## Existing user constraints, separate from the assignment rubric
+
+Continue using free services only. Preserve the chosen native white/silver UI,
+the unlisted app/custom-domain arrangement, and the main website deployment safety
+rules. These constraints govern execution without adding assignment scoring items.
+
+## Evidence and completion rule
+
+Record the implementation commit, tested environment, inputs, observed results,
+and material limits beside each completed item. Tests count only for the behavior
+they actually exercise. Code review is not evidence of full assignment completion.
+Documenting a missing core behavior does not turn it into a pass.
+
+Stop adding features once items 1–10 have passing, relevant evidence and the
+repository and deployed app match. Report any remaining uncertainty explicitly.
+Do not promise an unpublished evaluator score.
+
+## Existing evidence and historical notes
+
+- [UI verification](evidence/ui-native-workspace.md): focused local browser checks.
+- [Fixture preparation](evidence/gate-0-preparation.json): preparation, not model performance.
+- [Superseded internal gates](evidence/superseded-acceptance-plan.md): historical only.
+- Cloudflare main MCP authentication succeeded after the historical auth failure;
+  this does not establish vision correctness, speed, or capacity.
