@@ -1,0 +1,1717 @@
+{
+  "model": "@cf/google/gemma-4-26b-a4b-it",
+  "prompt": "Is the GOVERNMENT WARNING heading printed in bold or regular font weight? Do not confuse capital letters or larger size with bold strokes. Return only BOLD, REGULAR, or UNCERTAIN.",
+  "temperature": 0,
+  "max_completion_tokens": 32,
+  "thinking": false,
+  "crop": "top 110px; trim background; white border of 30px; resize to 1200px width; RGB PNG",
+  "calls": [
+    {
+      "id": "helvetica-24-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "a789a49e821cb0e28c00e1772fc286b49629076e83f037ca0766b7d47c33bcb7",
+      "httpStatus": 200,
+      "milliseconds": 1402,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116867,
+          "id": "e151968a3ec74ce9bee81e6bdab2d841",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 3,
+            "total_tokens": 308,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8545453548431396
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "helvetica-24-bold",
+      "expected": "BOLD",
+      "observed": "",
+      "correct": false,
+      "imageSha256": "17b50e1ffb87098ef2262eb85d829c8f9f49d28cc9d2eb4cead838e1a293c20b",
+      "httpStatus": null,
+      "milliseconds": 15238,
+      "result": {
+        "error": "The read operation timed out"
+      }
+    },
+    {
+      "id": "helvetica-32-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "a0f7d987cb679768b7bd4c03ea4f6e38d91c19a3ded0402b9b2dfd0bf1daa01a",
+      "httpStatus": 200,
+      "milliseconds": 1722,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "REGULAR",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116884,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-f1bb5099-6b28-417b-9999-d895ae0996c7",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 326,
+            "completion_tokens": 3,
+            "total_tokens": 329,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 3.045454263687134
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "helvetica-32-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "509d7f34999d230bbae52e959d638444a9fe7b0a3300c5716ee8a282608b3a89",
+      "httpStatus": 200,
+      "milliseconds": 2022,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116886,
+          "id": "c6aaf8045eac416cb8211912c973bbfc",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 319,
+            "completion_tokens": 2,
+            "total_tokens": 321,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.954545259475708
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "helvetica-40-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "7c292a501a35b9d863b1886f6d31514518d43921e247d4091a8a56afd5ec4ebf",
+      "httpStatus": 200,
+      "milliseconds": 763,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "REGULAR",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116887,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-d74eb090-f65a-4b45-b676-2850890d18d1",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 299,
+            "completion_tokens": 3,
+            "total_tokens": 302,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.799999952316284
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "helvetica-40-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "ed872b1060e84470a527d98a23da42ea3defea0e479011a34c3bc2a60d67dc26",
+      "httpStatus": 200,
+      "milliseconds": 1326,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116889,
+          "id": "6039f4d0101a4e4588c46368bbebf88b",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 299,
+            "completion_tokens": 2,
+            "total_tokens": 301,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.7727272510528564
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "helvetica-48-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "916eefe9157dcf5a5262440917ff8a759d8f96d79a56c14346087663a7cd4de1",
+      "httpStatus": 200,
+      "milliseconds": 1416,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116890,
+          "id": "09f0822b0f97499d8b2e912c5b937492",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 311,
+            "completion_tokens": 3,
+            "total_tokens": 314,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.909090757369995
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "helvetica-48-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "000200c12154515beac37397cde1ea0a901590c7d5275b04778e43e8fd848449",
+      "httpStatus": 200,
+      "milliseconds": 1147,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116892,
+          "id": "b41dd78caaca4c069fd2175c356ffa52",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 311,
+            "completion_tokens": 2,
+            "total_tokens": 313,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8818180561065674
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-24-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "faa01237665dd600533c12b8c783c6a6690b88017ad3a9c9830342f190d9be7c",
+      "httpStatus": 200,
+      "milliseconds": 1016,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116893,
+          "id": "a3090e1ce0eb42ba816d1af92e110ac8",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 3,
+            "total_tokens": 308,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8545453548431396
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-24-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "67495e5c97e29a835b060396424b36d1b675a18a927071eb756628eae2918037",
+      "httpStatus": 200,
+      "milliseconds": 1278,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116894,
+          "id": "ffc7a67bab174d6a9fd4d93d5f415bc4",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 2,
+            "total_tokens": 307,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.827272653579712
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-32-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "b218bbb0bfcfab6b4c9eccd4ecc9eebc73228e6879ebb9214d3dc7b0db2fdce7",
+      "httpStatus": 200,
+      "milliseconds": 1495,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116895,
+          "id": "131b05dab17e47099738ef2cf3b4c526",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 326,
+            "completion_tokens": 3,
+            "total_tokens": 329,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 3.045454263687134
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-32-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "94d2083afb3f966fcd868fc013871b14d7b0c86317cd171e7e6a13775bc1ada9",
+      "httpStatus": 200,
+      "milliseconds": 1762,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116897,
+          "id": "01d581472f254b15a7a2a086dc52ffed",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 293,
+            "completion_tokens": 2,
+            "total_tokens": 295,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.718181610107422
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-40-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "a395c885113006f77cad71f2e792ec772f7c04524776f35106a66ff0d73a041f",
+      "httpStatus": 200,
+      "milliseconds": 976,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "REGULAR",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116898,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-ff8f4716-0aa5-4fe1-a669-6c2bddb4f45d",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 299,
+            "completion_tokens": 3,
+            "total_tokens": 302,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.799999952316284
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-40-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "1c482f2def66b95d7e9937a58682fd7fcfd1081d4443fe6655b7279227940654",
+      "httpStatus": 200,
+      "milliseconds": 1281,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "BOLD",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116900,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-6be67781-12eb-48b5-8259-41723a6228ef",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 2,
+            "total_tokens": 307,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.827272653579712
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-48-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "2b6fded38cbdd01add68bc80eb8d48db30630443b400065639d4d4f0e399886f",
+      "httpStatus": 200,
+      "milliseconds": 1028,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116901,
+          "id": "6a58162eed2a45e4a11229adc89c35d0",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 317,
+            "completion_tokens": 3,
+            "total_tokens": 320,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.9636361598968506
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-48-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "c367bc8d2d8989d8d0db35076940ce89a99615dfefe9f9ac5c7e7b8c784913ff",
+      "httpStatus": 200,
+      "milliseconds": 1216,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116902,
+          "id": "902364f4070645e98590f1c0cc0da2c1",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 317,
+            "completion_tokens": 2,
+            "total_tokens": 319,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.936363458633423
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-24-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "cbfc50baff3718fab6a222df1ac94217f76fcbc12987236663149b1aaf596d20",
+      "httpStatus": 200,
+      "milliseconds": 1212,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116904,
+          "id": "181f28026e2043138c5569955322805c",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 325,
+            "completion_tokens": 3,
+            "total_tokens": 328,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 3.036363363265991
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-24-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "8cfd9eb2285186976761572068fdfa69a8a89c24616aae0b330e45d5340492b2",
+      "httpStatus": 200,
+      "milliseconds": 1203,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116905,
+          "id": "44b269c722eb46398db0f14e2f1ab544",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 325,
+            "completion_tokens": 2,
+            "total_tokens": 327,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 3.0090906620025635
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-32-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "147fd42b56a4693c98bfafbd758c355c2cde32cb41cb37c178315fc04289af95",
+      "httpStatus": 200,
+      "milliseconds": 2411,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116907,
+          "id": "4f839610f3df48ac8515707583fac413",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 319,
+            "completion_tokens": 3,
+            "total_tokens": 322,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.9818179607391357
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-32-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "f44af81157db88d398385036928b113483873264d58b6ffc27faab87a011a714",
+      "httpStatus": 200,
+      "milliseconds": 1901,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116908,
+          "id": "69d0112f0ca64c3fb5a9dcde5f613e6c",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 319,
+            "completion_tokens": 2,
+            "total_tokens": 321,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.954545259475708
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-40-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "114e207ae1e5dbf219f005e9f609e0f88efac1db3ba5443121952cc7ee4c876c",
+      "httpStatus": 200,
+      "milliseconds": 1106,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116910,
+          "id": "f2eb63f56cb94daebef0813810c64391",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 293,
+            "completion_tokens": 3,
+            "total_tokens": 296,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.7454543113708496
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-40-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "2be78b1f294797757b729c8c6c51e9d397a14cf910c7b3cdb5cb99c04eb524b5",
+      "httpStatus": 200,
+      "milliseconds": 626,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "BOLD",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116911,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-415b42f6-a48b-4120-bd21-52f545fea89c",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 293,
+            "completion_tokens": 2,
+            "total_tokens": 295,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.718181610107422
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-48-regular",
+      "expected": "REGULAR",
+      "observed": "BOLD",
+      "correct": false,
+      "imageSha256": "35600e542c15aac1777b4624a52e75db0bd76d72cff132e5a0662e01e422b17f",
+      "httpStatus": 200,
+      "milliseconds": 1012,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116912,
+          "id": "3e1a818bbe044fe2a531bebdafa0fa00",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 311,
+            "completion_tokens": 2,
+            "total_tokens": 313,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8818180561065674
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-48-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "00085202143508245fe0515fdcf9eb8bf083dfc2707e64c5822203266420a2cc",
+      "httpStatus": 200,
+      "milliseconds": 1156,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116913,
+          "id": "b14b6b79852a47f8b27cefd134a0dcd7",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 311,
+            "completion_tokens": 2,
+            "total_tokens": 313,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8818180561065674
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "palatino-24-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "e4d59a65cc2670940a2f053446c8223eda15bd94dc04d2d4e850aa03a929cf8c",
+      "httpStatus": 200,
+      "milliseconds": 1313,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116915,
+          "id": "c594928f244a437bac7b12820f9b4a19",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 3,
+            "total_tokens": 308,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8545453548431396
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "palatino-24-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "8f120d1f540948f129068e9c69d3e062739c64ceb37bc7b36110f0b4d0bbd76e",
+      "httpStatus": 200,
+      "milliseconds": 1279,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116916,
+          "id": "014baea01ee44a20ba770a5ce2502492",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 2,
+            "total_tokens": 307,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.827272653579712
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "palatino-32-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "422789299959cf0b4e2dde8bad24a60df563c4a609708f847df570e28f8b7a75",
+      "httpStatus": 200,
+      "milliseconds": 1182,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116917,
+          "id": "4cdaae7e51494d01a6fd362a3900590b",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 326,
+            "completion_tokens": 3,
+            "total_tokens": 329,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 3.045454263687134
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "palatino-32-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "a878bd3733a6c81988b70933a521f4faffd98aee6ae68a83449f1f3395b3237c",
+      "httpStatus": 200,
+      "milliseconds": 1569,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116919,
+          "id": "facc9588ce3f47e7b0918caba4f74f90",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 293,
+            "completion_tokens": 2,
+            "total_tokens": 295,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.718181610107422
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "palatino-40-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "35bad50c381d177e7932c0e6fde2b35134bc4ef2433bbf1fe46e9ec68e1706f1",
+      "httpStatus": 200,
+      "milliseconds": 1243,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116920,
+          "id": "3d63a765b5f54266af843a96dbe6ff0f",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 3,
+            "total_tokens": 308,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8545453548431396
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "palatino-40-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "6aeffb3a3888672a9129dcb87854d88b60be7bfc1f1a6b9a74911b77ff5ee81e",
+      "httpStatus": 200,
+      "milliseconds": 1132,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116922,
+          "id": "944c79f3a54d4fa29e2af57218420f07",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 311,
+            "completion_tokens": 2,
+            "total_tokens": 313,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8818180561065674
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "palatino-48-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "a90d0b14b0b8ead2c24830365b84916fcf32d3ba262ddd64db98450eede37186",
+      "httpStatus": 200,
+      "milliseconds": 1291,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "REGULAR",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116923,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-2ded5caf-7f8e-43e7-b973-d32db55c0135",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 317,
+            "completion_tokens": 3,
+            "total_tokens": 320,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.9636361598968506
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "palatino-48-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "310290e4912c50faf5066ed717ebdbb2e7130923ecf6efec0987213ecdffb1c4",
+      "httpStatus": 200,
+      "milliseconds": 1182,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116924,
+          "id": "7460d76cfc0c4de2aa3c8521cd2422e4",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 323,
+            "completion_tokens": 2,
+            "total_tokens": 325,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.9909088611602783
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "century-24-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "3a379892de6ea30a7e96a01194e50df2e072c7c0a0d00c092c62e6d502780bc7",
+      "httpStatus": 200,
+      "milliseconds": 1781,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116926,
+          "id": "e1515bf70c37460f9764646a8b525a0a",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 3,
+            "total_tokens": 308,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8545453548431396
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "century-24-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "e8afa90ac7e8578417dac9c18e32a58aef84a4def333e4124d5921b54d54d9bf",
+      "httpStatus": 200,
+      "milliseconds": 966,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116927,
+          "id": "f715a9fcf6f841d387e4eeea7757bf68",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 312,
+            "completion_tokens": 2,
+            "total_tokens": 314,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.89090895652771
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "century-32-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "d0d0f9b2abb0bc8cdc9ac0a8ed5f4c49a94bff780cf780f19a28564b43b47696",
+      "httpStatus": 200,
+      "milliseconds": 986,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116928,
+          "id": "e9aba01231874857bebd1a4353559a15",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 326,
+            "completion_tokens": 3,
+            "total_tokens": 329,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 3.045454263687134
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "century-32-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "110ac07b69bf12f7a129f66a8a7ec9009136792fbd08c81222b376a196912646",
+      "httpStatus": 200,
+      "milliseconds": 945,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "BOLD",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116929,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-2b304899-6788-491b-be60-25bd07664643",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 299,
+            "completion_tokens": 2,
+            "total_tokens": 301,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.7727272510528564
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "century-40-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "6c520ffe478a849d53b3edd108a2b1622b58a28f1a4a3c632936cd807f2195b9",
+      "httpStatus": 200,
+      "milliseconds": 1251,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "REGULAR",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116930,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-8e5174bf-c0a6-4794-988c-80753d7accd3",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 305,
+            "completion_tokens": 3,
+            "total_tokens": 308,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8545453548431396
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "century-40-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "18d0c67141b01bdbc564c118d1f3d64d82c5512f212999eb3d35a0079bf0d0e4",
+      "httpStatus": 200,
+      "milliseconds": 1135,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116932,
+          "id": "1a128b55b34445db8294cc7ec02d3555",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 311,
+            "completion_tokens": 2,
+            "total_tokens": 313,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.8818180561065674
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "century-48-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "747912d3623b8ff68654daa88514fb93e25c922e5df5c46741d285ccf126a34f",
+      "httpStatus": 200,
+      "milliseconds": 1085,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116933,
+          "id": "0a20298b555948edb7be8a95995816ae",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 317,
+            "completion_tokens": 3,
+            "total_tokens": 320,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.9636361598968506
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "century-48-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "516ca10dcc8ea30ae2304d5a9854d663e3958e809a65bf33b037f4141c3fe530",
+      "httpStatus": 200,
+      "milliseconds": 708,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "BOLD",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": 106,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116934,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-1d815c0f-4746-4c86-860a-19b05f9c9b8f",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 323,
+            "completion_tokens": 2,
+            "total_tokens": 325,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.9909088611602783
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    }
+  ]
+}

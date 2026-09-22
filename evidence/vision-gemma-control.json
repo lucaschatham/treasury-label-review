@@ -1,0 +1,170 @@
+{
+  "model": "@cf/google/gemma-4-26b-a4b-it",
+  "prompt": "Is the GOVERNMENT WARNING heading printed in bold or regular font weight? Do not confuse capital letters or larger size with bold strokes. Return only BOLD, REGULAR, or UNCERTAIN.",
+  "temperature": 0,
+  "max_completion_tokens": 32,
+  "thinking": false,
+  "crop": "top 110px; trim background; white border of 30px; resize to 1200px width; RGB PNG",
+  "calls": [
+    {
+      "id": "helvetica-40-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "395730b75b1103c0a0f2fed0efd62f136701618fbd544794a6492db5b3b4fe34",
+      "httpStatus": 200,
+      "milliseconds": 1033,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116806,
+          "id": "37bec52e31ba430488bca54ef2cbe70e",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 299,
+            "completion_tokens": 3,
+            "total_tokens": 302,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.799999952316284
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "helvetica-40-bold",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "imageSha256": "ad6aa4370dccf313fd6594bd7608f4b4754210c01297261d0e6844b352cb17ba",
+      "httpStatus": 200,
+      "milliseconds": 1055,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "BOLD",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116808,
+          "id": "833990914ea04cc585e34351bdd3efe4",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 299,
+            "completion_tokens": 2,
+            "total_tokens": 301,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.7727272510528564
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "times-48-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "196856055f445c9e02c081f4f4a987f325f533f11e4c41608a76a740897b4a90",
+      "httpStatus": 200,
+      "milliseconds": 1143,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116809,
+          "id": "eac30ffb254d46789bda5a6fcb005c48",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 317,
+            "completion_tokens": 3,
+            "total_tokens": 320,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 2.9636361598968506
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "id": "courier-24-regular",
+      "expected": "REGULAR",
+      "observed": "REGULAR",
+      "correct": true,
+      "imageSha256": "c7f750d43ce2294fffd4cbfb42b4390e928a8ce1cd1038406c0f6aba565a5cb7",
+      "httpStatus": 200,
+      "milliseconds": 1289,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "REGULAR",
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1790116810,
+          "id": "283412d2b9ff492f868922d845d77c25",
+          "model": "@cf/google/gemma-4-26b-a4b-it-external",
+          "object": "chat.completion",
+          "usage": {
+            "prompt_tokens": 325,
+            "completion_tokens": 3,
+            "total_tokens": 328,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 3.036363363265991
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-22",
+  "url": "http://127.0.0.1:5173/",
+  "environment": "Codex in-app browser on local macOS",
+  "sourceBaseCommit": "f810019",
+  "sourcePatch": "Multiline brand matching before the subsequent producer-for boundary fix",
+  "testedReviewSourceSha256": "32d59feedad388a906816954981e5cbbaa295333b85af997b3e78a8b729d86a2",
+  "inputs": {
+    "images": 300,
+    "megabytesDisplayed": 86.4,
+    "csvRows": 300,
+    "corpusManifestSha256": "7bd929480ade87b234fd8bcf843722880905c9bee5465dfcafb26c6cdd6b2825"
+  },
+  "observed": {
+    "status": "Finished: 300 reviewed, 0 failed, 0 remaining. Total: 275.0 s. First result: 0.7 s from click. Inspect exceptions and confirm warning appearance.",
+    "resultCards": 300,
+    "uniqueFilenames": 300,
+    "applicationAssociationErrors": [],
+    "unresolvedAppearance": 300,
+    "first": "spirits-01-valid.png",
+    "last": "beer-10-glare.png"
+  },
+  "checks": "Read rendered result cards. Compared brand, class/type, ABV, quantity, producer/address and applicable country application values against corpus formulas for every card. Counted unique filenames and unresolved appearance findings.",
+  "limitations": "Does not establish automated boldness, field accuracy across all results, cold startup, stop/corrupt-file behavior, production deployment or cloud capacity."
+}

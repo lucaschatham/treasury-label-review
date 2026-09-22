@@ -1,0 +1,113 @@
+{
+  "model": "@cf/qwen/qwen3.8-27b",
+  "prompt": "Is the GOVERNMENT WARNING heading printed in bold or regular font weight? Do not confuse capital letters or larger size with bold strokes. Return only BOLD, REGULAR, or UNCERTAIN.",
+  "encoding": "image_url base64 RGB PNG",
+  "max_completion_tokens": 32,
+  "temperature": 0,
+  "calls": [
+    {
+      "expected": "bold",
+      "imageSha256": "672ab16c3f727a8f25a566d1e8631704a94b994c3368643dafac17a42ea24b5e",
+      "httpStatus": 200,
+      "milliseconds": 830,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "UNCERTAIN",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": null,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116410,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-7235cb4e-cfbd-46a8-8885-11ead22e74be",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/qwen/qwen3.8-27b",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 712,
+            "completion_tokens": 4,
+            "total_tokens": 716,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 30.290908813476562
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "expected": "regular",
+      "imageSha256": "a2f274a09367cb520aa2f5c6143b802a520d9de9472a469ed062032df12f1db1",
+      "httpStatus": 200,
+      "milliseconds": 15636,
+      "result": {
+        "result": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "annotations": null,
+                "audio": null,
+                "content": "UNCERTAIN",
+                "function_call": null,
+                "reasoning": null,
+                "refusal": null,
+                "role": "assistant"
+              },
+              "routed_experts": null,
+              "stop_reason": null,
+              "token_ids": null
+            }
+          ],
+          "created": 1790116411,
+          "ec_transfer_params": null,
+          "id": "chatcmpl-3dea246a-84c8-4270-aea4-efdf08cc0fe3",
+          "kv_transfer_params": null,
+          "metrics": null,
+          "model": "@cf/qwen/qwen3.8-27b",
+          "object": "chat.completion",
+          "prompt_logprobs": null,
+          "prompt_text": null,
+          "prompt_token_ids": null,
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 712,
+            "completion_tokens": 4,
+            "total_tokens": 716,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 30.290908813476562
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    }
+  ]
+}

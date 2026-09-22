@@ -1,0 +1,3725 @@
+{
+  "scope": "Fresh OCR on previously examined regression fixtures, using coordinate-based extraction.",
+  "results": [
+    {
+      "id": "spirits-01-valid",
+      "brand": "OLD TOM DISTILLERY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-01-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-02-valid",
+      "brand": "CEDAR RIDGE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "CEDAR RIDGE",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-02-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-03-valid",
+      "brand": "HARBOR LIGHT",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "HARBOR LIGHT",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-03-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-04-valid",
+      "brand": "SILVER FIELD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "SILVER FIELD",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-04-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-05-valid",
+      "brand": "STONE’S THROW Kentucky Straight Bourbon Whiskey",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "STONE’S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-05-brand",
+      "brand": "DIFFERENT BRAND Kentucky Straight Bourbon Whiskey",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "STONE’S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-06-valid",
+      "brand": "COPPER VALLEY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "COPPER VALLEY",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-06-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-07-valid",
+      "brand": "NORTH ORCHARD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "NORTH ORCHARD",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-07-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-08-valid",
+      "brand": "RIVER BEND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "RIVER BEND",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-08-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-09-valid",
+      "brand": "GOLDEN COAST",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "GOLDEN COAST",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-09-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-10-valid",
+      "brand": "MAPLE GROVE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "MAPLE GROVE",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "spirits-10-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-01-valid",
+      "brand": "OLD TOM DISTILLERY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "OLD TOM DISTILLERY, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-01-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "OLD TOM DISTILLERY, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-02-valid",
+      "brand": "CEDAR RIDGE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "CEDAR RIDGE",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-02-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-03-valid",
+      "brand": "HARBOR LIGHT",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "HARBOR LIGHT",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-03-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-04-valid",
+      "brand": "SILVER FIELD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "SILVER FIELD",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-04-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-05-valid",
+      "brand": "STONE’S THROW Cabernet Sauvignon",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "STONE’S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-05-brand",
+      "brand": "DIFFERENT BRAND Cabernet Sauvignon",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "STONE’S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-06-valid",
+      "brand": "COPPER VALLEY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "COPPER VALLEY",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-06-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-07-valid",
+      "brand": "NORTH ORCHARD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "NORTH ORCHARD",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-07-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-08-valid",
+      "brand": "RIVER BEND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "RIVER BEND",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-08-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-09-valid",
+      "brand": "GOLDEN COAST",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "GOLDEN COAST",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-09-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-10-valid",
+      "brand": "MAPLE GROVE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "MAPLE GROVE",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "wine-10-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-01-valid",
+      "brand": "OLD TOM DISTILLERY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "OLD TOM DISTILLERY, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-01-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "OLD TOM DISTILLERY, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-02-valid",
+      "brand": "CEDAR RIDGE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "CEDAR RIDGE",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-02-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-03-valid",
+      "brand": "HARBOR LIGHT",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "HARBOR LIGHT",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "review",
+          "found": "Not found",
+          "detail": "Confirm quantity and units visually; the text is missing, ambiguous, or uses unsupported units.",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-03-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "review",
+          "found": "Not found",
+          "detail": "Confirm quantity and units visually; the text is missing, ambiguous, or uses unsupported units.",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-04-valid",
+      "brand": "SILVER FIELD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "SILVER FIELD",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-04-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-05-valid",
+      "brand": "STONE’S THROW",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "STONE’S THROW",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "STONE’S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-05-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "STONE’S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-06-valid",
+      "brand": "COPPER VALLEY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "COPPER VALLEY",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-06-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-07-valid",
+      "brand": "NORTH ORCHARD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "NORTH ORCHARD",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-07-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-08-valid",
+      "brand": "RIVER BEND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "RIVER BEND",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "review",
+          "found": "Not found",
+          "detail": "Confirm quantity and units visually; the text is missing, ambiguous, or uses unsupported units.",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-08-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "review",
+          "found": "Not found",
+          "detail": "Confirm quantity and units visually; the text is missing, ambiguous, or uses unsupported units.",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-09-valid",
+      "brand": "GOLDEN COAST",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "GOLDEN COAST",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-09-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product",
+          "detail": "Not checked because the application is marked domestic.",
+          "expected": ""
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-10-valid",
+      "brand": "MAPLE GROVE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "MAPLE GROVE",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": "beer-10-brand",
+      "brand": "DIFFERENT BRAND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "review",
+          "found": "Not confidently located",
+          "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+          "expected": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%",
+          "detail": "Numeric ABV matches the application.",
+          "expected": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL",
+          "detail": "Equivalent quantity matches (fluid ounces are US units).",
+          "expected": "12 fl oz"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France",
+          "detail": "Text found after case and punctuation normalization.",
+          "expected": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected",
+          "detail": "Text check only. The separate appearance check is still required.",
+          "expected": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems."
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required",
+          "detail": "Confirm that GOVERNMENT WARNING: is bold and uppercase. Check legibility, size, contrast, and placement against the original artwork.",
+          "expected": ""
+        }
+      ]
+    }
+  ]
+}

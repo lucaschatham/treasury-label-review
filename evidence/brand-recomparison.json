@@ -1,0 +1,605 @@
+{
+  "scope": "Recomparison of saved OCR, not independent image validation.",
+  "results": [
+    {
+      "id": "spirits-01-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "OLD TOM DISTILLERY",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "OLD TOM DISTILLERY"
+      }
+    },
+    {
+      "id": "spirits-01-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "OLD TOM DISTILLERY"
+      }
+    },
+    {
+      "id": "spirits-02-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "CEDAR RIDGE",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "CEDAR RIDGE"
+      }
+    },
+    {
+      "id": "spirits-02-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "CEDAR RIDGE"
+      }
+    },
+    {
+      "id": "spirits-03-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "HARBOR LIGHT",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "HARBOR LIGHT"
+      }
+    },
+    {
+      "id": "spirits-03-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "HARBOR LIGHT"
+      }
+    },
+    {
+      "id": "spirits-04-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "SILVER FIELD",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "SILVER FIELD"
+      }
+    },
+    {
+      "id": "spirits-04-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "SILVER FIELD"
+      }
+    },
+    {
+      "id": "spirits-05-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "STONE’S THROW",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "STONE’S THROW"
+      }
+    },
+    {
+      "id": "spirits-05-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "STONE’S THROW"
+      }
+    },
+    {
+      "id": "spirits-06-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "COPPER VALLEY",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "COPPER VALLEY"
+      }
+    },
+    {
+      "id": "spirits-06-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "COPPER VALLEY"
+      }
+    },
+    {
+      "id": "spirits-07-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "NORTH ORCHARD",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "NORTH ORCHARD"
+      }
+    },
+    {
+      "id": "spirits-07-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "NORTH ORCHARD"
+      }
+    },
+    {
+      "id": "spirits-08-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "RIVER BEND",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "RIVER BEND"
+      }
+    },
+    {
+      "id": "spirits-08-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "RIVER BEND"
+      }
+    },
+    {
+      "id": "spirits-09-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "GOLDEN COAST",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "GOLDEN COAST"
+      }
+    },
+    {
+      "id": "spirits-09-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "GOLDEN COAST"
+      }
+    },
+    {
+      "id": "spirits-10-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "MAPLE GROVE",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "MAPLE GROVE"
+      }
+    },
+    {
+      "id": "spirits-10-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "MAPLE GROVE"
+      }
+    },
+    {
+      "id": "wine-01-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "OLD TOM DISTILLERY",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "OLD TOM DISTILLERY"
+      }
+    },
+    {
+      "id": "wine-01-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "OLD TOM DISTILLERY"
+      }
+    },
+    {
+      "id": "wine-02-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "CEDAR RIDGE",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "CEDAR RIDGE"
+      }
+    },
+    {
+      "id": "wine-02-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "CEDAR RIDGE"
+      }
+    },
+    {
+      "id": "wine-03-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "HARBOR LIGHT",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "HARBOR LIGHT"
+      }
+    },
+    {
+      "id": "wine-03-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "HARBOR LIGHT"
+      }
+    },
+    {
+      "id": "wine-04-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "SILVER FIELD",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "SILVER FIELD"
+      }
+    },
+    {
+      "id": "wine-04-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "SILVER FIELD"
+      }
+    },
+    {
+      "id": "wine-05-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "STONE’S THROW",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "STONE’S THROW"
+      }
+    },
+    {
+      "id": "wine-05-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "STONE’S THROW"
+      }
+    },
+    {
+      "id": "wine-06-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "COPPER VALLEY",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "COPPER VALLEY"
+      }
+    },
+    {
+      "id": "wine-06-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "COPPER VALLEY"
+      }
+    },
+    {
+      "id": "wine-07-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "NORTH ORCHARD",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "NORTH ORCHARD"
+      }
+    },
+    {
+      "id": "wine-07-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "NORTH ORCHARD"
+      }
+    },
+    {
+      "id": "wine-08-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "RIVER BEND",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "RIVER BEND"
+      }
+    },
+    {
+      "id": "wine-08-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "RIVER BEND"
+      }
+    },
+    {
+      "id": "wine-09-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "GOLDEN COAST",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "GOLDEN COAST"
+      }
+    },
+    {
+      "id": "wine-09-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "GOLDEN COAST"
+      }
+    },
+    {
+      "id": "wine-10-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "MAPLE GROVE",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "MAPLE GROVE"
+      }
+    },
+    {
+      "id": "wine-10-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "MAPLE GROVE"
+      }
+    },
+    {
+      "id": "beer-01-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "OLD TOM DISTILLERY",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "OLD TOM DISTILLERY"
+      }
+    },
+    {
+      "id": "beer-01-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "OLD TOM DISTILLERY"
+      }
+    },
+    {
+      "id": "beer-02-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "CEDAR RIDGE",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "CEDAR RIDGE"
+      }
+    },
+    {
+      "id": "beer-02-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "CEDAR RIDGE"
+      }
+    },
+    {
+      "id": "beer-03-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "HARBOR LIGHT",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "HARBOR LIGHT"
+      }
+    },
+    {
+      "id": "beer-03-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "HARBOR LIGHT"
+      }
+    },
+    {
+      "id": "beer-04-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "SILVER FIELD",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "SILVER FIELD"
+      }
+    },
+    {
+      "id": "beer-04-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "SILVER FIELD"
+      }
+    },
+    {
+      "id": "beer-05-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "STONE’S THROW",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "STONE’S THROW"
+      }
+    },
+    {
+      "id": "beer-05-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "STONE’S THROW"
+      }
+    },
+    {
+      "id": "beer-06-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "COPPER VALLEY",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "COPPER VALLEY"
+      }
+    },
+    {
+      "id": "beer-06-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "COPPER VALLEY"
+      }
+    },
+    {
+      "id": "beer-07-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "NORTH ORCHARD",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "NORTH ORCHARD"
+      }
+    },
+    {
+      "id": "beer-07-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "NORTH ORCHARD"
+      }
+    },
+    {
+      "id": "beer-08-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "RIVER BEND",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "RIVER BEND"
+      }
+    },
+    {
+      "id": "beer-08-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "RIVER BEND"
+      }
+    },
+    {
+      "id": "beer-09-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "GOLDEN COAST",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "GOLDEN COAST"
+      }
+    },
+    {
+      "id": "beer-09-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "GOLDEN COAST"
+      }
+    },
+    {
+      "id": "beer-10-valid",
+      "brand": {
+        "field": "Brand name",
+        "status": "match",
+        "found": "MAPLE GROVE",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "MAPLE GROVE"
+      }
+    },
+    {
+      "id": "beer-10-brand",
+      "brand": {
+        "field": "Brand name",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "MAPLE GROVE"
+      }
+    }
+  ]
+}

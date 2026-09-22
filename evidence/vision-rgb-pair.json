@@ -1,0 +1,56 @@
+{
+  "prompt": "Inspect the GOVERNMENT WARNING heading. Is its font weight bold or regular? Judge stroke thickness, not uppercase or size. Reply only BOLD or REGULAR.",
+  "encoding": "base64 RGB PNG",
+  "max_tokens": 8,
+  "temperature": 0,
+  "calls": [
+    {
+      "expected": "bold",
+      "imageSha256": "672ab16c3f727a8f25a566d1e8631704a94b994c3368643dafac17a42ea24b5e",
+      "httpStatus": 200,
+      "milliseconds": 953,
+      "result": {
+        "result": {
+          "response": "BOLD.",
+          "tool_calls": [],
+          "usage": {
+            "prompt_tokens": 4847,
+            "completion_tokens": 4,
+            "total_tokens": 4851,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 21.623498343625002
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "expected": "regular",
+      "imageSha256": "a2f274a09367cb520aa2f5c6143b802a520d9de9472a469ed062032df12f1db1",
+      "httpStatus": 200,
+      "milliseconds": 854,
+      "result": {
+        "result": {
+          "response": "BOLD.",
+          "tool_calls": [],
+          "usage": {
+            "prompt_tokens": 4847,
+            "completion_tokens": 4,
+            "total_tokens": 4851,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 21.623498343625002
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    }
+  ]
+}

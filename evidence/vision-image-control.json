@@ -1,0 +1,26 @@
+{
+  "purpose": "Verify model actually reads RGB image content",
+  "prompt": "Transcribe the visible text in the image. Output only that text.",
+  "expected": "COPPER BRIDGE 729",
+  "imageSha256": "7d9068cb8f913c99e0a43f6bade5ff520fbb7716f8b3ab067487f3e872412c36",
+  "httpStatus": 200,
+  "milliseconds": 1400,
+  "result": {
+    "result": {
+      "response": "COPPER BRIDGE 729",
+      "tool_calls": [],
+      "usage": {
+        "prompt_tokens": 3227,
+        "completion_tokens": 8,
+        "total_tokens": 3235,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "neurons": 14.724517107125001
+      }
+    },
+    "success": true,
+    "errors": [],
+    "messages": []
+  }
+}
