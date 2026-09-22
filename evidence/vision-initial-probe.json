@@ -59,6 +59,104 @@
         "errors": [],
         "messages": []
       }
+    },
+    {
+      "file": "helvetica-40-bold.png",
+      "encoding": "base64",
+      "sha256": "b82cf47391855d1e3c3744ebb82029f53f8349f8ec42259810f852a5ebf78aae",
+      "milliseconds": 1218,
+      "httpStatus": 200,
+      "result": {
+        "result": {
+          "response": "The font weight of the GOVERNMENT WARNING heading in this image is **bold**.",
+          "tool_calls": [],
+          "usage": {
+            "prompt_tokens": 4906,
+            "completion_tokens": 19,
+            "total_tokens": 4925,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 22.806113317000005
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "file": "helvetica-40-regular.png",
+      "encoding": "base64",
+      "sha256": "752523c3d965047eadb8cf6be9c80caf601f3fc662b3e54ff48eaf6a027539e6",
+      "milliseconds": 1046,
+      "httpStatus": 200,
+      "result": {
+        "result": {
+          "response": "The font weight of the GOVERNMENT WARNING heading in this image is **bold**.",
+          "tool_calls": [],
+          "usage": {
+            "prompt_tokens": 4906,
+            "completion_tokens": 19,
+            "total_tokens": 4925,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 22.806113317000005
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "file": "helvetica-40-bold.png",
+      "encoding": "base64 with messages",
+      "milliseconds": 6168,
+      "httpStatus": 200,
+      "result": {
+        "result": {
+          "response": "The image displays a heading with the text \"GOVERNMENT WARNING\" in a large, uppercase font. The font weight of the heading is not bold, as it does not have a significantly thicker stroke than the surrounding text. The heading is likely a sans-serif font, which is commonly used for headings and titles. The font size is large, but this alone does not indicate boldness. The heading is not italicized or underlined, which might suggest a different font style. Overall, the heading appears to be a standard, non-bold font used for headings.\n\n*Answer*: {\"status\": \"not_bold\", \"reason\": \"The",
+          "tool_calls": [],
+          "usage": {
+            "prompt_tokens": 4920,
+            "completion_tokens": 128,
+            "total_tokens": 5048,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 29.570615117000003
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
+    },
+    {
+      "file": "helvetica-40-regular.png",
+      "encoding": "base64 with messages",
+      "milliseconds": 5657,
+      "httpStatus": 200,
+      "result": {
+        "result": {
+          "response": "The image displays a heading with the text \"GOVERNMENT WARNING\" in a large, uppercase font. The font weight of the heading is not bold, as it does not have a significantly thicker stroke than the surrounding text. The heading is likely a sans-serif font, which is commonly used for headings and titles. The font size is large, but this alone does not indicate boldness. The heading is not italicized or underlined, which might suggest a different emphasis. Overall, the heading appears to be a standard, non-bold font weight, likely used for clarity and readability rather than emphasis.\n\n*Answer*: {\"status\": \"not",
+          "tool_calls": [],
+          "usage": {
+            "prompt_tokens": 4920,
+            "completion_tokens": 128,
+            "total_tokens": 5048,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "neurons": 29.570615117000003
+          }
+        },
+        "success": true,
+        "errors": [],
+        "messages": []
+      }
     }
   ]
 }
