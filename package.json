@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "test": "node --test",
+    "predev": "node scripts/copy-ocr-assets.js",
     "dev": "vite",
     "build": "node scripts/copy-ocr-assets.js && vite build",
     "preview": "vite preview"
