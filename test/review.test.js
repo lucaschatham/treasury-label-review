@@ -169,3 +169,22 @@ test("warning tolerates a dropped final OCR period but never a changed final wor
     "review",
   );
 });
+
+test("warning rejects changed final punctuation and joined text", () => {
+  for (const ending of [
+    "problems!",
+    "problems,",
+    "problems;",
+    "problems.Next",
+  ]) {
+    const result = reviewLabel(
+      REQUIRED_WARNING.replace("problems.", ending),
+      application,
+    );
+    assert.equal(
+      result.find((x) => x.field === "Government warning").status,
+      "review",
+      ending,
+    );
+  }
+});

@@ -168,7 +168,7 @@ export function reviewLabel(rawText, application) {
   const warningFound =
     warningIndex >= 0 &&
     observedBody.startsWith(body) &&
-    !/[\p{L}\p{N}]/u.test(observedBody.charAt(body.length));
+    /^(?:\.(?=\s|$)|(?=\s|$))/.test(observedBody.slice(body.length));
   results.push(
     entry(
       "Government warning",
