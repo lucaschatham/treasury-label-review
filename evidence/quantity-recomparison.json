@@ -1,0 +1,805 @@
+{
+  "scope": "Recomparison of recorded OCR text with fluid-ounce fix; not fresh OCR or an independent test.",
+  "results": [
+    {
+      "id": "beer-01-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-01-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-01-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-01-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "mismatch",
+        "found": "473.176473 mL"
+      }
+    },
+    {
+      "id": "beer-01-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-01-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-01-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-01-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-01-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-01-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-02-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-02-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-02-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-02-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "mismatch",
+        "found": "473.176473 mL"
+      }
+    },
+    {
+      "id": "beer-02-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-02-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-02-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-02-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-02-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-02-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-03-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-03-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-04-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-04-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-04-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-04-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "mismatch",
+        "found": "473.176473 mL"
+      }
+    },
+    {
+      "id": "beer-04-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-04-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-04-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-04-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-04-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-04-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-05-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-05-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-05-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-05-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-05-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-05-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-05-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-05-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-05-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-05-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-06-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-06-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-06-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-06-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "mismatch",
+        "found": "473.176473 mL"
+      }
+    },
+    {
+      "id": "beer-06-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-06-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-06-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-06-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-06-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-06-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-07-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-07-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-07-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-07-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "mismatch",
+        "found": "473.176473 mL"
+      }
+    },
+    {
+      "id": "beer-07-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-07-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-07-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-07-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-07-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-07-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-08-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-08-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-09-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-09-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-09-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-09-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "mismatch",
+        "found": "473.176473 mL"
+      }
+    },
+    {
+      "id": "beer-09-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-09-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-09-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-09-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-09-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-09-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-10-valid",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-10-brand",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-10-abv",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-10-volume",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-10-warning-word",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-10-warning-case",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-10-warning-weight",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-10-missing-warning",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    },
+    {
+      "id": "beer-10-blur",
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found"
+      }
+    },
+    {
+      "id": "beer-10-glare",
+      "finding": {
+        "field": "Net contents",
+        "status": "match",
+        "found": "354.88235475 mL"
+      }
+    }
+  ]
+}
