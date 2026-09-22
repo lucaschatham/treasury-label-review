@@ -117,15 +117,32 @@ function alcoholFinding(rawText, expected) {
   );
 }
 
-export function reviewLabel(rawText, application) {
+export function reviewLabel(rawText, application, layout = null) {
+  rawText = typeof rawText === "string" ? rawText : "";
   const text = compact(rawText);
-  // A producer's name can contain the expected brand even when the actual brand differs.
-  // Require a standalone OCR line for an automatic brand match; other layouts get review.
-  const brandLine = rawText
-    .split(/\r?\n/)
-    .find((line) => normalize(line) === normalize(application.brand));
+  // Browser OCR supplies an independently extracted prominent brand region.
+  // Text-only callers can establish a match only at the start of the artwork.
+  const lines = rawText.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+  const wantedBrand = normalize(application.brand);
+  let brandLine = layout?.brandText || "";
+  if (!layout) {
+    let candidate = "";
+    for (const line of lines) {
+      candidate = compact(`${candidate} ${line}`);
+      if (normalize(candidate) === wantedBrand) { brandLine = candidate; break; }
+      if (!wantedBrand.startsWith(`${normalize(candidate)} `)) break;
+    }
+  }
   const results = [
-    textFinding(brandLine || "", "Brand name", application.brand),
+    entry(
+      "Brand name",
+      brandLine && normalize(brandLine) === wantedBrand ? "match" : "review",
+      brandLine || "Not confidently located",
+      brandLine && normalize(brandLine) === wantedBrand
+        ? "Observed brand matches after case and punctuation normalization."
+        : "The prominent brand region differs or is unclear. Inspect the artwork and application.",
+      application.brand,
+    ),
     textFinding(text, "Class / type", application.type),
     alcoholFinding(rawText, application.abv),
   ];
@@ -183,11 +200,10 @@ export function reviewLabel(rawText, application) {
 
   const heading = "GOVERNMENT WARNING:";
   const warningIndex = text.indexOf(heading);
-  // OCR can drop the final full stop. Preserve every word and internal punctuation.
+  // Preserve every word and punctuation mark, including the final period.
   const body = REQUIRED_WARNING.slice(heading.length)
     .trim()
-    .toLowerCase()
-    .replace(/\.$/, "");
+    .toLowerCase();
   const observedBody = text
     .slice(warningIndex + heading.length)
     .trimStart()
@@ -195,7 +211,7 @@ export function reviewLabel(rawText, application) {
   const warningFound =
     warningIndex >= 0 &&
     observedBody.startsWith(body) &&
-    /^(?:\.(?=\s|$)|(?=\s|$))/.test(observedBody.slice(body.length));
+    /^(?:\s|$)/.test(observedBody.slice(body.length));
   results.push(
     entry(
       "Government warning",

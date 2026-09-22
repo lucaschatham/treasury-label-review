@@ -155,11 +155,11 @@ test("checks producer and imported country when provided", () => {
   );
 });
 
-test("warning tolerates a dropped final OCR period but never a changed final word", () => {
+test("warning requires the final period and rejects a changed final word", () => {
   const warning = (text) =>
     reviewLabel(text, application).find((x) => x.field === "Government warning")
       .status;
-  assert.equal(warning(REQUIRED_WARNING.slice(0, -1)), "match");
+  assert.equal(warning(REQUIRED_WARNING.slice(0, -1)), "review");
   assert.equal(
     warning(REQUIRED_WARNING.replace("problems.", "problem.")),
     "review",
@@ -219,4 +219,49 @@ test("allows whole-milliliter conversion rounding but not different quantities",
   assert.equal(quantity('12 fl oz', '356 mL'), 'mismatch');
   assert.equal(quantity('354 mL', '355 mL'), 'mismatch');
   assert.equal(quantity('12 fl oz / 356 mL', '355 mL'), 'review');
+});
+
+test("matches complete adjacent brand lines while preserving OCR spelling", () => {
+  const result = reviewLabel("STONE’S\n\nTHROW\n\nKentucky Straight Bourbon Whiskey", application);
+  assert.equal(result[0].status, 'match');
+  assert.equal(result[0].found, 'STONE’S THROW');
+});
+
+test("does not match split producer references or incomplete brand lines", () => {
+  for (const text of [
+    "OTHER BRAND\nProduced by\nSTONE’S\nTHROW\nKentucky",
+    "OTHER BRAND\nProduced for\nSTONE’S\nTHROW",
+    "OTHER BRAND\n750 mL Bottled by\nSTONE’S\nTHROW",
+    "OTHER BRAND\nVinted and bottled by\nSTONE’S\nTHROW",
+    "OTHER BRAND\nCellared and bottled by\nSTONE’S\nTHROW",
+    "OTHER BRAND\nDistilled, blended and bottled for\nSTONE’S\nTHROW",
+    "OTHER BRAND\nProduced and bottled for\nSTONE’S\nTHROW",
+    "OTHER BRAND\nBottled by STONE’S\nTHROW, Kentucky",
+    "MILESTONE’S\nTHROW",
+    "STONE’S\nSPECIAL\nTHROW",
+  ]) assert.equal(reviewLabel(text, application)[0].status, 'review', text);
+});
+
+test("keeps occupational brand words and blocks generic by/for declarations", () => {
+  for (const brand of ['THE BOTTLER', 'IMPORTER NO. 5']) {
+    assert.equal(reviewLabel(brand, { ...application, brand })[0].status, 'match');
+  }
+  for (const declaration of ['Made by', 'Marketed by', 'Crafted for:', 'Crafted by Example Co', 'Producer:']) {
+    assert.equal(reviewLabel(`OTHER BRAND\n${declaration}\nSTONE’S\nTHROW`, application)[0].status, 'review');
+  }
+});
+
+test('shows independently observed brand evidence when it differs', () => {
+ const finding=reviewLabel("DIFFERENT BRAND\nProduced by STONE’S THROW",application,{brandText:'DIFFERENT BRAND'})[0];
+ assert.equal(finding.status,'review');
+ assert.equal(finding.found,'DIFFERENT BRAND');
+ assert.equal(reviewLabel("STONE’S THROW",application,{brandText:''})[0].status,'review');
+});
+
+test('blank or absent OCR text yields findings without accidental exceptions', () => {
+ for (const text of [null, undefined, '', '   \n']) {
+  const result = reviewLabel(text, application);
+  assert.equal(result.length, 8);
+  assert.ok(result.every(item => item.status === 'review' || item.status === 'skip'));
+ }
 });

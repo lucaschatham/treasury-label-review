@@ -1,0 +1,18 @@
+{
+  "initialFalseBoldPasses": [
+    "spirits-05-warning-weight"
+  ],
+  "freshGuardedFalseBoldPasses": [],
+  "freshBoldPasses": [
+    "Arial-44-bold",
+    "Georgia-44-bold",
+    "Verdana-28-bold",
+    "Verdana-44-bold"
+  ],
+  "freshUnresolved": [
+    "Arial-28-bold",
+    "Georgia-28-bold",
+    "Trebuchet-MS-28-bold",
+    "Trebuchet-MS-44-bold"
+  ]
+}

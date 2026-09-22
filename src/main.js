@@ -1,3 +1,5 @@
+import { reviewAppearance } from "./appearance.js";
+import { readLayout, comparisonText } from "./layout.js";
 import { createWorker } from "tesseract.js";
 import { reviewSummary } from "./summary.js";
 import { reviewLabel, REQUIRED_WARNING } from "./review.js";
@@ -108,7 +110,7 @@ function getWorker() {
         // Sparse-text segmentation retains large brand headings alongside small warning text.
         await worker.setParameters({ tessedit_pageseg_mode: "11" });
         engineStatus.textContent =
-          "Local OCR ready. Images are never uploaded.";
+          "Local OCR ready. Warning heading crops use cloud verification.";
         return worker;
       })
       .catch((error) => {
@@ -136,7 +138,7 @@ function renderResult(file, text, findings, seconds, confidence) {
   const card = addText(results, "article", "", "result-card");
   const head = addText(card, "div", "", "result-head");
   addText(head, "h3", file.name);
-  addText(head, "span", `${seconds.toFixed(1)} s to read`, "time");
+  addText(head, "span", `${seconds.toFixed(1)} s to review`, "time");
   const summary = addText(card, "p", "", "summary attention");
   const updateSummary = () => {
     const { pending: count } = reviewSummary(findings);
@@ -181,6 +183,14 @@ function renderResult(file, text, findings, seconds, confidence) {
       addText(row, "small", `Application: ${finding.expected}`, "expected");
     const found = addText(row, "span", finding.found, "found");
     addText(row, "small", finding.detail);
+    if (finding.crop) {
+      const cropDetails = addText(row, "details", "");
+      addText(cropDetails, "summary", "Inspect analyzed heading crop");
+      const cropImage = addText(cropDetails, "img", "");
+      cropImage.src = finding.crop;
+      cropImage.alt = "Warning heading sent for automated weight verification";
+      cropImage.style.maxWidth = "100%";
+    }
     if (finding.field === "Warning appearance") {
       const label = addText(row, "label", "", "check-label");
       const checkbox = document.createElement("input");
@@ -194,10 +204,9 @@ function renderResult(file, text, findings, seconds, confidence) {
       checkbox.addEventListener("change", () => {
         // Human observations are useful, but cannot establish automated compliance.
         finding.humanConfirmed = checkbox.checked;
-        badge.textContent = "REVIEW";
         found.textContent = checkbox.checked
-          ? "Reviewer confirmed appearance. Automated verification remains unresolved."
-          : "Visual confirmation required";
+          ? `${finding.found}. Reviewer also confirmed appearance; automated status is unchanged.`
+          : finding.found;
         updateSummary();
       });
     }
@@ -299,11 +308,16 @@ form.addEventListener("submit", async (event) => {
       const started = performance.now();
       try {
         const canvas = await prepareImage(file);
-        const { data } = await worker.recognize(canvas);
+        const { data } = await worker.recognize(canvas, {}, { text: true, blocks: true });
+        const layout = readLayout(data.blocks);
+        const text = comparisonText(data, layout);
+        const findings = reviewLabel(text, expected, layout.lines.length ? layout : null);
+        setStatus(`Checking warning appearance: ${file.name}`, "busy");
+        findings[findings.findIndex(item => item.field === "Warning appearance")] = await reviewAppearance(canvas, data.blocks);
         renderResult(
           file,
-          data.text,
-          reviewLabel(data.text, expected),
+          text,
+          findings,
           (performance.now() - started) / 1000,
           data.confidence,
         );
@@ -327,7 +341,7 @@ form.addEventListener("submit", async (event) => {
         ? ""
         : ` First result: ${firstResultSeconds.toFixed(1)} s from click.`;
     setStatus(
-      `${stopRequested ? "Stopped" : "Finished"}: ${completed} reviewed, ${failed} failed, ${files.length - completed - failed} remaining. Total: ${total.toFixed(1)} s.${timing} Inspect exceptions and confirm warning appearance.`,
+      `${stopRequested ? "Stopped" : "Finished"}: ${completed} reviewed, ${failed} failed, ${files.length - completed - failed} remaining. Total: ${total.toFixed(1)} s.${timing} Inspect exceptions and make your final decision.`,
       failed ? "error" : "done",
     );
   } catch (error) {

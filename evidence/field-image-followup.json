@@ -1,0 +1,159 @@
+{
+  "scope": "Actual generated full-image OCR and current deterministic field comparisons; excludes browser and cloud appearance.",
+  "results": [
+    {
+      "id": "type-different",
+      "field": "Class / type",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Class / type",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "Kentucky Straight Bourbon Whiskey"
+      },
+      "text": "OLD TOM DISTILLERY\nLondon Dry Gin\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Old Tom Distillery, Bardstown, KY\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "type-absent",
+      "field": "Class / type",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Class / type",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "Kentucky Straight Bourbon Whiskey"
+      },
+      "text": "OLD TOM DISTILLERY\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Old Tom Distillery, Bardstown, KY\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "producer-different",
+      "field": "Producer / address",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Producer / address",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "Old Tom Distillery, Bardstown, KY"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Another Company, Boston, MA\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "producer-absent",
+      "field": "Producer / address",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Producer / address",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "Old Tom Distillery, Bardstown, KY"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n750 mL\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "country-different",
+      "field": "Country of origin",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Country of origin",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "France"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Old Tom Distillery, Bardstown, KY\nProduct of Canada\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "country-absent",
+      "field": "Country of origin",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Country of origin",
+        "status": "review",
+        "found": "Not confidently located",
+        "detail": "Inspect the artwork and extracted text; this may be an OCR error or a different value.",
+        "expected": "France"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Old Tom Distillery, Bardstown, KY\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "country-correct",
+      "field": "Country of origin",
+      "expected": "match",
+      "pass": true,
+      "finding": {
+        "field": "Country of origin",
+        "status": "match",
+        "found": "France",
+        "detail": "Text found after case and punctuation normalization.",
+        "expected": "France"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Old Tom Distillery, Bardstown, KY\nProduct of France\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "alcohol-conflict",
+      "field": "Alcohol content",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Alcohol content",
+        "status": "review",
+        "found": "45%, 40%",
+        "detail": "Multiple different ABVs were read. Inspect the artwork; one matching value is insufficient.",
+        "expected": "45%"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Old Tom Distillery, Bardstown, KY\n40% ABV\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "quantity-conflict",
+      "field": "Net contents",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "750 mL, 700 mL",
+        "detail": "Confirm quantity and units visually; the text is missing, ambiguous, or uses unsupported units.",
+        "expected": "750 mL"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Old Tom Distillery, Bardstown, KY\n700 mL\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "unsupported-quantity",
+      "field": "Net contents",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Net contents",
+        "status": "review",
+        "found": "Not found",
+        "detail": "Confirm quantity and units visually; the text is missing, ambiguous, or uses unsupported units.",
+        "expected": "750 mL"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n25 oz\nProduced by Old Tom Distillery, Bardstown, KY\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    },
+    {
+      "id": "abv-exception",
+      "field": "Alcohol content",
+      "expected": "review",
+      "pass": true,
+      "finding": {
+        "field": "Alcohol content",
+        "status": "review",
+        "found": "45%",
+        "detail": "ABV was not supplied. Confirm the beverage-specific exception before proceeding.",
+        "expected": "Not supplied"
+      },
+      "text": "OLD TOM DISTILLERY\nKentucky Straight Bourbon Whiskey\n45% Alc./Vol. (90 Proof)\n750 mL\nProduced by Old Tom Distillery, Bardstown, KY\nGOVERNMENT WARNING:\n(1) According to the Surgeon General, women should not drink alcoholic\nbeverages during pregnancy because of the risk of birth defects. (2)\nConsumption of alcoholic beverages impairs your ability to drive a car or\noperate machinery, and may cause health problems.\nSYNTHETIC TEST ARTWORK. NOT A COMMERCIAL PRODUCT."
+    }
+  ]
+}

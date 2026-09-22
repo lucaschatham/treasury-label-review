@@ -4,3 +4,8 @@ public/ocr/
 .vercel/
 .DS_Store
 test/fixtures/generated/
+
+.env*
+!.env.example
+worker/.wrangler/
+worker/.dev.vars

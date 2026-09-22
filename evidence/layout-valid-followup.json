@@ -1,0 +1,1385 @@
+{
+  "scope": "Fresh OCR regression after paragraph-gap fix.",
+  "results": [
+    {
+      "id": "spirits-01-valid",
+      "brand": "OLD TOM DISTILLERY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-02-valid",
+      "brand": "CEDAR RIDGE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-03-valid",
+      "brand": "HARBOR LIGHT",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-04-valid",
+      "brand": "SILVER FIELD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-05-valid",
+      "brand": "STONE’S THROW",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-06-valid",
+      "brand": "COPPER VALLEY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-07-valid",
+      "brand": "NORTH ORCHARD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-08-valid",
+      "brand": "RIVER BEND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-09-valid",
+      "brand": "GOLDEN COAST",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "spirits-10-valid",
+      "brand": "MAPLE GROVE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-01-valid",
+      "brand": "OLD TOM DISTILLERY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-02-valid",
+      "brand": "CEDAR RIDGE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-03-valid",
+      "brand": "HARBOR LIGHT",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-04-valid",
+      "brand": "SILVER FIELD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-05-valid",
+      "brand": "STONE’S THROW",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-06-valid",
+      "brand": "COPPER VALLEY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-07-valid",
+      "brand": "NORTH ORCHARD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-08-valid",
+      "brand": "RIVER BEND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-09-valid",
+      "brand": "GOLDEN COAST",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "wine-10-valid",
+      "brand": "MAPLE GROVE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "Cabernet Sauvignon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "13.5%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-01-valid",
+      "brand": "OLD TOM DISTILLERY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "OLD TOM DISTILLERY, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-02-valid",
+      "brand": "CEDAR RIDGE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "CEDAR RIDGE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "CEDAR RIDGE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-03-valid",
+      "brand": "HARBOR LIGHT",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "HARBOR LIGHT"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "review",
+          "found": "Not found"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "HARBOR LIGHT, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-04-valid",
+      "brand": "SILVER FIELD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "SILVER FIELD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "SILVER FIELD, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-05-valid",
+      "brand": "STONE’S THROW",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "STONE’S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "STONE'S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-06-valid",
+      "brand": "COPPER VALLEY",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "COPPER VALLEY"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "COPPER VALLEY, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-07-valid",
+      "brand": "NORTH ORCHARD",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "NORTH ORCHARD"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "NORTH ORCHARD, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-08-valid",
+      "brand": "RIVER BEND",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "RIVER BEND"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "review",
+          "found": "Not found"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "RIVER BEND, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-09-valid",
+      "brand": "GOLDEN COAST",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "GOLDEN COAST"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "GOLDEN COAST, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    },
+    {
+      "id": "beer-10-valid",
+      "brand": "MAPLE GROVE",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match",
+          "found": "MAPLE GROVE"
+        },
+        {
+          "field": "Class / type",
+          "status": "match",
+          "found": "India Pale Ale"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match",
+          "found": "6%"
+        },
+        {
+          "field": "Net contents",
+          "status": "match",
+          "found": "354.88235475 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match",
+          "found": "MAPLE GROVE, Bordeaux, France"
+        },
+        {
+          "field": "Country of origin",
+          "status": "match",
+          "found": "France"
+        },
+        {
+          "field": "Government warning",
+          "status": "match",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "review",
+          "found": "Visual confirmation required"
+        }
+      ]
+    }
+  ]
+}

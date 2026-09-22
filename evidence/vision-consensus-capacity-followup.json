@@ -1,0 +1,180 @@
+{
+  "method": "Require both models to say BOLD; any REGULAR rejects; all other combinations remain UNCERTAIN. Fixed before these unseen font tests.",
+  "models": [
+    "@cf/qwen/qwen3.8-27b",
+    "@cf/google/gemma-4-26b-a4b-it"
+  ],
+  "prompt": "Is the GOVERNMENT WARNING heading printed in bold or regular font weight? Do not confuse capital letters or larger size with bold strokes. Return only BOLD, REGULAR, or UNCERTAIN.",
+  "calls": [
+    {
+      "id": "Trebuchet-MS-Bold-28",
+      "expected": "BOLD",
+      "observed": "BOLD",
+      "correct": true,
+      "milliseconds": 1133,
+      "imageSha256": "90abbd2a5deefd9ad997904b247ebbddd864eab5b15d0b6efb2b71e37f980ca6",
+      "results": [
+        {
+          "model": "@cf/qwen/qwen3.8-27b",
+          "observed": "BOLD",
+          "httpStatus": 200,
+          "milliseconds": 1127,
+          "result": {
+            "result": {
+              "choices": [
+                {
+                  "finish_reason": "stop",
+                  "index": 0,
+                  "logprobs": null,
+                  "message": {
+                    "annotations": null,
+                    "audio": null,
+                    "content": "BOLD",
+                    "function_call": null,
+                    "reasoning": null,
+                    "refusal": null,
+                    "role": "assistant"
+                  },
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              ],
+              "created": 1790117297,
+              "ec_transfer_params": null,
+              "id": "chatcmpl-cd6c24f1-ed94-4918-8af8-d6782be180bd",
+              "kv_transfer_params": null,
+              "metrics": null,
+              "model": "@cf/qwen/qwen3.8-27b",
+              "object": "chat.completion",
+              "prompt_logprobs": null,
+              "prompt_text": null,
+              "prompt_token_ids": null,
+              "service_tier": null,
+              "usage": {
+                "prompt_tokens": 358,
+                "completion_tokens": 3,
+                "total_tokens": 361,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "neurons": 15.518180847167969
+              }
+            },
+            "success": true,
+            "errors": [],
+            "messages": []
+          }
+        },
+        {
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "observed": "BOLD",
+          "httpStatus": 200,
+          "milliseconds": 1039,
+          "result": {
+            "result": {
+              "choices": [
+                {
+                  "finish_reason": "stop",
+                  "index": 0,
+                  "logprobs": null,
+                  "message": {
+                    "annotations": null,
+                    "audio": null,
+                    "content": "BOLD",
+                    "function_call": null,
+                    "reasoning": null,
+                    "refusal": null,
+                    "role": "assistant"
+                  },
+                  "routed_experts": null,
+                  "stop_reason": 106,
+                  "token_ids": null
+                }
+              ],
+              "created": 1790117297,
+              "ec_transfer_params": null,
+              "id": "chatcmpl-7f4bd01e-2bc9-494b-a2b4-cffe031f0ebe",
+              "kv_transfer_params": null,
+              "metrics": null,
+              "model": "@cf/google/gemma-4-26b-a4b-it",
+              "object": "chat.completion",
+              "prompt_logprobs": null,
+              "prompt_text": null,
+              "prompt_token_ids": null,
+              "service_tier": null,
+              "usage": {
+                "prompt_tokens": 305,
+                "completion_tokens": 2,
+                "total_tokens": 307,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "neurons": 2.827272653579712
+              }
+            },
+            "success": true,
+            "errors": [],
+            "messages": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "Trebuchet-MS-Bold-44",
+      "expected": "BOLD",
+      "observed": "UNCERTAIN",
+      "correct": false,
+      "milliseconds": 10126,
+      "imageSha256": "ab2dc645c1b0986b1e678dac98d13bc3089d19acf9400cc3f8dd33e6bec75a07",
+      "results": [
+        {
+          "model": "@cf/qwen/qwen3.8-27b",
+          "observed": "",
+          "httpStatus": null,
+          "milliseconds": 10125,
+          "result": {
+            "error": "The read operation timed out"
+          }
+        },
+        {
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "observed": "BOLD",
+          "httpStatus": 200,
+          "milliseconds": 977,
+          "result": {
+            "result": {
+              "choices": [
+                {
+                  "finish_reason": "stop",
+                  "index": 0,
+                  "logprobs": null,
+                  "message": {
+                    "content": "BOLD",
+                    "role": "assistant"
+                  }
+                }
+              ],
+              "created": 1790117298,
+              "id": "3fa06dec0b2d4665aed7b5bdf98e9532",
+              "model": "@cf/google/gemma-4-26b-a4b-it-external",
+              "object": "chat.completion",
+              "usage": {
+                "prompt_tokens": 293,
+                "completion_tokens": 2,
+                "total_tokens": 295,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "neurons": 2.718181610107422
+              }
+            },
+            "success": true,
+            "errors": [],
+            "messages": []
+          }
+        }
+      ]
+    }
+  ]
+}

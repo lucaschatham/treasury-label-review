@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-22",
+  "environment": "Codex in-app browser, macOS arm64, Vite http://127.0.0.1:5174, OCR already initialized, live Cloudflare Worker",
+  "source": "Uncommitted integrated implementation; exact release source recorded separately",
+  "runs": [
+    {
+      "file": "previous public/samples/old-tom.png, preserved at test/fixtures/regressions/old-tom-ocr-dropped-period.png",
+      "secondsFromClick": 5.0,
+      "warning": "review: final OCR period missing",
+      "appearance": "review: inference deadline reached"
+    },
+    {
+      "file": "public/samples/old-tom.png (existing spirits-01-valid corpus artwork)",
+      "secondsFromClick": 1.9,
+      "fields": "all applicable matches; country domestic skip",
+      "appearance": "match: two models plus stroke guard",
+      "summary": "Checks complete. Ready for your final decision."
+    }
+  ],
+  "limits": "Two observations, not a latency distribution or real-world accuracy estimate."
+}

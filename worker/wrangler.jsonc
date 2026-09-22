@@ -1,0 +1,10 @@
+{
+  "name": "treasury-warning-appearance",
+  "main": "index.js",
+  "compatibility_date": "2026-09-22",
+  "account_id": "01ebc0c856dca30271b72bd37e8d9934",
+  "workers_dev": true,
+  "ai": {"binding": "AI"},
+  "ratelimits": [{"name":"RATE_LIMITER","namespace_id":"1001","simple":{"limit":60,"period":60}}],
+  "observability": {"enabled":false}
+}

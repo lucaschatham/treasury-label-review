@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-22",
+  "method": "Source files copied using git ls-files --cached --others --exclude-standard into a fresh temp directory; no node_modules or .env.local copied",
+  "runtime": "Node 26.5.0, npm 11.17.0, macOS arm64",
+  "commands": [
+    "npm ci --cache /tmp/treasury-npm-cache",
+    "npm test",
+    "npm run build"
+  ],
+  "results": {
+    "install": "30 packages; zero audit vulnerabilities",
+    "tests": "46 passed, zero failed",
+    "build": "passed; index-DzhfoUYj.js, index-xF3xszJx.css"
+  },
+  "sourceSha256": {
+    "src/main.js": "baf50cf2700f175430bd0d3c6b27753b7a3873df1124267c164c22c5042a15ff",
+    "src/review.js": "91b5e3d89342c3a362d73fb592f98e7b64fb25136a5eafdcae4f1af932e948fb",
+    "src/layout.js": "0c3100860ef7039179e9108dcfb16164016105ed77912e97cfc170dd7b9c075a",
+    "src/appearance.js": "99a13284faa5a571dd9aa64edd45c855163de56ba1dcce600fbc1c6462ed7adf",
+    "worker/index.js": "764dcd1fd4797f3f80bd568a33426d457ebcf67657e9e3716e7a0b3209c240b2",
+    "worker/vision.js": "16c1d5f2922a1152f7a235ca5cfa3fcb480c1995e36c610c2e8fb4d8e199f9c5",
+    "api/warning-appearance.js": "6e9207b822781f8440c5b1adda988c0cb89f823df8871383bd3e1d9e17356b95",
+    "vite.config.js": "38ab0ec4d267ef414d5ff0fe7a5dcb20dea6e50ccd53451a12403d9feb06f7e0",
+    "package-lock.json": "eb19c9d87582474cec00e6f81c7c2b4ecad66b93c53d64e1d591c6a308c541e9"
+  },
+  "review": {
+    "command": "/Users/HQ/.agents/skills/autoreview/scripts/autoreview --mode local --output /tmp/treasury-release-review.md --json-output /tmp/treasury-release-review.json",
+    "exitCode": 0,
+    "actionableFindings": 0,
+    "priorFindingsResolved": [
+      "null text and blocks",
+      "partial geometry lost OCR words"
+    ],
+    "dependencyCorrection": "Tesseract 7 worker merges text:true defaults; explicit outputs retained for clarity."
+  }
+}
