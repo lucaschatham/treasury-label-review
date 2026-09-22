@@ -1,0 +1,128 @@
+{
+  "recordedAt": "2026-09-22T20:18:42.231Z",
+  "releaseBaseline": "a79989d8aee671edfd2e16c462ed82c0f382b0fe",
+  "corpusManifestSha256": "7bd929480ade87b234fd8bcf843722880905c9bee5465dfcafb26c6cdd6b2825",
+  "labels": 300,
+  "typographyCrops": 40,
+  "totalImageBytes": 92154471,
+  "allFileHashesVerified": true,
+  "renderer": {
+    "node": "v26.5.0",
+    "imagemagick": "Version: ImageMagick 7.1.1-47 Q16-HDRI aarch64 22763 https://imagemagick.org",
+    "fontArtifacts": [
+      {
+        "name": "Helvetica",
+        "faceIndex": "0",
+        "glyphs": {
+          "path": "/System/Library/Fonts/Helvetica.ttc",
+          "sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3"
+        },
+        "metrics": null
+      },
+      {
+        "name": "Helvetica-Bold",
+        "faceIndex": "1",
+        "glyphs": {
+          "path": "/System/Library/Fonts/Helvetica.ttc",
+          "sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3"
+        },
+        "metrics": null
+      },
+      {
+        "name": "Times-Roman",
+        "faceIndex": "0",
+        "glyphs": {
+          "path": "/System/Library/Fonts/Times.ttc",
+          "sha256": "79d8f1b02824796dda7234574826455c6cc62e898b2728c834859baad3332727"
+        },
+        "metrics": null
+      },
+      {
+        "name": "Times-Bold",
+        "faceIndex": "1",
+        "glyphs": {
+          "path": "/System/Library/Fonts/Times.ttc",
+          "sha256": "79d8f1b02824796dda7234574826455c6cc62e898b2728c834859baad3332727"
+        },
+        "metrics": null
+      },
+      {
+        "name": "Courier",
+        "faceIndex": "0",
+        "glyphs": {
+          "path": "/System/Library/Fonts/Courier.ttc",
+          "sha256": "76cdad2ba4e8774223ed6184f530570261f9f7fb9beb5c68368e09234c0273ec"
+        },
+        "metrics": null
+      },
+      {
+        "name": "Courier-Bold",
+        "faceIndex": "1",
+        "glyphs": {
+          "path": "/System/Library/Fonts/Courier.ttc",
+          "sha256": "76cdad2ba4e8774223ed6184f530570261f9f7fb9beb5c68368e09234c0273ec"
+        },
+        "metrics": null
+      },
+      {
+        "name": "Palatino-Roman",
+        "faceIndex": "0",
+        "glyphs": {
+          "path": "/opt/homebrew/share/ghostscript/fonts/p052003l.pfb",
+          "sha256": "1df1487b07b0c6f6c03c39d8c30b7ffc0fdc9de1f19749f44833ed972824f730"
+        },
+        "metrics": {
+          "path": "/opt/homebrew/share/ghostscript/fonts/p052003l.afm",
+          "sha256": "ec0b491e1d4f5969c15a9ed75751fdd5cc755a2ebdbfbfc0c24099482af0c8ae"
+        }
+      },
+      {
+        "name": "Palatino-Bold",
+        "faceIndex": "2",
+        "glyphs": {
+          "path": "/System/Library/Fonts/Palatino.ttc",
+          "sha256": "6fe36c18e44734ce15e939083445adf81a0fd87f90e9eed0ceadedb935682657"
+        },
+        "metrics": null
+      },
+      {
+        "name": "NewCenturySchlbk-Roman",
+        "faceIndex": "0",
+        "glyphs": {
+          "path": "/opt/homebrew/share/ghostscript/fonts/c059013l.pfb",
+          "sha256": "41f5b2d8a6526458e5440f8585a2f3ff99bbd6e14848078ed81f946a2bc04670"
+        },
+        "metrics": {
+          "path": "/opt/homebrew/share/ghostscript/fonts/c059013l.afm",
+          "sha256": "bdf1592609a52a29ca70ce7609c50fdbc5c5b32a5d637494614295d0c7e3fc8a"
+        }
+      },
+      {
+        "name": "NewCenturySchlbk-Bold",
+        "faceIndex": "0",
+        "glyphs": {
+          "path": "/opt/homebrew/share/ghostscript/fonts/c059016l.pfb",
+          "sha256": "d09494f82881d160e136773cff2594b4c4e78c565e86c2e422e6ce1cefcc2341"
+        },
+        "metrics": {
+          "path": "/opt/homebrew/share/ghostscript/fonts/c059016l.afm",
+          "sha256": "3d4c9cc769eff39aa3bef99e22a62707f2575d40601c2f7c31d48a87f7b0dae8"
+        }
+      }
+    ]
+  },
+  "visualInspection": [
+    "palatino-40-regular",
+    "palatino-40-bold",
+    "spirits-01-valid",
+    "beer-08-valid"
+  ],
+  "cloudRequests": 0,
+  "gate0": "BLOCKED",
+  "reason": "Cloudflare OAuth refresh returned 400 Bad Request; browser sign-in required; OAuth flow timed out.",
+  "generatorSources": {
+    "scripts/lib/corpus.js": "94e27e9c899f544a9fbe11d8592759ed30863a027445e93e183010f496081f86",
+    "scripts/generate-corpus.js": "f65e24e3ffebe942649423c3ffda3ddcc826b69f11e1cc608862170b83fb1740"
+  },
+  "noUnlistedPngFiles": true
+}

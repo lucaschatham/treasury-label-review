@@ -3,3 +3,4 @@ dist/
 public/ocr/
 .vercel/
 .DS_Store
+test/fixtures/generated/
