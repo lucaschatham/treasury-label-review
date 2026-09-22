@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-22",
+  "implementationCommit": "57ff3b58b3a408c3c52a77287bcf627df4ef3f70",
+  "project": "treasury-label-review",
+  "repository": "https://github.com/lucaschatham/treasury-label-review",
+  "publicUrl": "https://label-review-7b3.lucaschatham.com/",
+  "preview": {
+    "id": "dpl_4xT7GdHBBkqXGqP8QVbd2obyeLbr",
+    "url": "https://treasury-label-review-3148u0309-chathamworks-6954s-projects.vercel.app/",
+    "access": "User-authenticated Chrome. Anonymous preview not tested because Vercel authentication remained enabled.",
+    "sample": {
+      "seconds": 6.6,
+      "allApplicableChecks": "MATCH"
+    },
+    "mixedCsvBatch": {
+      "files": [
+        "old-tom.png",
+        "wrong-abv.png",
+        "wrong-warning.png"
+      ],
+      "reviewed": 3,
+      "failed": 0,
+      "remaining": 0,
+      "seconds": 4.4,
+      "perLabelSeconds": [
+        1.9,
+        1.9,
+        0.6
+      ],
+      "expectedResults": "Correct sample all applicable MATCH; wrong ABV 44% vs 45% MISMATCH; title-case warning wording and appearance REVIEW."
+    },
+    "regularAndCorrupt": {
+      "reviewed": 1,
+      "failed": 1,
+      "remaining": 0,
+      "seconds": 4.9,
+      "regularHeading": "Warning text MATCH; appearance REVIEW due to deadline. This run establishes no false pass, not successful weight classification.",
+      "corrupt": "Explicit source-image decode failure; queue completed."
+    }
+  },
+  "production": {
+    "id": "dpl_eD7minPzxNgi9bDtDemKeUnXfcuF",
+    "deploymentUrl": "https://treasury-label-review-2chf8zdbv-chathamworks-6954s-projects.vercel.app",
+    "readyState": "READY",
+    "target": "production",
+    "promotion": "vercel promote on tested preview created a new production deployment; same source SHA and browser bundle verified.",
+    "access": "Anonymous Codex in-app browser, no Vercel login",
+    "sample": {
+      "seconds": 2.3,
+      "allApplicableChecks": "MATCH"
+    },
+    "mixedCsvBatch": {
+      "reviewed": 3,
+      "failed": 0,
+      "remaining": 0,
+      "seconds": 7.3,
+      "firstResultSeconds": 1.9,
+      "perLabelSeconds": [
+        1.9,
+        4.8,
+        0.6
+      ],
+      "correctSample": "All applicable MATCH, including cloud appearance.",
+      "wrongAbv": "44% vs 45% MISMATCH; appearance deadline REVIEW.",
+      "titleCaseWarning": "Warning and appearance REVIEW."
+    },
+    "browserBundle": "/assets/index-D2xOPPSe.js",
+    "robotsMeta": "noindex,nofollow,noarchive",
+    "robotsTxt": "User-agent: *\nDisallow: /\n"
+  },
+  "protection": {
+    "unchanged": true,
+    "ssoProtection": {
+      "deploymentType": "all_except_custom_domains"
+    }
+  },
+  "mainWebsite": {
+    "url": "https://lucaschatham.com/",
+    "portrait": "Loaded /images/lucas-portrait-clean.jpg, 500x750",
+    "primaryLinks": "Home, Work, Side Quests, Contact, six work projects, four open-source projects, Email, LinkedIn, GitHub, Newsletter and X present.",
+    "appLinkPresent": false,
+    "mainWebsiteDeployed": false
+  },
+  "limits": [
+    "Synthetic tests establish regression behavior, not real-world accuracy.",
+    "First preview sample exceeded five seconds; provider deadlines can leave typography unresolved.",
+    "300-image capacity was verified locally against the actual cloud service, not repeated on production.",
+    "No Vercel protection settings or paid billing changes were made."
+  ]
+}

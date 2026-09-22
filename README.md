@@ -78,6 +78,10 @@ See `evidence/appearance-method-decision.json`, raw vision files, and `REQUIREME
 
 ## Release safety
 
-The app origin is `https://github.com/lucaschatham/treasury-label-review.git`; the Vercel project is **treasury-label-review**. Verify both before deploying. Configure the two `WARNING_WORKER_*` server environment variables for preview and production. Deploy a preview, verify it anonymously, then promote that tested deployment. Do not deploy this repository to the main website project **site**. Verify the custom domain, source revision, `noindex`, and the separate main homepage after release.
+The app origin is `https://github.com/lucaschatham/treasury-label-review.git`; the Vercel project is **treasury-label-review**. Verify both before deploying. Configure the two `WARNING_WORKER_*` server environment variables for preview and production. Deploy a preview and verify it using the configured access policy, then promote that tested source. Verify the custom domain anonymously. Do not disable preview authentication for testing. Do not deploy this repository to the main website project **site**. Verify the custom domain, source revision, `noindex`, and the separate main homepage after release.
 
 [Cloudflare Free allocation](https://developers.cloudflare.com/workers-ai/platform/pricing/) · [TTB warning guidance](https://www.ttb.gov/regulated-commodities/beverage-alcohol/distilled-spirits/ds-labeling-home/ds-health-warning)
+
+### Verified release, September 22, 2026
+
+Production runs [57ff3b5](https://github.com/lucaschatham/treasury-label-review/tree/57ff3b58b3a408c3c52a77287bcf627df4ef3f70). Later documentation-only commits record its release evidence. The anonymous sample completed all applicable checks in 2.3 seconds; a three-image CSV batch completed in 7.3 seconds with the expected discrepancies and one visible appearance timeout. The first authenticated preview sample took 6.6 seconds. These are observations, not a five-second guarantee. See [release evidence](evidence/release-verification.json) and [300-image integrated results](evidence/browser-integrated-300.json).
