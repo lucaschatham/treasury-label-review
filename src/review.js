@@ -36,14 +36,28 @@ export function parseVolume(value) {
   return match ? toMilliliters(match[1], match[2]) : null;
 }
 
+// Preserve the exact OCR substring supporting a normalized match. Application
+// spelling is comparison input, never the evidence displayed to the reviewer.
+function observedPhrase(text, expected) {
+  const tokens = [...String(text).matchAll(/[\p{L}\p{N}]+(?:[’'][\p{L}\p{N}]+)*/gu)];
+  const wanted = normalize(expected).split(" ").filter(Boolean);
+  if (!wanted.length) return null;
+  for (let i = 0; i <= tokens.length - wanted.length; i++) {
+    if (wanted.every((word, j) => normalize(tokens[i + j][0]) === word)) {
+      const last = tokens[i + wanted.length - 1];
+      return String(text).slice(tokens[i].index, last.index + last[0].length);
+    }
+  }
+  return null;
+}
+
 function textFinding(text, field, expected) {
-  const phrase = normalize(expected);
-  // Whole tokens prevent matching STONE inside MILESTONE or 750 inside 1750.
-  const found = phrase && ` ${normalize(text)} `.includes(` ${phrase} `);
+  const observed = observedPhrase(text, expected);
+  const found = observed !== null;
   return entry(
     field,
     found ? "match" : "review",
-    found ? compact(expected) : "Not confidently located",
+    found ? compact(observed) : "Not confidently located",
     found
       ? "Text found after case and punctuation normalization."
       : expected
@@ -60,7 +74,7 @@ function alcoholFinding(rawText, expected) {
     const before = text.slice(Math.max(0, match.index - 15), match.index);
     const after = text.slice(match.index + match[0].length);
     const context =
-      /\balc(?:ohol)?\.?\s*$/i.test(before) ||
+      /\b(?:alc(?:ohol)?\.?|abv)\s*:?\s*$/i.test(before) ||
       /^\s*(?:alc(?:ohol)?\b|abv\b|(?:by\s+)?vol\b)/i.test(after);
     const standalone = rawText
       .split(/\r?\n/)

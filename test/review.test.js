@@ -188,3 +188,16 @@ test("warning rejects changed final punctuation and joined text", () => {
     );
   }
 });
+
+test("recognizes ABV prefix notation and retains conflicting values", () => {
+  const alcohol = (text) => reviewLabel(text, application).find(x => x.field === 'Alcohol content');
+  assert.equal(alcohol('ABV: 45%').status, 'match');
+  assert.equal(alcohol('ABV: 40%').status, 'mismatch');
+  assert.equal(alcohol('ABV: 40%\n45% ABV').status, 'review');
+});
+
+test("text evidence shows artwork spelling rather than application spelling", () => {
+  const result = reviewLabel("STONE’S THROW\nKENTUCKY STRAIGHT BOURBON WHISKEY", application);
+  assert.equal(result[0].found, 'STONE’S THROW');
+  assert.equal(result[1].found, 'KENTUCKY STRAIGHT BOURBON WHISKEY');
+});
