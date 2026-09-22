@@ -10,23 +10,23 @@
   <body>
     <main class="shell">
       <header class="top">
-        <div class="mark">LC<span> / </span>LAB</div>
+        <div class="mark"><span class="app-icon" aria-hidden="true">▤</span> Label Review</div>
         <div class="top-right">
-          PROTOTYPE <span class="dot"></span> LOCAL IMAGE PROCESSING
+          <span class="prototype">Prototype</span><span class="local-status"><span class="dot"></span> On-device OCR</span>
         </div>
       </header>
       <section class="hero">
-        <p class="eyebrow">ALCOHOL LABEL REVIEW</p>
-        <h1>A clearer first pass<br />for every label.</h1>
+        <p class="eyebrow">ARTWORK &amp; APPLICATION</p>
+        <h1>Every label.<br /><span>A clearer review.</span></h1>
         <p class="intro">
-          Compare label artwork with application details. Review the evidence,
-          then make the decision yourself.
+          Compare your artwork with the application. See what matches,
+          and what needs a closer look.
         </p>
       </section>
       <div class="workbench">
         <section class="panel input-panel">
           <div class="panel-heading">
-            <span class="step">01</span>
+            <span class="step">1</span>
             <div>
               <h2>Application details</h2>
               <p>Enter the values submitted for approval.</p>
@@ -36,11 +36,10 @@
             <fieldset id="inputs">
               <legend class="sr-only">Application and artwork</legend>
               <button type="button" id="sample-button" class="secondary">
-                Try the sample label
+                Try a sample review
               </button>
               <p class="help">
-                The sample uses the assignment's OLD TOM DISTILLERY example and
-                runs real OCR.
+                Load OLD TOM artwork and application details.
               </p>
               <div class="grid">
                 <label
@@ -120,8 +119,8 @@
                   accept="image/png,image/jpeg,image/webp"
                   multiple
                 />
-                <span class="upload-icon">↑</span
-                ><strong>Drop label images here or choose files</strong>
+                <span class="upload-icon" aria-hidden="true">↑</span
+                ><strong>Choose label images</strong>
                 <small
                   >Up to 300 PNG, JPEG, or WebP images. 10 MB each, 200 MB
                   total.</small
@@ -133,7 +132,7 @@
               </p>
               <div id="file-list" class="file-list" aria-live="polite"></div>
               <button type="submit" id="run-button">
-                Review labels <span>↗</span>
+                Review labels <span aria-hidden="true">→</span>
               </button>
             </fieldset>
             <button type="button" id="stop-button" class="secondary" hidden>
@@ -149,7 +148,7 @@
         </section>
         <section class="panel results-panel">
           <div class="panel-heading">
-            <span class="step">02</span>
+            <span class="step">2</span>
             <div>
               <h2>Review findings</h2>
               <p>Compare the artwork, application, and extracted text.</p>
@@ -161,11 +160,11 @@
             aria-live="polite"
             class="status empty"
           >
-            <div class="empty-icon">◎</div>
-            <strong>Ready when you are.</strong
-            ><span>Add artwork or try the sample label.</span>
+            <div class="empty-icon" aria-hidden="true">▤</div>
+            <strong>Your findings appear here.</strong
+            ><span>Add your artwork and select Review labels, or start with a sample.</span>
           </div>
-          <div id="results"></div>
+          <div id="results" aria-label="Label review findings"></div>
         </section>
       </div>
       <footer>
