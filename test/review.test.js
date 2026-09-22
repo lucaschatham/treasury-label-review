@@ -155,9 +155,17 @@ test("checks producer and imported country when provided", () => {
   );
 });
 
- test("warning tolerates a dropped final OCR period but never a changed final word", () => {
- const warning = text => reviewLabel(text, application).find(x => x.field === "Government warning").status;
- assert.equal(warning(REQUIRED_WARNING.slice(0,-1)), "match");
- assert.equal(warning(REQUIRED_WARNING.replace("problems.", "problem.")), "review");
- assert.equal(warning(REQUIRED_WARNING.replace("problems.", "problemsome.")), "review");
- });
+test("warning tolerates a dropped final OCR period but never a changed final word", () => {
+  const warning = (text) =>
+    reviewLabel(text, application).find((x) => x.field === "Government warning")
+      .status;
+  assert.equal(warning(REQUIRED_WARNING.slice(0, -1)), "match");
+  assert.equal(
+    warning(REQUIRED_WARNING.replace("problems.", "problem.")),
+    "review",
+  );
+  assert.equal(
+    warning(REQUIRED_WARNING.replace("problems.", "problemsome.")),
+    "review",
+  );
+});

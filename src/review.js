@@ -157,9 +157,17 @@ export function reviewLabel(rawText, application) {
   const heading = "GOVERNMENT WARNING:";
   const warningIndex = text.indexOf(heading);
   // OCR can drop the final full stop. Preserve every word and internal punctuation.
-  const body = REQUIRED_WARNING.slice(heading.length).trim().toLowerCase().replace(/\.$/, "");
-  const observedBody = text.slice(warningIndex + heading.length).trimStart().toLowerCase();
-  const warningFound = warningIndex >= 0 && observedBody.startsWith(body) &&
+  const body = REQUIRED_WARNING.slice(heading.length)
+    .trim()
+    .toLowerCase()
+    .replace(/\.$/, "");
+  const observedBody = text
+    .slice(warningIndex + heading.length)
+    .trimStart()
+    .toLowerCase();
+  const warningFound =
+    warningIndex >= 0 &&
+    observedBody.startsWith(body) &&
     !/[\p{L}\p{N}]/u.test(observedBody.charAt(body.length));
   results.push(
     entry(
