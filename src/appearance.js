@@ -45,8 +45,15 @@ export function strokeEvidence(blocks, image) {
   return {supportsBold:ratio>=.17,ratio};
 }
 
+const unresolved = (found,detail) => ({field:'Warning appearance',status:'review',found,detail});
+
+export function appearanceFinding(result, supportsBold) {
+  if (result?.reason === 'provider') return unresolved('Automated appearance unavailable','The provider could not complete the check (capacity, quota, or service failure). Retry later or inspect the artwork; this is not a font-weight judgment.');
+  if (result?.verdict === 'BOLD' && result.reason === 'corroborated' && supportsBold) return {field:'Warning appearance',status:'match',found:'Bold heading corroborated',detail:'Two vision models and a stroke-width check agree. This prototype checks heading weight, not physical print size or overall regulatory compliance.'};
+  return unresolved('Bold heading not confidently verified',result?.reason==='timeout'?'The appearance check reached its time limit. Try again or inspect the artwork.':'The visual checks did not all support bold weight. The heading may be regular, too small, or an unfamiliar style. Inspect the crop and original artwork.');
+}
+
 export async function reviewAppearance(canvas, blocks) {
-  const unresolved = (found,detail) => ({field:'Warning appearance',status:'review',found,detail});
   const box=headingBox(blocks,canvas.width,canvas.height);
   if(!box)return unresolved('Heading crop unavailable','A single clear uppercase GOVERNMENT WARNING: heading was not located. Inspect the original artwork.');
   const context=canvas.getContext('2d');
@@ -65,8 +72,7 @@ export async function reviewAppearance(canvas, blocks) {
     if(!response.ok)finding=unresolved('Automated appearance unavailable',response.status===429?'Service rate limit reached. Wait a minute and review this label again.':'The appearance service could not finish. Try again, or inspect the artwork; text findings remain available.');
     else {
       const result=await response.json();
-      if(result.verdict==='BOLD' && result.reason==='corroborated' && stroke.supportsBold)finding={field:'Warning appearance',status:'match',found:'Bold heading corroborated',detail:'Two vision models and a stroke-width check agree. This prototype checks heading weight, not physical print size or overall regulatory compliance.'};
-      else finding=unresolved('Bold heading not confidently verified',result.reason==='timeout'?'The appearance check reached its time limit. Try again or inspect the artwork.':'The visual checks did not all support bold weight. The heading may be regular, too small, or an unfamiliar style. Inspect the crop and original artwork.');
+      finding=appearanceFinding(result,stroke.supportsBold);
     }
   } catch {finding=unresolved('Automated appearance unavailable','The appearance request failed or timed out. Text findings remain available. Try again or inspect the artwork.');}
   return {...finding,crop:image};

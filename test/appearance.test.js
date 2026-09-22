@@ -18,3 +18,13 @@ test('stroke corroboration measures stem thickness and rejects ambiguous glyph g
  assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,true);
  assert.equal(strokeEvidence(null,{data:pixels,width:300,height:200}).supportsBold,false);
 });
+import { appearanceFinding } from '../src/appearance.js';
+test('provider failures are reported as service failures, never font judgments', () => {
+ const failed=appearanceFinding({verdict:'UNCERTAIN',reason:'provider'},true);
+ assert.equal(failed.status,'review');
+ assert.equal(failed.found,'Automated appearance unavailable');
+ assert.match(failed.detail,/quota|capacity/);
+ assert.equal(appearanceFinding({verdict:'BOLD',reason:'corroborated'},true).status,'match');
+ assert.equal(appearanceFinding({verdict:'BOLD',reason:'corroborated'},false).status,'review');
+ assert.equal(appearanceFinding({verdict:'BOLD',reason:'invalid'},true).status,'review');
+});

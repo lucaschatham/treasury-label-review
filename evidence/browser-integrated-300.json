@@ -64,10 +64,11 @@
   "appearance": {
     "matchesAllVariants": 109,
     "timeoutsAllVariants": 45,
-    "providerUnavailableAllVariants": 0,
     "validMatches": 19,
     "validUnresolved": 11,
-    "regularHeadingFalseMatches": 0
+    "regularHeadingFalseMatches": 0,
+    "providerUnavailableAllVariants": 0,
+    "providerFailureCountingLimit": "The original UI did not distinguish AI provider exceptions from other uncertain classifications. Zero UI-unavailable rows does not establish zero provider/quota errors. The follow-up fixes this message; 45 explicitly identified deadlines remain observed."
   },
   "validText": {
     "brand": "30/30 match",

@@ -1,0 +1,22 @@
+{
+  "id": "dpl_3Hj86k3P8PJFrVaQE8s8WuhHVXnD",
+  "url": "treasury-label-review-l2vxh9umr-chathamworks-6954s-projects.vercel.app",
+  "name": "treasury-label-review",
+  "projectId": "prj_mq5AO5hMT2MhzRFyTKgtm1RrWeRC",
+  "readyState": "READY",
+  "target": null,
+  "meta": {
+    "githubCommitAuthorName": "Lucas Chatham",
+    "githubCommitAuthorEmail": "chathamworks@gmail.com",
+    "githubCommitMessage": "Implement conservative automated warning verification and complete OCR safeguards",
+    "githubCommitOrg": "lucaschatham",
+    "githubCommitRef": "requirement-gates",
+    "githubCommitRepo": "treasury-label-review",
+    "githubCommitSha": "2742092abc03fbf4962298b12404f936217bf9fa",
+    "githubDeployment": "1",
+    "githubOrg": "lucaschatham",
+    "githubRepo": "treasury-label-review",
+    "actor": "codex",
+    "lambdaRuntimeStats": "{\"nodejs\":1}"
+  }
+}

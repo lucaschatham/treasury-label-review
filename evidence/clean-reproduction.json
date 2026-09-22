@@ -9,14 +9,14 @@
   ],
   "results": {
     "install": "30 packages; zero audit vulnerabilities",
-    "tests": "46 passed, zero failed",
-    "build": "passed; index-DzhfoUYj.js, index-xF3xszJx.css"
+    "tests": "47 passed, zero failed",
+    "build": "passed; index-D2xOPPSe.js, index-xF3xszJx.css"
   },
   "sourceSha256": {
     "src/main.js": "baf50cf2700f175430bd0d3c6b27753b7a3873df1124267c164c22c5042a15ff",
     "src/review.js": "91b5e3d89342c3a362d73fb592f98e7b64fb25136a5eafdcae4f1af932e948fb",
     "src/layout.js": "0c3100860ef7039179e9108dcfb16164016105ed77912e97cfc170dd7b9c075a",
-    "src/appearance.js": "99a13284faa5a571dd9aa64edd45c855163de56ba1dcce600fbc1c6462ed7adf",
+    "src/appearance.js": "48548f033bd6550b530d0757173d4d3c24ce0e6f2e0711f1642a2768710f926c",
     "worker/index.js": "764dcd1fd4797f3f80bd568a33426d457ebcf67657e9e3716e7a0b3209c240b2",
     "worker/vision.js": "16c1d5f2922a1152f7a235ca5cfa3fcb480c1995e36c610c2e8fb4d8e199f9c5",
     "api/warning-appearance.js": "6e9207b822781f8440c5b1adda988c0cb89f823df8871383bd3e1d9e17356b95",
@@ -31,6 +31,9 @@
       "null text and blocks",
       "partial geometry lost OCR words"
     ],
-    "dependencyCorrection": "Tesseract 7 worker merges text:true defaults; explicit outputs retained for clarity."
-  }
+    "dependencyCorrection": "Tesseract 7 worker merges text:true defaults; explicit outputs retained for clarity.",
+    "followupCommand": "/Users/HQ/.agents/skills/autoreview/scripts/autoreview --mode local --output /tmp/treasury-provider-message-review.md --json-output /tmp/treasury-provider-message-review.json",
+    "followupExitCode": 0
+  },
+  "followup": "Only changed appearance module and its test were copied into the same clean dependency installation; all tests/build rerun successfully."
 }

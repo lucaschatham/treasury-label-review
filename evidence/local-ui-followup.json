@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-22",
+  "scope": "Local browser smoke tests on integrated code before provider-error copy correction; provider-error wording separately unit-tested",
+  "blankImage": "One reviewed, no JS exception; no text extracted, eight attention items including low OCR confidence",
+  "corruptImage": "One failed with explicit decode error and clear-image advice; no queue crash",
+  "invalidCsv": "CSV header must include type. Download the template.",
+  "staleResults": "Changing Brand name removed all previous result cards",
+  "keyboard": "Tab from Brand name focused Class / type",
+  "narrowLayout": {
+    "requestedViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "documentClientWidth": 375,
+    "documentScrollWidth": 375,
+    "horizontalOverflow": false
+  },
+  "brandCase": {
+    "application": "Stone's Throw",
+    "artwork": "STONE\u2019S THROW",
+    "status": "MATCH",
+    "differentArtwork": "DIFFERENT BRAND",
+    "differentStatus": "REVIEW",
+    "batchSeconds": 3.3,
+    "firstResultSeconds": 1.8
+  },
+  "stop": "Stopped: 1 reviewed, 0 failed, 1 remaining; retained one result in 1.7 seconds."
+}
