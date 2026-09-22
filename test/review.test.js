@@ -21,4 +21,5 @@ test('flags a wrong ABV and a missing warning', () => {
 test('warning requires exact words and uppercase heading', () => {
   const text = REQUIRED_WARNING.replace('GOVERNMENT WARNING:', 'Government Warning:');
   assert.equal(reviewLabel(text, application).find(x => x.field === 'Government warning').status, 'review');
+  assert.equal(reviewLabel(REQUIRED_WARNING.toUpperCase(), application).find(x => x.field === 'Government warning').status, 'match');
 });

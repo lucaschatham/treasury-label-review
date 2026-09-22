@@ -25,7 +25,10 @@ export function reviewLabel(rawText, application) {
   const volumeFound = expectedVolume && comparable.includes(expectedVolume);
   results.push(entry('Net contents', volumeFound ? 'match' : 'review', volumeFound ? application.volume : 'Not confidently located', volumeFound ? 'Matches application.' : 'Confirm units and quantity visually.'));
 
-  const warningFound = text.includes(REQUIRED_WARNING);
+  const warningHeading = 'GOVERNMENT WARNING:';
+  const warningIndex = text.indexOf(warningHeading);
+  const warningBody = REQUIRED_WARNING.slice(warningHeading.length).trim().toLowerCase();
+  const warningFound = warningIndex >= 0 && text.slice(warningIndex + warningHeading.length).trimStart().toLowerCase().startsWith(warningBody);
   results.push(entry('Government warning', warningFound ? 'match' : 'review', warningFound ? 'Exact text detected' : 'Exact text not detected', warningFound ? 'Check bold heading, size, contrast, and placement visually. OCR cannot verify typography.' : 'Compare the full wording and uppercase heading visually. OCR errors can obscure a correct warning.'));
 
   return results;
