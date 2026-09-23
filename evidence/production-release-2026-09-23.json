@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-23",
+  "authorization": "User requested publishing all necessary work to production; released with documented failed boldness gate.",
+  "source": "2a46749b0d240d7a63d1ab4d7cd94ad28a146e10",
+  "repository": "https://github.com/lucaschatham/treasury-label-review",
+  "url": "https://label-review-7b3.lucaschatham.com/",
+  "project": "treasury-label-review",
+  "deployment": "dpl_6iYhiTKSpANanZGER1ayUMKgknKz",
+  "promotedFrom": "dpl_2Z6otJZvGydg6ztrpkHH9gXS6BxE",
+  "bundle": "index-DGAUEOgM.js",
+  "anonymousAccess": true,
+  "robots": "noindex,nofollow,noarchive",
+  "workerVersion": "2d252cac-77c6-4bc2-8958-218df1a074fd",
+  "workerChanged": false,
+  "sample": {
+    "seconds": 2.4,
+    "appearanceCached": false,
+    "allApplicableChecksMatched": true,
+    "evidence": "production-sample-2026-09-23.json"
+  },
+  "regressions": {
+    "reviewed": 5,
+    "expectedCorruptFailure": 1,
+    "seconds": 5.7,
+    "targetedDecoysRemainReview": true,
+    "evidence": "production-regressions-2026-09-23.json"
+  },
+  "sameRuntimePreviewBatch": {
+    "reviewed": 300,
+    "failed": 0,
+    "uniqueResults": 300,
+    "checkedFieldAssociations": 900,
+    "seconds": 195.3,
+    "evidence": "appearance-neighbor-preview-300.json"
+  },
+  "testsPassed": 77,
+  "cleanBuildAndReview": "appearance-neighbor-closeout.json",
+  "remainingLimits": [
+    "Three regular-heading false Matches in typography run",
+    "37/40 bold Matches",
+    "Representative independent uncached tail latency not established"
+  ],
+  "mainWebsite": {
+    "url": "https://www.lucaschatham.com/",
+    "portraitLoaded": true,
+    "primaryLinksPresent": [
+      "Work",
+      "Side Quests",
+      "Contact",
+      "Email",
+      "LinkedIn",
+      "GitHub",
+      "Newsletter"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Local browser pipeline, legacy development Worker. Not final production-Worker tuple proof.",
+  "rows": 300,
+  "unique": 300,
+  "missing": 0,
+  "duplicate": 0,
+  "failed": 0,
+  "applicationAssociationChecks": 900,
+  "status": "Finished: 300 reviewed, 0 failed, 0 remaining. Total: 166.1 s. First result: 4.8 s from click. Inspect exceptions and make your final decision.",
+  "stopRestart": "Stopped: 1 reviewed, 0 failed, 299 remaining. Total: 1.7 s. First result: 1.7 s from click. Inspect exceptions and make your final decision."
+}
