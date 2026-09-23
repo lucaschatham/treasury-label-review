@@ -26,5 +26,12 @@ and `Iowan-Old-Style-0-bold` (insufficient word-stroke evidence). The local
 result establishes only that 38 images can reach cloud inference. It does not
 establish 38 final Matches, zero cloud false Matches, three-run stability, or
 five-second end-to-end latency. All 70 unit tests and the Vite build passed
-after the rule change. Keep the current deployment until those integrated gates
-pass.
+after the rule change.
+
+The first [real-service preview browser run](appearance-multiglyph-preview-run1.json)
+returned 36/40 bold Matches and 0/40 regular false Matches. `Cochin-3-bold`
+and `Rockwell-3-bold` timed out after passing locally. Displayed per-label p95
+was 5.5 seconds, and nine of 80 reviews exceeded five seconds. Both accuracy
+and latency miss the internal release criteria. Since each of three uncached
+runs must pass, the candidate was stopped after this run and the current
+production deployment was retained.

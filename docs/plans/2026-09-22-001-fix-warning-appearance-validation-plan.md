@@ -1,7 +1,7 @@
 ---
 title: "fix: Validate warning appearance without font-width bias"
 type: fix
-status: active
+status: stopped-at-release-gate
 date: 2026-09-22
 ---
 
@@ -10,6 +10,15 @@ date: 2026-09-22
 ## Summary
 
 Keep the deployed prototype available. Make its assignment evidence and limitations accurate, then run one bounded attempt to replace the brittle single-glyph boldness guard. Promote a replacement only after independent local, cloud, workflow, latency, and review gates pass.
+
+**Outcome on September 22:** U1 through U3 completed. The new local holdout
+passed 38/40 bold and 0/40 regular images. Autoreview found no actionable
+defects, and a protected preview passed the sample. U4 stopped after its first
+uncached 80-image browser run: 36/40 bold Matches, 0/40 regular false Matches,
+and 5.5-second p95. Two bold images failed local evidence and two timed out.
+Because every one of three runs must pass, this candidate cannot meet the
+release bar. U5 was not started; production remains on `c3ebde8`. See
+`evidence/appearance-multiglyph-preview-run1.json`.
 
 ---
 
