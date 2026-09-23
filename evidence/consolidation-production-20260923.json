@@ -1,0 +1,12 @@
+{
+  "url": "https://label-review-7b3.lucaschatham.com",
+  "sample": {
+    "status": "Finished: 1 reviewed, 0 failed, 0 remaining. Total: 2.4 s. First result: 2.4 s from click. Inspect exceptions and make your final decision.",
+    "appearance": "{\"status\":\"match\",\"reason\":\"corroborated\",\"cached\":false}",
+    "timings": "{\"setup\":863.6999999880791,\"prepare\":7.4000000059604645,\"ocr\":631,\"comparison\":1.8999999910593033,\"appearance\":915.6000000089407,\"render\":1.2999999970197678,\"total\":1557.7999999970198,\"clickToResult\":2421.699999988079,\"queue\":0.20000000298023224,\"visibility\":\"visible\",\"visibilityEnd\":\"visible\"}"
+  },
+  "batch": "Finished: 3 reviewed, 0 failed, 0 remaining. Total: 2.6 s. First result: 1.5 s from click. Inspect exceptions and make your final decision.",
+  "xlsxMapping": "wrong-abv.png in Failed with expected 45",
+  "narrowScreen": "passed",
+  "errors": []
+}

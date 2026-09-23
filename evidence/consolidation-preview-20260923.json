@@ -1,0 +1,12 @@
+{
+  "url": "https://treasury-label-review-4dx5yropv-chathamworks-6954s-projects.vercel.app",
+  "sample": {
+    "status": "Finished: 1 reviewed, 0 failed, 0 remaining. Total: 6.8 s. First result: 6.8 s from click. Inspect exceptions and make your final decision.",
+    "appearance": "{\"status\":\"review\",\"reason\":\"timeout\",\"cached\":false}",
+    "timings": "{\"setup\":1490.1000000089407,\"prepare\":8.400000005960464,\"ocr\":647,\"comparison\":1.8999999910593033,\"appearance\":4611.5,\"render\":1.8999999910593033,\"total\":5271.800000011921,\"clickToResult\":6762.100000008941,\"queue\":0.19999998807907104,\"visibility\":\"visible\",\"visibilityEnd\":\"visible\"}"
+  },
+  "batch": "Finished: 3 reviewed, 0 failed, 0 remaining. Total: 2.5 s. First result: 1.4 s from click. Inspect exceptions and make your final decision.",
+  "xlsxMapping": "wrong-abv.png in Failed with expected 45",
+  "narrowScreen": "passed",
+  "errors": []
+}
