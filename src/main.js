@@ -13,21 +13,32 @@ const manifestInput = document.querySelector("#manifest");
 const fileList = document.querySelector("#file-list");
 const status = document.querySelector("#status");
 const results = document.querySelector("#results");
-const triage = createTriage(results);
+const triage = createTriage(results, {intake:document.querySelector('#label-intake')});
 const sampleButton = document.querySelector("#sample-button");
 const stopButton = document.querySelector("#stop-button");
-results.before(stopButton);
+
 const engineStatus = document.querySelector("#engine-status");
 const dropZone = document.querySelector("#drop-zone");
-const inputPanel = document.querySelector('.input-panel');
 const appSummary = document.querySelector('#application-summary');
 const editApplication = document.querySelector('#edit-application');
-function collapseApplication(collapsed) {
-  document.body.classList.toggle('reviewing', collapsed);
-  inputPanel.classList.toggle('collapsed', collapsed);
-  appSummary.hidden = !collapsed;
+const applicationDialog = document.querySelector('#application-dialog');
+const runButton = document.querySelector('#run-button');
+let filesValid = false;
+function updateApplicationSummary() {
+  appSummary.textContent = manifestInput.files.length ? 'Application CSV attached' : form.elements.namedItem('brand').value.trim() || 'No application details yet';
 }
-editApplication.addEventListener('click', () => {collapseApplication(false); form.elements.namedItem('brand').focus();});
+function closeApplication() {applicationDialog.close(); updateApplicationSummary(); editApplication.focus();}
+editApplication.addEventListener('click', () => applicationDialog.showModal());
+document.querySelector('#close-application').addEventListener('click', closeApplication);
+document.querySelector('#save-application').addEventListener('click', closeApplication);
+function setBusy(busy) {
+  inputs.disabled = busy;
+  fileInput.disabled = busy;
+  sampleButton.disabled = busy;
+  editApplication.disabled = busy;
+  runButton.disabled = busy || !filesValid;
+  dropZone.classList.toggle('disabled',busy);
+}
 let selected = [];
 let workerPromise = null;
 let active = false;
@@ -36,15 +47,16 @@ let progressLabel = "";
 let previewUrls = [];
 
 function setStatus(message, kind = "") {
-  status.hidden = !results.hidden && (kind !== 'error' || /^(Finished|Stopped):/.test(message));
+  status.hidden = kind === 'busy' || kind === 'done' || /^(Finished|Stopped):/.test(message);
+  status.setAttribute('role', kind === 'error' ? 'alert' : 'status');
   status.className = `status ${kind}`;
   status.textContent = message;
 }
 
 function clearResults() {
   triage.clear();
-  collapseApplication(false);
-  status.hidden = false; status.setAttribute('role','status'); status.setAttribute('aria-live','polite');
+  triage.queue(filesValid ? selected.length : 0);
+  status.hidden = true;
   previewUrls.forEach((url) => URL.revokeObjectURL(url));
   previewUrls = [];
 }
@@ -52,12 +64,17 @@ function clearResults() {
 function invalidateResults() {
   if (active) return;
   clearResults();
+  updateApplicationSummary();
   setStatus(
     "Details changed. Run a review to compare the current application and images.",
   );
 }
 
 function showFiles() {
+  filesValid = false;
+  try {if(selected.length) {validateFiles(selected); filesValid = true;}} catch(error) {setStatus(error.message,'error');}
+  runButton.disabled = active || !filesValid;
+  triage.queue(filesValid ? selected.length : 0);
   const size = selected.reduce((sum, file) => sum + file.size, 0) / 1024 / 1024;
   fileList.textContent = selected.length
     ? `${selected.length} image(s), ${size.toFixed(1)} MB: ${selected
@@ -69,6 +86,7 @@ function showFiles() {
 
 fileInput.addEventListener("change", () => {
   selected = [...fileInput.files];
+  clearResults();
   showFiles();
 });
 form.addEventListener("input", invalidateResults);
@@ -86,11 +104,11 @@ for (const event of ["dragleave", "drop"]) {
   });
 }
 dropZone.addEventListener("drop", (event) => {
-  if (active) return;
+  if (active || sampleButton.disabled) return;
   selected = [...event.dataTransfer.files];
   fileInput.value = "";
+  clearResults();
   showFiles();
-  invalidateResults();
 });
 stopButton.addEventListener("click", () => {
   stopRequested = true;
@@ -161,7 +179,7 @@ async function prepareImage(file) {
 }
 
 sampleButton.addEventListener("click", async () => {
-  inputs.disabled = true;
+  setBusy(true);
   try {
     const response = await fetch("/samples/old-tom.png");
     if (!response.ok) throw new Error("Sample label could not load.");
@@ -180,13 +198,14 @@ sampleButton.addEventListener("click", async () => {
       form.elements.namedItem(key).value = value;
     clearResults();
     showFiles();
+    updateApplicationSummary();
     setStatus(
       "Sample artwork and application loaded. Select Review labels to run OCR.",
     );
   } catch (error) {
     setStatus(error.message, "error");
   } finally {
-    inputs.disabled = false;
+    setBusy(false);
   }
 });
 
@@ -200,7 +219,7 @@ form.addEventListener("submit", async (event) => {
   application.imported = form.elements.namedItem("imported").checked;
   const files = [...selected];
   const manifest = manifestInput.files[0];
-  inputs.disabled = true;
+  setBusy(true);
   clearResults();
   let completed = 0,
     failed = 0,
@@ -211,11 +230,11 @@ form.addEventListener("submit", async (event) => {
       throw new Error("Application CSV must be under 1 MB.");
     const applications = manifest ? parseManifest(await manifest.text()) : null;
     const jobs = buildJobs(files, application, applications);
-    appSummary.querySelector('span').textContent = `${manifest ? 'CSV applications' : application.brand || 'Application'} · ${jobs.length} image${jobs.length === 1 ? '' : 's'}`;
-    collapseApplication(true);
+    updateApplicationSummary();
+    applicationDialog.close();
     triage.start(jobs.length);
     status.removeAttribute('role'); status.setAttribute('aria-live','off');
-    inputPanel.scrollIntoView({block:'start'});
+    results.scrollIntoView({block:'start'});
     const appearanceCache = new Map();
     stopButton.hidden = false;
     stopButton.disabled = false;
@@ -281,7 +300,7 @@ form.addEventListener("submit", async (event) => {
     setStatus(error.message || String(error), "error");
   } finally {
     active = false;
-    inputs.disabled = false;
+    setBusy(false);
     stopButton.hidden = true;
   }
 });

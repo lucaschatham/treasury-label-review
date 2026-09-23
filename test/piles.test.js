@@ -60,3 +60,9 @@ test('human reasons are visible without replacing machine findings', async () =>
   assert.equal(rowReason(transition(original,'approve')), 'Approved after review');
   assert.equal(rowStatus(transition(original,'seen')), 'Machine');
 });
+test('empty and queued boards distinguish no batches from completed review', async () => {
+  const { intakeState } = await import('../src/piles.js');
+  assert.deepEqual(intakeState(0, false), {batches:'0 batches', message:'No batches yet. Drop label images into Step 1 to begin.'});
+  assert.deepEqual(intakeState(3, false), {batches:'1 batch ready', message:'3 labels ready. Add application details, then review labels.'});
+  assert.equal(intakeState(3, true).batches, '1 batch');
+});

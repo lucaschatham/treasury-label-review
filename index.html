@@ -15,33 +15,13 @@
           <span class="prototype">Prototype</span><span class="local-status"><span class="dot"></span> On-device OCR</span>
         </div>
       </header>
-      <section class="hero">
-        <p class="eyebrow">ARTWORK &amp; APPLICATION</p>
-        <h1>Every label.<br /><span>A clearer review.</span></h1>
-        <p class="intro">
-          Compare your artwork with the application. See what matches,
-          and what needs a closer look.
-        </p>
-      </section>
-      <div class="workbench">
-        <section class="panel input-panel">
-          <div id="application-summary" hidden><span></span><button type="button" class="secondary" id="edit-application">Edit application</button></div>
-          <div class="panel-heading">
-            <span class="step">1</span>
-            <div>
-              <h2>Application details</h2>
-              <p>Enter the values submitted for approval.</p>
-            </div>
-          </div>
+      <header class="workspace-heading"><h1>Label review</h1><p>Upload a batch. Review the exceptions.</p></header>
+      <dialog id="application-dialog" aria-labelledby="application-title">
+        <div class="dialog-heading"><h2 id="application-title">Application details</h2><button type="button" class="secondary" id="close-application" aria-label="Close application details">✕</button></div>
+        <p>Enter the submitted values for these labels, or attach a CSV for different applications.</p>
           <form id="review-form" novalidate>
             <fieldset id="inputs">
               <legend class="sr-only">Application and artwork</legend>
-              <button type="button" id="sample-button" class="secondary">
-                Try a sample review
-              </button>
-              <p class="help">
-                Load OLD TOM artwork and application details.
-              </p>
               <div class="grid">
                 <label
                   >Brand name<input
@@ -113,53 +93,39 @@
                     accept=".csv,text/csv"
                 /></label>
               </details>
+              <p class="help">
+                Without a CSV, all images use the application details above.
+                Include the complete label artwork in each image.
+              </p>
+            </fieldset>
+          </form>
+          <button type="button" id="save-application">Use these details</button>
+      </dialog>
+      <section class="panel results-panel">
+        <div class="board-controls"><span id="application-summary">No application details yet</span><button type="button" class="secondary" id="edit-application">Application details / CSV</button><button type="button" id="stop-button" class="secondary" hidden>Stop after current label</button></div>
+        <p id="status" class="status" hidden></p>
+        <div id="results" aria-label="Label review findings"></div>
+        <p class="privacy">Text is read in your browser. Reviewing sends a cropped warning heading through this site to Cloudflare AI for boldness verification. Images and decisions stay in this session and clear on reload.</p>
+        <p id="engine-status" class="help">Preparing local OCR…</p>
+      </section>
+      <div id="label-intake">
               <label class="upload" id="drop-zone">
                 <input
                   id="images"
+                  form="review-form"
                   type="file"
                   accept="image/png,image/jpeg,image/webp"
                   multiple
                 />
                 <span class="upload-icon" aria-hidden="true">↑</span
-                ><strong>Choose label images</strong>
+                ><strong>Drag &amp; drop label images</strong><span class="browse-files">or browse files</span>
                 <small
-                  >Up to 300 PNG, JPEG, or WebP images. 10 MB each, 200 MB
-                  total.</small
+                  >PNG, JPEG, WebP<br>Up to 300 images · 10 MB each · 200 MB total</small
                 >
               </label>
-              <p class="help">
-                Without a CSV, all images use the application details above.
-                Include the complete label artwork in each image.
-              </p>
-              <div id="file-list" class="file-list" aria-live="polite"></div>
-              <button type="submit" id="run-button">
-                Review labels <span aria-hidden="true">→</span>
-              </button>
-            </fieldset>
-            <button type="button" id="stop-button" class="secondary" hidden>
-              Stop after current label
-            </button>
-            <p class="privacy">
-              Text is read in your browser. Reviewing sends a cropped warning heading through this site to Cloudflare AI for boldness verification. Images are not saved by this app. No account needed.
-            </p>
-            <p id="engine-status" class="help" role="status">
-              Preparing local OCR…
-            </p>
-          </form>
-        </section>
-        <section class="panel results-panel">
-          <div
-            id="status"
-            role="status"
-            aria-live="polite"
-            class="status empty"
-          >
-            <div class="empty-icon" aria-hidden="true">▤</div>
-            <strong>Your findings appear here.</strong
-            ><span>Add your artwork and select Review labels, or start with a sample.</span>
-          </div>
-          <div id="results" aria-label="Label review findings"></div>
-        </section>
+        <div id="file-list" class="file-list"></div>
+        <button type="submit" form="review-form" id="run-button" disabled>Review labels →</button>
+        <button type="button" id="sample-button" class="sample-link">Try a sample review</button>
       </div>
       <footer>
         <span

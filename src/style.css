@@ -224,3 +224,30 @@ textarea:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 .send-action:hover { background:var(--bad-bg); filter:brightness(.94); }
 kbd { border:1px solid currentColor; border-radius:4px; padding:1px 5px; font:inherit; font-size:12px; opacity:.75; }
 @media(prefers-reduced-motion:reduce) { .pile-button:hover {transform:none;} }
+/* The board is the entry screen, including an honest empty state. */
+.workspace-heading {display:flex; align-items:baseline; gap:20px; padding:24px 0;}
+.workspace-heading h1 {font-size:24px; letter-spacing:-.03em;}
+.workspace-heading p {color:var(--muted); font-size:15px; margin:0;}
+.board-controls {display:flex; gap:16px; align-items:center; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:16px;}
+.board-controls > span {flex:1; color:var(--muted); font-size:15px;}
+.board-controls button {width:auto; margin:0; font-size:14px;}
+.batch-count {font-size:15px; font-weight:600; color:var(--muted); margin:20px 0 0;}
+#label-intake .upload {margin-top:14px; min-height:170px; padding:16px 10px; border:2px dashed var(--blue); background:var(--surface);}
+#label-intake .upload:hover, #label-intake .upload.dragging {background:color-mix(in srgb,var(--blue) 10%,var(--surface)); outline:2px solid var(--blue); outline-offset:3px;}
+#label-intake .upload strong {font-size:15px;}
+#label-intake .upload small {font-size:12px; line-height:1.6;}
+.browse-files {text-decoration:underline; color:var(--blue); font-size:14px;}
+#label-intake .file-list {max-height:90px; overflow:auto; color:var(--muted);}
+#label-intake button {font-size:14px; justify-content:center; padding:10px;}
+.sample-link {background:transparent; color:var(--blue); text-decoration:underline; margin:6px 0 0; font-weight:400;}
+.sample-link:hover {background:var(--surface);}
+.upload.disabled {opacity:.6; cursor:wait;}
+.upload.disabled input {cursor:wait;}
+#application-dialog {width:min(720px,calc(100% - 32px)); max-height:90dvh; overflow:auto; padding:24px; border:1px solid var(--line); border-radius:16px; background:var(--surface); color:var(--ink);}
+#application-dialog::backdrop {background:#0008;}
+#application-dialog > p {color:var(--muted); line-height:1.5;}
+#application-dialog .dialog-heading {margin-bottom:16px;}
+#application-dialog .grid {margin-top:24px;}
+#status {margin-top:16px;}
+@media(max-width:719px) {.workspace-heading {align-items:start; flex-direction:column; gap:8px;} .board-controls {gap:10px;} .board-controls > span {flex-basis:100%;} #label-intake .upload {min-height:160px;} }
+@media(min-width:720px) {.flow-step:not(:last-child)::after {top:42px;}}

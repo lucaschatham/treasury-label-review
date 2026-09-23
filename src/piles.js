@@ -50,3 +50,7 @@ export function rowReason(row) {
 export function reasonChoices(rows) {
   return [...new Set(rows.flatMap(row => row.findings.filter(f => ['review','mismatch'].includes(f.status)).map(f => f.field)).filter(Boolean)), 'Image unreadable', 'Other problem'];
 }
+export function intakeState(count, started) {
+  if (!count) return {batches:'0 batches', message:'No batches yet. Drop label images into Step 1 to begin.'};
+  return {batches:started ? '1 batch' : '1 batch ready', message:`${count} label${count === 1 ? '' : 's'} ready. Add application details, then review labels.`};
+}

@@ -1,5 +1,5 @@
 import { REQUIRED_WARNING } from './review.js';
-import { pileOf, tallies, transition, rowStatus, rowReason, primaryFinding, reasonChoices } from './piles.js';
+import { pileOf, tallies, transition, rowStatus, rowReason, primaryFinding, reasonChoices, intakeState } from './piles.js';
 const piles = {passed:['Passed','✓'], failed:['Failed','✕'], review:['Needs review','?']};
 function el(parent, tag, text = '', className = '') {
   const node = document.createElement(tag);
@@ -8,9 +8,11 @@ function el(parent, tag, text = '', className = '') {
   parent.append(node);
   return node;
 }
-export function createTriage(root) {
+export function createTriage(root, {intake} = {}) {
   let rows = [], selected = 'review', query = '', stages = [0,0,0,0], total = 0, finishSeconds = null, firstSeconds = null, stopped = false, running = false, activeStage = -1, limit = 50;
-  root.hidden = true;
+  root.hidden = false;
+  let started = false;
+  const batchCount = el(root,'p','0 batches','batch-count');
   const north = el(root, 'div', '', 'north-star');
   const announcements = el(root,'p','','sr-only'); announcements.setAttribute('role','status');
   let announceTimer;
@@ -31,6 +33,7 @@ export function createTriage(root) {
     const meter = el(step, 'progress'); meter.max = 1; meter.value = 0;
     meter.setAttribute('aria-label', name);
     meters.push({count,meter,step});
+    if (i === 0 && intake) step.append(intake);
     if (i === 3) small.push(el(step, 'div', '', 'pile-buttons small-piles'));
   });
   const buttons = [];
@@ -160,7 +163,8 @@ export function createTriage(root) {
       row.node.setAttribute('aria-label',`Open ${row.name}`);
     }
     rowList.querySelector('.empty-pile')?.remove();
-    if (!shown.length) el(rowList,'p',query ? 'No matching labels.' : selected === 'review' ? running ? 'Nothing needs review so far. Labels are still being checked.' : 'All done. Nothing is waiting on you.' : 'No labels in this pile.', 'empty-pile');
+    legend.hidden = rows.length === 0; tools.hidden = rows.length === 0;
+    if (!shown.length) el(rowList,'p',!started ? intakeState(total,false).message : query ? 'No matching labels.' : selected === 'review' ? running ? 'Nothing needs review so far. Labels are still being checked.' : 'All done. Nothing is waiting on you.' : 'No labels in this pile.', 'empty-pile');
     more.hidden = shown.length === matches.length;
     footer.textContent = shown.length < matches.length ? `Showing ${shown.length} of ${matches.length}. Click a row to see its checks or change the decision.` : shown.length ? 'Click a row to decide.' : '';
   }
@@ -178,6 +182,7 @@ export function createTriage(root) {
     }
   }
   function render() {
+    batchCount.textContent = intakeState(total,started).batches;
     const counts = tallies(rows); number.textContent = counts.review;
     caption.textContent = running ? 'need review so far' : counts.review === 1 ? 'label needs review' : 'labels need review';
     secondary.textContent = running ? `Label ${Math.min(stages[3]+1,total)} of ${total}` : `${stopped ? `Stopped at label ${stages[3]} of ${total}. ` : ''}${counts.machine} sorted by machine · ${counts.human} by you${finishSeconds === null ? '' : ` · ${finishSeconds.toFixed(1)} s total`}${total > 1 && firstSeconds !== null ? ` · first result ${firstSeconds.toFixed(1)} s` : ''}`;
@@ -198,8 +203,9 @@ export function createTriage(root) {
   new ResizeObserver(wires).observe(map);
   render();
   return {
-    clear() { root.hidden = true; running = false; dialog.close(); rows = []; selected = 'review'; query = ''; search.value = ''; stages = [0,0,0,0]; total = 0; rowList.replaceChildren(); render(); },
-    start(count) {root.hidden = false; finishSeconds = null; firstSeconds = null; stopped = false; running = true; activeStage = 1; total = count; stages = [count,0,0,0]; render();},
+    clear() { root.hidden = false; started = false; finishSeconds = null; firstSeconds = null; stopped = false; running = false; dialog.close(); rows = []; selected = 'review'; query = ''; search.value = ''; stages = [0,0,0,0]; total = 0; rowList.replaceChildren(); render(); },
+    queue(count) {total = count; stages = [count,0,0,0]; render();},
+    start(count) {started = true; root.hidden = false; finishSeconds = null; firstSeconds = null; stopped = false; running = true; activeStage = 1; total = count; stages = [count,0,0,0]; render();},
     progress(stage) {stages[stage]++; activeStage = Math.min(stage+1,3); render();},
     stage(stage) {activeStage = stage; render();},
     finish(wasStopped = false, seconds = null, first = null) {finishSeconds = seconds; firstSeconds = first; stopped = wasStopped; running = false; activeStage = -1; render();},
