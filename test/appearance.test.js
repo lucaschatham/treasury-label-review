@@ -116,3 +116,22 @@ test('a tightly bounded OCR I can recover a kerned serif stem without accepting 
  for(let y=20;y<40;y++)for(let x=153;x<154;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=255;
  assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,false);
 });
+
+test('word-wide stroke evidence rescues a narrow bold heading without approving its regular pair',()=>{
+ const warning=word('WARNING:',110,190);
+ const input=blocks([word('GOVERNMENT',10,100),warning]);
+ const render=(strokeWidth,iWidth=3)=>{
+  const pixels=new Uint8ClampedArray(300*200*4).fill(255);
+  const ink=(x0,x1,y0=20,y1=40)=>{for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=0;};
+  for(let i=0;i<7;i++)ink(110+i*10,110+i*10+(i===4?iWidth:strokeWidth));
+  ink(185,188,30,40);
+  return {width:300,height:200,data:pixels};
+ };
+ const bold=strokeEvidence(input,render(7));
+ assert.equal(bold.supportsBold,true);
+ assert.equal(bold.method,'word-strokes');
+ const regular=strokeEvidence(input,render(3));
+ assert.equal(regular.supportsBold,false);
+ const mixed=strokeEvidence(input,render(7,2));
+ assert.equal(mixed.supportsBold,false);
+});

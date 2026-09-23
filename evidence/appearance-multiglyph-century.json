@@ -1,0 +1,98 @@
+{
+  "scope": "Local guard only; no cloud inference. Frozen fixtures unchanged.",
+  "baselineSource": "c3ebde8cd36065d917677787f195b1dab46929b9",
+  "results": [
+    {
+      "id": "spirits-05-valid",
+      "design": "spirits-05",
+      "split": "development",
+      "beverage": "spirits",
+      "variant": "valid",
+      "application": {
+        "brand": "STONE’S THROW",
+        "type": "Kentucky Straight Bourbon Whiskey",
+        "abv": "45",
+        "volume": "750 mL",
+        "producer": "STONE’S THROW, Portland, OR",
+        "imported": false,
+        "country": ""
+      },
+      "observed": {
+        "brand": "STONE’S THROW",
+        "type": "Kentucky Straight Bourbon Whiskey",
+        "abv": "45",
+        "volume": "750 mL",
+        "producer": "STONE’S THROW, Portland, OR",
+        "imported": false,
+        "country": ""
+      },
+      "warning": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems.",
+      "headingBold": true,
+      "layout": 1,
+      "multilineBrand": true,
+      "alcoholStyle": 1,
+      "quality": "clear",
+      "expectedDefect": null,
+      "provenance": "Synthetic fixture authored for this project; no commercial artwork or personal data.",
+      "file": "spirits-05-valid.png",
+      "bytes": 200061,
+      "sha256": "a967b93f62929c73c7e83190a913eb42917c82aed6f7c9c9d74a283ea9bb3315",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2800000000000001,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2800000000000001,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "spirits-05-warning-weight",
+      "design": "spirits-05",
+      "split": "development",
+      "beverage": "spirits",
+      "variant": "warning-weight",
+      "application": {
+        "brand": "STONE’S THROW",
+        "type": "Kentucky Straight Bourbon Whiskey",
+        "abv": "45",
+        "volume": "750 mL",
+        "producer": "STONE’S THROW, Portland, OR",
+        "imported": false,
+        "country": ""
+      },
+      "observed": {
+        "brand": "STONE’S THROW",
+        "type": "Kentucky Straight Bourbon Whiskey",
+        "abv": "45",
+        "volume": "750 mL",
+        "producer": "STONE’S THROW, Portland, OR",
+        "imported": false,
+        "country": ""
+      },
+      "warning": "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems.",
+      "headingBold": false,
+      "layout": 1,
+      "multilineBrand": true,
+      "alcoholStyle": 1,
+      "quality": "clear",
+      "expectedDefect": "warning-weight",
+      "provenance": "Synthetic fixture authored for this project; no commercial artwork or personal data.",
+      "file": "spirits-05-warning-weight.png",
+      "bytes": 200196,
+      "sha256": "ad91d4a90dd0458a43f5bbccb5fc276ef9daa913930571f4c92e513eba27eef6",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      }
+    }
+  ]
+}

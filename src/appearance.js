@@ -97,9 +97,40 @@ function kernedI(symbol, image) {
   return {x0:b.x0+right.x0,x1:b.x0+right.x1,y0:b.y0,y1:b.y1};
 }
 
+// A narrow face can have a bold I below the single-stem threshold. In that
+// case, require dense strokes across the independently segmented whole word.
+// The density and run width cutoffs were fixed on the earlier font/layout set;
+// the third font-family holdout is reserved for one final evaluation.
+function wordStrokeEvidence(word, image) {
+  const b=word?.bbox;
+  if(!b || !Object.values(b).every(Number.isInteger) || b.x0<0 || b.y0<0 || b.x1>image.width || b.y1>image.height)return false;
+  const width=b.x1-b.x0,height=b.y1-b.y0;
+  if(height<16 || width<height*3 || width>height*16)return false;
+  let ink=0;
+  const runs=[];
+  for(let y=b.y0;y<b.y1;y++){
+    let run=0;
+    for(let x=b.x0;x<b.x1;x++){
+      const o=(y*image.width+x)*4;
+      const dark=image.data[o+3]>200 && .2126*image.data[o]+.7152*image.data[o+1]+.0722*image.data[o+2]<128;
+      if(dark)ink++;
+      if(y>=b.y0+height*.3 && y<b.y0+height*.7){
+        if(dark)run++;
+        else if(run){runs.push(run);run=0;}
+      }
+    }
+    if(run)runs.push(run);
+  }
+  if(runs.length<14)return false;
+  runs.sort((a,b)=>a-b);
+  const median=runs[Math.floor(runs.length/2)];
+  return ink/(width*height)>=.43 && median/(width/8)>=.16;
+}
+
 // A conservative corroboration guard, not a font classifier. Require a narrow,
-// high-confidence I with a stem at least 17% of cap height; thinner or ambiguous
-// glyphs cannot receive an automated bold pass, even if vision models agree.
+// high-confidence I with a stem at least 17% of cap height, or independently
+// segmented and dense strokes across the heading word. Ambiguous glyphs cannot
+// receive an automated bold pass, even if vision models agree.
 export function strokeEvidence(blocks, image) {
   const heading = locateHeading(blocks, image.width, image.height);
   const uncertain = { supportsBold:false, ratio:null, reason:'glyph-geometry' };
@@ -122,6 +153,7 @@ export function strokeEvidence(blocks, image) {
     rows.push(count/height);
   }
   const ratio=rows.reduce((sum,value)=>sum+value,0)/rows.length;
+  if(ratio>=.13 && ratio<.17 && raster && wordStrokeEvidence(warning,image))return {supportsBold:true,ratio,reason:'supported',method:'word-strokes'};
   return {supportsBold:ratio>=.17,ratio,reason:ratio>=.17?'supported':'stroke-evidence'};
 }
 

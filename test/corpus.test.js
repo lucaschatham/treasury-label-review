@@ -83,3 +83,32 @@ test('repair holdout is frozen at 40 paired bold and regular images',()=>{
   assert.deepEqual(pair.map(x=>x.headingBold).sort(),[false,true]);
  }
 });
+
+test('next appearance holdout has independent paired faces and font provenance',()=>{
+ const {labels}=JSON.parse(readFileSync(new URL('../evidence/appearance-holdout-v3-frozen.json',import.meta.url)));
+ const prior=[
+  ...JSON.parse(readFileSync(new URL('../evidence/appearance-holdout-frozen.json',import.meta.url))).labels,
+  ...JSON.parse(readFileSync(new URL('../evidence/appearance-holdout-v2-frozen.json',import.meta.url))).labels,
+ ];
+ const seen=new Set([...prior.map(x=>x.family),...buildCorpus().typography.map(x=>x.family),
+  'Arial','Georgia','Trebuchet-MS','Verdana']);
+ assert.equal(labels.length,80);
+ assert.equal(new Set(labels.map(x=>x.family)).size,8);
+ assert.equal(new Set(labels.map(x=>x.sha256)).size,80);
+ for(const item of labels){
+  assert.equal(seen.has(item.family),false,item.family);
+  assert.match(item.sha256,/^[a-f0-9]{64}$/);
+  assert.match(item.fontSha256,/^[a-f0-9]{64}$/);
+  assert.ok(Number.isInteger(item.fontIndex));
+  assert.ok(item.fontFamily && item.fontStyle);
+ }
+ for(const family of new Set(labels.map(x=>x.family)))for(let layout=0;layout<5;layout++){
+  const pair=labels.filter(x=>x.family===family&&x.layout===layout);
+  assert.equal(pair.length,2,`${family} layout ${layout}`);
+  assert.deepEqual(pair.map(x=>x.headingBold).sort(),[false,true]);
+  assert.equal(pair[0].size,pair[1].size);
+  assert.equal(pair[0].x,pair[1].x);
+  assert.equal(pair[0].y,pair[1].y);
+  assert.notEqual(pair[0].font,pair[1].font);
+ }
+});
