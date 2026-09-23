@@ -1,9 +1,9 @@
 # Pile triage acceptance
 
-Source: branch `pile-triage`, based on production source `2a46749`.
+Source: branch `pile-triage`, runtime commit `167f3fe`, based on production source `2a46749`.
 
-Preview: https://treasury-label-review-2mio59qga-chathamworks-6954s-projects.vercel.app
-Deployment: `dpl_5F39ZWff9UBtGkM82HVNXgkJCjnG`, Vercel project `treasury-label-review`, target `preview`, status `READY`.
+Preview: https://treasury-label-review-dfzabkcen-chathamworks-6954s-projects.vercel.app
+Deployment: `dpl_EDJW66VQDQQX6DzyiXM14wesf7gt`, Vercel project `treasury-label-review`, target `preview`, status `READY`.
 
 The original [Pile Triage Handoff](https://claude.ai/artifact/8j1XxdE8WotEtQa7zCsv4m) was recovered in Claude Desktop during the follow-up. Opus 5.5 reviewed the implementation three times; its final verdict was no must-fix design or behavior issues. See `pile-triage-opus-review.md` for findings, fixes, and verification boundaries.
 
@@ -47,3 +47,5 @@ The UI checks do not establish detector accuracy; detector behavior is unchanged
 - [ ] A fresh full 300-image OCR run was not performed during this design audit. Synthetic UI evidence must not be presented as OCR performance or accuracy evidence.
 
 Current screenshots use `pile-triage-v2-*`. The original screenshots are retained as historical evidence.
+
+Final committed preview `dpl_EDJW66VQDQQX6DzyiXM14wesf7gt` was verified in authenticated Chrome. OLD TOM completed in 2.4 seconds on this single observed run, entered Passed with seven matching checks, opened the corrected dialog, and accepted the individual A shortcut. The secondary tally changed from one machine-sorted label to one human decision, with a single You pill and “Approved after review” reason. This one sample is not a general latency claim.
