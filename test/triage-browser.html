@@ -1,0 +1,24 @@
+<!doctype html><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pile triage QA</title><link rel="stylesheet" href="/src/style.css"><main class="shell"><h1 style="font-size:20px">Pile triage QA fixture</h1><p>300 synthetic records. Tests presentation and decisions, not OCR or detector accuracy.</p><button id="run">Run UI acceptance checks</button><p id="outcome" role="status"></p><section class="panel" id="fixture"></section></main><script type="module">
+import {createTriage} from '/src/triage.js';
+if (new URLSearchParams(location.search).get('theme') === 'light') {const sheet = document.createElement('style'); sheet.textContent = (await (await fetch('/src/style.css?direct')).text()).replaceAll('(prefers-color-scheme: dark)','(prefers-color-scheme: no-preference)').replaceAll('(prefers-color-scheme:dark)','(prefers-color-scheme:no-preference)'); document.querySelector('link').remove(); document.head.append(sheet);}
+const root=document.querySelector('#fixture');const ui=createTriage(root);
+const make=(name,status)=>({name,findings:Object.freeze([Object.freeze({field:'Alcohol content',status,found:'40%',expected:'45%',detail:'Compare the alcohol content.'})]),confidence:90,imageUrl:'/samples/old-tom.png'});
+function populate(){ui.clear();ui.start(300); for(let i=0;i<300;i++){ui.progress(1);ui.progress(2);const node=ui.add(make(`label-${String(i).padStart(3,'0')}.png`,i<280?'match':i<297?'mismatch':'review'));node.dataset.timings='{"total":1}';node.dataset.appearance='{"status":"review"}';}ui.finish();}
+populate();
+const assert=(value,message)=>{if(!value)throw Error(message);};
+const click=selector=>{const node=document.querySelector(selector);assert(node,`Missing ${selector}`);node.click();};
+document.querySelector('#run').onclick=()=>{try{
+populate();assert(root.querySelector('.north-star strong').textContent==='3','north star');
+assert(root.querySelectorAll('.triage-row').length===300,'unique mounted rows');
+assert(new Set([...root.querySelectorAll('.triage-row')].map(n=>n.getAttribute('aria-label'))).size===300,'unique names');
+click('.large.passed');assert(root.querySelectorAll('.triage-row:not([hidden])').length===50,'pagination first page');assert(root.querySelector('.small.passed').getAttribute('aria-pressed')==='true','twins');
+[...root.querySelectorAll('button')].find(n=>n.textContent==='Show more').click();assert(root.querySelectorAll('.triage-row:not([hidden])').length===100,'show more');
+click('.large.review');click('.triage-row:not([hidden])');assert(document.querySelector('dialog').open,'modal');assert(root.querySelector('.triage-row:not([hidden])').textContent.includes('Seen'),'Seen');
+const dialog=document.querySelector('dialog');dialog.querySelector('.send-action').click();assert(dialog.open,'reason gate');dialog.querySelector('.reason-chips button').click();assert(!dialog.open,'send decision');assert(root.querySelector('.north-star strong').textContent==='2','count after send');
+click('.triage-row:not([hidden])');dialog.dispatchEvent(new KeyboardEvent('keydown',{key:'l',bubbles:true}));assert(root.querySelector('.triage-row:not([hidden])').textContent.includes('Later'),'Later shortcut');
+click('.triage-row:not([hidden])');dialog.dispatchEvent(new KeyboardEvent('keydown',{key:'a',bubbles:true}));assert(root.querySelector('.north-star strong').textContent==='1','approve shortcut');
+click('.large.passed');const bulk=root.querySelector('.list-tools > button');bulk.click();dialog.dispatchEvent(new KeyboardEvent('keydown',{key:'a',bubbles:true}));assert(dialog.open,'bulk shortcut must not approve');assert(document.activeElement.textContent==='Cancel','bulk focus on Cancel');assert(dialog.querySelector('.reason-chips').hidden,'bulk approve no reasons');dialog.querySelector('.approve-action').click();assert(root.querySelector('.north-star p').textContent.includes('282 by you'),'bulk tally');
+assert(root.querySelectorAll('[data-timings][data-appearance]').length===300,'instrumentation');
+populate();document.querySelector('#outcome').textContent='PASS: 300 unique rows, totals, pagination, twin selection, Seen, reason gate, Later/Approve shortcuts, bulk decisions, immutable findings, instrumentation.';
+}catch(error){document.querySelector('#outcome').textContent=`FAIL: ${error.message}`;throw error;}};
+</script>

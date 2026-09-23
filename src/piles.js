@@ -26,3 +26,27 @@ export function tallies(rows) {
     return counts;
   }, {passed:0, failed:0, review:0, machine:0, human:0});
 }
+export function rowStatus(row) {
+  if (row.human?.status === 'Seen' && machinePile(row) !== 'review') return 'Machine';
+  return row.human?.status || (machinePile(row) === 'review' ? 'New' : 'Machine');
+}
+export function primaryFinding(row) {
+  return row.findings.find(f => f.status === 'mismatch') || row.findings.find(f => f.status === 'review') || row.findings[0];
+}
+export function rowReason(row) {
+  if (row.human?.status === 'Sent back') return `Sent back: ${row.human.reason}`;
+  if (row.human?.status === 'Approved') return 'Approved after review';
+  if (row.error) return "Couldn't open this image. Try a clearer file.";
+  const finding = primaryFinding(row);
+  if (finding?.status !== 'mismatch' && row.confidence < 70) return 'Photo too blurry to read confidently';
+  if (finding?.status === 'mismatch' || finding?.status === 'review') {
+    const field = finding.field || 'Label';
+    const extra = row.findings.filter(f => ['review','mismatch'].includes(f.status)).length - 1;
+    const reason = field === 'Warning appearance' && /unavailable|not configured/i.test(finding.found || '') ? 'Appearance check unavailable' : field === 'Warning appearance' ? "Can't tell if the warning heading is bold" : finding.status === 'mismatch' ? `${field} differs from the form` : `Check ${field.toLowerCase()} against the artwork`;
+    return `${reason}${extra ? ` · +${extra} more` : ''}`;
+  }
+  return `All ${row.findings.filter(f => f.status === 'match').length} checks matched`;
+}
+export function reasonChoices(rows) {
+  return [...new Set(rows.flatMap(row => row.findings.filter(f => ['review','mismatch'].includes(f.status)).map(f => f.field)).filter(Boolean)), 'Image unreadable', 'Other problem'];
+}

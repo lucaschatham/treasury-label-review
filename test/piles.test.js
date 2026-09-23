@@ -42,3 +42,21 @@ test('all transitions preserve frozen findings and original records', () => {
     assert.deepEqual(findings, [{status:'review',found:'Original'}]);
   }
 });
+
+test('row presentation distinguishes Machine from unresolved statuses', async () => {
+  const { rowStatus, rowReason, reasonChoices } = await import('../src/piles.js');
+  assert.equal(rowStatus(row(['match'])), 'Machine');
+  assert.equal(rowStatus(row(['mismatch'])), 'Machine');
+  assert.equal(rowStatus(row(['review'])), 'New');
+  const item = {findings:[{field:'Alcohol content',status:'mismatch'},{field:'Brand name',status:'review'}]};
+  assert.match(rowReason(item), /alcohol.*\+1 more/i);
+  assert.deepEqual(reasonChoices([item]), ['Alcohol content','Brand name','Image unreadable','Other problem']);
+  assert.equal(rowReason({...item,error:'broken'}), "Couldn't open this image. Try a clearer file.");
+});
+test('human reasons are visible without replacing machine findings', async () => {
+  const {rowReason,rowStatus} = await import('../src/piles.js');
+  const original = row(['mismatch']);
+  assert.equal(rowReason(transition(original,'send-back',{reason:'Alcohol content'})), 'Sent back: Alcohol content');
+  assert.equal(rowReason(transition(original,'approve')), 'Approved after review');
+  assert.equal(rowStatus(transition(original,'seen')), 'Machine');
+});

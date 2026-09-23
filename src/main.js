@@ -16,8 +16,18 @@ const results = document.querySelector("#results");
 const triage = createTriage(results);
 const sampleButton = document.querySelector("#sample-button");
 const stopButton = document.querySelector("#stop-button");
+results.before(stopButton);
 const engineStatus = document.querySelector("#engine-status");
 const dropZone = document.querySelector("#drop-zone");
+const inputPanel = document.querySelector('.input-panel');
+const appSummary = document.querySelector('#application-summary');
+const editApplication = document.querySelector('#edit-application');
+function collapseApplication(collapsed) {
+  document.body.classList.toggle('reviewing', collapsed);
+  inputPanel.classList.toggle('collapsed', collapsed);
+  appSummary.hidden = !collapsed;
+}
+editApplication.addEventListener('click', () => {collapseApplication(false); form.elements.namedItem('brand').focus();});
 let selected = [];
 let workerPromise = null;
 let active = false;
@@ -26,12 +36,15 @@ let progressLabel = "";
 let previewUrls = [];
 
 function setStatus(message, kind = "") {
+  status.hidden = !results.hidden && (kind !== 'error' || /^(Finished|Stopped):/.test(message));
   status.className = `status ${kind}`;
   status.textContent = message;
 }
 
 function clearResults() {
   triage.clear();
+  collapseApplication(false);
+  status.hidden = false; status.setAttribute('role','status'); status.setAttribute('aria-live','polite');
   previewUrls.forEach((url) => URL.revokeObjectURL(url));
   previewUrls = [];
 }
@@ -198,8 +211,11 @@ form.addEventListener("submit", async (event) => {
       throw new Error("Application CSV must be under 1 MB.");
     const applications = manifest ? parseManifest(await manifest.text()) : null;
     const jobs = buildJobs(files, application, applications);
+    appSummary.querySelector('span').textContent = `${manifest ? 'CSV applications' : application.brand || 'Application'} · ${jobs.length} image${jobs.length === 1 ? '' : 's'}`;
+    collapseApplication(true);
     triage.start(jobs.length);
-    results.scrollIntoView({block:'start'});
+    status.removeAttribute('role'); status.setAttribute('aria-live','off');
+    inputPanel.scrollIntoView({block:'start'});
     const appearanceCache = new Map();
     stopButton.hidden = false;
     stopButton.disabled = false;
@@ -210,6 +226,7 @@ form.addEventListener("submit", async (event) => {
     for (const [index, job] of jobs.entries()) {
       if (stopRequested) break;
       const { file, application: expected } = job;
+      triage.stage(1);
       progressLabel = `Reading ${index + 1} of ${jobs.length}: ${file.name}`;
       setStatus(progressLabel, "busy");
       const started = performance.now();
@@ -250,6 +267,7 @@ form.addEventListener("submit", async (event) => {
       }
     }
     const total = (performance.now() - clickedAt) / 1000;
+    triage.finish(stopRequested,total,firstResultSeconds);
     const timing =
       firstResultSeconds === null
         ? ""
@@ -259,6 +277,7 @@ form.addEventListener("submit", async (event) => {
       failed ? "error" : "done",
     );
   } catch (error) {
+    if (!results.hidden) triage.finish(stopRequested,(performance.now()-clickedAt)/1000,firstResultSeconds);
     setStatus(error.message || String(error), "error");
   } finally {
     active = false;
