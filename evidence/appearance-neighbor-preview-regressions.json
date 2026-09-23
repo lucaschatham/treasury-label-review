@@ -1,0 +1,2582 @@
+{
+  "status": "Finished: 32 reviewed, 1 failed, 0 remaining. Total: 32.1 s. First result: 1.4 s from click. Inspect exceptions and make your final decision.",
+  "rows": [
+    {
+      "file": "origin-address-decoy.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.900000000372529,
+        "ocr": 578.5999999996275,
+        "comparison": 0.40000000037252903,
+        "appearance": 824.1999999992549,
+        "render": 2.599999999627471,
+        "total": 1416.7999999988824,
+        "clickToResult": 1423.7999999988824,
+        "queue": 0,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "type-company-decoy.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 14.400000000372529,
+        "ocr": 559.5,
+        "comparison": 0.2000000011175871,
+        "appearance": 6,
+        "render": 0.3999999985098839,
+        "total": 580.5,
+        "clickToResult": 2004.2999999988824,
+        "queue": 1416.7999999988824,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "3 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: Bourbon"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "REVIEW",
+          "found": "Bourbon Street Distilling 45% Alc./Vol. (90 Proof); Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "recycled-percent-decoy.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11.099999999627471,
+        "ocr": 542.5,
+        "comparison": 0.19999999925494194,
+        "appearance": 6.300000000745058,
+        "render": 0.40000000037252903,
+        "total": 560.5999999996275,
+        "clickToResult": 2565,
+        "queue": 1997.4000000003725,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "REVIEW",
+          "found": "Not found",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "origin-conflict.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11.400000000372529,
+        "ocr": 579.0999999996275,
+        "comparison": 0.2999999988824129,
+        "appearance": 5.200000001117587,
+        "render": 0.5,
+        "total": 596.5,
+        "clickToResult": 3161.5,
+        "queue": 2558,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "France; Poland",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "type-complete-positive.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11,
+        "ocr": 546,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.800000000745058,
+        "render": 0.5,
+        "total": 562.5,
+        "clickToResult": 3724,
+        "queue": 3154.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "producer-complete-positive.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.800000000745058,
+        "ocr": 543.2999999988824,
+        "comparison": 0.2000000011175871,
+        "appearance": 5,
+        "render": 0.5,
+        "total": 559.8000000007451,
+        "clickToResult": 4283.9000000003725,
+        "queue": 3717.0999999996275,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "wrapped-abv.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.799999998882413,
+        "ocr": 531.8000000007451,
+        "comparison": 0.2999999988824129,
+        "appearance": 4.900000000372529,
+        "render": 0.5,
+        "total": 548.2999999988824,
+        "clickToResult": 4832.199999999255,
+        "queue": 4276.9000000003725,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "wrapped-origin.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11,
+        "ocr": 563.5999999996275,
+        "comparison": 0.10000000149011612,
+        "appearance": 4.799999998882413,
+        "render": 0.40000000037252903,
+        "total": 580,
+        "clickToResult": 5412.199999999255,
+        "queue": 4825.199999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "MATCH",
+          "found": "France",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "origin-separate-columns.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11,
+        "ocr": 565.4000000003725,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.800000000745058,
+        "render": 0.40000000037252903,
+        "total": 581.8000000007451,
+        "clickToResult": 5994,
+        "queue": 5405.199999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "wrapped-type.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11.400000000372529,
+        "ocr": 558.9000000003725,
+        "comparison": 0.2999999988824129,
+        "appearance": 4.599999999627471,
+        "render": 0.40000000037252903,
+        "total": 575.5999999996275,
+        "clickToResult": 6569.699999999255,
+        "queue": 5987.0999999996275,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "unrelated-valid-origin.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11.099999999627471,
+        "ocr": 588.5,
+        "comparison": 0.10000000149011612,
+        "appearance": 4.400000000372529,
+        "render": 0.5,
+        "total": 604.7000000011176,
+        "clickToResult": 7174.4000000003725,
+        "queue": 6562.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "MATCH",
+          "found": "France",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "type-different.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.599999999627471,
+        "ocr": 522.5999999996275,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.400000000372529,
+        "render": 0.40000000037252903,
+        "total": 538.1999999992549,
+        "clickToResult": 7712.5999999996275,
+        "queue": 7167.4000000003725,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MISMATCH",
+          "found": "London Dry Gin",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "type-absent.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11.099999999627471,
+        "ocr": 509.2000000011176,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.599999999627471,
+        "render": 0.5,
+        "total": 525.5999999996275,
+        "clickToResult": 8238.199999999255,
+        "queue": 7705.5999999996275,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "producer-different.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.900000000372529,
+        "ocr": 543.4000000003725,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.699999999254942,
+        "render": 0.40000000037252903,
+        "total": 559.7000000011176,
+        "clickToResult": 8798,
+        "queue": 8231.299999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MISMATCH",
+          "found": "Another Company, Boston, MA",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "producer-absent.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.599999999627471,
+        "ocr": 500.80000000074506,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.5,
+        "render": 0.40000000037252903,
+        "total": 516.5,
+        "clickToResult": 9314.599999999627,
+        "queue": 8791.099999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "country-different.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11,
+        "ocr": 565.5,
+        "comparison": 0.30000000074505806,
+        "appearance": 4.699999999254942,
+        "render": 0.5,
+        "total": 582,
+        "clickToResult": 9896.699999999255,
+        "queue": 9307.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "MISMATCH",
+          "found": "Canada",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "country-absent.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.900000000372529,
+        "ocr": 544.6999999992549,
+        "comparison": 0.10000000149011612,
+        "appearance": 4.5,
+        "render": 0.5,
+        "total": 560.7000000011176,
+        "clickToResult": 10457.400000000373,
+        "queue": 9889.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "country-correct.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11.399999998509884,
+        "ocr": 561.1000000014901,
+        "comparison": 0.2999999988824129,
+        "appearance": 4.400000000372529,
+        "render": 0.40000000037252903,
+        "total": 577.6999999992549,
+        "clickToResult": 11035.099999999627,
+        "queue": 10450.400000000373,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "MATCH",
+          "found": "France",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "alcohol-conflict.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.599999999627471,
+        "ocr": 554.3000000007451,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.800000000745058,
+        "render": 0.40000000037252903,
+        "total": 570.3000000007451,
+        "clickToResult": 11605.400000000373,
+        "queue": 11028.099999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "3 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "REVIEW",
+          "found": "45%, 40%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MISMATCH",
+          "found": "Old Tom Distillery, Bardstown, KY 40% ABV",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "quantity-conflict.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.699999999254942,
+        "ocr": 552.6999999992549,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.599999999627471,
+        "render": 0.40000000037252903,
+        "total": 568.5999999996275,
+        "clickToResult": 12174,
+        "queue": 11598.400000000373,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "REVIEW",
+          "found": "750 mL, 700 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "unsupported-quantity.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11,
+        "ocr": 540.4000000003725,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.900000000372529,
+        "render": 0.40000000037252903,
+        "total": 556.9000000003725,
+        "clickToResult": 12730.900000000373,
+        "queue": 12167,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "REVIEW",
+          "found": "Not found",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "abv-exception.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.899999998509884,
+        "ocr": 553.6000000014901,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.5,
+        "render": 0.5,
+        "total": 569.6999999992549,
+        "clickToResult": 13300.599999999627,
+        "queue": 12723.900000000373,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "REVIEW",
+          "found": "45%",
+          "expected": "Application: Not supplied"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "REVIEW",
+          "found": "Not confidently located",
+          "expected": "Application: France"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "wrong-warning.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.900000000372529,
+        "ocr": 542.4000000003725,
+        "comparison": 0.19999999925494194,
+        "appearance": 0,
+        "render": 0.30000000074505806,
+        "total": 553.8000000007451,
+        "clickToResult": 13854.400000000373,
+        "queue": 13293.599999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "missing-heading",
+        "cached": false
+      },
+      "summary": "2 checks need attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "REVIEW",
+          "found": "Exact wording or uppercase heading not detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Heading crop unavailable"
+        }
+      ]
+    },
+    {
+      "file": "spirits-05-warning-weight.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11.199999999254942,
+        "ocr": 540.0999999996275,
+        "comparison": 0.40000000037252903,
+        "appearance": 5.599999999627471,
+        "render": 0.40000000037252903,
+        "total": 557.6999999992549,
+        "clickToResult": 14412.099999999627,
+        "queue": 13847.400000000373,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "STONE\u2019S THROW",
+          "expected": "Application: STONE\u2019S THROW"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "STONE'S THROW, Portland, OR",
+          "expected": "Application: STONE\u2019S THROW, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "treasury-release-corrupt.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 2.900000000372529,
+        "total": 2.900000000372529,
+        "clickToResult": 14415.099999999627,
+        "queue": 14405.199999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "failed",
+        "reason": "processing"
+      },
+      "summary": "Could not read this image: The source image could not be decoded.. Try a clear, valid image.",
+      "findings": []
+    },
+    {
+      "file": "Arial-28-bold.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 5.800000000745058,
+        "ocr": 462.09999999962747,
+        "comparison": 0.19999999925494194,
+        "appearance": 1218.4000000003725,
+        "render": 0.5,
+        "total": 1687,
+        "clickToResult": 16102.099999999627,
+        "queue": 14408.099999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "FRESH CREEK",
+          "expected": "Application: FRESH CREEK"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Fresh Creek, Portland, OR",
+          "expected": "Application: Fresh Creek, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Arial-44-bold.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 8.599999999627471,
+        "ocr": 475.09999999962747,
+        "comparison": 0.2000000011175871,
+        "appearance": 898.5999999996275,
+        "render": 0.8000000007450581,
+        "total": 1383.300000000745,
+        "clickToResult": 17485.400000000373,
+        "queue": 16095.099999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "FRESH CREEK",
+          "expected": "Application: FRESH CREEK"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Fresh Creek, Portland, OR",
+          "expected": "Application: Fresh Creek, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Georgia-28-bold.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 9.099999999627471,
+        "ocr": 467,
+        "comparison": 0.09999999962747097,
+        "appearance": 822.5,
+        "render": 0.900000000372529,
+        "total": 1299.7999999988824,
+        "clickToResult": 18785.199999999255,
+        "queue": 17478.400000000373,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "FRESH CREEK",
+          "expected": "Application: FRESH CREEK"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Fresh Creek, Portland, OR",
+          "expected": "Application: Fresh Creek, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Georgia-44-bold.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 7.100000001490116,
+        "ocr": 470.3999999985099,
+        "comparison": 0.2000000011175871,
+        "appearance": 4233.299999998882,
+        "render": 1.700000001117587,
+        "total": 4712.800000000745,
+        "clickToResult": 23498.099999999627,
+        "queue": 18778.299999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "FRESH CREEK",
+          "expected": "Application: FRESH CREEK"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Fresh Creek, Portland, OR",
+          "expected": "Application: Fresh Creek, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Trebuchet-MS-28-bold.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 10.5,
+        "ocr": 459.30000000074506,
+        "comparison": 0.19999999925494194,
+        "appearance": 829.9000000003725,
+        "render": 0.6999999992549419,
+        "total": 1300.699999999255,
+        "clickToResult": 24798.799999998882,
+        "queue": 23491.099999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "FRESH CREEK",
+          "expected": "Application: FRESH CREEK"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Fresh Creek, Portland, OR",
+          "expected": "Application: Fresh Creek, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Trebuchet-MS-44-bold.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 8.900000000372529,
+        "ocr": 466.5,
+        "comparison": 0.2000000011175871,
+        "appearance": 4337.5,
+        "render": 1.199999999254942,
+        "total": 4814.300000000745,
+        "clickToResult": 29613.099999999627,
+        "queue": 24791.799999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "FRESH CREEK",
+          "expected": "Application: FRESH CREEK"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Fresh Creek, Portland, OR",
+          "expected": "Application: Fresh Creek, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Verdana-28-bold.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 8.099999999627471,
+        "ocr": 480.09999999962747,
+        "comparison": 0.2000000011175871,
+        "appearance": 807.5,
+        "render": 0.5,
+        "total": 1296.5,
+        "clickToResult": 30909.599999999627,
+        "queue": 29606.099999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "FRESH CREEK",
+          "expected": "Application: FRESH CREEK"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Fresh Creek, Portland, OR",
+          "expected": "Application: Fresh Creek, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Verdana-44-bold.png",
+      "timings": {
+        "setup": 7,
+        "prepare": 11.900000000372529,
+        "ocr": 491.59999999962747,
+        "comparison": 0.19999999925494194,
+        "appearance": 723.6999999992549,
+        "render": 1.5,
+        "total": 1229.0999999996275,
+        "clickToResult": 32138.699999999255,
+        "queue": 30902.599999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "FRESH CREEK",
+          "expected": "Application: FRESH CREEK"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Fresh Creek, Portland, OR",
+          "expected": "Application: Fresh Creek, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    }
+  ],
+  "network": [
+    {
+      "duration": 816.0999999996275,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 502.9
+        }
+      ]
+    },
+    {
+      "duration": 1213.300000000745,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 975.2
+        }
+      ]
+    },
+    {
+      "duration": 893,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 605.3
+        }
+      ]
+    },
+    {
+      "duration": 817.2999999988824,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 615
+        }
+      ]
+    },
+    {
+      "duration": 4227.5,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 4016.9
+        }
+      ]
+    },
+    {
+      "duration": 824.2999999988824,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 425.4
+        }
+      ]
+    },
+    {
+      "duration": 4331.699999999255,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 4017.2
+        }
+      ]
+    },
+    {
+      "duration": 802.0999999996275,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 596.9
+        }
+      ]
+    },
+    {
+      "duration": 718.3000000007451,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 492
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "source": "2a46749",
+    "checks": [
+      {
+        "file": "origin-address-decoy.png",
+        "field": "Country of origin",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "type-company-decoy.png",
+        "field": "Class / type",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "recycled-percent-decoy.png",
+        "field": "Alcohol content",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "origin-conflict.png",
+        "field": "Country of origin",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "type-complete-positive.png",
+        "field": "Class / type",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "producer-complete-positive.png",
+        "field": "Producer / address",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "wrapped-abv.png",
+        "field": "Alcohol content",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "wrapped-origin.png",
+        "field": "Country of origin",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "origin-separate-columns.png",
+        "field": "Country of origin",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "wrapped-type.png",
+        "field": "Class / type",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "unrelated-valid-origin.png",
+        "field": "Country of origin",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "type-different.png",
+        "field": "Class / type",
+        "expected": "non-match",
+        "actual": "mismatch",
+        "passed": true
+      },
+      {
+        "file": "type-absent.png",
+        "field": "Class / type",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "producer-different.png",
+        "field": "Producer / address",
+        "expected": "non-match",
+        "actual": "mismatch",
+        "passed": true
+      },
+      {
+        "file": "producer-absent.png",
+        "field": "Producer / address",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "country-different.png",
+        "field": "Country of origin",
+        "expected": "non-match",
+        "actual": "mismatch",
+        "passed": true
+      },
+      {
+        "file": "country-absent.png",
+        "field": "Country of origin",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "country-correct.png",
+        "field": "Country of origin",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "alcohol-conflict.png",
+        "field": "Alcohol content",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "quantity-conflict.png",
+        "field": "Net contents",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "unsupported-quantity.png",
+        "field": "Net contents",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "abv-exception.png",
+        "field": "Alcohol content",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "wrong-warning.png",
+        "field": "Government warning",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "spirits-05-warning-weight.png",
+        "field": "Warning appearance",
+        "expected": "non-match",
+        "actual": "review",
+        "passed": true
+      },
+      {
+        "file": "treasury-release-corrupt.png",
+        "field": null,
+        "expected": "failed",
+        "actual": "failed",
+        "passed": true
+      },
+      {
+        "file": "Arial-28-bold.png",
+        "field": "Warning appearance",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "Arial-44-bold.png",
+        "field": "Warning appearance",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "Georgia-28-bold.png",
+        "field": "Warning appearance",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "Georgia-44-bold.png",
+        "field": "Warning appearance",
+        "expected": "match",
+        "actual": "review",
+        "passed": false
+      },
+      {
+        "file": "Trebuchet-MS-28-bold.png",
+        "field": "Warning appearance",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "Trebuchet-MS-44-bold.png",
+        "field": "Warning appearance",
+        "expected": "match",
+        "actual": "review",
+        "passed": false
+      },
+      {
+        "file": "Verdana-28-bold.png",
+        "field": "Warning appearance",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      },
+      {
+        "file": "Verdana-44-bold.png",
+        "field": "Warning appearance",
+        "expected": "match",
+        "actual": "match",
+        "passed": true
+      }
+    ],
+    "passed": 31,
+    "total": 33,
+    "targetedSemanticFalseMatches": 0,
+    "namedBoldMatches": 6,
+    "namedBoldTotal": 8,
+    "failedNamedBold": [
+      "Georgia-44-bold.png",
+      "Trebuchet-MS-44-bold.png"
+    ],
+    "failureReason": "timeout for both named bold failures"
+  }
+}

@@ -1,0 +1,5900 @@
+{
+  "status": "Finished: 80 reviewed, 0 failed, 0 remaining. Total: 92.2 s. First result: 0.5 s from click. Inspect exceptions and make your final decision.",
+  "rows": [
+    {
+      "file": "Seravek-0-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 5.099999999627471,
+        "ocr": 460.40000000037253,
+        "comparison": 0.5,
+        "appearance": 5.699999999254942,
+        "render": 0.6999999992549419,
+        "total": 472.3999999985099,
+        "clickToResult": 478.69999999925494,
+        "queue": 0,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-0-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.300000000745058,
+        "ocr": 462.5,
+        "comparison": 0.09999999962747097,
+        "appearance": 3686.0999999996275,
+        "render": 1,
+        "total": 4156,
+        "clickToResult": 4634.699999999255,
+        "queue": 472.3999999985099,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-1-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.199999999254942,
+        "ocr": 460.09999999962747,
+        "comparison": 0.2000000011175871,
+        "appearance": 5,
+        "render": 0.5,
+        "total": 472.09999999962747,
+        "clickToResult": 5106.9000000003725,
+        "queue": 4628.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-1-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.699999999254942,
+        "ocr": 461.8999999985099,
+        "comparison": 0.2000000011175871,
+        "appearance": 1243.800000000745,
+        "render": 1.5,
+        "total": 1714.300000000745,
+        "clickToResult": 6821.300000000745,
+        "queue": 5100.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-2-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.5,
+        "ocr": 463.69999999925494,
+        "comparison": 0.30000000074505806,
+        "appearance": 5.399999998509884,
+        "render": 0.7000000011175871,
+        "total": 476.59999999962747,
+        "clickToResult": 7297.9000000003725,
+        "queue": 6815,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-2-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.400000000372529,
+        "ocr": 459.5,
+        "comparison": 0.19999999925494194,
+        "appearance": 727.4000000003725,
+        "render": 0.40000000037252903,
+        "total": 1194,
+        "clickToResult": 8491.900000000373,
+        "queue": 7291.5999999996275,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-3-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 9.699999999254942,
+        "ocr": 454.2000000011176,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.800000000745058,
+        "render": 0.6999999992549419,
+        "total": 469.69999999925494,
+        "clickToResult": 8961.599999999627,
+        "queue": 8485.599999999627,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-3-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.900000000372529,
+        "ocr": 466.09999999962747,
+        "comparison": 0.2000000011175871,
+        "appearance": 490,
+        "render": 1.099999999627471,
+        "total": 964.5,
+        "clickToResult": 9926.099999999627,
+        "queue": 8955.299999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-4-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 11.099999999627471,
+        "ocr": 460.40000000037253,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.899999998509884,
+        "render": 0.5,
+        "total": 477.2000000011176,
+        "clickToResult": 10403.300000000745,
+        "queue": 9919.799999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Seravek-4-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.299999998882413,
+        "ocr": 461.30000000074506,
+        "comparison": 0.09999999962747097,
+        "appearance": 753.5999999996275,
+        "render": 0.5,
+        "total": 1221.8999999985099,
+        "clickToResult": 11625.199999999255,
+        "queue": 10397,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-0-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.299999998882413,
+        "ocr": 467.30000000074506,
+        "comparison": 0.09999999962747097,
+        "appearance": 5,
+        "render": 0.7000000011175871,
+        "total": 480.5,
+        "clickToResult": 12105.800000000745,
+        "queue": 11619,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-0-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.599999999627471,
+        "ocr": 455.19999999925494,
+        "comparison": 0.2000000011175871,
+        "appearance": 864.5,
+        "render": 0.5,
+        "total": 1327,
+        "clickToResult": 13432.800000000745,
+        "queue": 12099.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-1-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.599999999627471,
+        "ocr": 456.59999999962747,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.5,
+        "render": 0.5,
+        "total": 468.3999999985099,
+        "clickToResult": 13901.199999999255,
+        "queue": 13426.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-1-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.200000001117587,
+        "ocr": 453.09999999962747,
+        "comparison": 0.19999999925494194,
+        "appearance": 666.9000000003725,
+        "render": 1.200000001117587,
+        "total": 1127.7000000011176,
+        "clickToResult": 15028.900000000373,
+        "queue": 13894.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-2-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7,
+        "ocr": 466,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.5,
+        "render": 0.599999999627471,
+        "total": 478.19999999925494,
+        "clickToResult": 15507.199999999255,
+        "queue": 15022.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-2-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.800000000745058,
+        "ocr": 459.40000000037253,
+        "comparison": 0.19999999925494194,
+        "appearance": 2943.5999999996275,
+        "render": 0.7999999988824129,
+        "total": 3411,
+        "clickToResult": 18918.199999999255,
+        "queue": 15500.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-3-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 11.599999999627471,
+        "ocr": 457.59999999962747,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.900000000372529,
+        "render": 0.5,
+        "total": 474.80000000074506,
+        "clickToResult": 19393,
+        "queue": 18911.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-3-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.5,
+        "ocr": 456.09999999962747,
+        "comparison": 0.09999999962747097,
+        "appearance": 1444.7999999988824,
+        "render": 1,
+        "total": 1908.5999999996275,
+        "clickToResult": 21301.599999999627,
+        "queue": 19386.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-4-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 9.099999999627471,
+        "ocr": 456.90000000037253,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.5,
+        "render": 0.5,
+        "total": 471.2000000011176,
+        "clickToResult": 21772.800000000745,
+        "queue": 21295.299999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Mono-4-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.599999999627471,
+        "ocr": 456,
+        "comparison": 0.09999999962747097,
+        "appearance": 681.2000000011176,
+        "render": 0.5,
+        "total": 1144.5,
+        "clickToResult": 22917.300000000745,
+        "queue": 21766.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-0-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.799999998882413,
+        "ocr": 466.30000000074506,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.5,
+        "render": 0.599999999627471,
+        "total": 479.2999999988824,
+        "clickToResult": 23396.599999999627,
+        "queue": 22911,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-0-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.800000000745058,
+        "ocr": 453.09999999962747,
+        "comparison": 0.19999999925494194,
+        "appearance": 677,
+        "render": 0.5,
+        "total": 1137.5999999996275,
+        "clickToResult": 24534.199999999255,
+        "queue": 23390.299999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-1-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.900000000372529,
+        "ocr": 461.80000000074506,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.700000001117587,
+        "render": 0.5,
+        "total": 478.1000000014901,
+        "clickToResult": 25012.300000000745,
+        "queue": 24527.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-1-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.699999999254942,
+        "ocr": 459.30000000074506,
+        "comparison": 0.09999999962747097,
+        "appearance": 727.5,
+        "render": 0.5,
+        "total": 1194.199999999255,
+        "clickToResult": 26206.5,
+        "queue": 25006,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-2-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 8.099999999627471,
+        "ocr": 467.30000000074506,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.599999999627471,
+        "render": 0.6000000014901161,
+        "total": 480.80000000074506,
+        "clickToResult": 26687.300000000745,
+        "queue": 26200.199999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-2-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.799999998882413,
+        "ocr": 456.80000000074506,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.900000000372529,
+        "render": 0.599999999627471,
+        "total": 469.2999999988824,
+        "clickToResult": 27156.599999999627,
+        "queue": 26681,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "glyph-geometry",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-3-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.700000001117587,
+        "ocr": 455.19999999925494,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.800000000745058,
+        "render": 0.599999999627471,
+        "total": 467.5,
+        "clickToResult": 27624.099999999627,
+        "queue": 27150.299999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-3-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.400000000372529,
+        "ocr": 468.30000000074506,
+        "comparison": 0.19999999925494194,
+        "appearance": 1060.699999999255,
+        "render": 0.6000000014901161,
+        "total": 1537.2000000011176,
+        "clickToResult": 29161.300000000745,
+        "queue": 27617.799999998882,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "REVIEW",
+          "found": "Exact wording or uppercase heading not detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-4-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.799999998882413,
+        "ocr": 457.80000000074506,
+        "comparison": 0.09999999962747097,
+        "appearance": 6.599999999627471,
+        "render": 0.6000000014901161,
+        "total": 473,
+        "clickToResult": 29634.300000000745,
+        "queue": 29155,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "PT-Serif-4-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.699999999254942,
+        "ocr": 460.09999999962747,
+        "comparison": 0.2000000011175871,
+        "appearance": 1417.8999999985099,
+        "render": 0.5,
+        "total": 1885.3999999985099,
+        "clickToResult": 31519.699999999255,
+        "queue": 29628,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-0-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.700000001117587,
+        "ocr": 457.19999999925494,
+        "comparison": 0.2000000011175871,
+        "appearance": 682.3999999985099,
+        "render": 1,
+        "total": 1148.5,
+        "clickToResult": 32668.199999999255,
+        "queue": 31513.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-0-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.100000001490116,
+        "ocr": 464.8999999985099,
+        "comparison": 0.2000000011175871,
+        "appearance": 737.7999999988824,
+        "render": 0.7000000011175871,
+        "total": 1210.800000000745,
+        "clickToResult": 33879,
+        "queue": 32661.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-1-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 8.400000000372529,
+        "ocr": 465.40000000037253,
+        "comparison": 0.19999999925494194,
+        "appearance": 4258,
+        "render": 1.400000000372529,
+        "total": 4733.4000000003725,
+        "clickToResult": 38612.40000000037,
+        "queue": 33872.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-1-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.900000000372529,
+        "ocr": 466.8999999985099,
+        "comparison": 0.2000000011175871,
+        "appearance": 1173.199999999255,
+        "render": 0.8000000007450581,
+        "total": 1648,
+        "clickToResult": 40260.40000000037,
+        "queue": 38606.09999999963,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-2-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.400000000372529,
+        "ocr": 475.3999999985099,
+        "comparison": 0.2000000011175871,
+        "appearance": 1014.0999999996275,
+        "render": 1.199999999254942,
+        "total": 1498.2999999988824,
+        "clickToResult": 41758.699999999255,
+        "queue": 40254.09999999963,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-2-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 11.100000001490116,
+        "ocr": 470,
+        "comparison": 0.19999999925494194,
+        "appearance": 818.8000000007451,
+        "render": 1.099999999627471,
+        "total": 1301.4000000003725,
+        "clickToResult": 43060.09999999963,
+        "queue": 41752.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-3-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.5,
+        "ocr": 485.90000000037253,
+        "comparison": 0.19999999925494194,
+        "appearance": 809.3000000007451,
+        "render": 0.599999999627471,
+        "total": 1306.5,
+        "clickToResult": 44366.59999999963,
+        "queue": 43053.79999999888,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "REVIEW",
+          "found": "Exact wording or uppercase heading not detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-3-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 9.800000000745058,
+        "ocr": 471.69999999925494,
+        "comparison": 0.09999999962747097,
+        "appearance": 935.9000000003725,
+        "render": 0.5,
+        "total": 1418,
+        "clickToResult": 45784.59999999963,
+        "queue": 44360.29999999888,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "REVIEW",
+          "found": "Exact wording or uppercase heading not detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-4-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.400000000372529,
+        "ocr": 468.09999999962747,
+        "comparison": 0.09999999962747097,
+        "appearance": 4262.200000001118,
+        "render": 0.5,
+        "total": 4741.300000000745,
+        "clickToResult": 50525.90000000037,
+        "queue": 45778.29999999888,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Superclarendon-4-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.800000000745058,
+        "ocr": 481.90000000037253,
+        "comparison": 0.09999999962747097,
+        "appearance": 738.5,
+        "render": 1.099999999627471,
+        "total": 1228.5999999996275,
+        "clickToResult": 51754.59999999963,
+        "queue": 50519.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-0-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.900000000372529,
+        "ocr": 459.80000000074506,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.800000000745058,
+        "render": 0.6999999992549419,
+        "total": 476.40000000037253,
+        "clickToResult": 52231.09999999963,
+        "queue": 51748.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-0-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.200000001117587,
+        "ocr": 455.19999999925494,
+        "comparison": 0.09999999962747097,
+        "appearance": 856.3000000007451,
+        "render": 0.6999999992549419,
+        "total": 1319.5999999996275,
+        "clickToResult": 53550.699999999255,
+        "queue": 52224.79999999888,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-1-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 11.300000000745058,
+        "ocr": 456.80000000074506,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.699999999254942,
+        "render": 0.599999999627471,
+        "total": 473.5,
+        "clickToResult": 54024.199999999255,
+        "queue": 53544.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-1-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.5,
+        "ocr": 454.80000000074506,
+        "comparison": 0.09999999962747097,
+        "appearance": 480.30000000074506,
+        "render": 1,
+        "total": 942.8000000007451,
+        "clickToResult": 54967,
+        "queue": 54017.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-2-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 11.599999999627471,
+        "ocr": 457.90000000037253,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.300000000745058,
+        "render": 0.6999999992549419,
+        "total": 474.69999999925494,
+        "clickToResult": 55441.699999999255,
+        "queue": 54960.699999999255,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-2-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.100000001490116,
+        "ocr": 455.2999999988824,
+        "comparison": 0.09999999962747097,
+        "appearance": 3847.4000000003725,
+        "render": 1.1000000014901161,
+        "total": 4311.10000000149,
+        "clickToResult": 59752.800000000745,
+        "queue": 55435.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-3-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.5,
+        "ocr": 467.59999999962747,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.599999999627471,
+        "render": 0.6000000014901161,
+        "total": 480.5,
+        "clickToResult": 60233.300000000745,
+        "queue": 59746.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-3-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.899999998509884,
+        "ocr": 461.40000000037253,
+        "comparison": 0.09999999962747097,
+        "appearance": 776.2999999988824,
+        "render": 1,
+        "total": 1245.8999999985099,
+        "clickToResult": 61479.199999999255,
+        "queue": 60227,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "REVIEW",
+          "found": "Exact wording or uppercase heading not detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-4-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 11.5,
+        "ocr": 456.6000000014901,
+        "comparison": 0.09999999962747097,
+        "appearance": 4,
+        "render": 0.599999999627471,
+        "total": 472.90000000037253,
+        "clickToResult": 61952.09999999963,
+        "queue": 61472.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "TI-Nspire-4-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.700000001117587,
+        "ocr": 464.5,
+        "comparison": 0.19999999925494194,
+        "appearance": 634.0999999996275,
+        "render": 0.8000000007450581,
+        "total": 1106.300000000745,
+        "clickToResult": 63058.40000000037,
+        "queue": 61945.79999999888,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-0-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.900000000372529,
+        "ocr": 461.19999999925494,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.300000000745058,
+        "render": 0.599999999627471,
+        "total": 477.19999999925494,
+        "clickToResult": 63535.59999999963,
+        "queue": 63052.09999999963,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-0-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.900000000372529,
+        "ocr": 460.19999999925494,
+        "comparison": 0.2000000011175871,
+        "appearance": 820.7999999988824,
+        "render": 0.7000000011175871,
+        "total": 1288.800000000745,
+        "clickToResult": 64824.40000000037,
+        "queue": 63529.29999999888,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-1-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.299999998882413,
+        "ocr": 463.6000000014901,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.099999999627471,
+        "render": 0.6000000014901161,
+        "total": 478.90000000037253,
+        "clickToResult": 65303.300000000745,
+        "queue": 64818.09999999963,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-1-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.099999999627471,
+        "ocr": 463.69999999925494,
+        "comparison": 0.30000000074505806,
+        "appearance": 803.0999999996275,
+        "render": 2.5,
+        "total": 1276.7999999988824,
+        "clickToResult": 66580.09999999963,
+        "queue": 65297,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-2-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.200000001117587,
+        "ocr": 458.90000000037253,
+        "comparison": 0.19999999925494194,
+        "appearance": 4,
+        "render": 0.599999999627471,
+        "total": 471,
+        "clickToResult": 67051.19999999925,
+        "queue": 66573.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-2-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.400000000372529,
+        "ocr": 462,
+        "comparison": 0.2000000011175871,
+        "appearance": 4258.5999999996275,
+        "render": 2.299999998882413,
+        "total": 4730.5,
+        "clickToResult": 71781.69999999925,
+        "queue": 67044.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-3-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.099999999627471,
+        "ocr": 471.19999999925494,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.099999999627471,
+        "render": 0.599999999627471,
+        "total": 486.19999999925494,
+        "clickToResult": 72268,
+        "queue": 71775.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-3-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.099999999627471,
+        "ocr": 475.59999999962747,
+        "comparison": 0.10000000149011612,
+        "appearance": 613.1999999992549,
+        "render": 1.700000001117587,
+        "total": 1097.800000000745,
+        "clickToResult": 73365.80000000075,
+        "queue": 72261.69999999925,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "REVIEW",
+          "found": "Exact wording or uppercase heading not detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-4-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.799999998882413,
+        "ocr": 459.2000000011176,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.5,
+        "render": 0.5,
+        "total": 475.19999999925494,
+        "clickToResult": 73841,
+        "queue": 73359.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Hoefler-Text-4-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.900000000372529,
+        "ocr": 461.59999999962747,
+        "comparison": 0.19999999925494194,
+        "appearance": 4201.300000000745,
+        "render": 1.599999999627471,
+        "total": 4671.5999999996275,
+        "clickToResult": 78512.59999999963,
+        "queue": 73834.69999999925,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-0-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 8.100000001490116,
+        "ocr": 459.3999999985099,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.799999998882413,
+        "render": 0.7000000011175871,
+        "total": 473.2000000011176,
+        "clickToResult": 78985.90000000037,
+        "queue": 78506.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-0-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.099999999627471,
+        "ocr": 455.69999999925494,
+        "comparison": 0.10000000149011612,
+        "appearance": 967.6999999992549,
+        "render": 0.900000000372529,
+        "total": 1431.5,
+        "clickToResult": 80417.40000000037,
+        "queue": 78979.59999999963,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-1-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 8.599999999627471,
+        "ocr": 458.09999999962747,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.799999998882413,
+        "render": 0.5,
+        "total": 472.19999999925494,
+        "clickToResult": 80889.69999999925,
+        "queue": 80411.19999999925,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-1-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.100000001490116,
+        "ocr": 452,
+        "comparison": 0.09999999962747097,
+        "appearance": 765.4000000003725,
+        "render": 0.5,
+        "total": 1225.1000000014901,
+        "clickToResult": 82114.80000000075,
+        "queue": 80883.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-2-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 10.299999998882413,
+        "ocr": 457,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.900000000372529,
+        "render": 0.7000000011175871,
+        "total": 473,
+        "clickToResult": 82587.80000000075,
+        "queue": 82108.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-2-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.199999999254942,
+        "ocr": 459.7000000011176,
+        "comparison": 0.19999999925494194,
+        "appearance": 632.6999999992549,
+        "render": 1.700000001117587,
+        "total": 1101.5999999996275,
+        "clickToResult": 83689.40000000037,
+        "queue": 82581.5,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-3-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.599999999627471,
+        "ocr": 461.09999999962747,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.700000001117587,
+        "render": 0.6999999992549419,
+        "total": 474.19999999925494,
+        "clickToResult": 84163.59999999963,
+        "queue": 83683.09999999963,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-3-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.200000001117587,
+        "ocr": 452.19999999925494,
+        "comparison": 0.09999999962747097,
+        "appearance": 1304.1000000014901,
+        "render": 1.099999999627471,
+        "total": 1764.800000000745,
+        "clickToResult": 85928.40000000037,
+        "queue": 84157.29999999888,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-4-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 12.800000000745058,
+        "ocr": 459.5,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.5,
+        "render": 0.5,
+        "total": 477.5,
+        "clickToResult": 86406,
+        "queue": 85922.19999999925,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Bangla-4-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.400000000372529,
+        "ocr": 454.90000000037253,
+        "comparison": 0.09999999962747097,
+        "appearance": 650.6999999992549,
+        "render": 0.5,
+        "total": 1113.5999999996275,
+        "clickToResult": 87519.59999999963,
+        "queue": 86399.69999999925,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-0-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.600000001490116,
+        "ocr": 454.5,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.699999999254942,
+        "render": 0.6000000014901161,
+        "total": 467.6000000014901,
+        "clickToResult": 87987.30000000075,
+        "queue": 87513.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-0-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.699999999254942,
+        "ocr": 456.90000000037253,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.699999999254942,
+        "render": 0.5,
+        "total": 468.8999999985099,
+        "clickToResult": 88456.19999999925,
+        "queue": 87981,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-1-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 8.300000000745058,
+        "ocr": 447.19999999925494,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.900000000372529,
+        "render": 0.5,
+        "total": 461.2000000011176,
+        "clickToResult": 88917.40000000037,
+        "queue": 88449.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-1-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.900000000372529,
+        "ocr": 454.5,
+        "comparison": 0.09999999962747097,
+        "appearance": 4.400000000372529,
+        "render": 0.5,
+        "total": 466.5,
+        "clickToResult": 89383.90000000037,
+        "queue": 88911.09999999963,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-2-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 8,
+        "ocr": 448.09999999962747,
+        "comparison": 0.19999999925494194,
+        "appearance": 4.5,
+        "render": 0.6000000014901161,
+        "total": 461.40000000037253,
+        "clickToResult": 89845.30000000075,
+        "queue": 89377.59999999963,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-2-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.099999999627471,
+        "ocr": 455.2999999988824,
+        "comparison": 0,
+        "appearance": 4.399999998509884,
+        "render": 1,
+        "total": 467.8999999985099,
+        "clickToResult": 90313.19999999925,
+        "queue": 89839,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-3-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.700000001117587,
+        "ocr": 449.5,
+        "comparison": 0.2999999988824129,
+        "appearance": 4.700000001117587,
+        "render": 0.5,
+        "total": 462.80000000074506,
+        "clickToResult": 90776,
+        "queue": 90306.89999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-3-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 7.5,
+        "ocr": 459.09999999962747,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.299999998882413,
+        "render": 0.5,
+        "total": 471.59999999962747,
+        "clickToResult": 91247.59999999963,
+        "queue": 90769.69999999925,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-4-regular.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 6.600000001490116,
+        "ocr": 451.3999999985099,
+        "comparison": 0.10000000149011612,
+        "appearance": 5.099999999627471,
+        "render": 0.599999999627471,
+        "total": 463.80000000074506,
+        "clickToResult": 91711.5,
+        "queue": 91241.39999999851,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    },
+    {
+      "file": "Kohinoor-Devanagari-4-bold.png",
+      "timings": {
+        "setup": 6.300000000745058,
+        "prepare": 8.300000000745058,
+        "ocr": 456.8999999985099,
+        "comparison": 0.2000000011175871,
+        "appearance": 4.099999999627471,
+        "render": 0.5,
+        "total": 470,
+        "clickToResult": 92181.5,
+        "queue": 91705.19999999925,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": true
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "HOLDOUT HARBOR",
+          "expected": "Application: HOLDOUT HARBOR"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Holdout Harbor, Portland, OR",
+          "expected": "Application: Holdout Harbor, Portland, OR"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    }
+  ],
+  "network": [
+    {
+      "duration": 3680,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 3478.7
+        }
+      ]
+    },
+    {
+      "duration": 1237.7000000011176,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 1026.1
+        }
+      ]
+    },
+    {
+      "duration": 722.3000000007451,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 539.6
+        }
+      ]
+    },
+    {
+      "duration": 484.80000000074506,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 309.3
+        }
+      ]
+    },
+    {
+      "duration": 747.8999999985099,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 463.4
+        }
+      ]
+    },
+    {
+      "duration": 859,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 564.9
+        }
+      ]
+    },
+    {
+      "duration": 661.2999999988824,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 473.5
+        }
+      ]
+    },
+    {
+      "duration": 2938.4000000003725,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 2685.8
+        }
+      ]
+    },
+    {
+      "duration": 1439.800000000745,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 1179.7
+        }
+      ]
+    },
+    {
+      "duration": 675.8000000007451,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 493.8
+        }
+      ]
+    },
+    {
+      "duration": 671.5999999996275,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 429.6
+        }
+      ]
+    },
+    {
+      "duration": 722.6000000014901,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 533.1
+        }
+      ]
+    },
+    {
+      "duration": 1055.6000000014901,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 865
+        }
+      ]
+    },
+    {
+      "duration": 1412.4000000003725,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 1232.6
+        }
+      ]
+    },
+    {
+      "duration": 676.6000000014901,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 498.1
+        }
+      ]
+    },
+    {
+      "duration": 732.4000000003725,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 496.3
+        }
+      ]
+    },
+    {
+      "duration": 4252.5999999996275,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 4013.1
+        }
+      ]
+    },
+    {
+      "duration": 1167.9000000003725,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 836.6
+        }
+      ]
+    },
+    {
+      "duration": 1009.1999999992549,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 809.8
+        }
+      ]
+    },
+    {
+      "duration": 812.4000000003725,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 615.4
+        }
+      ]
+    },
+    {
+      "duration": 804.1999999992549,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 628.1
+        }
+      ]
+    },
+    {
+      "duration": 929.5,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 670.4
+        }
+      ]
+    },
+    {
+      "duration": 4257.4000000003725,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 4014.4
+        }
+      ]
+    },
+    {
+      "duration": 733,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 491.6
+        }
+      ]
+    },
+    {
+      "duration": 850.7999999988824,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 562.6
+        }
+      ]
+    },
+    {
+      "duration": 474.80000000074506,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 296.7
+        }
+      ]
+    },
+    {
+      "duration": 3842.0999999996275,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 3602.4
+        }
+      ]
+    },
+    {
+      "duration": 770.6999999992549,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 525.6
+        }
+      ]
+    },
+    {
+      "duration": 627.9000000003725,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 442.9
+        }
+      ]
+    },
+    {
+      "duration": 815.4000000003725,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 579.1
+        }
+      ]
+    },
+    {
+      "duration": 798.1999999992549,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 538.6
+        }
+      ]
+    },
+    {
+      "duration": 4252.5999999996275,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 4013.9
+        }
+      ]
+    },
+    {
+      "duration": 606.7999999988824,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 421.1
+        }
+      ]
+    },
+    {
+      "duration": 4194.700000001118,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 4012.6
+        }
+      ]
+    },
+    {
+      "duration": 962.2000000011176,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 683.7
+        }
+      ]
+    },
+    {
+      "duration": 760.0999999996275,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 518
+        }
+      ]
+    },
+    {
+      "duration": 626.6999999992549,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 447.2
+        }
+      ]
+    },
+    {
+      "duration": 1299.199999999255,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 1063.9
+        }
+      ]
+    },
+    {
+      "duration": 643.5999999996275,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 403.1
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "source": "2a46749",
+    "previewDeployment": "dpl_2Z6otJZvGydg6ztrpkHH9gXS6BxE",
+    "previewUrl": "https://treasury-label-review-jvh43qs0w-chathamworks-6954s-projects.vercel.app",
+    "bundle": "index-DGAUEOgM.js",
+    "worker": "treasury-warning-c3ebde8",
+    "workerVersion": "2d252cac-77c6-4bc2-8958-218df1a074fd",
+    "boldMatches": 37,
+    "boldTotal": 40,
+    "regularFalseMatches": 3,
+    "regularTotal": 40,
+    "cacheHits": 5,
+    "p95AllProcessingSeconds": 4.31110000000149,
+    "p95Scope": "Mixed cached/uncached run. Not qualifying uncached latency evidence. Queue is separate; total is per-label processing.",
+    "decision": "Reject candidate. Three uncached regular false Matches and fewer than 38 bold Matches. Stop further qualification runs; do not tune on v4.",
+    "falseMatches": [
+      "Superclarendon-0-regular.png",
+      "Superclarendon-2-regular.png",
+      "Superclarendon-3-regular.png"
+    ],
+    "holdoutLimitation": "Kohinoor Devanagari and Bangla produced identical heading crops in five paired layouts. Nominal font-family disjointness did not establish independent Latin glyphs. This inflates positive diversity and caused five cache hits; no accuracy-generalization claim."
+  }
+}

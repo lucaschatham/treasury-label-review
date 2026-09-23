@@ -87,3 +87,13 @@ The app origin is `https://github.com/lucaschatham/treasury-label-review.git`; t
 ### Current partial release, September 22, 2026
 
 Production runs source [c3ebde8](https://github.com/lucaschatham/treasury-label-review/tree/c3ebde8cd36065d917677787f195b1dab46929b9), browser bundle `index-y4-KV3KF.js`, and the isolated Worker recorded in [partial release verification](evidence/partial-release-verification.json). The anonymous sample completed all applicable checks in 2.7 seconds. A five-image regression batch completed with the expected semantic Review findings, a regular warning left for review, and a visible corrupt-image failure. The prior [300-image integrated run](evidence/browser-integrated-300.json) established batch processing on the earlier pipeline; it has not been repeated after this repair. The deployed boldness guard permits only 34 of 40 held-out clear bold examples locally. A newer [multi-glyph preview candidate](evidence/appearance-multiglyph-preview-run1.json) passed 38/40 bold and 0/40 regular images locally, but its first 80-image real-service browser run produced 36/40 bold Matches, 0/40 regular false Matches, and 5.5-second p95. It remains unreleased. The original [assignment](ASSIGNMENT.md) specifies qualitative evaluation criteria and no numeric passing score; our 95% boldness target is an internal release criterion.
+
+### Subsequent bounded experiment, September 23, 2026
+
+The [neighbor-localization evaluation](evidence/appearance-neighbor-evaluation.md)
+is unreleased. Candidate `2a46749` passed 77 tests and clean code review, and its
+final preview retained all 300 results with 900 verified application-field
+associations. Its typography run still failed: 37/40 bold Matches and three
+uncached regular false Matches. Five cache hits and duplicate Latin artwork also
+prevent that run from qualifying as independent, uncached latency evidence.
+Production remains unchanged; no accuracy-qualified latency improvement is claimed.

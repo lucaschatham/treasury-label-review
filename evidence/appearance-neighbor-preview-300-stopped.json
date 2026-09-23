@@ -1,0 +1,85 @@
+{
+  "status": "Stopped: 1 reviewed, 0 failed, 299 remaining. Total: 4.8 s. First result: 4.8 s from click. Inspect exceptions and make your final decision.",
+  "rows": [
+    {
+      "file": "spirits-01-valid.png",
+      "timings": {
+        "setup": 9.099999999627471,
+        "prepare": 10.400000000372529,
+        "ocr": 551.0999999996275,
+        "comparison": 0.5,
+        "appearance": 4250.800000000745,
+        "render": 4,
+        "total": 4816.9000000003725,
+        "clickToResult": 4826,
+        "queue": 0,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      },
+      "summary": "1 check needs attention",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "REVIEW",
+          "found": "Bold heading not confidently verified"
+        }
+      ]
+    }
+  ],
+  "network": [
+    {
+      "duration": 4243.5,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 4049.1
+        }
+      ]
+    }
+  ]
+}

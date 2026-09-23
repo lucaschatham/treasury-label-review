@@ -103,3 +103,19 @@ candidate. The current production deployment remains unchanged.
 ## Published release
 
 [Public app](https://label-review-7b3.lucaschatham.com/) and [source](https://github.com/lucaschatham/treasury-label-review/tree/c3ebde8cd36065d917677787f195b1dab46929b9) were verified September 22. [Current release evidence](evidence/partial-release-verification.json) records production deployment `dpl_5oguVG5be6SRt89W9gb3YGwbm9ze`, Worker version `2d252cac-77c6-4bc2-8958-218df1a074fd`, source and bundle identity, preview testing, anonymous production testing, crawler exclusions, and preservation of the separate homepage. [Earlier release evidence](evidence/release-verification.json) is historical, not the current deployment.
+
+## September 23 follow-up: replacement rejected
+
+[Evaluation and release decision](evidence/appearance-neighbor-evaluation.md):
+local v3 bold eligibility improved from 38/40 to 39/40 without lowering weight
+thresholds. The next preview returned 37/40 bold Matches and three regular false
+Matches; two named bold regressions also timed out. These fail the retained
+engineering release requirements. No promotion occurred.
+
+The [fresh 300-image preview audit](evidence/appearance-neighbor-preview-300.json)
+verified every filename and 900 application-field associations on final source
+`2a46749`, with zero processing failures or missing/duplicate results. This closes
+the candidate accounting check, not appearance accuracy, uncached latency, or
+assignment completion. Human confirmation, stale-result clearing, invalid CSV
+rejection, semantic decoys/conflicts and corrupt-image handling have current
+preview evidence in the linked evaluation.

@@ -27,3 +27,14 @@ three real uncached browser runs if local ceiling passes. Final release requires
 the original zero false-Match, 38/40 each run, five-second all-attempt p95, workflow,
 300-image association, clean reproduction and review gates. Failed gates retain
 production. Never deploy to Vercel project site.
+
+## Outcome
+
+Completed and rejected for promotion. See
+[the evaluation](../../evidence/appearance-neighbor-evaluation.md). Final source
+`2a46749` has 77 passing tests, clean structured review and a complete final-preview
+300-image accounting audit. The typography experiment returned three regular
+false Matches and only 37/40 bold Matches; named positives also had two deadlines.
+Duplicate rendered Latin glyphs caused five cache hits, invalidating the proposed
+uncached/diversity interpretation. No further classifier tuning, qualification
+runs or promotion followed. Production stayed unchanged.

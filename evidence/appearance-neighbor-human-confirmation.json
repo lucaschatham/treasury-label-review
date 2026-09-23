@@ -1,0 +1,12 @@
+{
+  "before": {
+    "status": "REVIEW",
+    "summary": "1 check needs attention"
+  },
+  "after": {
+    "status": "REVIEW",
+    "summary": "1 check needs attention",
+    "found": "Bold heading not confidently verified. Reviewer also confirmed appearance; automated status is unchanged."
+  },
+  "checked": true
+}

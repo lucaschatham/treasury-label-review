@@ -1,0 +1,6 @@
+{
+  "findings": [],
+  "overall_correctness": "patch is correct",
+  "overall_explanation": "The change preserves the conservative requirement that a bold Match needs both local stroke evidence and a corroborated cloud verdict. The neighbor-bounded glyph recovery validates symbol order, confidence, geometry, containment, and a single central ink run before using the recovered stem. Failure reasons remain non-match outcomes and are attributed consistently across the proxy and client. The per-stage, queue, total, and click-to-result timing calculations are internally consistent, including failure paths.",
+  "overall_confidence": 0.86
+}

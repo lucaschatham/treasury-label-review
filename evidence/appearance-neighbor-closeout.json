@@ -1,0 +1,20 @@
+{
+  "source": "2a46749b0d240d7a63d1ab4d7cd94ad28a146e10",
+  "repository": "treasury-label-review",
+  "previewDeployment": "dpl_2Z6otJZvGydg6ztrpkHH9gXS6BxE",
+  "previewUrl": "https://treasury-label-review-jvh43qs0w-chathamworks-6954s-projects.vercel.app",
+  "bundle": "index-DGAUEOgM.js",
+  "workerName": "treasury-warning-c3ebde8",
+  "workerVersion": "2d252cac-77c6-4bc2-8958-218df1a074fd",
+  "workerChange": false,
+  "tests": 77,
+  "cleanReproduction": "npm ci --ignore-scripts; npm test; npm run build in isolated /tmp/treasury-neighbor-review, with reviewed runtime/test files byte-equal to candidate",
+  "reviewCommand": "autoreview --mode local --prompt-file review-context.md --json-output /tmp/treasury-neighbor-review-result-clean.json",
+  "reviewResult": "No accepted/actionable findings",
+  "productionDeploymentUnchanged": "dpl_5oguVG5be6SRt89W9gb3YGwbm9ze",
+  "productionBundleUnchanged": "index-y4-KV3KF.js",
+  "promoted": false,
+  "sourcePushed": false,
+  "temporaryPreviewCredentialRevoked": true,
+  "releaseDecision": "Rejected: regular false Matches, bold misses, named-positive deadlines; no qualifying uncached latency evidence."
+}
