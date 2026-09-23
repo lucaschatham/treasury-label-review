@@ -1,5 +1,6 @@
 <!doctype html><meta charset="UTF-8"><title>Persistent board acceptance</title><button id="run">Run entry checks</button><p id="outcome">Ready</p><iframe src="/" style="width:100%;height:900px"></iframe><script type="module">
 const frame=document.querySelector('iframe'), output=document.querySelector('#outcome');
+const settle=()=>new Promise(resolve=>setTimeout(resolve,30));
 const assert=(condition,message)=>{if(!condition) throw Error(message);};
 document.querySelector('#run').onclick=async()=>{try{
 let doc=frame.contentDocument, win=frame.contentWindow;
@@ -9,12 +10,17 @@ assert(!doc.querySelector('.hero'),'no old landing hero');
 assert(doc.querySelector('.flow-step').contains(doc.querySelector('#images')),'upload lives in Step 1');
 assert(doc.querySelector('#run-button').disabled,'review disabled without images');
 const transfer=new win.DataTransfer();transfer.items.add(new win.File(['test'],'test.png',{type:'image/png'}));
-doc.querySelector('#drop-zone').dispatchEvent(new win.DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:transfer}));
+doc.querySelector('#drop-zone').dispatchEvent(new win.DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:transfer}));await settle();
 assert(doc.querySelector('.batch-count').textContent==='1 batch ready','dropped image queued');
 assert(!doc.querySelector('#run-button').disabled,'review enabled for valid type');
-doc.querySelector('#edit-application').click();assert(doc.querySelector('#application-dialog').open,'details modal');doc.querySelector('#close-application').click();
+assert(!doc.querySelector('#edit-application'),'setup button removed');
+assert(!doc.querySelector('progress'),'step bars removed');
+assert(!doc.querySelector('.prototype, .privacy, #engine-status, footer, .workspace-heading h1'),'requested clutter removed');
+doc.querySelector('#run-button').click();await settle();assert(doc.querySelector('#application-dialog').open,'details modal');doc.querySelector('#close-application').click();
+for (const name of ['brand','type','volume']) doc.querySelector(`[name=${name}]`).value='test';
+doc.querySelector('#edit-details').click();assert(doc.querySelector('#application-dialog').open,'valid details can be edited again');doc.querySelector('#close-application').click();
 const invalid=new win.DataTransfer();invalid.items.add(new win.File(['pdf'],'test.pdf',{type:'application/pdf'}));
-doc.querySelector('#drop-zone').dispatchEvent(new win.DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:invalid}));
+doc.querySelector('#drop-zone').dispatchEvent(new win.DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:invalid}));await settle();
 assert(doc.querySelector('#run-button').disabled,'PDF rejected');assert(!doc.querySelector('#status').hidden,'format error visible');
 assert(doc.querySelector('.batch-count').textContent==='0 batches','rejected files are not a ready batch');
 await new Promise(resolve=>{frame.onload=resolve;frame.contentWindow.location.reload();});

@@ -4,21 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow,noarchive" />
-    <title>Label Review | Prototype</title>
+    <title>Label Review</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <main class="shell">
       <header class="top">
-        <div class="mark"><span class="app-icon" aria-hidden="true">▤</span> Label Review</div>
+        <h1 class="mark"><span class="app-icon" aria-hidden="true">▤</span> Label Review</h1>
         <div class="top-right">
-          <span class="prototype">Prototype</span><span class="local-status"><span class="dot"></span> On-device OCR</span>
+          <span class="local-status"><span class="dot"></span> On-device OCR</span>
         </div>
       </header>
-      <header class="workspace-heading"><h1>Label review</h1><p>Upload a batch. Review the exceptions.</p></header>
+
       <dialog id="application-dialog" aria-labelledby="application-title">
         <div class="dialog-heading"><h2 id="application-title">Application details</h2><button type="button" class="secondary" id="close-application" aria-label="Close application details">✕</button></div>
-        <p>Enter the submitted values for these labels, or attach a CSV for different applications.</p>
+        <p>These values apply to every image in this batch. For different values per label, upload a CSV or XLSX in Step 1.</p><details class="sheet"><summary>How to format your CSV or XLSX</summary><p>Start with a template: <a href="/samples/applications.csv" download>Download CSV</a> · <a href="/samples/applications.xlsx" download>Download XLSX</a>. Replace the sample rows with your application details.</p>
+            <ol style="padding-left:20px;font-size:14px;line-height:1.6">
+              <li>Use one row per label image. In <code>filename</code>, enter the exact image filename, including its extension and capitalization, such as <code>old-tom.png</code>. Upload the matching images in Step 1 too.</li>
+              <li>Keep these lowercase column headings: <code>filename, brand, type, abv, volume, producer, imported, country</code>.</li>
+              <li>Enter alcohol content as a number, such as <code>45</code> for 45% ABV. Include units for net contents, such as <code>750 mL</code>. Include the producer name and address.</li>
+              <li>Set <code>imported</code> to <code>true</code> or <code>false</code>. Supply <code>country</code> when imported is true; otherwise it can be blank.</li>
+              <li>Save CSV as comma-separated text. Put values containing commas in double quotes, such as <code>"Old Tom Distillery, Bardstown, KY"</code>. For XLSX, use one populated worksheet with plain values, not formulas.</li>
+            </ol>
+            <p>Required columns: <code>filename, brand, type, abv, volume</code>. Fill each row; leave ABV blank only when an exception applies. One spreadsheet per batch, up to 300 image rows and 1 MB.</p></details>
+          <p id="application-error" role="alert" hidden></p>
           <form id="review-form" novalidate>
             <fieldset id="inputs">
               <legend class="sr-only">Application and artwork</legend>
@@ -69,44 +78,15 @@
                     placeholder="Required for imports"
                 /></label>
               </div>
-              <details class="batch-settings">
-                <summary>Different applications in one batch</summary>
-                <p class="help">
-                  Upload a CSV with one row per image, matched by its exact
-                  filename. CSV values replace the form values for every image.
-                </p>
-                <a href="/samples/applications.csv" download
-                  >Download CSV template</a
-                >
-                <p class="help">
-                  Test images:
-                  <a href="/samples/old-tom.png" download>correct label</a>,
-                  <a href="/samples/wrong-abv.png" download>wrong ABV</a>,
-                  <a href="/samples/wrong-warning.png" download
-                    >title-case warning</a
-                  >.
-                </p>
-                <label class="csv-input"
-                  >Application CSV (optional)<input
-                    id="manifest"
-                    type="file"
-                    accept=".csv,text/csv"
-                /></label>
-              </details>
-              <p class="help">
-                Without a CSV, all images use the application details above.
-                Include the complete label artwork in each image.
-              </p>
+
             </fieldset>
           </form>
           <button type="button" id="save-application">Use these details</button>
       </dialog>
       <section class="panel results-panel">
-        <div class="board-controls"><span id="application-summary">No application details yet</span><button type="button" class="secondary" id="edit-application">Application details / CSV</button><button type="button" id="stop-button" class="secondary" hidden>Stop after current label</button></div>
+        <div class="board-controls"><span id="application-summary">No application details yet</span><button type="button" id="stop-button" class="secondary" hidden>Stop after current label</button></div>
         <p id="status" class="status" hidden></p>
         <div id="results" aria-label="Label review findings"></div>
-        <p class="privacy">Text is read in your browser. Reviewing sends a cropped warning heading through this site to Cloudflare AI for boldness verification. Images and decisions stay in this session and clear on reload.</p>
-        <p id="engine-status" class="help">Preparing local OCR…</p>
       </section>
       <div id="label-intake">
               <label class="upload" id="drop-zone">
@@ -114,26 +94,36 @@
                   id="images"
                   form="review-form"
                   type="file"
-                  accept="image/png,image/jpeg,image/webp"
+                  accept="image/png,image/jpeg,image/webp,.csv,.xlsx"
                   multiple
                 />
                 <span class="upload-icon" aria-hidden="true">↑</span
-                ><strong>Drag &amp; drop label images</strong><span class="browse-files">or browse files</span>
+                ><strong>Drop your files here</strong><span class="browse-files">or browse files</span>
                 <small
-                  >PNG, JPEG, WebP<br>Up to 300 images · 10 MB each · 200 MB total</small
+                  >PNG, JPEG, WebP · CSV or XLSX<br>Up to 300 images</small
                 >
               </label>
+        <p id="details-readiness" class="help">Application details needed</p><button type="button" id="edit-details" class="sample-link">Add application details</button>
+<details class="sheet"><summary>Different details for each label?</summary><p>Start with a template: <a href="/samples/applications.csv" download>Download CSV</a> · <a href="/samples/applications.xlsx" download>Download XLSX</a>. Replace the sample rows with your application details.</p>
+            <ol style="padding-left:20px;font-size:14px;line-height:1.6">
+              <li>Use one row per label image. In <code>filename</code>, enter the exact image filename, including its extension and capitalization, such as <code>old-tom.png</code>. Upload the matching images in Step 1 too.</li>
+              <li>Keep these lowercase column headings: <code>filename, brand, type, abv, volume, producer, imported, country</code>.</li>
+              <li>Enter alcohol content as a number, such as <code>45</code> for 45% ABV. Include units for net contents, such as <code>750 mL</code>. Include the producer name and address.</li>
+              <li>Set <code>imported</code> to <code>true</code> or <code>false</code>. Supply <code>country</code> when imported is true; otherwise it can be blank.</li>
+              <li>Save CSV as comma-separated text. Put values containing commas in double quotes, such as <code>"Old Tom Distillery, Bardstown, KY"</code>. For XLSX, use one populated worksheet with plain values, not formulas.</li>
+            </ol>
+            <p>Required columns: <code>filename, brand, type, abv, volume</code>. Fill each row; leave ABV blank only when an exception applies. One spreadsheet per batch, up to 300 image rows and 1 MB.</p><p>Images: up to 10 MB each, 200 MB total.</p></details>
+        <p id="manifest-summary" class="help" aria-live="polite"></p>
+        <button type="button" id="remove-manifest" class="sample-link" hidden>Remove spreadsheet</button>
         <div id="file-list" class="file-list"></div>
+        <button type="button" id="clear-files" class="sample-link" hidden>Clear files</button>
+        <p id="intake-guidance" class="help">Add images to begin.</p>
         <button type="submit" form="review-form" id="run-button" disabled>Review labels →</button>
         <button type="button" id="sample-button" class="sample-link">Try a sample review</button>
       </div>
-      <footer>
-        <span
-          >Independent demonstration. Not affiliated with TTB or the U.S.
-          government.</span
-        ><span>Human review is required for a final decision.</span>
-      </footer>
+
     </main>
+<dialog id="reset-dialog" aria-labelledby="reset-title"><h2 id="reset-title">Start a new batch?</h2><p id="reset-message"></p><div class="decision-actions"><button type="button" id="keep-reviewing" class="secondary">Keep reviewing</button><button type="button" id="confirm-reset">Clear and continue</button></div></dialog>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

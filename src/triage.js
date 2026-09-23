@@ -1,3 +1,5 @@
+import { decisionCount } from './session.js';
+import { returnTimeText } from './timing.js';
 import { REQUIRED_WARNING } from './review.js';
 import { pileOf, tallies, transition, rowStatus, rowReason, primaryFinding, reasonChoices, intakeState } from './piles.js';
 const piles = {passed:['Passed','✓'], failed:['Failed','✕'], review:['Needs review','?']};
@@ -20,19 +22,32 @@ export function createTriage(root, {intake} = {}) {
   const number = el(north, 'strong', '0');
   const caption = el(north, 'h2', 'labels need review');
   const secondary = el(north, 'p');
+  const returnTime = el(root, 'p', '', 'return-time');
+  let runStartedAt = 0, elapsedTimer;
+  function updateReturnTime() {
+    returnTime.textContent = returnTimeText({running, elapsed:Math.max(0,(performance.now()-runStartedAt)/1000), seconds:finishSeconds, first:firstSeconds, total, stopped});
+  }
+  const guidance = el(root,'p','Start here: add label images in Step 1 below. Results will sort into these three piles.','start-guidance');
+  const notice = el(root,'p','','check-notice'); notice.setAttribute('role','status');
+  const viewResults = el(root,'button','View results ↓','secondary view-results'); viewResults.type='button'; viewResults.onclick=()=>revealList();
+  function revealList() { list.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}); heading.focus({preventScroll:true}); }
   const map = el(root, 'div', '', 'pile-map');
   const large = el(map, 'div', '', 'pile-buttons');
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.classList.add('pile-wires'); svg.setAttribute('aria-hidden','true'); map.append(svg);
   const flow = el(map, 'div', '', 'triage-flow');
   const meters = [], small = [];
-  ['Drop labels','Read the words','Compare to form','Sort into piles'].forEach((name, i) => {
+  ['Add labels and details','We read the images','We check for problems','You review the results'].forEach((name, i) => {
     const step = el(flow, 'div', '', 'flow-step');
     el(step, 'strong', `${['↑','≡','⇄','▤'][i]} ${i + 1}. ${name}`);
+    el(step, 'p', [
+      'Add images of complete labels, then confirm what the application says.',
+      'We automatically read the text in your images. No action needed here.',
+      'We compare that text with your details and check the warning wording and heading.',
+      'Start with Needs review. Open a label to see the evidence and decide.'
+    ][i], 'step-help');
     const count = el(step, 'span');
-    const meter = el(step, 'progress'); meter.max = 1; meter.value = 0;
-    meter.setAttribute('aria-label', name);
-    meters.push({count,meter,step});
+    meters.push({count,step});
     if (i === 0 && intake) step.append(intake);
     if (i === 3) small.push(el(step, 'div', '', 'pile-buttons small-piles'));
   });
@@ -40,7 +55,7 @@ export function createTriage(root, {intake} = {}) {
   function pileButton(parent, key, size) {
     const button = el(parent, 'button', '', `pile-button ${key} ${size}`);
     button.type = 'button'; button.dataset.pile = key;
-    button.addEventListener('click', () => { selected = key; query = ''; limit = 50; search.value = ''; render(); });
+    button.addEventListener('click', () => { selected = key; query = ''; limit = 50; search.value = ''; render(); revealList(); });
     el(button,'span',piles[key][1],'pile-symbol');
     el(button,'span',piles[key][0],'pile-name');
     el(button,'span','0','pile-count');
@@ -105,6 +120,7 @@ export function createTriage(root, {intake} = {}) {
       if (row.seconds != null) el(checks,'p',`${row.seconds.toFixed(1)} s to review · OCR confidence ${Math.round(row.confidence)}%`);
     }
     if(isBulk) el(dialog,'p','This records you as the decider for these labels.');
+    if (!isBulk) el(dialog,'p','Approve moves this label to Passed. Send back requires a reason and moves it to Failed; nothing is sent. Later keeps it in Needs review. Decisions clear on reload.','help');
     const noteLabel = el(dialog,'label','Note (optional)'); noteLabel.hidden = isBulk;
     const note = el(noteLabel,'input'); note.type = 'text'; note.value = isBulk ? '' : row.human?.note || '';
     if (!isBulk) {const checks = dialog.querySelector('details'); if(checks) dialog.insertBefore(noteLabel,checks);}
@@ -164,7 +180,8 @@ export function createTriage(root, {intake} = {}) {
     }
     rowList.querySelector('.empty-pile')?.remove();
     legend.hidden = rows.length === 0; tools.hidden = rows.length === 0;
-    if (!shown.length) el(rowList,'p',!started ? intakeState(total,false).message : query ? 'No matching labels.' : selected === 'review' ? running ? 'Nothing needs review so far. Labels are still being checked.' : 'All done. Nothing is waiting on you.' : 'No labels in this pile.', 'empty-pile');
+    const emptyMessage = !started ? (total ? `${total} ${total === 1 ? 'label' : 'labels'} ready. Choose Review labels to begin.` : intakeState(total,false).message) : query ? 'No matching labels.' : selected === 'review' ? running ? 'Nothing needs review so far. Labels are still being checked.' : '' : 'No labels in this pile.';
+    if (!shown.length && emptyMessage) el(rowList,'p',emptyMessage,'empty-pile');
     more.hidden = shown.length === matches.length;
     footer.textContent = shown.length < matches.length ? `Showing ${shown.length} of ${matches.length}. Click a row to see its checks or change the decision.` : shown.length ? 'Click a row to decide.' : '';
   }
@@ -184,18 +201,24 @@ export function createTriage(root, {intake} = {}) {
   function render() {
     batchCount.textContent = intakeState(total,started).batches;
     const counts = tallies(rows); number.textContent = counts.review;
+    guidance.hidden = started;
+    viewResults.hidden = !started || running;
+    const unavailable = rows.filter(row=>row.findings.some(f=>f.field === 'Warning appearance' && ['service','provider','rate-limit','timeout','not-configured','invalid-request','invalid-response'].includes(f.reason))).length;
+    notice.hidden = !unavailable;
+    notice.textContent = unavailable ? `The warning-heading check was unavailable for ${unavailable} ${unavailable === 1 ? 'label' : 'labels'}. Text findings are still available. Inspect the bold heading on those labels; this does not mean the label failed.` : '';
     caption.textContent = running ? 'need review so far' : counts.review === 1 ? 'label needs review' : 'labels need review';
-    secondary.textContent = running ? `Label ${Math.min(stages[3]+1,total)} of ${total}` : `${stopped ? `Stopped at label ${stages[3]} of ${total}. ` : ''}${counts.machine} sorted by machine · ${counts.human} by you${finishSeconds === null ? '' : ` · ${finishSeconds.toFixed(1)} s total`}${total > 1 && firstSeconds !== null ? ` · first result ${firstSeconds.toFixed(1)} s` : ''}`;
+    secondary.textContent = running ? `Label ${Math.min(stages[3]+1,total)} of ${total}` : `${stopped ? `Stopped at label ${stages[3]} of ${total}. ` : ''}${counts.machine} sorted by machine · ${counts.human} by you`;
+    updateReturnTime();
     for (const button of buttons) {
       const key = button.dataset.pile;
       button.querySelector('.pile-count').textContent = counts[key];
       button.querySelector('.pile-chevron').textContent = selected === key ? '⌄' : '›';
       button.setAttribute('aria-pressed',String(selected === key));
     }
-    meters.forEach(({count,meter,step},i) => {
+    meters.forEach(({count,step},i) => {
       const missed = i === 1 || i === 2 ? Math.max(0,stages[3] - stages[i]) : 0;
-      count.textContent = `${stages[i]} ${['in','read','checked','sorted'][i]}${missed ? ` · ${missed} incomplete` : ''}`;
-      meter.max = total || 1; meter.value = stages[i]; step.classList.toggle('active',running && i === activeStage);
+      count.textContent = `${stages[i]} ${['uploaded','read','checked','sorted'][i]}${missed ? ` · ${missed} incomplete` : ''}`;
+      step.classList.toggle('active',running && i === activeStage);
     });
     announce(`${counts.review} ${counts.review === 1 ? 'label needs' : 'labels need'} review${running ? ' so far' : ''}. ${stages[1]} read, ${stages[2]} checked, ${stages[3]} sorted out of ${total}.`);
     renderRows(); requestAnimationFrame(wires);
@@ -203,12 +226,14 @@ export function createTriage(root, {intake} = {}) {
   new ResizeObserver(wires).observe(map);
   render();
   return {
-    clear() { root.hidden = false; started = false; finishSeconds = null; firstSeconds = null; stopped = false; running = false; dialog.close(); rows = []; selected = 'review'; query = ''; search.value = ''; stages = [0,0,0,0]; total = 0; rowList.replaceChildren(); render(); },
+    decisionCount: () => decisionCount(rows),
+    hasResults: () => rows.length > 0,
+    clear() { clearInterval(elapsedTimer); root.hidden = false; started = false; finishSeconds = null; firstSeconds = null; stopped = false; running = false; dialog.close(); rows = []; selected = 'review'; query = ''; search.value = ''; stages = [0,0,0,0]; total = 0; rowList.replaceChildren(); render(); },
     queue(count) {total = count; stages = [count,0,0,0]; render();},
-    start(count) {started = true; root.hidden = false; finishSeconds = null; firstSeconds = null; stopped = false; running = true; activeStage = 1; total = count; stages = [count,0,0,0]; render();},
+    start(count, clickedAt = performance.now()) {clearInterval(elapsedTimer); runStartedAt = clickedAt; elapsedTimer = setInterval(updateReturnTime,100); started = true; root.hidden = false; finishSeconds = null; firstSeconds = null; stopped = false; running = true; activeStage = 1; total = count; stages = [count,0,0,0]; render();},
     progress(stage) {stages[stage]++; activeStage = Math.min(stage+1,3); render();},
     stage(stage) {activeStage = stage; render();},
-    finish(wasStopped = false, seconds = null, first = null) {finishSeconds = seconds; firstSeconds = first; stopped = wasStopped; running = false; activeStage = -1; render();},
+    finish(wasStopped = false, seconds = null, first = null) {clearInterval(elapsedTimer); finishSeconds = seconds; firstSeconds = first; stopped = wasStopped; running = false; activeStage = -1; render();},
     add(record) {
       const node = el(rowList,'button','', 'result-card triage-row'); node.type = 'button';
       const row = {...record, node}; rows.push(row);

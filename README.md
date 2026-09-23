@@ -1,8 +1,8 @@
 # Label Review
 
-> **Current partial release:** repair source `c3ebde8` is deployed with explicit user authorization to defer the boldness gate. Semantic and batch fixes are live; boldness remains unresolved at 34/40 local guard passes. See [release verification](evidence/partial-release-verification.json) and [repair checkpoint](evidence/repair-checkpoint.md).
+> **Release status:** the current UI release adds permanent pile triage, CSV/XLSX intake, explicit input readiness, protected session decisions, and visible return time. Automated boldness remains incomplete and consistent five-second performance remains unproven. See [requirement evidence](REQUIREMENTS.md) and [UI release checks](evidence/pile-ui-release.md).
 
-[Application](https://label-review-7b3.lucaschatham.com) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md)
+[Application](https://lucaschatham.com/alcohol-by-volume-automated-label-check) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md) · [Resolutions List](RESOLUTIONS.md)
 
 A standalone alcohol-label review prototype. Browser OCR compares artwork with application fields. A cropped government-warning heading receives conservative automated boldness verification. Uncertain findings remain for a person to inspect; this app does not grant regulatory approval.
 
@@ -10,8 +10,8 @@ A standalone alcohol-label review prototype. Browser OCR compares artwork with a
 
 1. Select **Try a sample review**, then **Review labels**.
 2. Inspect the findings, original artwork, extracted text, and analyzed heading crop.
-3. Change an application field and review again to see a discrepancy. Editing inputs clears stale results.
-4. For separate applications, open **Different applications in one batch**, upload its CSV template and the three linked test images, then review.
+3. Change an application field and review again to see a discrepancy. Save changed details to clear stale results; existing decisions require confirmation first.
+4. For separate applications, use **Different details for each label?** in Step 1, download a CSV or XLSX template, add the matching images, then review.
 
 Each image represents a complete application's label artwork. Combine front/back panels into one image. Without CSV, every image uses the form values. With CSV, filenames map each image to its own application. Images run sequentially; **Stop after current label** retains completed results. Reviewing again starts a new run.
 
@@ -42,12 +42,16 @@ npm run preview
 
 `npm run preview` previews static assets only; it does not serve the API. Use `npm run dev` for the complete local workflow or deploy the root project to Vercel, where `api/warning-appearance.js` serves the API. A static-only host cannot run automated cloud appearance checks.
 
+## Investigation record
+
+The [Resolutions List](RESOLUTIONS.md) tracks approaches tried, failed gates, root-cause evidence, open blockers, untested options, and conditions for revisiting a decision. Read it before another experiment and update it at closeout. It supersedes stale “next step” recommendations in older reports while preserving their results.
+
 ## Architecture and decisions
 
 - **Vite 8, plain JavaScript, Tesseract.js 7:** a small interface with no user account or installation. OCR initializes while details are entered and reuses one worker.
 - **Independent brand extraction:** OCR coordinates locate the first prominent text region and nearby aligned large lines before comparison. The expected brand never guides region selection. Equal prominent columns remain uncertain. Geometry reorders text only if every OCR word is preserved; plain text is the fallback.
 - **Deterministic comparisons:** case/apostrophe/punctuation normalization for text fields, contextual ABV and proof consistency, numeric volume conversion, complete warning wording with internal and final punctuation. Warning body capitalization and whitespace are normalized; the heading must remain uppercase. This is an OCR wording check, not a byte-for-byte artwork comparison.
-- **Automated appearance:** high-confidence OCR words locate one uppercase heading. Only that crop is sent to Qwen 3.8 27B and Gemma 4 26B A4B IT concurrently, with a fixed prompt and strict output parsing. Both must say BOLD, and a local stroke guard must corroborate weight, before Match. Every other outcome is Review. A reviewer checkbox records a separate human observation and never changes the automated status.
+- **Automated appearance:** high-confidence OCR words locate one uppercase heading. Only that crop is sent to Qwen 3.8 27B and Gemma 4 26B A4B IT concurrently, with a fixed prompt and strict output parsing. Both must say BOLD, and a local stroke guard must corroborate weight, before Match. Every other outcome is Review. Approve, Send back, and Later record separate human decisions and never change automated findings.
 - **Conservative stroke guard:** the OCR-isolated `I` in `WARNING:` must have usable geometry, a cap height of at least 16 pixels, and a middle-stem width at least 17% of cap height. The guard was added after both vision models falsely approved a regular Century heading. It intentionally leaves some true bold fonts unresolved. It is not a universal font classifier.
 - **Vercel proxy and Cloudflare Worker:** the browser contacts only its own origin. A server-only shared secret protects the dedicated Worker; an AI binding avoids browser API keys. Fixed models, bounded PNG dimensions/payload, a four-second inference deadline, and a 60-request/minute per-client rate limiter bound prototype use. No automatic retries. A timed-out model call can still consume quota.
 - **No persistence:** the app does not save images, application fields, crops, or inference responses. No image bodies are logged by application code; Worker observability is disabled. Vercel and Cloudflare may retain normal service metadata under their own policies. Cloudflare processes the heading crop; the full artwork and application stay in browser memory. Reloading clears results.
@@ -58,7 +62,7 @@ npm run preview
 - Decorative text, competing headings, unusual layouts, low resolution, glare, blur, and curved bottles can defeat OCR or the stroke guard. Missing evidence never becomes an all-clear. Low OCR confidence adds an attention item even when individual text matches exist.
 - Matching producer/type/country text establishes that the expected phrase was read. It does not certify all other statements on the label or prove the absence of conflicting legal claims.
 - Volumes support mL, cL, L, and **US** fluid ounces, including whole-mL conversion rounding (12 fl oz ≈355 mL). Plain `oz`, OCR-confused units, and conflicting declarations stay unresolved. Regulatory fill tolerances are not used to excuse application differences.
-- Boldness is a conservative inference with documented false negatives and unresolved cases. It does not measure physical print size, required placement, or regulatory legibility. Model agreement is not ground truth. No real-world accuracy percentage or evaluator score is claimed.
+- Boldness is an inference with documented false positives, false negatives, and unresolved cases. It does not measure physical print size, required placement, or regulatory legibility. Model agreement is not ground truth. No real-world accuracy percentage or evaluator score is claimed.
 - Upload limits: 300 images, 10 MB each, 200 MB total, PNG/JPEG/WebP. Images above 40 megapixels are rejected after decode; the longest side is reduced to 1800 pixels. The original remains available for inspection.
 - Timing runs from Review click to findings, including unfinished initialization, preparation, OCR, and appearance. Per-label times also include cloud inference. Startup/downloads, device speed, network, queueing, quota, and model availability cause outliers. A 300-image batch is not expected to finish in five seconds.
 - Free quota and rate limits can prevent full automatic verification. Those labels still retain text findings and a visible appearance exception. The UI tells the user to retry or inspect the artwork.
@@ -84,6 +88,18 @@ The app origin is `https://github.com/lucaschatham/treasury-label-review.git`; t
 
 [Cloudflare Free allocation](https://developers.cloudflare.com/workers-ai/platform/pricing/) · [TTB warning guidance](https://www.ttb.gov/regulated-commodities/beverage-alcohol/distilled-spirits/ds-labeling-home/ds-health-warning)
 
-### Current partial release, September 22, 2026
+### Current release, September 23, 2026
 
-Production runs source [c3ebde8](https://github.com/lucaschatham/treasury-label-review/tree/c3ebde8cd36065d917677787f195b1dab46929b9), browser bundle `index-y4-KV3KF.js`, and the isolated Worker recorded in [partial release verification](evidence/partial-release-verification.json). The anonymous sample completed all applicable checks in 2.7 seconds. A five-image regression batch completed with the expected semantic Review findings, a regular warning left for review, and a visible corrupt-image failure. The prior [300-image integrated run](evidence/browser-integrated-300.json) established batch processing on the earlier pipeline; it has not been repeated after this repair. The deployed boldness guard permits only 34 of 40 held-out clear bold examples locally. A newer [multi-glyph preview candidate](evidence/appearance-multiglyph-preview-run1.json) passed 38/40 bold and 0/40 regular images locally, but its first 80-image real-service browser run produced 36/40 bold Matches, 0/40 regular false Matches, and 5.5-second p95. It remains unreleased. The original [assignment](ASSIGNMENT.md) specifies qualitative evaluation criteria and no numeric passing score; our 95% boldness target is an internal release criterion.
+Production runs [source 2a46749](https://github.com/lucaschatham/treasury-label-review/tree/2a46749b0d240d7a63d1ab4d7cd94ad28a146e10) and bundle `index-DGAUEOgM.js`. The anonymous production sample completed all applicable checks in 2.4 seconds, without a cached appearance result. The same runtime completed a 300-image preview run in 195.3 seconds, retaining 300 unique results and correctly associating all 900 checked brand/type/producer fields. This verifies batch accounting, not classification accuracy.
+
+A clean install, 77 tests, production build, and code review passed. The [neighbor-localization evaluation](evidence/appearance-neighbor-evaluation.md) documents the remaining failures: 37/40 bold Matches and three uncached regular false Matches. Duplicate Latin artwork and five cached results prevent that typography run from qualifying as independent, uncached latency evidence. The release proceeds with these documented limitations; it does not satisfy the internal boldness gate.
+
+The [September 22 release evidence](evidence/partial-release-verification.json) and earlier experimental reports remain historical records. The [original assignment](ASSIGNMENT.md) specifies qualitative evaluation criteria and no numeric passing score. This prototype is ready to inspect and exercise, but automated warning-boldness verification remains a material incomplete requirement.
+
+## Spreadsheet uploads
+
+Step 1 accepts PNG, JPEG, and WebP artwork plus one CSV or XLSX application spreadsheet. Add files together or in separate selections. Spreadsheets supply expected values; they do not replace label images. The browser parses them locally and matches each row to an image by exact filename. Review stays disabled until every row and image matches. Clear files starts over; Remove spreadsheet keeps the images for manual entry.
+
+Use `public/samples/applications.csv` or `public/samples/applications.xlsx`. Required columns: `filename`, `brand`, `type`, `abv`, `volume`. Optional: `producer`, `imported` (true/false), `country` (required for imports). ABV is percentage points (45, not 0.45); XLSX percentage-formatted numeric cells are converted (45% becomes 45). XLSX must have one nonempty worksheet, plain values rather than formulas, dates, or hyperlinks. Maximum: 300 rows and a 1 MB spreadsheet. Duplicate filenames, missing columns, invalid values, and corrupt workbooks are rejected.
+
+`node --test test/spreadsheet.test.js` verifies real XLSX serialization and parsing, CSV parity, mapping, and invalid input. Open `/test/spreadsheet-browser.html` on the local Vite server and run the checks for real three-image OCR through both formats, picker/change and drag/drop handling, staged uploads, recovery, and removal. ExcelJS is lazy-loaded only when an XLSX is opened.

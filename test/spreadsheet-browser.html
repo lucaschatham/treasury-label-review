@@ -1,0 +1,36 @@
+<!doctype html><meta charset="UTF-8"><title>Spreadsheet upload checks</title>
+<button id="run">Run spreadsheet checks</button><p id="outcome">Ready</p><iframe src="/" style="width:100%;height:850px"></iframe>
+<script type="module">
+const frame=document.querySelector('iframe'),out=document.querySelector('#outcome');
+const assert=(yes,message)=>{if(!yes)throw Error(message)};
+async function waitFor(check){const start=Date.now();while(!check()){if(Date.now()-start>30000)throw Error('Timed out waiting for UI');await new Promise(r=>setTimeout(r,50));}}
+async function reset(){await new Promise(r=>{frame.onload=r;frame.contentWindow.location.reload();}); await waitFor(()=>frame.contentDocument.querySelector('.flow-step'));}
+function drop(files, picker=false){const w=frame.contentWindow,d=frame.contentDocument,transfer=new w.DataTransfer();files.forEach(f=>transfer.items.add(f));if(picker){const input=d.querySelector('#images');input.files=transfer.files;input.dispatchEvent(new w.Event('change',{bubbles:true}));}else d.querySelector('#drop-zone').dispatchEvent(new w.DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:transfer}));}
+async function asset(name,type){const response=await fetch('/samples/'+name);assert(response.ok,'fixture loads');return new File([await response.blob()],name,{type});}
+async function idle(){await new Promise(r=>setTimeout(r,50));await waitFor(()=>!frame.contentDocument.querySelector('#images').disabled);}
+document.querySelector('#run').onclick=async()=>{try{
+ const images=await Promise.all(['old-tom.png','wrong-abv.png','wrong-warning.png'].map(n=>asset(n,'image/png')));
+ for(const extension of (new URLSearchParams(location.search).get('format') ? [new URLSearchParams(location.search).get('format')] : ['csv','xlsx'])){
+  out.textContent=`Checking ${extension} upload and actual OCR…`;await reset();let d=frame.contentDocument;
+  const sheet=await asset('applications.'+extension,extension==='csv'?'text/csv':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+  drop([sheet],extension==='xlsx');await idle();assert(d.querySelector('#manifest-summary').textContent.includes('3 rows'),'three spreadsheet rows parsed');assert(d.querySelector('#run-button').disabled,'spreadsheet alone cannot review artwork');
+  drop([images[0]]);await idle();assert(d.querySelector('#run-button').disabled,'missing images block review');assert(d.querySelector('#status').textContent.includes('Missing images'),'missing names explained');
+  drop(images.slice(1));await idle();assert(!d.querySelector('#run-button').disabled,'separate uploads complete batch');
+  d.querySelector('#run-button').click();await waitFor(()=>d.querySelector('#status').textContent.startsWith('Finished:'));
+  assert(d.querySelector('#status').textContent.includes('3 reviewed, 0 failed'),'three real images processed');
+  d.querySelector('.pile-button.large.failed').click();
+  assert(d.querySelector('[aria-label="Open wrong-abv.png"]'),'wrong ABV is Failed with spreadsheet values');
+  d.querySelector('[aria-label="Open wrong-abv.png"]').click();
+  assert(d.querySelector('.comparison').textContent.includes('45'),'decision dialog uses expected ABV from spreadsheet');
+  d.querySelector('.decision-dialog').close();
+  assert(!d.querySelector('#application-dialog').open,'spreadsheet bypasses manual form');
+ }
+ await reset();let d=frame.contentDocument;
+ drop([new File(['broken'],'bad.xlsx')]);await idle();assert(d.querySelector('#run-button').disabled,'corrupt workbook blocks review');assert(d.querySelector('#status').textContent.includes('Could not read'),'corrupt workbook explained');
+ const sheet=await asset('applications.xlsx','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+ drop([sheet,...images]);await idle();assert(!d.querySelector('#run-button').disabled,'mixed drop recovers from invalid import');
+ d.querySelector('#remove-manifest').click();await idle();assert(!d.querySelector('#manifest-summary').textContent,'spreadsheet removable');assert(!d.querySelector('#run-button').disabled,'images remain after removal');
+ d.querySelector('#clear-files').click();await idle();assert(d.querySelector('#run-button').disabled,'clear files resets batch');
+ await reset();out.textContent='PASS: '+(new URLSearchParams(location.search).get('format') || 'CSV and XLSX')+' real-file imports, input change and drag/drop, separate and mixed uploads, missing-image gate, actual OCR comparisons, corrupt-file recovery, removal, clear.';
+}catch(error){out.textContent='FAIL: '+error.message;}};
+</script>

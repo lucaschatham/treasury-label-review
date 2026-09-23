@@ -246,3 +246,20 @@ kbd { border:1px solid currentColor; border-radius:4px; padding:1px 5px; font:in
 #status {margin-top:16px;}
 @media(max-width:719px) {.workspace-heading {align-items:start; flex-direction:column; gap:8px;} .board-controls {gap:10px;} .board-controls > span {flex-basis:100%;} #label-intake .upload {min-height:160px;} }
 @media(min-width:720px) {.flow-step:not(:last-child)::after {top:42px;}}
+
+/* Plain-language guidance for the upload and automatic checks. */
+.workspace-heading p {line-height:1.6; max-width:880px;}
+.step-help {font-size:14px; line-height:1.5; color:var(--muted); margin:0 0 14px;}
+
+.return-time {color:var(--muted); font-size:14px; font-variant-numeric:tabular-nums; margin:0 0 20px;}
+/* Approved input readiness and result guidance. */
+.start-guidance,.check-notice {padding:14px 16px;border-radius:10px;background:var(--blue-bg,#f0f6ff);font-size:14px;line-height:1.5;margin:12px 0 18px;}
+.check-notice {background:var(--look-bg,#fff3dc);color:var(--look,#8a5300);}
+.view-results {margin:0 0 18px;}
+#label-intake .upload {min-height:112px;padding:14px 10px;}
+.sheet {font-size:14px;line-height:1.6;margin:14px 0;overflow-wrap:anywhere;}
+.sheet summary {color:var(--blue);cursor:pointer;}
+.sheet code {font-family:inherit;font-weight:600;}
+#details-readiness {margin-bottom:0;}
+#application-dialog {max-height:90vh;overflow:auto;}
+.pile-list {scroll-margin-top:24px;}

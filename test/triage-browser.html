@@ -3,12 +3,12 @@ import {createTriage} from '/src/triage.js';
 if (new URLSearchParams(location.search).get('theme') === 'light') {const sheet = document.createElement('style'); sheet.textContent = (await (await fetch('/src/style.css?direct')).text()).replaceAll('(prefers-color-scheme: dark)','(prefers-color-scheme: no-preference)').replaceAll('(prefers-color-scheme:dark)','(prefers-color-scheme:no-preference)'); document.querySelector('link').remove(); document.head.append(sheet);}
 const root=document.querySelector('#fixture');const ui=createTriage(root);
 const make=(name,status)=>({name,findings:Object.freeze([Object.freeze({field:'Alcohol content',status,found:'40%',expected:'45%',detail:'Compare the alcohol content.'})]),confidence:90,imageUrl:'/samples/old-tom.png'});
-function populate(){ui.clear();ui.start(300); for(let i=0;i<300;i++){ui.progress(1);ui.progress(2);const node=ui.add(make(`label-${String(i).padStart(3,'0')}.png`,i<280?'match':i<297?'mismatch':'review'));node.dataset.timings='{"total":1}';node.dataset.appearance='{"status":"review"}';}ui.finish();}
+function populate(){ui.clear();ui.start(300); for(let i=0;i<300;i++){ui.progress(1);ui.progress(2);const node=ui.add(make(`label-${String(i).padStart(3,'0')}.png`,i<280?'match':i<297?'mismatch':'review'));node.dataset.timings='{"total":1}';node.dataset.appearance='{"status":"review"}';}ui.finish(false,12.3,2.1);}
 populate();
 const assert=(value,message)=>{if(!value)throw Error(message);};
 const click=selector=>{const node=document.querySelector(selector);assert(node,`Missing ${selector}`);node.click();};
 document.querySelector('#run').onclick=()=>{try{
-populate();assert(root.querySelector('.north-star strong').textContent==='3','north star');
+populate();assert(root.querySelector('.return-time').textContent==='Batch results returned in 12.3 seconds · First result in 2.1 seconds','return time');assert(root.querySelector('.north-star strong').textContent==='3','north star');
 assert(root.querySelectorAll('.triage-row').length===300,'unique mounted rows');
 assert(new Set([...root.querySelectorAll('.triage-row')].map(n=>n.getAttribute('aria-label'))).size===300,'unique names');
 click('.large.passed');assert(root.querySelectorAll('.triage-row:not([hidden])').length===50,'pagination first page');assert(root.querySelector('.small.passed').getAttribute('aria-pressed')==='true','twins');
