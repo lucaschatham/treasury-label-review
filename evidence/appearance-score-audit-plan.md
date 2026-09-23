@@ -1,0 +1,3 @@
+# Saved-score audit (R-011 and R-012)
+
+Analyze existing predictions only. No training, inference, threshold changes, reserved-font access, or deployment. Preserve original cohort denominators. Hash both prediction files and the frozen input manifest. Verify row identity before comparing errors. Report a retrospective zero-false-positive threshold ceiling strictly as a diagnostic, never validation or a proposed production threshold. Group errors by family and cohort; avoid causal claims where renderer and font are confounded. Stop after identifying the smallest controlled experiment that can distinguish plausible failure mechanisms.

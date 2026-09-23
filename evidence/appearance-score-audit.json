@@ -1,0 +1,764 @@
+{
+  "scope": "Retrospective exposed-data diagnostic. No new inference or threshold selection.",
+  "sourceHashes": {
+    "R011": "20c53952d5ca5f83dfb392f923ff04b0a79c052d789be3c8a95690eee828808f",
+    "R012": "73e0e45c602c8900bf764915cfb7d2830e12949bb103e698782b4452b3b90c98",
+    "manifest": "8be07d06783cbcef820dd4c70270b2b69b05ed99e719557235f2dfb56e56fef7"
+  },
+  "models": {
+    "R011": {
+      "cutoff": 0.9735623556350262,
+      "challenge": {
+        "bold": 79,
+        "regular": 79,
+        "truePositive": 50,
+        "falsePositive": 2,
+        "maxRegularScore": 0.9955486182886901,
+        "boldAboveEveryRegular": 40
+      },
+      "uniqueTensorChallenge": {
+        "bold": 74,
+        "regular": 74,
+        "truePositive": 48,
+        "falsePositive": 2,
+        "maxRegularScore": 0.9955486182886901,
+        "boldAboveEveryRegular": 38
+      },
+      "byFamily": {
+        "Arial": {
+          "bold": 8,
+          "regular": 8,
+          "truePositive": 8,
+          "falsePositive": 0,
+          "maxRegularScore": 0.16672146478446426,
+          "boldAboveEveryRegular": 8
+        },
+        "Century": {
+          "bold": 4,
+          "regular": 4,
+          "truePositive": 3,
+          "falsePositive": 0,
+          "maxRegularScore": 0.07160237848057649,
+          "boldAboveEveryRegular": 4
+        },
+        "Georgia": {
+          "bold": 8,
+          "regular": 8,
+          "truePositive": 3,
+          "falsePositive": 0,
+          "maxRegularScore": 0.6781834059376828,
+          "boldAboveEveryRegular": 5
+        },
+        "Hoefler-Text": {
+          "bold": 5,
+          "regular": 5,
+          "truePositive": 2,
+          "falsePositive": 0,
+          "maxRegularScore": 1.7549242566547141e-06,
+          "boldAboveEveryRegular": 5
+        },
+        "Kohinoor-Bangla": {
+          "bold": 5,
+          "regular": 5,
+          "truePositive": 5,
+          "falsePositive": 0,
+          "maxRegularScore": 1.3319624469437966e-05,
+          "boldAboveEveryRegular": 5
+        },
+        "PT-Mono": {
+          "bold": 13,
+          "regular": 13,
+          "truePositive": 7,
+          "falsePositive": 0,
+          "maxRegularScore": 0.00041599950135609435,
+          "boldAboveEveryRegular": 13
+        },
+        "PT-Serif": {
+          "bold": 5,
+          "regular": 5,
+          "truePositive": 5,
+          "falsePositive": 0,
+          "maxRegularScore": 0.00023829095082092362,
+          "boldAboveEveryRegular": 5
+        },
+        "Seravek": {
+          "bold": 5,
+          "regular": 5,
+          "truePositive": 5,
+          "falsePositive": 0,
+          "maxRegularScore": 0.0024789084430007764,
+          "boldAboveEveryRegular": 5
+        },
+        "Superclarendon": {
+          "bold": 13,
+          "regular": 13,
+          "truePositive": 12,
+          "falsePositive": 2,
+          "maxRegularScore": 0.9955486182886901,
+          "boldAboveEveryRegular": 11
+        },
+        "TI-Nspire": {
+          "bold": 13,
+          "regular": 13,
+          "truePositive": 0,
+          "falsePositive": 0,
+          "maxRegularScore": 0.4578336963651099,
+          "boldAboveEveryRegular": 3
+        }
+      },
+      "byCategory": {
+        "century-renderer": {
+          "bold": 4,
+          "regular": 4,
+          "truePositive": 3,
+          "falsePositive": 0,
+          "maxRegularScore": 0.07160237848057649,
+          "boldAboveEveryRegular": 4
+        },
+        "historical-renderer": {
+          "bold": 35,
+          "regular": 35,
+          "truePositive": 24,
+          "falsePositive": 0,
+          "maxRegularScore": 0.7843182804411044,
+          "boldAboveEveryRegular": 28
+        },
+        "stroke-oracle": {
+          "bold": 40,
+          "regular": 40,
+          "truePositive": 23,
+          "falsePositive": 2,
+          "maxRegularScore": 0.9955486182886901,
+          "boldAboveEveryRegular": 20
+        }
+      },
+      "errors": [
+        {
+          "id": "Georgia-same-family-bold",
+          "family": "Georgia",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.26133556432587074
+        },
+        {
+          "id": "Georgia-larger-heading-bold",
+          "family": "Georgia",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.7399674561756698
+        },
+        {
+          "id": "Georgia-bold-body-bold",
+          "family": "Georgia",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.26133556432587074
+        },
+        {
+          "id": "Georgia-cap-9-bold",
+          "family": "Georgia",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.04331702879843925
+        },
+        {
+          "id": "Georgia-cap-14-bold",
+          "family": "Georgia",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.8759416807595275
+        },
+        {
+          "id": "Superclarendon-cap-14-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.9836048890614856
+        },
+        {
+          "id": "Superclarendon-inverted-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.9955486182886901
+        },
+        {
+          "id": "PT-Mono-same-family-bold",
+          "family": "PT-Mono",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.402073096378786
+        },
+        {
+          "id": "PT-Mono-larger-heading-bold",
+          "family": "PT-Mono",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.8024454187781843
+        },
+        {
+          "id": "PT-Mono-bold-body-bold",
+          "family": "PT-Mono",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.402073096378786
+        },
+        {
+          "id": "PT-Mono-cap-14-bold",
+          "family": "PT-Mono",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.801294454416966
+        },
+        {
+          "id": "TI-Nspire-same-family-bold",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.02159349194498918
+        },
+        {
+          "id": "TI-Nspire-larger-heading-bold",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.0003662184813783525
+        },
+        {
+          "id": "TI-Nspire-bold-body-bold",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.02159349194498918
+        },
+        {
+          "id": "TI-Nspire-cap-9-bold",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.0010162636077152086
+        },
+        {
+          "id": "TI-Nspire-cap-12-bold",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.19752291722052484
+        },
+        {
+          "id": "TI-Nspire-cap-14-bold",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.817586641938239
+        },
+        {
+          "id": "TI-Nspire-inverted-bold",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.9025557137523766
+        },
+        {
+          "id": "TI-Nspire-jpeg-75-bold",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "BOLD",
+          "score": 0.19023370924636573
+        },
+        {
+          "id": "PT-Mono-0-bold",
+          "family": "PT-Mono",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.6799483126586087
+        },
+        {
+          "id": "PT-Mono-4-bold",
+          "family": "PT-Mono",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.8766147098092545
+        },
+        {
+          "id": "Superclarendon-4-bold",
+          "family": "Superclarendon",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.9663125340234947
+        },
+        {
+          "id": "TI-Nspire-0-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.003817144677984943
+        },
+        {
+          "id": "TI-Nspire-1-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.8102514177387855
+        },
+        {
+          "id": "TI-Nspire-2-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.08347921268501499
+        },
+        {
+          "id": "TI-Nspire-3-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.02110620855653365
+        },
+        {
+          "id": "TI-Nspire-4-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.21673761694027519
+        },
+        {
+          "id": "Hoefler-Text-1-bold",
+          "family": "Hoefler-Text",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.7965975241216825
+        },
+        {
+          "id": "Hoefler-Text-2-bold",
+          "family": "Hoefler-Text",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.7105367458252317
+        },
+        {
+          "id": "Hoefler-Text-4-bold",
+          "family": "Hoefler-Text",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.4003188933913165
+        },
+        {
+          "id": "century-24-bold",
+          "family": "Century",
+          "category": "century-renderer",
+          "expected": "BOLD",
+          "score": 0.8960737160935527
+        }
+      ]
+    },
+    "R012": {
+      "cutoff": 0.5397067666053773,
+      "challenge": {
+        "bold": 79,
+        "regular": 79,
+        "truePositive": 75,
+        "falsePositive": 11,
+        "maxRegularScore": 0.9912950992584229,
+        "boldAboveEveryRegular": 55
+      },
+      "uniqueTensorChallenge": {
+        "bold": 74,
+        "regular": 74,
+        "truePositive": 70,
+        "falsePositive": 10,
+        "maxRegularScore": 0.9912950992584229,
+        "boldAboveEveryRegular": 51
+      },
+      "byFamily": {
+        "Arial": {
+          "bold": 8,
+          "regular": 8,
+          "truePositive": 8,
+          "falsePositive": 0,
+          "maxRegularScore": 0.0008332858560606837,
+          "boldAboveEveryRegular": 8
+        },
+        "Century": {
+          "bold": 4,
+          "regular": 4,
+          "truePositive": 4,
+          "falsePositive": 0,
+          "maxRegularScore": 0.002966082887724042,
+          "boldAboveEveryRegular": 4
+        },
+        "Georgia": {
+          "bold": 8,
+          "regular": 8,
+          "truePositive": 8,
+          "falsePositive": 2,
+          "maxRegularScore": 0.9789086580276489,
+          "boldAboveEveryRegular": 8
+        },
+        "Hoefler-Text": {
+          "bold": 5,
+          "regular": 5,
+          "truePositive": 5,
+          "falsePositive": 0,
+          "maxRegularScore": 6.472530458268011e-06,
+          "boldAboveEveryRegular": 5
+        },
+        "Kohinoor-Bangla": {
+          "bold": 5,
+          "regular": 5,
+          "truePositive": 5,
+          "falsePositive": 0,
+          "maxRegularScore": 2.2448389813689573e-07,
+          "boldAboveEveryRegular": 5
+        },
+        "PT-Mono": {
+          "bold": 13,
+          "regular": 13,
+          "truePositive": 13,
+          "falsePositive": 0,
+          "maxRegularScore": 0.0030268665868788958,
+          "boldAboveEveryRegular": 13
+        },
+        "PT-Serif": {
+          "bold": 5,
+          "regular": 5,
+          "truePositive": 5,
+          "falsePositive": 0,
+          "maxRegularScore": 1.7200787624460645e-05,
+          "boldAboveEveryRegular": 5
+        },
+        "Seravek": {
+          "bold": 5,
+          "regular": 5,
+          "truePositive": 5,
+          "falsePositive": 0,
+          "maxRegularScore": 0.00028486186056397855,
+          "boldAboveEveryRegular": 5
+        },
+        "Superclarendon": {
+          "bold": 13,
+          "regular": 13,
+          "truePositive": 13,
+          "falsePositive": 8,
+          "maxRegularScore": 0.9912950992584229,
+          "boldAboveEveryRegular": 11
+        },
+        "TI-Nspire": {
+          "bold": 13,
+          "regular": 13,
+          "truePositive": 9,
+          "falsePositive": 1,
+          "maxRegularScore": 0.7232003808021545,
+          "boldAboveEveryRegular": 8
+        }
+      },
+      "byCategory": {
+        "century-renderer": {
+          "bold": 4,
+          "regular": 4,
+          "truePositive": 4,
+          "falsePositive": 0,
+          "maxRegularScore": 0.002966082887724042,
+          "boldAboveEveryRegular": 4
+        },
+        "historical-renderer": {
+          "bold": 35,
+          "regular": 35,
+          "truePositive": 31,
+          "falsePositive": 1,
+          "maxRegularScore": 0.6121891736984253,
+          "boldAboveEveryRegular": 30
+        },
+        "stroke-oracle": {
+          "bold": 40,
+          "regular": 40,
+          "truePositive": 40,
+          "falsePositive": 10,
+          "maxRegularScore": 0.9912950992584229,
+          "boldAboveEveryRegular": 36
+        }
+      },
+      "errors": [
+        {
+          "id": "Georgia-cap-9-regular",
+          "family": "Georgia",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.9789086580276489
+        },
+        {
+          "id": "Georgia-inverted-regular",
+          "family": "Georgia",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.7298963665962219
+        },
+        {
+          "id": "Superclarendon-same-family-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.8580352067947388
+        },
+        {
+          "id": "Superclarendon-larger-heading-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.8551300764083862
+        },
+        {
+          "id": "Superclarendon-bold-body-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.8580352067947388
+        },
+        {
+          "id": "Superclarendon-cap-9-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.9912950992584229
+        },
+        {
+          "id": "Superclarendon-cap-12-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.7672716975212097
+        },
+        {
+          "id": "Superclarendon-inverted-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.9736337065696716
+        },
+        {
+          "id": "Superclarendon-jpeg-75-regular",
+          "family": "Superclarendon",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.6785222887992859
+        },
+        {
+          "id": "TI-Nspire-cap-9-regular",
+          "family": "TI-Nspire",
+          "category": "stroke-oracle",
+          "expected": "REGULAR",
+          "score": 0.7232003808021545
+        },
+        {
+          "id": "Superclarendon-0-regular",
+          "family": "Superclarendon",
+          "category": "historical-renderer",
+          "expected": "REGULAR",
+          "score": 0.6121891736984253
+        },
+        {
+          "id": "TI-Nspire-1-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.49988028407096863
+        },
+        {
+          "id": "TI-Nspire-2-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.5194377303123474
+        },
+        {
+          "id": "TI-Nspire-3-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.2551121115684509
+        },
+        {
+          "id": "TI-Nspire-4-bold",
+          "family": "TI-Nspire",
+          "category": "historical-renderer",
+          "expected": "BOLD",
+          "score": 0.22072157263755798
+        }
+      ]
+    }
+  },
+  "transitions": {
+    "REGULAR: REVIEW -> REVIEW": [
+      "Arial-same-family-regular",
+      "Arial-larger-heading-regular",
+      "Arial-bold-body-regular",
+      "Arial-cap-9-regular",
+      "Arial-cap-12-regular",
+      "Arial-cap-14-regular",
+      "Arial-inverted-regular",
+      "Arial-jpeg-75-regular",
+      "Georgia-same-family-regular",
+      "Georgia-larger-heading-regular",
+      "Georgia-bold-body-regular",
+      "Georgia-cap-12-regular",
+      "Georgia-cap-14-regular",
+      "Georgia-jpeg-75-regular",
+      "PT-Mono-same-family-regular",
+      "PT-Mono-larger-heading-regular",
+      "PT-Mono-bold-body-regular",
+      "PT-Mono-cap-9-regular",
+      "PT-Mono-cap-12-regular",
+      "PT-Mono-cap-14-regular",
+      "PT-Mono-inverted-regular",
+      "PT-Mono-jpeg-75-regular",
+      "TI-Nspire-same-family-regular",
+      "TI-Nspire-larger-heading-regular",
+      "TI-Nspire-bold-body-regular",
+      "TI-Nspire-cap-12-regular",
+      "TI-Nspire-cap-14-regular",
+      "TI-Nspire-inverted-regular",
+      "TI-Nspire-jpeg-75-regular",
+      "Seravek-0-regular",
+      "Seravek-1-regular",
+      "Seravek-2-regular",
+      "Seravek-3-regular",
+      "Seravek-4-regular",
+      "PT-Mono-0-regular",
+      "PT-Mono-1-regular",
+      "PT-Mono-2-regular",
+      "PT-Mono-3-regular",
+      "PT-Mono-4-regular",
+      "PT-Serif-0-regular",
+      "PT-Serif-1-regular",
+      "PT-Serif-2-regular",
+      "PT-Serif-3-regular",
+      "PT-Serif-4-regular",
+      "Superclarendon-1-regular",
+      "Superclarendon-2-regular",
+      "Superclarendon-3-regular",
+      "Superclarendon-4-regular",
+      "TI-Nspire-0-regular",
+      "TI-Nspire-1-regular",
+      "TI-Nspire-2-regular",
+      "TI-Nspire-3-regular",
+      "TI-Nspire-4-regular",
+      "Hoefler-Text-0-regular",
+      "Hoefler-Text-1-regular",
+      "Hoefler-Text-2-regular",
+      "Hoefler-Text-3-regular",
+      "Hoefler-Text-4-regular",
+      "Kohinoor-Bangla-0-regular",
+      "Kohinoor-Bangla-1-regular",
+      "Kohinoor-Bangla-2-regular",
+      "Kohinoor-Bangla-3-regular",
+      "Kohinoor-Bangla-4-regular",
+      "century-24-regular",
+      "century-32-regular",
+      "century-40-regular",
+      "century-48-regular"
+    ],
+    "BOLD: MATCH -> MATCH": [
+      "Arial-same-family-bold",
+      "Arial-larger-heading-bold",
+      "Arial-bold-body-bold",
+      "Arial-cap-9-bold",
+      "Arial-cap-12-bold",
+      "Arial-cap-14-bold",
+      "Arial-inverted-bold",
+      "Arial-jpeg-75-bold",
+      "Georgia-cap-12-bold",
+      "Georgia-inverted-bold",
+      "Georgia-jpeg-75-bold",
+      "Superclarendon-same-family-bold",
+      "Superclarendon-larger-heading-bold",
+      "Superclarendon-bold-body-bold",
+      "Superclarendon-cap-9-bold",
+      "Superclarendon-cap-12-bold",
+      "Superclarendon-cap-14-bold",
+      "Superclarendon-inverted-bold",
+      "Superclarendon-jpeg-75-bold",
+      "PT-Mono-cap-9-bold",
+      "PT-Mono-cap-12-bold",
+      "PT-Mono-inverted-bold",
+      "PT-Mono-jpeg-75-bold",
+      "Seravek-0-bold",
+      "Seravek-1-bold",
+      "Seravek-2-bold",
+      "Seravek-3-bold",
+      "Seravek-4-bold",
+      "PT-Mono-1-bold",
+      "PT-Mono-2-bold",
+      "PT-Mono-3-bold",
+      "PT-Serif-0-bold",
+      "PT-Serif-1-bold",
+      "PT-Serif-2-bold",
+      "PT-Serif-3-bold",
+      "PT-Serif-4-bold",
+      "Superclarendon-0-bold",
+      "Superclarendon-1-bold",
+      "Superclarendon-2-bold",
+      "Superclarendon-3-bold",
+      "Hoefler-Text-0-bold",
+      "Hoefler-Text-3-bold",
+      "Kohinoor-Bangla-0-bold",
+      "Kohinoor-Bangla-1-bold",
+      "Kohinoor-Bangla-2-bold",
+      "Kohinoor-Bangla-3-bold",
+      "Kohinoor-Bangla-4-bold",
+      "century-32-bold",
+      "century-40-bold",
+      "century-48-bold"
+    ],
+    "BOLD: REVIEW -> MATCH": [
+      "Georgia-same-family-bold",
+      "Georgia-larger-heading-bold",
+      "Georgia-bold-body-bold",
+      "Georgia-cap-9-bold",
+      "Georgia-cap-14-bold",
+      "PT-Mono-same-family-bold",
+      "PT-Mono-larger-heading-bold",
+      "PT-Mono-bold-body-bold",
+      "PT-Mono-cap-14-bold",
+      "TI-Nspire-same-family-bold",
+      "TI-Nspire-larger-heading-bold",
+      "TI-Nspire-bold-body-bold",
+      "TI-Nspire-cap-9-bold",
+      "TI-Nspire-cap-12-bold",
+      "TI-Nspire-cap-14-bold",
+      "TI-Nspire-inverted-bold",
+      "TI-Nspire-jpeg-75-bold",
+      "PT-Mono-0-bold",
+      "PT-Mono-4-bold",
+      "Superclarendon-4-bold",
+      "TI-Nspire-0-bold",
+      "Hoefler-Text-1-bold",
+      "Hoefler-Text-2-bold",
+      "Hoefler-Text-4-bold",
+      "century-24-bold"
+    ],
+    "REGULAR: REVIEW -> MATCH": [
+      "Georgia-cap-9-regular",
+      "Georgia-inverted-regular",
+      "Superclarendon-same-family-regular",
+      "Superclarendon-larger-heading-regular",
+      "Superclarendon-bold-body-regular",
+      "Superclarendon-cap-9-regular",
+      "Superclarendon-cap-12-regular",
+      "Superclarendon-jpeg-75-regular",
+      "TI-Nspire-cap-9-regular",
+      "Superclarendon-0-regular"
+    ],
+    "REGULAR: MATCH -> REVIEW": [
+      "Superclarendon-cap-14-regular"
+    ],
+    "REGULAR: MATCH -> MATCH": [
+      "Superclarendon-inverted-regular"
+    ],
+    "BOLD: REVIEW -> REVIEW": [
+      "TI-Nspire-1-bold",
+      "TI-Nspire-2-bold",
+      "TI-Nspire-3-bold",
+      "TI-Nspire-4-bold"
+    ]
+  }
+}

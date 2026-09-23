@@ -1,8 +1,8 @@
 # Project working instructions
 
-## Resolutions List
+## Requirement and attempt history
 
-Before proposing, planning, or running a boldness experiment or revisiting an existing failure, read [RESOLUTIONS.md](RESOLUTIONS.md) and the relevant evidence. It is the current decision index; older reports' proposed “next steps” may already have been tried.
+Before proposing, planning, or running a boldness experiment or revisiting an existing failure, read [REQUIREMENTS.md attempt history](REQUIREMENTS.md#attempt-history) and the relevant evidence. It is the current decision index; older reports' proposed “next steps” may already have been tried.
 
 - Do not repeat a failed approach because its result is absent from conversation context. Search the list first.
 - Reopening requires a specific changed mechanism, an explanation of how it addresses the recorded failure, a smallest disconfirming test, and a stop rule. Reference the prior approach ID. A renamed method, routine prompt variation, or threshold tweak alone is insufficient.

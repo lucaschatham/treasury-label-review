@@ -2,7 +2,7 @@
 
 > **Release status:** the current UI release adds permanent pile triage, CSV/XLSX intake, explicit input readiness, protected session decisions, and visible return time. Automated boldness remains incomplete and consistent five-second performance remains unproven. See [requirement evidence](REQUIREMENTS.md) and [UI release checks](evidence/pile-ui-release.md).
 
-[Application](https://lucaschatham.com/alcohol-by-volume-automated-label-check) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md) · [Resolutions List](RESOLUTIONS.md)
+[Application](https://lucaschatham.com/alcohol-by-volume-automated-label-check) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md) · [Attempt history](REQUIREMENTS.md#attempt-history)
 
 A standalone alcohol-label review prototype. Browser OCR compares artwork with application fields. A cropped government-warning heading receives conservative automated boldness verification. Uncertain findings remain for a person to inspect; this app does not grant regulatory approval.
 
@@ -44,7 +44,7 @@ npm run preview
 
 ## Investigation record
 
-The [Resolutions List](RESOLUTIONS.md) tracks approaches tried, failed gates, root-cause evidence, open blockers, untested options, and conditions for revisiting a decision. Read it before another experiment and update it at closeout. It supersedes stale “next step” recommendations in older reports while preserving their results.
+The [Attempt history](REQUIREMENTS.md#attempt-history) tracks approaches tried, failed gates, root-cause evidence, open blockers, untested options, and conditions for revisiting a decision. Read it before another experiment and update it at closeout. It supersedes stale “next step” recommendations in older reports while preserving their results.
 
 ## Architecture and decisions
 
