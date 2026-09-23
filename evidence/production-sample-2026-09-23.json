@@ -1,0 +1,85 @@
+{
+  "status": "Finished: 1 reviewed, 0 failed, 0 remaining. Total: 2.4 s. First result: 2.4 s from click. Inspect exceptions and make your final decision.",
+  "rows": [
+    {
+      "file": "old-tom.png",
+      "timings": {
+        "setup": 1.6000000014901161,
+        "prepare": 15.600000001490116,
+        "ocr": 746.5,
+        "comparison": 3.600000001490116,
+        "appearance": 1614,
+        "render": 1,
+        "total": 2380.7999999970198,
+        "clickToResult": 2382.39999999851,
+        "queue": 0,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "summary": "Checks complete. Ready for your final decision.",
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "MATCH",
+          "found": "OLD TOM DISTILLERY",
+          "expected": "Application: OLD TOM DISTILLERY"
+        },
+        {
+          "field": "Class / type",
+          "status": "MATCH",
+          "found": "Kentucky Straight Bourbon Whiskey",
+          "expected": "Application: Kentucky Straight Bourbon Whiskey"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "MATCH",
+          "found": "45%",
+          "expected": "Application: 45%"
+        },
+        {
+          "field": "Net contents",
+          "status": "MATCH",
+          "found": "750 mL",
+          "expected": "Application: 750 mL"
+        },
+        {
+          "field": "Producer / address",
+          "status": "MATCH",
+          "found": "Old Tom Distillery, Bardstown, KY",
+          "expected": "Application: Old Tom Distillery, Bardstown, KY"
+        },
+        {
+          "field": "Country of origin",
+          "status": "N/A",
+          "found": "Domestic product"
+        },
+        {
+          "field": "Government warning",
+          "status": "MATCH",
+          "found": "Exact wording and uppercase heading detected"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "MATCH",
+          "found": "Bold heading corroborated"
+        }
+      ]
+    }
+  ],
+  "network": [
+    {
+      "duration": 1605,
+      "serverTiming": [
+        {
+          "name": "worker",
+          "duration": 1258.6
+        }
+      ]
+    }
+  ]
+}

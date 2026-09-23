@@ -1,6 +1,6 @@
 # Label Review
 
-> **Current partial release:** repair source `c3ebde8` is deployed with explicit user authorization to defer the boldness gate. Semantic and batch fixes are live; boldness remains unresolved at 34/40 local guard passes. See [release verification](evidence/partial-release-verification.json) and [repair checkpoint](evidence/repair-checkpoint.md).
+> **Current prototype release (September 23, 2026):** source `2a46749` is live. The core workflow, 300-image accounting, and 77 tests are verified. Automated boldness remains incomplete: the latest typography run produced three regular-heading false Matches and 37/40 bold Matches. Representative uncached five-second tail latency is not established. See [current release verification](evidence/production-release-2026-09-23.json).
 
 [Application](https://label-review-7b3.lucaschatham.com) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md)
 
@@ -58,7 +58,7 @@ npm run preview
 - Decorative text, competing headings, unusual layouts, low resolution, glare, blur, and curved bottles can defeat OCR or the stroke guard. Missing evidence never becomes an all-clear. Low OCR confidence adds an attention item even when individual text matches exist.
 - Matching producer/type/country text establishes that the expected phrase was read. It does not certify all other statements on the label or prove the absence of conflicting legal claims.
 - Volumes support mL, cL, L, and **US** fluid ounces, including whole-mL conversion rounding (12 fl oz ≈355 mL). Plain `oz`, OCR-confused units, and conflicting declarations stay unresolved. Regulatory fill tolerances are not used to excuse application differences.
-- Boldness is a conservative inference with documented false negatives and unresolved cases. It does not measure physical print size, required placement, or regulatory legibility. Model agreement is not ground truth. No real-world accuracy percentage or evaluator score is claimed.
+- Boldness is an inference with documented false positives, false negatives, and unresolved cases. It does not measure physical print size, required placement, or regulatory legibility. Model agreement is not ground truth. No real-world accuracy percentage or evaluator score is claimed.
 - Upload limits: 300 images, 10 MB each, 200 MB total, PNG/JPEG/WebP. Images above 40 megapixels are rejected after decode; the longest side is reduced to 1800 pixels. The original remains available for inspection.
 - Timing runs from Review click to findings, including unfinished initialization, preparation, OCR, and appearance. Per-label times also include cloud inference. Startup/downloads, device speed, network, queueing, quota, and model availability cause outliers. A 300-image batch is not expected to finish in five seconds.
 - Free quota and rate limits can prevent full automatic verification. Those labels still retain text findings and a visible appearance exception. The UI tells the user to retry or inspect the artwork.
@@ -84,16 +84,10 @@ The app origin is `https://github.com/lucaschatham/treasury-label-review.git`; t
 
 [Cloudflare Free allocation](https://developers.cloudflare.com/workers-ai/platform/pricing/) · [TTB warning guidance](https://www.ttb.gov/regulated-commodities/beverage-alcohol/distilled-spirits/ds-labeling-home/ds-health-warning)
 
-### Current partial release, September 22, 2026
+### Current release, September 23, 2026
 
-Production runs source [c3ebde8](https://github.com/lucaschatham/treasury-label-review/tree/c3ebde8cd36065d917677787f195b1dab46929b9), browser bundle `index-y4-KV3KF.js`, and the isolated Worker recorded in [partial release verification](evidence/partial-release-verification.json). The anonymous sample completed all applicable checks in 2.7 seconds. A five-image regression batch completed with the expected semantic Review findings, a regular warning left for review, and a visible corrupt-image failure. The prior [300-image integrated run](evidence/browser-integrated-300.json) established batch processing on the earlier pipeline; it has not been repeated after this repair. The deployed boldness guard permits only 34 of 40 held-out clear bold examples locally. A newer [multi-glyph preview candidate](evidence/appearance-multiglyph-preview-run1.json) passed 38/40 bold and 0/40 regular images locally, but its first 80-image real-service browser run produced 36/40 bold Matches, 0/40 regular false Matches, and 5.5-second p95. It remains unreleased. The original [assignment](ASSIGNMENT.md) specifies qualitative evaluation criteria and no numeric passing score; our 95% boldness target is an internal release criterion.
+Production runs [source 2a46749](https://github.com/lucaschatham/treasury-label-review/tree/2a46749b0d240d7a63d1ab4d7cd94ad28a146e10) and bundle `index-DGAUEOgM.js`. The anonymous production sample completed all applicable checks in 2.4 seconds, without a cached appearance result. The same runtime completed a 300-image preview run in 195.3 seconds, retaining 300 unique results and correctly associating all 900 checked brand/type/producer fields. This verifies batch accounting, not classification accuracy.
 
-### Subsequent bounded experiment, September 23, 2026
+A clean install, 77 tests, production build, and code review passed. The [neighbor-localization evaluation](evidence/appearance-neighbor-evaluation.md) documents the remaining failures: 37/40 bold Matches and three uncached regular false Matches. Duplicate Latin artwork and five cached results prevent that typography run from qualifying as independent, uncached latency evidence. The release proceeds with these documented limitations; it does not satisfy the internal boldness gate.
 
-The [neighbor-localization evaluation](evidence/appearance-neighbor-evaluation.md)
-is unreleased. Candidate `2a46749` passed 77 tests and clean code review, and its
-final preview retained all 300 results with 900 verified application-field
-associations. Its typography run still failed: 37/40 bold Matches and three
-uncached regular false Matches. Five cache hits and duplicate Latin artwork also
-prevent that run from qualifying as independent, uncached latency evidence.
-Production remains unchanged; no accuracy-qualified latency improvement is claimed.
+The [September 22 release evidence](evidence/partial-release-verification.json) and earlier experimental reports remain historical records. The [original assignment](ASSIGNMENT.md) specifies qualitative evaluation criteria and no numeric passing score. This prototype is ready to inspect and exercise, but automated warning-boldness verification remains a material incomplete requirement.
