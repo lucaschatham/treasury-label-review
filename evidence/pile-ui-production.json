@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-23",
+  "source": "a61f00a30b93aec2e0d0c0c232fc55cb3e73b8c5",
+  "project": "treasury-label-review",
+  "deployment": "dpl_2j1z7TP5wBSwDk6e6tTMGuXMKF34",
+  "url": "https://lucaschatham.com/alcohol-by-volume-automated-label-check",
+  "bundle": "index-BPAZG5W4.js",
+  "cleanInstall": true,
+  "tests": {
+    "passed": 94,
+    "failed": 0
+  },
+  "build": "passed",
+  "preview": "dpl_HVz8SAECkSQjf9jfXomSE4Nwtx37",
+  "anonymousHTTP": 200,
+  "noindex": true,
+  "mainHomepage": {
+    "portrait": "/images/lucas-portrait-clean.jpg",
+    "primaryLinksPresent": true
+  },
+  "productionSample": {
+    "file": "old-tom.png",
+    "clickToResultMs": 5198.2,
+    "ocrMs": 637.1,
+    "appearanceMs": 4542.1,
+    "appearance": {
+      "status": "review",
+      "reason": "timeout",
+      "cached": false
+    },
+    "outcome": "Needs review"
+  },
+  "limits": [
+    "Automated boldness remains incomplete.",
+    "This run does not verify full required checks within five seconds.",
+    "Current UI 300-row fixture is synthetic; actual 300-image processing evidence remains from the unchanged earlier review pipeline."
+  ]
+}

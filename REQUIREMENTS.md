@@ -1,6 +1,20 @@
 # Assignment benchmark and execution checklist
 
-> **Status reviewed September 23, 2026:** most core workflows have recorded passing evidence. Automated boldness remains incomplete, and consistent five-second performance is unproven. The public app returned HTTP 200 with bundle `index-BFX-QVJC.js`, different from the recorded tested bundle `index-DGAUEOgM.js`. Live source identity and changed behavior require reconciliation. The [recorded production verification](evidence/production-release-2026-09-23.json) establishes the earlier tested release, not a fresh certification of the current deployment.
+> **Current release:** the working triage UI is deployed and source identity is reconciled below. Automated boldness remains incomplete; the latest production sample timed out on appearance. Consistent full-check five-second performance remains unproven.
+
+## UI release verification, September 23, 2026
+
+This update supersedes the earlier live-source uncertainty, not the recorded detector limitations. The working application is now deployed from source `a61f00a30b93aec2e0d0c0c232fc55cb3e73b8c5` to the **treasury-label-review** project, deployment `dpl_2j1z7TP5wBSwDk6e6tTMGuXMKF34`, bundle `index-BPAZG5W4.js`. [Production evidence](evidence/pile-ui-production.json) and [browser checks](evidence/pile-ui-release.md) record the scope.
+
+- **1, 2:** comparison and normalization logic are unchanged from `2a46749`. Current CSV and XLSX browser tests verify real artwork and correct per-file expected values. Prior field/normalization evidence still has its stated scope.
+- **3: INCOMPLETE.** Detector unchanged. Current public sample's appearance check timed out; it remained Needs review. No human decision is counted as automated verification.
+- **4: NOT REVERIFIED IN FULL on this release.** The OLD TOM text flow works, but the current appearance timeout prevents claiming all required checks passed.
+- **5: PARTIAL.** Current production click-to-result was 5.198 seconds, including a 4.542-second appearance request that timed out. Consistent full-check five-second performance is not established.
+- **6:** current CSV/XLSX real three-image flows and 300-row UI accounting passed. Earlier actual 300-image pipeline evidence remains historical; the detector/OCR pipeline is unchanged.
+- **7:** current real upload, sample, details, evidence, decisions, cancel/reset protection, batch errors, keyboard fixture and reload checks passed. The permanent light board and requested pile layout remain.
+- **8:** same-origin dependencies, server secrets and Worker/API are unchanged. Unavailable checks now have a clear notice. README describes crop transmission and session-only data.
+- **9:** published source was reproduced in a clean directory: npm ci, 94 tests and build passed. README now matches spreadsheet intake and human decisions.
+- **10:** anonymous main-domain application returned 200 with the expected bundle and was exercised in a browser. Main homepage portrait and primary links remain present. This is an accessible partial prototype, not completion of requirements 3–5.
 
 ## Source and objective
 
