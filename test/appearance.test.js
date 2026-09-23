@@ -77,6 +77,16 @@ test('failed and malformed cloud responses never populate the cache',async()=>{
    assert.equal((await reviewAppearance(canvas,input,cache)).status,'review');
    assert.equal(cache.size,0);
   }
+  globalThis.fetch=async()=>({ok:false,status:503,json:async()=>({verdict:'UNCERTAIN',reason:'timeout'})});
+  assert.equal((await reviewAppearance(canvas,input,cache)).reason,'timeout');
+  for(const [status,reason] of [[503,'not-configured'],[400,'invalid-request'],[502,'invalid-response']]){
+   globalThis.fetch=async()=>({ok:false,status,json:async()=>({verdict:'UNCERTAIN',reason})});
+   assert.equal((await reviewAppearance(canvas,input,cache)).reason,reason);
+  }
+  for(const status of [401,403,404]){
+   globalThis.fetch=async()=>({ok:false,status,json:async()=>({})});
+   assert.equal((await reviewAppearance(canvas,input,cache)).reason,'service');
+  }
   globalThis.fetch=async()=>{throw new DOMException('deadline','TimeoutError');};
   assert.equal((await reviewAppearance(canvas,input,cache)).reason,'timeout');
   assert.equal(cache.size,0);
@@ -134,4 +144,37 @@ test('word-wide stroke evidence rescues a narrow bold heading without approving 
  assert.equal(regular.supportsBold,false);
  const mixed=strokeEvidence(input,render(7,2));
  assert.equal(mixed.supportsBold,false);
+});
+
+test('neighbor-bounded recovery isolates I despite touching serifs and an oversized OCR box',()=>{
+ const pixels=new Uint8ClampedArray(300*200*4).fill(255);
+ const ink=(x0,x1,y0=20,y1=40)=>{for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=0;};
+ const symbols=[...'WARNING:'].map((text,i)=>({text,confidence:99,bbox:{x0:110+i*10,y0:20,x1:117+i*10,y1:40}}));
+ symbols[4].bbox={x0:130,y0:20,x1:180,y1:40};
+ for(let i=0;i<7;i++)ink(110+i*10,110+i*10+(i===4?4:7));
+ ink(117,141,20,21); // Touching top serifs defeat connected components.
+ const warning={...word('WARNING:',110,190),symbols};
+ const input=blocks([word('GOVERNMENT',10,100),warning]);
+ assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,true);
+ const oversized=symbols[4].bbox;
+ for(const invalid of [{x0:0,y0:20,x1:50,y1:40},{x0:153,y0:20,x1:180,y1:40},{x0:130,y0:20,x1:180,y1:400}]){
+  symbols[4].bbox=invalid;
+  assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,false);
+ }
+ symbols[4].bbox=oversized;
+ symbols[3].confidence=50;
+ assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,false);
+ symbols[3].confidence=99;
+ for(let y=20;y<40;y++)for(let x=152;x<154;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=255;
+ assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,false);
+});
+
+test('neighbor recovery cannot replace an already usable OCR I box',()=>{
+ const pixels=new Uint8ClampedArray(300*200*4).fill(255);
+ const ink=(x0,x1)=>{for(let y=20;y<40;y++)for(let x=x0;x<x1;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=0;};
+ ink(151,152);ink(175,179);
+ const symbols=[...'WARNING:'].map((text,i)=>({text,confidence:99,bbox:{x0:110+i*10,y0:20,x1:117+i*10,y1:40}}));
+ symbols[4].bbox={x0:175,y0:20,x1:179,y1:40};
+ const input=blocks([word('GOVERNMENT',10,100),{...word('WARNING:',110,190),symbols}]);
+ assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,true);
 });

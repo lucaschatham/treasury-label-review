@@ -1,0 +1,114 @@
+{
+  "scope": "Local guard only; no cloud inference. Frozen fixtures unchanged.",
+  "baselineSource": "c3ebde8cd36065d917677787f195b1dab46929b9",
+  "results": [
+    {
+      "id": "Bodoni-72-2-regular",
+      "file": "Bodoni-72-2-regular.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Book",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "30a06e7da3b074b6779470e7a599d3b832d1b9017be9bf970f6458270d508722",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bodoni-72-2-bold",
+      "file": "Bodoni-72-2-bold.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "c6c8c44d6c030ef6a6a50c8f4b8f0262e1eed771f1de259d2653c36b27c6dd4d",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2222222222222223,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "glyph-geometry"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-0-regular",
+      "file": "Iowan-Old-Style-0-regular.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Roman",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "a79db4e9d18e1523b55270aa3b617b5a9db550cfb0a7334d0fd86e1b9ac846f1",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-0-bold",
+      "file": "Iowan-Old-Style-0-bold.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "310256540164829ad2ccf18c1f2ca5402dd739bcf7c681a0603c159cde4f9b09",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    }
+  ]
+}

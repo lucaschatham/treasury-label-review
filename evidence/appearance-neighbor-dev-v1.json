@@ -1,0 +1,1607 @@
+{
+  "scope": "Local guard only; no cloud inference. Frozen fixtures unchanged.",
+  "baselineSource": "c3ebde8cd36065d917677787f195b1dab46929b9",
+  "results": [
+    {
+      "id": "Avenir-Next-0-regular",
+      "file": "Avenir-Next-0-regular.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Regular",
+      "size": 28,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "5a720707dbdac63ca5eb104e7511fede88b2aa7212bee12c05a1ac86d505901a",
+      "guard": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "glyph-geometry"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "glyph-geometry"
+      }
+    },
+    {
+      "id": "Avenir-Next-0-bold",
+      "file": "Avenir-Next-0-bold.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Bold",
+      "size": 28,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "108b3df1331716a970f8ea44278df806e79371e87c1022acc643d83613ae2c62",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Avenir-Next-1-regular",
+      "file": "Avenir-Next-1-regular.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Regular",
+      "size": 32,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "b6ef86d752dbd27d8025263c053f7ae67b8ec2e8f322608212efe9b05dff78b7",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09090909090909093,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09090909090909093,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Avenir-Next-1-bold",
+      "file": "Avenir-Next-1-bold.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Bold",
+      "size": 32,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "49c14a35cf12a6f390f2d91391111aa44052c665c12d136382e89db5b4218e0f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.26086956521739124,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Avenir-Next-2-regular",
+      "file": "Avenir-Next-2-regular.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Regular",
+      "size": 36,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "e4af06d7e33c85fdfc9134526156bb38321b55ae2511a4246ff4cd0a7c631f73",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12000000000000002,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12000000000000002,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Avenir-Next-2-bold",
+      "file": "Avenir-Next-2-bold.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Bold",
+      "size": 36,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "b0c8c558dc2294f829b9fb68efde31f6f5e228740dcfe9646d98916f50f66238",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2307692307692308,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2307692307692308,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Avenir-Next-3-regular",
+      "file": "Avenir-Next-3-regular.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Regular",
+      "size": 40,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "fecb197bc8b98aca15039f8c7db9a66b0b8570ec80a8d59790413ba01a3054df",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.10714285714285714,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.10714285714285714,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Avenir-Next-3-bold",
+      "file": "Avenir-Next-3-bold.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Bold",
+      "size": 40,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "193d9bb0dde5f2a4603268154eec1df583f1a58928706a2c6ed6d9c2cb10664d",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.24137931034482754,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.24137931034482754,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Avenir-Next-4-regular",
+      "file": "Avenir-Next-4-regular.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Regular",
+      "size": 44,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "056df4c2d7f212b9f055005e967bd90c5fbf91ad2d6eec1dd8a61ab21340b7ea",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.0967741935483871,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.0967741935483871,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Avenir-Next-4-bold",
+      "file": "Avenir-Next-4-bold.png",
+      "family": "Avenir-Next",
+      "font": "Avenir-Next-Bold",
+      "size": 44,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "dabc21100a2330ecb32fb36f768dd2a35f14d2f1615d90f89dd87e02016e29a3",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Baskerville-0-regular",
+      "file": "Baskerville-0-regular.png",
+      "family": "Baskerville",
+      "font": "Baskerville",
+      "size": 28,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "59529cad8f9ca96eb2eb366ac119b80f6da9e13df63e75162bd017aa37958eaf",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.10526315789473684,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.10526315789473684,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Baskerville-0-bold",
+      "file": "Baskerville-0-bold.png",
+      "family": "Baskerville",
+      "font": "Baskerville-Bold",
+      "size": 28,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "62991a07287fcd248fd1310c3d7956dace136801ee033130602b2a0a89a0a8fe",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2631578947368421,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2631578947368421,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Baskerville-1-regular",
+      "file": "Baskerville-1-regular.png",
+      "family": "Baskerville",
+      "font": "Baskerville",
+      "size": 32,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "75257a0d27816a58bc3686f8b038bf904d83a7ef9ece8af7dc44eb4cc46181f8",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Baskerville-1-bold",
+      "file": "Baskerville-1-bold.png",
+      "family": "Baskerville",
+      "font": "Baskerville-Bold",
+      "size": 32,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "a102336d6c2714d565d3a69fc079ca9de07d4c97caed9607ce6e2350760f9aa0",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Baskerville-2-regular",
+      "file": "Baskerville-2-regular.png",
+      "family": "Baskerville",
+      "font": "Baskerville",
+      "size": 36,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "ca83913be2cec16454db27d9634497efc20f30de8b2025370a9cc0d8e3278097",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Baskerville-2-bold",
+      "file": "Baskerville-2-bold.png",
+      "family": "Baskerville",
+      "font": "Baskerville-Bold",
+      "size": 36,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "e7eb2b631690addf348c5c5982a0fcd46f558124ab84f9895c2e3954c4843459",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Baskerville-3-regular",
+      "file": "Baskerville-3-regular.png",
+      "family": "Baskerville",
+      "font": "Baskerville",
+      "size": 40,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "8929862b2cf47877ed996e67791bc9bb6a6967611af378a3202887315cb29152",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Baskerville-3-bold",
+      "file": "Baskerville-3-bold.png",
+      "family": "Baskerville",
+      "font": "Baskerville-Bold",
+      "size": 40,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "0c2c55d2fe531535c20d7324341e6c3d0509e384e668c42fd0afc80dec163476",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2222222222222223,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Baskerville-4-regular",
+      "file": "Baskerville-4-regular.png",
+      "family": "Baskerville",
+      "font": "Baskerville",
+      "size": 44,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "f54bdb8748d42f3bf6da0977ff631724318900ddad88af928f66d75f26eb8316",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Baskerville-4-bold",
+      "file": "Baskerville-4-bold.png",
+      "family": "Baskerville",
+      "font": "Baskerville-Bold",
+      "size": 44,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "6176d7c0f2d3f02b8b0c73d4ddd1c329bc43133d9799ee4582f09bbfef128d7b",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2758620689655173,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2758620689655173,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Gill-Sans-0-regular",
+      "file": "Gill-Sans-0-regular.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans",
+      "size": 28,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "dee619a2a451a0964e3b9b961a193ca1a858858d9726ced272dbc0be271852d5",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15789473684210528,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15789473684210528,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Gill-Sans-0-bold",
+      "file": "Gill-Sans-0-bold.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans-Bold",
+      "size": 28,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "8080974b82dbcc2fd397694fe9de7f1ddf4354a6186d1fb4883f2efddc92a31b",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.31578947368421056,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.31578947368421056,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Gill-Sans-1-regular",
+      "file": "Gill-Sans-1-regular.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans",
+      "size": 32,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "2af72733724f6bc5fca85b685e6c11c9fc2f8592e72fe5d7955f787db889cebc",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.18181818181818185,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.18181818181818185,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Gill-Sans-1-bold",
+      "file": "Gill-Sans-1-bold.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans-Bold",
+      "size": 32,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "4cace70778bc0286427c3e1acd2fd32bcb049e95c0c3692d3908d0c30276432f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.28571428571428564,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.28571428571428564,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Gill-Sans-2-regular",
+      "file": "Gill-Sans-2-regular.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans",
+      "size": 36,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "d1bf004733ab921758c685fbeb1ed26d58833724919382f89719fd06264df520",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12000000000000002,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12000000000000002,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Gill-Sans-2-bold",
+      "file": "Gill-Sans-2-bold.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans-Bold",
+      "size": 36,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "149a8026a4e477e695b8270e7e6e6ecdb3f0b25d7cab23c412addcfb1ab34cc0",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.29166666666666663,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.29166666666666663,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Gill-Sans-3-regular",
+      "file": "Gill-Sans-3-regular.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans",
+      "size": 40,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "c38496c1f71bb2fd650baf3c0b254f29580e79302773843bc49f93a99ec5fe5d",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Gill-Sans-3-bold",
+      "file": "Gill-Sans-3-bold.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans-Bold",
+      "size": 40,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "5ea4b5c9cca2ad7d552e064349cbfd7fa13bb301ecd7bc8d2d1710e7beea462e",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.33333333333333337,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.33333333333333337,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Gill-Sans-4-regular",
+      "file": "Gill-Sans-4-regular.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans",
+      "size": 44,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "d0566fac8f1ba9d106b643213da4a9c2599da1df6c2509faeb136a5851307244",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.16666666666666666,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.16666666666666666,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Gill-Sans-4-bold",
+      "file": "Gill-Sans-4-bold.png",
+      "family": "Gill-Sans",
+      "font": "Gill-Sans-Bold",
+      "size": 44,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "af41094486cbce1cf1ee0b26b89ac59ad8ecfd5c4f9e94c36d7ad90a599a22ed",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.3103448275862069,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.3103448275862069,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Optima-0-regular",
+      "file": "Optima-0-regular.png",
+      "family": "Optima",
+      "font": "Optima-Regular",
+      "size": 28,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "0607ccb2055e492c23cb11eddde0c5b3bf70125301066733c26540a72094341a",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Optima-0-bold",
+      "file": "Optima-0-bold.png",
+      "family": "Optima",
+      "font": "Optima-Bold",
+      "size": 28,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "c31d4c518570768930eac698b828588471f0dc1890131679e71cf182fac86ec8",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.21052631578947367,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.21052631578947367,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Optima-1-regular",
+      "file": "Optima-1-regular.png",
+      "family": "Optima",
+      "font": "Optima-Regular",
+      "size": 32,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "7bd5680811b7c37ca411e6c8b6d577d0eeb09312906e4c259c823aff685caaf7",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Optima-1-bold",
+      "file": "Optima-1-bold.png",
+      "family": "Optima",
+      "font": "Optima-Bold",
+      "size": 32,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "37b2d02457742f4532618ed6115d4e83972c46af399e7e306c6177d6e14d72e3",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Optima-2-regular",
+      "file": "Optima-2-regular.png",
+      "family": "Optima",
+      "font": "Optima-Regular",
+      "size": 36,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "57f9a172b60247f33812ae7df6f2b0f9e6db07cabbdcaf3765ba229f574b0858",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.07692307692307691,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.07692307692307691,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Optima-2-bold",
+      "file": "Optima-2-bold.png",
+      "family": "Optima",
+      "font": "Optima-Bold",
+      "size": 36,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "fb48f3bf945e0b9360785fdae56054d68f26a40053e3bd6167505d78344f06bd",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.24000000000000005,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.24000000000000005,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Optima-3-regular",
+      "file": "Optima-3-regular.png",
+      "family": "Optima",
+      "font": "Optima-Regular",
+      "size": 40,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "045d64ce801f095f4ba45db143bf8fc9932fa2ca727c7132508c175487ace789",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.11111111111111115,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.11111111111111115,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Optima-3-bold",
+      "file": "Optima-3-bold.png",
+      "family": "Optima",
+      "font": "Optima-Bold",
+      "size": 40,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "0d8709db8730ccffcf4f6629a388fcfded36684a918cb8b527ea07a2e9859fb5",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.21428571428571427,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Optima-4-regular",
+      "file": "Optima-4-regular.png",
+      "family": "Optima",
+      "font": "Optima-Regular",
+      "size": 44,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "20f606e83f24b92aa8b26470f32c8f3aa0267b3b70a44fc0ddf6819fad28e30d",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Optima-4-bold",
+      "file": "Optima-4-bold.png",
+      "family": "Optima",
+      "font": "Optima-Bold",
+      "size": 44,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "1530a7471ff816363226cc67e85c1a8ad783d87fe70fe310b73dd85791659f75",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.22580645161290316,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.22580645161290316,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Tahoma-0-regular",
+      "file": "Tahoma-0-regular.png",
+      "family": "Tahoma",
+      "font": "Tahoma",
+      "size": 28,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "8078efbf541e74aa8db85b3fe800005ef035280157f6f9437aa8738f2545bf80",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Tahoma-0-bold",
+      "file": "Tahoma-0-bold.png",
+      "family": "Tahoma",
+      "font": "Tahoma-Bold",
+      "size": 28,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "1dbf583d236209be01eef533770d58de0141a4057a56ea9b6159f98c6661f363",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Tahoma-1-regular",
+      "file": "Tahoma-1-regular.png",
+      "family": "Tahoma",
+      "font": "Tahoma",
+      "size": 32,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "af58ce3a7b396b1c4831e67463aef65c401a6423259a812881d1811bd904b5a8",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Tahoma-1-bold",
+      "file": "Tahoma-1-bold.png",
+      "family": "Tahoma",
+      "font": "Tahoma-Bold",
+      "size": 32,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "c85a2634bbf06a17524df130321cecff59fb163fc20bd98dbb014daa36348b8f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.26086956521739124,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.26086956521739124,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Tahoma-2-regular",
+      "file": "Tahoma-2-regular.png",
+      "family": "Tahoma",
+      "font": "Tahoma",
+      "size": 36,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "dcfaac4ac534c97ee385ab579464a40a26015aef6733811a561f6ce3b820562d",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.1153846153846154,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.1153846153846154,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Tahoma-2-bold",
+      "file": "Tahoma-2-bold.png",
+      "family": "Tahoma",
+      "font": "Tahoma-Bold",
+      "size": 36,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "8554859e00d1b20f478de9f609debbe6dab339f871092559147096e182a42205",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2692307692307692,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2692307692307692,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Tahoma-3-regular",
+      "file": "Tahoma-3-regular.png",
+      "family": "Tahoma",
+      "font": "Tahoma",
+      "size": 40,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "74ad026bb77648d92e27575e1e3cda8cbe3b76b06f2c3cf24f43326feb945598",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Tahoma-3-bold",
+      "file": "Tahoma-3-bold.png",
+      "family": "Tahoma",
+      "font": "Tahoma-Bold",
+      "size": 40,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "98921a580b163f2a786c0494adb5d382c55997f12545462358443073834063c9",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23333333333333336,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Tahoma-4-regular",
+      "file": "Tahoma-4-regular.png",
+      "family": "Tahoma",
+      "font": "Tahoma",
+      "size": 44,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "5f235c6572945e56dc49678dd30a5b37bfeb80029659e951bfe600c6bdfb4ec9",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Tahoma-4-bold",
+      "file": "Tahoma-4-bold.png",
+      "family": "Tahoma",
+      "font": "Tahoma-Bold",
+      "size": 44,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "2fe470b762481281452b1514410afe02dd4f6b3e6cb9169740c180a421db987c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Lucida-Grande-0-regular",
+      "file": "Lucida-Grande-0-regular.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande",
+      "size": 28,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "9871f68b95c3465d42e63c07b1bd40d2d826399219d0a153c37bc742aff37126",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Lucida-Grande-0-bold",
+      "file": "Lucida-Grande-0-bold.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande-Bold",
+      "size": 28,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "5be1f754e2faf31c06f673f85aa6c3e051a0ba785ae954badaf5c51747366cab",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Lucida-Grande-1-regular",
+      "file": "Lucida-Grande-1-regular.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande",
+      "size": 32,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "cb3ded8e816c20755b8ed582ad34482d5c05da5562c9dd8c2d3433175b103fd3",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Lucida-Grande-1-bold",
+      "file": "Lucida-Grande-1-bold.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande-Bold",
+      "size": 32,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "a5444e21388ad10fd0e1f8af8539fff8512aacc679b8bb64a29ca08bb4fdc3d8",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.20833333333333331,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.20833333333333331,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Lucida-Grande-2-regular",
+      "file": "Lucida-Grande-2-regular.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande",
+      "size": 36,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "90ed63d7f2d81001675487dd56b823c55b1b1ae34d293c4fa548be4aaabd95a3",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Lucida-Grande-2-bold",
+      "file": "Lucida-Grande-2-bold.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande-Bold",
+      "size": 36,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "0edc7d82675742a3e6e16715312254969d53ecd7f40ae32f10639a7d59fadeba",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2307692307692308,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2307692307692308,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Lucida-Grande-3-regular",
+      "file": "Lucida-Grande-3-regular.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande",
+      "size": 40,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "8bffc6ca22efe18793c23da9723c5835585dba3849025e9576cb8cb8dd167e16",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Lucida-Grande-3-bold",
+      "file": "Lucida-Grande-3-bold.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande-Bold",
+      "size": 40,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "49998bbfa90014063731988c3e1b9c7c926f14591227e21dd279663846e2c3be",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.20689655172413793,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.20689655172413793,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Lucida-Grande-4-regular",
+      "file": "Lucida-Grande-4-regular.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande",
+      "size": 44,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "f03d56cbd151ffecaf3ad0bfb0ab5766a1459a3876e4683ab7ab8483c5d26956",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15625,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15625,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Lucida-Grande-4-bold",
+      "file": "Lucida-Grande-4-bold.png",
+      "family": "Lucida-Grande",
+      "font": "Lucida-Grande-Bold",
+      "size": 44,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "e023aaa31a52426d391f158f3906600db81aa80748f24406e48eae44a7e2fbec",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.21875,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.21875,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "AvantGarde-0-regular",
+      "file": "AvantGarde-0-regular.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Book",
+      "size": 28,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "e4ca8f13aa697a0178ce9527647cecd98a71008ed3f8c18b3527b0e5cf89257f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09523809523809523,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09523809523809523,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "AvantGarde-0-bold",
+      "file": "AvantGarde-0-bold.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Demi",
+      "size": 28,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "70ab382049799a599674ac09311275732437f3eaa5d697498cae31e84027db84",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19047619047619047,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19047619047619047,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "AvantGarde-1-regular",
+      "file": "AvantGarde-1-regular.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Book",
+      "size": 32,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "cad7f7bf635f98598d832bd18417a39c3c632d4023e6de7af1f1f0e2d6cc03c7",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "AvantGarde-1-bold",
+      "file": "AvantGarde-1-bold.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Demi",
+      "size": 32,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "2341ba37a836bd189a7ce6f3733b20a679b892f13656a031f72cd84eff8e8fcb",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.20833333333333331,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.20833333333333331,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "AvantGarde-2-regular",
+      "file": "AvantGarde-2-regular.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Book",
+      "size": 36,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "3442d546c147d6f7c4e3f41557c21690e6ec179a5b6723d09c5776a32e8f5e74",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.07407407407407407,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.07407407407407407,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "AvantGarde-2-bold",
+      "file": "AvantGarde-2-bold.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Demi",
+      "size": 36,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "0083fe5103cc4b1c87b1c465b7e3b9fd1580362dfb613b6d69de303d901c8106",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "AvantGarde-3-regular",
+      "file": "AvantGarde-3-regular.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Book",
+      "size": 40,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "10b2862c11c94228a0a8fb7387f578bd956fd92022f98bb51a5eca24ca9f0fad",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "AvantGarde-3-bold",
+      "file": "AvantGarde-3-bold.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Demi",
+      "size": 40,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "4e36eba94e551008f3b39331e506c8e4f8d5099b0055ff8730c9ee46491d7697",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.16666666666666666,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.16666666666666666,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "AvantGarde-4-regular",
+      "file": "AvantGarde-4-regular.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Book",
+      "size": 44,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "fcf40da0291fb007e3afce6ee2e47a378a7b16beca2ba280a8660287926df8aa",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12121212121212116,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12121212121212116,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "AvantGarde-4-bold",
+      "file": "AvantGarde-4-bold.png",
+      "family": "AvantGarde",
+      "font": "AvantGarde-Demi",
+      "size": 44,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "e80cb94e4dc4fb5058e44d10927f6ac028f831567c1279b93c0ba9f0c5ad5359",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.1818181818181818,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.1818181818181818,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Bookman-0-regular",
+      "file": "Bookman-0-regular.png",
+      "family": "Bookman",
+      "font": "Bookman-Light",
+      "size": 28,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "27c655b3b22ac125d02ccc7d1d06edeb169c8d3b6755e28cccc2b2375c9353fe",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15789473684210528,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15789473684210528,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bookman-0-bold",
+      "file": "Bookman-0-bold.png",
+      "family": "Bookman",
+      "font": "Bookman-Demi",
+      "size": 28,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "af41c8b8cbd4812d8f8e32898c3800939749aadef3aecb1ecefc2cb819d86a54",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2631578947368421,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2631578947368421,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Bookman-1-regular",
+      "file": "Bookman-1-regular.png",
+      "family": "Bookman",
+      "font": "Bookman-Light",
+      "size": 32,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "ed2ddcca40f5639f638dc62d5f1b69d64f10bf3b4203f235f777acf383310089",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bookman-1-bold",
+      "file": "Bookman-1-bold.png",
+      "family": "Bookman",
+      "font": "Bookman-Demi",
+      "size": 32,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "d2115f8092bb778f2d9d4b903e657e9fa09451ba2f33f49920fbffca7b849e93",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Bookman-2-regular",
+      "file": "Bookman-2-regular.png",
+      "family": "Bookman",
+      "font": "Bookman-Light",
+      "size": 36,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "5dcc3f8ffcdcebdf3e0513c57002b6da8cb666a371e49bae1f4925df58e4f3a5",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bookman-2-bold",
+      "file": "Bookman-2-bold.png",
+      "family": "Bookman",
+      "font": "Bookman-Demi",
+      "size": 36,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "2f898f05d463a9d3ae0989971347d149f838343f83252a5101a146a13c78b053",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.24000000000000005,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.24000000000000005,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Bookman-3-regular",
+      "file": "Bookman-3-regular.png",
+      "family": "Bookman",
+      "font": "Bookman-Light",
+      "size": 40,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "8e6139a9003acbf1743ce504da8376ffe6d3dab19d89a646d706f82e32ce424e",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bookman-3-bold",
+      "file": "Bookman-3-bold.png",
+      "family": "Bookman",
+      "font": "Bookman-Demi",
+      "size": 40,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "e43a291dda2940c31a7b2c04074074eef9669cd7bb82d76efd06921a3dde28b3",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2222222222222223,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Bookman-4-regular",
+      "file": "Bookman-4-regular.png",
+      "family": "Bookman",
+      "font": "Bookman-Light",
+      "size": 44,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "513be1988ed08673819687b43e2085278a8345501bdb87acd3add28385acc104",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bookman-4-bold",
+      "file": "Bookman-4-bold.png",
+      "family": "Bookman",
+      "font": "Bookman-Demi",
+      "size": 44,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "dc7e9c5b5203b56e7b8d97e260cdc3a56776efd93f7381800b5ddea4e0688f32",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.26666666666666666,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.26666666666666666,
+        "reason": "supported"
+      }
+    }
+  ]
+}

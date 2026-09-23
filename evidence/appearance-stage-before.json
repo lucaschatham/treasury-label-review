@@ -1,0 +1,26 @@
+{
+  "status": "Finished: 1 reviewed, 0 failed, 0 remaining. Total: 0.5 s. First result: 0.5 s from click. Inspect exceptions and make your final decision.",
+  "blobTimings": [
+    13.699999999254942
+  ],
+  "rows": [
+    {
+      "timings": {
+        "setup": 0.20000000018626451,
+        "prepare": 10.399999999441206,
+        "ocr": 472.70000000018626,
+        "comparison": 3.400000000372529,
+        "appearance": 7.300000000745058,
+        "render": 0.8999999994412065,
+        "total": 494.8999999994412,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "stroke-evidence",
+        "cached": false
+      }
+    }
+  ]
+}

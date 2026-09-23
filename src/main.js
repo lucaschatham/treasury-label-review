@@ -1,3 +1,4 @@
+import { timeStage, finishTiming } from './timing.js';
 import { reviewAppearance } from "./appearance.js";
 import { readLayout, comparisonText } from "./layout.js";
 import { createWorker } from "tesseract.js";
@@ -221,6 +222,7 @@ function renderResult(file, text, findings, seconds, confidence) {
   addText(disclosure, "pre", text || "No text extracted. Try a clearer image.");
   addText(disclosure, "h4", "Required warning");
   addText(disclosure, "p", REQUIRED_WARNING, "reference-warning");
+  return card;
 }
 
 async function prepareImage(file) {
@@ -301,32 +303,44 @@ form.addEventListener("submit", async (event) => {
     stopButton.textContent = "Stop after current label";
     setStatus("Preparing to read the labels…", "busy");
     const worker = await getWorker();
+    const setupMs = performance.now() - clickedAt;
     for (const [index, job] of jobs.entries()) {
       if (stopRequested) break;
       const { file, application: expected } = job;
       progressLabel = `Reading ${index + 1} of ${jobs.length}: ${file.name}`;
       setStatus(progressLabel, "busy");
       const started = performance.now();
+      const timings = { setup: setupMs };
+      const visibility = document.visibilityState;
+      let resultCard;
       try {
-        const canvas = await prepareImage(file);
-        const { data } = await worker.recognize(canvas, {}, { text: true, blocks: true });
+        const canvas = await timeStage(timings, "prepare", () => prepareImage(file));
+        const { data } = await timeStage(timings, "ocr", () => worker.recognize(canvas, {}, { text: true, blocks: true }));
+        const comparisonStarted = performance.now();
         const layout = readLayout(data.blocks);
         const text = comparisonText(data, layout);
         const findings = reviewLabel(text, expected, layout.lines.length ? layout : null);
+        timings.comparison = performance.now() - comparisonStarted;
         setStatus(`Checking warning appearance: ${file.name}`, "busy");
-        findings[findings.findIndex(item => item.field === "Warning appearance")] = await reviewAppearance(canvas, data.blocks, appearanceCache);
-        renderResult(
+        findings[findings.findIndex(item => item.field === "Warning appearance")] = await timeStage(timings, "appearance", () => reviewAppearance(canvas, data.blocks, appearanceCache));
+        const appearance = findings.find(item => item.field === "Warning appearance");
+        const renderStarted = performance.now();
+        resultCard = renderResult(
           file,
           text,
           findings,
           (performance.now() - started) / 1000,
           data.confidence,
         );
+        timings.render = performance.now() - renderStarted;
+        resultCard.dataset.appearance = JSON.stringify({status:appearance.status,reason:appearance.reason || "corroborated",cached:!!appearance.cached});
         completed++;
         firstResultSeconds ??= (performance.now() - clickedAt) / 1000;
       } catch (error) {
         failed++;
         const card = addText(results, "article", "", "result-card");
+        resultCard = card;
+        card.dataset.appearance = JSON.stringify({status:"failed",reason:"processing"});
         addText(card, "h3", file.name);
         addText(
           card,
@@ -334,6 +348,8 @@ form.addEventListener("submit", async (event) => {
           `Could not read this image: ${error.message || String(error)}. Try a clear, valid image.`,
           "summary attention",
         );
+      } finally {
+        if (resultCard) resultCard.dataset.timings = JSON.stringify({...finishTiming(timings,clickedAt,started,performance.now()),visibility,visibilityEnd:document.visibilityState});
       }
     }
     const total = (performance.now() - clickedAt) / 1000;

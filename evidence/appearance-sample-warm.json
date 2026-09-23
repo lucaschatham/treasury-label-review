@@ -1,0 +1,23 @@
+{
+  "status": "Finished: 1 reviewed, 0 failed, 0 remaining. Total: 1.5 s. First result: 1.5 s from click. Inspect exceptions and make your final decision.",
+  "rows": [
+    {
+      "timings": {
+        "setup": 0.5,
+        "prepare": 16.5,
+        "ocr": 560.1000000005588,
+        "comparison": 1,
+        "appearance": 925.8999999994412,
+        "render": 0.2999999998137355,
+        "total": 1503.9000000003725,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      }
+    }
+  ]
+}

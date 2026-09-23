@@ -9,3 +9,4 @@ test/fixtures/generated/
 !.env.example
 worker/.wrangler/
 worker/.dev.vars
+.gstack/

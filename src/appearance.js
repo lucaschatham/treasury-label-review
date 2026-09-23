@@ -97,6 +97,39 @@ function kernedI(symbol, image) {
   return {x0:b.x0+right.x0,x1:b.x0+right.x1,y0:b.y0,y1:b.y1};
 }
 
+// Touching serifs can merge letters while OCR gives I an oversized box.
+// The two adjacent N boxes bound an independent search interval. Require one
+// stable central stem, exact symbol order, and consistent neighboring geometry.
+function neighborI(word, image) {
+  const symbols=word?.symbols || [];
+  if(symbols.map(s=>s.text).join('')!==word.text || !/^WARNING:?$/.test(word.text) ||
+      symbols.some(s=>s.confidence<80 || !Number.isFinite(s.confidence)))return null;
+  const left=symbols[3]?.bbox,right=symbols[5]?.bbox,ocrI=symbols[4]?.bbox,b=word.bbox;
+  if(!left || !right || !ocrI || ![left,right,ocrI].every(r=>Object.values(r).every(Number.isInteger) &&
+      r.x0>=b.x0 && r.x1<=b.x1 && r.y0>=b.y0 && r.y1<=b.y1 && r.x1>r.x0 && r.y1>r.y0))return null;
+  const y0=Math.max(left.y0,right.y0),y1=Math.min(left.y1,right.y1),height=y1-y0;
+  const x0=left.x1,x1=right.x0,width=x1-x0;
+  if(ocrI.x0>x0 || ocrI.x1<x1 || ocrI.y0>y0 || ocrI.y1<y1)return null;
+  if(height<16 || width<=0 || width>height*.8 ||
+      Math.abs(left.y0-right.y0)>height*.1 || Math.abs(left.y1-right.y1)>height*.1)return null;
+  const start=Math.floor(y0+height*.3),end=Math.ceil(y0+height*.7),runs=[];
+  let run=null;
+  for(let x=x0+Math.ceil(height*.1);x<x1-Math.ceil(height*.1);x++){
+    let ink=0;
+    for(let y=start;y<end;y++){
+      const o=(y*image.width+x)*4;
+      if(image.data[o+3]>200 && .2126*image.data[o]+.7152*image.data[o+1]+.0722*image.data[o+2]<128)ink++;
+    }
+    if(ink/(end-start)>=.8){if(run===null)run=x;}
+    else if(run!==null){runs.push([run,x]);run=null;}
+  }
+  if(run!==null)runs.push([run,x1-Math.ceil(height*.1)]);
+  if(runs.length!==1)return null;
+  const [a,z]=runs[0];
+  if(a<=x0 || z>=x1 || z-a>height*.4 || Math.abs((a+z-x0-x1)/2)>width*.25)return null;
+  return {x0:a,x1:z,y0,y1};
+}
+
 // A narrow face can have a bold I below the single-stem threshold. In that
 // case, require dense strokes across the independently segmented whole word.
 // The density and run width cutoffs were fixed on the earlier font/layout set;
@@ -138,7 +171,7 @@ export function strokeEvidence(blocks, image) {
   const {box,warning} = heading;
   const symbols = warning?.symbols?.filter(symbol => symbol.text === 'I') || [];
   const raster = rasterI(warning,image);
-  const b = raster || (symbols.length===1 ? kernedI(symbols[0],image) || symbols[0].bbox : null);
+  const b = raster || (symbols.length===1 ? kernedI(symbols[0],image) || ((symbols[0].bbox?.x1-symbols[0].bbox?.x0) / (symbols[0].bbox?.y1-symbols[0].bbox?.y0) > .8 ? neighborI(warning,image) : null) || symbols[0].bbox : null);
   if (!b || !Object.values(b).every(Number.isInteger) || b.x0 < box.x0 || b.y0 < box.y0 || b.x1 > box.x1 || b.y1 > box.y1) return uncertain;
   const height=b.y1-b.y0, width=b.x1-b.x0;
   if (height < 16 || width <= 0 || width/height > .8) return uncertain;
@@ -160,6 +193,9 @@ export function strokeEvidence(blocks, image) {
 const unresolved = (found,detail,reason='uncertain') => ({field:'Warning appearance',status:'review',found,detail,reason});
 
 export function appearanceFinding(result, supportsBold) {
+  if (result?.reason === 'service') return unresolved('Appearance service unavailable','The appearance service could not be reached or rejected access. Text findings remain available; inspect the artwork.','service');
+  if (result?.reason === 'not-configured') return unresolved('Appearance service not configured','The server is missing its appearance configuration. Text findings remain available.','not-configured');
+  if (['invalid-request','invalid-response'].includes(result?.reason)) return unresolved('Appearance check unavailable','The appearance request or service response was invalid. Text findings remain available; inspect the artwork.',result.reason);
   if (result?.reason === 'provider') return unresolved('Automated appearance unavailable','The provider could not complete the check (capacity, quota, or service failure). Retry later or inspect the artwork; this is not a font-weight judgment.','provider');
   if (result?.verdict === 'BOLD' && result.reason === 'corroborated' && supportsBold) return {field:'Warning appearance',status:'match',found:'Bold heading corroborated',detail:'Two vision models and a stroke-width check agree. This prototype checks heading weight, not physical print size or overall regulatory compliance.'};
   return unresolved('Bold heading not confidently verified',result?.reason==='timeout'?'The appearance check reached its time limit. Try again or inspect the artwork.':'The visual checks did not all support bold weight. The heading may be regular, too small, or an unfamiliar style. Inspect the crop and original artwork.',result?.reason||'uncertain');
@@ -183,7 +219,12 @@ export async function reviewAppearance(canvas, blocks, cache=new Map()) {
   let finding;
   try {
     const response=await fetch('/api/warning-appearance',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({image}),signal:AbortSignal.timeout(5000)});
-    if(!response.ok)finding=unresolved('Automated appearance unavailable',response.status===429?'Service rate limit reached. Wait a minute and review this label again.':'The appearance service could not finish. Try again, or inspect the artwork; text findings remain available.');
+    if(!response.ok){
+      const errorResult=await response.json().catch(()=>null);
+      finding=response.status===429
+        ? unresolved('Automated appearance unavailable','Service rate limit reached. Wait a minute and review this label again.','rate-limit')
+        : appearanceFinding({verdict:'UNCERTAIN',reason:['timeout','not-configured','invalid-request','invalid-response','provider','service'].includes(errorResult?.reason)?errorResult.reason:[400,405,413,415].includes(response.status)?'invalid-request':'service'},false);
+    }
     else {
       const result=await response.json();
       finding=appearanceFinding(result,stroke.supportsBold);

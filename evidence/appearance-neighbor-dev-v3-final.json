@@ -1,0 +1,2169 @@
+{
+  "scope": "Local guard only; no cloud inference. Frozen fixtures unchanged.",
+  "baselineSource": "c3ebde8cd36065d917677787f195b1dab46929b9",
+  "results": [
+    {
+      "id": "PT-Sans-Narrow-0-regular",
+      "file": "PT-Sans-Narrow-0-regular.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "85d992dcc760c9623905210d0c45d400416c6266b34d5cc80b8d1752c114345a",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 3,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09523809523809523,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09523809523809523,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-0-bold",
+      "file": "PT-Sans-Narrow-0-bold.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "bd98d4b1c299b8ac4dee454ad5b8425ff59f4d6c432fcd8c7bb4dd3910ccccb2",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.15,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-1-regular",
+      "file": "PT-Sans-Narrow-1-regular.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "b02b3bd88dffb27e661be666ec69ea6dadcc7d0b7602daf90c2abce4f4426fd7",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 3,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.08695652173913042,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.08695652173913042,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-1-bold",
+      "file": "PT-Sans-Narrow-1-bold.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow-Bold",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "ab2b4c6669e69d0280b17dcd213602acbd053e225ad06298e1cb6d23f2a5156b",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.17391304347826084,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.17391304347826084,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-2-regular",
+      "file": "PT-Sans-Narrow-2-regular.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "f2b1e3917304ed044eb1a1afed374a033309448107bf10d8de538f46aa10f93c",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 3,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.1153846153846154,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.1153846153846154,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-2-bold",
+      "file": "PT-Sans-Narrow-2-bold.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "427b8e19697e7cf3c836af94666af3e801213bb4b4e847ccea19d8f968ed9d0e",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19230769230769232,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19230769230769232,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-3-regular",
+      "file": "PT-Sans-Narrow-3-regular.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "0e7593b0b9b433d3bf139c9424e0ccddd38d61cbc717107ce777cc03d36b130c",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 3,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.10344827586206896,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.10344827586206896,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-3-bold",
+      "file": "PT-Sans-Narrow-3-bold.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow-Bold",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "6358df82e8e141b41daaad044f4c04597bcfcb4e3ccfc1e37412fca471ffd55c",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.17241379310344834,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.17241379310344834,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-4-regular",
+      "file": "PT-Sans-Narrow-4-regular.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "9bc64fc2306d2f0f3022c6b299e2ed0981ad49369359f61b9adfeeb32537fd54",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 3,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.0967741935483871,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.0967741935483871,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "PT-Sans-Narrow-4-bold",
+      "file": "PT-Sans-Narrow-4-bold.png",
+      "family": "PT-Sans-Narrow",
+      "font": "PT-Sans-Narrow-Bold",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "4a16939724b4a924afa14e720da3ae1bcf5114ebd005cd9b7cbec44269614edc",
+      "fontFamily": "PT Sans Narrow",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "9a5e0fbbc4ae9744af2dcdbd46d332731f219ba1356948299a107f89c505c79a",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.16129032258064518,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.16129032258064518,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bodoni-72-0-regular",
+      "file": "Bodoni-72-0-regular.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Book",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "42a481ce5f453baea611b1c884e0eead3f426558d2cf3032d9a3578573a914d0",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bodoni-72-0-bold",
+      "file": "Bodoni-72-0-bold.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "a62a941c3ec97cf4fe19e253eff069f1bf9f9e3f4ad9685fa1ddb8e882129228",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.375,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.375,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Bodoni-72-1-regular",
+      "file": "Bodoni-72-1-regular.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Book",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "3a31c46f1c5507581f3b09ae3185449686dd159a100c68875b5c36767aea1b9e",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bodoni-72-1-bold",
+      "file": "Bodoni-72-1-bold.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Bold",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "c9129b6564d7053c0132222f372f2249e5676482e239572c68b73dadf166f991",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.308300395256917,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.308300395256917,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Bodoni-72-2-regular",
+      "file": "Bodoni-72-2-regular.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Book",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "30a06e7da3b074b6779470e7a599d3b832d1b9017be9bf970f6458270d508722",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bodoni-72-2-bold",
+      "file": "Bodoni-72-2-bold.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "c6c8c44d6c030ef6a6a50c8f4b8f0262e1eed771f1de259d2653c36b27c6dd4d",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2222222222222223,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "glyph-geometry"
+      }
+    },
+    {
+      "id": "Bodoni-72-3-regular",
+      "file": "Bodoni-72-3-regular.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Book",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "e2171fe7f8960c1c0a48d5948799d57854ba85109ae1cc935371cda5e2a6bec6",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bodoni-72-3-bold",
+      "file": "Bodoni-72-3-bold.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Bold",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "2418765f633a73a84b11ba4e35f92f5e58a9dbdfc74da247bc1fd85d4656470b",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.21428571428571427,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "glyph-geometry"
+      }
+    },
+    {
+      "id": "Bodoni-72-4-regular",
+      "file": "Bodoni-72-4-regular.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Book",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "b0ddaf64b97245897ba3f2c795a19b699e7267939c59c1a1cfe0bb531e4f4906",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Bodoni-72-4-bold",
+      "file": "Bodoni-72-4-bold.png",
+      "family": "Bodoni-72",
+      "font": "Bodoni-72-Bold",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "842cbe327e462d151fcfd8242d62667ac07f1b094e19ea83ee36b5884c9225a2",
+      "fontFamily": "Bodoni 72",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "f2137e4ea89f9cf8ac9738b620defede3f91a6cbb9492773180362344c99459f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.30580357142857145,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.30580357142857145,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Cochin-0-regular",
+      "file": "Cochin-0-regular.png",
+      "family": "Cochin",
+      "font": "Cochin",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "ad2156d04d9d891d521a5c12af6099f9690e31af802ad292123fd07fe13edd35",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 500,
+      "fontIndex": 0,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15789473684210528,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15789473684210528,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Cochin-0-bold",
+      "file": "Cochin-0-bold.png",
+      "family": "Cochin",
+      "font": "Cochin-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "fd653416a6d287edc65839f1efd35b3779e92550052c3d2e281feb0846744fd3",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.21052631578947367,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.21052631578947367,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Cochin-1-regular",
+      "file": "Cochin-1-regular.png",
+      "family": "Cochin",
+      "font": "Cochin",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "af2c102b3b8197c36c663a93dde23085a6c4adbe1e51d37c2dfc7eb8ccd179fb",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 500,
+      "fontIndex": 0,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Cochin-1-bold",
+      "file": "Cochin-1-bold.png",
+      "family": "Cochin",
+      "font": "Cochin-Bold",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "c82f57e3e805f06df9ba4776d2867a8ae560d7f43ba55e9e9891a19c339f6958",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Cochin-2-regular",
+      "file": "Cochin-2-regular.png",
+      "family": "Cochin",
+      "font": "Cochin",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "e24d694258acf3a00770b9eb8fcc8dc0b5a1a940ac0eb9cf0f31cd12a99e71b0",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 500,
+      "fontIndex": 0,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Cochin-2-bold",
+      "file": "Cochin-2-bold.png",
+      "family": "Cochin",
+      "font": "Cochin-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "1770aca05c22c21858f8aee2db0c900800a2044423c5423ef57bb3160a38d024",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Cochin-3-regular",
+      "file": "Cochin-3-regular.png",
+      "family": "Cochin",
+      "font": "Cochin",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "2cac429d11a6f9cd87d23391fb60fc028c734830a6f895f3d246e58a5214044e",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 500,
+      "fontIndex": 0,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Cochin-3-bold",
+      "file": "Cochin-3-bold.png",
+      "family": "Cochin",
+      "font": "Cochin-Bold",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "67f8742c63d398246ce331de9506fd5a7207b5037e76d77c99fe8a473aa28ed7",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2222222222222223,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Cochin-4-regular",
+      "file": "Cochin-4-regular.png",
+      "family": "Cochin",
+      "font": "Cochin",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "1b4d52454dc5c648e9c4291e521d2a36079c0dd03af5345efc965fd75481d0ce",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 500,
+      "fontIndex": 0,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Cochin-4-bold",
+      "file": "Cochin-4-bold.png",
+      "family": "Cochin",
+      "font": "Cochin-Bold",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "e7dfae8e2b766aa86e23faa75d11b5b3179be9431d96eb1b0db54f53c1995fca",
+      "fontFamily": "Cochin",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "e33e500ebb133bb332076c3875b5eb7402442d5448dfbd37cca85ecac3ee3d2c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Rockwell-0-regular",
+      "file": "Rockwell-0-regular.png",
+      "family": "Rockwell",
+      "font": "Rockwell",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "de4eaba74f239505579ae7d7ff69ea997164926be9a1d64ed215395274384902",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Rockwell-0-bold",
+      "file": "Rockwell-0-bold.png",
+      "family": "Rockwell",
+      "font": "Rockwell-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "67c191e63b686463ec8301a2a7f344a8fd07b4e699dcf3682170414cd85ea640",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Rockwell-1-regular",
+      "file": "Rockwell-1-regular.png",
+      "family": "Rockwell",
+      "font": "Rockwell",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "7d86e1cf23107cc10807d1c8a6a514b47db0a14ab98715fc90af7c9c9b08abf1",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12000000000000002,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12000000000000002,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Rockwell-1-bold",
+      "file": "Rockwell-1-bold.png",
+      "family": "Rockwell",
+      "font": "Rockwell-Bold",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "e25bc7edf0b83e37322ca7f9fc5f15bdd37f589b5952c9df57e291cb85a8e8a0",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Rockwell-2-regular",
+      "file": "Rockwell-2-regular.png",
+      "family": "Rockwell",
+      "font": "Rockwell",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "885eb066cbdb174de65802116239b24af3fe697257388f8781d0974db0a596d6",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Rockwell-2-bold",
+      "file": "Rockwell-2-bold.png",
+      "family": "Rockwell",
+      "font": "Rockwell-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "81e8ee609d0307d5b1959ead8138456b59b6b5aa0c8290eb8226426f2865121f",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Rockwell-3-regular",
+      "file": "Rockwell-3-regular.png",
+      "family": "Rockwell",
+      "font": "Rockwell",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "f55bab537c8059105d2d3346576e54ce243ae04bb6726636ed5b2efb6608b6c9",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Rockwell-3-bold",
+      "file": "Rockwell-3-bold.png",
+      "family": "Rockwell",
+      "font": "Rockwell-Bold",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "88c345a6281a376f28231dcccc1546a112f86422d634d5bec960a5f83c53e2fd",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25806451612903214,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Rockwell-4-regular",
+      "file": "Rockwell-4-regular.png",
+      "family": "Rockwell",
+      "font": "Rockwell",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "ae2e123320bb5b42dabdfbc703d52c38e788ca53301b908071182c23d75b9b92",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14705882352941174,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14705882352941174,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Rockwell-4-bold",
+      "file": "Rockwell-4-bold.png",
+      "family": "Rockwell",
+      "font": "Rockwell-Bold",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "04eca8ca2141b3c3c1f4612695f11794862136005586a09e1c6846b9ac276ed9",
+      "fontFamily": "Rockwell",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "d96dfdd45d4b89eed3f376ab590b06eb2159292689ff5b0be9884b21121eca7c",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23529411764705885,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-0-regular",
+      "file": "Iowan-Old-Style-0-regular.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Roman",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "a79db4e9d18e1523b55270aa3b617b5a9db550cfb0a7334d0fd86e1b9ac846f1",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-0-bold",
+      "file": "Iowan-Old-Style-0-bold.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "310256540164829ad2ccf18c1f2ca5402dd739bcf7c681a0603c159cde4f9b09",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-1-regular",
+      "file": "Iowan-Old-Style-1-regular.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Roman",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "7ed706bd14ee7e85fb27a25b56a12af569b697b2ab45227041d9f106c9c2654a",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-1-bold",
+      "file": "Iowan-Old-Style-1-bold.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Bold",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "0399a19fe2cb1f9751ee0b26d9cc64cc485c7d5918d66ac5996f81e926d8071c",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.20833333333333331,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.20833333333333331,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-2-regular",
+      "file": "Iowan-Old-Style-2-regular.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Roman",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "4e4c21427ba9f8bbbe35c39af956de518d358a6843125c5425c379e5bc32cb9d",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12000000000000002,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12000000000000002,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-2-bold",
+      "file": "Iowan-Old-Style-2-bold.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "0a0c7676d93aab6e63804809910aa8c008570a8eb583d7af093b64197e51e0b3",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-3-regular",
+      "file": "Iowan-Old-Style-3-regular.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Roman",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "eff4ff3ec95a227482302b1fc6cba12c653ba7e926f7ec586c66d4ab59eab9d7",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-3-bold",
+      "file": "Iowan-Old-Style-3-bold.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Bold",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "29ff01aaf706015969638cdc7f47defd526995eda73863f7edead16e9696ac7d",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.20689655172413793,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-4-regular",
+      "file": "Iowan-Old-Style-4-regular.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Roman",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "76d176386e4ff79430eb7436d2279769f4000e9cd5a44c1e4e07ca49f8d80d67",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Iowan-Old-Style-4-bold",
+      "file": "Iowan-Old-Style-4-bold.png",
+      "family": "Iowan-Old-Style",
+      "font": "Iowan-Old-Style-Bold",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "f12edd03eace610c4d1f62a21972ed91fac9521b1f3297d636716dc9abc97a57",
+      "fontFamily": "Iowan Old Style",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "585e09f1f10a5b734d1ebdfb78d4a4448732fb650d770d1b51ec7ee35fb4da78",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.1875,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.1875,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Menlo-0-regular",
+      "file": "Menlo-0-regular.png",
+      "family": "Menlo",
+      "font": "Menlo-Regular",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "f4605e019f430d230cd93d4fbff4fb848184575fca0137c7d61aa85d819a0ae0",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Menlo-0-bold",
+      "file": "Menlo-0-bold.png",
+      "family": "Menlo",
+      "font": "Menlo-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "7c46e59695bd941a7fdc453cc226b7f4778b40d5b2758a3267885e6dd251425b",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19047619047619047,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19047619047619047,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Menlo-1-regular",
+      "file": "Menlo-1-regular.png",
+      "family": "Menlo",
+      "font": "Menlo-Regular",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "97bf1c2edb68fa4579cd5d556d65037f73cc59c92ddf87536b09cd04eabdd805",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Menlo-1-bold",
+      "file": "Menlo-1-bold.png",
+      "family": "Menlo",
+      "font": "Menlo-Bold",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "36a9afda0b96021bed5ad5624a55d0694b2be6947a4da1233194513923157879",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.15999999999999998,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Menlo-2-regular",
+      "file": "Menlo-2-regular.png",
+      "family": "Menlo",
+      "font": "Menlo-Regular",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "7fd41423a23d576042a3ba3070aa7d6750d2d810aec2c81104f6dec7440cac3d",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Menlo-2-bold",
+      "file": "Menlo-2-bold.png",
+      "family": "Menlo",
+      "font": "Menlo-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "2523204e51f82458bc3d4e310f55ff22e42f13618856e34cd87342489c33e497",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Menlo-3-regular",
+      "file": "Menlo-3-regular.png",
+      "family": "Menlo",
+      "font": "Menlo-Regular",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "651f671606cb60f7b03d6d5f8c9e7294c2a3d85ff4a3b48efb9d3fca45dd910d",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Menlo-3-bold",
+      "file": "Menlo-3-bold.png",
+      "family": "Menlo",
+      "font": "Menlo-Bold",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "867c2556b5e2912a66c67fc6872598ebc7d1925bbd90a96fd30d0c20d2e414df",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Menlo-4-regular",
+      "file": "Menlo-4-regular.png",
+      "family": "Menlo",
+      "font": "Menlo-Regular",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "133f0dace1288605ee885208373fe357eeff6ef689c98ee5284b103ef5ccbb49",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15151515151515152,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15151515151515152,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Menlo-4-bold",
+      "file": "Menlo-4-bold.png",
+      "family": "Menlo",
+      "font": "Menlo-Bold",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "3260c16abc056d2370846a48cf2acd48923e308a98bc6948a51db88cf4cbe3ca",
+      "fontFamily": "Menlo",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "f2d400484a6aace67980730ec0a9ef24ce9e535a2604f118e6fdc2510021b85f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.21212121212121204,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.21212121212121204,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Marion-0-regular",
+      "file": "Marion-0-regular.png",
+      "family": "Marion",
+      "font": "Marion-Regular",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "5a4deaeb1a018708aad6fc29b7428c7bb9ceb56e27bf8b43404d9bbbcf49767f",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Marion-0-bold",
+      "file": "Marion-0-bold.png",
+      "family": "Marion",
+      "font": "Marion-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "82318dbe8267a185b82dca2ff4c3f44da0be78814a5f150e02e33c075fdd75e0",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2631578947368421,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2631578947368421,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Marion-1-regular",
+      "file": "Marion-1-regular.png",
+      "family": "Marion",
+      "font": "Marion-Regular",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "cd7a2c959216528abfabe039daedc29f212d19bb9e70787c0ce806bb92d05022",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Marion-1-bold",
+      "file": "Marion-1-bold.png",
+      "family": "Marion",
+      "font": "Marion-Bold",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "58158b9d2b45e637b84ffb58a71a5cb879b57d18e2695f071aa0c157efc8b967",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Marion-2-regular",
+      "file": "Marion-2-regular.png",
+      "family": "Marion",
+      "font": "Marion-Regular",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "a19c40ea1bd9ce9e54b33990697b4ef9d2fe030e2dcf649e1b272cd5ff994b9a",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15999999999999998,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Marion-2-bold",
+      "file": "Marion-2-bold.png",
+      "family": "Marion",
+      "font": "Marion-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "2f514619c050457a35d25311bafc42e9fd75c3e19aa2dc5172bd158e245bd1fc",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.24000000000000005,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.24000000000000005,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Marion-3-regular",
+      "file": "Marion-3-regular.png",
+      "family": "Marion",
+      "font": "Marion-Regular",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "d0d24c54134d651b36bbd96388ddd99287f7663e8f97cc8cc51100d6012fee6f",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Marion-3-bold",
+      "file": "Marion-3-bold.png",
+      "family": "Marion",
+      "font": "Marion-Bold",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "d9f24203b286623664009265ed59bd8864ed5f13b1c1d7ba21605204936e2cce",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Marion-4-regular",
+      "file": "Marion-4-regular.png",
+      "family": "Marion",
+      "font": "Marion-Regular",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "1e5a4efdcf7b0edbb7ca2b80071e3e5fd7da078160dbe49dd05ec90969364222",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Marion-4-bold",
+      "file": "Marion-4-bold.png",
+      "family": "Marion",
+      "font": "Marion-Bold",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "920df630df7599a4222860b54c4b81af9e36f9e57ccf7b2086724c3b8252c80f",
+      "fontFamily": "Marion",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 2,
+      "fontSha256": "c5870ba26bb3b5c376b6fe9f0ba2aeb5d0bca47536c0e268e755fc2e713d8f73",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23333333333333336,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.23333333333333336,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Chalkboard-0-regular",
+      "file": "Chalkboard-0-regular.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "d632aed612053223c7927fec82aa0b9ef018c6e4b63cb57614560146f55c29f4",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15789473684210528,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15789473684210528,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Chalkboard-0-bold",
+      "file": "Chalkboard-0-bold.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard-Bold",
+      "size": 29,
+      "x": 220,
+      "y": 620,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "4a41503a8e1ac87d18975c92a835b10ff9524fb2d506d5224689a516ba31d386",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19047619047619047,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19047619047619047,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Chalkboard-1-regular",
+      "file": "Chalkboard-1-regular.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "d217254701b0b19723bc7c9887472fc3a6264f686b5d8fa43edaa8fe9bc8562f",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Chalkboard-1-bold",
+      "file": "Chalkboard-1-bold.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard-Bold",
+      "size": 33,
+      "x": 380,
+      "y": 700,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "8e322ea945b2f2ea74f729cc69daf0d6cb2a48c978d4cdcd90f7038d4904c67b",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.17391304347826084,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.17391304347826084,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Chalkboard-2-regular",
+      "file": "Chalkboard-2-regular.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "5450821ecd7445d494443dccf1c17eb50b6fb0bf3fed62ca98ddbbbe8e8926a0",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Chalkboard-2-bold",
+      "file": "Chalkboard-2-bold.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard-Bold",
+      "size": 37,
+      "x": 90,
+      "y": 780,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "49c65bdce4ebdd76da66ab87eb67e9fb7e21d14dbac2d2041526c3804ef6cb3e",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19230769230769232,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19230769230769232,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Chalkboard-3-regular",
+      "file": "Chalkboard-3-regular.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "113cf810e7362ec2b2b7eb4ffdc7d343432975f792ed1fd2ecc5eab2a3d277ce",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Chalkboard-3-bold",
+      "file": "Chalkboard-3-bold.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard-Bold",
+      "size": 41,
+      "x": 550,
+      "y": 740,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "a64c5d1a1032ae6b197cd323078bbb0c415a9af992a468a414c08869889fd8ea",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.17241379310344834,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Chalkboard-4-regular",
+      "file": "Chalkboard-4-regular.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "5548d52137bf21cc74ba70b1318f4b7d8b5f4a78d7d08d295cfb2a19d60546d6",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 400,
+      "fontIndex": 0,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Chalkboard-4-bold",
+      "file": "Chalkboard-4-bold.png",
+      "family": "Chalkboard",
+      "font": "Chalkboard-Bold",
+      "size": 45,
+      "x": 280,
+      "y": 860,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "5bbafa4024c904ce5defba5c00f0462055849a8be07507f64e3218647d0c1569",
+      "fontFamily": "Chalkboard",
+      "fontStyle": "Normal",
+      "fontWeight": 700,
+      "fontIndex": 1,
+      "fontSha256": "d29f52e3f43f7c7512695339feb0b5c6d8b865410ad960034887f092dbbc0033",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.1818181818181818,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.1818181818181818,
+        "reason": "supported"
+      }
+    }
+  ]
+}

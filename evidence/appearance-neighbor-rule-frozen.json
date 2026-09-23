@@ -1,0 +1,10 @@
+{
+  "baseline": "984fc42",
+  "classifierSha256": "d1e09cd1593d9cf00a2186ceb604146690627fa3b42c21b1e658de35c3fccba5",
+  "holdoutManifestSha256": "23eeff4296916019bd21ba88590e4a7dea416c83641cd78142c16c6d07b837e8",
+  "note": "Rule fixed before v4 results. Initial Skia font metadata was inconsistent; substituted TI-Nspire before any v4 OCR or classification. Initial neighbor test preceded completion of fixture generation; no v4 outcomes informed implementation.",
+  "finalClassifierSha256": "2225edb57c11b9ccd57b910f15fab8b9f217d02ee31f1ff57489c721e7da4fed",
+  "developmentCorrection": "v3 regression exposed recovery overriding valid OCR boxes. Restricted recovery to oversized boxes before inspecting any v4 outcomes. Initial v4 execution is retained as superseded; final evaluation uses the corrected frozen rule.",
+  "reviewSafetyCorrection": "After inspecting v4 scores, code review added containment of the recovered stem inside the oversized I box. This only restricts eligibility; all 80 outcome/evidence records were unchanged on recheck. No threshold, model, prompt, fixture or weight expansion followed v4 inspection.",
+  "finalClassifierCoreSha256": "e8d7fe09df640ed9ac821b5fe360a719a249dfc69efcd753ec70305af259ccc3"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "Finished: 1 reviewed, 0 failed, 0 remaining. Total: 4.9 s. First result: 4.9 s from click. Inspect exceptions and make your final decision.",
+  "rows": [
+    {
+      "text": "old-tom.png\n4.9 s to review\n\n1 check needs attention\n\nView original label artwork\nBrand name\nMATCH\nApplication: OLD TOM DISTILLERY\nOLD TOM DISTILLERY\nObserved brand matches after case and punctuation normalization.\nClass / type\nMATCH\nApplication: Kentucky Straight Bourbon Whiskey\nKentucky Straight Bourbon Whiskey\nComplete declaration matches after case and punctuation normalization.\nAlcohol content\nMATCH\nApplication: 45%\n45%\nNumeric ABV matches the application.\nNet contents\nMATCH\nApplication: 750 mL\n750 mL\nEquivalent quantity matches (fluid ounces are US units).\nProducer / address\nMATCH\nApplication: Old Tom Distillery, Bardstown, KY\nOld Tom Distillery, Bardstown, KY\nComplete declaration matches after case and punctuation normalization.\nCountry of origin\nN/A\nDomestic product\nNot checked because the application is marked domestic.\nGovernment warning\nMATCH\nExact wording and uppercase heading detected\nText check only. The separate appearance check is still required.\nWarning appearance\nREVIEW\nBold heading not confidently verified\nThe appearance check reached its time limit. Try again or inspect the artwork.\nInspect analyzed heading crop\nI checked the original artwork and confirm the warning appearance.\nInspect extracted text and reference warning",
+      "timings": {
+        "setup": 0.40000000037252903,
+        "prepare": 15,
+        "ocr": 655.4000000003725,
+        "comparison": 2.699999999254942,
+        "appearance": 4244.9000000003725,
+        "render": 0.7999999998137355,
+        "total": 4918.899999999441,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      }
+    }
+  ]
+}

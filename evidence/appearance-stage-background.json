@@ -1,0 +1,19 @@
+{
+  "blobTimings": [
+    14.599999999627471
+  ],
+  "status": "Finished: 1 reviewed, 0 failed, 0 remaining. Total: 0.6 s. First result: 0.6 s from click. Inspect exceptions and make your final decision.",
+  "rows": [
+    {
+      "setup": 0.20000000018626451,
+      "prepare": 5.599999999627471,
+      "ocr": 561.1000000005588,
+      "comparison": 2.099999999627471,
+      "appearance": 6.7000000001862645,
+      "render": 1,
+      "total": 576.5999999996275,
+      "visibility": "visible",
+      "visibilityEnd": "visible"
+    }
+  ]
+}

@@ -1,0 +1,1613 @@
+{
+  "scope": "Local guard only; no cloud inference. Frozen fixtures unchanged.",
+  "baselineSource": "c3ebde8cd36065d917677787f195b1dab46929b9",
+  "results": [
+    {
+      "id": "Helvetica-Narrow-0-regular",
+      "file": "Helvetica-Narrow-0-regular.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow",
+      "size": 30,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "a2ab87441690e7da5c189f66a3e8d8e777a236a1e7f8ef00338ce7070713797d",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-0-bold",
+      "file": "Helvetica-Narrow-0-bold.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow-Bold",
+      "size": 30,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "4b0c7d92a81ae4208b2f25b7585817ba251fa3370bee19ea3e248fceb933d401",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.13636363636363633,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-1-regular",
+      "file": "Helvetica-Narrow-1-regular.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow",
+      "size": 34,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "2e643605e639f462fcb1cfaf36cf5a00538f922a9419739c89646ead11d03502",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.08333333333333334,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.08333333333333334,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-1-bold",
+      "file": "Helvetica-Narrow-1-bold.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow-Bold",
+      "size": 34,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "04a3c7e2e364fe378158454b2da727587c83cdcac8df305ec971e475d29e4adc",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.16666666666666669,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.16666666666666669,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-2-regular",
+      "file": "Helvetica-Narrow-2-regular.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow",
+      "size": 38,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "c226611fa872d291d3e8f3bc7579685dcd619d26810e4498e5c0f21ff57899ef",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.11111111111111115,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.11111111111111115,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-2-bold",
+      "file": "Helvetica-Narrow-2-bold.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow-Bold",
+      "size": 38,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "9f90853dc8e98166cb36fa17067623ded16aa4c97d6e2a4aae8173db0bb0adf7",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-3-regular",
+      "file": "Helvetica-Narrow-3-regular.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow",
+      "size": 42,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "8c990cd620ce3459dc88bc6334b53ee54db19064ceb512ffaa58f305fafb6864",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-3-bold",
+      "file": "Helvetica-Narrow-3-bold.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow-Bold",
+      "size": 42,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "88fc4f31f78474b5c1710f21d589997a74e1b0fd668ced5ba9763af07c9598de",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.16666666666666666,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-4-regular",
+      "file": "Helvetica-Narrow-4-regular.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow",
+      "size": 46,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "18fdb5e509c0c965a3ef7f94462f1c9073b82aa14564346eeca10c8ab8dfea47",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12121212121212116,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12121212121212116,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Narrow-4-bold",
+      "file": "Helvetica-Narrow-4-bold.png",
+      "family": "Helvetica-Narrow",
+      "font": "Helvetica-Narrow-Bold",
+      "size": 46,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "ae93a71b6839910ef3262e06deee3330df11014ef3b5b936a1b80e8220c721a6",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.1818181818181818,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.1818181818181818,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "American-Typewriter-0-regular",
+      "file": "American-Typewriter-0-regular.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter",
+      "size": 30,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "0e08bc9f32ba07f1f65104896baccd9b2d6d07bb7fea5eb9f662e3d2cf5e99ed",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09523809523809523,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09523809523809523,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "American-Typewriter-0-bold",
+      "file": "American-Typewriter-0-bold.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter-Bold",
+      "size": 30,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "a6f987e8145ecebfa4293ed74a4044d47dadde7960c8a992e336f3df7a72c1fb",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.28571428571428564,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.28571428571428564,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "American-Typewriter-1-regular",
+      "file": "American-Typewriter-1-regular.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter",
+      "size": 34,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "b425a61f4bf070fe9939a5d3b19f4ab81b2b8254bbd10b98e6422a51a035c4c0",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "American-Typewriter-1-bold",
+      "file": "American-Typewriter-1-bold.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter-Bold",
+      "size": 34,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "7e726bcb4d9b0161a5f8d173688979c50e83d758ab15751a2313f9b76b6dbdb3",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.26086956521739124,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.26086956521739124,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "American-Typewriter-2-regular",
+      "file": "American-Typewriter-2-regular.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter",
+      "size": 38,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "9f501678b08b7333eddbae3dfad29d0658565bf1eeafb228ac0da0764d43814b",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.1153846153846154,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.1153846153846154,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "American-Typewriter-2-bold",
+      "file": "American-Typewriter-2-bold.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter-Bold",
+      "size": 38,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "dc8642184fa5687fd16d3e0e57d5dcbdcdb3e81c839bfc9e409e3b533f75d591",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2307692307692308,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2307692307692308,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "American-Typewriter-3-regular",
+      "file": "American-Typewriter-3-regular.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter",
+      "size": 42,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "83facf095352a7204b851201190b12cbc53663a7b64dcaffb6594fd8574f5dff",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "American-Typewriter-3-bold",
+      "file": "American-Typewriter-3-bold.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter-Bold",
+      "size": 42,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "28b7f6f6dd18033a6f8643ca6db1ef105cab4db0af1b6ec4e56ca8263202d260",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2758620689655173,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "American-Typewriter-4-regular",
+      "file": "American-Typewriter-4-regular.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter",
+      "size": 46,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "b62c1708ec1aa5678a052cefc5ca1fa5a528447cc897349ba7daff943a1669a1",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "American-Typewriter-4-bold",
+      "file": "American-Typewriter-4-bold.png",
+      "family": "American-Typewriter",
+      "font": "American-Typewriter-Bold",
+      "size": 46,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "664caf21f57463b7f0f45b121354f40948e5ec56fd9c454e37d7ac13a1d2e3f5",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25806451612903214,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Arial-Narrow-0-regular",
+      "file": "Arial-Narrow-0-regular.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow",
+      "size": 30,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "8d6401d145f84821b3b715e0488fb98bd201f9cbbba03891c05d5a17391eb5e3",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-Narrow-0-bold",
+      "file": "Arial-Narrow-0-bold.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow-Bold",
+      "size": 30,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "9939bc43c0d231c8f5b209069bc9a2b60306992b43bef2722e3a494ba9a05f50",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.13636363636363633,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-Narrow-1-regular",
+      "file": "Arial-Narrow-1-regular.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow",
+      "size": 34,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "e6516224f3dd4397a4d9a99cc1386d8edbb3e40474342e1eebc88943c0f611ea",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.08333333333333334,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.08333333333333334,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-Narrow-1-bold",
+      "file": "Arial-Narrow-1-bold.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow-Bold",
+      "size": 34,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "b4bb186204ac0edf32d9492e236f2f1be00d7202bd298f9eb77c52fe7c89103b",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.16666666666666669,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.16666666666666669,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-Narrow-2-regular",
+      "file": "Arial-Narrow-2-regular.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow",
+      "size": 38,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "48407f49df41de8a40f32272fa2e336cd25ccb52a0d82e668bc01f2c878cba18",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.11111111111111115,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.11111111111111115,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-Narrow-2-bold",
+      "file": "Arial-Narrow-2-bold.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow-Bold",
+      "size": 38,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "014fbb6e0a78be6d3f9cd6b2ac7533283cfd2b6ad72f62f14e0c38f555d8f07d",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Arial-Narrow-3-regular",
+      "file": "Arial-Narrow-3-regular.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow",
+      "size": 42,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "c44a18604a22ec714a13d954e4c2e8a421288c8cc1d3f8d956331e4a3460cc89",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-Narrow-3-bold",
+      "file": "Arial-Narrow-3-bold.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow-Bold",
+      "size": 42,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "ccb9c2386a1cee3f05b118c045d94cc237252f6ae606cb42dd69c156791ea323",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.16666666666666666,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Arial-Narrow-4-regular",
+      "file": "Arial-Narrow-4-regular.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow",
+      "size": 46,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "0652f5a06afd7a583bc0b4c034db7348f86ae60e9237370905cdbf36b5fd3ee2",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.08823529411764705,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.08823529411764705,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-Narrow-4-bold",
+      "file": "Arial-Narrow-4-bold.png",
+      "family": "Arial-Narrow",
+      "font": "Arial-Narrow-Bold",
+      "size": 46,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "2476f3ce1640ae74711213085a54ba077ff89dc5c0df4baa3e414e4d5504e766",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.14705882352941174,
+        "reason": "supported",
+        "method": "word-strokes"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14705882352941174,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Charter-0-regular",
+      "file": "Charter-0-regular.png",
+      "family": "Charter",
+      "font": "Charter-Roman",
+      "size": 30,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "ecb44c0de58b64dfd4c7858c26bdbc3d1478a0a09c1bbad1135f26de3c5fc5a6",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Charter-0-bold",
+      "file": "Charter-0-bold.png",
+      "family": "Charter",
+      "font": "Charter-Bold",
+      "size": 30,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "9439c54854655abc0d0fd170c99a66c113ecea166da74e8ab93a8c108b2d5e8e",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Charter-1-regular",
+      "file": "Charter-1-regular.png",
+      "family": "Charter",
+      "font": "Charter-Roman",
+      "size": 34,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "a9dcd872db7b4f33ef2bb30b857208e1366f9c8c91de9fb96e21194e433242d7",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Charter-1-bold",
+      "file": "Charter-1-bold.png",
+      "family": "Charter",
+      "font": "Charter-Bold",
+      "size": 34,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "78a0025b09165fa20039526786fa3d9a42bc4a64b03a851c43e608028b431384",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.17391304347826084,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.17391304347826084,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Charter-2-regular",
+      "file": "Charter-2-regular.png",
+      "family": "Charter",
+      "font": "Charter-Roman",
+      "size": 38,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "b84abc71991fc81bfb5275690134c2ceeadff63ca77fa7143d30272f1280d976",
+      "guard": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "glyph-geometry"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "glyph-geometry"
+      }
+    },
+    {
+      "id": "Charter-2-bold",
+      "file": "Charter-2-bold.png",
+      "family": "Charter",
+      "font": "Charter-Bold",
+      "size": 38,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "41796f8299f39354ea414af42f9c912eb1e6b60cc145da473afe61ff2d100fbc",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19230769230769232,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19230769230769232,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Charter-3-regular",
+      "file": "Charter-3-regular.png",
+      "family": "Charter",
+      "font": "Charter-Roman",
+      "size": 42,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "02344b33191f10235567e6aa61ec3cf282059d2c22578126a047aa2c9e8fe530",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13793103448275865,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Charter-3-bold",
+      "file": "Charter-3-bold.png",
+      "family": "Charter",
+      "font": "Charter-Bold",
+      "size": 42,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "6593c58808ae3f4eb5d50ee24dfb267bb4ea2c4e17813ddcfe8945d1d306e2a1",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.17857142857142858,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Charter-4-regular",
+      "file": "Charter-4-regular.png",
+      "family": "Charter",
+      "font": "Charter-Roman",
+      "size": 46,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "cfab7227195b5adeed8e08679de88ed3527c9ea92a1fef933c3b27b417765e5b",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.16129032258064518,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.16129032258064518,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Charter-4-bold",
+      "file": "Charter-4-bold.png",
+      "family": "Charter",
+      "font": "Charter-Bold",
+      "size": 46,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "4e90e333ef84f67b20ae443e57c6c3f63e6e5d91785309d5d11f0d76f791ac2e",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.1935483870967742,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.1935483870967742,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-0-regular",
+      "file": "Copperplate-0-regular.png",
+      "family": "Copperplate",
+      "font": "Copperplate",
+      "size": 30,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "417c6dcdd0d754b0a8f5f4257e5828ce3d85da0ca623fb34a38e2249915fad29",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23529411764705885,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.23529411764705885,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-0-bold",
+      "file": "Copperplate-0-bold.png",
+      "family": "Copperplate",
+      "font": "Copperplate-Bold",
+      "size": 30,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "dd43392347df8f4feea8c4db2ab35c35c28877f12049acbcd657eba04ba30f9f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-1-regular",
+      "file": "Copperplate-1-regular.png",
+      "family": "Copperplate",
+      "font": "Copperplate",
+      "size": 34,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "6acd5669dac3ad9e24f2c86efe12d7cd09f05f9288b99a19a0e4e906dd3ce7f7",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.22222222222222227,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.22222222222222227,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-1-bold",
+      "file": "Copperplate-1-bold.png",
+      "family": "Copperplate",
+      "font": "Copperplate-Bold",
+      "size": 34,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "6c9b80274f779ded93dd93e42164272e40749f792472b997677acb888532562f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.27777777777777773,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.27777777777777773,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-2-regular",
+      "file": "Copperplate-2-regular.png",
+      "family": "Copperplate",
+      "font": "Copperplate",
+      "size": 38,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "38c81ecb666d1b4b1946c58b082b7eff1705a655132e7339b259ec86117ad2a0",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-2-bold",
+      "file": "Copperplate-2-bold.png",
+      "family": "Copperplate",
+      "font": "Copperplate-Bold",
+      "size": 38,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "124f3a601495cbcfb7d1e0303c24b26c35c1f37a88408a5286046c89c13aa12b",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-3-regular",
+      "file": "Copperplate-3-regular.png",
+      "family": "Copperplate",
+      "font": "Copperplate",
+      "size": 42,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "ea8ecbba7aecca577bc7ea64f42bf985f7bef38ae13d9e1663bcede9995eb13a",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.17391304347826084,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.17391304347826084,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-3-bold",
+      "file": "Copperplate-3-bold.png",
+      "family": "Copperplate",
+      "font": "Copperplate-Bold",
+      "size": 42,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "3f48224f47783fb9cd664e97cf31d945eafdc6fe83b874aaedb4dbbf249c526f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.27272727272727265,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.27272727272727265,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-4-regular",
+      "file": "Copperplate-4-regular.png",
+      "family": "Copperplate",
+      "font": "Copperplate",
+      "size": 46,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "25248e78de892dd55011d6fdc9852da666f913f2790ad18858ba98f604c90dd9",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Copperplate-4-bold",
+      "file": "Copperplate-4-bold.png",
+      "family": "Copperplate",
+      "font": "Copperplate-Bold",
+      "size": 46,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "35d8b81ee95b5e8225ca81fad1315112aecc31ebaf657df722eedab31f30fe5d",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.24000000000000005,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.24000000000000005,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Didot-0-regular",
+      "file": "Didot-0-regular.png",
+      "family": "Didot",
+      "font": "Didot",
+      "size": 30,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "7dee7d4499a37d5d99d61b6e087500669013dda8b368a9a6f9fb453e668cd92d",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Didot-0-bold",
+      "file": "Didot-0-bold.png",
+      "family": "Didot",
+      "font": "Didot-Bold",
+      "size": 30,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "2fdcf5a682eb6e67f435bf2b18b23fa47b69b6e34cee0279012a0b90a900fb96",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19047619047619047,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19047619047619047,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Didot-1-regular",
+      "file": "Didot-1-regular.png",
+      "family": "Didot",
+      "font": "Didot",
+      "size": 34,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "db9516eb1f3392d8f132b582bee1525097a8d7e7eb6e488a8eeacdef0a32ae3a",
+      "guard": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Didot-1-bold",
+      "file": "Didot-1-bold.png",
+      "family": "Didot",
+      "font": "Didot-Bold",
+      "size": 34,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "b51a8f9bee2539f2d808eb3d1b5b2746b2478008709cf9eee29181da1b8d4aa5",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.20833333333333331,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Didot-2-regular",
+      "file": "Didot-2-regular.png",
+      "family": "Didot",
+      "font": "Didot",
+      "size": 38,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "02d23555a249205b2acefa25020bae514353cfd0f572640cebc77c9355befc43",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.11111111111111115,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.11111111111111115,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Didot-2-bold",
+      "file": "Didot-2-bold.png",
+      "family": "Didot",
+      "font": "Didot-Bold",
+      "size": 38,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "029079f261fa77327931fbbb3f92e47284da6ff02fc457b09db5cfbb7a750f0d",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.18518518518518515,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Didot-3-regular",
+      "file": "Didot-3-regular.png",
+      "family": "Didot",
+      "font": "Didot",
+      "size": 42,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "0012d0af23b538b2e0a64e443626cfc8d87fbf27e23536333153ded7b7047681",
+      "guard": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Didot-3-bold",
+      "file": "Didot-3-bold.png",
+      "family": "Didot",
+      "font": "Didot-Bold",
+      "size": 42,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "df98d31ed1efebe0ad6d9f85e69e770761c0b6add56e282dde21beba205b0898",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.1935483870967742,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.1935483870967742,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Didot-4-regular",
+      "file": "Didot-4-regular.png",
+      "family": "Didot",
+      "font": "Didot",
+      "size": 46,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "4c4d4a4536076d67960fd6cdd0ffa49bda46f3b7b7b8ef88bca54d3e65a25a70",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Didot-4-bold",
+      "file": "Didot-4-bold.png",
+      "family": "Didot",
+      "font": "Didot-Bold",
+      "size": 46,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "097b5c4e17ea4fe070bbbb7c3d86eed52616702539f916c2f57affb448d832a4",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2058823529411765,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2058823529411765,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Futura-0-regular",
+      "file": "Futura-0-regular.png",
+      "family": "Futura",
+      "font": "Futura-Medium",
+      "size": 30,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "a6a4dfde33f0691caf591642d2478fc03213fe603a7e1ee3dea28c9f34658a6f",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13043478260869562,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Futura-0-bold",
+      "file": "Futura-0-bold.png",
+      "family": "Futura",
+      "font": "Futura-Bold",
+      "size": 30,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "d8aa0c81c8967d9f238f209b70d97ad0e0418d53ab4e9bad20befc01460e0c92",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.26086956521739124,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.26086956521739124,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Futura-1-regular",
+      "file": "Futura-1-regular.png",
+      "family": "Futura",
+      "font": "Futura-Medium",
+      "size": 34,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "138b41dbefc7d6f81cbc28de31551ac35d9824aaeb0d5b3653d5c7677e091e6b",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15384615384615383,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15384615384615383,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Futura-1-bold",
+      "file": "Futura-1-bold.png",
+      "family": "Futura",
+      "font": "Futura-Bold",
+      "size": 34,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "d8178867018483cb51f66c93274b2bd28cdfa70af3afadee6af38409c3dacc73",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2307692307692308,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Futura-2-regular",
+      "file": "Futura-2-regular.png",
+      "family": "Futura",
+      "font": "Futura-Medium",
+      "size": 38,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "3bf67a0abf9e6864363a2c7590f290a5921d691f0a8b20f322c9491c549dea07",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.17241379310344834,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.17241379310344834,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Futura-2-bold",
+      "file": "Futura-2-bold.png",
+      "family": "Futura",
+      "font": "Futura-Bold",
+      "size": 38,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "bb97032a0da53854eb39b716ab7e70ee2f3b727a953e6bde6f0cd2acc7afb007",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Futura-3-regular",
+      "file": "Futura-3-regular.png",
+      "family": "Futura",
+      "font": "Futura-Medium",
+      "size": 42,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "30c73ac9028aec2351b826cae704d934ae6c306779e73dba15aae2a8c422a6f7",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15625,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15625,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Futura-3-bold",
+      "file": "Futura-3-bold.png",
+      "family": "Futura",
+      "font": "Futura-Bold",
+      "size": 42,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "088bf8b92e4ba53b9b57eb59be8562f6b64397668408550b73887457fcdd17e8",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.29032258064516137,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Futura-4-regular",
+      "file": "Futura-4-regular.png",
+      "family": "Futura",
+      "font": "Futura-Medium",
+      "size": 46,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "3481910fe2c37c808cacf369058260a9efb164628ca042290782e41c79f844c6",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14285714285714282,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Futura-4-bold",
+      "file": "Futura-4-bold.png",
+      "family": "Futura",
+      "font": "Futura-Bold",
+      "size": 46,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "41f34d4bb8d002ea923812c3da28507f2835fbef5e6346da6a777e196aad38be",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2571428571428571,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-0-regular",
+      "file": "Helvetica-Neue-0-regular.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue",
+      "size": 30,
+      "layout": 0,
+      "headingBold": false,
+      "sha256": "d26f1247f91f2e2d0e4068c95d79bcb7bbf47616f6d41b212336cc219cc46087",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13636363636363633,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-0-bold",
+      "file": "Helvetica-Neue-0-bold.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue-Bold",
+      "size": 30,
+      "layout": 0,
+      "headingBold": true,
+      "sha256": "b4cccefb5947b14c54c58240fbe3bfe4e1a0c8aa862814e2b68b6935075e8ebe",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.22727272727272724,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-1-regular",
+      "file": "Helvetica-Neue-1-regular.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue",
+      "size": 34,
+      "layout": 1,
+      "headingBold": false,
+      "sha256": "c1cc6c6012d00fb31496cf2e9f06882209b92572c916bc8034a7bc5a31683152",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-1-bold",
+      "file": "Helvetica-Neue-1-bold.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue-Bold",
+      "size": 34,
+      "layout": 1,
+      "headingBold": true,
+      "sha256": "ca414ec4817d4caeb731a0f2356cffdac97998dc287482da919c7669e96489d8",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-2-regular",
+      "file": "Helvetica-Neue-2-regular.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue",
+      "size": 38,
+      "layout": 2,
+      "headingBold": false,
+      "sha256": "741447b51b45b754cdbdca517be28bf550bd53f9a2b2cc5d7d97dfbe57644942",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.14814814814814814,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-2-bold",
+      "file": "Helvetica-Neue-2-bold.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue-Bold",
+      "size": 38,
+      "layout": 2,
+      "headingBold": true,
+      "sha256": "512d2ed4ab9645c59d422035cacfd2e631da6a149b83e6e6ed5ed9971ba4c772",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2222222222222223,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2222222222222223,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-3-regular",
+      "file": "Helvetica-Neue-3-regular.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue",
+      "size": 42,
+      "layout": 3,
+      "headingBold": false,
+      "sha256": "22ad0072e12789ca0a24e53850de0a81041e59c072a1fd486aed1baa278d9c03",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.13333333333333333,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-3-bold",
+      "file": "Helvetica-Neue-3-bold.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue-Bold",
+      "size": 42,
+      "layout": 3,
+      "headingBold": true,
+      "sha256": "41ef2a6eae578d904d6122fc308f9c305564db2ea0c96289c58b0c2da5bdd85f",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-4-regular",
+      "file": "Helvetica-Neue-4-regular.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue",
+      "size": 46,
+      "layout": 4,
+      "headingBold": false,
+      "sha256": "7882113e79ed6eb1761bcc9af596c7767b39acd714ee2a247be6feb203c3c6e7",
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Helvetica-Neue-4-bold",
+      "file": "Helvetica-Neue-4-bold.png",
+      "family": "Helvetica-Neue",
+      "font": "Helvetica-Neue-Bold",
+      "size": 46,
+      "layout": 4,
+      "headingBold": true,
+      "sha256": "2e2614d87f7587963e87b624ae38c473a8fda9f8f6a892335ff9c5ad84126bc2",
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.2058823529411765,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.2058823529411765,
+        "reason": "supported"
+      }
+    }
+  ]
+}
