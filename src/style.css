@@ -33,7 +33,7 @@ fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
 .grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 16px; }
 label { display: block; color: #39393e; font-size: 13px; font-weight: 550; line-height: 1.4; }
 label small { display: block; color: var(--muted); font-size: 12px; font-weight: 400; margin-top: 6px; }
-input:not([type="file"]):not([type="checkbox"]) { display: block; width: 100%; min-width: 0; height: 46px; border: 1px solid #c9c9d0; border-radius: 9px; padding: 0 12px; margin-top: 7px; background: #fff; font: inherit; font-size: 16px; font-weight: 400; color: #1d1d1f; transition: border-color .15s; }
+input:not([type="file"]):not([type="checkbox"]):not([type="radio"]) { display: block; width: 100%; min-width: 0; height: 46px; border: 1px solid #c9c9d0; border-radius: 9px; padding: 0 12px; margin-top: 7px; background: #fff; font: inherit; font-size: 16px; font-weight: 400; color: #1d1d1f; transition: border-color .15s; }
 input::placeholder { color: var(--muted); opacity: 1; }
 input:hover { border-color: #8b8b93; }
 input:focus-visible, button:focus-visible, summary:focus-visible, a:focus-visible, .upload:focus-within { outline: 3px solid #0071e3; outline-offset: 3px; }
@@ -102,3 +102,56 @@ footer { display: flex; justify-content: space-between; gap: 24px; padding: 28px
 @media (max-width: 900px) { .shell { padding: 0 24px; } .workbench { grid-template-columns: 1fr; } .hero { padding: 36px 0 28px; } .results-panel { min-height: 0; } footer { flex-direction: column; gap: 8px; } }
 @media (max-width: 500px) { .shell { padding: 0 16px; } .top { height: 64px; } .mark { font-size: 17px; } .top-right { gap: 0; } .local-status { display: none; } .panel { padding: 22px 18px; border-radius: 16px; } .grid { grid-template-columns: 1fr; gap: 16px; } .intro { font-size: 16px; } .hero { padding-top: 32px; } .result-card { padding: 16px; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Pile triage shares semantic colors across buttons, wires, and lists. */
+:root { --surface: #fff; --ink: #1d1d1f; --passed: #21743c; --failed: #aa3029; --review: #8a5100; --soft: #f5f5f7; }
+.workbench { grid-template-columns: 1fr; }
+.input-panel .grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.north-star { text-align: center; padding: 24px 0; }
+.north-star > strong { display: block; font-size: clamp(80px,12vw,120px); line-height: 1; letter-spacing: -.06em; font-variant-numeric: tabular-nums; }
+.north-star p { color: var(--muted); }
+.pile-map { position: relative; isolation: isolate; }
+.pile-buttons { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.passed { --pile: var(--passed); } .failed { --pile: var(--failed); } .review { --pile: var(--review); }
+.pile-button { margin: 0; justify-content: center; background: var(--surface); color: var(--pile); border: 2px solid var(--pile); position: relative; z-index: 2; }
+.pile-button:hover, .pile-button[aria-pressed="true"] { background: color-mix(in srgb,var(--pile) 12%,var(--surface)); }
+.pile-button[aria-pressed="true"] { box-shadow: inset 0 -4px var(--pile); }
+.pile-button.large { min-height: 80px; font-size: 20px; }
+.triage-flow { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; padding: 60px 0 20px; }
+.flow-step { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; align-self: start; }
+.flow-step > strong, .flow-step > span { display: block; font-size: 13px; margin-bottom: 12px; }
+.flow-step progress { width: 100%; accent-color: var(--blue); height: 8px; }
+.small-piles { grid-template-columns: 1fr; gap: 6px; margin-top: 12px; }
+.pile-button.small { min-height: 44px; padding: 6px; font-size: 12px; }
+.pile-wires { position: absolute; inset: 0; pointer-events: none; z-index: -1; overflow: visible; }
+.pile-wires path { fill: none; stroke: var(--pile); stroke-width: 2; opacity: .5; }
+.pile-list { border-top: 4px solid var(--pile); padding-top: 12px; }
+.triage-row { text-align: left; background: var(--soft); color: var(--ink); justify-content: start; }
+.triage-row:hover { background: color-mix(in srgb,var(--pile) 10%,var(--surface)); }
+.decision-dialog { width: min(680px,calc(100% - 32px)); max-height: 90dvh; overflow: auto; border: 1px solid var(--line); border-radius: 18px; padding: 24px; background: var(--surface); color: var(--ink); }
+.decision-dialog::backdrop { background: #0008; }
+.decision-dialog img { width: 100%; max-height: 280px; object-fit: contain; background: white; }
+.comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; overflow-wrap: anywhere; padding: 20px 0; }
+textarea { display: block; width: 100%; min-height: 80px; font: inherit; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+textarea:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.reason-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.reason-chips label { border: 1px solid var(--line); border-radius: 20px; padding: 12px; }
+.reason-chips label:has(:checked) { border-color: var(--blue); background: var(--soft); }
+.decision-actions { display: flex; gap: 10px; }
+@media (max-width: 600px) {
+ .pile-buttons { gap: 5px; } .pile-button.large { font-size: 13px; padding: 8px 4px; }
+ .triage-flow { gap: 4px; padding-top: 40px; } .flow-step { padding: 7px 3px; }
+ .flow-step > strong { font-size: 11px; min-height: 42px; } .flow-step > span { font-size: 11px; }
+ .pile-button.small { font-size: 10px; padding: 4px 1px; overflow-wrap: anywhere; }
+ .input-panel .grid { grid-template-columns: 1fr; } .decision-actions { flex-wrap: wrap; }
+ .decision-dialog { padding: 18px; }
+}
+@media (prefers-color-scheme: dark) {
+ :root { color-scheme: dark; color: #eeeef1; background: #17171a; --ink: #eeeef1; --surface: #222226; --soft: #303036; --muted: #b1b1bc; --line: #50505b; --blue: #81baff; --passed: #7bd498; --failed: #ff9690; --review: #efc36c; }
+ .panel, input:not([type="file"]):not([type="checkbox"]):not([type="radio"]), .upload { background: var(--surface); color: var(--ink); border-color: var(--line); }
+ label, .file-list, .status.empty strong { color: var(--ink); }
+ .status, .status.done, .status.error, .secondary, .step, .upload-icon, .empty-icon { background: var(--soft); color: var(--ink); border-color: var(--line); }
+ .secondary:hover, .upload:hover { background: #3a3a43; }
+}
+
+.reason-chips input[type="radio"] { width: 16px; height: 16px; accent-color: var(--blue); margin: 0 6px 0 0; }

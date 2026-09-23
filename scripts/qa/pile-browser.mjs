@@ -1,0 +1,52 @@
+// Set PLAYWRIGHT_MODULE to an installed playwright-core module when not in node_modules.
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright-core');
+import assert from 'node:assert/strict';
+const browser = await chromium.launch({headless:true});
+const page = await browser.newPage({viewport:{width:1280,height:900}});
+const errors = []; page.on('pageerror',e=>errors.push(e.message));
+await page.goto(process.env.PILE_URL || 'http://127.0.0.1:5184');
+await page.evaluate(async () => {
+  const {createTriage} = await import('/src/triage.js');
+  document.querySelector('#results').remove();
+  const root = document.createElement('div'); root.id='fixture'; document.querySelector('.results-panel').append(root);
+  const ui = createTriage(root); ui.start(4);
+  for (const [name,status] of [['pass.png','match'],['fail.png','mismatch'],['review.png','review']]) {
+    ui.progress(1);ui.progress(2);
+    const node=ui.add({name,confidence:90,findings:[{field:'ABV',status,found:'40%',expected:'45%',detail:'Compare alcohol content.'}],imageUrl:'/samples/old-tom.png'});
+    node.dataset.timings='{"total":1}';node.dataset.appearance='{"status":"review"}';
+  }
+  ui.add({name:'error.png',error:'Unreadable image',findings:[]});
+});
+const root=page.locator('#fixture');
+assert.equal(await root.locator('.north-star strong').textContent(),'2');
+await root.getByRole('button',{name:'review.png · New',exact:true}).click();
+await page.getByRole('dialog').getByRole('button',{name:'Later',exact:true}).click();
+assert.match(await root.locator('.triage-row:not([hidden])').first().textContent(),/Later/);
+await root.getByRole('button',{name:'review.png · Later',exact:true}).click();
+assert.equal(await page.getByRole('dialog').getByRole('button',{name:'Send back',exact:true}).isDisabled(),true);
+await page.getByRole('dialog').getByLabel('Wrong value', {exact:true}).check();
+await page.getByRole('dialog').getByRole('button',{name:'Send back',exact:true}).click();
+assert.equal(await root.locator('.north-star strong').textContent(),'1');
+await root.locator('.large.failed').click();
+assert.equal(await root.locator('.small.failed').getAttribute('aria-pressed'),'true');
+assert.match(await root.locator('.triage-row:not([hidden])').last().textContent(),/Person/);
+await root.getByRole('button',{name:'Send back all 1',exact:true}).click();
+await page.getByRole('dialog').getByLabel('Warning issue', {exact:true}).check();
+await page.getByRole('dialog').getByRole('button',{name:'Send back all 1',exact:true}).click();
+await root.locator('.small.passed').click();
+await root.getByRole('button',{name:'Approve all 1',exact:true}).click();
+await page.getByRole('dialog').getByRole('button',{name:'Approve all 1',exact:true}).click();
+assert.match(await root.locator('.north-star p').textContent(),/0 sorted by machine · 3 by you/);
+await root.getByLabel('Search this pile').fill('no match');
+assert.equal(await root.locator('.empty-pile').textContent(),'No matching labels.');
+await root.getByLabel('Search this pile').fill('');
+await root.locator('.triage-row:not([hidden])').focus(); await page.keyboard.press('Enter');
+assert.equal(await page.getByRole('dialog').isVisible(),true); await page.keyboard.press('Escape');
+assert.equal(await root.locator('.triage-row:not([hidden])').evaluate(el=>el===document.activeElement),true);
+assert.equal(await root.locator('[data-timings][data-appearance]').count(),3);
+await page.setViewportSize({width:400,height:850}); await page.emulateMedia({colorScheme:'dark',reducedMotion:'reduce'});
+await page.screenshot({path:'evidence/pile-triage-400-dark.png',fullPage:true});
+assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+assert.deepEqual(errors,[]);
+console.log('PASS: pile selection, Later, reason gate, individual and bulk decisions, counters, search, keyboard, instrumentation, 400px dark layout.');
+await browser.close();

@@ -2,8 +2,8 @@ import { timeStage, finishTiming } from './timing.js';
 import { reviewAppearance } from "./appearance.js";
 import { readLayout, comparisonText } from "./layout.js";
 import { createWorker } from "tesseract.js";
-import { reviewSummary } from "./summary.js";
-import { reviewLabel, REQUIRED_WARNING } from "./review.js";
+import { createTriage } from "./triage.js";
+import { reviewLabel } from "./review.js";
 import { validateFiles, parseManifest, buildJobs } from "./batch.js";
 
 const form = document.querySelector("#review-form");
@@ -13,6 +13,7 @@ const manifestInput = document.querySelector("#manifest");
 const fileList = document.querySelector("#file-list");
 const status = document.querySelector("#status");
 const results = document.querySelector("#results");
+const triage = createTriage(results);
 const sampleButton = document.querySelector("#sample-button");
 const stopButton = document.querySelector("#stop-button");
 const engineStatus = document.querySelector("#engine-status");
@@ -29,16 +30,8 @@ function setStatus(message, kind = "") {
   status.textContent = message;
 }
 
-function addText(parent, tag, value, className = "") {
-  const element = document.createElement(tag);
-  element.textContent = value;
-  if (className) element.className = className;
-  parent.append(element);
-  return element;
-}
-
 function clearResults() {
-  results.replaceChildren();
+  triage.clear();
   previewUrls.forEach((url) => URL.revokeObjectURL(url));
   previewUrls = [];
 }
@@ -128,101 +121,9 @@ function getWorker() {
 getWorker().catch(() => {});
 
 function renderResult(file, text, findings, seconds, confidence) {
-  if (confidence < 70)
-    findings.push({
-      field: "Image legibility",
-      status: "review",
-      found: "Low OCR confidence",
-      detail:
-        "Compare every extracted value with the artwork or request a clearer image.",
-    });
-  const card = addText(results, "article", "", "result-card");
-  const head = addText(card, "div", "", "result-head");
-  addText(head, "h3", file.name);
-  addText(head, "span", `${seconds.toFixed(1)} s to review`, "time");
-  const summary = addText(card, "p", "", "summary attention");
-  const updateSummary = () => {
-    const { pending: count } = reviewSummary(findings);
-    summary.textContent = count
-      ? `${count} check${count === 1 ? " needs" : "s need"} attention`
-      : "Checks complete. Ready for your final decision.";
-    summary.className = `summary ${count ? "attention" : "clear"}`;
-  };
-  updateSummary();
-  if (confidence < 70)
-    addText(
-      card,
-      "p",
-      "Low OCR confidence. Inspect all values on the original artwork, including those marked Match.",
-      "status error",
-    );
-  const artwork = addText(card, "details", "", "artwork");
-  addText(artwork, "summary", "View original label artwork");
   const imageUrl = URL.createObjectURL(file);
   previewUrls.push(imageUrl);
-  const link = addText(artwork, "a", "");
-  link.href = imageUrl;
-  link.target = "_blank";
-  link.rel = "noopener";
-  const image = addText(link, "img", "");
-  image.src = imageUrl;
-  image.loading = "lazy";
-  image.alt = `Original label: ${file.name}. Open at full size.`;
-  addText(artwork, "small", "Select the image to open it at full size.");
-
-  for (const finding of findings) {
-    const row = addText(card, "div", "", "finding");
-    const upper = addText(row, "div", "", "finding-upper");
-    addText(upper, "strong", finding.field);
-    const badge = addText(
-      upper,
-      "span",
-      finding.status === "skip" ? "N/A" : finding.status.toUpperCase(),
-      `badge ${finding.status}`,
-    );
-    if (finding.expected && finding.field !== "Government warning")
-      addText(row, "small", `Application: ${finding.expected}`, "expected");
-    const found = addText(row, "span", finding.found, "found");
-    addText(row, "small", finding.detail);
-    if (finding.crop) {
-      const cropDetails = addText(row, "details", "");
-      addText(cropDetails, "summary", "Inspect analyzed heading crop");
-      const cropImage = addText(cropDetails, "img", "");
-      cropImage.src = finding.crop;
-      cropImage.alt = "Warning heading sent for automated weight verification";
-      cropImage.style.maxWidth = "100%";
-    }
-    if (finding.field === "Warning appearance") {
-      const label = addText(row, "label", "", "check-label");
-      const checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      label.append(
-        checkbox,
-        document.createTextNode(
-          "I checked the original artwork and confirm the warning appearance.",
-        ),
-      );
-      checkbox.addEventListener("change", () => {
-        // Human observations are useful, but cannot establish automated compliance.
-        finding.humanConfirmed = checkbox.checked;
-        found.textContent = checkbox.checked
-          ? `${finding.found}. Reviewer also confirmed appearance; automated status is unchanged.`
-          : finding.found;
-        updateSummary();
-      });
-    }
-  }
-  const disclosure = addText(card, "details", "");
-  addText(
-    disclosure,
-    "summary",
-    "Inspect extracted text and reference warning",
-  );
-  addText(disclosure, "h4", "Extracted from this image");
-  addText(disclosure, "pre", text || "No text extracted. Try a clearer image.");
-  addText(disclosure, "h4", "Required warning");
-  addText(disclosure, "p", REQUIRED_WARNING, "reference-warning");
-  return card;
+  return triage.add({name:file.name, text, findings, seconds, confidence, imageUrl});
 }
 
 async function prepareImage(file) {
@@ -297,6 +198,8 @@ form.addEventListener("submit", async (event) => {
       throw new Error("Application CSV must be under 1 MB.");
     const applications = manifest ? parseManifest(await manifest.text()) : null;
     const jobs = buildJobs(files, application, applications);
+    triage.start(jobs.length);
+    results.scrollIntoView({block:'start'});
     const appearanceCache = new Map();
     stopButton.hidden = false;
     stopButton.disabled = false;
@@ -316,6 +219,7 @@ form.addEventListener("submit", async (event) => {
       try {
         const canvas = await timeStage(timings, "prepare", () => prepareImage(file));
         const { data } = await timeStage(timings, "ocr", () => worker.recognize(canvas, {}, { text: true, blocks: true }));
+        triage.progress(1);
         const comparisonStarted = performance.now();
         const layout = readLayout(data.blocks);
         const text = comparisonText(data, layout);
@@ -323,6 +227,7 @@ form.addEventListener("submit", async (event) => {
         timings.comparison = performance.now() - comparisonStarted;
         setStatus(`Checking warning appearance: ${file.name}`, "busy");
         findings[findings.findIndex(item => item.field === "Warning appearance")] = await timeStage(timings, "appearance", () => reviewAppearance(canvas, data.blocks, appearanceCache));
+        triage.progress(2);
         const appearance = findings.find(item => item.field === "Warning appearance");
         const renderStarted = performance.now();
         resultCard = renderResult(
@@ -338,16 +243,8 @@ form.addEventListener("submit", async (event) => {
         firstResultSeconds ??= (performance.now() - clickedAt) / 1000;
       } catch (error) {
         failed++;
-        const card = addText(results, "article", "", "result-card");
-        resultCard = card;
-        card.dataset.appearance = JSON.stringify({status:"failed",reason:"processing"});
-        addText(card, "h3", file.name);
-        addText(
-          card,
-          "p",
-          `Could not read this image: ${error.message || String(error)}. Try a clear, valid image.`,
-          "summary attention",
-        );
+        resultCard = triage.add({name:file.name, findings:[], error:`Could not read this image: ${error.message || String(error)}. Try a clear, valid image.`});
+        resultCard.dataset.appearance = JSON.stringify({status:"failed",reason:"processing"});
       } finally {
         if (resultCard) resultCard.dataset.timings = JSON.stringify({...finishTiming(timings,clickedAt,started,performance.now()),visibility,visibilityEnd:document.visibilityState});
       }
