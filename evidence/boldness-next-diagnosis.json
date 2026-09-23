@@ -1,0 +1,167 @@
+{
+  "scope": "Diagnosis only after partial release; no thresholds or runtime changed.",
+  "results": [
+    {
+      "id": "Avenir-Next-1-bold",
+      "reason": "missing-heading",
+      "ratio": null,
+      "headingWords": [
+        {
+          "text": "GOVERNMENT",
+          "confidence": 96,
+          "bbox": {
+            "x0": 561,
+            "y0": 656,
+            "x1": 792,
+            "y1": 681
+          }
+        },
+        {
+          "text": "WARNING",
+          "confidence": 96,
+          "bbox": {
+            "x0": 800,
+            "y0": 656,
+            "x1": 960,
+            "y1": 681
+          }
+        }
+      ]
+    },
+    {
+      "id": "Baskerville-3-bold",
+      "reason": "missing-heading",
+      "ratio": null,
+      "headingWords": [
+        {
+          "text": "GOVERNMENT",
+          "confidence": 96,
+          "bbox": {
+            "x0": 502,
+            "y0": 673,
+            "x1": 807,
+            "y1": 701
+          }
+        },
+        {
+          "text": "WARNING",
+          "confidence": 96,
+          "bbox": {
+            "x0": 818,
+            "y0": 672,
+            "x1": 1020,
+            "y1": 701
+          }
+        }
+      ]
+    },
+    {
+      "id": "Optima-3-bold",
+      "reason": "missing-heading",
+      "ratio": null,
+      "headingWords": [
+        {
+          "text": "GOVERNMENT",
+          "confidence": 95,
+          "bbox": {
+            "x0": 502,
+            "y0": 671,
+            "x1": 774,
+            "y1": 701
+          }
+        },
+        {
+          "text": "WARNING",
+          "confidence": 95,
+          "bbox": {
+            "x0": 787,
+            "y0": 671,
+            "x1": 980,
+            "y1": 701
+          }
+        }
+      ]
+    },
+    {
+      "id": "Tahoma-3-bold",
+      "reason": "missing-heading",
+      "ratio": null,
+      "headingWords": [
+        {
+          "text": "GOVERNMENT",
+          "confidence": 96,
+          "bbox": {
+            "x0": 501,
+            "y0": 669,
+            "x1": 790,
+            "y1": 701
+          }
+        },
+        {
+          "text": "WARNING",
+          "confidence": 96,
+          "bbox": {
+            "x0": 803,
+            "y0": 669,
+            "x1": 1007,
+            "y1": 701
+          }
+        }
+      ]
+    },
+    {
+      "id": "AvantGarde-3-bold",
+      "reason": "stroke-evidence",
+      "ratio": 0.16666666666666666,
+      "headingWords": [
+        {
+          "text": "GOVERNMENT",
+          "confidence": 96,
+          "bbox": {
+            "x0": 501,
+            "y0": 669,
+            "x1": 772,
+            "y1": 701
+          }
+        },
+        {
+          "text": "WARNING:",
+          "confidence": 96,
+          "bbox": {
+            "x0": 783,
+            "y0": 669,
+            "x1": 983,
+            "y1": 701
+          }
+        }
+      ]
+    },
+    {
+      "id": "Bookman-3-bold",
+      "reason": "missing-heading",
+      "ratio": null,
+      "headingWords": [
+        {
+          "text": "GOVERNMENT",
+          "confidence": 96,
+          "bbox": {
+            "x0": 501,
+            "y0": 672,
+            "x1": 806,
+            "y1": 701
+          }
+        },
+        {
+          "text": "WARNING",
+          "confidence": 96,
+          "bbox": {
+            "x0": 819,
+            "y0": 672,
+            "x1": 1022,
+            "y1": 701
+          }
+        }
+      ]
+    }
+  ]
+}

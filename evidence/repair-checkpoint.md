@@ -1,4 +1,6 @@
-# Repair checkpoint: release blocked
+# Repair checkpoint: original gate decision
+
+> Subsequent user instruction authorized deploying this partial repair before resolving boldness. Source `c3ebde8` is now live. [Release verification](partial-release-verification.json) records the deployment and remaining limits. The original gate analysis below remains unchanged.
 
 The candidate contains the semantic, batch, and bounded appearance repairs. It is **not deployed**. The existing production bundle remains `index-D2xOPPSe.js`.
 

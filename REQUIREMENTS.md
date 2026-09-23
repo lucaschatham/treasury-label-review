@@ -1,6 +1,6 @@
 # Assignment benchmark and execution checklist
 
-> **Current repair candidate, not deployed:** semantic and batch repairs pass their targeted checks, but boldness fails the release gate (34/40 local guard passes versus at least 38/40 required final Matches). Historical production evidence below does not validate this candidate. See [repair checkpoint](evidence/repair-checkpoint.md).
+> **Current partial release:** repair source `c3ebde8` is deployed with explicit user authorization to defer the boldness gate. Semantic and batch fixes are live; boldness remains unresolved at 34/40 local guard passes. See [release verification](evidence/partial-release-verification.json) and [repair checkpoint](evidence/repair-checkpoint.md).
 
 ## Source and objective
 
