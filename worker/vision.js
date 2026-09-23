@@ -21,7 +21,7 @@ export async function inferAppearance(ai, image, deadline=4000) {
       const result=await ai.run(model,{messages:[{role:'user',content:[{type:'text',text:PROMPT},{type:'image_url',image_url:{url:image}}]}],temperature:0,max_completion_tokens:32,chat_template_kwargs:{enable_thinking:false}}, {rejectIfBusy:true});
       return parseAnswer(result);
     } catch { return 'ERROR'; }
-  })).then(answers=>({verdict:answers.every(a=>a==='BOLD')?'BOLD':'UNCERTAIN',reason:answers.includes('ERROR')?'provider':answers.includes('REGULAR')?'weight-not-confirmed':answers.every(a=>a==='BOLD')?'corroborated':'uncertain'}));
+  })).then(answers=>({verdict:answers.every(a=>a==='BOLD')?'BOLD':'UNCERTAIN',reason:answers.includes('ERROR')?'provider':new Set(answers).size>1?'disagreement':answers.includes('REGULAR')?'weight-not-confirmed':answers.every(a=>a==='BOLD')?'corroborated':'uncertain'}));
   try { return await Promise.race([work,new Promise(resolve=>{timer=setTimeout(()=>resolve({verdict:'UNCERTAIN',reason:'timeout'}),deadline);})]); }
   finally {clearTimeout(timer);}
 }

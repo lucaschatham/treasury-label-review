@@ -295,6 +295,7 @@ form.addEventListener("submit", async (event) => {
       throw new Error("Application CSV must be under 1 MB.");
     const applications = manifest ? parseManifest(await manifest.text()) : null;
     const jobs = buildJobs(files, application, applications);
+    const appearanceCache = new Map();
     stopButton.hidden = false;
     stopButton.disabled = false;
     stopButton.textContent = "Stop after current label";
@@ -313,7 +314,7 @@ form.addEventListener("submit", async (event) => {
         const text = comparisonText(data, layout);
         const findings = reviewLabel(text, expected, layout.lines.length ? layout : null);
         setStatus(`Checking warning appearance: ${file.name}`, "busy");
-        findings[findings.findIndex(item => item.field === "Warning appearance")] = await reviewAppearance(canvas, data.blocks);
+        findings[findings.findIndex(item => item.field === "Warning appearance")] = await reviewAppearance(canvas, data.blocks, appearanceCache);
         renderResult(
           file,
           text,

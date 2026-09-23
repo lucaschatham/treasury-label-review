@@ -98,15 +98,15 @@ export function parseManifest(text) {
 export function buildJobs(files, fallback, applications = null) {
   if (!applications) validateApplication(fallback);
   const names = new Set();
-  return files.map((file) => {
-    if (applications && names.has(file.name))
-      throw new Error(
-        `Duplicate image filename: ${file.name}. Rename duplicate files for CSV matching.`,
-      );
+  for (const file of files) {
+    if (applications && names.has(file.name)) throw new Error(`Duplicate image filename: ${file.name}. Rename duplicate files for CSV matching.`);
     names.add(file.name);
-    const application = applications ? applications.get(file.name) : fallback;
-    if (!application)
-      throw new Error(`No application CSV row for ${file.name}.`);
-    return { file, application: { ...application } };
-  });
+  }
+  if (applications) {
+    const missingImages = [...applications.keys()].filter(name => !names.has(name));
+    const missingRows = [...names].filter(name => !applications.has(name));
+    if (missingImages.length || missingRows.length) throw new Error(
+      `Batch does not match. Missing images (${missingImages.length}): ${missingImages.join(", ") || "none"}. Missing CSV rows (${missingRows.length}): ${missingRows.join(", ") || "none"}. Upload missing images or correct the CSV before reviewing.`);
+  }
+  return files.map(file => ({file, application: {...(applications ? applications.get(file.name) : fallback)}}));
 }

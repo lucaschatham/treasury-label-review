@@ -1,5 +1,7 @@
 # Label Review
 
+> **Current repair candidate, not deployed:** semantic and batch repairs pass their targeted checks, but boldness fails the release gate (34/40 local guard passes versus at least 38/40 required final Matches). Historical production evidence below does not validate this candidate. See [repair checkpoint](evidence/repair-checkpoint.md).
+
 [Application](https://label-review-7b3.lucaschatham.com) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md)
 
 A standalone alcohol-label review prototype. Browser OCR compares artwork with application fields. A cropped government-warning heading receives conservative automated boldness verification. Uncertain findings remain for a person to inspect; this app does not grant regulatory approval.

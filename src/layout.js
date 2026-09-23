@@ -26,10 +26,15 @@ export function readLayout(blocks = []) {
   const maximumHeight = Math.max(0, ...ordered.map(height));
   const prominent = ordered.filter(line => height(line) >= maximumHeight * 0.85);
   const anchor = prominent[0];
+  const role = /^(?:(?:produced|bottled|distilled|brewed|imported|distributed|made|marketed|crafted|vinted|cellared|blended)\b.*\b(?:by|for)\b|producer\s*:)/i;
+  const anchorIndex=ordered.indexOf(anchor);
+  const before=ordered[anchorIndex-1];
+  const roleOwned=anchor && (role.test(anchor.text) || (before && role.test(before.text) && anchor.bbox.y0-before.bbox.y1<=1.5*height(anchor) && Math.abs(anchor.bbox.x0-before.bbox.x0)<=height(anchor)));
   let brandText = '';
-  if (anchor && !prominent.slice(1).some(line => overlap(anchor, line) > 0)) {
+  if (anchor && !roleOwned && !prominent.slice(1).some(line => overlap(anchor, line) > 0)) {
     const brand = [anchor];
     for (const line of prominent.slice(1)) {
+      if (role.test(line.text)) break;
       const previous = brand.at(-1);
       const gap = line.bbox.y0 - previous.bbox.y1;
       const aligned = Math.abs(line.bbox.x0 - anchor.bbox.x0) <= maximumHeight;

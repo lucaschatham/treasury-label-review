@@ -31,3 +31,10 @@ test('partial geometry never discards plain OCR evidence', () => {
  assert.equal(comparisonText({text:'France\nProduced in'}, {text:'Produced in France'}),'Produced in France');
  assert.equal(comparisonText({text:null},{text:''}),'');
 });
+test('a prominent company name below a production role is not independent brand evidence',()=>{
+ const result=readLayout(blocks([line('REAL BRAND',50,10,250,30),line('Produced by',50,100,200,120),line('OTHER COMPANY',50,125,600,175)]));
+ assert.equal(result.brandText,'');
+});
+test('role declarations do not extend an otherwise complete prominent brand',()=>{
+ assert.equal(readLayout(blocks([line('REAL BRAND',50,10,250,50),line('Bottled by Another Company',50,65,650,105)])).brandText,'REAL BRAND');
+});

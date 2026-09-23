@@ -139,7 +139,7 @@ test("warning wording never implies typography has passed", () => {
 });
 
 test("checks producer and imported country when provided", () => {
-  const findings = reviewLabel("Bottled by Example Co, Paris, France", {
+  const findings = reviewLabel("Bottled by Example Co, Paris, France\nProduct of France", {
     ...application,
     producer: "Example Co, Paris, France",
     imported: true,
@@ -263,5 +263,57 @@ test('blank or absent OCR text yields findings without accidental exceptions', (
   const result = reviewLabel(text, application);
   assert.equal(result.length, 8);
   assert.ok(result.every(item => item.status === 'review' || item.status === 'skip'));
+ }
+});
+
+test('field declarations cannot borrow matching words from unrelated roles', () => {
+ const app={...application,brand:'EXAMPLE',type:'Bourbon',producer:'Bourbon Street Distilling, Paris, France',imported:true,country:'France'};
+ const text='EXAMPLE\nLondon Dry Gin\n45% ABV\n750 mL\nProduct of Poland\nImported by Bourbon Street Distilling, Paris, France';
+ const result=reviewLabel(text,app);
+ for(const name of ['Class / type','Producer / address','Country of origin']) assert.notEqual(result.find(x=>x.field===name).status,'match',name);
+ assert.equal(result.find(x=>x.field==='Country of origin').status,'mismatch');
+});
+test('origin requires an explicit unambiguous declaration', () => {
+ const app={...application,imported:true,country:'France'};
+ const check=text=>reviewLabel(text,app).find(x=>x.field==='Country of origin').status;
+ assert.equal(check('Bottled by Example Co, Paris, France'),'review');
+ assert.equal(check('Product of France\nImported by Example, Boston, US'),'match');
+ assert.equal(check('Made in France\nProduct of Poland'),'review');
+ assert.equal(check('Country of origin:\nFrance'),'match');
+});
+test('class and production values must match complete declarations', () => {
+ const app={...application,type:'Bourbon',producer:'Example Co, Paris, France'};
+ assert.notEqual(reviewLabel('Kentucky Straight Bourbon Whiskey',app)[1].status,'match');
+ assert.equal(reviewLabel('Class/type: Bourbon',app)[1].status,'match');
+ assert.equal(reviewLabel('STONE’S THROW\nKentucky Straight\nBourbon Whiskey',application)[1].status,'match');
+ const producer=text=>reviewLabel(text,app).find(x=>x.field==='Producer / address').status;
+ assert.equal(producer('Bottled by Example Co,\nParis, France'),'match');
+ assert.equal(producer('Marketed by Example Co, Paris, France'),'review');
+ assert.equal(producer('Imported by Example Co, Paris, France'),'review');
+});
+test('percentages require linked alcohol context including wrapped declarations', () => {
+ const check=text=>reviewLabel(text,application).find(x=>x.field==='Alcohol content').status;
+ assert.equal(check('45%\nRECYCLED MATERIAL'),'review');
+ assert.equal(check('45%\nALC./VOL.'),'match');
+ assert.equal(check('ABV:\n45%'),'match');
+ assert.equal(check('45% ABV\n100%\nGRAIN'),'match');
+});
+test('declarations do not bridge separate columns', () => {
+ const line=(text,x0,y0,x1)=>({text,bbox:{x0,y0,x1,y1:y0+20}});
+ const layout={brandText:'STONE’S THROW',lines:[line('ABV:',0,50,60),line('45%',600,80,650),line('Product of',0,110,100),line('France',600,140,700)]};
+ const result=reviewLabel('ABV:\n45%\nProduct of\nFrance',{...application,imported:true,country:'France'},layout);
+ for(const field of ['Alcohol content','Country of origin']) assert.equal(result.find(x=>x.field===field).status,'review');
+});
+test('partial geometry cannot hide a conflicting origin',()=>{
+ const text='Product of France\nMade in Poland';
+ const result=reviewLabel(text,{...application,imported:true,country:'France'},{lines:[{text:'Product of France',bbox:{x0:0,y0:0,x1:200,y1:20}}]});
+ assert.equal(result.find(x=>x.field==='Country of origin').status,'review');
+});
+test('an origin declaration cannot disappear under the domestic checkbox',()=>{
+ assert.equal(reviewLabel('Product of France',{...application,imported:false}).find(x=>x.field==='Country of origin').status,'review');
+});
+test('nonempty explicit declarations preserve adjacent wrapped values',()=>{
+ for(const [text,expected,field] of [['Class: Kentucky Straight\nBourbon Whiskey',{type:'Kentucky Straight Bourbon Whiskey'},'Class / type'],['Product of United\nKingdom',{imported:true,country:'United Kingdom'},'Country of origin']]) {
+  assert.equal(reviewLabel(text,{...application,...expected}).find(x=>x.field===field).status,'match');
  }
 });

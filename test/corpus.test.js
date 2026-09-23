@@ -70,3 +70,16 @@ test("ground truth records actual altered artwork independently of submitted val
     }
   }
 });
+
+import {readFileSync} from 'node:fs';
+test('repair holdout is frozen at 40 paired bold and regular images',()=>{
+ const {labels}=JSON.parse(readFileSync(new URL('../evidence/appearance-holdout-frozen.json',import.meta.url)));
+ assert.equal(labels.length,80);
+ assert.equal(labels.filter(x=>x.headingBold).length,40);
+ assert.equal(new Set(labels.map(x=>x.sha256)).size,80);
+ for(const family of new Set(labels.map(x=>x.family)))for(let layout=0;layout<5;layout++){
+  const pair=labels.filter(x=>x.family===family&&x.layout===layout);
+  assert.equal(pair.length,2);
+  assert.deepEqual(pair.map(x=>x.headingBold).sort(),[false,true]);
+ }
+});

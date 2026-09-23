@@ -1,0 +1,71 @@
+{
+  "treasury": {
+    "url": "https://label-review-7b3.lucaschatham.com/",
+    "status": 200,
+    "scripts": [
+      "/assets/index-D2xOPPSe.js"
+    ],
+    "images": [],
+    "links": [
+      "/samples/applications.csv",
+      "/samples/old-tom.png",
+      "/samples/wrong-abv.png",
+      "/samples/wrong-warning.png"
+    ]
+  },
+  "website": {
+    "url": "https://lucaschatham.com/",
+    "status": 200,
+    "scripts": [
+      "/_next/static/chunks/27jktro2p5rq9.js",
+      "/_next/static/chunks/3rxl-jt3pdxgx.js",
+      "/_next/static/chunks/11oof8oxnxiv9.js",
+      "/_next/static/chunks/turbopack-05uws8dmge3pw.js",
+      "/_next/static/chunks/06gze6088xgb7.js",
+      "/_next/static/chunks/14mrh2-p_w84d.js",
+      "/_next/static/chunks/0lgiim99q9sl7.js",
+      "/_next/static/chunks/0cz1d0mv5g_q7.js",
+      "/_next/static/chunks/261y1hxfsqgcm.js"
+    ],
+    "images": [
+      "/images/lucas-portrait-clean.jpg",
+      "/images/brands/imerit-logo.jpg",
+      "/images/brands/blue-vision-labs-logo.jpg",
+      "/images/brands/lyft-logo.jpg",
+      "/images/brands/gymnazo-logo.jpg",
+      "/images/brands/daybreaker-health-logo.jpg",
+      "/images/brands/checkfit-logo.jpg",
+      "/images/brands/monster-fitness-logo.png",
+      "/images/open-source/nuclear-atlas-radioactive.png",
+      "/images/side-quests/icons/lab.webp",
+      "/images/open-source/west-coast-swing-footprints.png",
+      "/images/open-source/remnote-connect-link.png"
+    ],
+    "links": [
+      "#main",
+      "/",
+      "/#work-heading",
+      "/side-quests",
+      "#contact",
+      "/#work-heading",
+      "/side-quests",
+      "#contact",
+      "mailto:chathamworks@gmail.com?subject=Hard%20problem%3A",
+      "/projects/imerit",
+      "/projects/blue-vision-labs-lyft",
+      "/projects/gymnazo",
+      "/projects/daybreaker-health",
+      "/projects/checkfit",
+      "/projects/monster-fitness",
+      "https://github.com/lucaschatham/nuclear-atlas",
+      "https://github.com/lucaschatham/independent-eds-research-collaborative",
+      "https://github.com/lucaschatham/operation-learn-west-coast-swing",
+      "https://github.com/lucaschatham/remnoteconnect",
+      "mailto:chathamworks@gmail.com?subject=Hard%20problem%3A",
+      "https://www.linkedin.com/in/lucaschatham/",
+      "https://github.com/lucaschatham",
+      "https://levelwithlucas.lucaschatham.com/subscribe",
+      "https://x.com/lukeoutthebox"
+    ]
+  }
+}

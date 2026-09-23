@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-22",
+  "status": "BLOCKED_NOT_DEPLOYED",
+  "baselineRevision": "d25066dd02a2e01761b34b061d9e8bcb4d57dbee",
+  "runtimeSha256": {
+    "api/warning-appearance.js": "6e9207b822781f8440c5b1adda988c0cb89f823df8871383bd3e1d9e17356b95",
+    "src/appearance.js": "67d9b8383b006efe83b034acd7b93dc26e153764ea3498fa39c056f541833576",
+    "src/batch.js": "8a1151730225f2a5f5aaf1750e1eddac67d60ce072875515f3ceb7451fd58f55",
+    "src/declarations.js": "0df7ffda838ed87f7bc0c2daebb98f54ba63a4ab1a6e7dbad165d7bb54358fea",
+    "src/layout.js": "e71ccc5f5afb50060e4f4bcc63425d557a0682805e093af40c005f8b138074a5",
+    "src/main.js": "1119f6bb716f8ce62a0c2ed7c917d84d0dfeb1cd0bd08cc0a764aa3e02574531",
+    "src/review.js": "19586cc8aff48cd7fef7c18264b4fe992a7d727a63221a976c1c37e5d77ddb4e",
+    "src/summary.js": "6d8d8ef5485292e2be873c3f718b23e06d0380770bb94d0c900c7037166f2eae",
+    "worker/index.js": "764dcd1fd4797f3f80bd568a33426d457ebcf67657e9e3716e7a0b3209c240b2",
+    "worker/vision.js": "0cb9afc0c0b5bad1af6667ce96f87247e3ddce7e71a9a79e6a6f8920f375970a"
+  },
+  "bundle": "dist/assets/index-y4-KV3KF.js",
+  "models": [
+    "@cf/qwen/qwen3.8-27b",
+    "@cf/google/gemma-4-26b-a4b-it"
+  ],
+  "strokeThreshold": 0.17,
+  "workerDeadlineMs": 4000,
+  "browserChecks": {
+    "sample": {
+      "seconds": 2.0,
+      "allApplicableMatch": true
+    },
+    "invalidCsv": "Missing images (1): missing.png; missing CSV rows (0); results cleared; processing blocked",
+    "mixedBatch": {
+      "reviewed": 2,
+      "failed": 1,
+      "remaining": 0,
+      "seconds": 2.7
+    },
+    "stop": {
+      "reviewed": 1,
+      "failed": 0,
+      "remaining": 2,
+      "seconds": 1.4
+    },
+    "restart": {
+      "reviewed": 2,
+      "failed": 1,
+      "remaining": 0,
+      "seconds": 6.0,
+      "firstResultSeconds": 4.8,
+      "firstAppearance": "timeout",
+      "secondAppearance": "match"
+    },
+    "manualConfirmation": "Automated timeout remained Review",
+    "editing": "cleared all three cards",
+    "keyboard": "Tab moved brand to class/type",
+    "narrowLayout": {
+      "viewport": 390,
+      "documentScrollWidth": 375
+    }
+  },
+  "heldout": {
+    "boldCount": 40,
+    "regularCount": 40,
+    "baselineLocalBoldPass": 30,
+    "repairedLocalBoldPass": 34,
+    "requiredFinalBoldMatches": 38,
+    "regularLocalGuardPass": 1,
+    "cloudRunsCompleted": 0,
+    "note": "Local guard is necessary, not sufficient for Match. Maximum possible final bold success is 34/40. No claim of final regular false-match rate."
+  },
+  "releaseChecksNotRun": [
+    "Three uncached 80-image cloud runs",
+    "Final integrated 300-image browser run",
+    "Accuracy-qualified latency p95",
+    "Candidate Worker deployment",
+    "Authenticated preview deployment",
+    "Production promotion"
+  ],
+  "review": "autoreview --mode commit --commit HEAD on synthetic complete-runtime snapshot; clean after three accepted fixes"
+}

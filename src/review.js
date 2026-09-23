@@ -1,3 +1,4 @@
+import { extractDeclarations } from './declarations.js';
 export const REQUIRED_WARNING =
   "GOVERNMENT WARNING: (1) According to the Surgeon General, women should not drink alcoholic beverages during pregnancy because of the risk of birth defects. (2) Consumption of alcoholic beverages impairs your ability to drive a car or operate machinery, and may cause health problems.";
 
@@ -36,50 +37,26 @@ export function parseVolume(value) {
   return match ? toMilliliters(match[1], match[2]) : null;
 }
 
-// Preserve the exact OCR substring supporting a normalized match. Application
-// spelling is comparison input, never the evidence displayed to the reviewer.
-function observedPhrase(text, expected) {
-  const tokens = [...String(text).matchAll(/[\p{L}\p{N}]+(?:[’'][\p{L}\p{N}]+)*/gu)];
-  const wanted = normalize(expected).split(" ").filter(Boolean);
-  if (!wanted.length) return null;
-  for (let i = 0; i <= tokens.length - wanted.length; i++) {
-    if (wanted.every((word, j) => normalize(tokens[i + j][0]) === word)) {
-      const last = tokens[i + wanted.length - 1];
-      return String(text).slice(tokens[i].index, last.index + last[0].length);
-    }
-  }
-  return null;
+function declarationFinding(values, field, expected) {
+  const distinct = [...new Map(values.map(value => [normalize(value), value])).values()];
+  const usable = Boolean(normalize(expected)) && distinct.length === 1;
+  const status = !usable ? "review" : normalize(distinct[0]) === normalize(expected) ? "match" : "mismatch";
+  return entry(field, status, distinct.join("; ") || "Not confidently located",
+    status === "match" ? "Complete declaration matches after case and punctuation normalization."
+      : status === "mismatch" ? "The observed declaration differs from the application."
+      : "A single complete declaration was not established. Inspect the artwork; unrelated text cannot prove this field.", expected);
 }
 
-function textFinding(text, field, expected) {
-  const observed = observedPhrase(text, expected);
-  const found = observed !== null;
-  return entry(
-    field,
-    found ? "match" : "review",
-    found ? compact(observed) : "Not confidently located",
-    found
-      ? "Text found after case and punctuation normalization."
-      : expected
-        ? "Inspect the artwork and extracted text; this may be an OCR error or a different value."
-        : "No application value supplied. Confirm whether this field is required.",
-    expected,
-  );
-}
-
-function alcoholFinding(rawText, expected) {
-  const text = compact(rawText);
+function alcoholFinding(declarations, expected) {
+  const text = declarations.join("\n");
   const candidates = [];
   for (const match of text.matchAll(/\b(\d{1,3}(?:\.\d+)?)\s*%/g)) {
-    const before = text.slice(Math.max(0, match.index - 15), match.index);
-    const after = text.slice(match.index + match[0].length);
+    const before = text.slice(Math.max(0, match.index - 15), match.index).split("\n").at(-1);
+    const after = text.slice(match.index + match[0].length).split("\n")[0];
     const context =
       /\b(?:alc(?:ohol)?\.?|abv)\s*:?\s*$/i.test(before) ||
       /^\s*(?:alc(?:ohol)?\b|abv\b|(?:by\s+)?vol\b)/i.test(after);
-    const standalone = rawText
-      .split(/\r?\n/)
-      .some((line) => line.trim() === match[0]);
-    if (context || standalone) candidates.push(Number(match[1]));
+    if (context) candidates.push(Number(match[1]));
   }
   const values = unique(candidates);
   const proofs = unique(
@@ -120,6 +97,7 @@ function alcoholFinding(rawText, expected) {
 export function reviewLabel(rawText, application, layout = null) {
   rawText = typeof rawText === "string" ? rawText : "";
   const text = compact(rawText);
+  const declarations = extractDeclarations(rawText, layout);
   // Browser OCR supplies an independently extracted prominent brand region.
   // Text-only callers can establish a match only at the start of the artwork.
   const lines = rawText.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
@@ -143,8 +121,8 @@ export function reviewLabel(rawText, application, layout = null) {
         : "The prominent brand region differs or is unclear. Inspect the artwork and application.",
       application.brand,
     ),
-    textFinding(text, "Class / type", application.type),
-    alcoholFinding(rawText, application.abv),
+    declarationFinding(declarations.types, "Class / type", application.type),
+    alcoholFinding(declarations.alcohol, application.abv),
   ];
   const quantities = [...text.matchAll(volumePattern)].map((match) => ({
     ml: toMilliliters(match[1], match[2]),
@@ -186,11 +164,11 @@ export function reviewLabel(rawText, application, layout = null) {
       application.volume,
     ),
   );
-  results.push(textFinding(text, "Producer / address", application.producer));
+  results.push(declarationFinding(declarations.producers, "Producer / address", application.producer));
   results.push(
     application.imported
-      ? textFinding(text, "Country of origin", application.country)
-      : entry(
+      ? declarationFinding(declarations.countries, "Country of origin", application.country)
+      : declarations.countries.length ? entry("Country of origin","review",declarations.countries.join("; "),"The artwork declares an origin while the application is marked domestic. Confirm the origin and import status.") : entry(
           "Country of origin",
           "skip",
           "Domestic product",

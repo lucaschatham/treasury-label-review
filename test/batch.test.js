@@ -63,3 +63,21 @@ test("batch capacity supports the brief while bounding total upload size", () =>
     /200 MB/,
   );
 });
+
+test('reconciles both filename sets before producing jobs', () => {
+ const manifest=parseManifest(csv);
+ assert.throws(()=>buildJobs([files[0]],{},manifest),/b.png/);
+ assert.throws(()=>buildJobs([{...files[0],name:'A.png'},files[1]],{},manifest),/a.png.*A.png|A.png.*a.png/s);
+ const rows=new Map(Array.from({length:300},(_,i)=>[`${i}.png`,{brand:'X',type:'Wine',abv:'12',volume:'750 mL'}]));
+ assert.throws(()=>buildJobs(Array.from({length:299},(_,i)=>({name:`${i}.png`})),{},rows),/299.png/);
+ assert.equal(buildJobs(files,{},manifest).length,2);
+});
+test('300 reversed image selections retain exact per-file application associations',()=>{
+ const base={brand:'Brand',type:'Gin',abv:'40',volume:'750 mL'};
+ const applications=new Map(Array.from({length:300},(_,i)=>[`label-${i}.png`,{...base,brand:`Brand ${i}`} ]));
+ const files=Array.from(applications.keys()).reverse().map(name=>({name}));
+ const jobs=buildJobs(files,base,applications);
+ assert.equal(jobs.length,300);
+ assert.equal(new Set(jobs.map(x=>x.file.name)).size,300);
+ for(const job of jobs)assert.equal(job.application.brand,`Brand ${job.file.name.match(/\d+/)[0]}`);
+});
