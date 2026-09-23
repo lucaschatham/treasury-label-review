@@ -2,7 +2,7 @@
 
 > **Current prototype release (September 23, 2026):** source `2a46749` is live. The core workflow, 300-image accounting, and 77 tests are verified. Automated boldness remains incomplete: the latest typography run produced three regular-heading false Matches and 37/40 bold Matches. Representative uncached five-second tail latency is not established. See [current release verification](evidence/production-release-2026-09-23.json).
 
-[Application](https://label-review-7b3.lucaschatham.com) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md)
+[Application](https://label-review-7b3.lucaschatham.com) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md) · [Resolutions List](RESOLUTIONS.md)
 
 A standalone alcohol-label review prototype. Browser OCR compares artwork with application fields. A cropped government-warning heading receives conservative automated boldness verification. Uncertain findings remain for a person to inspect; this app does not grant regulatory approval.
 
@@ -41,6 +41,10 @@ npm run preview
 ```
 
 `npm run preview` previews static assets only; it does not serve the API. Use `npm run dev` for the complete local workflow or deploy the root project to Vercel, where `api/warning-appearance.js` serves the API. A static-only host cannot run automated cloud appearance checks.
+
+## Investigation record
+
+The [Resolutions List](RESOLUTIONS.md) tracks approaches tried, failed gates, root-cause evidence, open blockers, untested options, and conditions for revisiting a decision. Read it before another experiment and update it at closeout. It supersedes stale “next step” recommendations in older reports while preserving their results.
 
 ## Architecture and decisions
 
