@@ -35,3 +35,14 @@ test('malformed worker bodies remain invalid-response and body time is included'
   assert.ok(Number(result.headers['Server-Timing'].split('=')[1])>=20);
  }finally{globalThis.fetch=oldFetch;for(const [key,value] of [['WARNING_WORKER_URL',oldUrl],['WARNING_WORKER_KEY',oldKey]])if(value===undefined)delete process.env[key];else process.env[key]=value;}
 });
+
+
+test('malformed client JSON returns 400 without contacting the worker',async()=>{
+ const oldUrl=process.env.WARNING_WORKER_URL,oldKey=process.env.WARNING_WORKER_KEY;
+ process.env.WARNING_WORKER_URL='https://worker.example';process.env.WARNING_WORKER_KEY='test-secret';
+ try {
+  let value;const res={setHeader(){},end:b=>value=JSON.parse(b)};
+  await handler({method:'POST',headers:{'content-type':'application/json'},body:'{broken'},res);
+  assert.equal(res.statusCode,400);assert.equal(value.reason,'invalid-request');
+ }finally{for(const [key,value] of [['WARNING_WORKER_URL',oldUrl],['WARNING_WORKER_KEY',oldKey]])if(value===undefined)delete process.env[key];else process.env[key]=value;}
+});

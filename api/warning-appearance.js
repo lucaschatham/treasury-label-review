@@ -17,6 +17,6 @@ export default async function handler(req,res) {
   if(!['BOLD','UNCERTAIN'].includes(result?.verdict))return send(502,{verdict:'UNCERTAIN',reason:'invalid-response'});
   return send(200,{verdict:result.verdict,reason:['corroborated','provider','timeout','disagreement','weight-not-confirmed','uncertain'].includes(result.reason)?result.reason:'uncertain'});
  }catch(error){
-  return send(503,{verdict:'UNCERTAIN',reason:workerStarted===undefined?'invalid-request':error.name==='TimeoutError'?'timeout':'provider'});
+  return send(workerStarted===undefined?400:503,{verdict:'UNCERTAIN',reason:workerStarted===undefined?'invalid-request':error.name==='TimeoutError'?'timeout':'provider'});
  }
 }
