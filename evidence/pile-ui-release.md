@@ -15,3 +15,5 @@ Scope: working UI integration, CSV/XLSX uploads, input readiness, formatting ins
 Requirements 3 (boldness reliability) and 5 (representative five-second latency) remain incomplete as stated on main. Prior detector experiments are not repeated. The design-preview page is a local proposal and is not included in Vite's production entry.
 
 Clean reproduction from committed source a61f00a passed npm ci (0 audit vulnerabilities), all 94 tests, and build. Its asset hashes match the preview and production. See pile-ui-production.json for deployment identity and current anonymous sample outcome.
+
+The current entry browser checks also passed in a 400-pixel iframe, including an explicit no-horizontal-overflow assertion.

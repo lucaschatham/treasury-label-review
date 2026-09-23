@@ -1,0 +1,17 @@
+{
+  "experiment": "R-012",
+  "seed": 20260923,
+  "device": "mps",
+  "torch": "2.14.0",
+  "timm": "1.0.30",
+  "manifestSha256": "8be07d06783cbcef820dd4c70270b2b69b05ed99e719557235f2dfb56e56fef7",
+  "checkpointSha256": "46d2c063b18125884c48937afa4c49e18128869e52e8db96df48bf0a4d7ff697",
+  "codeSha256": "ee1fe683268c45bd59105bfb9c74b37b35d7f7ebfc91562761b68ffe5171c080",
+  "epochs": 12,
+  "batchSize": 32,
+  "learningRate": 0.0001,
+  "weightDecay": 0.01,
+  "selection": "last epoch only",
+  "data": "exposed development only",
+  "maxSeconds": 600
+}

@@ -1,10 +1,12 @@
 <!doctype html><meta charset="UTF-8"><title>Persistent board acceptance</title><button id="run">Run entry checks</button><p id="outcome">Ready</p><iframe src="/" style="width:100%;height:900px"></iframe><script type="module">
 const frame=document.querySelector('iframe'), output=document.querySelector('#outcome');
+if(new URLSearchParams(location.search).has('narrow')) frame.style.width='400px';
 const settle=()=>new Promise(resolve=>setTimeout(resolve,30));
 const assert=(condition,message)=>{if(!condition) throw Error(message);};
 document.querySelector('#run').onclick=async()=>{try{
 let doc=frame.contentDocument, win=frame.contentWindow;
 assert(!doc.querySelector('#results').hidden,'board visible on load');
+if(new URLSearchParams(location.search).has('narrow')) assert(doc.documentElement.scrollWidth<=400,'400px layout has no horizontal overflow');
 assert(doc.querySelector('.batch-count').textContent==='0 batches','zero batches');
 assert(!doc.querySelector('.hero'),'no old landing hero');
 assert(doc.querySelector('.flow-step').contains(doc.querySelector('#images')),'upload lives in Step 1');

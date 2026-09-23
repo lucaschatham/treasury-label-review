@@ -147,3 +147,11 @@ Runtime / deployment impact:
 ## Decision history
 
 - **2026-09-23:** Created the canonical Resolutions List from existing reports, measurements, and prior review. Recorded R-001 through R-010, D-001 through D-007, and N-001 through N-008. Added the read-before-experiment/update-at-closeout rule. No new detector experiment, runtime change, or release qualification is implied by this documentation update.
+
+### R-012 preregistration, September 23
+
+User lifted the detector restriction and authorized fixes within free services and the original requirements. R-011 local diagnosis was read: no simple pixel/label plumbing error was found; frozen features did not generalize heavy regular versus narrow bold. **R-012 is PLANNED:** one bounded all-feature fine-tuning run, using the existing exposed development partitions, fixed optimizer/epochs and unchanged strict challenge gates. See [protocol](evidence/appearance-finetune-plan.md). This is not a rerun of the frozen encoder, another prompt, or a threshold change. No runtime change is authorized by a failed result.
+
+### R-012 closeout, September 23
+
+**FAILED development gate.** All-feature fine-tuning passed calibration (128/128 bold, 0/128 regular false Matches), but retained stroke controls had 40/40 bold and **10/40 regular false Matches**; historical renderer controls had 31/35 bold and 1/35 regular false Match. Century controls passed 4/4 bold, 0/4 regular false Matches. Heading/body invariance passed. The fixed training run took 52.267 seconds locally, not browser latency. See [evaluation](evidence/appearance-finetune-evaluation.md), [frozen protocol](evidence/appearance-finetune-protocol.json), and [per-image results](evidence/appearance-finetune-development.json). No cutoff tuning, independent holdout, integration or deployment followed. Generalization remains unresolved; training success did not establish task success.
