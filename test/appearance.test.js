@@ -82,3 +82,37 @@ test('failed and malformed cloud responses never populate the cache',async()=>{
   assert.equal(cache.size,0);
  } finally {globalThis.fetch=savedFetch;globalThis.document=savedDocument;}
 });
+test('a separate, nearby colon expands the heading crop without borrowing body text',()=>{
+ const a=word('GOVERNMENT',10,100),b=word('WARNING',110,185),colon={...word(':',189,192),confidence:72,bbox:{x0:189,y0:29,x1:192,y1:40}};
+ assert.deepEqual(headingBox(blocks([a,b,colon]),300,200),{x0:10,y0:20,x1:192,y1:40});
+ for(const bad of [null,{...colon,confidence:40},{...colon,bbox:{x0:230,y0:29,x1:233,y1:40}},{...colon,bbox:{x0:189,y0:100,x1:192,y1:110}}])assert.deepEqual(headingBox(blocks([a,b,...(bad?[bad]:[])]),300,200),{x0:10,y0:20,x1:185,y1:40});
+ assert.equal(headingBox(blocks([a,word('Warning',110,185),colon]),300,200),null);
+});
+test('separate-colon headings can use the same local stroke check',()=>{
+ const pixels=new Uint8ClampedArray(300*200*4).fill(255);
+ const ink=(x0,x1,y0=20,y1=40)=>{for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=0;};
+ for(let i=0;i<7;i++)ink(110+i*10,110+i*10+(i===4?4:7));ink(189,192,29,40);
+ const input=blocks([word('GOVERNMENT',10,100),word('WARNING',110,177),{...word(':',189,192),confidence:72,bbox:{x0:189,y0:29,x1:192,y1:40}}]);
+ assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,true);
+});
+test('unrecognized or absent punctuation does not hide a confidently read uppercase heading',()=>{
+ const pixels=new Uint8ClampedArray(300*200*4).fill(255);
+ const ink=(x0,x1)=>{for(let y=20;y<40;y++)for(let x=x0;x<x1;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=0;};
+ for(let i=0;i<7;i++)ink(110+i*10,110+i*10+(i===4?4:7));
+ const a=word('GOVERNMENT',10,100),b=word('WARNING',110,177);
+ for(const trailing of [[],[{...word('H',189,192),confidence:61}], [{...word('.',189,192),confidence:0}]]) {
+  const input=blocks([a,b,...trailing]);
+  assert.deepEqual(headingBox(input,300,200),{x0:10,y0:20,x1:177,y1:40});
+  assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,true);
+ }
+});
+test('a tightly bounded OCR I can recover a kerned serif stem without accepting regular weight',()=>{
+ const input=blocks([word('GOVERNMENT',10,100),{...word('WARNING:',110,190),symbols:[{text:'I',bbox:{x0:140,y0:20,x1:157,y1:40}}]}]);
+ const pixels=new Uint8ClampedArray(300*200*4).fill(255);
+ const ink=(x0,x1)=>{for(let y=20;y<40;y++)for(let x=x0;x<x1;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=0;};
+ for(let i=0;i<7;i++)ink(110+i*10,110+i*10+(i===4?4:7));
+ ink(117,121); // Connected W and A make ordinal segmentation unusable.
+ assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,true);
+ for(let y=20;y<40;y++)for(let x=153;x<154;x++)for(let c=0;c<3;c++)pixels[(y*300+x)*4+c]=255;
+ assert.equal(strokeEvidence(input,{data:pixels,width:300,height:200}).supportsBold,false);
+});

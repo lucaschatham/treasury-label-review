@@ -3,7 +3,8 @@ import {createWorker} from 'tesseract.js';
 import {readFile,writeFile} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {strokeEvidence} from '../src/appearance.js';
-const baseline=execFileSync('git',['show','d25066dd02a2e01761b34b061d9e8bcb4d57dbee:src/appearance.js'],{encoding:'utf8'});
+const baselineSource='c3ebde8cd36065d917677787f195b1dab46929b9';
+const baseline=execFileSync('git',['show',`${baselineSource}:src/appearance.js`],{encoding:'utf8'});
 const {strokeEvidence:original}=await import('data:text/javascript;base64,'+Buffer.from(baseline).toString('base64'));
 const root=process.env.GUARD_FIXTURES || 'test/fixtures/generated/appearance-holdout';
 const manifest=JSON.parse(await readFile(`${root}/manifest.json`,'utf8'));
@@ -23,4 +24,4 @@ try {
   console.log(item.id,JSON.stringify(guard));
  }
 } finally {await worker.terminate();}
-await writeFile(process.env.GUARD_OUTPUT || 'evidence/appearance-repair-local-holdout.json',JSON.stringify({scope:'Local guard only; no cloud inference. Frozen fixtures unchanged.',results},null,2)+'\n');
+await writeFile(process.env.GUARD_OUTPUT || 'evidence/appearance-repair-local-holdout.json',JSON.stringify({scope:'Local guard only; no cloud inference. Frozen fixtures unchanged.',baselineSource,results},null,2)+'\n');

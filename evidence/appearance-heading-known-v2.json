@@ -1,0 +1,246 @@
+{
+  "scope": "Local guard only; no cloud inference. Frozen fixtures unchanged.",
+  "baselineSource": "c3ebde8cd36065d917677787f195b1dab46929b9",
+  "results": [
+    {
+      "id": "Arial-28-regular",
+      "file": "Arial-28-regular.png",
+      "headingBold": false,
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-28-bold",
+      "file": "Arial-28-bold.png",
+      "headingBold": true,
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Arial-44-regular",
+      "file": "Arial-44-regular.png",
+      "headingBold": false,
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.12903225806451607,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Arial-44-bold",
+      "file": "Arial-44-bold.png",
+      "headingBold": true,
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.1935483870967742,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.1935483870967742,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Georgia-28-regular",
+      "file": "Georgia-28-regular.png",
+      "headingBold": false,
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.15,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.15,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Georgia-28-bold",
+      "file": "Georgia-28-bold.png",
+      "headingBold": true,
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "glyph-geometry"
+      }
+    },
+    {
+      "id": "Georgia-44-regular",
+      "file": "Georgia-44-regular.png",
+      "headingBold": false,
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.16129032258064518,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.16129032258064518,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Georgia-44-bold",
+      "file": "Georgia-44-bold.png",
+      "headingBold": true,
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25806451612903214,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25806451612903214,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Trebuchet-MS-28-regular",
+      "file": "Trebuchet-MS-28-regular.png",
+      "headingBold": false,
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09999999999999999,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Trebuchet-MS-28-bold",
+      "file": "Trebuchet-MS-28-bold.png",
+      "headingBold": true,
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.19999999999999998,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Trebuchet-MS-44-regular",
+      "file": "Trebuchet-MS-44-regular.png",
+      "headingBold": false,
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Trebuchet-MS-44-bold",
+      "file": "Trebuchet-MS-44-bold.png",
+      "headingBold": true,
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.1875,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.1875,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Verdana-28-regular",
+      "file": "Verdana-28-regular.png",
+      "headingBold": false,
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.09523809523809523,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.09523809523809523,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Verdana-28-bold",
+      "file": "Verdana-28-bold.png",
+      "headingBold": true,
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.23809523809523808,
+        "reason": "supported"
+      }
+    },
+    {
+      "id": "Verdana-44-regular",
+      "file": "Verdana-44-regular.png",
+      "headingBold": false,
+      "guard": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      },
+      "original": {
+        "supportsBold": false,
+        "ratio": 0.125,
+        "reason": "stroke-evidence"
+      }
+    },
+    {
+      "id": "Verdana-44-bold",
+      "file": "Verdana-44-bold.png",
+      "headingBold": true,
+      "guard": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      },
+      "original": {
+        "supportsBold": true,
+        "ratio": 0.25,
+        "reason": "supported"
+      }
+    }
+  ]
+}

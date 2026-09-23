@@ -1,23 +1,38 @@
 // Locate only a single, confidently read uppercase heading. Never use application
 // values or synthetic fixture coordinates to select pixels for visual inference.
-export function headingBox(blocks, width, height) {
+function locateHeading(blocks, width, height) {
   const words = (blocks || []).flatMap(block => (block?.paragraphs || [])
     .flatMap(paragraph => (paragraph?.lines || []).flatMap(line => line?.words || [])));
   const matches = [];
   for (let i = 0; i < words.length - 1; i++) {
     const a = words[i], b = words[i + 1];
-    if (a.text !== 'GOVERNMENT' || b.text !== 'WARNING:' || a.confidence < 80 || b.confidence < 80) continue;
+    if (a.text !== 'GOVERNMENT' || !['WARNING:', 'WARNING'].includes(b.text) || a.confidence < 80 || b.confidence < 80) continue;
     const valid = box => box && ['x0','y0','x1','y1'].every(key => Number.isFinite(box[key])) && box.x0 >= 0 && box.y0 >= 0 && box.x1 <= width && box.y1 <= height && box.x1 > box.x0 && box.y1 > box.y0;
     if (!valid(a.bbox) || !valid(b.bbox)) continue;
     const h = Math.max(a.bbox.y1-a.bbox.y0,b.bbox.y1-b.bbox.y0);
     if (Math.abs(a.bbox.y0-b.bbox.y0) > h/2 || b.bbox.x0 < a.bbox.x1 || b.bbox.x0-a.bbox.x1 > 2*h) continue;
-    matches.push({x0:a.bbox.x0,y0:Math.min(a.bbox.y0,b.bbox.y0),x1:b.bbox.x1,y1:Math.max(a.bbox.y1,b.bbox.y1)});
+    let end = b.bbox;
+    // Punctuation OCR is unreliable at small sizes. Use a nearby colon when
+    // confidently located, but leave exact warning text to the text finding.
+    if (b.text === 'WARNING') {
+      const colon = words[i + 2];
+      if (colon?.text === ':' && colon.confidence >= 60 && valid(colon.bbox)) {
+        const c = colon.bbox;
+        if (c.x0 >= b.bbox.x1 && c.x0-b.bbox.x1 <= h*.6 && c.x1-c.x0 <= h*.4 &&
+            c.y0 >= b.bbox.y0 && c.y1 <= b.bbox.y1 && c.y0 >= b.bbox.y0+h*.35 && c.y1 >= b.bbox.y0+h*.65) end = c;
+      }
+    }
+    matches.push({box:{x0:a.bbox.x0,y0:Math.min(a.bbox.y0,b.bbox.y0),x1:end.x1,y1:Math.max(a.bbox.y1,b.bbox.y1)},warning:b});
   }
   return matches.length === 1 ? matches[0] : null;
 }
 
+export function headingBox(blocks, width, height) {
+  return locateHeading(blocks, width, height)?.box || null;
+}
+
 // Segment the crop independently of OCR symbol boxes. Ordinal selection is safe
-// only when all seven capitals and the colon form separate, plausible connected components.
+// only when all seven capitals form separate, plausible connected components.
 function rasterI(word, image) {
   const b=word?.bbox;
   if (!b || !Object.values(b).every(Number.isInteger)) return null;
@@ -45,24 +60,54 @@ function rasterI(word, image) {
   components.sort((a,b)=>a.x0-b.x0);
   const capitals=components.filter(r=>r.y1-r.y0>=height*.8);
   const punctuation=components.filter(r=>r.y1-r.y0<height*.8);
-  if(capitals.length!==7 || !punctuation.length || punctuation.length>2)return null;
+  const expectedPunctuation=word.text==='WARNING:';
+  if(capitals.length!==7 || (expectedPunctuation ? punctuation.length<1 || punctuation.length>2 : punctuation.length!==0))return null;
   if(capitals.some(r=>r.x1-r.x0>height*1.8) || punctuation.some(r=>r.x0<capitals[6].x1 || r.x1-r.x0>height*.4))return null;
   const i=capitals[4];
   return {x0:b.x0+i.x0,x1:b.x0+i.x1,y0:b.y0+i.y0,y1:b.y0+i.y1};
+}
+
+// OCR may bound a serif I together with ink from a kerned neighbor. Only
+// recover a separate right-hand stem inside a modestly oversized I box.
+function kernedI(symbol, image) {
+  const b=symbol?.bbox;
+  if(!b || !Object.values(b).every(Number.isInteger))return null;
+  const height=b.y1-b.y0,width=b.x1-b.x0;
+  if(height<16 || width<=height*.8 || width>height*1.1)return null;
+  const y0=Math.floor(b.y0+height*.3),y1=Math.ceil(b.y0+height*.7),rows=y1-y0;
+  const stable=[];
+  for(let x=b.x0;x<b.x1;x++){
+    let count=0;
+    for(let y=y0;y<y1;y++){
+      const o=(y*image.width+x)*4;
+      if(.2126*image.data[o]+.7152*image.data[o+1]+.0722*image.data[o+2]<128 && image.data[o+3]>200)count++;
+    }
+    stable.push(count>=rows*.8);
+  }
+  const runs=[];
+  for(let x=0;x<stable.length;){
+    if(!stable[x]){x++;continue;}
+    const start=x;while(x<stable.length&&stable[x])x++;
+    runs.push({x0:start,x1:x});
+  }
+  if(runs.length!==2)return null;
+  const [left,right]=runs;
+  if(right.x0-left.x1<2 || right.x1-right.x0>height*.4 ||
+      right.x0<width*.45 || Math.abs((right.x0+right.x1)/2-width/2)>height*.25)return null;
+  return {x0:b.x0+right.x0,x1:b.x0+right.x1,y0:b.y0,y1:b.y1};
 }
 
 // A conservative corroboration guard, not a font classifier. Require a narrow,
 // high-confidence I with a stem at least 17% of cap height; thinner or ambiguous
 // glyphs cannot receive an automated bold pass, even if vision models agree.
 export function strokeEvidence(blocks, image) {
-  const box = headingBox(blocks, image.width, image.height);
+  const heading = locateHeading(blocks, image.width, image.height);
   const uncertain = { supportsBold:false, ratio:null, reason:'glyph-geometry' };
-  if (!box) return {...uncertain,reason:'missing-heading'};
-  const words = blocks.flatMap(block => (block?.paragraphs || []).flatMap(p => (p?.lines || []).flatMap(l => l?.words || [])));
-  const warning = words.find(word => word.text === 'WARNING:' && word.bbox?.x1 === box.x1 && word.bbox?.y0 >= box.y0);
+  if (!heading) return {...uncertain,reason:'missing-heading'};
+  const {box,warning} = heading;
   const symbols = warning?.symbols?.filter(symbol => symbol.text === 'I') || [];
   const raster = rasterI(warning,image);
-  const b = raster || (symbols.length===1 ? symbols[0].bbox : null);
+  const b = raster || (symbols.length===1 ? kernedI(symbols[0],image) || symbols[0].bbox : null);
   if (!b || !Object.values(b).every(Number.isInteger) || b.x0 < box.x0 || b.y0 < box.y0 || b.x1 > box.x1 || b.y1 > box.y1) return uncertain;
   const height=b.y1-b.y0, width=b.x1-b.x0;
   if (height < 16 || width <= 0 || width/height > .8) return uncertain;
