@@ -62,6 +62,7 @@ def main():
    for result in executor.map(prepare,names[start:start+8]):
     attempted.append(result['family'])
     if 'rejected' in result:rejected.append(result);continue
+    # Separate held-out designs. Related variants may coexist within training.
     if any(related(result['family'],r['family']) for r in reserved):rejected.append(dict(family=result['family'],rejected='Related to reserved family'));continue
     if len(reserved)<8:reserved.append(result)
     elif len(training)<256:training.append(result)

@@ -1,6 +1,8 @@
 import unittest
 from corpus_selection import related,ordered
 class Selection(unittest.TestCase):
+ def test_seed_serialization_has_a_fixed_known_order(self):
+  self.assertEqual(ordered(['amiko','arima','besley','roboto','sumana','share'],[]),['sumana','share','besley','amiko','arima','roboto'])
  def test_obvious_design_variants_stay_together(self):
   for a,b in [('CrimsonText','CrimsonPro'),('AveriaSerifLibre','AveriaSansLibre'),('Roboto','RobotoCondensed')]:self.assertTrue(related(a,b))
   self.assertFalse(related('Arima','Amiko'))
