@@ -1,0 +1,86 @@
+{
+ "url": "http://127.0.0.1:4173",
+ "runs": 3,
+ "clickToResultMs": [
+  1354.4999999998836,
+  1360.6999999999534,
+  1776.3999999999069
+ ],
+ "maxClickToResultMs": 1776.3999999999069,
+ "environment": "headless Chromium 141.0.7390.37 via Playwright, fresh context per run (uncached), Linux container",
+ "results": [
+  {
+   "run": 1,
+   "fixture": "sample old-tom.png",
+   "timings": {
+    "setup": 590.8999999999069,
+    "prepare": 74.5,
+    "ocr": 1085.3000000000466,
+    "comparison": 3.900000000023283,
+    "appearance": 19.099999999976717,
+    "render": 1.599999999976717,
+    "total": 1185.0999999999767,
+    "clickToResult": 1776.3999999999069,
+    "queue": 0.40000000002328306,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "match",
+    "reason": "contrast",
+    "ratio": 1.4359143821743123
+   },
+   "errors": [],
+   "summaryText": "old-tom.pngAll 7 checks matchedMachine›"
+  },
+  {
+   "run": 2,
+   "fixture": "sample old-tom.png",
+   "timings": {
+    "setup": 321.5999999999767,
+    "prepare": 27.600000000093132,
+    "ocr": 937.8000000000466,
+    "comparison": 3.9000000001396984,
+    "appearance": 60.800000000046566,
+    "render": 1.4000000001396984,
+    "total": 1032.4999999998836,
+    "clickToResult": 1354.4999999998836,
+    "queue": 0.40000000002328306,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "match",
+    "reason": "contrast",
+    "ratio": 1.4359143821743123
+   },
+   "errors": [],
+   "summaryText": "old-tom.pngAll 7 checks matchedMachine›"
+  },
+  {
+   "run": 3,
+   "fixture": "sample old-tom.png",
+   "timings": {
+    "setup": 293.10000000009313,
+    "prepare": 33.5999999998603,
+    "ocr": 1002.6000000000931,
+    "comparison": 5.300000000046566,
+    "appearance": 23,
+    "render": 1.7999999998137355,
+    "total": 1067.1999999999534,
+    "clickToResult": 1360.6999999999534,
+    "queue": 0.39999999990686774,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "match",
+    "reason": "contrast",
+    "ratio": 1.4359143821743123
+   },
+   "errors": [],
+   "summaryText": "old-tom.pngAll 7 checks matchedMachine›"
+  }
+ ],
+ "scope": "Browser click-to-result including OCR initialization on this container; device speed differs elsewhere."
+}

@@ -1,6 +1,6 @@
 # Label Review
 
-> **Release status:** the current UI release adds permanent pile triage, CSV/XLSX intake, explicit input readiness, protected session decisions, and visible return time. Automated boldness remains incomplete and consistent five-second performance remains unproven. See [requirement evidence](REQUIREMENTS.md) and [UI release checks](evidence/pile-ui-release.md).
+> **Release status:** this source carries a qualified local warning-heading weight check and no network dependency; it is not yet deployed. Production still runs the September 23 release with the cloud appearance path. See [requirement evidence](REQUIREMENTS.md) and the current-candidate notes below.
 
 [Application](https://lucaschatham.com/alcohol-by-volume-automated-label-check) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md) · [Attempt history](REQUIREMENTS.md#attempt-history)
 
@@ -82,7 +82,13 @@ The app origin is `https://github.com/lucaschatham/treasury-label-review.git`; t
 
 [TTB warning guidance](https://www.ttb.gov/regulated-commodities/beverage-alcohol/distilled-spirits/ds-labeling-home/ds-health-warning)
 
-### Current release, September 23, 2026
+### Current candidate, September 24, 2026 (not yet deployed)
+
+This source replaces the cloud appearance path with the local weight-contrast measurement. Evidence on this branch: independent qualification on eight never-opened font families, 39/40 bold and 0/40 regular headings matched with all 32 bold-body controls left for review (`evidence/r040-result.json`); the same 112 fixtures uploaded as one batch in the built application, 78.8 s, no failures, verdicts identical to the offline run (`evidence/browser-batch-fixtures.json`); uncached sample click-to-result 1.35–1.78 s in headless Chromium including OCR initialization (`evidence/browser-timing-sample.json`). These are synthetic, source-weight fixtures at 20–40 px cap height; accuracy on photographed labels is not claimed.
+
+Production still runs [source a61f00a](https://github.com/lucaschatham/treasury-label-review/tree/a61f00a30b93aec2e0d0c0c232fc55cb3e73b8c5) with the cloud path until this candidate is deployed as a preview, verified and promoted.
+
+### Previous release, September 23, 2026
 
 Production runs [source 2a46749](https://github.com/lucaschatham/treasury-label-review/tree/2a46749b0d240d7a63d1ab4d7cd94ad28a146e10) and bundle `index-DGAUEOgM.js`. The anonymous production sample completed all applicable checks in 2.4 seconds, without a cached appearance result. The same runtime completed a 300-image preview run in 195.3 seconds, retaining 300 unique results and correctly associating all 900 checked brand/type/producer fields. This verifies batch accounting, not classification accuracy.
 

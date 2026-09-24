@@ -1,5 +1,7 @@
 # Decision memo: automated warning-boldness detection
 
+> **Status update (same day):** Path A was selected and executed. R-039 failed only at the 16 px floor, R-039b passed after raising the floor to a nominal 20 px, and R-040 passed independent qualification on the reserved families. The integrated candidate is on the branch; deployment remains. Details in REQUIREMENTS.md, section "Path A execution". The analysis below is unchanged.
+
 Date: September 24, 2026. Scope: requirement 3 of [ASSIGNMENT.md](../ASSIGNMENT.md) (the `GOVERNMENT WARNING:` heading must be uppercase and bold) and its interaction with requirement 5 (results in about five seconds). Canonical ledger: [REQUIREMENTS.md attempt history](../REQUIREMENTS.md#attempt-history). Everything below was checked against code and artifacts on `main` at `1f1d943`; no newer commits existed on `origin/main` at the start of this review.
 
 ## 1. Diagnosis

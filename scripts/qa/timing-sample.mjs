@@ -2,9 +2,9 @@
 // Each run uses a fresh browser context (no cached OCR assets in memory; HTTP cache empty),
 // so first-use OCR initialization is included. Usage:
 //   npm run build && npx vite preview --port 4173 &  then
-//   node scripts/qa/timing-sample.mjs http://127.0.0.1:4173 evidence/<output>.json [runs] [fixture dir]
+//   PLAYWRIGHT_MODULE=$(npm root -g)/playwright node scripts/qa/timing-sample.mjs http://127.0.0.1:4173 evidence/<output>.json [runs] [fixture dir]
 // With a fixture dir (R-040 manifest), each run uploads one fixture instead of the sample.
-import { chromium } from 'playwright';
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright');
 import { readFile, writeFile } from 'node:fs/promises';
 const [url = 'http://127.0.0.1:4173', output = '', runsArg = '3', fixtureDir = ''] = process.argv.slice(2);
 const runs = Number(runsArg);
