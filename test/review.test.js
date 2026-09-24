@@ -155,11 +155,14 @@ test("checks producer and imported country when provided", () => {
   );
 });
 
-test("warning requires the final period and rejects a changed final word", () => {
+test("warning tolerates only an unread final period and rejects a changed final word", () => {
   const warning = (text) =>
     reviewLabel(text, application).find((x) => x.field === "Government warning")
       .status;
-  assert.equal(warning(REQUIRED_WARNING.slice(0, -1)), "review");
+  const unread = reviewLabel(REQUIRED_WARNING.slice(0, -1), application).find((x) => x.field === "Government warning");
+  assert.equal(unread.status, "match");
+  assert.match(unread.found, /final period not read/);
+  assert.match(reviewLabel(REQUIRED_WARNING, application).find((x) => x.field === "Government warning").found, /^Exact wording and uppercase heading detected$/);
   assert.equal(
     warning(REQUIRED_WARNING.replace("problems.", "problem.")),
     "review",
@@ -316,4 +319,11 @@ test('nonempty explicit declarations preserve adjacent wrapped values',()=>{
  for(const [text,expected,field] of [['Class: Kentucky Straight\nBourbon Whiskey',{type:'Kentucky Straight Bourbon Whiskey'},'Class / type'],['Product of United\nKingdom',{imported:true,country:'United Kingdom'},'Country of origin']]) {
   assert.equal(reviewLabel(text,{...application,...expected}).find(x=>x.field===field).status,'match');
  }
+});
+
+test("alcohol context accepts the OCR misreading Ale./Vol. but not a bare percentage", () => {
+  const abv = (text) => reviewLabel(text, application).find((x) => x.field === "Alcohol content");
+  assert.equal(abv("OLD TOM DISTILLERY\n45% Ale./Vol. (90 Proof)\n750 mL").status, "match");
+  assert.equal(abv("OLD TOM DISTILLERY\n40% Ale./Vol. (80 Proof)\n750 mL").status, "mismatch");
+  assert.equal(abv("OLD TOM DISTILLERY\n45% off today\n750 mL").status, "review");
 });

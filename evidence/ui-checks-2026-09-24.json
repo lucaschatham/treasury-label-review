@@ -1,0 +1,11 @@
+{
+ "date": "2026-09-24",
+ "source": "branch claude/fervent-lovelace-ihe6md at e192350 (local weight-contrast build with R-041 polarity fix and review tolerances)",
+ "environment": "Vite dev server, headless Chromium 141 via Playwright, Linux container",
+ "checks": [
+  {"script": "scripts/qa/pile-browser.mjs", "page": "/test/triage-browser.html", "outcome": "PASS: 300 unique rows, totals, pagination, twin selection, Seen, reason gate, Later/Approve shortcuts, bulk decisions, immutable findings, instrumentation.", "extra": "400x850 viewport, dark colour scheme, reduced motion: no horizontal overflow, wires hidden, no page errors"},
+  {"page": "/test/spreadsheet-browser.html", "outcome": "PASS: CSV and XLSX real-file imports, input change and drag/drop, separate and mixed uploads, missing-image gate, actual OCR comparisons, corrupt-file recovery, removal, clear.", "pageErrors": []},
+  {"page": "/test/entry-browser.html", "outcome": "PASS: permanent board, zero state, Step 1 upload, drag/drop, file validation, details dialog, reload.", "pageErrors": []}
+ ],
+ "scope": "Workflow and layout checks on synthetic inputs; not a representative-user usability study."
+}

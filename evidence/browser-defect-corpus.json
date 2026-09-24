@@ -1,0 +1,4438 @@
+{
+ "url": "http://127.0.0.1:4173",
+ "fixtures": 88,
+ "rowsRendered": 88,
+ "status": "Finished: 88 reviewed, 0 failed, 0 remaining. Total: 60.3 s. First result: 1.3 s from click. Inspect exceptions and make your final decision.",
+ "batchSeconds": 60.594,
+ "verdictAgreement": "0/0",
+ "csvUploaded": true,
+ "rowsMappedToOwnFile": 88,
+ "brandMatches": "80/88",
+ "expectedFindingsChecked": 88,
+ "labelsWithFindingErrors": [
+  {
+   "id": "mulish-fl-oz-28",
+   "errors": [
+    "Net contents: expected match, got mismatch"
+   ]
+  },
+  {
+   "id": "arvo-fl-oz-28",
+   "errors": [
+    "Net contents: expected match, got mismatch"
+   ]
+  }
+ ],
+ "maxRatioDelta": 0,
+ "boldMatched": "0/0",
+ "regularFalse": "0/0",
+ "lastRowClickToResultMs": 60267.09999999998,
+ "errors": [],
+ "comparisons": [
+  {
+   "file": "averiaseriflibre-valid-28.png",
+   "id": "averiaseriflibre-valid-28",
+   "variant": "valid",
+   "brand": "OLD TOM DISTILLERY #1",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.2976075025253606,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 1297.5999999999767,
+   "ocrMs": 910.2000000000698,
+   "appearanceMs": 23.400000000023283
+  },
+  {
+   "file": "averiaseriflibre-wrong-abv-28.png",
+   "id": "averiaseriflibre-wrong-abv-28",
+   "variant": "wrong-abv",
+   "brand": "OLD TOM DISTILLERY #2",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "mismatch"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.2976075025253606,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 2091,
+   "ocrMs": 703.1000000000931,
+   "appearanceMs": 53
+  },
+  {
+   "file": "averiaseriflibre-wrong-volume-28.png",
+   "id": "averiaseriflibre-wrong-volume-28",
+   "variant": "wrong-volume",
+   "brand": "OLD TOM DISTILLERY #3",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.2976075025253606,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 2820.5999999999767,
+   "ocrMs": 667.4000000000233,
+   "appearanceMs": 28.599999999976717
+  },
+  {
+   "file": "averiaseriflibre-wrong-brand-28.png",
+   "id": "averiaseriflibre-wrong-brand-28",
+   "variant": "wrong-brand",
+   "brand": "OLD TOM DISTILLERY #4",
+   "brandMatch": false,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "review"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.2976075025253606,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 3532.0999999999767,
+   "ocrMs": 654.1999999999534,
+   "appearanceMs": 19.70000000006985
+  },
+  {
+   "file": "averiaseriflibre-altered-wording-28.png",
+   "id": "averiaseriflibre-altered-wording-28",
+   "variant": "altered-wording",
+   "brand": "OLD TOM DISTILLERY #5",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.2976075025253606,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 4251.199999999953,
+   "ocrMs": 672.2000000000698,
+   "appearanceMs": 13.5
+  },
+  {
+   "file": "averiaseriflibre-title-case-heading-28.png",
+   "id": "averiaseriflibre-title-case-heading-28",
+   "variant": "title-case-heading",
+   "brand": "OLD TOM DISTILLERY #6",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 4976.29999999993,
+   "ocrMs": 697.3000000000466,
+   "appearanceMs": 0.09999999997671694
+  },
+  {
+   "file": "averiaseriflibre-missing-warning-28.png",
+   "id": "averiaseriflibre-missing-warning-28",
+   "variant": "missing-warning",
+   "brand": "OLD TOM DISTILLERY #7",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 5261.599999999977,
+   "ocrMs": 250.90000000002328,
+   "appearanceMs": 0
+  },
+  {
+   "file": "averiaseriflibre-regular-heading-28.png",
+   "id": "averiaseriflibre-regular-heading-28",
+   "variant": "regular-heading",
+   "brand": "OLD TOM DISTILLERY #8",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": 1.040895780422314,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 5982.699999999953,
+   "ocrMs": 674,
+   "appearanceMs": 12.199999999953434
+  },
+  {
+   "file": "averiaseriflibre-brand-case-28.png",
+   "id": "averiaseriflibre-brand-case-28",
+   "variant": "brand-case",
+   "brand": "STONE'S THROW #9",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.2976075025253606,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 6740.5,
+   "ocrMs": 699.0999999999767,
+   "appearanceMs": 34
+  },
+  {
+   "file": "averiaseriflibre-fl-oz-28.png",
+   "id": "averiaseriflibre-fl-oz-28",
+   "variant": "fl-oz",
+   "brand": "OLD TOM DISTILLERY #10",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.2976075025253606,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 7458.79999999993,
+   "ocrMs": 666.5,
+   "appearanceMs": 15.29999999993015
+  },
+  {
+   "file": "averiaseriflibre-imported-28.png",
+   "id": "averiaseriflibre-imported-28",
+   "variant": "imported",
+   "brand": "OLD TOM DISTILLERY #11",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "match"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.2976075025253606,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 8169.699999999953,
+   "ocrMs": 676.9000000000233,
+   "appearanceMs": 12.599999999976717
+  },
+  {
+   "file": "domine-valid-28.png",
+   "id": "domine-valid-28",
+   "variant": "valid",
+   "brand": "OLD TOM DISTILLERY #12",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.3030302576884818,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 8885.099999999977,
+   "ocrMs": 667.4000000000233,
+   "appearanceMs": 12.300000000046566
+  },
+  {
+   "file": "domine-wrong-abv-28.png",
+   "id": "domine-wrong-abv-28",
+   "variant": "wrong-abv",
+   "brand": "OLD TOM DISTILLERY #13",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "mismatch"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.3030302576884818,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 9570,
+   "ocrMs": 651.1999999999534,
+   "appearanceMs": 12
+  },
+  {
+   "file": "domine-wrong-volume-28.png",
+   "id": "domine-wrong-volume-28",
+   "variant": "wrong-volume",
+   "brand": "OLD TOM DISTILLERY #14",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.3030302576884818,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 10298.199999999953,
+   "ocrMs": 694.8999999999069,
+   "appearanceMs": 12.599999999976717
+  },
+  {
+   "file": "domine-wrong-brand-28.png",
+   "id": "domine-wrong-brand-28",
+   "variant": "wrong-brand",
+   "brand": "OLD TOM DISTILLERY #15",
+   "brandMatch": false,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "review"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.3030302576884818,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 11002.400000000023,
+   "ocrMs": 662.3000000000466,
+   "appearanceMs": 17.800000000046566
+  },
+  {
+   "file": "domine-altered-wording-28.png",
+   "id": "domine-altered-wording-28",
+   "variant": "altered-wording",
+   "brand": "OLD TOM DISTILLERY #16",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.3030302576884818,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 11731.199999999953,
+   "ocrMs": 693.9000000000233,
+   "appearanceMs": 12.29999999993015
+  },
+  {
+   "file": "domine-title-case-heading-28.png",
+   "id": "domine-title-case-heading-28",
+   "variant": "title-case-heading",
+   "brand": "OLD TOM DISTILLERY #17",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 12400.5,
+   "ocrMs": 645.9000000000233,
+   "appearanceMs": 0
+  },
+  {
+   "file": "domine-missing-warning-28.png",
+   "id": "domine-missing-warning-28",
+   "variant": "missing-warning",
+   "brand": "OLD TOM DISTILLERY #18",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 12688.5,
+   "ocrMs": 273,
+   "appearanceMs": 0
+  },
+  {
+   "file": "domine-regular-heading-28.png",
+   "id": "domine-regular-heading-28",
+   "variant": "regular-heading",
+   "brand": "OLD TOM DISTILLERY #19",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": 1.0549943665785262,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 13499.699999999953,
+   "ocrMs": 720.5,
+   "appearanceMs": 66.70000000006985
+  },
+  {
+   "file": "domine-brand-case-28.png",
+   "id": "domine-brand-case-28",
+   "variant": "brand-case",
+   "brand": "STONE'S THROW #20",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.3030302576884818,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 14202.699999999953,
+   "ocrMs": 655,
+   "appearanceMs": 24.400000000023283
+  },
+  {
+   "file": "domine-fl-oz-28.png",
+   "id": "domine-fl-oz-28",
+   "variant": "fl-oz",
+   "brand": "OLD TOM DISTILLERY #21",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.3030302576884818,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 14969.199999999953,
+   "ocrMs": 717,
+   "appearanceMs": 12.899999999906868
+  },
+  {
+   "file": "domine-imported-28.png",
+   "id": "domine-imported-28",
+   "variant": "imported",
+   "brand": "OLD TOM DISTILLERY #22",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "match"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.3030302576884818,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 15703.79999999993,
+   "ocrMs": 696.0999999999767,
+   "appearanceMs": 13.20000000006985
+  },
+  {
+   "file": "karla-valid-28.png",
+   "id": "karla-valid-28",
+   "variant": "valid",
+   "brand": "OLD TOM DISTILLERY #23",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4209452017152717,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 16379.699999999953,
+   "ocrMs": 639.7999999999302,
+   "appearanceMs": 13.79999999993015
+  },
+  {
+   "file": "karla-wrong-abv-28.png",
+   "id": "karla-wrong-abv-28",
+   "variant": "wrong-abv",
+   "brand": "OLD TOM DISTILLERY #24",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "mismatch"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4209452017152717,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 17088.900000000023,
+   "ocrMs": 665.4000000000233,
+   "appearanceMs": 19
+  },
+  {
+   "file": "karla-wrong-volume-28.png",
+   "id": "karla-wrong-volume-28",
+   "variant": "wrong-volume",
+   "brand": "OLD TOM DISTILLERY #25",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4209452017152717,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 17748.099999999977,
+   "ocrMs": 620.2000000000698,
+   "appearanceMs": 13.5
+  },
+  {
+   "file": "karla-wrong-brand-28.png",
+   "id": "karla-wrong-brand-28",
+   "variant": "wrong-brand",
+   "brand": "OLD TOM DISTILLERY #26",
+   "brandMatch": false,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "review"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4209452017152717,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 18421.199999999953,
+   "ocrMs": 636.4000000000233,
+   "appearanceMs": 12.79999999993015
+  },
+  {
+   "file": "karla-altered-wording-28.png",
+   "id": "karla-altered-wording-28",
+   "variant": "altered-wording",
+   "brand": "OLD TOM DISTILLERY #27",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4209452017152717,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 19136.5,
+   "ocrMs": 678,
+   "appearanceMs": 12.099999999976717
+  },
+  {
+   "file": "karla-title-case-heading-28.png",
+   "id": "karla-title-case-heading-28",
+   "variant": "title-case-heading",
+   "brand": "OLD TOM DISTILLERY #28",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 19842.5,
+   "ocrMs": 682.2999999999302,
+   "appearanceMs": 0
+  },
+  {
+   "file": "karla-missing-warning-28.png",
+   "id": "karla-missing-warning-28",
+   "variant": "missing-warning",
+   "brand": "OLD TOM DISTILLERY #29",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 20180,
+   "ocrMs": 322.70000000006985,
+   "appearanceMs": 0.09999999997671694
+  },
+  {
+   "file": "karla-regular-heading-28.png",
+   "id": "karla-regular-heading-28",
+   "variant": "regular-heading",
+   "brand": "OLD TOM DISTILLERY #30",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": 0.627996609726933,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 20865.199999999953,
+   "ocrMs": 641.5999999999767,
+   "appearanceMs": 16.800000000046566
+  },
+  {
+   "file": "karla-brand-case-28.png",
+   "id": "karla-brand-case-28",
+   "variant": "brand-case",
+   "brand": "STONE'S THROW #31",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4209452017152717,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 21574.29999999993,
+   "ocrMs": 668.5999999999767,
+   "appearanceMs": 12.5
+  },
+  {
+   "file": "karla-fl-oz-28.png",
+   "id": "karla-fl-oz-28",
+   "variant": "fl-oz",
+   "brand": "OLD TOM DISTILLERY #32",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4209452017152717,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 22332.900000000023,
+   "ocrMs": 709.7000000000698,
+   "appearanceMs": 15.599999999976717
+  },
+  {
+   "file": "karla-imported-28.png",
+   "id": "karla-imported-28",
+   "variant": "imported",
+   "brand": "OLD TOM DISTILLERY #33",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "match"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4209452017152717,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 23057.699999999953,
+   "ocrMs": 687.5999999999767,
+   "appearanceMs": 13.099999999976717
+  },
+  {
+   "file": "cambay-valid-28.png",
+   "id": "cambay-valid-28",
+   "variant": "valid",
+   "brand": "OLD TOM DISTILLERY #34",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4445812287829123,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 23738.79999999993,
+   "ocrMs": 644.5,
+   "appearanceMs": 12.5
+  },
+  {
+   "file": "cambay-wrong-abv-28.png",
+   "id": "cambay-wrong-abv-28",
+   "variant": "wrong-abv",
+   "brand": "OLD TOM DISTILLERY #35",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "mismatch"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4445812287829123,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 24387.79999999993,
+   "ocrMs": 612.0999999999767,
+   "appearanceMs": 14.900000000023283
+  },
+  {
+   "file": "cambay-wrong-volume-28.png",
+   "id": "cambay-wrong-volume-28",
+   "variant": "wrong-volume",
+   "brand": "OLD TOM DISTILLERY #36",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4445812287829123,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 25094.29999999993,
+   "ocrMs": 667.1999999999534,
+   "appearanceMs": 12.29999999993015
+  },
+  {
+   "file": "cambay-wrong-brand-28.png",
+   "id": "cambay-wrong-brand-28",
+   "variant": "wrong-brand",
+   "brand": "OLD TOM DISTILLERY #37",
+   "brandMatch": false,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "review"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4445812287829123,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 25775.900000000023,
+   "ocrMs": 644.2000000000698,
+   "appearanceMs": 15.900000000023283
+  },
+  {
+   "file": "cambay-altered-wording-28.png",
+   "id": "cambay-altered-wording-28",
+   "variant": "altered-wording",
+   "brand": "OLD TOM DISTILLERY #38",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4445812287829123,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 26483.79999999993,
+   "ocrMs": 658.2999999999302,
+   "appearanceMs": 16.300000000046566
+  },
+  {
+   "file": "cambay-title-case-heading-28.png",
+   "id": "cambay-title-case-heading-28",
+   "variant": "title-case-heading",
+   "brand": "OLD TOM DISTILLERY #39",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 27231.699999999953,
+   "ocrMs": 718.2999999999302,
+   "appearanceMs": 0.09999999997671694
+  },
+  {
+   "file": "cambay-missing-warning-28.png",
+   "id": "cambay-missing-warning-28",
+   "variant": "missing-warning",
+   "brand": "OLD TOM DISTILLERY #40",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 27497.400000000023,
+   "ocrMs": 244.80000000004657,
+   "appearanceMs": 0.09999999997671694
+  },
+  {
+   "file": "cambay-regular-heading-28.png",
+   "id": "cambay-regular-heading-28",
+   "variant": "regular-heading",
+   "brand": "OLD TOM DISTILLERY #41",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": 0.9802955679777897,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 28175.900000000023,
+   "ocrMs": 610.9000000000233,
+   "appearanceMs": 44.60000000009313
+  },
+  {
+   "file": "cambay-brand-case-28.png",
+   "id": "cambay-brand-case-28",
+   "variant": "brand-case",
+   "brand": "STONE'S THROW #42",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4445812287829123,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 28853.599999999977,
+   "ocrMs": 612.6999999999534,
+   "appearanceMs": 23.70000000006985
+  },
+  {
+   "file": "cambay-fl-oz-28.png",
+   "id": "cambay-fl-oz-28",
+   "variant": "fl-oz",
+   "brand": "OLD TOM DISTILLERY #43",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4445812287829123,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 29549.29999999993,
+   "ocrMs": 612.9000000000233,
+   "appearanceMs": 16.099999999976717
+  },
+  {
+   "file": "cambay-imported-28.png",
+   "id": "cambay-imported-28",
+   "variant": "imported",
+   "brand": "OLD TOM DISTILLERY #44",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "match"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.4445812287829123,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 30296.199999999953,
+   "ocrMs": 701.1999999999534,
+   "appearanceMs": 13.5
+  },
+  {
+   "file": "besley-valid-28.png",
+   "id": "besley-valid-28",
+   "variant": "valid",
+   "brand": "OLD TOM DISTILLERY #45",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6457049734717697,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 31023.900000000023,
+   "ocrMs": 692.9000000000233,
+   "appearanceMs": 12.79999999993015
+  },
+  {
+   "file": "besley-wrong-abv-28.png",
+   "id": "besley-wrong-abv-28",
+   "variant": "wrong-abv",
+   "brand": "OLD TOM DISTILLERY #46",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "mismatch"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6457049734717697,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 31728.400000000023,
+   "ocrMs": 671.5999999999767,
+   "appearanceMs": 12
+  },
+  {
+   "file": "besley-wrong-volume-28.png",
+   "id": "besley-wrong-volume-28",
+   "variant": "wrong-volume",
+   "brand": "OLD TOM DISTILLERY #47",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6457049734717697,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 32574.79999999993,
+   "ocrMs": 806.6000000000931,
+   "appearanceMs": 15.599999999976717
+  },
+  {
+   "file": "besley-wrong-brand-28.png",
+   "id": "besley-wrong-brand-28",
+   "variant": "wrong-brand",
+   "brand": "OLD TOM DISTILLERY #48",
+   "brandMatch": false,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "review"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6457049734717697,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 33433.79999999993,
+   "ocrMs": 816.5999999999767,
+   "appearanceMs": 19.400000000023283
+  },
+  {
+   "file": "besley-altered-wording-28.png",
+   "id": "besley-altered-wording-28",
+   "variant": "altered-wording",
+   "brand": "OLD TOM DISTILLERY #49",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6457049734717697,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 34226.5,
+   "ocrMs": 750.2000000000698,
+   "appearanceMs": 13
+  },
+  {
+   "file": "besley-title-case-heading-28.png",
+   "id": "besley-title-case-heading-28",
+   "variant": "title-case-heading",
+   "brand": "OLD TOM DISTILLERY #50",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 35045.59999999998,
+   "ocrMs": 795.1999999999534,
+   "appearanceMs": 0.09999999997671694
+  },
+  {
+   "file": "besley-missing-warning-28.png",
+   "id": "besley-missing-warning-28",
+   "variant": "missing-warning",
+   "brand": "OLD TOM DISTILLERY #51",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 35339.29999999993,
+   "ocrMs": 279,
+   "appearanceMs": 0
+  },
+  {
+   "file": "besley-regular-heading-28.png",
+   "id": "besley-regular-heading-28",
+   "variant": "regular-heading",
+   "brand": "OLD TOM DISTILLERY #52",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": 1.043156575626363,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 36183.09999999998,
+   "ocrMs": 804,
+   "appearanceMs": 14.79999999993015
+  },
+  {
+   "file": "besley-brand-case-28.png",
+   "id": "besley-brand-case-28",
+   "variant": "brand-case",
+   "brand": "STONE'S THROW #53",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6457049734717697,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 36950.69999999995,
+   "ocrMs": 724.4000000000233,
+   "appearanceMs": 15.29999999993015
+  },
+  {
+   "file": "besley-fl-oz-28.png",
+   "id": "besley-fl-oz-28",
+   "variant": "fl-oz",
+   "brand": "OLD TOM DISTILLERY #54",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6457049734717697,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 37678.19999999995,
+   "ocrMs": 677.7999999999302,
+   "appearanceMs": 18.5
+  },
+  {
+   "file": "besley-imported-28.png",
+   "id": "besley-imported-28",
+   "variant": "imported",
+   "brand": "OLD TOM DISTILLERY #55",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "match"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6457049734717697,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 38439.5,
+   "ocrMs": 723.5,
+   "appearanceMs": 13.400000000023283
+  },
+  {
+   "file": "mulish-valid-28.png",
+   "id": "mulish-valid-28",
+   "variant": "valid",
+   "brand": "OLD TOM DISTILLERY #56",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.582399944790254,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 39119.5,
+   "ocrMs": 645,
+   "appearanceMs": 11.5
+  },
+  {
+   "file": "mulish-wrong-abv-28.png",
+   "id": "mulish-wrong-abv-28",
+   "variant": "wrong-abv",
+   "brand": "OLD TOM DISTILLERY #57",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "mismatch"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.582399944790254,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 39843.79999999993,
+   "ocrMs": 692.4000000000233,
+   "appearanceMs": 11.20000000006985
+  },
+  {
+   "file": "mulish-wrong-volume-28.png",
+   "id": "mulish-wrong-volume-28",
+   "variant": "wrong-volume",
+   "brand": "OLD TOM DISTILLERY #58",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.582399944790254,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 40593.29999999993,
+   "ocrMs": 714.5999999999767,
+   "appearanceMs": 12.699999999953434
+  },
+  {
+   "file": "mulish-wrong-brand-28.png",
+   "id": "mulish-wrong-brand-28",
+   "variant": "wrong-brand",
+   "brand": "OLD TOM DISTILLERY #59",
+   "brandMatch": false,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "review"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.582399944790254,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 41313.79999999993,
+   "ocrMs": 682,
+   "appearanceMs": 11.599999999976717
+  },
+  {
+   "file": "mulish-altered-wording-28.png",
+   "id": "mulish-altered-wording-28",
+   "variant": "altered-wording",
+   "brand": "OLD TOM DISTILLERY #60",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.582399944790254,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 42020.90000000002,
+   "ocrMs": 668.5999999999767,
+   "appearanceMs": 11.900000000023283
+  },
+  {
+   "file": "mulish-title-case-heading-28.png",
+   "id": "mulish-title-case-heading-28",
+   "variant": "title-case-heading",
+   "brand": "OLD TOM DISTILLERY #61",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 42679.59999999998,
+   "ocrMs": 631.3000000000466,
+   "appearanceMs": 0
+  },
+  {
+   "file": "mulish-missing-warning-28.png",
+   "id": "mulish-missing-warning-28",
+   "variant": "missing-warning",
+   "brand": "OLD TOM DISTILLERY #62",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 42975.40000000002,
+   "ocrMs": 275.30000000004657,
+   "appearanceMs": 0
+  },
+  {
+   "file": "mulish-regular-heading-28.png",
+   "id": "mulish-regular-heading-28",
+   "variant": "regular-heading",
+   "brand": "OLD TOM DISTILLERY #63",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": 0.991825654832231,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 43659.29999999993,
+   "ocrMs": 648.5,
+   "appearanceMs": 10.900000000023283
+  },
+  {
+   "file": "mulish-brand-case-28.png",
+   "id": "mulish-brand-case-28",
+   "variant": "brand-case",
+   "brand": "STONE'S THROW #64",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.582399944790254,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 44324.79999999993,
+   "ocrMs": 632.2999999999302,
+   "appearanceMs": 11.099999999976717
+  },
+  {
+   "file": "mulish-fl-oz-28.png",
+   "id": "mulish-fl-oz-28",
+   "variant": "fl-oz",
+   "brand": "OLD TOM DISTILLERY #65",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [
+    "Net contents: expected match, got mismatch"
+   ],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.582399944790254,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 45029.19999999995,
+   "ocrMs": 669.9000000000233,
+   "appearanceMs": 12.900000000023283
+  },
+  {
+   "file": "mulish-imported-28.png",
+   "id": "mulish-imported-28",
+   "variant": "imported",
+   "brand": "OLD TOM DISTILLERY #66",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "match"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.582399944790254,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 45707.40000000002,
+   "ocrMs": 643.4000000000233,
+   "appearanceMs": 11.199999999953434
+  },
+  {
+   "file": "arvo-valid-28.png",
+   "id": "arvo-valid-28",
+   "variant": "valid",
+   "brand": "OLD TOM DISTILLERY #67",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6565655835067394,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 46415.90000000002,
+   "ocrMs": 669.5,
+   "appearanceMs": 13.900000000023283
+  },
+  {
+   "file": "arvo-wrong-abv-28.png",
+   "id": "arvo-wrong-abv-28",
+   "variant": "wrong-abv",
+   "brand": "OLD TOM DISTILLERY #68",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "mismatch"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6565655835067394,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 47126.5,
+   "ocrMs": 673.2999999999302,
+   "appearanceMs": 12.599999999976717
+  },
+  {
+   "file": "arvo-wrong-volume-28.png",
+   "id": "arvo-wrong-volume-28",
+   "variant": "wrong-volume",
+   "brand": "OLD TOM DISTILLERY #69",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6565655835067394,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 47810.40000000002,
+   "ocrMs": 647.2999999999302,
+   "appearanceMs": 13.900000000023283
+  },
+  {
+   "file": "arvo-wrong-brand-28.png",
+   "id": "arvo-wrong-brand-28",
+   "variant": "wrong-brand",
+   "brand": "OLD TOM DISTILLERY #70",
+   "brandMatch": false,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "review"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6565655835067394,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 48501.90000000002,
+   "ocrMs": 645,
+   "appearanceMs": 20.099999999976717
+  },
+  {
+   "file": "arvo-altered-wording-28.png",
+   "id": "arvo-altered-wording-28",
+   "variant": "altered-wording",
+   "brand": "OLD TOM DISTILLERY #71",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.634551424781275,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 49178,
+   "ocrMs": 635.5,
+   "appearanceMs": 16.099999999976717
+  },
+  {
+   "file": "arvo-title-case-heading-28.png",
+   "id": "arvo-title-case-heading-28",
+   "variant": "title-case-heading",
+   "brand": "OLD TOM DISTILLERY #72",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 49927,
+   "ocrMs": 724.5,
+   "appearanceMs": 0.09999999997671694
+  },
+  {
+   "file": "arvo-missing-warning-28.png",
+   "id": "arvo-missing-warning-28",
+   "variant": "missing-warning",
+   "brand": "OLD TOM DISTILLERY #73",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 50201,
+   "ocrMs": 259.30000000004657,
+   "appearanceMs": 0
+  },
+  {
+   "file": "arvo-regular-heading-28.png",
+   "id": "arvo-regular-heading-28",
+   "variant": "regular-heading",
+   "brand": "OLD TOM DISTILLERY #74",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": 0.965675272736933,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 50888.09999999998,
+   "ocrMs": 652.3000000000466,
+   "appearanceMs": 12.29999999993015
+  },
+  {
+   "file": "arvo-brand-case-28.png",
+   "id": "arvo-brand-case-28",
+   "variant": "brand-case",
+   "brand": "STONE'S THROW #75",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6851270590844418,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 51602.90000000002,
+   "ocrMs": 678.1000000000931,
+   "appearanceMs": 11.5
+  },
+  {
+   "file": "arvo-fl-oz-28.png",
+   "id": "arvo-fl-oz-28",
+   "variant": "fl-oz",
+   "brand": "OLD TOM DISTILLERY #76",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [
+    "Net contents: expected match, got mismatch"
+   ],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6565655835067394,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 52378.09999999998,
+   "ocrMs": 725.2999999999302,
+   "appearanceMs": 16.800000000046566
+  },
+  {
+   "file": "arvo-imported-28.png",
+   "id": "arvo-imported-28",
+   "variant": "imported",
+   "brand": "OLD TOM DISTILLERY #77",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "match"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6565655835067394,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 53106.69999999995,
+   "ocrMs": 691.6999999999534,
+   "appearanceMs": 12.800000000046566
+  },
+  {
+   "file": "lora-valid-28.png",
+   "id": "lora-valid-28",
+   "variant": "valid",
+   "brand": "OLD TOM DISTILLERY #78",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6400476721770443,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 53778.69999999995,
+   "ocrMs": 636.2000000000698,
+   "appearanceMs": 12.699999999953434
+  },
+  {
+   "file": "lora-wrong-abv-28.png",
+   "id": "lora-wrong-abv-28",
+   "variant": "wrong-abv",
+   "brand": "OLD TOM DISTILLERY #79",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "mismatch"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6400476721770443,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 54510.5,
+   "ocrMs": 697,
+   "appearanceMs": 12.5
+  },
+  {
+   "file": "lora-wrong-volume-28.png",
+   "id": "lora-wrong-volume-28",
+   "variant": "wrong-volume",
+   "brand": "OLD TOM DISTILLERY #80",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "mismatch"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6400476721770443,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 55217.79999999993,
+   "ocrMs": 665.2999999999302,
+   "appearanceMs": 17.79999999993015
+  },
+  {
+   "file": "lora-wrong-brand-28.png",
+   "id": "lora-wrong-brand-28",
+   "variant": "wrong-brand",
+   "brand": "OLD TOM DISTILLERY #81",
+   "brandMatch": false,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "review"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6400476721770443,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 55918,
+   "ocrMs": 659,
+   "appearanceMs": 14.300000000046566
+  },
+  {
+   "file": "lora-altered-wording-28.png",
+   "id": "lora-altered-wording-28",
+   "variant": "altered-wording",
+   "brand": "OLD TOM DISTILLERY #82",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6400476721770443,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 56589,
+   "ocrMs": 633.3999999999069,
+   "appearanceMs": 12.300000000046566
+  },
+  {
+   "file": "lora-title-case-heading-28.png",
+   "id": "lora-title-case-heading-28",
+   "variant": "title-case-heading",
+   "brand": "OLD TOM DISTILLERY #83",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 57266,
+   "ocrMs": 652.6999999999534,
+   "appearanceMs": 0.10000000009313226
+  },
+  {
+   "file": "lora-missing-warning-28.png",
+   "id": "lora-missing-warning-28",
+   "variant": "missing-warning",
+   "brand": "OLD TOM DISTILLERY #84",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "review"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": null,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 57529.5,
+   "ocrMs": 248.70000000006985,
+   "appearanceMs": 0
+  },
+  {
+   "file": "lora-regular-heading-28.png",
+   "id": "lora-regular-heading-28",
+   "variant": "regular-heading",
+   "brand": "OLD TOM DISTILLERY #85",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "review"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "REVIEW",
+   "browserRatio": 0.9735091518488833,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 58228.29999999993,
+   "ocrMs": 666.1999999999534,
+   "appearanceMs": 12.5
+  },
+  {
+   "file": "lora-brand-case-28.png",
+   "id": "lora-brand-case-28",
+   "variant": "brand-case",
+   "brand": "STONE'S THROW #86",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6400476721770443,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 58892.40000000002,
+   "ocrMs": 627.3000000000466,
+   "appearanceMs": 12.199999999953434
+  },
+  {
+   "file": "lora-fl-oz-28.png",
+   "id": "lora-fl-oz-28",
+   "variant": "fl-oz",
+   "brand": "OLD TOM DISTILLERY #87",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "skip"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6400476721770443,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 59570.79999999993,
+   "ocrMs": 632,
+   "appearanceMs": 15.199999999953434
+  },
+  {
+   "file": "lora-imported-28.png",
+   "id": "lora-imported-28",
+   "variant": "imported",
+   "brand": "OLD TOM DISTILLERY #88",
+   "brandMatch": true,
+   "findings": [
+    {
+     "field": "Brand name",
+     "status": "match"
+    },
+    {
+     "field": "Class / type",
+     "status": "match"
+    },
+    {
+     "field": "Alcohol content",
+     "status": "match"
+    },
+    {
+     "field": "Net contents",
+     "status": "match"
+    },
+    {
+     "field": "Producer / address",
+     "status": "match"
+    },
+    {
+     "field": "Country of origin",
+     "status": "match"
+    },
+    {
+     "field": "Government warning",
+     "status": "match"
+    },
+    {
+     "field": "Warning appearance",
+     "status": "match"
+    }
+   ],
+   "findingErrors": [],
+   "browserVerdict": "MATCH",
+   "browserRatio": 1.6400476721770443,
+   "nodeRatio": null,
+   "ratioDelta": null,
+   "agrees": null,
+   "clickToResultMs": 60267.09999999998,
+   "ocrMs": 660.8999999999069,
+   "appearanceMs": 12.400000000023283
+  }
+ ],
+ "scope": "Built application in headless Chromium on this container; synthetic fixtures; not real-label accuracy."
+}
