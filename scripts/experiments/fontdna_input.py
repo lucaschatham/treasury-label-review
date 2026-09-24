@@ -22,5 +22,5 @@ def words(rgb):
         canvas.paste(crop.resize((width, height), Image.Resampling.BICUBIC), (0, (40 - height) // 2))
         x = np.asarray(canvas, dtype=np.float32) / 255
         x = (x - x.mean()) / (x.std() + 1e-4)
-        result.append((x[None], width // 8))
+        result.append((x[None], canvas.width // 8))
     return result

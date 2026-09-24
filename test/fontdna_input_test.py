@@ -16,6 +16,8 @@ class Input(unittest.TestCase):
   result=words(self.sample());self.assertEqual(len(result),2)
   for x,c in result:
    self.assertEqual(x.shape[0:2],(1,40));self.assertEqual(x.shape[2]%8,0);self.assertLessEqual(x.shape[2],320);self.assertGreater(c,0);self.assertAlmostEqual(float(x.mean()),0,places=5)
+ def test_partial_last_block_remains_valid(self):
+  for x,c in words(self.sample()):self.assertEqual(c,x.shape[2]//8)
  def test_blank_rejected(self):
   with self.assertRaises(ValueError):words(np.full((224,224,3),255,dtype=np.uint8))
 if __name__=='__main__':unittest.main()

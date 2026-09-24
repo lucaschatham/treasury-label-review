@@ -13,7 +13,7 @@ from finetune_contract import summarize
 ROOT=Path(__file__).resolve().parents[2]
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
- out=ROOT.parent/'treasury-label-review-r026-fontdna';out.mkdir(exist_ok=False)
+ out=ROOT.parent/'treasury-label-review-r026-corrected';out.mkdir(exist_ok=False)
  started=time.monotonic();progress={'steps':0}
  with preserve_failure(out,'fontdna',started,progress,time.monotonic):
   torch.set_num_threads(2);torch.manual_seed(20260923);np.random.seed(20260923);random.seed(20260923)
@@ -45,7 +45,7 @@ def main():
    if i%500==0:print('features',i,'/',len(rows),flush=True)
   flush();check_budget(started,time.monotonic(),900)
   x=torch.from_numpy(np.asarray(features));np.save(out/'features.npy',x.numpy());np.save(out/'native-logits.npy',np.asarray(native))
-  (out/'inputs.json').write_text(json.dumps(rows,indent=2));(out/'protocol.json').write_text(json.dumps(dict(experiment='R-026',sourceSha256=sha(original),inputCodeSha256=sha(Path(__file__).with_name('fontdna_input.py')),codeSha256=sha(__file__),images=len(rows),featureSeconds=time.monotonic()-started,headParityTolerance=1e-4,epochs=50,seed=20260923,batch=128,learningRate=.001,weightDecay=.01),indent=2))
+  (out/'inputs.json').write_text(json.dumps(rows,indent=2));(out/'protocol.json').write_text(json.dumps(dict(experiment='R-026-corrected',sourceSha256=sha(original),inputCodeSha256=sha(Path(__file__).with_name('fontdna_input.py')),codeSha256=sha(__file__),images=len(rows),featureSeconds=time.monotonic()-started,headParityTolerance=1e-4,epochs=50,seed=20260923,batch=128,learningRate=.001,weightDecay=.01),indent=2))
   labels=torch.tensor([float(r['expected']=='BOLD') for r in rows for _ in range(2)])
   indices=[2*i+j for i,r in enumerate(rows) if r['split']=='train' for j in [0,1]]
   loader=torch.utils.data.DataLoader(torch.utils.data.TensorDataset(x[indices],labels[indices]),batch_size=128,shuffle=True,generator=torch.Generator().manual_seed(20260923))
