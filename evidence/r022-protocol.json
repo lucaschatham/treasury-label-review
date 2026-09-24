@@ -1,0 +1,21 @@
+{
+  "experiment": "R-022",
+  "arm": "targeted",
+  "targetedManifestSha256": "f8ba4edf391cbe59127dc7404e229c884e20556b921de06610bb90e87bb931f0",
+  "excludedEvaluationIds": [],
+  "sourceManifestSha256": "8be07d06783cbcef820dd4c70270b2b69b05ed99e719557235f2dfb56e56fef7",
+  "expandedManifestSha256": "e00d7a381908f1841245e1b2feb8aed681f832ad0b65a1a13f5baa6b7a8282b7",
+  "sourceCheckpointSha256": "46d2c063b18125884c48937afa4c49e18128869e52e8db96df48bf0a4d7ff697",
+  "codeSha256": "3d7f882e3b66f18de4847196eb781441f6709316d4a8a7d8bce1c521c9515402",
+  "seed": 20260923,
+  "steps": 1536,
+  "batchSize": 32,
+  "learningRate": 0.0001,
+  "weightDecay": 0.01,
+  "trainImages": 4288,
+  "trainFamilies": 67,
+  "maxSeconds": 900,
+  "device": "mps",
+  "torch": "2.14.0",
+  "timm": "1.0.30"
+}
