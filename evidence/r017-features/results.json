@@ -1,0 +1,843 @@
+{
+  "modelSha256": "62044f837c91a6cd55d223a9f85f540cdac3fe1ceab9ddb1906761a750e2a831",
+  "inputManifestSha256": "8be07d06783cbcef820dd4c70270b2b69b05ed99e719557235f2dfb56e56fef7",
+  "queryManifestSha256": "a1547ecae04e3bcc09e0416f18dc0f95f8a37332d3701cb089394c9639275f0a",
+  "codeSha256": "b2b5b370642583a19421c3b35f63cc4250a607d80c9c398680e7efb64ebc18ad",
+  "featuresSha256": "18d86da3fab2fe77044597f17b779dd36cfc975e6a832abcdf7e537cf23bf1c9",
+  "layer": "classifier input in eval mode",
+  "gallery": 1024,
+  "queries": [
+    {
+      "id": "Arial-REGULAR-12-pillow",
+      "expected": "REGULAR",
+      "score": 1.6875171127139765e-07,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "opensans-400-14-normal-jpeg",
+            "distance": 0.013143855601404075
+          },
+          {
+            "id": "barlow-400-14-normal-jpeg",
+            "distance": 0.014852913072903262
+          },
+          {
+            "id": "barlow-400-14-normal-png",
+            "distance": 0.015022060417670069
+          },
+          {
+            "id": "opensans-400-14-normal-png",
+            "distance": 0.015084432482073917
+          },
+          {
+            "id": "opensans-400-16-normal-jpeg",
+            "distance": 0.016645474146840367
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "merriweather-700-12-normal-jpeg",
+            "distance": 1.0116352328899896
+          },
+          {
+            "id": "merriweather-700-12-normal-png",
+            "distance": 1.0272864689979782
+          },
+          {
+            "id": "roboto-700-16-normal-jpeg",
+            "distance": 1.0299355235107284
+          },
+          {
+            "id": "rubik-700-16-normal-png",
+            "distance": 1.0352329811079175
+          },
+          {
+            "id": "rubik-700-16-normal-jpeg",
+            "distance": 1.0389637668019822
+          }
+        ]
+      },
+      "nearestClass": "REGULAR"
+    },
+    {
+      "id": "Arial-REGULAR-12-magick",
+      "expected": "REGULAR",
+      "score": 5.0139278755523264e-05,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "opensans-400-16-normal-jpeg",
+            "distance": 0.02631088737996501
+          },
+          {
+            "id": "opensans-400-16-normal-png",
+            "distance": 0.02638495687232445
+          },
+          {
+            "id": "opensans-400-12-normal-png",
+            "distance": 0.027057292734159466
+          },
+          {
+            "id": "asap-400-18-normal-png",
+            "distance": 0.028340193375947065
+          },
+          {
+            "id": "asap-400-18-normal-jpeg",
+            "distance": 0.029683158888188732
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "merriweather-700-12-normal-jpeg",
+            "distance": 1.0238363592713144
+          },
+          {
+            "id": "merriweather-700-12-normal-png",
+            "distance": 1.0430178098705096
+          },
+          {
+            "id": "roboto-700-16-normal-jpeg",
+            "distance": 1.0482613283762536
+          },
+          {
+            "id": "merriweather-700-9-normal-jpeg",
+            "distance": 1.0575895247022378
+          },
+          {
+            "id": "nunito-700-9-normal-jpeg",
+            "distance": 1.0628239274799907
+          }
+        ]
+      },
+      "nearestClass": "REGULAR"
+    },
+    {
+      "id": "Arial-REGULAR-24-pillow",
+      "expected": "REGULAR",
+      "score": 0.0005928907776251435,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "roboto-400-30-normal-jpeg",
+            "distance": 0.03878478886900427
+          },
+          {
+            "id": "roboto-400-30-normal-png",
+            "distance": 0.03981963706458669
+          },
+          {
+            "id": "roboto-400-24-normal-jpeg",
+            "distance": 0.04160287292742937
+          },
+          {
+            "id": "roboto-400-24-normal-png",
+            "distance": 0.04327294474094168
+          },
+          {
+            "id": "rubik-400-14-normal-jpeg",
+            "distance": 0.04425342146089373
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "merriweather-700-12-normal-jpeg",
+            "distance": 1.0051298906160049
+          },
+          {
+            "id": "merriweather-700-12-normal-png",
+            "distance": 1.0257089462469615
+          },
+          {
+            "id": "roboto-700-16-normal-jpeg",
+            "distance": 1.0373425041712054
+          },
+          {
+            "id": "merriweather-700-9-normal-jpeg",
+            "distance": 1.0477309901378906
+          },
+          {
+            "id": "roboto-700-16-normal-png",
+            "distance": 1.056609745631705
+          }
+        ]
+      },
+      "nearestClass": "REGULAR"
+    },
+    {
+      "id": "Arial-REGULAR-24-magick",
+      "expected": "REGULAR",
+      "score": 0.00034908330417238176,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "lato-400-18-normal-jpeg",
+            "distance": 0.04401479673828623
+          },
+          {
+            "id": "bitter-400-14-normal-png",
+            "distance": 0.04667373729186208
+          },
+          {
+            "id": "roboto-400-24-normal-jpeg",
+            "distance": 0.0468290658319791
+          },
+          {
+            "id": "bitter-400-14-normal-jpeg",
+            "distance": 0.04904731269100682
+          },
+          {
+            "id": "asap-400-18-normal-png",
+            "distance": 0.049262399252973155
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "merriweather-700-12-normal-jpeg",
+            "distance": 1.0086844889161402
+          },
+          {
+            "id": "merriweather-700-12-normal-png",
+            "distance": 1.0284682778998462
+          },
+          {
+            "id": "roboto-700-16-normal-jpeg",
+            "distance": 1.0420153012531008
+          },
+          {
+            "id": "merriweather-700-9-normal-jpeg",
+            "distance": 1.0471839759579145
+          },
+          {
+            "id": "nunito-700-9-normal-jpeg",
+            "distance": 1.0590649206550822
+          }
+        ]
+      },
+      "nearestClass": "REGULAR"
+    },
+    {
+      "id": "Arial-BOLD-12-pillow",
+      "expected": "BOLD",
+      "score": 0.9999681711196899,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 1.0049845426024844
+          },
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 1.0375817349907506
+          },
+          {
+            "id": "rubik-400-9-normal-png",
+            "distance": 1.0474184302783418
+          },
+          {
+            "id": "lato-400-9-normal-jpeg",
+            "distance": 1.0538337735780068
+          },
+          {
+            "id": "cabin-400-9-normal-png",
+            "distance": 1.0574667235530921
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "opensans-700-12-normal-jpeg",
+            "distance": 0.02110338165901715
+          },
+          {
+            "id": "opensans-700-12-normal-png",
+            "distance": 0.02269745273349788
+          },
+          {
+            "id": "opensans-700-16-normal-jpeg",
+            "distance": 0.022983298284896536
+          },
+          {
+            "id": "opensans-700-14-normal-jpeg",
+            "distance": 0.023035672635366877
+          },
+          {
+            "id": "opensans-700-14-normal-png",
+            "distance": 0.02375863878766782
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Arial-BOLD-12-magick",
+      "expected": "BOLD",
+      "score": 0.9999858140945435,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 1.0082109599374627
+          },
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 1.0376730822285154
+          },
+          {
+            "id": "rubik-400-9-normal-png",
+            "distance": 1.0456980567137777
+          },
+          {
+            "id": "lato-400-9-normal-jpeg",
+            "distance": 1.0520703487562884
+          },
+          {
+            "id": "montserrat-400-12-inv-jpeg",
+            "distance": 1.0528094659326444
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "bitter-700-9-normal-jpeg",
+            "distance": 0.021751145781877756
+          },
+          {
+            "id": "opensans-700-12-normal-png",
+            "distance": 0.021986775923866664
+          },
+          {
+            "id": "opensans-700-12-normal-jpeg",
+            "distance": 0.022148176907004435
+          },
+          {
+            "id": "rubik-700-9-normal-jpeg",
+            "distance": 0.024628093997600686
+          },
+          {
+            "id": "bitter-700-9-normal-png",
+            "distance": 0.025137335908974934
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Arial-BOLD-24-pillow",
+      "expected": "BOLD",
+      "score": 0.999992847442627,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 1.0193696052431465
+          },
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 1.0375314281434036
+          },
+          {
+            "id": "barlow-400-18-normal-jpeg",
+            "distance": 1.050328310024922
+          },
+          {
+            "id": "barlow-400-18-normal-png",
+            "distance": 1.050956705420836
+          },
+          {
+            "id": "opensans-400-24-normal-jpeg",
+            "distance": 1.052462293242496
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "opensans-700-16-normal-png",
+            "distance": 0.01933518740568385
+          },
+          {
+            "id": "opensans-700-24-normal-png",
+            "distance": 0.02017705986675189
+          },
+          {
+            "id": "raleway-700-24-normal-png",
+            "distance": 0.020590998047915088
+          },
+          {
+            "id": "opensans-700-16-normal-jpeg",
+            "distance": 0.021310052615913122
+          },
+          {
+            "id": "opensans-700-36-normal-png",
+            "distance": 0.021869565189864937
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Arial-BOLD-24-magick",
+      "expected": "BOLD",
+      "score": 0.9999959468841553,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 1.0231013971517275
+          },
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 1.0398461659159843
+          },
+          {
+            "id": "montserrat-400-12-inv-jpeg",
+            "distance": 1.050415607268752
+          },
+          {
+            "id": "barlow-400-18-normal-jpeg",
+            "distance": 1.050593864791351
+          },
+          {
+            "id": "barlow-400-18-normal-png",
+            "distance": 1.0512580151316195
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "opensans-700-16-normal-png",
+            "distance": 0.013069749248285412
+          },
+          {
+            "id": "opensans-700-16-normal-jpeg",
+            "distance": 0.014679539622541649
+          },
+          {
+            "id": "opensans-700-24-normal-png",
+            "distance": 0.015725012556733642
+          },
+          {
+            "id": "alegreya-700-30-normal-jpeg",
+            "distance": 0.015954697097770087
+          },
+          {
+            "id": "alegreya-700-30-normal-png",
+            "distance": 0.01632509201037291
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Superclarendon-REGULAR-12-pillow",
+      "expected": "REGULAR",
+      "score": 0.6228841543197632,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 0.39250625683029416
+          },
+          {
+            "id": "merriweather-400-12-normal-jpeg",
+            "distance": 0.425882629610171
+          },
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 0.43812385106169616
+          },
+          {
+            "id": "merriweather-400-9-normal-png",
+            "distance": 0.4500039060620259
+          },
+          {
+            "id": "rubik-400-9-normal-png",
+            "distance": 0.46581001434358726
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "merriweather-700-12-normal-jpeg",
+            "distance": 0.3188384659765885
+          },
+          {
+            "id": "merriweather-700-9-normal-jpeg",
+            "distance": 0.3393981577129288
+          },
+          {
+            "id": "merriweather-700-12-normal-png",
+            "distance": 0.34490659989818506
+          },
+          {
+            "id": "merriweather-700-9-normal-png",
+            "distance": 0.379285197842538
+          },
+          {
+            "id": "merriweather-700-16-normal-jpeg",
+            "distance": 0.3871792531376872
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Superclarendon-REGULAR-12-magick",
+      "expected": "REGULAR",
+      "score": 0.9774261116981506,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 0.7360875998060887
+          },
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 0.7509823866143406
+          },
+          {
+            "id": "merriweather-400-12-normal-jpeg",
+            "distance": 0.7751726652835489
+          },
+          {
+            "id": "rubik-400-9-normal-png",
+            "distance": 0.7826263408937197
+          },
+          {
+            "id": "merriweather-400-9-normal-png",
+            "distance": 0.7985615720695937
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "merriweather-700-12-normal-jpeg",
+            "distance": 0.08542791158780294
+          },
+          {
+            "id": "merriweather-700-12-normal-png",
+            "distance": 0.09647961499020985
+          },
+          {
+            "id": "merriweather-700-9-normal-jpeg",
+            "distance": 0.11239289044938305
+          },
+          {
+            "id": "merriweather-700-16-normal-jpeg",
+            "distance": 0.12230094234968147
+          },
+          {
+            "id": "merriweather-700-9-normal-png",
+            "distance": 0.123198569703734
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Superclarendon-REGULAR-24-pillow",
+      "expected": "REGULAR",
+      "score": 0.737510621547699,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 0.49688652247539455
+          },
+          {
+            "id": "merriweather-400-12-normal-jpeg",
+            "distance": 0.5376641923711295
+          },
+          {
+            "id": "merriweather-400-24-normal-png",
+            "distance": 0.5525346219824637
+          },
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 0.5597261121907383
+          },
+          {
+            "id": "merriweather-400-24-normal-jpeg",
+            "distance": 0.5675606217870032
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "merriweather-700-12-normal-jpeg",
+            "distance": 0.2757539137305328
+          },
+          {
+            "id": "merriweather-700-12-normal-png",
+            "distance": 0.2915106091830706
+          },
+          {
+            "id": "merriweather-700-9-normal-jpeg",
+            "distance": 0.32223310327976507
+          },
+          {
+            "id": "merriweather-700-18-normal-jpeg",
+            "distance": 0.33873381247207024
+          },
+          {
+            "id": "merriweather-700-16-normal-jpeg",
+            "distance": 0.3418913009384923
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Superclarendon-REGULAR-24-magick",
+      "expected": "REGULAR",
+      "score": 0.9867151379585266,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 0.8386163790693493
+          },
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 0.8541217556732956
+          },
+          {
+            "id": "rubik-400-9-normal-png",
+            "distance": 0.867385544926763
+          },
+          {
+            "id": "merriweather-400-12-normal-jpeg",
+            "distance": 0.8743898200036127
+          },
+          {
+            "id": "merriweather-400-24-normal-png",
+            "distance": 0.896640184025383
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "merriweather-700-18-normal-jpeg",
+            "distance": 0.07984538409523223
+          },
+          {
+            "id": "merriweather-700-12-normal-jpeg",
+            "distance": 0.08310067669972887
+          },
+          {
+            "id": "merriweather-700-18-normal-png",
+            "distance": 0.08391348397047727
+          },
+          {
+            "id": "merriweather-700-9-normal-jpeg",
+            "distance": 0.08874755917745136
+          },
+          {
+            "id": "merriweather-700-12-normal-png",
+            "distance": 0.0891495839643367
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Superclarendon-BOLD-12-pillow",
+      "expected": "BOLD",
+      "score": 0.9999932050704956,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 1.019201962279476
+          },
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 1.0219349142062613
+          },
+          {
+            "id": "merriweather-400-12-normal-jpeg",
+            "distance": 1.0476400541702264
+          },
+          {
+            "id": "barlow-400-18-normal-jpeg",
+            "distance": 1.0485385658188677
+          },
+          {
+            "id": "montserrat-400-12-inv-jpeg",
+            "distance": 1.0485826516726706
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "sourceserif4-700-12-normal-jpeg",
+            "distance": 0.02519613852350222
+          },
+          {
+            "id": "sourceserif4-700-12-normal-png",
+            "distance": 0.026703420660013855
+          },
+          {
+            "id": "sourceserif4-700-14-normal-jpeg",
+            "distance": 0.03108710895865474
+          },
+          {
+            "id": "barlow-700-9-normal-png",
+            "distance": 0.03249240267005182
+          },
+          {
+            "id": "asap-700-16-normal-jpeg",
+            "distance": 0.03285924929117512
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Superclarendon-BOLD-12-magick",
+      "expected": "BOLD",
+      "score": 0.9999829530715942,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 1.0313301643631156
+          },
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 1.0350651554475592
+          },
+          {
+            "id": "montserrat-400-12-inv-jpeg",
+            "distance": 1.0587648795223537
+          },
+          {
+            "id": "barlow-400-18-normal-jpeg",
+            "distance": 1.0597240885728563
+          },
+          {
+            "id": "barlow-400-18-normal-png",
+            "distance": 1.0603669548281192
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "alegreya-700-16-normal-jpeg",
+            "distance": 0.028393737494550986
+          },
+          {
+            "id": "raleway-700-14-normal-jpeg",
+            "distance": 0.031643959588798176
+          },
+          {
+            "id": "sourceserif4-700-12-normal-jpeg",
+            "distance": 0.03227797940373078
+          },
+          {
+            "id": "alegreya-700-16-normal-png",
+            "distance": 0.03244815769829945
+          },
+          {
+            "id": "sourcesans3-700-12-normal-jpeg",
+            "distance": 0.03245620352697265
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Superclarendon-BOLD-24-pillow",
+      "expected": "BOLD",
+      "score": 0.9999241828918457,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 1.011361027074767
+          },
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 1.0141919464566573
+          },
+          {
+            "id": "merriweather-400-12-normal-jpeg",
+            "distance": 1.04272094370348
+          },
+          {
+            "id": "rubik-400-9-normal-png",
+            "distance": 1.0434012004314115
+          },
+          {
+            "id": "oswald-400-12-normal-png",
+            "distance": 1.0460014405806537
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "alegreya-700-16-normal-jpeg",
+            "distance": 0.0302977201426039
+          },
+          {
+            "id": "sourceserif4-700-18-normal-jpeg",
+            "distance": 0.030529713030942762
+          },
+          {
+            "id": "alegreya-700-16-normal-png",
+            "distance": 0.03281012607412426
+          },
+          {
+            "id": "asap-700-12-normal-jpeg",
+            "distance": 0.03427979858673602
+          },
+          {
+            "id": "bitter-700-14-normal-jpeg",
+            "distance": 0.034436144044344585
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    },
+    {
+      "id": "Superclarendon-BOLD-24-magick",
+      "expected": "BOLD",
+      "score": 0.9998959302902222,
+      "neighbors": {
+        "REGULAR": [
+          {
+            "id": "lato-400-9-normal-png",
+            "distance": 1.0215619271874805
+          },
+          {
+            "id": "merriweather-400-12-normal-png",
+            "distance": 1.0235403717201952
+          },
+          {
+            "id": "merriweather-400-12-normal-jpeg",
+            "distance": 1.0514574911568242
+          },
+          {
+            "id": "oswald-400-12-normal-png",
+            "distance": 1.0536288561144425
+          },
+          {
+            "id": "rubik-400-9-normal-png",
+            "distance": 1.053720401037133
+          }
+        ],
+        "BOLD": [
+          {
+            "id": "sourceserif4-700-18-normal-jpeg",
+            "distance": 0.023609013052802497
+          },
+          {
+            "id": "sourceserif4-700-18-normal-png",
+            "distance": 0.027361944284992612
+          },
+          {
+            "id": "alegreya-700-16-normal-jpeg",
+            "distance": 0.028246334102442594
+          },
+          {
+            "id": "alegreya-700-16-normal-png",
+            "distance": 0.029783902728401257
+          },
+          {
+            "id": "sourceserif4-700-24-normal-jpeg",
+            "distance": 0.031366091812323194
+          }
+        ]
+      },
+      "nearestClass": "BOLD"
+    }
+  ]
+}

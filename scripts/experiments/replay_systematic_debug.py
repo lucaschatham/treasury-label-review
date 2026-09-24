@@ -1,4 +1,4 @@
-import json,hashlib
+import json,hashlib,sys
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -27,5 +27,6 @@ for i in ids:
  results.append(dict(id=i,expected=r['expected'],savedScore=byid[i]['score'],cpuScore=s,verdict=v,sameVerdict=v==byid[i]['verdict'],inputAndTensorHashesVerified=True))
 assert all(r['sameVerdict'] for r in results)
 out=dict(checkpointSha256=sha(modelpath),cutoff=saved['cutoff'],rows=results,scope='Four exposed diagnostic examples, not independent accuracy evidence')
-(root/'evidence/appearance-systematic-replay.json').write_text(json.dumps(out,indent=2)+'\n')
+if '--write-evidence' in sys.argv:
+ (root/'evidence/appearance-systematic-replay.json').write_text(json.dumps(out,indent=2)+'\n')
 print(json.dumps(out,indent=2))
