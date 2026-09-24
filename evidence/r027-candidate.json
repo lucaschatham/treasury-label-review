@@ -1,0 +1,23 @@
+{
+  "experiment": "R-027",
+  "decision": "ADVANCE",
+  "scope": "Exposed calibration only",
+  "modelFile": "model.onnx",
+  "modelSha256": "dd45b8bcc5586117df5304bd0af53393b45d9e69fefae50f7e3fab61cf803940",
+  "sourceResultSha256": "61a7d9b153ecbca4ff3b944566231b98fcec81fabcebaa6056081b441cfb7578",
+  "sourceHeadSha256": "ed661d14642ab27fa435b4a6c02e86b354051f60ce737e3d37f78be548c7a6c2",
+  "canonicalPolarity": true,
+  "polarityCodeSha256": "4f50176875ec0f765048062b4455d9d035dd89d198f830bad257854b4fd3a3b3",
+  "inputCodeSha256": "52515cf65c3cbed81aadb48e2ac49f8127d62a857957e70a606cba08538ccdf7",
+  "runnerCodeSha256": "dc87e173e5abb01ef19e6b2d6cc034d8366b7f4ae4558006f3424fd6cf136201",
+  "cutoff": 0.609006503393253,
+  "regularMaximum": 0.20109951496124268,
+  "requiredBoldMinimum": 0.9059972763061523,
+  "cohortUpperBounds": {
+    "generated": 0.999836802482605,
+    "stroke-oracle": 0.9975504279136658,
+    "historical-renderer": 0.9988536834716797,
+    "century-renderer": 0.9999998807907104,
+    "independent-family": 0.9059972763061523
+  }
+}

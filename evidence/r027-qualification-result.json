@@ -1,0 +1,579 @@
+{
+  "decision": "STOP",
+  "summary": {
+    "bold": 40,
+    "boldMatches": 36,
+    "regular": 40,
+    "regularFalseMatches": 0,
+    "review": 44,
+    "pass": false
+  },
+  "cutoff": 0.609006503393253,
+  "candidateSha256": "dd45b8bcc5586117df5304bd0af53393b45d9e69fefae50f7e3fab61cf803940",
+  "manifestSha256": "d6e34202d4ae5167f5f09ae490e092a0b61599420dfb94f0da10b11373d375f8",
+  "codeSha256": "231c2ce89a9cb837ce252c15c865e488b5b5de1394425baf1940b829ef0cf9c4",
+  "seconds": 1.6620200829929672,
+  "rows": [
+    {
+      "id": "andadapro-400-12-0-0",
+      "family": "andadapro",
+      "expected": "REGULAR",
+      "score": 4.32967003178783e-13,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andadapro-400-16-0-0",
+      "family": "andadapro",
+      "expected": "REGULAR",
+      "score": 4.979940348981415e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andadapro-400-24-0-0",
+      "family": "andadapro",
+      "expected": "REGULAR",
+      "score": 7.661061319835447e-14,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andadapro-400-24-1-0",
+      "family": "andadapro",
+      "expected": "REGULAR",
+      "score": 7.661061319835447e-14,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andadapro-400-24-0-1",
+      "family": "andadapro",
+      "expected": "REGULAR",
+      "score": 2.397228943129548e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andadapro-700-12-0-0",
+      "family": "andadapro",
+      "expected": "BOLD",
+      "score": 0.9999994039535522,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andadapro-700-16-0-0",
+      "family": "andadapro",
+      "expected": "BOLD",
+      "score": 0.9821019172668457,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andadapro-700-24-0-0",
+      "family": "andadapro",
+      "expected": "BOLD",
+      "score": 0.9248669743537903,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andadapro-700-24-1-0",
+      "family": "andadapro",
+      "expected": "BOLD",
+      "score": 0.9248669743537903,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andadapro-700-24-0-1",
+      "family": "andadapro",
+      "expected": "BOLD",
+      "score": 0.04445796087384224,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "asul-400-12-0-0",
+      "family": "asul",
+      "expected": "REGULAR",
+      "score": 0.1930008977651596,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "asul-400-16-0-0",
+      "family": "asul",
+      "expected": "REGULAR",
+      "score": 0.00066980259725824,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "asul-400-24-0-0",
+      "family": "asul",
+      "expected": "REGULAR",
+      "score": 0.01648319512605667,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "asul-400-24-1-0",
+      "family": "asul",
+      "expected": "REGULAR",
+      "score": 0.016517553478479385,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "asul-400-24-0-1",
+      "family": "asul",
+      "expected": "REGULAR",
+      "score": 0.01603461615741253,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "asul-700-12-0-0",
+      "family": "asul",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "asul-700-16-0-0",
+      "family": "asul",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "asul-700-24-0-0",
+      "family": "asul",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "asul-700-24-1-0",
+      "family": "asul",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "asul-700-24-0-1",
+      "family": "asul",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "cambay-400-12-0-0",
+      "family": "cambay",
+      "expected": "REGULAR",
+      "score": 2.3438656571173055e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "cambay-400-16-0-0",
+      "family": "cambay",
+      "expected": "REGULAR",
+      "score": 2.0221372133314786e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "cambay-400-24-0-0",
+      "family": "cambay",
+      "expected": "REGULAR",
+      "score": 2.9340217558846467e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "cambay-400-24-1-0",
+      "family": "cambay",
+      "expected": "REGULAR",
+      "score": 2.9340217558846467e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "cambay-400-24-0-1",
+      "family": "cambay",
+      "expected": "REGULAR",
+      "score": 4.104803718711105e-17,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "cambay-700-12-0-0",
+      "family": "cambay",
+      "expected": "BOLD",
+      "score": 0.9100141525268555,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "cambay-700-16-0-0",
+      "family": "cambay",
+      "expected": "BOLD",
+      "score": 0.22290170192718506,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "cambay-700-24-0-0",
+      "family": "cambay",
+      "expected": "BOLD",
+      "score": 0.9949648976325989,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "cambay-700-24-1-0",
+      "family": "cambay",
+      "expected": "BOLD",
+      "score": 0.9949648976325989,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "cambay-700-24-0-1",
+      "family": "cambay",
+      "expected": "BOLD",
+      "score": 0.6870585083961487,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "chivo-400-12-0-0",
+      "family": "chivo",
+      "expected": "REGULAR",
+      "score": 1.3591321845751736e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "chivo-400-16-0-0",
+      "family": "chivo",
+      "expected": "REGULAR",
+      "score": 1.3139966545394621e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "chivo-400-24-0-0",
+      "family": "chivo",
+      "expected": "REGULAR",
+      "score": 1.3964377432174047e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "chivo-400-24-1-0",
+      "family": "chivo",
+      "expected": "REGULAR",
+      "score": 1.3964377432174047e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "chivo-400-24-0-1",
+      "family": "chivo",
+      "expected": "REGULAR",
+      "score": 1.0893876772888333e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "chivo-700-12-0-0",
+      "family": "chivo",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "chivo-700-16-0-0",
+      "family": "chivo",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "chivo-700-24-0-0",
+      "family": "chivo",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "chivo-700-24-1-0",
+      "family": "chivo",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "chivo-700-24-0-1",
+      "family": "chivo",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "eczar-400-12-0-0",
+      "family": "eczar",
+      "expected": "REGULAR",
+      "score": 8.809186510916334e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "eczar-400-16-0-0",
+      "family": "eczar",
+      "expected": "REGULAR",
+      "score": 5.768386586169072e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "eczar-400-24-0-0",
+      "family": "eczar",
+      "expected": "REGULAR",
+      "score": 3.7168955913102764e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "eczar-400-24-1-0",
+      "family": "eczar",
+      "expected": "REGULAR",
+      "score": 3.7168955913102764e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "eczar-400-24-0-1",
+      "family": "eczar",
+      "expected": "REGULAR",
+      "score": 2.0294770308737498e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "eczar-700-12-0-0",
+      "family": "eczar",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "eczar-700-16-0-0",
+      "family": "eczar",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "eczar-700-24-0-0",
+      "family": "eczar",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "eczar-700-24-1-0",
+      "family": "eczar",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "eczar-700-24-0-1",
+      "family": "eczar",
+      "expected": "BOLD",
+      "score": 0.9999995231628418,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "faustina-400-12-0-0",
+      "family": "faustina",
+      "expected": "REGULAR",
+      "score": 3.931672487578197e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "faustina-400-16-0-0",
+      "family": "faustina",
+      "expected": "REGULAR",
+      "score": 3.1605695838266e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "faustina-400-24-0-0",
+      "family": "faustina",
+      "expected": "REGULAR",
+      "score": 1.0395178939859306e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "faustina-400-24-1-0",
+      "family": "faustina",
+      "expected": "REGULAR",
+      "score": 1.0395178939859306e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "faustina-400-24-0-1",
+      "family": "faustina",
+      "expected": "REGULAR",
+      "score": 4.814136866926333e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "faustina-700-12-0-0",
+      "family": "faustina",
+      "expected": "BOLD",
+      "score": 0.9999983310699463,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "faustina-700-16-0-0",
+      "family": "faustina",
+      "expected": "BOLD",
+      "score": 0.9994729161262512,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "faustina-700-24-0-0",
+      "family": "faustina",
+      "expected": "BOLD",
+      "score": 0.9994379878044128,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "faustina-700-24-1-0",
+      "family": "faustina",
+      "expected": "BOLD",
+      "score": 0.9994432330131531,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "faustina-700-24-0-1",
+      "family": "faustina",
+      "expected": "BOLD",
+      "score": 0.999945878982544,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "literata-400-12-0-0",
+      "family": "literata",
+      "expected": "REGULAR",
+      "score": 1.8368415112490766e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "literata-400-16-0-0",
+      "family": "literata",
+      "expected": "REGULAR",
+      "score": 2.2784960029831325e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "literata-400-24-0-0",
+      "family": "literata",
+      "expected": "REGULAR",
+      "score": 1.8024850275549786e-12,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "literata-400-24-1-0",
+      "family": "literata",
+      "expected": "REGULAR",
+      "score": 1.8024850275549786e-12,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "literata-400-24-0-1",
+      "family": "literata",
+      "expected": "REGULAR",
+      "score": 4.325307820240987e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "literata-700-12-0-0",
+      "family": "literata",
+      "expected": "BOLD",
+      "score": 0.9999995231628418,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "literata-700-16-0-0",
+      "family": "literata",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "literata-700-24-0-0",
+      "family": "literata",
+      "expected": "BOLD",
+      "score": 0.9999994039535522,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "literata-700-24-1-0",
+      "family": "literata",
+      "expected": "BOLD",
+      "score": 0.9999994039535522,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "literata-700-24-0-1",
+      "family": "literata",
+      "expected": "BOLD",
+      "score": 0.9999995231628418,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "varta-400-12-0-0",
+      "family": "varta",
+      "expected": "REGULAR",
+      "score": 4.5675493942631817e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "varta-400-16-0-0",
+      "family": "varta",
+      "expected": "REGULAR",
+      "score": 1.9840772701542643e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "varta-400-24-0-0",
+      "family": "varta",
+      "expected": "REGULAR",
+      "score": 9.860115721409442e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "varta-400-24-1-0",
+      "family": "varta",
+      "expected": "REGULAR",
+      "score": 9.860115721409442e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "varta-400-24-0-1",
+      "family": "varta",
+      "expected": "REGULAR",
+      "score": 2.562815951757598e-19,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "varta-700-12-0-0",
+      "family": "varta",
+      "expected": "BOLD",
+      "score": 0.9549205899238586,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "varta-700-16-0-0",
+      "family": "varta",
+      "expected": "BOLD",
+      "score": 5.026351459491707e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "varta-700-24-0-0",
+      "family": "varta",
+      "expected": "BOLD",
+      "score": 0.7693788409233093,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "varta-700-24-1-0",
+      "family": "varta",
+      "expected": "BOLD",
+      "score": 0.7693788409233093,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "varta-700-24-0-1",
+      "family": "varta",
+      "expected": "BOLD",
+      "score": 0.0026763782370835543,
+      "verdict": "REVIEW"
+    }
+  ],
+  "scope": "Independent rendered images and supervised-head families; foundation pretraining corpus undisclosed"
+}

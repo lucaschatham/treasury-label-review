@@ -1,0 +1,14 @@
+{
+  "experiment": "R-026-corrected",
+  "sourceSha256": "5f1feeb2f48346a08d0d7a0f26dbc4658347f6f5efe28fa21fb2200c361cc174",
+  "inputCodeSha256": "52515cf65c3cbed81aadb48e2ac49f8127d62a857957e70a606cba08538ccdf7",
+  "codeSha256": "3d12c4d8254f9c178f0fcded03eb44e5578779e99b82fd83a0acd66166c55e0e",
+  "images": 4782,
+  "featureSeconds": 83.57120329099416,
+  "headParityTolerance": 0.0001,
+  "epochs": 50,
+  "seed": 20260923,
+  "batch": 128,
+  "learningRate": 0.001,
+  "weightDecay": 0.01
+}

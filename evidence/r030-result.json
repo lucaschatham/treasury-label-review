@@ -1,0 +1,5802 @@
+{
+  "experiment": "R-030",
+  "decision": "STOP",
+  "mobileCutoff": 0.9759449504262997,
+  "fontCutoff": 0.609006503393253,
+  "codeSha256": "2fc7fd6dd77f6bfc4cc0e19d520041c583592678bcf03e627390103b172d2420",
+  "seconds": 16.287794624993694,
+  "summaries": {
+    "century-renderer": {
+      "bold": 4,
+      "boldMatches": 4,
+      "regular": 4,
+      "regularFalseMatches": 0,
+      "review": 4,
+      "pass": true
+    },
+    "generated": {
+      "bold": 128,
+      "boldMatches": 128,
+      "regular": 128,
+      "regularFalseMatches": 0,
+      "review": 128,
+      "pass": true
+    },
+    "historical-renderer": {
+      "bold": 35,
+      "boldMatches": 35,
+      "regular": 35,
+      "regularFalseMatches": 0,
+      "review": 35,
+      "pass": true
+    },
+    "qualification-1": {
+      "bold": 40,
+      "boldMatches": 39,
+      "regular": 40,
+      "regularFalseMatches": 0,
+      "review": 41,
+      "pass": true
+    },
+    "qualification-2": {
+      "bold": 40,
+      "boldMatches": 36,
+      "regular": 40,
+      "regularFalseMatches": 0,
+      "review": 44,
+      "pass": false
+    },
+    "stroke-oracle": {
+      "bold": 40,
+      "boldMatches": 40,
+      "regular": 40,
+      "regularFalseMatches": 0,
+      "review": 40,
+      "pass": true
+    }
+  },
+  "rows": [
+    {
+      "id": "josefinsans-400-9-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0010460064513608813,
+      "fontScore": 0.03341174125671387,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-9-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0005345162935554981,
+      "fontScore": 3.192244690808366e-08,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-9-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0010460064513608813,
+      "fontScore": 0.03341174125671387,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-9-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0005345162935554981,
+      "fontScore": 3.192244690808366e-08,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-12-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.626146932831034e-05,
+      "fontScore": 1.3815928956439905e-10,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-12-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.5358923671301454e-05,
+      "fontScore": 3.3500930385343963e-07,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-12-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.563997885677963e-05,
+      "fontScore": 1.3997729364501055e-10,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-12-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.526826523942873e-05,
+      "fontScore": 3.51408317555979e-07,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-14-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.2494203221867792e-05,
+      "fontScore": 9.919302101479843e-05,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-14-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.9098584743915126e-05,
+      "fontScore": 0.0477432981133461,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-14-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.2462261767941527e-05,
+      "fontScore": 0.0001005016965791583,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-14-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.8149798052036203e-05,
+      "fontScore": 0.048743631690740585,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-16-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.789221227634698e-05,
+      "fontScore": 1.0688973617334341e-07,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-16-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.908448343281634e-05,
+      "fontScore": 3.887149432557635e-05,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-16-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.789221227634698e-05,
+      "fontScore": 1.0688973617334341e-07,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-16-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.922188625438139e-05,
+      "fontScore": 3.904812183463946e-05,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-18-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0008368574199266732,
+      "fontScore": 7.988968775407557e-08,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-18-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0009600944467820227,
+      "fontScore": 8.505196092301048e-06,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-18-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0008379518403671682,
+      "fontScore": 8.002633222758959e-08,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-18-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0010432831477373838,
+      "fontScore": 8.406253073189873e-06,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-24-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0006910101510584354,
+      "fontScore": 6.423223908313958e-07,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-24-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0005585760227404535,
+      "fontScore": 2.5946587811631616e-07,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-24-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0006910101510584354,
+      "fontScore": 6.423223908313958e-07,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-24-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.000556992250494659,
+      "fontScore": 2.669282253009442e-07,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-30-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00143779709469527,
+      "fontScore": 0.017620543017983437,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-30-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0010536680929362774,
+      "fontScore": 0.16859585046768188,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-30-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00143779709469527,
+      "fontScore": 0.017620543017983437,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-30-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00105376448482275,
+      "fontScore": 0.17185713350772858,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-36-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00016133520693983883,
+      "fontScore": 0.010241919197142124,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-36-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00012987123045604676,
+      "fontScore": 1.825480103434529e-05,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-36-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00016133520693983883,
+      "fontScore": 0.010241919197142124,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-400-36-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00013022564235143363,
+      "fontScore": 1.830308792705182e-05,
+      "score": 0.0
+    },
+    {
+      "id": "josefinsans-700-9-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999997615814209,
+      "fontScore": 0.9999996423721313,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-9-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999955892562866,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-9-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999997615814209,
+      "fontScore": 0.9999996423721313,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-9-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999957084655762,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-12-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999995231628418,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-12-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999961853027344,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-12-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999995231628418,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-12-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999963045120239,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-14-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-14-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-14-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-14-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-16-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-16-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-16-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-16-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-18-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-18-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-18-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-18-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-24-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-24-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-24-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-24-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-30-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-30-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-30-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-30-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-36-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-36-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-36-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-36-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-400-9-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.1178769666648805e-08,
+      "fontScore": 2.7142890712816836e-10,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-9-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.1105768038532915e-07,
+      "fontScore": 2.4115314779804553e-12,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-9-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.114958767649114e-08,
+      "fontScore": 2.7223617804494893e-10,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-9-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.1425632351347303e-07,
+      "fontScore": 2.594623084092862e-12,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-12-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.5982278606970794e-06,
+      "fontScore": 4.443945300636187e-08,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-12-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.7548038562817965e-06,
+      "fontScore": 3.529187164730274e-09,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-12-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.597736733558122e-06,
+      "fontScore": 4.58153195381783e-08,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-12-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.662483322841581e-06,
+      "fontScore": 3.528823677712012e-09,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-14-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.1239211491774768e-06,
+      "fontScore": 6.673212737950962e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-14-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.932698523887666e-06,
+      "fontScore": 3.128585888134694e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-14-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.1239211491774768e-06,
+      "fontScore": 6.673212737950962e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-14-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.919363285196596e-06,
+      "fontScore": 3.113266586751706e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-16-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.2605977417479153e-06,
+      "fontScore": 3.893883331329562e-05,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-16-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.6653758621032466e-06,
+      "fontScore": 3.8551280567844515e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-16-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.2609440318556153e-06,
+      "fontScore": 3.879069481627084e-05,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-16-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.6405716678491444e-06,
+      "fontScore": 3.8757460174565495e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-18-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.0101444988540607e-06,
+      "fontScore": 3.0862197490932886e-06,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-18-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.176840209562215e-06,
+      "fontScore": 3.3926546905149735e-08,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-18-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.0101444988540607e-06,
+      "fontScore": 3.0862197490932886e-06,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-18-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.1549691357213305e-06,
+      "fontScore": 3.3630954021646176e-08,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-24-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.3530707039753906e-05,
+      "fontScore": 9.912198493111646e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-24-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.418649794184603e-05,
+      "fontScore": 1.036044068314368e-06,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-24-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.3530707039753906e-05,
+      "fontScore": 9.912198493111646e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-24-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.476618803688325e-05,
+      "fontScore": 1.0354029882364557e-06,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-30-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 7.19103945812094e-06,
+      "fontScore": 2.2940557187212107e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-30-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.234862667042762e-06,
+      "fontScore": 2.550377075749566e-06,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-30-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 7.19103945812094e-06,
+      "fontScore": 2.2940557187212107e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-30-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.244502401386853e-06,
+      "fontScore": 2.6330792479711818e-06,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-36-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.378486119094305e-05,
+      "fontScore": 1.1868297633554903e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-36-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.375556843820959e-05,
+      "fontScore": 1.0777720405030777e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-36-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.378486119094305e-05,
+      "fontScore": 1.1868297633554903e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-400-36-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.365441443747841e-05,
+      "fontScore": 1.0788703974640157e-07,
+      "score": 0.0
+    },
+    {
+      "id": "arvo-700-9-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999988079071045,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-9-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9314414262771606,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-9-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999986886978149,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-9-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.932144820690155,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-12-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999995231628418,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-12-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9995506405830383,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-12-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999995231628418,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-12-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9995508790016174,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-14-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-14-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999996423721313,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-14-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-14-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999996423721313,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-16-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-16-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-16-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-16-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-18-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-18-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-18-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-18-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-24-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-24-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-24-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-24-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-30-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-30-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-30-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-30-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-36-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-36-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-36-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-36-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-400-9-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0006890876102261245,
+      "fontScore": 8.255735650664064e-08,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-9-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0005514750955626369,
+      "fontScore": 7.396226101193115e-13,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-9-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0006891766097396612,
+      "fontScore": 8.224177605598015e-08,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-9-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0005584150203503668,
+      "fontScore": 7.400488642034242e-13,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-12-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.93368495174218e-05,
+      "fontScore": 1.4156741201531986e-07,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-12-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.629446579609066e-05,
+      "fontScore": 3.833953599041706e-08,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-12-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.947678437223658e-05,
+      "fontScore": 1.4134657533304562e-07,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-12-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.629901326959953e-05,
+      "fontScore": 3.876003873415357e-08,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-14-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.0470353117852937e-05,
+      "fontScore": 1.5135125097653912e-10,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-14-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.410082278307527e-06,
+      "fontScore": 1.3778354271323096e-13,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-14-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.0460681551194284e-05,
+      "fontScore": 1.5126093433348586e-10,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-14-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.35082824373967e-06,
+      "fontScore": 1.380339663100208e-13,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-16-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00028960284544155,
+      "fontScore": 4.4995114405199654e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-16-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0008022765978239477,
+      "fontScore": 3.057865701948869e-16,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-16-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.00029012627783231437,
+      "fontScore": 4.4995114405199654e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-16-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 0.0008061927510425448,
+      "fontScore": 2.982476063874092e-16,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-18-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.3005988370859995e-05,
+      "fontScore": 1.3488972308919878e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-18-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.5901950468542054e-05,
+      "fontScore": 6.923835962034663e-13,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-18-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.3135893318103626e-05,
+      "fontScore": 1.3488972308919878e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-18-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.586283855838701e-05,
+      "fontScore": 6.923835962034663e-13,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-24-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.41353645833442e-05,
+      "fontScore": 3.9025662042224685e-13,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-24-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.8257065676152706e-05,
+      "fontScore": 7.633224781422587e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-24-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.41353645833442e-05,
+      "fontScore": 3.9025662042224685e-13,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-24-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.8076540072797798e-05,
+      "fontScore": 7.442136316926362e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-30-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.4232885809615254e-05,
+      "fontScore": 9.919815836811896e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-30-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.0259034247137606e-05,
+      "fontScore": 3.5118258995270324e-11,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-30-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.423765519983135e-05,
+      "fontScore": 9.919815836811896e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-30-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.036304042325355e-05,
+      "fontScore": 3.6573601785994114e-11,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-36-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.239606980467215e-05,
+      "fontScore": 4.138350252758105e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-36-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.33390229975339e-05,
+      "fontScore": 3.992814325698424e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-36-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.239606980467215e-05,
+      "fontScore": 4.138350252758105e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-400-36-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.383460666052997e-05,
+      "fontScore": 3.9819159254605996e-12,
+      "score": 0.0
+    },
+    {
+      "id": "vollkorn-700-9-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.023803042247891426,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-9-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.999836802482605,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-9-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.023803045973181725,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-9-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9998369216918945,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-12-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9998553991317749,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-12-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 0.9999992847442627,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-12-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9998513460159302,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-12-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 0.9999992847442627,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-14-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9998878240585327,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-14-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-14-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9998878240585327,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-14-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-16-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999974966049194,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-16-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-16-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999974966049194,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-16-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-18-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-18-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-18-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-18-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-24-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-24-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999995231628418,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-24-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-24-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999995231628418,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-30-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-30-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-30-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-30-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-36-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-36-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-36-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-700-36-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-400-9-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.698533367289201e-07,
+      "fontScore": 0.0001330135273747146,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-9-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.800515966962848e-07,
+      "fontScore": 0.006368432659655809,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-9-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.6931528534769313e-07,
+      "fontScore": 0.0001330872328253463,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-9-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.709937968527811e-07,
+      "fontScore": 0.005893096327781677,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-12-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.967536718439078e-06,
+      "fontScore": 1.487509659718611e-13,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-12-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.5839398201933363e-06,
+      "fontScore": 1.9409621132560062e-10,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-12-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.965423280125833e-06,
+      "fontScore": 1.465674776641654e-13,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-12-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.6171268271136796e-06,
+      "fontScore": 7.904502052902274e-11,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-14-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.541296215800685e-08,
+      "fontScore": 5.835261163156247e-09,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-14-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.2683642337569836e-08,
+      "fontScore": 2.1800295943452674e-12,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-14-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 6.547824682456849e-08,
+      "fontScore": 5.862257790312242e-09,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-14-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 5.3176407277533144e-08,
+      "fontScore": 1.9394652984311422e-12,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-16-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 9.433724557084133e-08,
+      "fontScore": 4.088003603707792e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-16-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 7.975068427867882e-08,
+      "fontScore": 1.2382180003545074e-10,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-16-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 9.436117665018173e-08,
+      "fontScore": 4.088003603707792e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-16-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 7.969017445930149e-08,
+      "fontScore": 1.2479223210348778e-10,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-18-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.8060125839269858e-08,
+      "fontScore": 6.621056648911314e-15,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-18-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.9018765229361634e-08,
+      "fontScore": 1.803797860860587e-13,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-18-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.8081220076737736e-08,
+      "fontScore": 6.589208210094552e-15,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-18-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.886262879224887e-08,
+      "fontScore": 1.7870930158880166e-13,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-24-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.345143267414642e-08,
+      "fontScore": 9.415091725998789e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-24-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.0974721454413157e-08,
+      "fontScore": 4.336486139795703e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-24-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 4.3409762895407766e-08,
+      "fontScore": 9.41361992154964e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-24-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 3.0916879723008606e-08,
+      "fontScore": 4.3412363005639054e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-30-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.4262558245548007e-08,
+      "fontScore": 1.7685835121641793e-15,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-30-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.2784557412715003e-08,
+      "fontScore": 2.0693319303887977e-16,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-30-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.4262558245548007e-08,
+      "fontScore": 1.7685835121641793e-15,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-30-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.2804934002019763e-08,
+      "fontScore": 2.0675170299504073e-16,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-36-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.1297447361234845e-08,
+      "fontScore": 1.2413108599817688e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-36-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.7846179645175653e-08,
+      "fontScore": 1.3519506423653044e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-36-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 2.1297447361234845e-08,
+      "fontScore": 1.2413108599817688e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-400-36-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "mobileScore": 1.7651794692596923e-08,
+      "fontScore": 1.3817429087026063e-14,
+      "score": 0.0
+    },
+    {
+      "id": "firasans-700-9-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999997615814209,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-9-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-9-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999997615814209,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-9-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-12-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-12-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-12-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-12-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-14-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-14-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-14-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-14-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-16-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-16-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-16-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-16-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-18-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-18-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-18-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-18-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-24-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-24-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-24-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-24-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-30-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-30-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-30-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-30-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-36-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-36-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999997615814209,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-36-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-36-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "mobileScore": 0.9999997615814209,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Arial-same-family-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 3.4762615541694686e-06,
+      "fontScore": 3.4138674959854898e-12,
+      "score": 0.0
+    },
+    {
+      "id": "Arial-same-family-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Arial-larger-heading-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 9.435013453185093e-06,
+      "fontScore": 3.236603346445932e-11,
+      "score": 0.0
+    },
+    {
+      "id": "Arial-larger-heading-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999996423721313,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Arial-bold-body-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 3.4762615541694686e-06,
+      "fontScore": 3.4138674959854898e-12,
+      "score": 0.0
+    },
+    {
+      "id": "Arial-bold-body-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Arial-cap-9-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 4.066749170306139e-06,
+      "fontScore": 2.117313187000036e-07,
+      "score": 0.0
+    },
+    {
+      "id": "Arial-cap-9-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999972581863403,
+      "fontScore": 0.9881361722946167,
+      "score": 1.0
+    },
+    {
+      "id": "Arial-cap-12-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 2.376214958133005e-08,
+      "fontScore": 1.999035268915317e-12,
+      "score": 0.0
+    },
+    {
+      "id": "Arial-cap-12-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999092817306519,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Arial-cap-14-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 1.6738721342335339e-06,
+      "fontScore": 9.906740983112172e-10,
+      "score": 0.0
+    },
+    {
+      "id": "Arial-cap-14-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Arial-inverted-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 2.3417676686676714e-08,
+      "fontScore": 1.9604339852874464e-12,
+      "score": 0.0
+    },
+    {
+      "id": "Arial-inverted-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999064207077026,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Arial-jpeg-75-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 5.4649682112994924e-08,
+      "fontScore": 9.210990963489925e-16,
+      "score": 0.0
+    },
+    {
+      "id": "Arial-jpeg-75-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9998505115509033,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Georgia-same-family-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 4.0983559301821515e-06,
+      "fontScore": 3.1158000979303324e-07,
+      "score": 0.0
+    },
+    {
+      "id": "Georgia-same-family-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Georgia-larger-heading-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 4.8018362576840445e-05,
+      "fontScore": 8.423054476125458e-10,
+      "score": 0.0
+    },
+    {
+      "id": "Georgia-larger-heading-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Georgia-bold-body-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 4.0983559301821515e-06,
+      "fontScore": 3.1158000979303324e-07,
+      "score": 0.0
+    },
+    {
+      "id": "Georgia-bold-body-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Georgia-cap-9-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 1.5130692190723494e-05,
+      "fontScore": 2.9065503781566804e-07,
+      "score": 0.0
+    },
+    {
+      "id": "Georgia-cap-9-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 0.9999909400939941,
+      "score": 1.0
+    },
+    {
+      "id": "Georgia-cap-12-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 1.2748911103699356e-05,
+      "fontScore": 8.851158694866967e-10,
+      "score": 0.0
+    },
+    {
+      "id": "Georgia-cap-12-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999991655349731,
+      "score": 1.0
+    },
+    {
+      "id": "Georgia-cap-14-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 6.010587298987957e-07,
+      "fontScore": 1.251052039741296e-09,
+      "score": 0.0
+    },
+    {
+      "id": "Georgia-cap-14-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Georgia-inverted-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 1.2795257134712301e-05,
+      "fontScore": 8.742834789465803e-10,
+      "score": 0.0
+    },
+    {
+      "id": "Georgia-inverted-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999991655349731,
+      "score": 1.0
+    },
+    {
+      "id": "Georgia-jpeg-75-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 2.1615325749735348e-05,
+      "fontScore": 2.3382651717640535e-11,
+      "score": 0.0
+    },
+    {
+      "id": "Georgia-jpeg-75-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999998807907104,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-same-family-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.8660261631011963,
+      "fontScore": 0.0007575452327728271,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-same-family-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999997615814209,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-larger-heading-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.8445501327514648,
+      "fontScore": 1.9943678125855513e-05,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-larger-heading-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-bold-body-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.8660261631011963,
+      "fontScore": 0.0007575452327728271,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-bold-body-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999997615814209,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-cap-9-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.19147534668445587,
+      "fontScore": 3.0167700970196165e-05,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-cap-9-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-cap-12-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.11647091805934906,
+      "fontScore": 1.3109143765177578e-05,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-cap-12-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-cap-14-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.31046798825263977,
+      "fontScore": 0.12113286554813385,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-cap-14-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999510049819946,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-inverted-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.11625064164400101,
+      "fontScore": 1.3291842151375022e-05,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-inverted-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-jpeg-75-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.06876228004693985,
+      "fontScore": 0.20109951496124268,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-jpeg-75-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-same-family-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 6.0313304857118055e-05,
+      "fontScore": 1.5441845846453361e-07,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-same-family-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-larger-heading-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 1.7351985661662184e-05,
+      "fontScore": 8.769607262593127e-10,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-larger-heading-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-bold-body-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 6.0313304857118055e-05,
+      "fontScore": 1.5441845846453361e-07,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-bold-body-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-cap-9-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 2.683263573999284e-06,
+      "fontScore": 0.00014943660062272102,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-cap-9-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999994039535522,
+      "fontScore": 0.9975504279136658,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-cap-12-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 6.874156679259613e-05,
+      "fontScore": 2.7453649163039495e-12,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-cap-12-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-cap-14-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 3.976364041591296e-06,
+      "fontScore": 4.1622528177982093e-14,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-cap-14-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-inverted-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 6.955619028303772e-05,
+      "fontScore": 2.6774344460273047e-12,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-inverted-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-jpeg-75-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 6.092867624829523e-05,
+      "fontScore": 8.840762457540176e-18,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-jpeg-75-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-same-family-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 9.785168231246644e-07,
+      "fontScore": 1.0690543068847536e-11,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-same-family-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-larger-heading-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 0.004350431729108095,
+      "fontScore": 2.926312078939397e-13,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-larger-heading-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999997615814209,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-bold-body-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 9.785168231246644e-07,
+      "fontScore": 1.0690543068847536e-11,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-bold-body-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-cap-9-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 2.7356767532182857e-05,
+      "fontScore": 7.378223187970434e-08,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-cap-9-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9998220801353455,
+      "fontScore": 0.9967716336250305,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-cap-12-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 1.456942300137598e-05,
+      "fontScore": 4.1551658114258316e-08,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-cap-12-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999997615814209,
+      "fontScore": 0.9999942779541016,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-cap-14-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 1.2538446753751487e-05,
+      "fontScore": 5.7093275419861644e-12,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-cap-14-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999967813491821,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-inverted-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 1.454851280868752e-05,
+      "fontScore": 4.158408728471841e-08,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-inverted-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999997615814209,
+      "fontScore": 0.9999942779541016,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-jpeg-75-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "mobileScore": 2.794653300952632e-05,
+      "fontScore": 1.8721075800698372e-09,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-jpeg-75-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "mobileScore": 0.9999997615814209,
+      "fontScore": 0.999998927116394,
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-0-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 5.881557285647432e-08,
+      "fontScore": 9.644429005417621e-11,
+      "score": 0.0
+    },
+    {
+      "id": "Seravek-0-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-1-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.5790681118232897e-07,
+      "fontScore": 1.0613161045803458e-14,
+      "score": 0.0
+    },
+    {
+      "id": "Seravek-1-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-2-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.2768498258708405e-08,
+      "fontScore": 9.110324528192187e-14,
+      "score": 0.0
+    },
+    {
+      "id": "Seravek-2-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.999998927116394,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-3-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 3.266339021479325e-08,
+      "fontScore": 7.024441792125025e-12,
+      "score": 0.0
+    },
+    {
+      "id": "Seravek-3-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-4-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 8.408180178776092e-07,
+      "fontScore": 1.348112160098891e-13,
+      "score": 0.0
+    },
+    {
+      "id": "Seravek-4-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999997615814209,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-0-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.8973618100280873e-06,
+      "fontScore": 9.598229329388364e-13,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-0-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999860525131226,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-1-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.8591041427716846e-06,
+      "fontScore": 1.2619402051106121e-12,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-1-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.999998927116394,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-2-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.3434715810944908e-06,
+      "fontScore": 4.6224458288834924e-11,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-2-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999996423721313,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-3-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 3.9103956623876e-06,
+      "fontScore": 8.161155778951823e-12,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-3-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.999974250793457,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-4-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.3071523173712194e-05,
+      "fontScore": 2.4041556506010364e-12,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Mono-4-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9998695850372314,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Serif-0-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.2048983535350999e-06,
+      "fontScore": 5.7357309006522694e-12,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Serif-0-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.999991774559021,
+      "fontScore": 0.999293327331543,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Serif-1-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.2047799141944324e-09,
+      "fontScore": 4.1510109238807047e-10,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Serif-1-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999958276748657,
+      "fontScore": 0.9987506866455078,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Serif-2-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.25693312927433e-07,
+      "fontScore": 1.0615297703353566e-12,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Serif-2-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999901056289673,
+      "fontScore": 0.9998866319656372,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Serif-3-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.6032192888815189e-06,
+      "fontScore": 3.280304847197435e-12,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Serif-3-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999970197677612,
+      "fontScore": 0.9998980760574341,
+      "score": 1.0
+    },
+    {
+      "id": "PT-Serif-4-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 4.565498912256771e-08,
+      "fontScore": 3.6342198694860883e-10,
+      "score": 0.0
+    },
+    {
+      "id": "PT-Serif-4-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999979734420776,
+      "fontScore": 0.9999358654022217,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-0-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 0.18934017419815063,
+      "fontScore": 0.00701489020138979,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-0-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999964237213135,
+      "fontScore": 0.9999979734420776,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-1-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.0532475243962836e-05,
+      "fontScore": 8.578450069762766e-05,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-1-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9960885047912598,
+      "fontScore": 0.9999945163726807,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-2-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 6.557735332535231e-07,
+      "fontScore": 7.904098310973495e-06,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-2-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9963831901550293,
+      "fontScore": 0.9999996423721313,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-3-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 0.004156241659075022,
+      "fontScore": 2.4241611754405312e-05,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-3-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999992847442627,
+      "fontScore": 0.9997636675834656,
+      "score": 1.0
+    },
+    {
+      "id": "Superclarendon-4-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 3.647084895419539e-06,
+      "fontScore": 4.666364361582964e-07,
+      "score": 0.0
+    },
+    {
+      "id": "Superclarendon-4-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999704360961914,
+      "fontScore": 0.9999901056289673,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-0-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.716381170524528e-08,
+      "fontScore": 5.324874113692146e-13,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-0-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999904632568359,
+      "fontScore": 0.9992237091064453,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-1-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.4193527704264852e-06,
+      "fontScore": 6.976886846032926e-10,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-1-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999977350234985,
+      "fontScore": 0.9999282360076904,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-2-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 9.904142928007786e-08,
+      "fontScore": 4.622143379845456e-12,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-2-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999994039535522,
+      "fontScore": 0.9988536834716797,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-3-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 5.525514552573441e-06,
+      "fontScore": 1.401085114594025e-07,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-3-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999988079071045,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-4-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 8.15924806829571e-07,
+      "fontScore": 1.6832016891399348e-09,
+      "score": 0.0
+    },
+    {
+      "id": "TI-Nspire-4-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999974966049194,
+      "fontScore": 0.9999996423721313,
+      "score": 1.0
+    },
+    {
+      "id": "Hoefler-Text-0-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 7.00179734849371e-05,
+      "fontScore": 1.6194902339203114e-14,
+      "score": 0.0
+    },
+    {
+      "id": "Hoefler-Text-0-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Hoefler-Text-1-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 0.0002801615628413856,
+      "fontScore": 4.902071045094492e-13,
+      "score": 0.0
+    },
+    {
+      "id": "Hoefler-Text-1-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Hoefler-Text-2-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 0.0006281972746364772,
+      "fontScore": 4.6015821708600413e-10,
+      "score": 0.0
+    },
+    {
+      "id": "Hoefler-Text-2-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Hoefler-Text-3-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 0.0011875609634444118,
+      "fontScore": 2.6681155115143573e-12,
+      "score": 0.0
+    },
+    {
+      "id": "Hoefler-Text-3-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Hoefler-Text-4-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 0.0047581251710653305,
+      "fontScore": 1.5534115335204268e-13,
+      "score": 0.0
+    },
+    {
+      "id": "Hoefler-Text-4-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-0-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.9685535385112571e-16,
+      "fontScore": 5.341489854239737e-19,
+      "score": 0.0
+    },
+    {
+      "id": "Kohinoor-Bangla-0-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999938011169434,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-1-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.0506093540171672e-14,
+      "fontScore": 3.2674655246913213e-20,
+      "score": 0.0
+    },
+    {
+      "id": "Kohinoor-Bangla-1-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9992082715034485,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-2-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.1173505657112734e-12,
+      "fontScore": 3.9868639864408067e-19,
+      "score": 0.0
+    },
+    {
+      "id": "Kohinoor-Bangla-2-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9997279047966003,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-3-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.2455030890267125e-11,
+      "fontScore": 1.832407586808061e-19,
+      "score": 0.0
+    },
+    {
+      "id": "Kohinoor-Bangla-3-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9998694658279419,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-4-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 1.3853484060865479e-13,
+      "fontScore": 1.430191563253777e-20,
+      "score": 0.0
+    },
+    {
+      "id": "Kohinoor-Bangla-4-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9997873902320862,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "century-24-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 0.0001415017177350819,
+      "fontScore": 3.728378369927121e-11,
+      "score": 0.0
+    },
+    {
+      "id": "century-24-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "century-32-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.766144461929798e-05,
+      "fontScore": 1.8574355635792017e-06,
+      "score": 0.0
+    },
+    {
+      "id": "century-32-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.999972939491272,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "century-40-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 2.6788045488501666e-06,
+      "fontScore": 6.300027166616928e-10,
+      "score": 0.0
+    },
+    {
+      "id": "century-40-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.9999984502792358,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "century-48-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "mobileScore": 4.6496028517140076e-05,
+      "fontScore": 2.0023620539433296e-09,
+      "score": 0.0
+    },
+    {
+      "id": "century-48-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "mobileScore": 0.999984860420227,
+      "fontScore": 0.9999998807907104,
+      "score": 1.0
+    },
+    {
+      "id": "domine-400-12-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 0.0002772709704004228,
+      "fontScore": 0.00023247150238603354,
+      "score": 0.0
+    },
+    {
+      "id": "domine-400-16-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 8.459705327368283e-07,
+      "fontScore": 5.309937733954939e-08,
+      "score": 0.0
+    },
+    {
+      "id": "domine-400-24-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 7.706515958716409e-08,
+      "fontScore": 6.268841001855208e-09,
+      "score": 0.0
+    },
+    {
+      "id": "domine-400-24-1-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 7.706515958716409e-08,
+      "fontScore": 6.268841001855208e-09,
+      "score": 0.0
+    },
+    {
+      "id": "domine-400-24-0-1",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 9.393272648594575e-08,
+      "fontScore": 7.696333348405915e-09,
+      "score": 0.0
+    },
+    {
+      "id": "domine-700-12-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.04288194328546524,
+      "fontScore": 0.9059972763061523,
+      "score": 1.0
+    },
+    {
+      "id": "domine-700-16-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9532681107521057,
+      "fontScore": 0.9887468218803406,
+      "score": 1.0
+    },
+    {
+      "id": "domine-700-24-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.44622117280960083,
+      "fontScore": 0.969427227973938,
+      "score": 1.0
+    },
+    {
+      "id": "domine-700-24-1-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.44612690806388855,
+      "fontScore": 0.9694018959999084,
+      "score": 1.0
+    },
+    {
+      "id": "domine-700-24-0-1",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.41723042726516724,
+      "fontScore": 0.11170405149459839,
+      "score": 0.0
+    },
+    {
+      "id": "exo2-400-12-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 2.119059772098808e-08,
+      "fontScore": 1.6842233716615057e-16,
+      "score": 0.0
+    },
+    {
+      "id": "exo2-400-16-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.9259373609803454e-11,
+      "fontScore": 2.265335407323002e-14,
+      "score": 0.0
+    },
+    {
+      "id": "exo2-400-24-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 4.6483175641931496e-10,
+      "fontScore": 2.7470678482643706e-19,
+      "score": 0.0
+    },
+    {
+      "id": "exo2-400-24-1-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 4.6483175641931496e-10,
+      "fontScore": 2.7470678482643706e-19,
+      "score": 0.0
+    },
+    {
+      "id": "exo2-400-24-0-1",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.8623448616583715e-10,
+      "fontScore": 5.059089617632309e-20,
+      "score": 0.0
+    },
+    {
+      "id": "exo2-700-12-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9998995065689087,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "exo2-700-16-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.996783971786499,
+      "fontScore": 0.9999996423721313,
+      "score": 1.0
+    },
+    {
+      "id": "exo2-700-24-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999847412109375,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "exo2-700-24-1-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999847412109375,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "exo2-700-24-0-1",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999655485153198,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "karla-400-12-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 3.713144280936831e-07,
+      "fontScore": 4.039198242913357e-14,
+      "score": 0.0
+    },
+    {
+      "id": "karla-400-16-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 2.005923761316808e-06,
+      "fontScore": 9.3953553270687e-11,
+      "score": 0.0
+    },
+    {
+      "id": "karla-400-24-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 7.182396984717343e-06,
+      "fontScore": 6.108496087425808e-12,
+      "score": 0.0
+    },
+    {
+      "id": "karla-400-24-1-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 7.182396984717343e-06,
+      "fontScore": 6.108496087425808e-12,
+      "score": 0.0
+    },
+    {
+      "id": "karla-400-24-0-1",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 6.10756842434057e-06,
+      "fontScore": 4.3726345244285425e-13,
+      "score": 0.0
+    },
+    {
+      "id": "karla-700-12-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.08939555287361145,
+      "fontScore": 0.9999998807907104,
+      "score": 1.0
+    },
+    {
+      "id": "karla-700-16-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.978663444519043,
+      "fontScore": 0.9995571970939636,
+      "score": 1.0
+    },
+    {
+      "id": "karla-700-24-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9655416011810303,
+      "fontScore": 0.9999274015426636,
+      "score": 1.0
+    },
+    {
+      "id": "karla-700-24-1-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.965572714805603,
+      "fontScore": 0.9999274015426636,
+      "score": 1.0
+    },
+    {
+      "id": "karla-700-24-0-1",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9539682269096375,
+      "fontScore": 0.9994775652885437,
+      "score": 1.0
+    },
+    {
+      "id": "lora-400-12-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 2.5748474286046985e-07,
+      "fontScore": 3.163233563974188e-10,
+      "score": 0.0
+    },
+    {
+      "id": "lora-400-16-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 5.1457715017022565e-05,
+      "fontScore": 1.5863893721877395e-14,
+      "score": 0.0
+    },
+    {
+      "id": "lora-400-24-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 5.1225837523816153e-05,
+      "fontScore": 7.042441716592629e-13,
+      "score": 0.0
+    },
+    {
+      "id": "lora-400-24-1-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 5.119448542245664e-05,
+      "fontScore": 7.009942756472376e-13,
+      "score": 0.0
+    },
+    {
+      "id": "lora-400-24-0-1",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 4.281290966900997e-05,
+      "fontScore": 4.7229767704192946e-14,
+      "score": 0.0
+    },
+    {
+      "id": "lora-700-12-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9997653365135193,
+      "fontScore": 0.9999901056289673,
+      "score": 1.0
+    },
+    {
+      "id": "lora-700-16-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "lora-700-24-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9995808005332947,
+      "fontScore": 0.9999909400939941,
+      "score": 1.0
+    },
+    {
+      "id": "lora-700-24-1-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9995854496955872,
+      "fontScore": 0.9999914169311523,
+      "score": 1.0
+    },
+    {
+      "id": "lora-700-24-0-1",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9994170665740967,
+      "fontScore": 0.9999984502792358,
+      "score": 1.0
+    },
+    {
+      "id": "mulish-400-12-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.5872710923403588e-09,
+      "fontScore": 5.321419100181614e-14,
+      "score": 0.0
+    },
+    {
+      "id": "mulish-400-16-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 5.850353090863791e-07,
+      "fontScore": 1.8618741531167826e-12,
+      "score": 0.0
+    },
+    {
+      "id": "mulish-400-24-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.335550109615724e-06,
+      "fontScore": 3.4827885679058167e-15,
+      "score": 0.0
+    },
+    {
+      "id": "mulish-400-24-1-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.335550109615724e-06,
+      "fontScore": 3.4827885679058167e-15,
+      "score": 0.0
+    },
+    {
+      "id": "mulish-400-24-0-1",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.028474684972025e-06,
+      "fontScore": 5.972480133066907e-16,
+      "score": 0.0
+    },
+    {
+      "id": "mulish-700-12-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9991462230682373,
+      "fontScore": 0.9898492097854614,
+      "score": 1.0
+    },
+    {
+      "id": "mulish-700-16-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999853372573853,
+      "fontScore": 0.9997710585594177,
+      "score": 1.0
+    },
+    {
+      "id": "mulish-700-24-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9998763799667358,
+      "fontScore": 0.9350367188453674,
+      "score": 1.0
+    },
+    {
+      "id": "mulish-700-24-1-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9998763799667358,
+      "fontScore": 0.9350367188453674,
+      "score": 1.0
+    },
+    {
+      "id": "mulish-700-24-0-1",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9998284578323364,
+      "fontScore": 0.00825600977987051,
+      "score": 1.0
+    },
+    {
+      "id": "worksans-400-12-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 2.4904474316134184e-11,
+      "fontScore": 9.899273207528061e-15,
+      "score": 0.0
+    },
+    {
+      "id": "worksans-400-16-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.5348536330783702e-10,
+      "fontScore": 6.828043040913237e-14,
+      "score": 0.0
+    },
+    {
+      "id": "worksans-400-24-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.8501972176565573e-10,
+      "fontScore": 1.2344902118772982e-13,
+      "score": 0.0
+    },
+    {
+      "id": "worksans-400-24-1-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.8501972176565573e-10,
+      "fontScore": 1.2344902118772982e-13,
+      "score": 0.0
+    },
+    {
+      "id": "worksans-400-24-0-1",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 2.5860535934896234e-10,
+      "fontScore": 8.53129413952604e-16,
+      "score": 0.0
+    },
+    {
+      "id": "worksans-700-12-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "worksans-700-16-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "worksans-700-24-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "worksans-700-24-1-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "worksans-700-24-0-1",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "sora-400-12-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.1210365080671636e-08,
+      "fontScore": 3.963149600161309e-11,
+      "score": 0.0
+    },
+    {
+      "id": "sora-400-16-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 2.922041630881722e-06,
+      "fontScore": 1.6087337018078074e-10,
+      "score": 0.0
+    },
+    {
+      "id": "sora-400-24-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 3.722249175552861e-07,
+      "fontScore": 1.5052888406238973e-12,
+      "score": 0.0
+    },
+    {
+      "id": "sora-400-24-1-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 3.722249175552861e-07,
+      "fontScore": 1.5052888406238973e-12,
+      "score": 0.0
+    },
+    {
+      "id": "sora-400-24-0-1",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 4.927027248413651e-07,
+      "fontScore": 1.8092636763777925e-12,
+      "score": 0.0
+    },
+    {
+      "id": "sora-700-12-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999583959579468,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "sora-700-16-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "sora-700-24-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999842643737793,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "sora-700-24-1-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999842643737793,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "sora-700-24-0-1",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999667406082153,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "trirong-400-12-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 3.534308135044739e-08,
+      "fontScore": 2.6450844010754426e-13,
+      "score": 0.0
+    },
+    {
+      "id": "trirong-400-16-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 4.727028368733954e-08,
+      "fontScore": 2.096407899707109e-14,
+      "score": 0.0
+    },
+    {
+      "id": "trirong-400-24-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 9.709796522372471e-09,
+      "fontScore": 4.587816129601741e-13,
+      "score": 0.0
+    },
+    {
+      "id": "trirong-400-24-1-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 9.709796522372471e-09,
+      "fontScore": 4.587816129601741e-13,
+      "score": 0.0
+    },
+    {
+      "id": "trirong-400-24-0-1",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "mobileScore": 1.3489231065477725e-08,
+      "fontScore": 9.663655916062816e-14,
+      "score": 0.0
+    },
+    {
+      "id": "trirong-700-12-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 0.9999781847000122,
+      "score": 1.0
+    },
+    {
+      "id": "trirong-700-16-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999783039093018,
+      "fontScore": 0.9965410828590393,
+      "score": 1.0
+    },
+    {
+      "id": "trirong-700-24-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999994039535522,
+      "fontScore": 0.9997751116752625,
+      "score": 1.0
+    },
+    {
+      "id": "trirong-700-24-1-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999994039535522,
+      "fontScore": 0.9997751116752625,
+      "score": 1.0
+    },
+    {
+      "id": "trirong-700-24-0-1",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "mobileScore": 0.9999990463256836,
+      "fontScore": 0.9999575614929199,
+      "score": 1.0
+    },
+    {
+      "id": "andadapro-400-12-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 4.849907586645941e-09,
+      "fontScore": 4.32967003178783e-13,
+      "score": 0.0
+    },
+    {
+      "id": "andadapro-400-16-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.3115893905442135e-08,
+      "fontScore": 4.979940348981415e-10,
+      "score": 0.0
+    },
+    {
+      "id": "andadapro-400-24-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.391795639297925e-06,
+      "fontScore": 7.661061319835447e-14,
+      "score": 0.0
+    },
+    {
+      "id": "andadapro-400-24-1-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.391795639297925e-06,
+      "fontScore": 7.661061319835447e-14,
+      "score": 0.0
+    },
+    {
+      "id": "andadapro-400-24-0-1",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 3.3239825825148728e-06,
+      "fontScore": 2.397228943129548e-11,
+      "score": 0.0
+    },
+    {
+      "id": "andadapro-700-12-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.7127567529678345,
+      "fontScore": 0.9999994039535522,
+      "score": 1.0
+    },
+    {
+      "id": "andadapro-700-16-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.827410101890564,
+      "fontScore": 0.9821019172668457,
+      "score": 1.0
+    },
+    {
+      "id": "andadapro-700-24-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.906095564365387,
+      "fontScore": 0.9248669743537903,
+      "score": 1.0
+    },
+    {
+      "id": "andadapro-700-24-1-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.906095564365387,
+      "fontScore": 0.9248669743537903,
+      "score": 1.0
+    },
+    {
+      "id": "andadapro-700-24-0-1",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.8991839289665222,
+      "fontScore": 0.04445796087384224,
+      "score": 0.0
+    },
+    {
+      "id": "asul-400-12-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 3.470973979347036e-07,
+      "fontScore": 0.1930008977651596,
+      "score": 0.0
+    },
+    {
+      "id": "asul-400-16-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 1.5784372635607724e-06,
+      "fontScore": 0.00066980259725824,
+      "score": 0.0
+    },
+    {
+      "id": "asul-400-24-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 0.0030645588412880898,
+      "fontScore": 0.01648319512605667,
+      "score": 0.0
+    },
+    {
+      "id": "asul-400-24-1-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 0.003065688069909811,
+      "fontScore": 0.016517553478479385,
+      "score": 0.0
+    },
+    {
+      "id": "asul-400-24-0-1",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 0.0016357937129214406,
+      "fontScore": 0.01603461615741253,
+      "score": 0.0
+    },
+    {
+      "id": "asul-700-12-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.955031156539917,
+      "fontScore": 0.9999998807907104,
+      "score": 1.0
+    },
+    {
+      "id": "asul-700-16-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.7599833607673645,
+      "fontScore": 0.9999998807907104,
+      "score": 1.0
+    },
+    {
+      "id": "asul-700-24-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.9997968077659607,
+      "fontScore": 0.9999997615814209,
+      "score": 1.0
+    },
+    {
+      "id": "asul-700-24-1-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.9997977614402771,
+      "fontScore": 0.9999997615814209,
+      "score": 1.0
+    },
+    {
+      "id": "asul-700-24-0-1",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.9996844530105591,
+      "fontScore": 0.9999997615814209,
+      "score": 1.0
+    },
+    {
+      "id": "cambay-400-12-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 3.5298089073876326e-07,
+      "fontScore": 2.3438656571173055e-10,
+      "score": 0.0
+    },
+    {
+      "id": "cambay-400-16-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 4.6511601681231696e-08,
+      "fontScore": 2.0221372133314786e-15,
+      "score": 0.0
+    },
+    {
+      "id": "cambay-400-24-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 1.442506004423194e-06,
+      "fontScore": 2.9340217558846467e-15,
+      "score": 0.0
+    },
+    {
+      "id": "cambay-400-24-1-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 1.442506004423194e-06,
+      "fontScore": 2.9340217558846467e-15,
+      "score": 0.0
+    },
+    {
+      "id": "cambay-400-24-0-1",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 1.486809310335957e-06,
+      "fontScore": 4.104803718711105e-17,
+      "score": 0.0
+    },
+    {
+      "id": "cambay-700-12-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.9629957675933838,
+      "fontScore": 0.9100141525268555,
+      "score": 1.0
+    },
+    {
+      "id": "cambay-700-16-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.5115002989768982,
+      "fontScore": 0.22290170192718506,
+      "score": 0.0
+    },
+    {
+      "id": "cambay-700-24-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.9968961477279663,
+      "fontScore": 0.9949648976325989,
+      "score": 1.0
+    },
+    {
+      "id": "cambay-700-24-1-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.9968961477279663,
+      "fontScore": 0.9949648976325989,
+      "score": 1.0
+    },
+    {
+      "id": "cambay-700-24-0-1",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.9955321550369263,
+      "fontScore": 0.6870585083961487,
+      "score": 1.0
+    },
+    {
+      "id": "chivo-400-12-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 6.76052241033176e-06,
+      "fontScore": 1.3591321845751736e-08,
+      "score": 0.0
+    },
+    {
+      "id": "chivo-400-16-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 0.010473755188286304,
+      "fontScore": 1.3139966545394621e-11,
+      "score": 0.0
+    },
+    {
+      "id": "chivo-400-24-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 0.001579722622409463,
+      "fontScore": 1.3964377432174047e-09,
+      "score": 0.0
+    },
+    {
+      "id": "chivo-400-24-1-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 0.001579722622409463,
+      "fontScore": 1.3964377432174047e-09,
+      "score": 0.0
+    },
+    {
+      "id": "chivo-400-24-0-1",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 0.0016144640976563096,
+      "fontScore": 1.0893876772888333e-10,
+      "score": 0.0
+    },
+    {
+      "id": "chivo-700-12-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "chivo-700-16-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "chivo-700-24-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "chivo-700-24-1-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "chivo-700-24-0-1",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "eczar-400-12-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 0.019303878769278526,
+      "fontScore": 8.809186510916334e-06,
+      "score": 0.0
+    },
+    {
+      "id": "eczar-400-16-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 9.406925528310239e-05,
+      "fontScore": 5.768386586169072e-07,
+      "score": 0.0
+    },
+    {
+      "id": "eczar-400-24-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 1.7000153093249537e-05,
+      "fontScore": 3.7168955913102764e-08,
+      "score": 0.0
+    },
+    {
+      "id": "eczar-400-24-1-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 1.7000153093249537e-05,
+      "fontScore": 3.7168955913102764e-08,
+      "score": 0.0
+    },
+    {
+      "id": "eczar-400-24-0-1",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 2.249072895210702e-05,
+      "fontScore": 2.0294770308737498e-09,
+      "score": 0.0
+    },
+    {
+      "id": "eczar-700-12-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "eczar-700-16-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "eczar-700-24-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999998807907104,
+      "score": 1.0
+    },
+    {
+      "id": "eczar-700-24-1-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999998807907104,
+      "score": 1.0
+    },
+    {
+      "id": "eczar-700-24-0-1",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999995231628418,
+      "score": 1.0
+    },
+    {
+      "id": "faustina-400-12-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.886235499019676e-09,
+      "fontScore": 3.931672487578197e-10,
+      "score": 0.0
+    },
+    {
+      "id": "faustina-400-16-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 9.232024240191095e-06,
+      "fontScore": 3.1605695838266e-09,
+      "score": 0.0
+    },
+    {
+      "id": "faustina-400-24-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.4074815736271375e-09,
+      "fontScore": 1.0395178939859306e-08,
+      "score": 0.0
+    },
+    {
+      "id": "faustina-400-24-1-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.4074815736271375e-09,
+      "fontScore": 1.0395178939859306e-08,
+      "score": 0.0
+    },
+    {
+      "id": "faustina-400-24-0-1",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 8.168160370303212e-09,
+      "fontScore": 4.814136866926333e-10,
+      "score": 0.0
+    },
+    {
+      "id": "faustina-700-12-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999983310699463,
+      "score": 1.0
+    },
+    {
+      "id": "faustina-700-16-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9994729161262512,
+      "score": 1.0
+    },
+    {
+      "id": "faustina-700-24-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9994379878044128,
+      "score": 1.0
+    },
+    {
+      "id": "faustina-700-24-1-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9994432330131531,
+      "score": 1.0
+    },
+    {
+      "id": "faustina-700-24-0-1",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.999945878982544,
+      "score": 1.0
+    },
+    {
+      "id": "literata-400-12-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 4.218629692331888e-05,
+      "fontScore": 1.8368415112490766e-05,
+      "score": 0.0
+    },
+    {
+      "id": "literata-400-16-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 3.2831335374794435e-06,
+      "fontScore": 2.2784960029831325e-10,
+      "score": 0.0
+    },
+    {
+      "id": "literata-400-24-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.574610622716136e-05,
+      "fontScore": 1.8024850275549786e-12,
+      "score": 0.0
+    },
+    {
+      "id": "literata-400-24-1-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.57495113753248e-05,
+      "fontScore": 1.8024850275549786e-12,
+      "score": 0.0
+    },
+    {
+      "id": "literata-400-24-0-1",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.177446291781962e-05,
+      "fontScore": 4.325307820240987e-11,
+      "score": 0.0
+    },
+    {
+      "id": "literata-700-12-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.9999998807907104,
+      "fontScore": 0.9999995231628418,
+      "score": 1.0
+    },
+    {
+      "id": "literata-700-16-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 1.0,
+      "score": 1.0
+    },
+    {
+      "id": "literata-700-24-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999994039535522,
+      "score": 1.0
+    },
+    {
+      "id": "literata-700-24-1-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999994039535522,
+      "score": 1.0
+    },
+    {
+      "id": "literata-700-24-0-1",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 1.0,
+      "fontScore": 0.9999995231628418,
+      "score": 1.0
+    },
+    {
+      "id": "varta-400-12-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 1.1041917247212041e-07,
+      "fontScore": 4.5675493942631817e-10,
+      "score": 0.0
+    },
+    {
+      "id": "varta-400-16-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 4.310108103755539e-10,
+      "fontScore": 1.9840772701542643e-15,
+      "score": 0.0
+    },
+    {
+      "id": "varta-400-24-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.6749232868469335e-08,
+      "fontScore": 9.860115721409442e-15,
+      "score": 0.0
+    },
+    {
+      "id": "varta-400-24-1-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 5.6749232868469335e-08,
+      "fontScore": 9.860115721409442e-15,
+      "score": 0.0
+    },
+    {
+      "id": "varta-400-24-0-1",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "mobileScore": 9.578099025020492e-08,
+      "fontScore": 2.562815951757598e-19,
+      "score": 0.0
+    },
+    {
+      "id": "varta-700-12-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.0009394980152137578,
+      "fontScore": 0.9549205899238586,
+      "score": 1.0
+    },
+    {
+      "id": "varta-700-16-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.0006489491206593812,
+      "fontScore": 5.026351459491707e-07,
+      "score": 0.0
+    },
+    {
+      "id": "varta-700-24-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.00046863374882377684,
+      "fontScore": 0.7693788409233093,
+      "score": 1.0
+    },
+    {
+      "id": "varta-700-24-1-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.00046863374882377684,
+      "fontScore": 0.7693788409233093,
+      "score": 1.0
+    },
+    {
+      "id": "varta-700-24-0-1",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "mobileScore": 0.0004365492786746472,
+      "fontScore": 0.0026763782370835543,
+      "score": 0.0
+    }
+  ],
+  "fullLocalArtifactSha256": "043fa7f2627ace69a7c7316e91f8285a34914f562e69855dadab3c5da3a418a6",
+  "publishedScope": "Evaluation rows; training predictions and per-view logits omitted. Full local artifact retained with this hash."
+}
