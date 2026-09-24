@@ -18,11 +18,13 @@ def audit(packet, export):
     ids = [row['id'] for row in rows]
     if len(ids) != len(set(ids)) or set(ids) != set(cases):
         raise ValueError('Assessments must cover each source exactly once')
-    result = {'clearBold': [], 'clearRegular': [], 'excluded': []}
+    result = {key: [] for key in ('clearBold', 'clearRegular', 'absent', 'ambiguous', 'degraded', 'unreadable')}
     for row in rows:
         case = cases[row['id']]
         if row.get('sourceSha256') != case['sha256']:
             raise ValueError('Source image mismatch')
+        if not isinstance(row.get('rationale'), str) or not row['rationale'].strip():
+            raise ValueError('Assessment rationale required')
         heading, clarity = row.get('heading'), row.get('readability')
         if heading not in {'BOLD', 'REGULAR', 'AMBIGUOUS', 'ABSENT'}:
             raise ValueError('Missing or invalid heading assessment')
@@ -39,6 +41,14 @@ def audit(packet, export):
             x0, y0, x1, y1 = values
             if not (0 <= x0 < x1 <= case['width'] and 0 <= y0 < y1 <= case['height']):
                 raise ValueError('Box outside source or empty')
-        key = ('clearBold' if heading == 'BOLD' else 'clearRegular') if eligible else 'excluded'
+        # Disjoint coverage: absence/ambiguity take precedence over readability.
+        if heading == 'ABSENT':
+            key = 'absent'
+        elif heading == 'AMBIGUOUS':
+            key = 'ambiguous'
+        elif not eligible:
+            key = 'degraded' if clarity == 'DEGRADED' else 'unreadable'
+        else:
+            key = 'clearBold' if heading == 'BOLD' else 'clearRegular'
         result[key].append(row['id'])
     return result

@@ -27,7 +27,9 @@ class AnnotationAudit(unittest.TestCase):
         result = audit(self.packet, self.export)
         self.assertEqual(result['clearBold'], ['0'])
         self.assertEqual(result['clearRegular'], ['1'])
-        self.assertEqual(result['excluded'], ['2', '3', '4'])
+        self.assertEqual(result.get('degraded'), ['2'])
+        self.assertEqual(result.get('ambiguous'), ['3'])
+        self.assertEqual(result.get('absent'), ['4'])
         self.assertEqual(self.export, original)
 
     def test_rejects_changed_source_or_manifest(self):
@@ -52,6 +54,11 @@ class AnnotationAudit(unittest.TestCase):
                     dict(x0=3,y0=1,x1=3,y1=20),
                     dict(x0=0,y0=0,x1=float('nan'),y1=20)]:
             self.export['assessments'][0]['bbox'] = box
+            with self.assertRaises(ValueError): audit(self.packet, self.export)
+
+    def test_rejects_missing_or_nontext_rationale(self):
+        for value in [None, '', ' ', 7]:
+            self.export['assessments'][0]['rationale'] = value
             with self.assertRaises(ValueError): audit(self.packet, self.export)
 
     def test_rejects_missing_reviewer_and_invalid_readability(self):
