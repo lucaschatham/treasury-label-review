@@ -387,3 +387,7 @@ Applied all three requested skills to the remaining evidence gap. Fresh audit ve
 Annotation intake follow-up: preserved the [local packet integrity audit](evidence/real-label-packet-integrity.json), including evidence availability, after autoreview identified missing provenance. Five annotation-validation tests went RED then GREEN. This guards future dataset counts; it is not a detector improvement. Independent human annotations and regular negatives remain pending.
 
 Annotation intake closeout: autoreview accepted and resolved missing audit provenance, separate absent-heading coverage, and required rationale validation. Six focused tests pass after expected RED failures. Final review `autoreview --mode commit --commit HEAD` at `de243ec` exited 0 with no actionable findings. The packet was made available and independent assessment requested; no human answers or new accuracy result are implied.
+
+## R-021 preregistration: broad training-family coverage
+
+The user explicitly resumed automated engineering. The human-annotation gap does not block experiments with known source weights. Test [a matched-budget 16-versus-64-family intervention](docs/plans/r021-family-coverage.md), preserving original challenge/calibration and reserved families. R-018's four-image addition did not test this mechanism. Record both arms and stop on failed development gates; no production claim follows from training or harness tests.
