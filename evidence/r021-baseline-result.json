@@ -1,0 +1,3855 @@
+{
+  "decision": "STOP",
+  "summaries": {
+    "calibration": {
+      "bold": 128,
+      "boldMatches": 128,
+      "regular": 128,
+      "regularFalseMatches": 0,
+      "review": 128,
+      "pass": true
+    },
+    "century-renderer": {
+      "bold": 4,
+      "boldMatches": 4,
+      "regular": 4,
+      "regularFalseMatches": 0,
+      "review": 4,
+      "pass": true
+    },
+    "historical-renderer": {
+      "bold": 35,
+      "boldMatches": 35,
+      "regular": 35,
+      "regularFalseMatches": 4,
+      "review": 31,
+      "pass": false
+    },
+    "stroke-oracle": {
+      "bold": 40,
+      "boldMatches": 40,
+      "regular": 40,
+      "regularFalseMatches": 10,
+      "review": 30,
+      "pass": false
+    }
+  },
+  "cutoff": 0.14202998578548434,
+  "bodyInvariants": [
+    {
+      "ids": [
+        "Arial-same-family-bold",
+        "Arial-bold-body-bold"
+      ],
+      "same": true
+    },
+    {
+      "ids": [
+        "Georgia-same-family-bold",
+        "Georgia-bold-body-bold"
+      ],
+      "same": true
+    },
+    {
+      "ids": [
+        "Superclarendon-same-family-bold",
+        "Superclarendon-bold-body-bold"
+      ],
+      "same": true
+    },
+    {
+      "ids": [
+        "PT-Mono-same-family-bold",
+        "PT-Mono-bold-body-bold"
+      ],
+      "same": true
+    },
+    {
+      "ids": [
+        "TI-Nspire-same-family-bold",
+        "TI-Nspire-bold-body-bold"
+      ],
+      "same": true
+    }
+  ],
+  "rows": [
+    {
+      "id": "josefinsans-400-9-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0014289524406194687,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-9-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0006364165456034243,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-9-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00016367400530725718,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-9-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00015000322309788316,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-12-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.445445665623993e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-12-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.706574822601397e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-12-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.688313204795122e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-12-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.283569069229998e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-14-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0023115056101232767,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-14-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005767994443885982,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-14-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0007492515142075717,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-14-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0001969922159332782,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-16-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.9596922356868163e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-16-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 8.915541911846958e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-16-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.148272561607882e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-16-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.325054422020912e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-18-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.024349132552742958,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-18-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.011105678044259548,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-18-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 5.754514495492913e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-18-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.001478686812334e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-24-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0004491197469178587,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-24-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00032609954359941185,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-24-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00027297422639094293,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-24-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00011452432227088138,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-30-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0006826160824857652,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-30-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.000493575120344758,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-30-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00014473742339760065,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-30-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.530526297865435e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-36-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.014216476120054722,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-36-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0113992253318429,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-36-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0006242450908757746,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-400-36-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0003799462865572423,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "josefinsans-700-9-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999996542930603,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-9-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999994158744812,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-9-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999933242797852,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-9-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999902248382568,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-12-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999988079071045,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-12-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-12-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999992847442627,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-12-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999986886978149,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-14-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999998927116394,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-14-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999983310699463,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-14-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999988079071045,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-14-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999988079071045,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-16-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999998927116394,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-16-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999969005584717,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-16-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999996423721313,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-16-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999995231628418,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-18-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999981164932251,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-18-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999974250793457,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-18-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999990463256836,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-18-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999983310699463,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-24-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999994039535522,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-24-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999990463256836,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-24-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999983310699463,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-24-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999980926513672,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-30-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999959468841553,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-30-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999949932098389,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-30-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999991655349731,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-30-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999998927116394,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-36-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999980926513672,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-36-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999966621398926,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-36-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999980926513672,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "josefinsans-700-36-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999974966049194,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-400-9-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 5.255686119198799e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-9-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 5.405722731666174e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-9-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.315170609625056e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-9-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.173771155066788e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-12-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.027182690799236298,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-12-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.019103094935417175,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-12-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0007203824352473021,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-12-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00022970109421294183,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-14-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.03081389144062996,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-14-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.010739801451563835,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-14-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.020926862955093384,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-14-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0038251755759119987,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-16-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.05246846750378609,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-16-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.05354122072458267,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-16-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0015120785683393478,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-16-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0011045533465221524,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-18-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.1377909779548645,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-18-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.1247071921825409,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-18-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.03169598430395126,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-18-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.025662535801529884,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-24-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.059314433485269547,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-24-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.04409439116716385,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-24-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00017695355927571654,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-24-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00015762659313622862,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-30-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.14202998578548431,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-30-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.10439170897006989,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-30-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005618982249870896,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-30-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0004603030683938414,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-36-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.033171456307172775,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-36-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.02536381222307682,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-36-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.7225625924766064e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-400-36-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.46534603118198e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arvo-700-9-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-9-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-9-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-9-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-12-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-12-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-12-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-12-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-14-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-14-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-14-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-14-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-16-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-16-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-16-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-16-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-18-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-18-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-18-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-18-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-24-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-24-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-24-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-24-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-30-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999986886978149,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-30-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999982118606567,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-30-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-30-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-36-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999996423721313,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-36-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999996423721313,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-36-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arvo-700-36-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-400-9-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00014147420006338507,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-9-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.2255286239669658e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-9-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.004015086218714714,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-9-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0011034318013116717,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-12-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.006053681951016188,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-12-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.002057756297290325,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-12-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.026155224069952965,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-12-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.007908312603831291,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-14-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0017919255187734962,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-14-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005402370588853955,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-14-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.147165494330693e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-14-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.7940516196831595e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-16-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.887299837719183e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-16-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.6480233853144455e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-16-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.3739737520809285e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-16-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.6838959001906915e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-18-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.0456514903344214e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-18-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.8360214906279e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-18-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.8335578463156708e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-18-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.825864819693379e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-24-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.678017264974187e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-24-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.2399492536351318e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-24-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.3938474694441538e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-24-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.1006869726770674e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-30-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.2574039323662873e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-30-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.2445337890530936e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-30-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.091778995032655e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-30-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.561426850268617e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-36-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.461240572098177e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-36-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.2141355000494514e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-36-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.115448321797885e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-400-36-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 8.322219400724862e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "vollkorn-700-9-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999988079071045,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-9-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999996542930603,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-9-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999986886978149,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-9-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999971389770508,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-12-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999971389770508,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-12-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999827146530151,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-12-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999966621398926,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-12-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999916553497314,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-14-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999990463256836,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-14-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999979734420776,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-14-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999988079071045,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-14-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999985694885254,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-16-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999985694885254,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-16-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999978542327881,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-16-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999983310699463,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-16-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999979734420776,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-18-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999938011169434,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-18-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999984622001648,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-18-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999998927116394,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-18-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999985694885254,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-24-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999995231628418,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-24-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999895095825195,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-24-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999998927116394,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-24-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999986886978149,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-30-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999794960021973,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-30-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999668598175049,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-30-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999988079071045,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-30-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999982118606567,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-36-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999675750732422,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-36-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999642372131348,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-36-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999978542327881,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "vollkorn-700-36-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999974966049194,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-400-9-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.6640115063637495e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-9-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.06690544866251e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-9-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.478497893003805e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-9-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.272251304537349e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-12-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.112324207497295e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-12-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 5.638816674036207e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-12-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.088924015377415e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-12-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.3766624508425593e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-14-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.1394698705989867e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-14-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.0874136933125556e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-14-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.2327112421626225e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-14-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.1827501768711954e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-16-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00042594061233103275,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-16-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0003087331133428961,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-16-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.8774508134811185e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-16-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.0488001862540841e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-18-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.7400939163489966e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-18-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.8372357974149054e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-18-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.596029379579704e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-18-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.956958153139567e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-24-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.79120761458762e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-24-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.0660296538844705e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-24-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005559720448218286,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-24-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00034528825199231505,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-30-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 5.902510019950569e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-30-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.1584000680595636e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-30-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.054118759697303e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-30-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.570633634808473e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-36-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.064063250552863e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-36-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.103309063590132e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-36-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.3142345526139252e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-400-36-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.1855071534228045e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "firasans-700-9-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999953508377075,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-9-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999884366989136,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-9-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-9-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999996423721313,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-12-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-12-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-12-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-12-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-14-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999569654464722,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-14-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999953031539917,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-14-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-14-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-16-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999988079071045,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-16-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999985694885254,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-16-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-16-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-18-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999948740005493,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-18-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999933242797852,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-18-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-18-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-24-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999886751174927,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-24-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999816417694092,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-24-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-24-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-30-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999850988388062,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-30-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999794960021973,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-30-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-30-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-36-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999827146530151,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-36-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.99997878074646,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-36-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "firasans-700-36-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-same-family-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 3.518127869028831e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-same-family-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999836683273315,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-larger-heading-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 3.0608625820605084e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-larger-heading-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.99996018409729,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-bold-body-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 3.518127869028831e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-bold-body-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999836683273315,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-cap-9-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 5.122096524701192e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-cap-9-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9998892545700073,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-cap-12-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.8017228334277213e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-cap-12-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999868869781494,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-cap-14-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.1322761565679684e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-cap-14-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999940395355225,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-inverted-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.240835700855314e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-inverted-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999971389770508,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-jpeg-75-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.3465022499770107e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-jpeg-75-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999837875366211,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-same-family-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 6.138873686722945e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-same-family-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999169111251831,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-larger-heading-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 4.538597750070039e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-larger-heading-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9998776912689209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-bold-body-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 6.138873686722945e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-bold-body-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999169111251831,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-cap-9-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.9866381883621216,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-cap-9-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999995231628418,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-cap-12-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.05721365660429001,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-cap-12-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999959468841553,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-cap-14-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.00040844708564691246,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-cap-14-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999816417694092,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-inverted-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.6346614956855774,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-inverted-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999974966049194,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-jpeg-75-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.02980860136449337,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-jpeg-75-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999927282333374,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-same-family-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.8580135703086853,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-same-family-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999978542327881,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-larger-heading-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.6231553554534912,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-larger-heading-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999980926513672,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-bold-body-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.8580135703086853,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-bold-body-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999978542327881,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-cap-9-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.9804058074951172,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-cap-9-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999982118606567,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-cap-12-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.9106417894363403,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-cap-12-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999978542327881,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-cap-14-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.3290970027446747,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-cap-14-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999996423721313,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-inverted-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.9997380375862122,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-inverted-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-jpeg-75-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.7490593194961548,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-jpeg-75-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999971389770508,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-same-family-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.00013257375394459814,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-same-family-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9996688365936279,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-larger-heading-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.4151994946587365e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-larger-heading-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999812841415405,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-bold-body-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.00013257375394459814,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-bold-body-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9996688365936279,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-cap-9-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.00021504185860976577,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-cap-9-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9998133778572083,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-cap-12-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.00014731597912032157,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-cap-12-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999978542327881,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-cap-14-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 6.338709113151708e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-cap-14-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999589920043945,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-inverted-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 4.879724656348117e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-inverted-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-jpeg-75-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 8.120440179482102e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-jpeg-75-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999969005584717,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-same-family-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 7.997941753323801e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-same-family-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9969845414161682,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-larger-heading-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 3.7934162264718907e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-larger-heading-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9730259776115417,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-bold-body-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 7.997941753323801e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-bold-body-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9969845414161682,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-cap-9-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.007589295040816069,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-cap-9-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999963045120239,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-cap-12-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 9.489001058682334e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-cap-12-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9997954964637756,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-cap-14-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 9.276461696572369e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-cap-14-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9996393918991089,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-inverted-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 2.1608379029203206e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-inverted-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9973069429397583,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-jpeg-75-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 2.8050692435499514e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-jpeg-75-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9998190999031067,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Seravek-0-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.8295507920338423e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Seravek-0-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999938011169434,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Seravek-1-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.555434773261368e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Seravek-1-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999982118606567,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Seravek-2-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.0127089211664497e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Seravek-2-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999959468841553,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Seravek-3-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.1455521803659394e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Seravek-3-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.999990701675415,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Seravek-4-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.165544740113546e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Seravek-4-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999903440475464,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-0-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.8878451985292486e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-0-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9992160797119141,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-1-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.7801781950765871e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-1-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9962148070335388,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-2-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 4.44459801656194e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-2-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9931409955024719,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-3-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.955275133193936e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-3-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9869847893714905,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Mono-4-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.9451392745395424e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Mono-4-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9965693950653076,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Serif-0-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 4.0900204112404026e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Serif-0-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9900586009025574,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Serif-1-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 7.901929111042705e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Serif-1-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9882098436355591,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Serif-2-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 5.605159003607696e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Serif-2-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9782230257987976,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Serif-3-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.5197993974425117e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Serif-3-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9265544414520264,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "PT-Serif-4-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.7177045058834892e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "PT-Serif-4-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9537991285324097,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-0-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.46494364738464355,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-0-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9900460839271545,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-1-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.15401199460029602,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-1-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9991391897201538,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-2-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.1722446233034134,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-2-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9978796243667603,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-3-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.7825506329536438,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-3-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9986143112182617,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-4-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.06259610503911972,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Superclarendon-4-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9995519518852234,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-0-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.0078879397745766e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-0-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.7905339002609253,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-1-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.2120025255922826e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-1-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9345042109489441,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-2-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.6850539980592956e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-2-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.7505145072937012,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-3-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 9.482042928610213e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-3-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9323289394378662,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-4-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.2289038109922785e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-4-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.800561249256134,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Hoefler-Text-0-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 8.573116438981288e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Hoefler-Text-0-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999507665634155,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Hoefler-Text-1-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 6.832164611836333e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Hoefler-Text-1-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999536275863647,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Hoefler-Text-2-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 5.032689820438918e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Hoefler-Text-2-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9998302459716797,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Hoefler-Text-3-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 6.177410583063647e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Hoefler-Text-3-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9998506307601929,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Hoefler-Text-4-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.658545656368915e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Hoefler-Text-4-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999186992645264,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Kohinoor-Bangla-0-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.2829299254890625e-13,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Kohinoor-Bangla-0-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999078512191772,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Kohinoor-Bangla-1-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 4.604123506057878e-12,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Kohinoor-Bangla-1-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9998565912246704,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Kohinoor-Bangla-2-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.37688424498117e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Kohinoor-Bangla-2-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.999869704246521,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Kohinoor-Bangla-3-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.258386589375604e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Kohinoor-Bangla-3-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9998468160629272,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Kohinoor-Bangla-4-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.0567164331065637e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Kohinoor-Bangla-4-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9997755885124207,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "century-24-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "score": 1.2283803698664997e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "century-24-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "score": 0.9998784065246582,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "century-32-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "score": 0.0021002315916121006,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "century-32-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "score": 0.9996708631515503,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "century-40-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "score": 5.184572728467174e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "century-40-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "score": 0.9831320643424988,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "century-48-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "score": 2.452836270094849e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "century-48-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "score": 0.9882810711860657,
+      "verdict": "MATCH"
+    }
+  ],
+  "trainingLosses": [
+    0.317320529720746,
+    0.09961648678290658,
+    0.07075444885413162,
+    0.03649502062762622,
+    0.01769042560044909,
+    0.03921349509801075,
+    0.03731584217166528,
+    0.027011030810172088,
+    0.038896576368642855,
+    0.014680816097097704,
+    0.007026410232811031,
+    0.0010740079706010874,
+    0.0013518557398128905,
+    0.001986454205962218,
+    0.012614480016736707,
+    0.02165602593231597,
+    0.00536651629613516,
+    0.00037832952216376725,
+    0.0004223709770485584,
+    0.0002318847264177748,
+    0.0003919748149883162,
+    0.0003258215413666221,
+    0.00016661791062233533,
+    0.002514159108216063,
+    0.0012473752591120046,
+    0.0030263387392892582,
+    0.0012249560728605502,
+    0.000624894049053637,
+    0.00021567159032542804,
+    0.00021600648042863213,
+    7.037026908562893e-05,
+    0.00010587814425377928,
+    0.0001079217863662052,
+    8.881934674320746e-05,
+    7.020034513516293e-05,
+    4.580429622080828e-05,
+    5.617187540707391e-05,
+    7.071727682728124e-05,
+    0.00016051050140220013,
+    0.0001357963388954886,
+    3.235900475573317e-05,
+    3.7374438306869706e-05,
+    3.967899960599652e-05,
+    2.304410422482306e-05,
+    1.965688527150178e-05,
+    2.6202281780740577e-05,
+    6.876461987559424e-05,
+    1.1735184958894251e-05
+  ],
+  "wallSeconds": 223.97637320900685,
+  "modelSha256": "b483ffe41ed723be5a8f1012da515fe67508d536701447f339de8a8d9577b377"
+}
