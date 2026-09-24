@@ -1,0 +1,2146 @@
+{
+  "appearance-finetune-development": {
+    "sourceSha256": "73e0e45c602c8900bf764915cfb7d2830e12949bb103e698782b4452b3b90c98",
+    "pairs": 79,
+    "strictlyOrdered": 79,
+    "minimumMargin": 0.008697271347045898,
+    "rows": [
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-bold-body-WEIGHT",
+        "regular": "Arial-bold-body-regular",
+        "bold": "Arial-bold-body-bold",
+        "margin": 0.9993572095991112
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-12-WEIGHT",
+        "regular": "Arial-cap-12-regular",
+        "bold": "Arial-cap-12-bold",
+        "margin": 0.9999840908857607
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-14-WEIGHT",
+        "regular": "Arial-cap-14-regular",
+        "bold": "Arial-cap-14-bold",
+        "margin": 0.9991628994466737
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-9-WEIGHT",
+        "regular": "Arial-cap-9-regular",
+        "bold": "Arial-cap-9-bold",
+        "margin": 0.9997989709008834
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-inverted-WEIGHT",
+        "regular": "Arial-inverted-regular",
+        "bold": "Arial-inverted-bold",
+        "margin": 0.9997643708593387
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-jpeg-75-WEIGHT",
+        "regular": "Arial-jpeg-75-regular",
+        "bold": "Arial-jpeg-75-bold",
+        "margin": 0.9999767574267224
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-larger-heading-WEIGHT",
+        "regular": "Arial-larger-heading-regular",
+        "bold": "Arial-larger-heading-bold",
+        "margin": 0.9995338931912556
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-same-family-WEIGHT",
+        "regular": "Arial-same-family-regular",
+        "bold": "Arial-same-family-bold",
+        "margin": 0.9993572095991112
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-24-WEIGHT",
+        "regular": "century-24-regular",
+        "bold": "century-24-bold",
+        "margin": 0.990560429985635
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-32-WEIGHT",
+        "regular": "century-32-regular",
+        "bold": "century-32-bold",
+        "margin": 0.9868964783381671
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-40-WEIGHT",
+        "regular": "century-40-regular",
+        "bold": "century-40-bold",
+        "margin": 0.8462317491648719
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-48-WEIGHT",
+        "regular": "century-48-regular",
+        "bold": "century-48-bold",
+        "margin": 0.9395604524761438
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-bold-body-WEIGHT",
+        "regular": "Georgia-bold-body-regular",
+        "bold": "Georgia-bold-body-bold",
+        "margin": 0.9957679517101496
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-12-WEIGHT",
+        "regular": "Georgia-cap-12-regular",
+        "bold": "Georgia-cap-12-bold",
+        "margin": 0.8332921415567398
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-14-WEIGHT",
+        "regular": "Georgia-cap-14-regular",
+        "bold": "Georgia-cap-14-bold",
+        "margin": 0.9606851115822792
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-9-WEIGHT",
+        "regular": "Georgia-cap-9-regular",
+        "bold": "Georgia-cap-9-bold",
+        "margin": 0.02109050750732422
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-inverted-WEIGHT",
+        "regular": "Georgia-inverted-regular",
+        "bold": "Georgia-inverted-bold",
+        "margin": 0.27007991075515747
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-jpeg-75-WEIGHT",
+        "regular": "Georgia-jpeg-75-regular",
+        "bold": "Georgia-jpeg-75-bold",
+        "margin": 0.9257346615195274
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-larger-heading-WEIGHT",
+        "regular": "Georgia-larger-heading-regular",
+        "bold": "Georgia-larger-heading-bold",
+        "margin": 0.9977455248008482
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-same-family-WEIGHT",
+        "regular": "Georgia-same-family-regular",
+        "bold": "Georgia-same-family-bold",
+        "margin": 0.9957679517101496
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-0-WEIGHT",
+        "regular": "Hoefler-Text-0-regular",
+        "bold": "Hoefler-Text-0-bold",
+        "margin": 0.9984939468017728
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-1-WEIGHT",
+        "regular": "Hoefler-Text-1-regular",
+        "bold": "Hoefler-Text-1-bold",
+        "margin": 0.9972883706664106
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-2-WEIGHT",
+        "regular": "Hoefler-Text-2-regular",
+        "bold": "Hoefler-Text-2-bold",
+        "margin": 0.9821811471765614
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-3-WEIGHT",
+        "regular": "Hoefler-Text-3-regular",
+        "bold": "Hoefler-Text-3-bold",
+        "margin": 0.9916072953733419
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-4-WEIGHT",
+        "regular": "Hoefler-Text-4-regular",
+        "bold": "Hoefler-Text-4-bold",
+        "margin": 0.9973003750233147
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-0-WEIGHT",
+        "regular": "Kohinoor-Bangla-0-regular",
+        "bold": "Kohinoor-Bangla-0-bold",
+        "margin": 0.9977428840191056
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-1-WEIGHT",
+        "regular": "Kohinoor-Bangla-1-regular",
+        "bold": "Kohinoor-Bangla-1-bold",
+        "margin": 0.9897132788712426
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-2-WEIGHT",
+        "regular": "Kohinoor-Bangla-2-regular",
+        "bold": "Kohinoor-Bangla-2-bold",
+        "margin": 0.9998561292990757
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-3-WEIGHT",
+        "regular": "Kohinoor-Bangla-3-regular",
+        "bold": "Kohinoor-Bangla-3-bold",
+        "margin": 0.9996158023944588
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-4-WEIGHT",
+        "regular": "Kohinoor-Bangla-4-regular",
+        "bold": "Kohinoor-Bangla-4-bold",
+        "margin": 0.9956873552310981
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-0-WEIGHT",
+        "regular": "PT-Mono-0-regular",
+        "bold": "PT-Mono-0-bold",
+        "margin": 0.9976595745565646
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-1-WEIGHT",
+        "regular": "PT-Mono-1-regular",
+        "bold": "PT-Mono-1-bold",
+        "margin": 0.9951889423900866
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-2-WEIGHT",
+        "regular": "PT-Mono-2-regular",
+        "bold": "PT-Mono-2-bold",
+        "margin": 0.9841161112999544
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-3-WEIGHT",
+        "regular": "PT-Mono-3-regular",
+        "bold": "PT-Mono-3-bold",
+        "margin": 0.9883138584846165
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-4-WEIGHT",
+        "regular": "PT-Mono-4-regular",
+        "bold": "PT-Mono-4-bold",
+        "margin": 0.9858532246871619
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-bold-body-WEIGHT",
+        "regular": "PT-Mono-bold-body-regular",
+        "bold": "PT-Mono-bold-body-bold",
+        "margin": 0.9969342397525907
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-12-WEIGHT",
+        "regular": "PT-Mono-cap-12-regular",
+        "bold": "PT-Mono-cap-12-bold",
+        "margin": 0.9983225973555818
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-14-WEIGHT",
+        "regular": "PT-Mono-cap-14-regular",
+        "bold": "PT-Mono-cap-14-bold",
+        "margin": 0.9999533107875322
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-9-WEIGHT",
+        "regular": "PT-Mono-cap-9-regular",
+        "bold": "PT-Mono-cap-9-bold",
+        "margin": 0.9961530331056565
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-inverted-WEIGHT",
+        "regular": "PT-Mono-inverted-regular",
+        "bold": "PT-Mono-inverted-bold",
+        "margin": 0.9997049651283305
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-jpeg-75-WEIGHT",
+        "regular": "PT-Mono-jpeg-75-regular",
+        "bold": "PT-Mono-jpeg-75-bold",
+        "margin": 0.999359697685577
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-larger-heading-WEIGHT",
+        "regular": "PT-Mono-larger-heading-regular",
+        "bold": "PT-Mono-larger-heading-bold",
+        "margin": 0.9997352288919501
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-same-family-WEIGHT",
+        "regular": "PT-Mono-same-family-regular",
+        "bold": "PT-Mono-same-family-bold",
+        "margin": 0.9969342397525907
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-0-WEIGHT",
+        "regular": "PT-Serif-0-regular",
+        "bold": "PT-Serif-0-bold",
+        "margin": 0.978407271148626
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-1-WEIGHT",
+        "regular": "PT-Serif-1-regular",
+        "bold": "PT-Serif-1-bold",
+        "margin": 0.9914382792026117
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-2-WEIGHT",
+        "regular": "PT-Serif-2-regular",
+        "bold": "PT-Serif-2-bold",
+        "margin": 0.9880998980206641
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-3-WEIGHT",
+        "regular": "PT-Serif-3-regular",
+        "bold": "PT-Serif-3-bold",
+        "margin": 0.9764772102782899
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-4-WEIGHT",
+        "regular": "PT-Serif-4-regular",
+        "bold": "PT-Serif-4-bold",
+        "margin": 0.9745294309095698
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-0-WEIGHT",
+        "regular": "Seravek-0-regular",
+        "bold": "Seravek-0-bold",
+        "margin": 0.9999030952603789
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-1-WEIGHT",
+        "regular": "Seravek-1-regular",
+        "bold": "Seravek-1-bold",
+        "margin": 0.9999481396953342
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-2-WEIGHT",
+        "regular": "Seravek-2-regular",
+        "bold": "Seravek-2-bold",
+        "margin": 0.9999644032905053
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-3-WEIGHT",
+        "regular": "Seravek-3-regular",
+        "bold": "Seravek-3-bold",
+        "margin": 0.9999825824406798
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-4-WEIGHT",
+        "regular": "Seravek-4-regular",
+        "bold": "Seravek-4-bold",
+        "margin": 0.99971144265146
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-0-WEIGHT",
+        "regular": "Superclarendon-0-regular",
+        "bold": "Superclarendon-0-bold",
+        "margin": 0.3818272352218628
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-1-WEIGHT",
+        "regular": "Superclarendon-1-regular",
+        "bold": "Superclarendon-1-bold",
+        "margin": 0.5448062121868134
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-2-WEIGHT",
+        "regular": "Superclarendon-2-regular",
+        "bold": "Superclarendon-2-bold",
+        "margin": 0.8381446748971939
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-3-WEIGHT",
+        "regular": "Superclarendon-3-regular",
+        "bold": "Superclarendon-3-bold",
+        "margin": 0.4621288776397705
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-4-WEIGHT",
+        "regular": "Superclarendon-4-regular",
+        "bold": "Superclarendon-4-bold",
+        "margin": 0.7207728326320648
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-bold-body-WEIGHT",
+        "regular": "Superclarendon-bold-body-regular",
+        "bold": "Superclarendon-bold-body-bold",
+        "margin": 0.14193403720855713
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-12-WEIGHT",
+        "regular": "Superclarendon-cap-12-regular",
+        "bold": "Superclarendon-cap-12-bold",
+        "margin": 0.2326701283454895
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-14-WEIGHT",
+        "regular": "Superclarendon-cap-14-regular",
+        "bold": "Superclarendon-cap-14-bold",
+        "margin": 0.6374886333942413
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-9-WEIGHT",
+        "regular": "Superclarendon-cap-9-regular",
+        "bold": "Superclarendon-cap-9-bold",
+        "margin": 0.008697271347045898
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-inverted-WEIGHT",
+        "regular": "Superclarendon-inverted-regular",
+        "bold": "Superclarendon-inverted-bold",
+        "margin": 0.026356637477874756
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-jpeg-75-WEIGHT",
+        "regular": "Superclarendon-jpeg-75-regular",
+        "bold": "Superclarendon-jpeg-75-bold",
+        "margin": 0.3214070200920105
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-larger-heading-WEIGHT",
+        "regular": "Superclarendon-larger-heading-regular",
+        "bold": "Superclarendon-larger-heading-bold",
+        "margin": 0.14486253261566162
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-same-family-WEIGHT",
+        "regular": "Superclarendon-same-family-regular",
+        "bold": "Superclarendon-same-family-bold",
+        "margin": 0.14193403720855713
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-0-WEIGHT",
+        "regular": "TI-Nspire-0-regular",
+        "bold": "TI-Nspire-0-bold",
+        "margin": 0.5717611865628669
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-1-WEIGHT",
+        "regular": "TI-Nspire-1-regular",
+        "bold": "TI-Nspire-1-bold",
+        "margin": 0.4998785967710546
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-2-WEIGHT",
+        "regular": "TI-Nspire-2-regular",
+        "bold": "TI-Nspire-2-bold",
+        "margin": 0.5194370349990436
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-3-WEIGHT",
+        "regular": "TI-Nspire-3-regular",
+        "bold": "TI-Nspire-3-bold",
+        "margin": 0.2551102797705198
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-4-WEIGHT",
+        "regular": "TI-Nspire-4-regular",
+        "bold": "TI-Nspire-4-bold",
+        "margin": 0.22071992144412889
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-bold-body-WEIGHT",
+        "regular": "TI-Nspire-bold-body-regular",
+        "bold": "TI-Nspire-bold-body-bold",
+        "margin": 0.8854911483301748
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-12-WEIGHT",
+        "regular": "TI-Nspire-cap-12-regular",
+        "bold": "TI-Nspire-cap-12-bold",
+        "margin": 0.9938704509404488
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-14-WEIGHT",
+        "regular": "TI-Nspire-cap-14-regular",
+        "bold": "TI-Nspire-cap-14-bold",
+        "margin": 0.9959240366879385
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-9-WEIGHT",
+        "regular": "TI-Nspire-cap-9-regular",
+        "bold": "TI-Nspire-cap-9-bold",
+        "margin": 0.2767835259437561
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-inverted-WEIGHT",
+        "regular": "TI-Nspire-inverted-regular",
+        "bold": "TI-Nspire-inverted-bold",
+        "margin": 0.9796265736222267
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-jpeg-75-WEIGHT",
+        "regular": "TI-Nspire-jpeg-75-regular",
+        "bold": "TI-Nspire-jpeg-75-bold",
+        "margin": 0.9912673931685276
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-larger-heading-WEIGHT",
+        "regular": "TI-Nspire-larger-heading-regular",
+        "bold": "TI-Nspire-larger-heading-bold",
+        "margin": 0.94702164985938
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-same-family-WEIGHT",
+        "regular": "TI-Nspire-same-family-regular",
+        "bold": "TI-Nspire-same-family-bold",
+        "margin": 0.8854911483301748
+      }
+    ]
+  },
+  "r018-baseline-results": {
+    "sourceSha256": "6b82576dbc19240d48d151921e16d824b2a9cec8f385855e8342756011661a48",
+    "pairs": 93,
+    "strictlyOrdered": 93,
+    "minimumMargin": 0.00677722692489624,
+    "rows": [
+      {
+        "family": "Arial",
+        "category": "r016-transfer",
+        "key": "r016-Arial-WEIGHT-12-magick",
+        "regular": "r016-Arial-REGULAR-12-magick",
+        "bold": "r016-Arial-BOLD-12-magick",
+        "margin": 0.9994363801088184
+      },
+      {
+        "family": "Arial",
+        "category": "r016-transfer",
+        "key": "r016-Arial-WEIGHT-12-pillow",
+        "regular": "r016-Arial-REGULAR-12-pillow",
+        "bold": "r016-Arial-BOLD-12-pillow",
+        "margin": 0.9999716380078212
+      },
+      {
+        "family": "Arial",
+        "category": "r016-transfer",
+        "key": "r016-Arial-WEIGHT-24-magick",
+        "regular": "r016-Arial-REGULAR-24-magick",
+        "bold": "r016-Arial-BOLD-24-magick",
+        "margin": 0.9995667655894067
+      },
+      {
+        "family": "Arial",
+        "category": "r016-transfer",
+        "key": "r016-Arial-WEIGHT-24-pillow",
+        "regular": "r016-Arial-REGULAR-24-pillow",
+        "bold": "r016-Arial-BOLD-24-pillow",
+        "margin": 0.999232451984426
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-bold-body-WEIGHT",
+        "regular": "Arial-bold-body-regular",
+        "bold": "Arial-bold-body-bold",
+        "margin": 0.9998687569823232
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-12-WEIGHT",
+        "regular": "Arial-cap-12-regular",
+        "bold": "Arial-cap-12-bold",
+        "margin": 0.9999392906930211
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-14-WEIGHT",
+        "regular": "Arial-cap-14-regular",
+        "bold": "Arial-cap-14-bold",
+        "margin": 0.9975629453547299
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-9-WEIGHT",
+        "regular": "Arial-cap-9-regular",
+        "bold": "Arial-cap-9-bold",
+        "margin": 0.9997122114655212
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-inverted-WEIGHT",
+        "regular": "Arial-inverted-regular",
+        "bold": "Arial-inverted-bold",
+        "margin": 0.9999508550467908
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-jpeg-75-WEIGHT",
+        "regular": "Arial-jpeg-75-regular",
+        "bold": "Arial-jpeg-75-bold",
+        "margin": 0.9999461648122292
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-larger-heading-WEIGHT",
+        "regular": "Arial-larger-heading-regular",
+        "bold": "Arial-larger-heading-bold",
+        "margin": 0.9996700306110142
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-same-family-WEIGHT",
+        "regular": "Arial-same-family-regular",
+        "bold": "Arial-same-family-bold",
+        "margin": 0.9998687569823232
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-24-WEIGHT",
+        "regular": "century-24-regular",
+        "bold": "century-24-bold",
+        "margin": 0.9704149300450808
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-32-WEIGHT",
+        "regular": "century-32-regular",
+        "bold": "century-32-bold",
+        "margin": 0.9779038621054497
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-40-WEIGHT",
+        "regular": "century-40-regular",
+        "bold": "century-40-bold",
+        "margin": 0.9190042499176343
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-48-WEIGHT",
+        "regular": "century-48-regular",
+        "bold": "century-48-bold",
+        "margin": 0.9556397350970656
+      },
+      {
+        "family": "Georgia",
+        "category": "r016-transfer",
+        "key": "r016-Georgia-WEIGHT-12-magick",
+        "regular": "r016-Georgia-REGULAR-12-magick",
+        "bold": "r016-Georgia-BOLD-12-magick",
+        "margin": 0.9764227148843929
+      },
+      {
+        "family": "Georgia",
+        "category": "r016-transfer",
+        "key": "r016-Georgia-WEIGHT-12-pillow",
+        "regular": "r016-Georgia-REGULAR-12-pillow",
+        "bold": "r016-Georgia-BOLD-12-pillow",
+        "margin": 0.7327033281326294
+      },
+      {
+        "family": "Georgia",
+        "category": "r016-transfer",
+        "key": "r016-Georgia-WEIGHT-24-magick",
+        "regular": "r016-Georgia-REGULAR-24-magick",
+        "bold": "r016-Georgia-BOLD-24-magick",
+        "margin": 0.9815918823587708
+      },
+      {
+        "family": "Georgia",
+        "category": "r016-transfer",
+        "key": "r016-Georgia-WEIGHT-24-pillow",
+        "regular": "r016-Georgia-REGULAR-24-pillow",
+        "bold": "r016-Georgia-BOLD-24-pillow",
+        "margin": 0.9938363504479639
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-bold-body-WEIGHT",
+        "regular": "Georgia-bold-body-regular",
+        "bold": "Georgia-bold-body-bold",
+        "margin": 0.9823571715387516
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-12-WEIGHT",
+        "regular": "Georgia-cap-12-regular",
+        "bold": "Georgia-cap-12-bold",
+        "margin": 0.4801708459854126
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-14-WEIGHT",
+        "regular": "Georgia-cap-14-regular",
+        "bold": "Georgia-cap-14-bold",
+        "margin": 0.9957583185168914
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-9-WEIGHT",
+        "regular": "Georgia-cap-9-regular",
+        "bold": "Georgia-cap-9-bold",
+        "margin": 0.19858908653259277
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-inverted-WEIGHT",
+        "regular": "Georgia-inverted-regular",
+        "bold": "Georgia-inverted-bold",
+        "margin": 0.37977123260498047
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-jpeg-75-WEIGHT",
+        "regular": "Georgia-jpeg-75-regular",
+        "bold": "Georgia-jpeg-75-bold",
+        "margin": 0.5282767117023468
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-larger-heading-WEIGHT",
+        "regular": "Georgia-larger-heading-regular",
+        "bold": "Georgia-larger-heading-bold",
+        "margin": 0.987043873872608
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-same-family-WEIGHT",
+        "regular": "Georgia-same-family-regular",
+        "bold": "Georgia-same-family-bold",
+        "margin": 0.9823571715387516
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-0-WEIGHT",
+        "regular": "Hoefler-Text-0-regular",
+        "bold": "Hoefler-Text-0-bold",
+        "margin": 0.8065564829496452
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-1-WEIGHT",
+        "regular": "Hoefler-Text-1-regular",
+        "bold": "Hoefler-Text-1-bold",
+        "margin": 0.9184196067781158
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-2-WEIGHT",
+        "regular": "Hoefler-Text-2-regular",
+        "bold": "Hoefler-Text-2-bold",
+        "margin": 0.911517362910331
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-3-WEIGHT",
+        "regular": "Hoefler-Text-3-regular",
+        "bold": "Hoefler-Text-3-bold",
+        "margin": 0.7831696919897695
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-4-WEIGHT",
+        "regular": "Hoefler-Text-4-regular",
+        "bold": "Hoefler-Text-4-bold",
+        "margin": 0.92604027048219
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-0-WEIGHT",
+        "regular": "Kohinoor-Bangla-0-regular",
+        "bold": "Kohinoor-Bangla-0-bold",
+        "margin": 0.9978727429748062
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-1-WEIGHT",
+        "regular": "Kohinoor-Bangla-1-regular",
+        "bold": "Kohinoor-Bangla-1-bold",
+        "margin": 0.9983770068173428
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-2-WEIGHT",
+        "regular": "Kohinoor-Bangla-2-regular",
+        "bold": "Kohinoor-Bangla-2-bold",
+        "margin": 0.998661309100612
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-3-WEIGHT",
+        "regular": "Kohinoor-Bangla-3-regular",
+        "bold": "Kohinoor-Bangla-3-bold",
+        "margin": 0.9982594112918122
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-4-WEIGHT",
+        "regular": "Kohinoor-Bangla-4-regular",
+        "bold": "Kohinoor-Bangla-4-bold",
+        "margin": 0.9989299671004801
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-0-WEIGHT",
+        "regular": "PT-Mono-0-regular",
+        "bold": "PT-Mono-0-bold",
+        "margin": 0.994509859264781
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-1-WEIGHT",
+        "regular": "PT-Mono-1-regular",
+        "bold": "PT-Mono-1-bold",
+        "margin": 0.9845876668341589
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-2-WEIGHT",
+        "regular": "PT-Mono-2-regular",
+        "bold": "PT-Mono-2-bold",
+        "margin": 0.9794424464071199
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-3-WEIGHT",
+        "regular": "PT-Mono-3-regular",
+        "bold": "PT-Mono-3-bold",
+        "margin": 0.994457700100611
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-4-WEIGHT",
+        "regular": "PT-Mono-4-regular",
+        "bold": "PT-Mono-4-bold",
+        "margin": 0.9827041480848493
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-bold-body-WEIGHT",
+        "regular": "PT-Mono-bold-body-regular",
+        "bold": "PT-Mono-bold-body-bold",
+        "margin": 0.999258864132571
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-12-WEIGHT",
+        "regular": "PT-Mono-cap-12-regular",
+        "bold": "PT-Mono-cap-12-bold",
+        "margin": 0.9995812983543146
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-14-WEIGHT",
+        "regular": "PT-Mono-cap-14-regular",
+        "bold": "PT-Mono-cap-14-bold",
+        "margin": 0.9997233610100693
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-9-WEIGHT",
+        "regular": "PT-Mono-cap-9-regular",
+        "bold": "PT-Mono-cap-9-bold",
+        "margin": 0.9923502332530916
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-inverted-WEIGHT",
+        "regular": "PT-Mono-inverted-regular",
+        "bold": "PT-Mono-inverted-bold",
+        "margin": 0.9997352253994904
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-jpeg-75-WEIGHT",
+        "regular": "PT-Mono-jpeg-75-regular",
+        "bold": "PT-Mono-jpeg-75-bold",
+        "margin": 0.9996418771042954
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-larger-heading-WEIGHT",
+        "regular": "PT-Mono-larger-heading-regular",
+        "bold": "PT-Mono-larger-heading-bold",
+        "margin": 0.9999239271328406
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-same-family-WEIGHT",
+        "regular": "PT-Mono-same-family-regular",
+        "bold": "PT-Mono-same-family-bold",
+        "margin": 0.999258864132571
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-0-WEIGHT",
+        "regular": "PT-Serif-0-regular",
+        "bold": "PT-Serif-0-bold",
+        "margin": 0.4788125086472519
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-1-WEIGHT",
+        "regular": "PT-Serif-1-regular",
+        "bold": "PT-Serif-1-bold",
+        "margin": 0.4764578328204152
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-2-WEIGHT",
+        "regular": "PT-Serif-2-regular",
+        "bold": "PT-Serif-2-bold",
+        "margin": 0.6209322618251463
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-3-WEIGHT",
+        "regular": "PT-Serif-3-regular",
+        "bold": "PT-Serif-3-bold",
+        "margin": 0.5039371845095957
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-4-WEIGHT",
+        "regular": "PT-Serif-4-regular",
+        "bold": "PT-Serif-4-bold",
+        "margin": 0.3917717443814581
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-0-WEIGHT",
+        "regular": "Seravek-0-regular",
+        "bold": "Seravek-0-bold",
+        "margin": 0.9998060292709852
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-1-WEIGHT",
+        "regular": "Seravek-1-regular",
+        "bold": "Seravek-1-bold",
+        "margin": 0.9996486035524867
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-2-WEIGHT",
+        "regular": "Seravek-2-regular",
+        "bold": "Seravek-2-bold",
+        "margin": 0.9998355242860271
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-3-WEIGHT",
+        "regular": "Seravek-3-regular",
+        "bold": "Seravek-3-bold",
+        "margin": 0.999944268422496
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-4-WEIGHT",
+        "regular": "Seravek-4-regular",
+        "bold": "Seravek-4-bold",
+        "margin": 0.9998925779145793
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-0-WEIGHT",
+        "regular": "Superclarendon-0-regular",
+        "bold": "Superclarendon-0-bold",
+        "margin": 0.5762887597084045
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-1-WEIGHT",
+        "regular": "Superclarendon-1-regular",
+        "bold": "Superclarendon-1-bold",
+        "margin": 0.9722464289516211
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-2-WEIGHT",
+        "regular": "Superclarendon-2-regular",
+        "bold": "Superclarendon-2-bold",
+        "margin": 0.9560400992631912
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-3-WEIGHT",
+        "regular": "Superclarendon-3-regular",
+        "bold": "Superclarendon-3-bold",
+        "margin": 0.44744962453842163
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-4-WEIGHT",
+        "regular": "Superclarendon-4-regular",
+        "bold": "Superclarendon-4-bold",
+        "margin": 0.9666029466316104
+      },
+      {
+        "family": "Superclarendon",
+        "category": "r016-transfer",
+        "key": "r016-Superclarendon-WEIGHT-12-magick",
+        "regular": "r016-Superclarendon-REGULAR-12-magick",
+        "bold": "r016-Superclarendon-BOLD-12-magick",
+        "margin": 0.10244125127792358
+      },
+      {
+        "family": "Superclarendon",
+        "category": "r016-transfer",
+        "key": "r016-Superclarendon-WEIGHT-12-pillow",
+        "regular": "r016-Superclarendon-REGULAR-12-pillow",
+        "bold": "r016-Superclarendon-BOLD-12-pillow",
+        "margin": 0.2923967242240906
+      },
+      {
+        "family": "Superclarendon",
+        "category": "r016-transfer",
+        "key": "r016-Superclarendon-WEIGHT-24-magick",
+        "regular": "r016-Superclarendon-REGULAR-24-magick",
+        "bold": "r016-Superclarendon-BOLD-24-magick",
+        "margin": 0.02741098403930664
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-bold-body-WEIGHT",
+        "regular": "Superclarendon-bold-body-regular",
+        "bold": "Superclarendon-bold-body-bold",
+        "margin": 0.38878345489501953
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-12-WEIGHT",
+        "regular": "Superclarendon-cap-12-regular",
+        "bold": "Superclarendon-cap-12-bold",
+        "margin": 0.6301137804985046
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-14-WEIGHT",
+        "regular": "Superclarendon-cap-14-regular",
+        "bold": "Superclarendon-cap-14-bold",
+        "margin": 0.898601770401001
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-9-WEIGHT",
+        "regular": "Superclarendon-cap-9-regular",
+        "bold": "Superclarendon-cap-9-bold",
+        "margin": 0.7155827581882477
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-inverted-WEIGHT",
+        "regular": "Superclarendon-inverted-regular",
+        "bold": "Superclarendon-inverted-bold",
+        "margin": 0.00677722692489624
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-jpeg-75-WEIGHT",
+        "regular": "Superclarendon-jpeg-75-regular",
+        "bold": "Superclarendon-jpeg-75-bold",
+        "margin": 0.5935881733894348
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-larger-heading-WEIGHT",
+        "regular": "Superclarendon-larger-heading-regular",
+        "bold": "Superclarendon-larger-heading-bold",
+        "margin": 0.6976682245731354
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-same-family-WEIGHT",
+        "regular": "Superclarendon-same-family-regular",
+        "bold": "Superclarendon-same-family-bold",
+        "margin": 0.38878345489501953
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-0-WEIGHT",
+        "regular": "TI-Nspire-0-regular",
+        "bold": "TI-Nspire-0-bold",
+        "margin": 0.25564691444742493
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-1-WEIGHT",
+        "regular": "TI-Nspire-1-regular",
+        "bold": "TI-Nspire-1-bold",
+        "margin": 0.365169400583909
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-2-WEIGHT",
+        "regular": "TI-Nspire-2-regular",
+        "bold": "TI-Nspire-2-bold",
+        "margin": 0.19719409738172544
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-3-WEIGHT",
+        "regular": "TI-Nspire-3-regular",
+        "bold": "TI-Nspire-3-bold",
+        "margin": 0.2651038943141657
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-4-WEIGHT",
+        "regular": "TI-Nspire-4-regular",
+        "bold": "TI-Nspire-4-bold",
+        "margin": 0.22059860412741727
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "r016-transfer",
+        "key": "r016-TI-Nspire-WEIGHT-12-magick",
+        "regular": "r016-TI-Nspire-REGULAR-12-magick",
+        "bold": "r016-TI-Nspire-BOLD-12-magick",
+        "margin": 0.8172588496890967
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "r016-transfer",
+        "key": "r016-TI-Nspire-WEIGHT-12-pillow",
+        "regular": "r016-TI-Nspire-REGULAR-12-pillow",
+        "bold": "r016-TI-Nspire-BOLD-12-pillow",
+        "margin": 0.9640726819634438
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "r016-transfer",
+        "key": "r016-TI-Nspire-WEIGHT-24-magick",
+        "regular": "r016-TI-Nspire-REGULAR-24-magick",
+        "bold": "r016-TI-Nspire-BOLD-24-magick",
+        "margin": 0.96275840853923
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-bold-body-WEIGHT",
+        "regular": "TI-Nspire-bold-body-regular",
+        "bold": "TI-Nspire-bold-body-bold",
+        "margin": 0.9784046960576234
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-12-WEIGHT",
+        "regular": "TI-Nspire-cap-12-regular",
+        "bold": "TI-Nspire-cap-12-bold",
+        "margin": 0.9447140237316489
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-14-WEIGHT",
+        "regular": "TI-Nspire-cap-14-regular",
+        "bold": "TI-Nspire-cap-14-bold",
+        "margin": 0.9551500927191228
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-9-WEIGHT",
+        "regular": "TI-Nspire-cap-9-regular",
+        "bold": "TI-Nspire-cap-9-bold",
+        "margin": 0.9094931557774544
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-inverted-WEIGHT",
+        "regular": "TI-Nspire-inverted-regular",
+        "bold": "TI-Nspire-inverted-bold",
+        "margin": 0.9855928705073893
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-jpeg-75-WEIGHT",
+        "regular": "TI-Nspire-jpeg-75-regular",
+        "bold": "TI-Nspire-jpeg-75-bold",
+        "margin": 0.9508996671065688
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-larger-heading-WEIGHT",
+        "regular": "TI-Nspire-larger-heading-regular",
+        "bold": "TI-Nspire-larger-heading-bold",
+        "margin": 0.5692380799446255
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-same-family-WEIGHT",
+        "regular": "TI-Nspire-same-family-regular",
+        "bold": "TI-Nspire-same-family-bold",
+        "margin": 0.9784046960576234
+      }
+    ]
+  },
+  "r018-treatment-results": {
+    "sourceSha256": "3c461f7f24c565d2348e51e007e741731db6b8e1bde23535dadaae9825cea2d6",
+    "pairs": 93,
+    "strictlyOrdered": 93,
+    "minimumMargin": 0.0023235077069330146,
+    "rows": [
+      {
+        "family": "Arial",
+        "category": "r016-transfer",
+        "key": "r016-Arial-WEIGHT-12-magick",
+        "regular": "r016-Arial-REGULAR-12-magick",
+        "bold": "r016-Arial-BOLD-12-magick",
+        "margin": 0.9999586890371575
+      },
+      {
+        "family": "Arial",
+        "category": "r016-transfer",
+        "key": "r016-Arial-WEIGHT-12-pillow",
+        "regular": "r016-Arial-REGULAR-12-pillow",
+        "bold": "r016-Arial-BOLD-12-pillow",
+        "margin": 0.9999867260216888
+      },
+      {
+        "family": "Arial",
+        "category": "r016-transfer",
+        "key": "r016-Arial-WEIGHT-24-magick",
+        "regular": "r016-Arial-REGULAR-24-magick",
+        "bold": "r016-Arial-BOLD-24-magick",
+        "margin": 0.999929598714516
+      },
+      {
+        "family": "Arial",
+        "category": "r016-transfer",
+        "key": "r016-Arial-WEIGHT-24-pillow",
+        "regular": "r016-Arial-REGULAR-24-pillow",
+        "bold": "r016-Arial-BOLD-24-pillow",
+        "margin": 0.9998099772492424
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-bold-body-WEIGHT",
+        "regular": "Arial-bold-body-regular",
+        "bold": "Arial-bold-body-bold",
+        "margin": 0.9998594013923139
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-12-WEIGHT",
+        "regular": "Arial-cap-12-regular",
+        "bold": "Arial-cap-12-bold",
+        "margin": 0.999927633573634
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-14-WEIGHT",
+        "regular": "Arial-cap-14-regular",
+        "bold": "Arial-cap-14-bold",
+        "margin": 0.9995373644051142
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-cap-9-WEIGHT",
+        "regular": "Arial-cap-9-regular",
+        "bold": "Arial-cap-9-bold",
+        "margin": 0.9989715735064237
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-inverted-WEIGHT",
+        "regular": "Arial-inverted-regular",
+        "bold": "Arial-inverted-bold",
+        "margin": 0.9994276561192237
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-jpeg-75-WEIGHT",
+        "regular": "Arial-jpeg-75-regular",
+        "bold": "Arial-jpeg-75-bold",
+        "margin": 0.9998542625717732
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-larger-heading-WEIGHT",
+        "regular": "Arial-larger-heading-regular",
+        "bold": "Arial-larger-heading-bold",
+        "margin": 0.9998915317346473
+      },
+      {
+        "family": "Arial",
+        "category": "stroke-oracle",
+        "key": "Arial-same-family-WEIGHT",
+        "regular": "Arial-same-family-regular",
+        "bold": "Arial-same-family-bold",
+        "margin": 0.9998594013923139
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-24-WEIGHT",
+        "regular": "century-24-regular",
+        "bold": "century-24-bold",
+        "margin": 0.6106478681394947
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-32-WEIGHT",
+        "regular": "century-32-regular",
+        "bold": "century-32-bold",
+        "margin": 0.8721035978815053
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-40-WEIGHT",
+        "regular": "century-40-regular",
+        "bold": "century-40-bold",
+        "margin": 0.7072163252887549
+      },
+      {
+        "family": "Century",
+        "category": "century-renderer",
+        "key": "century-48-WEIGHT",
+        "regular": "century-48-regular",
+        "bold": "century-48-bold",
+        "margin": 0.9686719564888335
+      },
+      {
+        "family": "Georgia",
+        "category": "r016-transfer",
+        "key": "r016-Georgia-WEIGHT-12-magick",
+        "regular": "r016-Georgia-REGULAR-12-magick",
+        "bold": "r016-Georgia-BOLD-12-magick",
+        "margin": 0.4653262739884667
+      },
+      {
+        "family": "Georgia",
+        "category": "r016-transfer",
+        "key": "r016-Georgia-WEIGHT-12-pillow",
+        "regular": "r016-Georgia-REGULAR-12-pillow",
+        "bold": "r016-Georgia-BOLD-12-pillow",
+        "margin": 0.16530760563910007
+      },
+      {
+        "family": "Georgia",
+        "category": "r016-transfer",
+        "key": "r016-Georgia-WEIGHT-24-magick",
+        "regular": "r016-Georgia-REGULAR-24-magick",
+        "bold": "r016-Georgia-BOLD-24-magick",
+        "margin": 0.7951432755435235
+      },
+      {
+        "family": "Georgia",
+        "category": "r016-transfer",
+        "key": "r016-Georgia-WEIGHT-24-pillow",
+        "regular": "r016-Georgia-REGULAR-24-pillow",
+        "bold": "r016-Georgia-BOLD-24-pillow",
+        "margin": 0.5341630953298591
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-bold-body-WEIGHT",
+        "regular": "Georgia-bold-body-regular",
+        "bold": "Georgia-bold-body-bold",
+        "margin": 0.10805726162834617
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-12-WEIGHT",
+        "regular": "Georgia-cap-12-regular",
+        "bold": "Georgia-cap-12-bold",
+        "margin": 0.9762100297957659
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-14-WEIGHT",
+        "regular": "Georgia-cap-14-regular",
+        "bold": "Georgia-cap-14-bold",
+        "margin": 0.6502978065036586
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-cap-9-WEIGHT",
+        "regular": "Georgia-cap-9-regular",
+        "bold": "Georgia-cap-9-bold",
+        "margin": 0.14731454849243164
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-inverted-WEIGHT",
+        "regular": "Georgia-inverted-regular",
+        "bold": "Georgia-inverted-bold",
+        "margin": 0.11675572395324707
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-jpeg-75-WEIGHT",
+        "regular": "Georgia-jpeg-75-regular",
+        "bold": "Georgia-jpeg-75-bold",
+        "margin": 0.9879403365775943
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-larger-heading-WEIGHT",
+        "regular": "Georgia-larger-heading-regular",
+        "bold": "Georgia-larger-heading-bold",
+        "margin": 0.23774094346299535
+      },
+      {
+        "family": "Georgia",
+        "category": "stroke-oracle",
+        "key": "Georgia-same-family-WEIGHT",
+        "regular": "Georgia-same-family-regular",
+        "bold": "Georgia-same-family-bold",
+        "margin": 0.10805726162834617
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-0-WEIGHT",
+        "regular": "Hoefler-Text-0-regular",
+        "bold": "Hoefler-Text-0-bold",
+        "margin": 0.010487557590067809
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-1-WEIGHT",
+        "regular": "Hoefler-Text-1-regular",
+        "bold": "Hoefler-Text-1-bold",
+        "margin": 0.009916578461798053
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-2-WEIGHT",
+        "regular": "Hoefler-Text-2-regular",
+        "bold": "Hoefler-Text-2-bold",
+        "margin": 0.0028064463942882867
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-3-WEIGHT",
+        "regular": "Hoefler-Text-3-regular",
+        "bold": "Hoefler-Text-3-bold",
+        "margin": 0.0023235077069330146
+      },
+      {
+        "family": "Hoefler-Text",
+        "category": "historical-renderer",
+        "key": "Hoefler-Text-4-WEIGHT",
+        "regular": "Hoefler-Text-4-regular",
+        "bold": "Hoefler-Text-4-bold",
+        "margin": 0.02974310596800933
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-0-WEIGHT",
+        "regular": "Kohinoor-Bangla-0-regular",
+        "bold": "Kohinoor-Bangla-0-bold",
+        "margin": 0.999166666467346
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-1-WEIGHT",
+        "regular": "Kohinoor-Bangla-1-regular",
+        "bold": "Kohinoor-Bangla-1-bold",
+        "margin": 0.9994392702953281
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-2-WEIGHT",
+        "regular": "Kohinoor-Bangla-2-regular",
+        "bold": "Kohinoor-Bangla-2-bold",
+        "margin": 0.9935346726171588
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-3-WEIGHT",
+        "regular": "Kohinoor-Bangla-3-regular",
+        "bold": "Kohinoor-Bangla-3-bold",
+        "margin": 0.9990961310222701
+      },
+      {
+        "family": "Kohinoor-Bangla",
+        "category": "historical-renderer",
+        "key": "Kohinoor-Bangla-4-WEIGHT",
+        "regular": "Kohinoor-Bangla-4-regular",
+        "bold": "Kohinoor-Bangla-4-bold",
+        "margin": 0.9986937213010663
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-0-WEIGHT",
+        "regular": "PT-Mono-0-regular",
+        "bold": "PT-Mono-0-bold",
+        "margin": 0.9973829752295842
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-1-WEIGHT",
+        "regular": "PT-Mono-1-regular",
+        "bold": "PT-Mono-1-bold",
+        "margin": 0.9719228823680623
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-2-WEIGHT",
+        "regular": "PT-Mono-2-regular",
+        "bold": "PT-Mono-2-bold",
+        "margin": 0.9526573742050459
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-3-WEIGHT",
+        "regular": "PT-Mono-3-regular",
+        "bold": "PT-Mono-3-bold",
+        "margin": 0.9721614175117566
+      },
+      {
+        "family": "PT-Mono",
+        "category": "historical-renderer",
+        "key": "PT-Mono-4-WEIGHT",
+        "regular": "PT-Mono-4-regular",
+        "bold": "PT-Mono-4-bold",
+        "margin": 0.9937623254249957
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-bold-body-WEIGHT",
+        "regular": "PT-Mono-bold-body-regular",
+        "bold": "PT-Mono-bold-body-bold",
+        "margin": 0.9999280042793544
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-12-WEIGHT",
+        "regular": "PT-Mono-cap-12-regular",
+        "bold": "PT-Mono-cap-12-bold",
+        "margin": 0.9998100802331464
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-14-WEIGHT",
+        "regular": "PT-Mono-cap-14-regular",
+        "bold": "PT-Mono-cap-14-bold",
+        "margin": 0.9999555868525931
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-cap-9-WEIGHT",
+        "regular": "PT-Mono-cap-9-regular",
+        "bold": "PT-Mono-cap-9-bold",
+        "margin": 0.9978170306421816
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-inverted-WEIGHT",
+        "regular": "PT-Mono-inverted-regular",
+        "bold": "PT-Mono-inverted-bold",
+        "margin": 0.9888686342164874
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-jpeg-75-WEIGHT",
+        "regular": "PT-Mono-jpeg-75-regular",
+        "bold": "PT-Mono-jpeg-75-bold",
+        "margin": 0.9998615074946429
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-larger-heading-WEIGHT",
+        "regular": "PT-Mono-larger-heading-regular",
+        "bold": "PT-Mono-larger-heading-bold",
+        "margin": 0.9999780837333674
+      },
+      {
+        "family": "PT-Mono",
+        "category": "stroke-oracle",
+        "key": "PT-Mono-same-family-WEIGHT",
+        "regular": "PT-Mono-same-family-regular",
+        "bold": "PT-Mono-same-family-bold",
+        "margin": 0.9999280042793544
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-0-WEIGHT",
+        "regular": "PT-Serif-0-regular",
+        "bold": "PT-Serif-0-bold",
+        "margin": 0.026915876533166738
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-1-WEIGHT",
+        "regular": "PT-Serif-1-regular",
+        "bold": "PT-Serif-1-bold",
+        "margin": 0.1584276037156087
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-2-WEIGHT",
+        "regular": "PT-Serif-2-regular",
+        "bold": "PT-Serif-2-bold",
+        "margin": 0.3410924551435528
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-3-WEIGHT",
+        "regular": "PT-Serif-3-regular",
+        "bold": "PT-Serif-3-bold",
+        "margin": 0.07948059887166892
+      },
+      {
+        "family": "PT-Serif",
+        "category": "historical-renderer",
+        "key": "PT-Serif-4-WEIGHT",
+        "regular": "PT-Serif-4-regular",
+        "bold": "PT-Serif-4-bold",
+        "margin": 0.083818786766642
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-0-WEIGHT",
+        "regular": "Seravek-0-regular",
+        "bold": "Seravek-0-bold",
+        "margin": 0.9997847103618369
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-1-WEIGHT",
+        "regular": "Seravek-1-regular",
+        "bold": "Seravek-1-bold",
+        "margin": 0.9999735110586698
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-2-WEIGHT",
+        "regular": "Seravek-2-regular",
+        "bold": "Seravek-2-bold",
+        "margin": 0.9999504652578253
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-3-WEIGHT",
+        "regular": "Seravek-3-regular",
+        "bold": "Seravek-3-bold",
+        "margin": 0.9999524479612774
+      },
+      {
+        "family": "Seravek",
+        "category": "historical-renderer",
+        "key": "Seravek-4-WEIGHT",
+        "regular": "Seravek-4-regular",
+        "bold": "Seravek-4-bold",
+        "margin": 0.9999429371328006
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-0-WEIGHT",
+        "regular": "Superclarendon-0-regular",
+        "bold": "Superclarendon-0-bold",
+        "margin": 0.7743745148181915
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-1-WEIGHT",
+        "regular": "Superclarendon-1-regular",
+        "bold": "Superclarendon-1-bold",
+        "margin": 0.9562472572724801
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-2-WEIGHT",
+        "regular": "Superclarendon-2-regular",
+        "bold": "Superclarendon-2-bold",
+        "margin": 0.9859429232310504
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-3-WEIGHT",
+        "regular": "Superclarendon-3-regular",
+        "bold": "Superclarendon-3-bold",
+        "margin": 0.6124936630949378
+      },
+      {
+        "family": "Superclarendon",
+        "category": "historical-renderer",
+        "key": "Superclarendon-4-WEIGHT",
+        "regular": "Superclarendon-4-regular",
+        "bold": "Superclarendon-4-bold",
+        "margin": 0.5228071170859039
+      },
+      {
+        "family": "Superclarendon",
+        "category": "r016-transfer",
+        "key": "r016-Superclarendon-WEIGHT-12-magick",
+        "regular": "r016-Superclarendon-REGULAR-12-magick",
+        "bold": "r016-Superclarendon-BOLD-12-magick",
+        "margin": 0.9766242243349552
+      },
+      {
+        "family": "Superclarendon",
+        "category": "r016-transfer",
+        "key": "r016-Superclarendon-WEIGHT-12-pillow",
+        "regular": "r016-Superclarendon-REGULAR-12-pillow",
+        "bold": "r016-Superclarendon-BOLD-12-pillow",
+        "margin": 0.9684764980338514
+      },
+      {
+        "family": "Superclarendon",
+        "category": "r016-transfer",
+        "key": "r016-Superclarendon-WEIGHT-24-magick",
+        "regular": "r016-Superclarendon-REGULAR-24-magick",
+        "bold": "r016-Superclarendon-BOLD-24-magick",
+        "margin": 0.09454655647277832
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-bold-body-WEIGHT",
+        "regular": "Superclarendon-bold-body-regular",
+        "bold": "Superclarendon-bold-body-bold",
+        "margin": 0.9923793700290844
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-12-WEIGHT",
+        "regular": "Superclarendon-cap-12-regular",
+        "bold": "Superclarendon-cap-12-bold",
+        "margin": 0.8587161507457495
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-14-WEIGHT",
+        "regular": "Superclarendon-cap-14-regular",
+        "bold": "Superclarendon-cap-14-bold",
+        "margin": 0.9975263922824524
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-cap-9-WEIGHT",
+        "regular": "Superclarendon-cap-9-regular",
+        "bold": "Superclarendon-cap-9-bold",
+        "margin": 0.9049986824393272
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-inverted-WEIGHT",
+        "regular": "Superclarendon-inverted-regular",
+        "bold": "Superclarendon-inverted-bold",
+        "margin": 0.01056450605392456
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-jpeg-75-WEIGHT",
+        "regular": "Superclarendon-jpeg-75-regular",
+        "bold": "Superclarendon-jpeg-75-bold",
+        "margin": 0.8376731313765049
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-larger-heading-WEIGHT",
+        "regular": "Superclarendon-larger-heading-regular",
+        "bold": "Superclarendon-larger-heading-bold",
+        "margin": 0.993912918260321
+      },
+      {
+        "family": "Superclarendon",
+        "category": "stroke-oracle",
+        "key": "Superclarendon-same-family-WEIGHT",
+        "regular": "Superclarendon-same-family-regular",
+        "bold": "Superclarendon-same-family-bold",
+        "margin": 0.9923793700290844
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-0-WEIGHT",
+        "regular": "TI-Nspire-0-regular",
+        "bold": "TI-Nspire-0-bold",
+        "margin": 0.021076999117212836
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-1-WEIGHT",
+        "regular": "TI-Nspire-1-regular",
+        "bold": "TI-Nspire-1-bold",
+        "margin": 0.04545658582287615
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-2-WEIGHT",
+        "regular": "TI-Nspire-2-regular",
+        "bold": "TI-Nspire-2-bold",
+        "margin": 0.06270840516071985
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-3-WEIGHT",
+        "regular": "TI-Nspire-3-regular",
+        "bold": "TI-Nspire-3-bold",
+        "margin": 0.058156501325129284
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "historical-renderer",
+        "key": "TI-Nspire-4-WEIGHT",
+        "regular": "TI-Nspire-4-regular",
+        "bold": "TI-Nspire-4-bold",
+        "margin": 0.023555908045636897
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "r016-transfer",
+        "key": "r016-TI-Nspire-WEIGHT-12-magick",
+        "regular": "r016-TI-Nspire-REGULAR-12-magick",
+        "bold": "r016-TI-Nspire-BOLD-12-magick",
+        "margin": 0.0025211350512108766
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "r016-transfer",
+        "key": "r016-TI-Nspire-WEIGHT-12-pillow",
+        "regular": "r016-TI-Nspire-REGULAR-12-pillow",
+        "bold": "r016-TI-Nspire-BOLD-12-pillow",
+        "margin": 0.01329658948816359
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "r016-transfer",
+        "key": "r016-TI-Nspire-WEIGHT-24-magick",
+        "regular": "r016-TI-Nspire-REGULAR-24-magick",
+        "bold": "r016-TI-Nspire-BOLD-24-magick",
+        "margin": 0.8595595965966822
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-bold-body-WEIGHT",
+        "regular": "TI-Nspire-bold-body-regular",
+        "bold": "TI-Nspire-bold-body-bold",
+        "margin": 0.4785182960686143
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-12-WEIGHT",
+        "regular": "TI-Nspire-cap-12-regular",
+        "bold": "TI-Nspire-cap-12-bold",
+        "margin": 0.10574428364634514
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-14-WEIGHT",
+        "regular": "TI-Nspire-cap-14-regular",
+        "bold": "TI-Nspire-cap-14-bold",
+        "margin": 0.5831178582229768
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-cap-9-WEIGHT",
+        "regular": "TI-Nspire-cap-9-regular",
+        "bold": "TI-Nspire-cap-9-bold",
+        "margin": 0.866268003359437
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-inverted-WEIGHT",
+        "regular": "TI-Nspire-inverted-regular",
+        "bold": "TI-Nspire-inverted-bold",
+        "margin": 0.9727298002690077
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-jpeg-75-WEIGHT",
+        "regular": "TI-Nspire-jpeg-75-regular",
+        "bold": "TI-Nspire-jpeg-75-bold",
+        "margin": 0.09201942943036556
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-larger-heading-WEIGHT",
+        "regular": "TI-Nspire-larger-heading-regular",
+        "bold": "TI-Nspire-larger-heading-bold",
+        "margin": 0.11606874005519785
+      },
+      {
+        "family": "TI-Nspire",
+        "category": "stroke-oracle",
+        "key": "TI-Nspire-same-family-WEIGHT",
+        "regular": "TI-Nspire-same-family-regular",
+        "bold": "TI-Nspire-same-family-bold",
+        "margin": 0.4785182960686143
+      }
+    ]
+  }
+}
