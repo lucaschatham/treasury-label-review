@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-24",
+  "sourceSha": "5c1a0e66eded9d712ae1ba008600fe63ecd95ec5",
+  "projectName": "treasury-label-review",
+  "projectId": "prj_mq5AO5hMT2MhzRFyTKgtm1RrWeRC",
+  "previewDeploymentId": "dpl_7A8nnjje16kCTkVGs781WPBqPab6",
+  "productionDeploymentId": "dpl_DDuhxzHRhYV9gsNpUuiAHHszzHV9",
+  "productionTarget": "production",
+  "originalDeploymentId": "dpl_7A8nnjje16kCTkVGs781WPBqPab6",
+  "sourceShaFromVercel": "5c1a0e66eded9d712ae1ba008600fe63ecd95ec5",
+  "bundle": "index-BFitTXDs.js",
+  "url": "https://lucaschatham.com/alcohol-by-volume-automated-label-check",
+  "anonymousHttpStatus": 200,
+  "noindex": true,
+  "homepageBytesUnchanged": true,
+  "homepageSha256": "d8addfc9a8643e46e66f2daab646049f431c4a00302346c2098a137b9fed5af5",
+  "warningApiRequests": [],
+  "networkScope": "Third fresh anonymous production timing context; all 8 requests recorded in production-network-2026-09-24.json",
+  "tests": {
+    "passed": 81,
+    "failed": 0,
+    "build": "pass",
+    "npmAuditVulnerabilities": 0
+  },
+  "previewSampleQa": "pass",
+  "previewTimingMs": [
+    933.1999999999534,
+    1002.3000000000466,
+    1253.4000000001397
+  ],
+  "productionTimingMs": [
+    1042.3999999999069,
+    1120.4000000001397,
+    1571.0999999998603
+  ],
+  "ratio": 1.4359143821743123,
+  "cleanup": {
+    "vercelEnvironmentVariablesRemaining": 0,
+    "removed": [
+      "WARNING_WORKER_URL",
+      "WARNING_WORKER_KEY"
+    ],
+    "cloudflareWorkerDeleted": "treasury-warning-appearance",
+    "cloudflareDeleteStatus": 200,
+    "absenceVerified": true,
+    "otherWorkersUnchanged": [
+      "streaks-logger",
+      "treasury-warning-c3ebde8"
+    ]
+  },
+  "limitations": [
+    "Synthetic qualification only; no claim of photographed-label accuracy",
+    "Current eCFR fetch failed HTTP 406",
+    "First promotion command failed team resolution; explicit team and deployment ID succeeded",
+    "Pre-promotion production probe reached old cloud build; preserved separately",
+    "Vercel marks source dirty because vercel link appended .vercel to .gitignore; no runtime source edits; local append restored after deployment",
+    "Timing script hardcodes Linux environment; generated reports corrected to actual macOS host"
+  ],
+  "previewAuthentication": "Existing Vercel CLI login issued authenticated bypass cookie; preview protection not disabled. No credentials committed."
+}

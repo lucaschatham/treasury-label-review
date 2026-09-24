@@ -1,0 +1,87 @@
+{
+  "url": "https://treasury-label-review-ku34s0csw-chathamworks-6954s-projects.vercel.app",
+  "runs": 3,
+  "clickToResultMs": [
+    933.1999999999534,
+    1002.3000000000466,
+    1253.4000000001397
+  ],
+  "maxClickToResultMs": 1253.4000000001397,
+  "environment": "headless Chromium 149.0.7827.55 via Playwright, fresh context per run (uncached), macOS 27.0 arm64",
+  "results": [
+    {
+      "run": 1,
+      "fixture": "sample old-tom.png",
+      "timings": {
+        "setup": 264.89999999990687,
+        "prepare": 10.300000000046566,
+        "ocr": 645.8000000000466,
+        "comparison": 2.6000000000931323,
+        "appearance": 8.299999999813735,
+        "render": 0.6000000000931323,
+        "total": 668,
+        "clickToResult": 933.1999999999534,
+        "queue": 0.30000000004656613,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "contrast",
+        "ratio": 1.4359143821743123
+      },
+      "errors": [],
+      "summaryText": "old-tom.pngAll 7 checks matchedMachine\u203a"
+    },
+    {
+      "run": 2,
+      "fixture": "sample old-tom.png",
+      "timings": {
+        "setup": 345.5,
+        "prepare": 9.900000000139698,
+        "ocr": 634.5999999998603,
+        "comparison": 2.5,
+        "appearance": 8.600000000093132,
+        "render": 0.6999999999534339,
+        "total": 656.6000000000931,
+        "clickToResult": 1002.3000000000466,
+        "queue": 0.19999999995343387,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "contrast",
+        "ratio": 1.4359143821743123
+      },
+      "errors": [],
+      "summaryText": "old-tom.pngAll 7 checks matchedMachine\u203a"
+    },
+    {
+      "run": 3,
+      "fixture": "sample old-tom.png",
+      "timings": {
+        "setup": 587.1999999999534,
+        "prepare": 9.899999999906868,
+        "ocr": 644,
+        "comparison": 2.4000000001396984,
+        "appearance": 8.300000000046566,
+        "render": 0.6999999999534339,
+        "total": 666,
+        "clickToResult": 1253.4000000001397,
+        "queue": 0.20000000018626451,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "contrast",
+        "ratio": 1.4359143821743123
+      },
+      "errors": [],
+      "summaryText": "old-tom.pngAll 7 checks matchedMachine\u203a"
+    }
+  ],
+  "scope": "Browser click-to-result including fresh-context OCR initialization on this Mac; other devices and real-label accuracy are not established.",
+  "releaseHarnessNote": "Original timing script unchanged. External Playwright wrapper supplies authenticated cookies for preview only and records network requests for production. Environment label corrected from script hardcoded Linux description."
+}

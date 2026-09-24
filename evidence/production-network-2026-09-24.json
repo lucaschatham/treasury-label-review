@@ -1,0 +1,13 @@
+{
+  "requests": [
+    "https://lucaschatham.com/alcohol-by-volume-automated-label-check",
+    "https://lucaschatham.com/assets/index-BFitTXDs.js",
+    "https://lucaschatham.com/assets/index-F2kbL9Gr.css",
+    "blob:https://lucaschatham.com/6ce88a50-aa1d-4ec2-ad56-a807f98669f8",
+    "https://lucaschatham.com/ocr/worker.min.js",
+    "https://lucaschatham.com/samples/old-tom.png",
+    "https://lucaschatham.com/ocr/tesseract-core-relaxedsimd-lstm.wasm.js",
+    "https://lucaschatham.com/ocr/eng.traineddata.gz"
+  ],
+  "warningApiRequests": []
+}

@@ -82,15 +82,15 @@ The app origin is `https://github.com/lucaschatham/treasury-label-review.git`; t
 
 [TTB warning guidance](https://www.ttb.gov/regulated-commodities/beverage-alcohol/distilled-spirits/ds-labeling-home/ds-health-warning)
 
-### Current candidate, September 24, 2026 (not yet deployed)
+### Current release, September 24, 2026
 
 This source replaces the cloud appearance path with the local weight-contrast measurement. Evidence on this branch: independent qualification on eight never-opened font families, 39/40 bold and 0/40 regular headings matched with all 32 bold-body controls left for review (`evidence/r040-result.json`); the same 112 fixtures uploaded as one batch in the built application, 78.8 s, no failures, verdicts identical to the offline run (`evidence/browser-batch-fixtures.json`); uncached sample click-to-result 1.35–1.78 s in headless Chromium including OCR initialization (`evidence/browser-timing-sample.json`). These are synthetic, source-weight fixtures at 20–40 px cap height; accuracy on photographed labels is not claimed.
 
-Production still runs [source a61f00a](https://github.com/lucaschatham/treasury-label-review/tree/a61f00a30b93aec2e0d0c0c232fc55cb3e73b8c5) with the cloud path until this candidate is deployed as a preview, verified and promoted.
+Production now runs [source 5c1a0e6](https://github.com/lucaschatham/treasury-label-review/tree/5c1a0e66eded9d712ae1ba008600fe63ecd95ec5), deployment `dpl_DDuhxzHRhYV9gsNpUuiAHHszzHV9`, bundle `index-BFitTXDs.js`. Protected preview QA passed before promotion. Three anonymous uncached production sample runs took 1.57, 1.12 and 1.04 seconds, each with local appearance match and ratio 1.4359. HTTP 200, noindex and zero cloud appearance requests were verified; the main homepage was unchanged. The obsolete Vercel variables and treasury-warning-appearance Worker were removed. See [release evidence](evidence/path-a-production-2026-09-24.json). These timings describe this Mac/browser and sample; synthetic qualification does not establish photographed-label accuracy.
 
 ### Previous release, September 23, 2026
 
-Production runs [source 2a46749](https://github.com/lucaschatham/treasury-label-review/tree/2a46749b0d240d7a63d1ab4d7cd94ad28a146e10) and bundle `index-DGAUEOgM.js`. The anonymous production sample completed all applicable checks in 2.4 seconds, without a cached appearance result. The same runtime completed a 300-image preview run in 195.3 seconds, retaining 300 unique results and correctly associating all 900 checked brand/type/producer fields. This verifies batch accounting, not classification accuracy.
+That historical release ran [source 2a46749](https://github.com/lucaschatham/treasury-label-review/tree/2a46749b0d240d7a63d1ab4d7cd94ad28a146e10) and bundle `index-DGAUEOgM.js`. The anonymous production sample completed all applicable checks in 2.4 seconds, without a cached appearance result. The same runtime completed a 300-image preview run in 195.3 seconds, retaining 300 unique results and correctly associating all 900 checked brand/type/producer fields. This verifies batch accounting, not classification accuracy.
 
 A clean install, 77 tests, production build, and code review passed. The [neighbor-localization evaluation](evidence/appearance-neighbor-evaluation.md) documents the remaining failures: 37/40 bold Matches and three uncached regular false Matches. Duplicate Latin artwork and five cached results prevent that typography run from qualifying as independent, uncached latency evidence. The release proceeds with these documented limitations; it does not satisfy the internal boldness gate.
 

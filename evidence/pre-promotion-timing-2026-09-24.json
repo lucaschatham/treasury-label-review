@@ -1,0 +1,87 @@
+{
+  "url": "https://lucaschatham.com/alcohol-by-volume-automated-label-check",
+  "runs": 3,
+  "clickToResultMs": [
+    1646.1000000000931,
+    5684.699999999953,
+    5967.699999999953
+  ],
+  "maxClickToResultMs": 5967.699999999953,
+  "environment": "headless Chromium 149.0.7827.55 via Playwright, fresh context per run (uncached), macOS 27.0 arm64",
+  "results": [
+    {
+      "run": 1,
+      "fixture": "sample old-tom.png",
+      "timings": {
+        "setup": 1.1999999999534339,
+        "prepare": 14.800000000046566,
+        "ocr": 939.3000000000466,
+        "comparison": 2.3999999999068677,
+        "appearance": 5008.700000000186,
+        "render": 0.8000000000465661,
+        "total": 5966.5,
+        "clickToResult": 5967.699999999953,
+        "queue": 0,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "review",
+        "reason": "timeout",
+        "cached": false
+      },
+      "errors": [],
+      "summaryText": "old-tom.pngAppearance check unavailableNew\u203a"
+    },
+    {
+      "run": 2,
+      "fixture": "sample old-tom.png",
+      "timings": {
+        "setup": 230.5,
+        "prepare": 10.100000000093132,
+        "ocr": 699,
+        "comparison": 2.4000000001396984,
+        "appearance": 703.0999999998603,
+        "render": 0.5,
+        "total": 1415.5,
+        "clickToResult": 1646.1000000000931,
+        "queue": 0.10000000009313226,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "errors": [],
+      "summaryText": "old-tom.pngAll 7 checks matchedMachine\u203a"
+    },
+    {
+      "run": 3,
+      "fixture": "sample old-tom.png",
+      "timings": {
+        "setup": 2334.8000000000466,
+        "prepare": 10.100000000093132,
+        "ocr": 655.5,
+        "comparison": 2.5,
+        "appearance": 2680.8000000000466,
+        "render": 0.5,
+        "total": 3349.6999999999534,
+        "clickToResult": 5684.699999999953,
+        "queue": 0.19999999995343387,
+        "visibility": "visible",
+        "visibilityEnd": "visible"
+      },
+      "appearance": {
+        "status": "match",
+        "reason": "corroborated",
+        "cached": false
+      },
+      "errors": [],
+      "summaryText": "old-tom.pngAll 7 checks matchedMachine\u203a"
+    }
+  ],
+  "scope": "Browser click-to-result including fresh-context OCR initialization on this Mac; other devices and real-label accuracy are not established.",
+  "releaseHarnessNote": "Original timing script unchanged. External Playwright wrapper supplies authenticated cookies for preview only and records network requests for production. Environment label corrected from script hardcoded Linux description."
+}
