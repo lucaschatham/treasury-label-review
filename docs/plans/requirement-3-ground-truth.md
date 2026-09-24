@@ -28,3 +28,9 @@ Stop acquisition after the initial balanced diagnostic set; do not expand into a
 ## Status
 
 Specification complete. Existing packet integrity verified. Independent annotations, clear regular negatives, balanced benchmark and baseline run remain pending. Requirement 3 remains incomplete. No model training, runtime edit or deployment occurred.
+
+## Annotation intake verification
+
+The [packet integrity audit](../../evidence/real-label-packet-integrity.json) preserves ten IDs, expected/observed hashes, the local packet path and packet digest. Original packet bytes remain local, so repository-only readers can inspect this audit but cannot independently reproduce it without those bytes.
+
+`python3 test/annotation_audit_test.py` passes five tests after all five failed against the initial empty implementation. `scripts/experiments/annotation_audit.py` accepts the existing packet JSON and downloaded export; it checks identity, complete unique assessments, source links and heading boxes, and separates clear binary cases from excluded coverage cases. It neither authenticates reviewer independence nor establishes annotation truth. Human assessments are still pending.

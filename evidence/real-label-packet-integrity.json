@@ -1,0 +1,69 @@
+{
+  "scope": "Local packet integrity only; no truth or accuracy claim. Packet bytes are retained locally, not included in this repository.",
+  "packetPath": "/Users/HQ/Projects/lucaschatham.com/treasury-label-review-mobilenet/evidence/appearance-mobilenet-manual-review.html",
+  "packetSha256": "c5be7d8f726cc497191c44cb4d7781380fe36adafe4cb4e81d41ac03a9097a77",
+  "sourceManifestSha256": "053bd843d0c527ca3edfc7283de256bba12a9b5afcb6f1fdc38662ba4836ba0a",
+  "method": "Parse JSON in script#data; base64-decode each case data URL; SHA-256 original embedded bytes; compare to case.sha256.",
+  "cases": [
+    {
+      "id": "ttb-spirits-warning",
+      "expectedSha256": "84b161bedcce7f082b25316c09003bd313b9408e9f1a7b51914d69f68d696c90",
+      "observedSha256": "84b161bedcce7f082b25316c09003bd313b9408e9f1a7b51914d69f68d696c90",
+      "matches": true
+    },
+    {
+      "id": "buffalo-trace-back",
+      "expectedSha256": "d1bcdb4a4dbef34ed6f96955e7f3edf4fb4a69769cf8cec8ed023b5ef813c4f9",
+      "observedSha256": "d1bcdb4a4dbef34ed6f96955e7f3edf4fb4a69769cf8cec8ed023b5ef813c4f9",
+      "matches": true
+    },
+    {
+      "id": "bruery-back-1",
+      "expectedSha256": "89219f055dd47591158808176a0b8edd8873fe6ccbbe7f6eecae1857fa2faf76",
+      "observedSha256": "89219f055dd47591158808176a0b8edd8873fe6ccbbe7f6eecae1857fa2faf76",
+      "matches": true
+    },
+    {
+      "id": "ttb-wine-1",
+      "expectedSha256": "d0f3f0e55c329ee7cca1cd6f81fa9745a4783c1202abbb2f49cb6ef4b0f4f4b8",
+      "observedSha256": "d0f3f0e55c329ee7cca1cd6f81fa9745a4783c1202abbb2f49cb6ef4b0f4f4b8",
+      "matches": true
+    },
+    {
+      "id": "ttb-wine-2",
+      "expectedSha256": "5ec67c43bd2128dc3bed284ec0d749a3edb5b636a5306897a2ba51d7145d5651",
+      "observedSha256": "5ec67c43bd2128dc3bed284ec0d749a3edb5b636a5306897a2ba51d7145d5651",
+      "matches": true
+    },
+    {
+      "id": "ontanon-back-1",
+      "expectedSha256": "c9b6278bff1f6f2fc9bccf3fdf3cb6323088563803b654ca22e90f7a1ab7a187",
+      "observedSha256": "c9b6278bff1f6f2fc9bccf3fdf3cb6323088563803b654ca22e90f7a1ab7a187",
+      "matches": true
+    },
+    {
+      "id": "vadio-back-1",
+      "expectedSha256": "818e2c11f3cca63510988bf7455c308155515f26ae0daf8efb0c74f89608fa74",
+      "observedSha256": "818e2c11f3cca63510988bf7455c308155515f26ae0daf8efb0c74f89608fa74",
+      "matches": true
+    },
+    {
+      "id": "ontanon-back-0",
+      "expectedSha256": "6223609fa3c2f06020c50aa40e04d0624035ec030cbc97775b5963afcbc963d6",
+      "observedSha256": "6223609fa3c2f06020c50aa40e04d0624035ec030cbc97775b5963afcbc963d6",
+      "matches": true
+    },
+    {
+      "id": "lote-maestro-back-2",
+      "expectedSha256": "b4923e454342d3134962798c9d8c08f0d6b2ad861dcd59532fd37858837e2acc",
+      "observedSha256": "b4923e454342d3134962798c9d8c08f0d6b2ad861dcd59532fd37858837e2acc",
+      "matches": true
+    },
+    {
+      "id": "vadio-back-0",
+      "expectedSha256": "8fd0d05da29e6636c2d25a51b6b4a05eaa44265298445a90c0dff0fec488a21b",
+      "observedSha256": "8fd0d05da29e6636c2d25a51b6b4a05eaa44265298445a90c0dff0fec488a21b",
+      "matches": true
+    }
+  ]
+}
