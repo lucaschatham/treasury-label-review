@@ -1,0 +1,13 @@
+{
+  "experiment": "R-020",
+  "sourceCheckpointSha256": "62044f837c91a6cd55d223a9f85f540cdac3fe1ceab9ddb1906761a750e2a831",
+  "manifestSha256": "8be07d06783cbcef820dd4c70270b2b69b05ed99e719557235f2dfb56e56fef7",
+  "codeSha256": "b5ed4d6b4e9c5a5f39a7c37f12201368b9b381f30da4c5d9fb8ded178bb1864d",
+  "refreshCodeSha256": "d93f6b45e135532c2ec83cb22db7e51e0ebe80f0dfa27d72015c2d59411bd0c3",
+  "parameterSha256": "c6b093d7760564b3ece1eec8f67cb0263721476d25357da631a46fcee997a6c2",
+  "bufferSha256Before": "e784120e1863bb71460286dbca33919053efae8ddb24cdb88ebd458b74f16567",
+  "trainCount": 1024,
+  "batch": 32,
+  "device": "cpu",
+  "budgetSeconds": 600
+}
