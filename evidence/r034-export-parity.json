@@ -1,0 +1,10 @@
+{
+  "images": 574,
+  "maximumScoreError": 1.0728836059570312e-06,
+  "changedDecisions": [],
+  "candidateSha256": "e5b849b7bf4a61436f37ee0b7fe087c486a678998e810a88c92cec909d8c62a9",
+  "sourceResultSha256": "39f9fea210c9c5c4ddfd0fe90aac374d55903a221a955b28921e9ea03bfded05",
+  "codeSha256": "a5350829dc488477d953338fbd5e5cc0cb64a936a992685127f658c2215a5c25",
+  "seconds": 11.24384850000206,
+  "fullLocalArtifactSha256": "1b063dff9c5656f287bf3e2b90df6b6b6223dd72bf2457a8331f9f0399a6ddce"
+}

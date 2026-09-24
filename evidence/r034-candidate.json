@@ -1,0 +1,25 @@
+{
+  "experiment": "R-034",
+  "decision": "ADVANCE",
+  "scope": "Exposed calibration only",
+  "modelFile": "model.onnx",
+  "modelSha256": "e5b849b7bf4a61436f37ee0b7fe087c486a678998e810a88c92cec909d8c62a9",
+  "sourceResultSha256": "39f9fea210c9c5c4ddfd0fe90aac374d55903a221a955b28921e9ea03bfded05",
+  "sourceHeadSha256": "369e25afc5a71426d6e36177d09de095e914213cc5075a53d771a64e01c65ef9",
+  "canonicalPolarity": true,
+  "polarityCodeSha256": "4f50176875ec0f765048062b4455d9d035dd89d198f830bad257854b4fd3a3b3",
+  "inputCodeSha256": "52515cf65c3cbed81aadb48e2ac49f8127d62a857957e70a606cba08538ccdf7",
+  "runnerCodeSha256": "d7736007fc6b2975cd9fb3107f671f06e79292c9c56da4f3d6a64c2f9e14285e",
+  "cutoff": 0.9714428555841144,
+  "regularMaximum": 0.679259181022644,
+  "requiredBoldMinimum": 0.9981732368469238,
+  "cohortUpperBounds": {
+    "generated": 0.9999508857727051,
+    "stroke-oracle": 0.9998700618743896,
+    "historical-renderer": 0.9992801547050476,
+    "century-renderer": 1.0,
+    "trained-regression-1": 0.9999053478240967,
+    "trained-regression-2": 0.9981732368469238
+  },
+  "fullLocalArtifactSha256": "582e86ac522819ca5122841a8788f4d14e33c2204d98f17d277be8b658bf3af0"
+}

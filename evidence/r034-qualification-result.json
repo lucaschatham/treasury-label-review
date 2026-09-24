@@ -1,0 +1,579 @@
+{
+  "decision": "STOP",
+  "summary": {
+    "bold": 40,
+    "boldMatches": 38,
+    "regular": 40,
+    "regularFalseMatches": 3,
+    "review": 39,
+    "pass": false
+  },
+  "cutoff": 0.9714428555841144,
+  "candidateSha256": "e5b849b7bf4a61436f37ee0b7fe087c486a678998e810a88c92cec909d8c62a9",
+  "manifestSha256": "e1c353645a9b4f04970a7da97999e5b2cc92e6cf792646ca345f635a307cda27",
+  "codeSha256": "a939f37249e96df111cc0d3b6afb2cd7c41b19b74801c414b9f911ddcd3abce1",
+  "seconds": 1.6552005830017151,
+  "rows": [
+    {
+      "id": "amiko-400-12-0-0",
+      "family": "amiko",
+      "expected": "REGULAR",
+      "score": 2.5407869586047127e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "amiko-400-16-0-0",
+      "family": "amiko",
+      "expected": "REGULAR",
+      "score": 3.6963136995638024e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "amiko-400-24-0-0",
+      "family": "amiko",
+      "expected": "REGULAR",
+      "score": 1.1342081052134745e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "amiko-400-24-1-0",
+      "family": "amiko",
+      "expected": "REGULAR",
+      "score": 1.1342081052134745e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "amiko-400-24-0-1",
+      "family": "amiko",
+      "expected": "REGULAR",
+      "score": 2.44351614497873e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "amiko-700-12-0-0",
+      "family": "amiko",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "amiko-700-16-0-0",
+      "family": "amiko",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "amiko-700-24-0-0",
+      "family": "amiko",
+      "expected": "BOLD",
+      "score": 0.9999957084655762,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "amiko-700-24-1-0",
+      "family": "amiko",
+      "expected": "BOLD",
+      "score": 0.9999957084655762,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "amiko-700-24-0-1",
+      "family": "amiko",
+      "expected": "BOLD",
+      "score": 0.9999992847442627,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andika-400-12-0-0",
+      "family": "andika",
+      "expected": "REGULAR",
+      "score": 7.142240974644665e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andika-400-16-0-0",
+      "family": "andika",
+      "expected": "REGULAR",
+      "score": 0.00011015667405445129,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andika-400-24-0-0",
+      "family": "andika",
+      "expected": "REGULAR",
+      "score": 1.799207560715388e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andika-400-24-1-0",
+      "family": "andika",
+      "expected": "REGULAR",
+      "score": 1.8018104785966216e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andika-400-24-0-1",
+      "family": "andika",
+      "expected": "REGULAR",
+      "score": 1.4341706988663105e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "andika-700-12-0-0",
+      "family": "andika",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andika-700-16-0-0",
+      "family": "andika",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andika-700-24-0-0",
+      "family": "andika",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andika-700-24-1-0",
+      "family": "andika",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "andika-700-24-0-1",
+      "family": "andika",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arima-400-12-0-0",
+      "family": "arima",
+      "expected": "REGULAR",
+      "score": 2.322720407191823e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arima-400-16-0-0",
+      "family": "arima",
+      "expected": "REGULAR",
+      "score": 4.15220555186764e-18,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arima-400-24-0-0",
+      "family": "arima",
+      "expected": "REGULAR",
+      "score": 6.2324446030955e-16,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arima-400-24-1-0",
+      "family": "arima",
+      "expected": "REGULAR",
+      "score": 6.2324446030955e-16,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arima-400-24-0-1",
+      "family": "arima",
+      "expected": "REGULAR",
+      "score": 1.3347569005634906e-16,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arima-700-12-0-0",
+      "family": "arima",
+      "expected": "BOLD",
+      "score": 0.5597281455993652,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arima-700-16-0-0",
+      "family": "arima",
+      "expected": "BOLD",
+      "score": 0.9995653033256531,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arima-700-24-0-0",
+      "family": "arima",
+      "expected": "BOLD",
+      "score": 0.9999978542327881,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arima-700-24-1-0",
+      "family": "arima",
+      "expected": "BOLD",
+      "score": 0.9999978542327881,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arima-700-24-0-1",
+      "family": "arima",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arsenal-400-12-0-0",
+      "family": "arsenal",
+      "expected": "REGULAR",
+      "score": 2.73962520421292e-13,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arsenal-400-16-0-0",
+      "family": "arsenal",
+      "expected": "REGULAR",
+      "score": 7.044714788798892e-16,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arsenal-400-24-0-0",
+      "family": "arsenal",
+      "expected": "REGULAR",
+      "score": 1.0125822164260001e-13,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arsenal-400-24-1-0",
+      "family": "arsenal",
+      "expected": "REGULAR",
+      "score": 1.0125822164260001e-13,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arsenal-400-24-0-1",
+      "family": "arsenal",
+      "expected": "REGULAR",
+      "score": 2.459240942465535e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "arsenal-700-12-0-0",
+      "family": "arsenal",
+      "expected": "BOLD",
+      "score": 0.9999997615814209,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arsenal-700-16-0-0",
+      "family": "arsenal",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arsenal-700-24-0-0",
+      "family": "arsenal",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arsenal-700-24-1-0",
+      "family": "arsenal",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "arsenal-700-24-0-1",
+      "family": "arsenal",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "athiti-400-12-0-0",
+      "family": "athiti",
+      "expected": "REGULAR",
+      "score": 3.894520705927107e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "athiti-400-16-0-0",
+      "family": "athiti",
+      "expected": "REGULAR",
+      "score": 6.85312321531936e-17,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "athiti-400-24-0-0",
+      "family": "athiti",
+      "expected": "REGULAR",
+      "score": 1.3102842658327418e-16,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "athiti-400-24-1-0",
+      "family": "athiti",
+      "expected": "REGULAR",
+      "score": 1.3053352111406125e-16,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "athiti-400-24-0-1",
+      "family": "athiti",
+      "expected": "REGULAR",
+      "score": 8.188921304663483e-17,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "athiti-700-12-0-0",
+      "family": "athiti",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "athiti-700-16-0-0",
+      "family": "athiti",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "athiti-700-24-0-0",
+      "family": "athiti",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "athiti-700-24-1-0",
+      "family": "athiti",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "athiti-700-24-0-1",
+      "family": "athiti",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "averiaseriflibre-400-12-0-0",
+      "family": "averiaseriflibre",
+      "expected": "REGULAR",
+      "score": 0.4830770492553711,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "averiaseriflibre-400-16-0-0",
+      "family": "averiaseriflibre",
+      "expected": "REGULAR",
+      "score": 0.0007115815533325076,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "averiaseriflibre-400-24-0-0",
+      "family": "averiaseriflibre",
+      "expected": "REGULAR",
+      "score": 0.9997815489768982,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "averiaseriflibre-400-24-1-0",
+      "family": "averiaseriflibre",
+      "expected": "REGULAR",
+      "score": 0.9997815489768982,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "averiaseriflibre-400-24-0-1",
+      "family": "averiaseriflibre",
+      "expected": "REGULAR",
+      "score": 0.9998916387557983,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "averiaseriflibre-700-12-0-0",
+      "family": "averiaseriflibre",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "averiaseriflibre-700-16-0-0",
+      "family": "averiaseriflibre",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "averiaseriflibre-700-24-0-0",
+      "family": "averiaseriflibre",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "averiaseriflibre-700-24-1-0",
+      "family": "averiaseriflibre",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "averiaseriflibre-700-24-0-1",
+      "family": "averiaseriflibre",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "baloo2-400-12-0-0",
+      "family": "baloo2",
+      "expected": "REGULAR",
+      "score": 3.4935269954683434e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "baloo2-400-16-0-0",
+      "family": "baloo2",
+      "expected": "REGULAR",
+      "score": 3.5005766108042735e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "baloo2-400-24-0-0",
+      "family": "baloo2",
+      "expected": "REGULAR",
+      "score": 7.21316624208157e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "baloo2-400-24-1-0",
+      "family": "baloo2",
+      "expected": "REGULAR",
+      "score": 7.598102058636869e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "baloo2-400-24-0-1",
+      "family": "baloo2",
+      "expected": "REGULAR",
+      "score": 8.372587956273492e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "baloo2-700-12-0-0",
+      "family": "baloo2",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "baloo2-700-16-0-0",
+      "family": "baloo2",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "baloo2-700-24-0-0",
+      "family": "baloo2",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "baloo2-700-24-1-0",
+      "family": "baloo2",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "baloo2-700-24-0-1",
+      "family": "baloo2",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "besley-400-12-0-0",
+      "family": "besley",
+      "expected": "REGULAR",
+      "score": 2.306919812242094e-14,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "besley-400-16-0-0",
+      "family": "besley",
+      "expected": "REGULAR",
+      "score": 1.621742939219358e-15,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "besley-400-24-0-0",
+      "family": "besley",
+      "expected": "REGULAR",
+      "score": 1.3476024834338692e-14,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "besley-400-24-1-0",
+      "family": "besley",
+      "expected": "REGULAR",
+      "score": 1.3476024834338692e-14,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "besley-400-24-0-1",
+      "family": "besley",
+      "expected": "REGULAR",
+      "score": 1.9985197578873543e-13,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "besley-700-12-0-0",
+      "family": "besley",
+      "expected": "BOLD",
+      "score": 0.8644816279411316,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "besley-700-16-0-0",
+      "family": "besley",
+      "expected": "BOLD",
+      "score": 0.9999985694885254,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "besley-700-24-0-0",
+      "family": "besley",
+      "expected": "BOLD",
+      "score": 0.9999918937683105,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "besley-700-24-1-0",
+      "family": "besley",
+      "expected": "BOLD",
+      "score": 0.9999921321868896,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "besley-700-24-0-1",
+      "family": "besley",
+      "expected": "BOLD",
+      "score": 0.9999858140945435,
+      "verdict": "MATCH"
+    }
+  ],
+  "scope": "Independent rendered images and supervised-head families; foundation pretraining corpus undisclosed"
+}
