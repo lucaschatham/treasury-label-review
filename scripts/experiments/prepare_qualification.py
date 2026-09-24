@@ -19,20 +19,23 @@ from heading_classifier import prepare_words, sha256
 NAMES='domine exo2 karla lora mulish worksans sora trirong'.split()
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--candidate',type=Path,required=True);args=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--candidate',type=Path,required=True);ap.add_argument('--round',type=int,choices=[1,2],default=1);args=ap.parse_args()
  result=json.loads((args.candidate/'result.json').read_text())
  if result['decision']!='ADVANCE':raise ValueError('Candidate has not passed development')
- if sha256(args.candidate/'model.pt')!=result['modelSha256']:raise ValueError('Changed candidate')
+ if sha256(args.candidate/result.get('modelFile','model.pt'))!=result['modelSha256']:raise ValueError('Changed candidate')
  if sha256(Path(__file__).with_name('polarity.py'))!=result['polarityCodeSha256']:raise ValueError('Changed candidate preprocessing')
+ if result.get('modelFile')=='model.onnx' and sha256(Path(__file__).with_name('fontdna_input.py'))!=result['inputCodeSha256']:raise ValueError('Changed font-domain preprocessing')
+ names=NAMES if args.round==1 else 'andadapro asul cambay chivo eczar faustina literata varta'.split()
  started=time.monotonic()
- root=ROOT.parent/'treasury-label-review-independent-qualification';root.mkdir(exist_ok=True)
+ root=ROOT.parent/('treasury-label-review-independent-qualification' if args.round==1 else 'treasury-label-review-independent-qualification-2');root.mkdir(exist_ok=True)
  manifest=root/'manifest.json'
  if manifest.exists():raise ValueError('Manifest already frozen')
  original=json.loads((RESEARCH/'evidence/appearance-mobilenet-inputs-frozen.json').read_text())
  trained=json.loads((ROOT.parent/'treasury-label-review-r021-assets/manifest.json').read_text())
  blocked=original['historicallyExposedFamilyKeys']+[r['family'] for r in original['rows']+trained['rows']]
  blocked+=['Superclarendon','Georgia','TI-Nspire']
- validate_families(NAMES,blocked,8)
+ if args.round==2:blocked+=NAMES
+ validate_families(names,blocked,8)
  def bounded_fetch(url,path):
   check_budget(started,time.monotonic(),900)
   if path.exists():
@@ -45,7 +48,7 @@ def main():
   check_budget(started,time.monotonic(),900)
   return result
  revision=original['assets']['googleFontsRevision'];rows=[];fonts=[]
- for family in NAMES:
+ for family in names:
   if time.monotonic()-started>900:raise TimeoutError('Asset preparation budget')
   folder=root/family;folder.mkdir(exist_ok=True)
   base=f'https://raw.githubusercontent.com/google/fonts/{revision}/ofl/{family}/'
@@ -80,6 +83,6 @@ def main():
  evalpixels={r['pixelSha256'] for r in original['rows']+trained['rows']+targeted['rows']}
  if evalpixels.intersection(r['pixelSha256'] for r in rows):raise ValueError('Evaluation pixel overlap')
  check_budget(started,time.monotonic(),900)
- manifest.write_text(json.dumps(dict(experiment='independent-qualification',candidateSha256=result['modelSha256'],canonicalPolarity=result['canonicalPolarity'],polarityCodeSha256=result['polarityCodeSha256'],cutoff=result['cutoff'],revision=revision,codeSha256=sha256(__file__),fonts=fonts,rows=rows,seconds=time.monotonic()-started),indent=2))
+ manifest.write_text(json.dumps(dict(experiment='independent-qualification',candidateSha256=result['modelSha256'],modelFile=result.get('modelFile','model.pt'),inputCodeSha256=result.get('inputCodeSha256'),canonicalPolarity=result['canonicalPolarity'],polarityCodeSha256=result['polarityCodeSha256'],cutoff=result['cutoff'],revision=revision,codeSha256=sha256(__file__),fonts=fonts,rows=rows,seconds=time.monotonic()-started),indent=2))
  print('FROZEN',len(rows),'qualification inputs',flush=True)
 if __name__=='__main__':main()
