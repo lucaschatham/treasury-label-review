@@ -1,0 +1,43 @@
+{
+  "checkpointSha256": "62044f837c91a6cd55d223a9f85f540cdac3fe1ceab9ddb1906761a750e2a831",
+  "cutoff": 0.5397067666053773,
+  "rows": [
+    {
+      "id": "Superclarendon-cap-9-regular",
+      "expected": "REGULAR",
+      "savedScore": 0.9912950992584229,
+      "cpuScore": 0.9912950992584229,
+      "verdict": "MATCH",
+      "sameVerdict": true,
+      "inputAndTensorHashesVerified": true
+    },
+    {
+      "id": "Georgia-cap-9-regular",
+      "expected": "REGULAR",
+      "savedScore": 0.9789086580276489,
+      "cpuScore": 0.978908896446228,
+      "verdict": "MATCH",
+      "sameVerdict": true,
+      "inputAndTensorHashesVerified": true
+    },
+    {
+      "id": "TI-Nspire-4-bold",
+      "expected": "BOLD",
+      "savedScore": 0.22072157263755798,
+      "cpuScore": 0.2207241654396057,
+      "verdict": "REVIEW",
+      "sameVerdict": true,
+      "inputAndTensorHashesVerified": true
+    },
+    {
+      "id": "Arial-same-family-bold",
+      "expected": "BOLD",
+      "savedScore": 0.9999842643737793,
+      "cpuScore": 0.9999842643737793,
+      "verdict": "MATCH",
+      "sameVerdict": true,
+      "inputAndTensorHashesVerified": true
+    }
+  ],
+  "scope": "Four exposed diagnostic examples, not independent accuracy evidence"
+}

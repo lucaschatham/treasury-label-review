@@ -1,0 +1,1223 @@
+{
+  "manifestSha256": "a1547ecae04e3bcc09e0416f18dc0f95f8a37332d3701cb089394c9639275f0a",
+  "modelSha256": "62044f837c91a6cd55d223a9f85f540cdac3fe1ceab9ddb1906761a750e2a831",
+  "cutoff": 0.5397067666053773,
+  "rows": [
+    {
+      "id": "Arial-REGULAR-12-pillow",
+      "family": "Arial",
+      "expected": "REGULAR",
+      "renderer": "pillow",
+      "height": 12,
+      "targetHeight": 12,
+      "size": 16,
+      "font": "bf08ff3d0e40a6df20c6562398d6860d20fe934a3d61440b3bfc0983f37706cd",
+      "originalFont": {
+        "resolvedFamily": "Arial",
+        "resolvedStyle": "Regular",
+        "pixelSize": 33,
+        "capHeight": 24,
+        "face": "Arial",
+        "family": "Arial",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "index": 0,
+        "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          86,
+          137,
+          102
+        ],
+        [
+          18,
+          246,
+          103,
+          262
+        ]
+      ],
+      "tensorSha256": "b82d1f481a5d79e012339eb6b9c456cfe8b6f37a6e100f978d68f029143d733e",
+      "score": 1.6875976882602117e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-REGULAR-12-magick",
+      "family": "Arial",
+      "expected": "REGULAR",
+      "renderer": "magick",
+      "height": 12,
+      "targetHeight": 12,
+      "size": 16,
+      "font": "bf08ff3d0e40a6df20c6562398d6860d20fe934a3d61440b3bfc0983f37706cd",
+      "originalFont": {
+        "resolvedFamily": "Arial",
+        "resolvedStyle": "Regular",
+        "pixelSize": 33,
+        "capHeight": 24,
+        "face": "Arial",
+        "family": "Arial",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "index": 0,
+        "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          86,
+          138,
+          102
+        ],
+        [
+          18,
+          246,
+          104,
+          262
+        ]
+      ],
+      "tensorSha256": "8a69f4a0e1713d626fe60856b36d32fc0020b5ff20d7e11b16391958e5728c09",
+      "score": 5.013994450564496e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-REGULAR-24-pillow",
+      "family": "Arial",
+      "expected": "REGULAR",
+      "renderer": "pillow",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 33,
+      "font": "bf08ff3d0e40a6df20c6562398d6860d20fe934a3d61440b3bfc0983f37706cd",
+      "originalFont": {
+        "resolvedFamily": "Arial",
+        "resolvedStyle": "Regular",
+        "pixelSize": 33,
+        "capHeight": 24,
+        "face": "Arial",
+        "family": "Arial",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "index": 0,
+        "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          258,
+          102
+        ],
+        [
+          18,
+          234,
+          187,
+          262
+        ]
+      ],
+      "tensorSha256": "5be4d185655afb59534a406f9024c3e502103fa527cff2076e21797c2ed3baac",
+      "score": 0.0005929009057581425,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-REGULAR-24-magick",
+      "family": "Arial",
+      "expected": "REGULAR",
+      "renderer": "magick",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 33,
+      "font": "bf08ff3d0e40a6df20c6562398d6860d20fe934a3d61440b3bfc0983f37706cd",
+      "originalFont": {
+        "resolvedFamily": "Arial",
+        "resolvedStyle": "Regular",
+        "pixelSize": 33,
+        "capHeight": 24,
+        "face": "Arial",
+        "family": "Arial",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "index": 0,
+        "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          259,
+          102
+        ],
+        [
+          18,
+          234,
+          188,
+          262
+        ]
+      ],
+      "tensorSha256": "458d06f499f015ce2a2edc88e9afd1ff11cd345e06e653ccc388089170730051",
+      "score": 0.00034907448571175337,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Arial-BOLD-12-pillow",
+      "family": "Arial",
+      "expected": "BOLD",
+      "renderer": "pillow",
+      "height": 12,
+      "targetHeight": 12,
+      "size": 16,
+      "font": "af9b90baca7c1ea4708cc8c23a2638fd6939550db60c4a479ba23236718a4388",
+      "originalFont": {
+        "resolvedFamily": "Arial",
+        "resolvedStyle": "Bold",
+        "pixelSize": 33,
+        "capHeight": 24,
+        "face": "Arial-Bold",
+        "family": "Arial",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "index": 0,
+        "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          86,
+          137,
+          102
+        ],
+        [
+          18,
+          246,
+          103,
+          262
+        ]
+      ],
+      "tensorSha256": "9db1036f61f776867d9126a3be2106a6ccb54bbbc9a51347a581b9dc63c46c37",
+      "score": 0.9999681711196899,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-BOLD-12-magick",
+      "family": "Arial",
+      "expected": "BOLD",
+      "renderer": "magick",
+      "height": 12,
+      "targetHeight": 12,
+      "size": 16,
+      "font": "af9b90baca7c1ea4708cc8c23a2638fd6939550db60c4a479ba23236718a4388",
+      "originalFont": {
+        "resolvedFamily": "Arial",
+        "resolvedStyle": "Bold",
+        "pixelSize": 33,
+        "capHeight": 24,
+        "face": "Arial-Bold",
+        "family": "Arial",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "index": 0,
+        "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          86,
+          138,
+          102
+        ],
+        [
+          18,
+          246,
+          104,
+          262
+        ]
+      ],
+      "tensorSha256": "7636828fd2ca23c40bf1ff662fd841a63d1087d2674510c9f7f94f508d3c7e54",
+      "score": 0.9999858140945435,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-BOLD-24-pillow",
+      "family": "Arial",
+      "expected": "BOLD",
+      "renderer": "pillow",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 33,
+      "font": "af9b90baca7c1ea4708cc8c23a2638fd6939550db60c4a479ba23236718a4388",
+      "originalFont": {
+        "resolvedFamily": "Arial",
+        "resolvedStyle": "Bold",
+        "pixelSize": 33,
+        "capHeight": 24,
+        "face": "Arial-Bold",
+        "family": "Arial",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "index": 0,
+        "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          258,
+          102
+        ],
+        [
+          18,
+          234,
+          189,
+          262
+        ]
+      ],
+      "tensorSha256": "7ce13f723bbe11cbda16e1ba463c5f86bf4c52d1edd32885d323ea81088c677e",
+      "score": 0.999992847442627,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Arial-BOLD-24-magick",
+      "family": "Arial",
+      "expected": "BOLD",
+      "renderer": "magick",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 33,
+      "font": "af9b90baca7c1ea4708cc8c23a2638fd6939550db60c4a479ba23236718a4388",
+      "originalFont": {
+        "resolvedFamily": "Arial",
+        "resolvedStyle": "Bold",
+        "pixelSize": 33,
+        "capHeight": 24,
+        "face": "Arial-Bold",
+        "family": "Arial",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "index": 0,
+        "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          259,
+          102
+        ],
+        [
+          18,
+          234,
+          190,
+          262
+        ]
+      ],
+      "tensorSha256": "c030346d6cbab15aa83d1ef5d084117b29b9aaf926d5d7c890b3ff7c7c85c8a7",
+      "score": 0.9999959468841553,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-REGULAR-12-pillow",
+      "family": "Georgia",
+      "expected": "REGULAR",
+      "renderer": "pillow",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 15,
+      "font": "2d797038b66d0247a87d9ec3788dee295f5df0935d20125ae8831b7a1bda099d",
+      "originalFont": {
+        "resolvedFamily": "Georgia",
+        "resolvedStyle": "Regular",
+        "pixelSize": 34,
+        "capHeight": 24,
+        "face": "Georgia",
+        "family": "Georgia",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+        "index": 0,
+        "sha256": "4f54eb299fccea7f103edeb0d92437359bfd4441811d53222b82b335369f6218"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          131,
+          102
+        ],
+        [
+          17,
+          247,
+          101,
+          262
+        ]
+      ],
+      "tensorSha256": "0daad76327224a3709f17776d94079c2462a74b5ea558859944f893be1beebff",
+      "score": 0.09188175201416016,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-REGULAR-12-magick",
+      "family": "Georgia",
+      "expected": "REGULAR",
+      "renderer": "magick",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 15,
+      "font": "2d797038b66d0247a87d9ec3788dee295f5df0935d20125ae8831b7a1bda099d",
+      "originalFont": {
+        "resolvedFamily": "Georgia",
+        "resolvedStyle": "Regular",
+        "pixelSize": 34,
+        "capHeight": 24,
+        "face": "Georgia",
+        "family": "Georgia",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+        "index": 0,
+        "sha256": "4f54eb299fccea7f103edeb0d92437359bfd4441811d53222b82b335369f6218"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          133,
+          102
+        ],
+        [
+          18,
+          247,
+          103,
+          262
+        ]
+      ],
+      "tensorSha256": "6af7e1a52737aee584018f882934a14755eda09a292015bde085c525d4c55b28",
+      "score": 0.0023047018330544233,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-REGULAR-24-pillow",
+      "family": "Georgia",
+      "expected": "REGULAR",
+      "renderer": "pillow",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 34,
+      "font": "2d797038b66d0247a87d9ec3788dee295f5df0935d20125ae8831b7a1bda099d",
+      "originalFont": {
+        "resolvedFamily": "Georgia",
+        "resolvedStyle": "Regular",
+        "pixelSize": 34,
+        "capHeight": 24,
+        "face": "Georgia",
+        "family": "Georgia",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+        "index": 0,
+        "sha256": "4f54eb299fccea7f103edeb0d92437359bfd4441811d53222b82b335369f6218"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          268,
+          102
+        ],
+        [
+          17,
+          234,
+          200,
+          262
+        ]
+      ],
+      "tensorSha256": "28967b0f4a1ef8751ac6241826759df3b13b2445ff6e91b02111ead44d1a0ed5",
+      "score": 0.0006855138926766813,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-REGULAR-24-magick",
+      "family": "Georgia",
+      "expected": "REGULAR",
+      "renderer": "magick",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 34,
+      "font": "2d797038b66d0247a87d9ec3788dee295f5df0935d20125ae8831b7a1bda099d",
+      "originalFont": {
+        "resolvedFamily": "Georgia",
+        "resolvedStyle": "Regular",
+        "pixelSize": 34,
+        "capHeight": 24,
+        "face": "Georgia",
+        "family": "Georgia",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+        "index": 0,
+        "sha256": "4f54eb299fccea7f103edeb0d92437359bfd4441811d53222b82b335369f6218"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          73,
+          268,
+          103
+        ],
+        [
+          17,
+          233,
+          200,
+          263
+        ]
+      ],
+      "tensorSha256": "7a082c6e95f79f2dc532fb4a3294837d17cbf07f67d7b90f80e1f37d277a0cb4",
+      "score": 0.000815707549918443,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "Georgia-BOLD-12-pillow",
+      "family": "Georgia",
+      "expected": "BOLD",
+      "renderer": "pillow",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 15,
+      "font": "5647d5f955cd6a13cade821e2f78f8b1eff199da21bed8bb00327cb46fda1841",
+      "originalFont": {
+        "resolvedFamily": "Georgia",
+        "resolvedStyle": "Bold",
+        "pixelSize": 34,
+        "capHeight": 24,
+        "face": "Georgia-Bold",
+        "family": "Georgia",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
+        "index": 0,
+        "sha256": "1cfa9abd55be746c798c22ef4eba88fce82257934897404be2dae53ed0a4142a"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          143,
+          102
+        ],
+        [
+          17,
+          247,
+          111,
+          262
+        ]
+      ],
+      "tensorSha256": "db3ad4cb9b3c6584f3da0b0845bdaa7ffede6ce987ea983cc11245e664887ec8",
+      "score": 0.9934129118919373,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-BOLD-12-magick",
+      "family": "Georgia",
+      "expected": "BOLD",
+      "renderer": "magick",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 15,
+      "font": "5647d5f955cd6a13cade821e2f78f8b1eff199da21bed8bb00327cb46fda1841",
+      "originalFont": {
+        "resolvedFamily": "Georgia",
+        "resolvedStyle": "Bold",
+        "pixelSize": 34,
+        "capHeight": 24,
+        "face": "Georgia-Bold",
+        "family": "Georgia",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
+        "index": 0,
+        "sha256": "1cfa9abd55be746c798c22ef4eba88fce82257934897404be2dae53ed0a4142a"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          143,
+          102
+        ],
+        [
+          17,
+          247,
+          112,
+          262
+        ]
+      ],
+      "tensorSha256": "48bea484d7405501caae0d2a25b3e5ec6ece714c334fa92e6dfc9e751c84416a",
+      "score": 0.9995144605636597,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-BOLD-24-pillow",
+      "family": "Georgia",
+      "expected": "BOLD",
+      "renderer": "pillow",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 34,
+      "font": "5647d5f955cd6a13cade821e2f78f8b1eff199da21bed8bb00327cb46fda1841",
+      "originalFont": {
+        "resolvedFamily": "Georgia",
+        "resolvedStyle": "Bold",
+        "pixelSize": 34,
+        "capHeight": 24,
+        "face": "Georgia-Bold",
+        "family": "Georgia",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
+        "index": 0,
+        "sha256": "1cfa9abd55be746c798c22ef4eba88fce82257934897404be2dae53ed0a4142a"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          295,
+          102
+        ],
+        [
+          17,
+          234,
+          223,
+          262
+        ]
+      ],
+      "tensorSha256": "1942c5dfc9b89f11c1984d27c47886ac65fb002a931a328098df95a69445c5f1",
+      "score": 0.9979522228240967,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Georgia-BOLD-24-magick",
+      "family": "Georgia",
+      "expected": "BOLD",
+      "renderer": "magick",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 33,
+      "font": "5647d5f955cd6a13cade821e2f78f8b1eff199da21bed8bb00327cb46fda1841",
+      "originalFont": {
+        "resolvedFamily": "Georgia",
+        "resolvedStyle": "Bold",
+        "pixelSize": 34,
+        "capHeight": 24,
+        "face": "Georgia-Bold",
+        "family": "Georgia",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
+        "index": 0,
+        "sha256": "1cfa9abd55be746c798c22ef4eba88fce82257934897404be2dae53ed0a4142a"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          73,
+          288,
+          103
+        ],
+        [
+          17,
+          233,
+          218,
+          263
+        ]
+      ],
+      "tensorSha256": "27153fda99a60aff5d1ccfe3b25f15541a2fe18fc34d0687c93af6eb10f49f7a",
+      "score": 0.9976822137832642,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-REGULAR-12-pillow",
+      "family": "Superclarendon",
+      "expected": "REGULAR",
+      "renderer": "pillow",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 15,
+      "font": "be8db3b5cc4bf1d43c4f47207b1d47d587063698bba64d5607cd09d0dd1f22a9",
+      "originalFont": {
+        "face": "Superclarendon-Regular",
+        "family": "Superclarendon",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/SuperClarendon.ttc",
+        "index": 0,
+        "sha256": "83989afcec27e9f0aed2e336400ac51bfce4ef5fcb53522c52dee646640d1fd7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          149,
+          102
+        ],
+        [
+          18,
+          247,
+          113,
+          262
+        ]
+      ],
+      "tensorSha256": "8a925a7b22ee9d227f657210c05d60bd5dc7daac29579fd4c48a843d6efce9af",
+      "score": 0.6228857636451721,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-REGULAR-12-magick",
+      "family": "Superclarendon",
+      "expected": "REGULAR",
+      "renderer": "magick",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 14,
+      "font": "be8db3b5cc4bf1d43c4f47207b1d47d587063698bba64d5607cd09d0dd1f22a9",
+      "originalFont": {
+        "face": "Superclarendon-Regular",
+        "family": "Superclarendon",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/SuperClarendon.ttc",
+        "index": 0,
+        "sha256": "83989afcec27e9f0aed2e336400ac51bfce4ef5fcb53522c52dee646640d1fd7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          141,
+          102
+        ],
+        [
+          18,
+          247,
+          107,
+          262
+        ]
+      ],
+      "tensorSha256": "cc180a66f63fe32f61465d27b2d2386aa4286de6f40d5502315f782173c96d45",
+      "score": 0.9774261116981506,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-REGULAR-24-pillow",
+      "family": "Superclarendon",
+      "expected": "REGULAR",
+      "renderer": "pillow",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 32,
+      "font": "be8db3b5cc4bf1d43c4f47207b1d47d587063698bba64d5607cd09d0dd1f22a9",
+      "originalFont": {
+        "face": "Superclarendon-Regular",
+        "family": "Superclarendon",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/SuperClarendon.ttc",
+        "index": 0,
+        "sha256": "83989afcec27e9f0aed2e336400ac51bfce4ef5fcb53522c52dee646640d1fd7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          294,
+          102
+        ],
+        [
+          19,
+          234,
+          215,
+          262
+        ]
+      ],
+      "tensorSha256": "2400ec34d5d0364f566b823a3e8eab3e12a4363b6ec1b2a43ce3a1eda495dc91",
+      "score": 0.7375149726867676,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-REGULAR-24-magick",
+      "family": "Superclarendon",
+      "expected": "REGULAR",
+      "renderer": "magick",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 31,
+      "font": "be8db3b5cc4bf1d43c4f47207b1d47d587063698bba64d5607cd09d0dd1f22a9",
+      "originalFont": {
+        "face": "Superclarendon-Regular",
+        "family": "Superclarendon",
+        "weight": 400,
+        "file": "/System/Library/Fonts/Supplemental/SuperClarendon.ttc",
+        "index": 0,
+        "sha256": "83989afcec27e9f0aed2e336400ac51bfce4ef5fcb53522c52dee646640d1fd7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          73,
+          284,
+          103
+        ],
+        [
+          19,
+          233,
+          208,
+          263
+        ]
+      ],
+      "tensorSha256": "81a4e1ce94deecd50a58d2f282c07ad77adec13f712db6f03706a551b56a1857",
+      "score": 0.9867148995399475,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-BOLD-12-pillow",
+      "family": "Superclarendon",
+      "expected": "BOLD",
+      "renderer": "pillow",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 15,
+      "font": "2fe739226fe8118c810147749d9f1fabbe48f6d5959a1f2a387e39b2e561b5e4",
+      "originalFont": {
+        "face": "Superclarendon-Bold",
+        "family": "Superclarendon",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/SuperClarendon.ttc",
+        "index": 5,
+        "sha256": "83989afcec27e9f0aed2e336400ac51bfce4ef5fcb53522c52dee646640d1fd7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          152,
+          102
+        ],
+        [
+          18,
+          247,
+          115,
+          262
+        ]
+      ],
+      "tensorSha256": "5c111a9f82ec978b83b9c329a4d130c62f8b2f0c8a2cbbc1e8007888a0ace3d5",
+      "score": 0.9999932050704956,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-BOLD-12-magick",
+      "family": "Superclarendon",
+      "expected": "BOLD",
+      "renderer": "magick",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 14,
+      "font": "2fe739226fe8118c810147749d9f1fabbe48f6d5959a1f2a387e39b2e561b5e4",
+      "originalFont": {
+        "face": "Superclarendon-Bold",
+        "family": "Superclarendon",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/SuperClarendon.ttc",
+        "index": 5,
+        "sha256": "83989afcec27e9f0aed2e336400ac51bfce4ef5fcb53522c52dee646640d1fd7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          145,
+          102
+        ],
+        [
+          18,
+          247,
+          111,
+          262
+        ]
+      ],
+      "tensorSha256": "827500be6959ac0374f57185171d61cfd89d6281658322b31fb622c7ff8dc210",
+      "score": 0.9999829530715942,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-BOLD-24-pillow",
+      "family": "Superclarendon",
+      "expected": "BOLD",
+      "renderer": "pillow",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 32,
+      "font": "2fe739226fe8118c810147749d9f1fabbe48f6d5959a1f2a387e39b2e561b5e4",
+      "originalFont": {
+        "face": "Superclarendon-Bold",
+        "family": "Superclarendon",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/SuperClarendon.ttc",
+        "index": 5,
+        "sha256": "83989afcec27e9f0aed2e336400ac51bfce4ef5fcb53522c52dee646640d1fd7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          300,
+          102
+        ],
+        [
+          19,
+          234,
+          220,
+          262
+        ]
+      ],
+      "tensorSha256": "af798b14e49d785b097699d990b948cb4bcfe7e610be90156a2549b495b2268e",
+      "score": 0.9999241828918457,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "Superclarendon-BOLD-24-magick",
+      "family": "Superclarendon",
+      "expected": "BOLD",
+      "renderer": "magick",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 31,
+      "font": "2fe739226fe8118c810147749d9f1fabbe48f6d5959a1f2a387e39b2e561b5e4",
+      "originalFont": {
+        "face": "Superclarendon-Bold",
+        "family": "Superclarendon",
+        "weight": 700,
+        "file": "/System/Library/Fonts/Supplemental/SuperClarendon.ttc",
+        "index": 5,
+        "sha256": "83989afcec27e9f0aed2e336400ac51bfce4ef5fcb53522c52dee646640d1fd7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          73,
+          291,
+          103
+        ],
+        [
+          19,
+          233,
+          214,
+          263
+        ]
+      ],
+      "tensorSha256": "8dee489d064f776d54f6e833e833abe733daa47fb3dbbfbff0172a09f0c66169",
+      "score": 0.9998959302902222,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-REGULAR-12-pillow",
+      "family": "TI-Nspire",
+      "expected": "REGULAR",
+      "renderer": "pillow",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 16,
+      "font": "4015f0ec5cecfb1641344fcd35b8d3bbe63adff61a4b0169db0bb3ed22a5b3da",
+      "originalFont": {
+        "face": "TI-Nspire-Regular",
+        "family": "TI-Nspire",
+        "weight": 400,
+        "file": "/Library/Fonts/TI-Nspire.ttf",
+        "index": 0,
+        "sha256": "a2a7f2c10f7917b9636b0b2b33c265cf0974a5f897bdb1115b5c1e908c42b303"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          134,
+          102
+        ],
+        [
+          18,
+          247,
+          101,
+          262
+        ]
+      ],
+      "tensorSha256": "21c1a03a7c67107d8c4734799fc965acbbd6bb64b954a638972b919be467c4fa",
+      "score": 0.0100876959040761,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-REGULAR-12-magick",
+      "family": "TI-Nspire",
+      "expected": "REGULAR",
+      "renderer": "magick",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 16,
+      "font": "4015f0ec5cecfb1641344fcd35b8d3bbe63adff61a4b0169db0bb3ed22a5b3da",
+      "originalFont": {
+        "face": "TI-Nspire-Regular",
+        "family": "TI-Nspire",
+        "weight": 400,
+        "file": "/Library/Fonts/TI-Nspire.ttf",
+        "index": 0,
+        "sha256": "a2a7f2c10f7917b9636b0b2b33c265cf0974a5f897bdb1115b5c1e908c42b303"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          137,
+          102
+        ],
+        [
+          18,
+          246,
+          103,
+          262
+        ]
+      ],
+      "tensorSha256": "9dccca32fe0192eeea9e49046209b81a9107014b40e1149cf7bdf75db98354ba",
+      "score": 3.04121585941175e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-REGULAR-24-pillow",
+      "family": "TI-Nspire",
+      "expected": "REGULAR",
+      "renderer": "pillow",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 35,
+      "font": "4015f0ec5cecfb1641344fcd35b8d3bbe63adff61a4b0169db0bb3ed22a5b3da",
+      "originalFont": {
+        "face": "TI-Nspire-Regular",
+        "family": "TI-Nspire",
+        "weight": 400,
+        "file": "/Library/Fonts/TI-Nspire.ttf",
+        "index": 0,
+        "sha256": "a2a7f2c10f7917b9636b0b2b33c265cf0974a5f897bdb1115b5c1e908c42b303"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          267,
+          102
+        ],
+        [
+          18,
+          234,
+          194,
+          262
+        ]
+      ],
+      "tensorSha256": "9c8bdb2e294aafade845dca252f91cdc6f28dad7331bd58251dbe7b5df9cc2dd",
+      "score": 5.151148343429668e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-REGULAR-24-magick",
+      "family": "TI-Nspire",
+      "expected": "REGULAR",
+      "renderer": "magick",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 35,
+      "font": "4015f0ec5cecfb1641344fcd35b8d3bbe63adff61a4b0169db0bb3ed22a5b3da",
+      "originalFont": {
+        "face": "TI-Nspire-Regular",
+        "family": "TI-Nspire",
+        "weight": 400,
+        "file": "/Library/Fonts/TI-Nspire.ttf",
+        "index": 0,
+        "sha256": "a2a7f2c10f7917b9636b0b2b33c265cf0974a5f897bdb1115b5c1e908c42b303"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          73,
+          264,
+          103
+        ],
+        [
+          18,
+          233,
+          193,
+          263
+        ]
+      ],
+      "tensorSha256": "6477ebbb084fcfbdef9fbaa3ddd10435f5dd80413008cb1e8d475baf59767feb",
+      "score": 4.02211444452405e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "TI-Nspire-BOLD-12-pillow",
+      "family": "TI-Nspire",
+      "expected": "BOLD",
+      "renderer": "pillow",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 16,
+      "font": "6ce7866baffa31f9bea12e5f43b9865a7556034f1bae55fea03618e67b93c34c",
+      "originalFont": {
+        "face": "TI-Nspire-Bold",
+        "family": "TI-Nspire",
+        "weight": 700,
+        "file": "/Library/Fonts/TI-NspireBd.ttf",
+        "index": 0,
+        "sha256": "8fdc318f7c0870a116e872f666a6fe9a0e7c5032d5577e13df8501bcd04e14d7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          141,
+          102
+        ],
+        [
+          18,
+          247,
+          105,
+          262
+        ]
+      ],
+      "tensorSha256": "e86f70330a82f43140be065e81e1c70d53ef92856ec59259199f89db8fc228ad",
+      "score": 0.9983306527137756,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-BOLD-12-magick",
+      "family": "TI-Nspire",
+      "expected": "BOLD",
+      "renderer": "magick",
+      "height": 11,
+      "targetHeight": 12,
+      "size": 16,
+      "font": "6ce7866baffa31f9bea12e5f43b9865a7556034f1bae55fea03618e67b93c34c",
+      "originalFont": {
+        "face": "TI-Nspire-Bold",
+        "family": "TI-Nspire",
+        "weight": 700,
+        "file": "/Library/Fonts/TI-NspireBd.ttf",
+        "index": 0,
+        "sha256": "8fdc318f7c0870a116e872f666a6fe9a0e7c5032d5577e13df8501bcd04e14d7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          18,
+          87,
+          142,
+          102
+        ],
+        [
+          18,
+          247,
+          107,
+          262
+        ]
+      ],
+      "tensorSha256": "84cd02d75da05057a7a07344c51757356df03020bc2775a5a095ed18f93863d5",
+      "score": 0.943688690662384,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-BOLD-24-pillow",
+      "family": "TI-Nspire",
+      "expected": "BOLD",
+      "renderer": "pillow",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 35,
+      "font": "6ce7866baffa31f9bea12e5f43b9865a7556034f1bae55fea03618e67b93c34c",
+      "originalFont": {
+        "face": "TI-Nspire-Bold",
+        "family": "TI-Nspire",
+        "weight": 700,
+        "file": "/Library/Fonts/TI-NspireBd.ttf",
+        "index": 0,
+        "sha256": "8fdc318f7c0870a116e872f666a6fe9a0e7c5032d5577e13df8501bcd04e14d7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          74,
+          279,
+          102
+        ],
+        [
+          18,
+          234,
+          204,
+          262
+        ]
+      ],
+      "tensorSha256": "08796e8a7eeb19a8fe6b7d93dfe0f84ba3bd4a34652f28a065859314b8889641",
+      "score": 0.9435917735099792,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "TI-Nspire-BOLD-24-magick",
+      "family": "TI-Nspire",
+      "expected": "BOLD",
+      "renderer": "magick",
+      "height": 24,
+      "targetHeight": 24,
+      "size": 35,
+      "font": "6ce7866baffa31f9bea12e5f43b9865a7556034f1bae55fea03618e67b93c34c",
+      "originalFont": {
+        "face": "TI-Nspire-Bold",
+        "family": "TI-Nspire",
+        "weight": 700,
+        "file": "/Library/Fonts/TI-NspireBd.ttf",
+        "index": 0,
+        "sha256": "8fdc318f7c0870a116e872f666a6fe9a0e7c5032d5577e13df8501bcd04e14d7"
+      },
+      "clipped": false,
+      "boxes": [
+        [
+          19,
+          73,
+          277,
+          103
+        ],
+        [
+          18,
+          233,
+          203,
+          263
+        ]
+      ],
+      "tensorSha256": "eb5cf47203b8f28ff6fa3b30a31cf8aa8687b7df24d6ab8b62b7ad476e98b739",
+      "score": 0.9888233542442322,
+      "verdict": "MATCH"
+    }
+  ]
+}

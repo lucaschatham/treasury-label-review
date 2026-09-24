@@ -1,0 +1,35 @@
+.FFF
+======================================================================
+FAIL: test_georgia_regular_cannot_pass (__main__.WeightBehavior.test_georgia_regular_cannot_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/HQ/Projects/lucaschatham.com/treasury-label-review-pile-triage/test/heading_weight_regression_test.py", line 11, in test_georgia_regular_cannot_pass
+    def test_georgia_regular_cannot_pass(self):self.assertNotEqual(self.rows['Georgia-cap-9-regular']['verdict'],'MATCH')
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MATCH' == 'MATCH'
+
+======================================================================
+FAIL: test_superclarendon_regular_cannot_pass (__main__.WeightBehavior.test_superclarendon_regular_cannot_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/HQ/Projects/lucaschatham.com/treasury-label-review-pile-triage/test/heading_weight_regression_test.py", line 10, in test_superclarendon_regular_cannot_pass
+    def test_superclarendon_regular_cannot_pass(self):self.assertNotEqual(self.rows['Superclarendon-cap-9-regular']['verdict'],'MATCH')
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'MATCH' == 'MATCH'
+
+======================================================================
+FAIL: test_ti_bold_detected (__main__.WeightBehavior.test_ti_bold_detected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/HQ/Projects/lucaschatham.com/treasury-label-review-pile-triage/test/heading_weight_regression_test.py", line 12, in test_ti_bold_detected
+    def test_ti_bold_detected(self):self.assertEqual(self.rows['TI-Nspire-4-bold']['verdict'],'MATCH')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'REVIEW' != 'MATCH'
+- REVIEW
++ MATCH
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.238s
+
+FAILED (failures=3)

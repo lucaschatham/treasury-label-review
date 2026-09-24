@@ -1,0 +1,38 @@
+[
+  {
+    "pointSize": 14,
+    "capHeight": 10
+  },
+  {
+    "pointSize": 15,
+    "capHeight": 11
+  },
+  {
+    "pointSize": 16,
+    "capHeight": 11
+  },
+  {
+    "pointSize": 16.5,
+    "capHeight": 11
+  },
+  {
+    "pointSize": 17,
+    "capHeight": 13
+  },
+  {
+    "pointSize": 17.5,
+    "capHeight": 13
+  },
+  {
+    "pointSize": 18,
+    "capHeight": 13
+  },
+  {
+    "pointSize": 19,
+    "capHeight": 14
+  },
+  {
+    "pointSize": 20,
+    "capHeight": 14
+  }
+]
