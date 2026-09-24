@@ -647,3 +647,7 @@ R-042 closeout: **PASSED; low-contrast ink is within the operating range, with a
 - R-042: low-contrast inks pass with a thinner margin.
 - Requirement 6 re-established on the current pipeline (300 labels, CSV association, 224.6 s).
 - Rows 3, 8, 9 and blockers D-001, D-005, D-006 reconciled. D-002 and D-004 remain open pending real-label evidence.
+
+### Code pruning, September 24, 2026
+
+Removed from the tree: the FontDNA and MobileNet experiment scripts and their tests (R-011 to R-036 tooling, which imported sibling worktrees and local model artifacts that were never committed), the cloud-vision probe and holdout-freezing harnesses, the retired I-stem guard verifier, the unused browser bicubic resize helper and its parity fixture, and the static design mock page. None was imported by the application or runnable from a clean clone. All remain in git history at `8d0571a`; the evidence they produced is unchanged under `evidence/`. Application tests: 81 pass.

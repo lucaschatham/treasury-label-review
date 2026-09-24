@@ -12,7 +12,11 @@ if (limit) manifest.rows = manifest.rows.slice(0, limit);
 // When every fixture carries its own brand, upload a CSV so each label maps to its own application row.
 const distinct = manifest.rows.every(r => r.brand) && new Set(manifest.rows.map(r => r.brand)).size === manifest.rows.length;
 const csvPath = `${fixtureDir}/applications.csv`;
-if (distinct) await writeFile(csvPath, ['filename,brand,type,abv,volume,producer', ...manifest.rows.map(r => `${r.file},${r.brand},Kentucky Straight Bourbon Whiskey,45,750 mL,"Old Tom Distillery, Bardstown, KY"`)].join('\n') + '\n');
+const csvCell = value => `"${String(value ?? '').replace(/"/g, '""')}"`;
+if (distinct) await writeFile(csvPath, ['filename,brand,type,abv,volume,producer,imported,country', ...manifest.rows.map(r => {
+  const a = r.application || { brand: r.brand, type: 'Kentucky Straight Bourbon Whiskey', abv: '45', volume: '750 mL', producer: 'Old Tom Distillery, Bardstown, KY' };
+  return [r.file, a.brand, a.type, a.abv, a.volume, a.producer, a.imported || 'false', a.country || ''].map(csvCell).join(',');
+})].join('\n') + '\n');
 const nodeRows = nodeResultPath && nodeResultPath !== '-' ? Object.fromEntries(JSON.parse(await readFile(nodeResultPath, 'utf8')).rows.map(r => [r.id, r])) : {};
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
@@ -46,12 +50,15 @@ try {
     const node = item ? nodeRows[item.id] : null;
     const browserVerdict = row.appearance?.status === 'match' ? 'MATCH' : 'REVIEW';
     const brandMatch = row.findings.some(f => f.field === 'Brand name' && f.status === 'match');
-    return { file: item?.file || row.name, id: item?.id, expected: item?.expected, brand: item?.brand, brandMatch, browserVerdict, nodeVerdict: node?.verdict, browserRatio: row.appearance?.ratio ?? null, nodeRatio: node?.ratio ?? null,
+    const expectedFindings = item?.expectedFindings || null;
+    const findingErrors = expectedFindings ? Object.entries(expectedFindings).filter(([field, status]) => (row.findings.find(f => f.field === field)?.status || 'absent') !== status).map(([field, status]) => `${field}: expected ${status}, got ${row.findings.find(f => f.field === field)?.status || 'absent'}`) : null;
+    return { file: item?.file || row.name, id: item?.id, variant: item?.variant, expected: item?.expected, brand: item?.brand, brandMatch, findings: row.findings, findingErrors, browserVerdict, nodeVerdict: node?.verdict, browserRatio: row.appearance?.ratio ?? null, nodeRatio: node?.ratio ?? null,
              ratioDelta: row.appearance?.ratio != null && node?.ratio != null ? Math.abs(row.appearance.ratio - node.ratio) : null, agrees: node ? browserVerdict === node.verdict : null, clickToResultMs: row.timings?.clickToResult, ocrMs: row.timings?.ocr, appearanceMs: row.timings?.appearance };
   });
   const summary = { url, fixtures: manifest.rows.length, rowsRendered: rows.length, status: status.trim(), batchSeconds: (finished - clicked) / 1000,
     verdictAgreement: `${comparisons.filter(c => c.agrees).length}/${comparisons.filter(c => c.nodeVerdict).length}`, csvUploaded: distinct,
     rowsMappedToOwnFile: comparisons.filter(c => c.id).length, brandMatches: `${comparisons.filter(c => c.brandMatch).length}/${comparisons.length}`,
+    expectedFindingsChecked: comparisons.filter(c => c.findingErrors).length, labelsWithFindingErrors: comparisons.filter(c => c.findingErrors?.length).map(c => ({ id: c.id, errors: c.findingErrors })),
     maxRatioDelta: Math.max(0, ...comparisons.map(c => c.ratioDelta ?? 0)),
     boldMatched: `${comparisons.filter(c => c.expected === 'MATCH' && c.browserVerdict === 'MATCH').length}/${comparisons.filter(c => c.expected === 'MATCH').length}`,
     regularFalse: `${comparisons.filter(c => c.expected === 'REVIEW' && c.browserVerdict === 'MATCH').length}/${comparisons.filter(c => c.expected === 'REVIEW').length}`,
