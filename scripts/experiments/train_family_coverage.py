@@ -9,6 +9,7 @@ from finetune_contract import cutoff_for, summarize
 from experiment_budget import check_budget
 from experiment_failure import preserve_failure
 from family_coverage import validate_pixels
+from transfer_split import partition
 
 ROOT=Path(__file__).resolve().parents[2]
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -22,8 +23,9 @@ class Inputs(torch.utils.data.Dataset):
   tensor=np.ascontiguousarray(((rgb-np.array([.485,.456,.406],dtype=np.float32))/np.array([.229,.224,.225],dtype=np.float32)).transpose(2,0,1))
   return torch.from_numpy(tensor),torch.tensor(float(row['expected']=='BOLD'))
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--arm',choices=['baseline','expanded'],required=True);a=ap.parse_args()
- out=ROOT.parent/f'treasury-label-review-r021-{a.arm}';out.mkdir(exist_ok=False)
+ ap=argparse.ArgumentParser();ap.add_argument('--arm',choices=['baseline','expanded','targeted'],required=True);a=ap.parse_args()
+ experiment='R-022' if a.arm=='targeted' else 'R-021'
+ out=ROOT.parent/f'treasury-label-review-{experiment.lower().replace("-","")}-{a.arm}';out.mkdir(exist_ok=False)
  started=time.monotonic();progress={'steps':0}
  with preserve_failure(out,a.arm,started,progress,time.monotonic):
   seed=20260923;random.seed(seed);np.random.seed(seed);torch.manual_seed(seed);torch.set_num_threads(2)
@@ -31,17 +33,23 @@ def main():
   source=research/'evidence/appearance-mobilenet-inputs-frozen.json';m=json.loads(source.read_text())
   rows=[{**r,'input':str(research/r['input'])} for r in m['rows']]
   expanded=ROOT.parent/'treasury-label-review-r021-assets/manifest.json';extra=json.loads(expanded.read_text())
-  validate_pixels(rows+extra['rows'])
-  train=[r for r in rows if r['split']=='train']+(extra['rows'] if a.arm=='expanded' else [])
-  assert len(train)==(1024 if a.arm=='baseline' else 4096)
-  assert len({r['family'] for r in train})==(16 if a.arm=='baseline' else 64)
+  target=ROOT.parent/'treasury-label-review-r022-assets/manifest.json'
+  targetrows=json.loads(target.read_text())['rows'] if a.arm=='targeted' else []
+  train=[r for r in rows if r['split']=='train']+(extra['rows'] if a.arm!='baseline' else [])+targetrows
+  evaluation=[r for r in rows if r['split']!='train']
+  transfer,excluded=partition(evaluation,train)
+  excludedids={r['id'] for r in excluded}
+  assert not any(r['split']=='calibration' for r in excluded)
+  validate_pixels(train+transfer)
+  assert len(train)==({'baseline':1024,'expanded':4096,'targeted':4288}[a.arm])
+  assert len({r['family'] for r in train})==({'baseline':16,'expanded':64,'targeted':67}[a.arm])
   assert sum(r['expected']=='BOLD' for r in train)==len(train)//2
-  for r in rows+extra['rows']:
+  for r in rows+extra['rows']+targetrows:
    check_budget(started,time.monotonic(),900)
    assert sha(r['input'])==r['inputSha256']
   assert sha(m['assets']['model'])==m['assets']['modelSha256']
   device='mps' if torch.backends.mps.is_available() else 'cpu'
-  protocol=dict(experiment='R-021',arm=a.arm,sourceManifestSha256=sha(source),expandedManifestSha256=sha(expanded),sourceCheckpointSha256=m['assets']['modelSha256'],codeSha256=sha(__file__),seed=seed,steps=1536,batchSize=32,learningRate=.0001,weightDecay=.01,trainImages=len(train),trainFamilies=len({r['family'] for r in train}),maxSeconds=900,device=device,torch=torch.__version__,timm=timm.__version__)
+  protocol=dict(experiment=experiment,arm=a.arm,targetedManifestSha256=sha(target) if targetrows else None,excludedEvaluationIds=sorted(excludedids),sourceManifestSha256=sha(source),expandedManifestSha256=sha(expanded),sourceCheckpointSha256=m['assets']['modelSha256'],codeSha256=sha(__file__),seed=seed,steps=1536,batchSize=32,learningRate=.0001,weightDecay=.01,trainImages=len(train),trainFamilies=len({r['family'] for r in train}),maxSeconds=900,device=device,torch=torch.__version__,timm=timm.__version__)
   write(out/'protocol.json',protocol)
   model=timm.create_model('mobilenetv3_small_100.lamb_in1k',pretrained=False);model.load_state_dict(load_file(m['assets']['model']));model.reset_classifier(1);model.to(device)
   loader=torch.utils.data.DataLoader(Inputs(train),batch_size=32,shuffle=True,generator=torch.Generator().manual_seed(seed))
@@ -63,9 +71,9 @@ def main():
   cal=[i for i,r in enumerate(evaluation) if r['split']=='calibration'];cut=cutoff_for([scores[i] for i in cal],[labels[i] for i in cal])
   summaries={}
   for category in ['calibration']+sorted({r['category'] for r in evaluation if r['split']=='challenge'}):
-   indices=cal if category=='calibration' else [i for i,r in enumerate(evaluation) if r['category']==category and r['split']=='challenge']
+   indices=cal if category=='calibration' else [i for i,r in enumerate(evaluation) if r['category']==category and r['split']=='challenge' and r['id'] not in excludedids]
    summaries[category]=summarize([scores[i] for i in indices],[labels[i] for i in indices],cut)
-  output=[{k:r[k] for k in ['id','family','split','category','expected']}|dict(score=s,verdict='MATCH' if s>=cut else 'REVIEW') for r,s in zip(evaluation,scores)]
+  output=[{k:r[k] for k in ['id','family','split','category','expected']}|dict(transferEligible=r['id'] not in excludedids,score=s,verdict='MATCH' if s>=cut else 'REVIEW') for r,s in zip(evaluation,scores)]
   byid={r['id']:r for r in output};invariants=[]
   for pair in m['bodyInvariants']:
    first,second=[byid[k] for k in pair['ids']];invariants.append(dict(ids=pair['ids'],same=abs(first['score']-second['score'])<1e-6 and first['verdict']==second['verdict']))
