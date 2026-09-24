@@ -1,0 +1,7 @@
+{
+  "stage": "source acquisition",
+  "codeSha256": "b21bca0e9b2e6e0eea0e428aea6247832284c9c8faed22bb5ddec568fa52f528",
+  "error": "curl exit56 while requesting ofl/tinos/OFL.txt",
+  "diagnosis": "Pinned tree contains no OFL.txt for tinos; ineligible under declared license criterion. Other transport failures must retry without changing selection.",
+  "classifierRun": false
+}
