@@ -39,36 +39,44 @@ def main():
  originals=[r for r in rows if r['split']=='train'];control_ids=slots(originals)
  original_byid={r['id']:(i,r) for i,r in enumerate(rows)}
  for j,r in enumerate(additions):
+  check_budget(started,time.monotonic(),600)
   if a.arm=='treatment':
    tensor=np.load(qroot/(r['id']+'.npy'));assert hashlib.sha256(tensor.tobytes()).hexdigest()==r['tensorSha256']
    new=dict(id='added-'+r['id'],family=r['family'],expected=r['expected'],split='train',category='added',tensorSha256=r['tensorSha256'])
   else:
    index,source=original_byid[control_ids[j]];tensor=arrays[index];new={**source,'id':'duplicate-'+source['id']}
   arrays.append(tensor);rows.append(new)
+  check_budget(started,time.monotonic(),600)
  # Both arms exclude the same exact treatment tensors from transfer evaluation.
  for r in rows[:original_count]:
   if r['split']=='challenge' and r['tensorSha256'] in excluded:r['split']='exposed-training-overlap'
  for r in qm['rows']:
+  check_budget(started,time.monotonic(),600)
   if r['tensorSha256'] in excluded:continue
   tensor=np.load(qroot/(r['id']+'.npy'));assert hashlib.sha256(tensor.tobytes()).hexdigest()==r['tensorSha256']
   rows.append(dict(id='r016-'+r['id'],family=r['family'],expected=r['expected'],split='challenge',category='r016-transfer',tensorSha256=r['tensorSha256']));arrays.append(tensor)
+ check_budget(started,time.monotonic(),600)
  assert sum(r['split']=='train' for r in rows)==1028
  assert sum(r['split']=='train' and r['expected']=='BOLD' for r in rows)==514
  assert not any(r['split']=='challenge' and r['tensorSha256'] in excluded for r in rows)
  assert sha(m['assets']['model'])==m['assets']['modelSha256']
  device='mps' if torch.backends.mps.is_available() else 'cpu'
  write(a.output/'protocol.json',{'experiment':'R-018','arm':a.arm,'controlIds':control_ids,'treatmentIds':[r['id'] for r in additions],'excludedTensorHashes':sorted(excluded),'queryManifestSha256':sha(qroot/'manifest.json'),'seed':seed,'device':device,'torch':torch.__version__,'timm':timm.__version__,'manifestSha256':sha(manifest_path),'checkpointSha256':m['assets']['modelSha256'],'codeSha256':sha(__file__),'epochs':12,'batchSize':32,'learningRate':.0001,'weightDecay':.01,'selection':'last epoch only','data':'exposed development only','maxSeconds':600})
+ check_budget(started,time.monotonic(),600)
  model=timm.create_model('mobilenetv3_small_100.lamb_in1k',pretrained=False)
  model.load_state_dict(load_file(m['assets']['model']));model.reset_classifier(1);model.to(device)
+ check_budget(started,time.monotonic(),600)
  x=torch.from_numpy(np.stack(arrays));labels=torch.tensor([r['expected']=='BOLD' for r in rows],dtype=torch.float32)
  train=[i for i,r in enumerate(rows) if r['split']=='train']
  loader=torch.utils.data.DataLoader(torch.utils.data.TensorDataset(x[train],labels[train]),batch_size=32,shuffle=True,generator=torch.Generator().manual_seed(seed))
  optimizer=torch.optim.AdamW(model.parameters(),lr=.0001,weight_decay=.01);loss_fn=torch.nn.BCEWithLogitsLoss();losses=[]
+ check_budget(started,time.monotonic(),600)
  for epoch in range(12):
   model.train();loss_sum=0
   for bx,by in loader:
    if time.monotonic()-started>600:
     write(a.output/'result.json',{'decision':'STOP','reason':'resource limit','epochs':epoch});return
+   check_budget(started,time.monotonic(),600)
    optimizer.zero_grad();logits=model(bx.to(device)).flatten();loss=loss_fn(logits,by.to(device));loss.backward();optimizer.step();loss_sum+=loss.item()*len(bx)
    check_budget(started,time.monotonic(),600)
   losses.append(loss_sum/len(train));print(json.dumps({'epoch':epoch+1,'trainingLoss':losses[-1],'seconds':time.monotonic()-started}),flush=True)
