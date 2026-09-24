@@ -23,6 +23,7 @@ def main():
  result=json.loads((args.candidate/'result.json').read_text())
  if result['decision']!='ADVANCE':raise ValueError('Candidate has not passed development')
  if sha256(args.candidate/'model.pt')!=result['modelSha256']:raise ValueError('Changed candidate')
+ if sha256(Path(__file__).with_name('polarity.py'))!=result['polarityCodeSha256']:raise ValueError('Changed candidate preprocessing')
  started=time.monotonic()
  root=ROOT.parent/'treasury-label-review-independent-qualification';root.mkdir(exist_ok=True)
  manifest=root/'manifest.json'
@@ -79,6 +80,6 @@ def main():
  evalpixels={r['pixelSha256'] for r in original['rows']+trained['rows']+targeted['rows']}
  if evalpixels.intersection(r['pixelSha256'] for r in rows):raise ValueError('Evaluation pixel overlap')
  check_budget(started,time.monotonic(),900)
- manifest.write_text(json.dumps(dict(experiment='independent-qualification',candidateSha256=result['modelSha256'],canonicalPolarity=result['canonicalPolarity'],polarityCodeSha256=sha256(Path(__file__).with_name('polarity.py')),cutoff=result['cutoff'],revision=revision,codeSha256=sha256(__file__),fonts=fonts,rows=rows,seconds=time.monotonic()-started),indent=2))
+ manifest.write_text(json.dumps(dict(experiment='independent-qualification',candidateSha256=result['modelSha256'],canonicalPolarity=result['canonicalPolarity'],polarityCodeSha256=result['polarityCodeSha256'],cutoff=result['cutoff'],revision=revision,codeSha256=sha256(__file__),fonts=fonts,rows=rows,seconds=time.monotonic()-started),indent=2))
  print('FROZEN',len(rows),'qualification inputs',flush=True)
 if __name__=='__main__':main()
