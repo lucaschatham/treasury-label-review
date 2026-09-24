@@ -10,9 +10,12 @@ from experiment_budget import check_budget
 from experiment_failure import preserve_failure
 
 def main():
- out=ROOT.parent/'treasury-label-review-r033';out.mkdir(exist_ok=False);started=time.monotonic();progress={'steps':0}
+ out=ROOT.parent/'treasury-label-review-r033-verified';out.mkdir(exist_ok=False);started=time.monotonic();progress={'steps':0}
  with preserve_failure(out,'R-033',started,progress,time.monotonic):
-  torch.set_num_threads(2);torch.manual_seed(20260923);cache=ROOT.parent/'treasury-label-review-r028';rows=json.loads((cache/'inputs.json').read_text());x=torch.from_numpy(np.load(cache/'features.npy'))
+  torch.set_num_threads(2);torch.manual_seed(20260923);cache=ROOT.parent/'treasury-label-review-r028'
+  assert sha(cache/'inputs.json')=='a16b99d506b0cbddd1f1be45e16f1d963519087f2bd3ad6f712e9140cd29ee48'
+  assert sha(cache/'features.npy')=='71024e92aced6fd0a7a932d02fd893f11b7c19a233cf32fb9e51f488501ccf66'
+  rows=json.loads((cache/'inputs.json').read_text());x=torch.from_numpy(np.load(cache/'features.npy'))
   protocol=json.loads((ROOT.parent/'treasury-label-review-r026-corrected/protocol.json').read_text());assert protocol['inputCodeSha256']==sha(Path(__file__).with_name('fontdna_input.py'))
   original=Path('/private/tmp/treasury-fontdna-v2.onnx');assert sha(original)==protocol['sourceSha256'];weights={t.name:numpy_helper.to_array(t).copy() for t in onnx.load(original).graph.initializer}
   head=torch.nn.Sequential(torch.nn.Linear(320,160),torch.nn.GELU(),torch.nn.Linear(160,1))
@@ -34,6 +37,6 @@ def main():
   try:margin=calibrate([r for r in output if r['split']!='train']);decision='ADVANCE'
   except ValueError:margin={};decision='STOP'
   torch.save(head.state_dict(),out/'head.pt')
-  result=dict(experiment='R-033',decision=decision,headSha256=sha(out/'head.pt'),sourceSha256=sha(original),codeSha256=sha(__file__),featureCacheSha256=sha(cache/'features.npy'),anchorCoefficient=.001,finalSquaredDrift=penalty(head,reference).item(),epochs=50,seed=20260923,steps=progress['steps'],wallSeconds=time.monotonic()-started,losses=losses,rows=output,**margin)
+  result=dict(experiment='R-033',decision=decision,headSha256=sha(out/'head.pt'),sourceSha256=sha(original),codeSha256=sha(__file__),featureCacheSha256=sha(cache/'features.npy'),inputManifestSha256=sha(cache/'inputs.json'),anchorCoefficient=.001,finalSquaredDrift=penalty(head,reference).item(),epochs=50,seed=20260923,steps=progress['steps'],wallSeconds=time.monotonic()-started,losses=losses,rows=output,**margin)
   (out/'result.json').write_text(json.dumps(result,indent=2,allow_nan=False));print(json.dumps({k:v for k,v in result.items() if k not in ['rows','losses']},indent=2))
 if __name__=='__main__':main()
