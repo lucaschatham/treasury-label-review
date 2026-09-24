@@ -20,13 +20,14 @@ FIELDS = [('OLD TOM DISTILLERY', 84), ('Kentucky Straight Bourbon Whiskey', 44),
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
-def render(heading_face, heading_size, body_face, body_size, jpeg, path, ink=(21, 21, 21), background='white'):
+def render(heading_face, heading_size, body_face, body_size, jpeg, path, ink=(21, 21, 21), background='white', brand=None):
     """Draw on a tall canvas, then crop to content so the longest side stays at LONGEST_SIDE."""
     width = LONGEST_SIDE
     canvas = Image.new('RGB', (width, 2400), background)
     draw = ImageDraw.Draw(canvas)
     y = 80
     for text, size in FIELDS:
+        if brand and size == FIELDS[0][1]: text = brand
         font = ImageFont.truetype(body_face, size)
         draw.text((90, y), text, font=font, fill=ink)
         y += int(size * 1.6)
@@ -60,6 +61,7 @@ def main():
     parser.add_argument('--ink', default='151515', help='hex ink colour')
     parser.add_argument('--background', default='ffffff', help='hex background colour')
     parser.add_argument('--suffix', default='', help='id suffix for colour arms')
+    parser.add_argument('--distinct-brand', action='store_true', help='give every label its own brand name (LABEL NNN) for association tests')
     args = parser.parse_args()
     fonts, out = Path(args.fonts), Path(args.output)
     out.mkdir(parents=True, exist_ok=False)
@@ -72,9 +74,10 @@ def main():
         hface, bface = faces[hfam][hw]['file'], faces[bfam][bw]['file']
         hsize, hcap = cap_size(hface, cap); bsize, bcap = cap_size(bface, cap)
         id = id + args.suffix
-        path, hbox = render(hface, hsize, bface, bsize, jpeg, out / f'{id}.png', ink, background)
+        brand = f'LABEL {len(rows) + 1:03d} DISTILLERY' if args.distinct_brand else FIELDS[0][0]
+        path, hbox = render(hface, hsize, bface, bsize, jpeg, out / f'{id}.png', ink, background, brand)
         rows.append(dict(id=id, arm=arm, headingFamily=hfam, headingWeight=hw, bodyFamily=bfam, bodyWeight=bw, targetCap=cap, headingCap=hcap, bodyCap=bcap,
-                         jpeg=jpeg, file=path.name, fileSha256=sha(path), renderedHeadingBox=hbox, expected=expected))
+                         jpeg=jpeg, file=path.name, fileSha256=sha(path), renderedHeadingBox=hbox, expected=expected, brand=brand))
     for family in families:
         for cap, jpeg in conditions:
             fmt = 'jpeg' if jpeg else 'png'

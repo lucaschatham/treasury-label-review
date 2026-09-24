@@ -13,13 +13,31 @@ export const CONTRAST_CUTOFF = 1.1395677;
 // The required statement's capitalised body words; their first symbol is the reference glyph.
 const REFERENCE_WORDS = new Set(['according', 'surgeon', 'general', 'consumption']);
 
-function inkProfile(image, box) {
+const luminanceAt = (image, x, y) => {
+  const o = (y * image.width + x) * 4;
+  return .2126 * image.data[o] + .7152 * image.data[o + 1] + .0722 * image.data[o + 2];
+};
+
+// Background luminance of a region: the median of a one-pixel ring two pixels outside the box.
+// Text boxes are mostly background along their edges, so the median is robust to glyph pixels.
+export function backgroundLuminance(image, box) {
+  const x0 = Math.max(0, box.x0 - 2), y0 = Math.max(0, box.y0 - 2), x1 = Math.min(image.width, box.x1 + 2), y1 = Math.min(image.height, box.y1 + 2);
+  const values = [];
+  for (let x = x0; x < x1; x++) { values.push(luminanceAt(image, x, y0)); values.push(luminanceAt(image, x, y1 - 1)); }
+  for (let y = y0 + 1; y < y1 - 1; y++) { values.push(luminanceAt(image, x0, y)); values.push(luminanceAt(image, x1 - 1, y)); }
+  return median(values);
+}
+
+// Ink profile in 0..1. Dark ink on a light background keeps the original 1 - luminance/255 scale
+// (bit-identical to the qualified R-040 behaviour); a dark background flips it so light strokes
+// are ink. R-041 stage 1 showed the unflipped profile measures letter gaps on inverted statements.
+function inkProfile(image, box, darkBackground = backgroundLuminance(image, box) < INK) {
   const {x0, y0, x1, y1} = box, w = x1 - x0, h = y1 - y0;
   const profile = new Float32Array(w * h);
   for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
     const o = ((y0 + y) * image.width + x0 + x) * 4;
-    const luminance = .2126 * image.data[o] + .7152 * image.data[o + 1] + .0722 * image.data[o + 2];
-    profile[y * w + x] = image.data[o + 3] > 200 ? 1 - luminance / 255 : 0;
+    const luminance = luminanceAt(image, x0 + x, y0 + y);
+    profile[y * w + x] = image.data[o + 3] > 200 ? (darkBackground ? luminance / 255 : 1 - luminance / 255) : 0;
   }
   return {profile, w, h};
 }
@@ -44,8 +62,8 @@ function crossingMass(profile, w, h, horizontal, out) {
 }
 
 // Per-pixel local thickness values (thinner of the two crossings) for every ink pixel in the box.
-export function localThickness(image, box) {
-  const {profile, w, h} = inkProfile(image, box);
+export function localThickness(image, box, darkBackground) {
+  const {profile, w, h} = inkProfile(image, box, darkBackground);
   const horizontal = crossingMass(profile, w, h, true, new Float32Array(w * h));
   const vertical = crossingMass(profile, w, h, false, new Float32Array(w * h));
   const values = [];
@@ -87,12 +105,16 @@ export function weightContrast(blocks, heading, image) {
   if (headingCap < MIN_CAP_HEIGHT) return unresolved('heading-too-small');
   const capitals = referenceCapitals(blocks, heading, image).filter(c => c.box.y1 - c.box.y0 >= MIN_CAP_HEIGHT);
   if (capitals.length < MIN_REFERENCE_CAPITALS) return unresolved('reference-not-located');
-  const headingValues = localThickness(image, heading);
-  const referenceValues = capitals.flatMap(c => localThickness(image, c.box));
+  // One polarity decision per statement, taken from the heading's surroundings and applied to
+  // the reference capitals too, so heading and reference are always measured on the same scale.
+  const darkBackground = backgroundLuminance(image, heading) < INK;
+  const headingValues = localThickness(image, heading, darkBackground);
+  const referenceValues = capitals.flatMap(c => localThickness(image, c.box, darkBackground));
   if (headingValues.length < MIN_INK_PIXELS || referenceValues.length < MIN_INK_PIXELS) return unresolved('insufficient-ink');
   const referenceCap = median(capitals.map(c => c.box.y1 - c.box.y0));
   const headingThickness = median(headingValues), referenceThickness = median(referenceValues);
   const ratio = (headingThickness / headingCap) / (referenceThickness / referenceCap);
   return {supportsBold: ratio >= CONTRAST_CUTOFF, ratio, headingThickness, referenceThickness, headingCap, referenceCap,
-          capitals: capitals.map(c => c.text).join(''), reason: ratio >= CONTRAST_CUTOFF ? 'contrast' : 'not-distinguishable'};
+          capitals: capitals.map(c => c.text).join(''), polarity: darkBackground ? 'light-on-dark' : 'dark-on-light',
+          reason: ratio >= CONTRAST_CUTOFF ? 'contrast' : 'not-distinguishable'};
 }
