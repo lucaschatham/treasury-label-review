@@ -23,3 +23,9 @@ Autoreview found that resource checks did not cover post-training evaluation. Th
 ## Next investigation
 
 Return to the architectural distinction: source font weight is relative to a font family, while the fitted binary representation appears to use thickness patterns that confuse heavy regular with other families' bold. That mechanism remains a hypothesis, not proof of impossibility. Before any new training, assess whether a model can learn a within-family regular/bold relationship on exposed pairs without relying on family identity or body weight. Any proposed objective must preserve the original image-only inference contract, specify the missing information, and face the retained negatives. Another unmotivated model swap is not justified.
+
+## Verification and review closeout
+
+Recomputed every published cohort summary from per-image rows, verified both training counts (1,028; 514 per class), identical seed/optimizer/epoch settings, shared exclusions, original source hashes, STOP outcomes and sub-600-second elapsed times. Feature ranking (3), PNG boundary (1), slot selection (2), and budget (2) focused tests pass. No classifier correctness claim follows from these harness tests.
+
+Autoreview used the Codex helper. Reviews against the earlier diagnostic commit and branch identified actionable fixture, evidence-write, output-path, provenance and budget issues; each was inspected and corrected. The full final branch bundle exceeded the helper size limit due to raw per-image results, so source/report review was narrowed to a review-only commit and the large result tables were checked programmatically. Final command: `autoreview --mode commit --commit HEAD` at `56af286` with the budget context prompt. Exit 0, no accepted/actionable findings. This final clean result covers the budget follow-up; it is not a new detector qualification or claim that the large raw matrices received line-by-line model review.
