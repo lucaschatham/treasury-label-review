@@ -1,3 +1,5 @@
+// Historical harness for the retired I-stem stroke guard (R-003/R-005 evidence). It imports
+// strokeEvidence, which no longer exists on main; run it from a checkout of a61f00a or earlier.
 import {createHash} from 'node:crypto';
 import {createWorker} from 'tesseract.js';
 import {readFile,writeFile} from 'node:fs/promises';

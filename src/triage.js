@@ -203,9 +203,9 @@ export function createTriage(root, {intake} = {}) {
     const counts = tallies(rows); number.textContent = counts.review;
     guidance.hidden = started;
     viewResults.hidden = !started || running;
-    const unavailable = rows.filter(row=>row.findings.some(f=>f.field === 'Warning appearance' && ['service','provider','rate-limit','timeout','not-configured','invalid-request','invalid-response'].includes(f.reason))).length;
+    const unavailable = rows.filter(row=>row.findings.some(f=>f.field === 'Warning appearance' && ['heading-too-small','reference-not-located','insufficient-ink'].includes(f.reason))).length;
     notice.hidden = !unavailable;
-    notice.textContent = unavailable ? `The warning-heading check was unavailable for ${unavailable} ${unavailable === 1 ? 'label' : 'labels'}. Text findings are still available. Inspect the bold heading on those labels; this does not mean the label failed.` : '';
+    notice.textContent = unavailable ? `The warning-heading weight could not be measured for ${unavailable} ${unavailable === 1 ? 'label' : 'labels'} (heading or statement text too small or unclear). Text findings are still available. Inspect the bold heading on those labels; this does not mean the label failed.` : '';
     caption.textContent = running ? 'need review so far' : counts.review === 1 ? 'label needs review' : 'labels need review';
     secondary.textContent = running ? `Label ${Math.min(stages[3]+1,total)} of ${total}` : `${stopped ? `Stopped at label ${stages[3]} of ${total}. ` : ''}${counts.machine} sorted by machine · ${counts.human} by you`;
     updateReturnTime();

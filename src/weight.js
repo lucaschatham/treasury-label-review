@@ -2,7 +2,9 @@
 // ImageData-like objects ({width,height,data}) and Tesseract block trees.
 // Ported from scripts/experiments/subpixel_weight_diagnostic.py (R-038).
 export const INK = 128;
-export const MIN_CAP_HEIGHT = 16;     // deployed floor for the heading and for reference capitals
+// Operating floor: a nominal 20 px cap height. OCR boxes under-measure 20 px capitals by up to
+// 1 px (R-039), so the measured-box floor is 19 px. At 16 px, one pixel of box error consumed the margin.
+export const MIN_CAP_HEIGHT = 19;
 export const MIN_REFERENCE_CAPITALS = 3;
 export const MIN_INK_PIXELS = 20;
 // Frozen before R-039 from R-038 rows whose body capitals were at least 16 px:

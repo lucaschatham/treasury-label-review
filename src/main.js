@@ -289,7 +289,6 @@ form.addEventListener("submit", async (event) => {
     triage.start(jobs.length, clickedAt);
     status.removeAttribute('role'); status.setAttribute('aria-live','off');
     results.scrollIntoView({block:'start'});
-    const appearanceCache = new Map();
     stopButton.hidden = false;
     stopButton.disabled = false;
     stopButton.textContent = "Stop after current label";
@@ -316,7 +315,7 @@ form.addEventListener("submit", async (event) => {
         const findings = reviewLabel(text, expected, layout.lines.length ? layout : null);
         timings.comparison = performance.now() - comparisonStarted;
         setStatus(`Checking warning appearance: ${file.name}`, "busy");
-        findings[findings.findIndex(item => item.field === "Warning appearance")] = await timeStage(timings, "appearance", () => reviewAppearance(canvas, data.blocks, appearanceCache));
+        findings[findings.findIndex(item => item.field === "Warning appearance")] = await timeStage(timings, "appearance", () => reviewAppearance(canvas, data.blocks));
         triage.progress(2);
         const appearance = findings.find(item => item.field === "Warning appearance");
         const renderStarted = performance.now();
@@ -328,7 +327,7 @@ form.addEventListener("submit", async (event) => {
           data.confidence,
         );
         timings.render = performance.now() - renderStarted;
-        resultCard.dataset.appearance = JSON.stringify({status:appearance.status,reason:appearance.reason || "corroborated",cached:!!appearance.cached});
+        resultCard.dataset.appearance = JSON.stringify({status:appearance.status,reason:appearance.reason || "uncertain",ratio:appearance.ratio ?? null});
         completed++;
         firstResultSeconds ??= (performance.now() - clickedAt) / 1000;
       } catch (error) {

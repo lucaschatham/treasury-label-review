@@ -21,8 +21,9 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 def render(heading_face, heading_size, body_face, body_size, jpeg, path):
-    width, height = LONGEST_SIDE, 1200
-    canvas = Image.new('RGB', (width, height), 'white')
+    """Draw on a tall canvas, then crop to content so the longest side stays at LONGEST_SIDE."""
+    width = LONGEST_SIDE
+    canvas = Image.new('RGB', (width, 2400), 'white')
     draw = ImageDraw.Draw(canvas)
     y = 80
     for text, size in FIELDS:
@@ -40,8 +41,10 @@ def render(heading_face, heading_size, body_face, body_size, jpeg, path):
     for line in textwrap.wrap(BODY, per_line):
         draw.text((100, y), line, font=bfont, fill=(21, 21, 21))
         y += int(body_size * 1.35)
-    if y > height - 40:
+    height = min(canvas.height, y + 80)
+    if height > width:
         raise ValueError('Layout overflow')
+    canvas = canvas.crop((0, 0, width, height))
     if jpeg:
         path = path.with_suffix('.jpg'); canvas.save(path, quality=75)
     else:
