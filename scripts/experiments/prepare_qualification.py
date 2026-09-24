@@ -79,6 +79,6 @@ def main():
  evalpixels={r['pixelSha256'] for r in original['rows']+trained['rows']+targeted['rows']}
  if evalpixels.intersection(r['pixelSha256'] for r in rows):raise ValueError('Evaluation pixel overlap')
  check_budget(started,time.monotonic(),900)
- manifest.write_text(json.dumps(dict(experiment='independent-qualification',candidateSha256=result['modelSha256'],cutoff=result['cutoff'],revision=revision,codeSha256=sha256(__file__),fonts=fonts,rows=rows,seconds=time.monotonic()-started),indent=2))
+ manifest.write_text(json.dumps(dict(experiment='independent-qualification',candidateSha256=result['modelSha256'],canonicalPolarity=result['canonicalPolarity'],polarityCodeSha256=sha256(Path(__file__).with_name('polarity.py')),cutoff=result['cutoff'],revision=revision,codeSha256=sha256(__file__),fonts=fonts,rows=rows,seconds=time.monotonic()-started),indent=2))
  print('FROZEN',len(rows),'qualification inputs',flush=True)
 if __name__=='__main__':main()

@@ -1,0 +1,579 @@
+{
+  "decision": "STOP",
+  "summary": {
+    "bold": 40,
+    "boldMatches": 31,
+    "regular": 40,
+    "regularFalseMatches": 0,
+    "review": 49,
+    "pass": false
+  },
+  "cutoff": 0.9759449504262997,
+  "candidateSha256": "979bd481bcf6f0fc267a992d2010f211285bf11ebedde8604791756718498b2c",
+  "manifestSha256": "2271ab445155e886a599e003783ffcfa20ecdc332494b48202c0f91e17cf6255",
+  "codeSha256": "24da2d95f712b73446e7ff7f267d33d00bd76cde145257c4a0f1172bb7694be2",
+  "seconds": 1.7662575830036076,
+  "rows": [
+    {
+      "id": "domine-400-12-0-0",
+      "family": "domine",
+      "expected": "REGULAR",
+      "score": 0.0002772709704004228,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-400-16-0-0",
+      "family": "domine",
+      "expected": "REGULAR",
+      "score": 8.459705327368283e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-400-24-0-0",
+      "family": "domine",
+      "expected": "REGULAR",
+      "score": 7.706515958716409e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-400-24-1-0",
+      "family": "domine",
+      "expected": "REGULAR",
+      "score": 7.706515958716409e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-400-24-0-1",
+      "family": "domine",
+      "expected": "REGULAR",
+      "score": 9.393272648594575e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-700-12-0-0",
+      "family": "domine",
+      "expected": "BOLD",
+      "score": 0.04288194328546524,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-700-16-0-0",
+      "family": "domine",
+      "expected": "BOLD",
+      "score": 0.9532681107521057,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-700-24-0-0",
+      "family": "domine",
+      "expected": "BOLD",
+      "score": 0.44622117280960083,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-700-24-1-0",
+      "family": "domine",
+      "expected": "BOLD",
+      "score": 0.44612690806388855,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "domine-700-24-0-1",
+      "family": "domine",
+      "expected": "BOLD",
+      "score": 0.41723042726516724,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "exo2-400-12-0-0",
+      "family": "exo2",
+      "expected": "REGULAR",
+      "score": 2.119059772098808e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "exo2-400-16-0-0",
+      "family": "exo2",
+      "expected": "REGULAR",
+      "score": 1.9259373609803454e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "exo2-400-24-0-0",
+      "family": "exo2",
+      "expected": "REGULAR",
+      "score": 4.6483175641931496e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "exo2-400-24-1-0",
+      "family": "exo2",
+      "expected": "REGULAR",
+      "score": 4.6483175641931496e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "exo2-400-24-0-1",
+      "family": "exo2",
+      "expected": "REGULAR",
+      "score": 1.8623448616583715e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "exo2-700-12-0-0",
+      "family": "exo2",
+      "expected": "BOLD",
+      "score": 0.9998995065689087,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "exo2-700-16-0-0",
+      "family": "exo2",
+      "expected": "BOLD",
+      "score": 0.996783971786499,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "exo2-700-24-0-0",
+      "family": "exo2",
+      "expected": "BOLD",
+      "score": 0.9999847412109375,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "exo2-700-24-1-0",
+      "family": "exo2",
+      "expected": "BOLD",
+      "score": 0.9999847412109375,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "exo2-700-24-0-1",
+      "family": "exo2",
+      "expected": "BOLD",
+      "score": 0.9999655485153198,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "karla-400-12-0-0",
+      "family": "karla",
+      "expected": "REGULAR",
+      "score": 3.713144280936831e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "karla-400-16-0-0",
+      "family": "karla",
+      "expected": "REGULAR",
+      "score": 2.005923761316808e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "karla-400-24-0-0",
+      "family": "karla",
+      "expected": "REGULAR",
+      "score": 7.182396984717343e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "karla-400-24-1-0",
+      "family": "karla",
+      "expected": "REGULAR",
+      "score": 7.182396984717343e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "karla-400-24-0-1",
+      "family": "karla",
+      "expected": "REGULAR",
+      "score": 6.10756842434057e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "karla-700-12-0-0",
+      "family": "karla",
+      "expected": "BOLD",
+      "score": 0.08939555287361145,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "karla-700-16-0-0",
+      "family": "karla",
+      "expected": "BOLD",
+      "score": 0.978663444519043,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "karla-700-24-0-0",
+      "family": "karla",
+      "expected": "BOLD",
+      "score": 0.9655416011810303,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "karla-700-24-1-0",
+      "family": "karla",
+      "expected": "BOLD",
+      "score": 0.965572714805603,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "karla-700-24-0-1",
+      "family": "karla",
+      "expected": "BOLD",
+      "score": 0.9539682269096375,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "lora-400-12-0-0",
+      "family": "lora",
+      "expected": "REGULAR",
+      "score": 2.5748474286046985e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "lora-400-16-0-0",
+      "family": "lora",
+      "expected": "REGULAR",
+      "score": 5.1457715017022565e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "lora-400-24-0-0",
+      "family": "lora",
+      "expected": "REGULAR",
+      "score": 5.1225837523816153e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "lora-400-24-1-0",
+      "family": "lora",
+      "expected": "REGULAR",
+      "score": 5.119448542245664e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "lora-400-24-0-1",
+      "family": "lora",
+      "expected": "REGULAR",
+      "score": 4.281290966900997e-05,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "lora-700-12-0-0",
+      "family": "lora",
+      "expected": "BOLD",
+      "score": 0.9997653365135193,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "lora-700-16-0-0",
+      "family": "lora",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "lora-700-24-0-0",
+      "family": "lora",
+      "expected": "BOLD",
+      "score": 0.9995808005332947,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "lora-700-24-1-0",
+      "family": "lora",
+      "expected": "BOLD",
+      "score": 0.9995854496955872,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "lora-700-24-0-1",
+      "family": "lora",
+      "expected": "BOLD",
+      "score": 0.9994170665740967,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "mulish-400-12-0-0",
+      "family": "mulish",
+      "expected": "REGULAR",
+      "score": 1.5872710923403588e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "mulish-400-16-0-0",
+      "family": "mulish",
+      "expected": "REGULAR",
+      "score": 5.850353090863791e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "mulish-400-24-0-0",
+      "family": "mulish",
+      "expected": "REGULAR",
+      "score": 1.335550109615724e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "mulish-400-24-1-0",
+      "family": "mulish",
+      "expected": "REGULAR",
+      "score": 1.335550109615724e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "mulish-400-24-0-1",
+      "family": "mulish",
+      "expected": "REGULAR",
+      "score": 1.028474684972025e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "mulish-700-12-0-0",
+      "family": "mulish",
+      "expected": "BOLD",
+      "score": 0.9991462230682373,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "mulish-700-16-0-0",
+      "family": "mulish",
+      "expected": "BOLD",
+      "score": 0.9999853372573853,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "mulish-700-24-0-0",
+      "family": "mulish",
+      "expected": "BOLD",
+      "score": 0.9998763799667358,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "mulish-700-24-1-0",
+      "family": "mulish",
+      "expected": "BOLD",
+      "score": 0.9998763799667358,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "mulish-700-24-0-1",
+      "family": "mulish",
+      "expected": "BOLD",
+      "score": 0.9998284578323364,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "worksans-400-12-0-0",
+      "family": "worksans",
+      "expected": "REGULAR",
+      "score": 2.4904474316134184e-11,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "worksans-400-16-0-0",
+      "family": "worksans",
+      "expected": "REGULAR",
+      "score": 1.5348536330783702e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "worksans-400-24-0-0",
+      "family": "worksans",
+      "expected": "REGULAR",
+      "score": 1.8501972176565573e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "worksans-400-24-1-0",
+      "family": "worksans",
+      "expected": "REGULAR",
+      "score": 1.8501972176565573e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "worksans-400-24-0-1",
+      "family": "worksans",
+      "expected": "REGULAR",
+      "score": 2.5860535934896234e-10,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "worksans-700-12-0-0",
+      "family": "worksans",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "worksans-700-16-0-0",
+      "family": "worksans",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "worksans-700-24-0-0",
+      "family": "worksans",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "worksans-700-24-1-0",
+      "family": "worksans",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "worksans-700-24-0-1",
+      "family": "worksans",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "sora-400-12-0-0",
+      "family": "sora",
+      "expected": "REGULAR",
+      "score": 1.1210365080671636e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "sora-400-16-0-0",
+      "family": "sora",
+      "expected": "REGULAR",
+      "score": 2.922041630881722e-06,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "sora-400-24-0-0",
+      "family": "sora",
+      "expected": "REGULAR",
+      "score": 3.722249175552861e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "sora-400-24-1-0",
+      "family": "sora",
+      "expected": "REGULAR",
+      "score": 3.722249175552861e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "sora-400-24-0-1",
+      "family": "sora",
+      "expected": "REGULAR",
+      "score": 4.927027248413651e-07,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "sora-700-12-0-0",
+      "family": "sora",
+      "expected": "BOLD",
+      "score": 0.9999583959579468,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "sora-700-16-0-0",
+      "family": "sora",
+      "expected": "BOLD",
+      "score": 1.0,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "sora-700-24-0-0",
+      "family": "sora",
+      "expected": "BOLD",
+      "score": 0.9999842643737793,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "sora-700-24-1-0",
+      "family": "sora",
+      "expected": "BOLD",
+      "score": 0.9999842643737793,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "sora-700-24-0-1",
+      "family": "sora",
+      "expected": "BOLD",
+      "score": 0.9999667406082153,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "trirong-400-12-0-0",
+      "family": "trirong",
+      "expected": "REGULAR",
+      "score": 3.534308135044739e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "trirong-400-16-0-0",
+      "family": "trirong",
+      "expected": "REGULAR",
+      "score": 4.727028368733954e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "trirong-400-24-0-0",
+      "family": "trirong",
+      "expected": "REGULAR",
+      "score": 9.709796522372471e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "trirong-400-24-1-0",
+      "family": "trirong",
+      "expected": "REGULAR",
+      "score": 9.709796522372471e-09,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "trirong-400-24-0-1",
+      "family": "trirong",
+      "expected": "REGULAR",
+      "score": 1.3489231065477725e-08,
+      "verdict": "REVIEW"
+    },
+    {
+      "id": "trirong-700-12-0-0",
+      "family": "trirong",
+      "expected": "BOLD",
+      "score": 0.9999998807907104,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "trirong-700-16-0-0",
+      "family": "trirong",
+      "expected": "BOLD",
+      "score": 0.9999783039093018,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "trirong-700-24-0-0",
+      "family": "trirong",
+      "expected": "BOLD",
+      "score": 0.9999994039535522,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "trirong-700-24-1-0",
+      "family": "trirong",
+      "expected": "BOLD",
+      "score": 0.9999994039535522,
+      "verdict": "MATCH"
+    },
+    {
+      "id": "trirong-700-24-0-1",
+      "family": "trirong",
+      "expected": "BOLD",
+      "score": 0.9999990463256836,
+      "verdict": "MATCH"
+    }
+  ],
+  "scope": "Independent synthetic font families; not all real-world image conditions"
+}
