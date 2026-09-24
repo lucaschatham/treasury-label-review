@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { localThickness, median, referenceCapitals, weightContrast, CONTRAST_CUTOFF, MIN_CAP_HEIGHT } from '../src/weight.js';
+import { localThickness, median, referenceCapitals, weightContrast, backgroundLuminance, CONTRAST_CUTOFF, MIN_CAP_HEIGHT } from '../src/weight.js';
 
 function canvas(width, height) {
   const data = new Uint8ClampedArray(width * height * 4).fill(255);
@@ -70,4 +70,18 @@ test('missing, small, or unlocated references abstain instead of guessing', () =
   const small = statement(6, 4);
   for (const w of small.blocks[0].paragraphs[0].lines[0].words.slice(2)) w.symbols[0].bbox.y1 = w.symbols[0].bbox.y0 + 12;
   assert.equal(weightContrast(small.blocks, small.heading, small.image).reason, 'reference-not-located');
+});
+
+test('a light-on-dark statement is measured on its strokes, not the gaps, and scores like its dark-on-light twin', () => {
+  const dark = statement(6, 4), light = statement(6, 4);
+  for (let i = 0; i < light.image.data.length; i += 4) for (let c = 0; c < 3; c++) light.image.data[i + c] = 255 - light.image.data[i + c];
+  assert.ok(backgroundLuminance(dark.image, dark.heading) > 200);
+  assert.ok(backgroundLuminance(light.image, light.heading) < 50);
+  const a = weightContrast(dark.blocks, dark.heading, dark.image), b = weightContrast(light.blocks, light.heading, light.image);
+  assert.equal(a.polarity, 'dark-on-light'); assert.equal(b.polarity, 'light-on-dark');
+  assert.ok(Math.abs(a.ratio - b.ratio) < 1e-9);
+  assert.equal(b.supportsBold, true);
+  const regular = statement(4, 4);
+  for (let i = 0; i < regular.image.data.length; i += 4) for (let c = 0; c < 3; c++) regular.image.data[i + c] = 255 - regular.image.data[i + c];
+  assert.equal(weightContrast(regular.blocks, regular.heading, regular.image).supportsBold, false);
 });

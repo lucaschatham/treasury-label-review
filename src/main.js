@@ -328,6 +328,7 @@ form.addEventListener("submit", async (event) => {
         );
         timings.render = performance.now() - renderStarted;
         resultCard.dataset.appearance = JSON.stringify({status:appearance.status,reason:appearance.reason || "uncertain",ratio:appearance.ratio ?? null});
+        resultCard.dataset.findings = JSON.stringify(findings.map(item => ({field:item.field,status:item.status})));
         completed++;
         firstResultSeconds ??= (performance.now() - clickedAt) / 1000;
       } catch (error) {
