@@ -44,6 +44,9 @@ npm run preview
 
 ## Investigation record
 
+Start with the [September 24 investigation handoff](docs/boldness-handoff.md) for current findings, rejected approaches, open hypotheses, qualification status and reproduction limits. The numbered ledger in REQUIREMENTS.md is authoritative.
+
+
 The [Attempt history](REQUIREMENTS.md#attempt-history) tracks approaches tried, failed gates, root-cause evidence, open blockers, untested options, and conditions for revisiting a decision. Read it before another experiment and update it at closeout. It supersedes stale “next step” recommendations in older reports while preserving their results.
 
 ## Architecture and decisions

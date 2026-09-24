@@ -2,6 +2,14 @@
 
 > **Current release:** the working triage UI is deployed and source identity is reconciled below. Automated boldness remains incomplete; the latest production sample timed out on appearance. Consistent full-check five-second performance remains unproven.
 
+## Current investigation handoff, September 24, 2026
+
+All numbered attempts through R-036 are recorded below. No replacement detector has qualified or been integrated. The last recorded deployed UI source is `a61f00a30b93aec2e0d0c0c232fc55cb3e73b8c5`; this documentation update is not a new live verification or deployment. See [complete current handoff](docs/boldness-handoff.md).
+
+The strongest supported diagnosis is failed generalization across font families and rendering conditions. R-036 achieved much lower training loss while retaining a near-certain wrong score on Superclarendon regular. Optimization convergence alone is insufficient. Font-relative weight, rendering mismatch and feature loss remain competing explanations, not individually established root causes. Cloud latency is a separate failure mode.
+
+The proposed paired renderer trace is **not executed**. R-015, R-016 and R-017 already investigated rendering and representation. Any new trace must first audit those artifacts and identify an unanswered boundary in the current FontDNA pipeline; repeating renderer substitution is not a new experiment. The internal zero-false-approval/95%-recall criterion is an engineering gate, not a numeric requirement in the assignment. It remains unchanged here.
+
 ## UI release verification, September 23, 2026
 
 This update supersedes the earlier live-source uncertainty, not the recorded detector limitations. The working application is now deployed from source `a61f00a30b93aec2e0d0c0c232fc55cb3e73b8c5` to the **treasury-label-review** project, deployment `dpl_2j1z7TP5wBSwDk6e6tTMGuXMKF34`, bundle `index-BPAZG5W4.js`. [Production evidence](evidence/pile-ui-production.json) and [browser checks](evidence/pile-ui-release.md) record the scope.
