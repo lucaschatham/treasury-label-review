@@ -9,8 +9,8 @@ from finetune_contract import summarize
 ROOT=Path(__file__).resolve().parents[2]
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--candidate',type=Path,required=True);a=ap.parse_args()
- root=ROOT.parent/'treasury-label-review-independent-qualification-2';output=root/'result.json'
+ ap=argparse.ArgumentParser();ap.add_argument('--candidate',type=Path,required=True);ap.add_argument('--qualification',type=Path,default=ROOT.parent/'treasury-label-review-independent-qualification-2');a=ap.parse_args()
+ root=a.qualification;output=root/'result.json'
  if output.exists():raise ValueError('Qualification already evaluated')
  m=json.loads((root/'manifest.json').read_text());candidate=json.loads((a.candidate/'result.json').read_text())
  assert candidate['decision']=='ADVANCE' and m['modelFile']=='model.onnx'

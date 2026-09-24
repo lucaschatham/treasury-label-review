@@ -17,24 +17,25 @@ from prepare_mobilenet import render_words, packed_rgb, HEIGHTS
 from heading_classifier import prepare_words, sha256
 
 NAMES='domine exo2 karla lora mulish worksans sora trirong'.split()
+ROUNDS={1:NAMES,2:'andadapro asul cambay chivo eczar faustina literata varta'.split(),3:'amiko andika arima arsenal athiti averiaseriflibre baloo2 besley'.split()}
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--candidate',type=Path,required=True);ap.add_argument('--round',type=int,choices=[1,2],default=1);args=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--candidate',type=Path,required=True);ap.add_argument('--round',type=int,choices=[1,2,3],default=1);args=ap.parse_args()
  result=json.loads((args.candidate/'result.json').read_text())
  if result['decision']!='ADVANCE':raise ValueError('Candidate has not passed development')
  if sha256(args.candidate/result.get('modelFile','model.pt'))!=result['modelSha256']:raise ValueError('Changed candidate')
  if sha256(Path(__file__).with_name('polarity.py'))!=result['polarityCodeSha256']:raise ValueError('Changed candidate preprocessing')
  if result.get('modelFile')=='model.onnx' and sha256(Path(__file__).with_name('fontdna_input.py'))!=result['inputCodeSha256']:raise ValueError('Changed font-domain preprocessing')
- names=NAMES if args.round==1 else 'andadapro asul cambay chivo eczar faustina literata varta'.split()
+ names=ROUNDS[args.round]
  started=time.monotonic()
- root=ROOT.parent/('treasury-label-review-independent-qualification' if args.round==1 else 'treasury-label-review-independent-qualification-2');root.mkdir(exist_ok=True)
+ root=ROOT.parent/('treasury-label-review-independent-qualification' if args.round==1 else f'treasury-label-review-independent-qualification-{args.round}');root.mkdir(exist_ok=True)
  manifest=root/'manifest.json'
  if manifest.exists():raise ValueError('Manifest already frozen')
  original=json.loads((RESEARCH/'evidence/appearance-mobilenet-inputs-frozen.json').read_text())
  trained=json.loads((ROOT.parent/'treasury-label-review-r021-assets/manifest.json').read_text())
  blocked=original['historicallyExposedFamilyKeys']+[r['family'] for r in original['rows']+trained['rows']]
  blocked+=['Superclarendon','Georgia','TI-Nspire']
- if args.round==2:blocked+=NAMES
+ for previous in range(1,args.round):blocked+=ROUNDS[previous]
  validate_families(names,blocked,8)
  def bounded_fetch(url,path):
   check_budget(started,time.monotonic(),900)
@@ -80,7 +81,11 @@ def main():
   print('prepared',family,flush=True)
  if len(rows)!=80:raise ValueError('Incorrect image count')
  targeted=json.loads((ROOT.parent/'treasury-label-review-r022-assets/manifest.json').read_text())
- evalpixels={r['pixelSha256'] for r in original['rows']+trained['rows']+targeted['rows']}
+ prior=[]
+ for previous in range(1,args.round):
+  folder=ROOT.parent/('treasury-label-review-independent-qualification'+(f'-{previous}' if previous>1 else ''))
+  prior+=json.loads((folder/'manifest.json').read_text())['rows']
+ evalpixels={r['pixelSha256'] for r in original['rows']+trained['rows']+targeted['rows']+prior}
  if evalpixels.intersection(r['pixelSha256'] for r in rows):raise ValueError('Evaluation pixel overlap')
  check_budget(started,time.monotonic(),900)
  manifest.write_text(json.dumps(dict(experiment='independent-qualification',candidateSha256=result['modelSha256'],modelFile=result.get('modelFile','model.pt'),inputCodeSha256=result.get('inputCodeSha256'),canonicalPolarity=result['canonicalPolarity'],polarityCodeSha256=result['polarityCodeSha256'],cutoff=result['cutoff'],revision=revision,codeSha256=sha256(__file__),fonts=fonts,rows=rows,seconds=time.monotonic()-started),indent=2))
