@@ -10,3 +10,4 @@ test/fixtures/generated/
 worker/.wrangler/
 worker/.dev.vars
 .gstack/
+__pycache__/
