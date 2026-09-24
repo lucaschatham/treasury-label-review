@@ -1,5 +1,6 @@
 """R-018: fixed all-feature fine-tune; no production imports or network calls."""
-import argparse, hashlib, json, random, time
+import argparse, hashlib, json, random, time, sys
+from experiment_budget import check_budget
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -21,6 +22,7 @@ def main():
   for registry,key in [(families,r['family'].lower()),(pixels,r['pixelSha256'])]:
    if key in registry and registry[key]!=r['split']:raise ValueError('Split leakage')
    registry[key]=r['split']
+  check_budget(started,time.monotonic(),600)
   p=a.inputs_root/r['input'];assert sha(p)==r['inputSha256']
   rgb=np.asarray(Image.open(p).convert('RGB'),dtype=np.float32)/255
   tensor=np.ascontiguousarray(((rgb-np.array([.485,.456,.406],dtype=np.float32))/np.array([.229,.224,.225],dtype=np.float32)).transpose(2,0,1))
@@ -68,10 +70,14 @@ def main():
    if time.monotonic()-started>600:
     write(a.output/'result.json',{'decision':'STOP','reason':'resource limit','epochs':epoch});return
    optimizer.zero_grad();logits=model(bx.to(device)).flatten();loss=loss_fn(logits,by.to(device));loss.backward();optimizer.step();loss_sum+=loss.item()*len(bx)
+   check_budget(started,time.monotonic(),600)
   losses.append(loss_sum/len(train));print(json.dumps({'epoch':epoch+1,'trainingLoss':losses[-1],'seconds':time.monotonic()-started}),flush=True)
  model.eval();scores=[]
  with torch.inference_mode():
-  for i in range(0,len(x),32):scores.extend(model(x[i:i+32].to(device)).flatten().sigmoid().cpu().tolist())
+  for i in range(0,len(x),32):
+   check_budget(started,time.monotonic(),600)
+   scores.extend(model(x[i:i+32].to(device)).flatten().sigmoid().cpu().tolist())
+   check_budget(started,time.monotonic(),600)
  cal=[i for i,r in enumerate(rows) if r['split']=='calibration'];y=labels.int().tolist();cut=cutoff_for([scores[i] for i in cal],[y[i] for i in cal])
  summaries={}
  for category in ['calibration']+sorted({r['category'] for r in rows if r['split']=='challenge'}):
@@ -81,7 +87,14 @@ def main():
  byid={r['id']:r for r in output};invariants=[]
  for pair in m['bodyInvariants']:
   first,second=[byid[k] for k in pair['ids']];invariants.append(dict(ids=pair['ids'],same=abs(first['score']-second['score'])<1e-6 and first['verdict']==second['verdict']))
+ check_budget(started,time.monotonic(),600)
  model.cpu();torch.save(model.state_dict(),a.output/'model.pt')
  result={'decision':'ADVANCE' if all(s['pass'] for s in summaries.values()) and all(v['same'] for v in invariants) else 'STOP','summaries':summaries,'cutoff':cut,'bodyInvariants':invariants,'trainingLosses':losses,'wallSeconds':time.monotonic()-started,'checkpointSha256':sha(a.output/'model.pt'),'rows':output,'limitations':['Exposed synthetic development only','No independent real-label qualification','No browser latency qualification']}
+ check_budget(started,time.monotonic(),600)
  write(a.output/'result.json',result);print(json.dumps({k:result[k] for k in ['decision','summaries','cutoff','wallSeconds']},indent=2),flush=True)
-if __name__=='__main__':main()
+if __name__=='__main__':
+ try:main()
+ except TimeoutError:
+  output=Path(sys.argv[sys.argv.index('--output')+1])
+  write(output/'result.json',{'decision':'STOP','reason':'resource limit'})
+  print('STOP: resource limit',flush=True)

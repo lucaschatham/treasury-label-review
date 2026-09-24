@@ -1,0 +1,37 @@
+{
+  "experiment": "R-018",
+  "arm": "treatment",
+  "controlIds": [
+    "alegreya-400-12-inv-jpeg",
+    "alegreya-400-12-inv-png",
+    "alegreya-700-12-inv-jpeg",
+    "alegreya-700-12-inv-png"
+  ],
+  "treatmentIds": [
+    "Superclarendon-REGULAR-24-pillow",
+    "TI-Nspire-REGULAR-24-pillow",
+    "Superclarendon-BOLD-24-pillow",
+    "TI-Nspire-BOLD-24-pillow"
+  ],
+  "excludedTensorHashes": [
+    "08796e8a7eeb19a8fe6b7d93dfe0f84ba3bd4a34652f28a065859314b8889641",
+    "2400ec34d5d0364f566b823a3e8eab3e12a4363b6ec1b2a43ce3a1eda495dc91",
+    "9c8bdb2e294aafade845dca252f91cdc6f28dad7331bd58251dbe7b5df9cc2dd",
+    "af798b14e49d785b097699d990b948cb4bcfe7e610be90156a2549b495b2268e"
+  ],
+  "queryManifestSha256": "a1547ecae04e3bcc09e0416f18dc0f95f8a37332d3701cb089394c9639275f0a",
+  "seed": 20260923,
+  "device": "mps",
+  "torch": "2.14.0",
+  "timm": "1.0.30",
+  "manifestSha256": "8be07d06783cbcef820dd4c70270b2b69b05ed99e719557235f2dfb56e56fef7",
+  "checkpointSha256": "46d2c063b18125884c48937afa4c49e18128869e52e8db96df48bf0a4d7ff697",
+  "codeSha256": "734f6e50850d1ee1fad4b643776d1ede57ef0c6fddaadfd9f2b81e2a788abfd3",
+  "epochs": 12,
+  "batchSize": 32,
+  "learningRate": 0.0001,
+  "weightDecay": 0.01,
+  "selection": "last epoch only",
+  "data": "exposed development only",
+  "maxSeconds": 600
+}
