@@ -7,6 +7,7 @@ from fontTools.varLib.instancer import instantiateVariableFont
 from PIL import Image
 import numpy as np
 from family_coverage import validate_families
+from experiment_budget import check_budget
 
 ROOT=Path(__file__).resolve().parents[2]
 RESEARCH=ROOT.parent/'treasury-label-review-mobilenet'
@@ -25,20 +26,25 @@ def main():
  original=json.loads((RESEARCH/'evidence/appearance-mobilenet-inputs-frozen.json').read_text())
  blocked=original['historicallyExposedFamilyKeys']+[r['family'] for r in original['rows']]+original['assets']['reservedUnrenderedFamilies']
  validate_families(NAMES,blocked,48)
+ def bounded_fetch(url,path):
+  check_budget(started,time.monotonic(),900)
+  result=fetch(url,path)
+  check_budget(started,time.monotonic(),900)
+  return result
  revision=original['assets']['googleFontsRevision'];rows=[];fonts=[]
  for family in NAMES:
   if time.monotonic()-started>900:raise TimeoutError('Asset preparation budget')
   folder=root/family;folder.mkdir(exist_ok=True)
   base=f'https://raw.githubusercontent.com/google/fonts/{revision}/ofl/{family}/'
-  metadata=fetch(base+'METADATA.pb',folder/'METADATA.pb').decode()
-  license=fetch(base+'OFL.txt',folder/'OFL.txt').decode()
+  metadata=bounded_fetch(base+'METADATA.pb',folder/'METADATA.pb').decode()
+  license=bounded_fetch(base+'OFL.txt',folder/'OFL.txt').decode()
   if 'SIL OPEN FONT LICENSE' not in license.upper():raise ValueError('Missing OFL')
   blocks=[b for b in re.findall(r'fonts\s*\{(.*?)\n\}',metadata,re.S) if 'style: "normal"' in b]
   for weight in [400,700]:
    choices=[b for b in blocks if re.search(rf'weight: {weight}\b',b)] or [b for b in blocks if '[' in re.search(r'filename: "(.+)"',b)[1]]
    if not choices:raise ValueError(f'No weight {family} {weight}')
    filename=re.search(r'filename: "(.+)"',choices[0])[1]
-   source=folder/filename;fetch(base+quote(filename),source)
+   source=folder/filename;bounded_fetch(base+quote(filename),source)
    font=TTFont(source)
    if 'fvar' in font:
     axes={a.axisTag:a.defaultValue for a in font['fvar'].axes}
@@ -52,6 +58,7 @@ def main():
    for height in HEIGHTS:
     for inverted in [False,True]:
      for jpeg in [False,True]:
+      check_budget(started,time.monotonic(),900)
       image,boxes,render=render_words(target,height,inverted,jpeg)
       tensor=prepare_words(image,boxes);rgb=packed_rgb(tensor)
       id=f'{family}-{weight}-{height}-{int(inverted)}-{int(jpeg)}';out=folder/(id+'.png');Image.fromarray(rgb).save(out)
@@ -60,6 +67,7 @@ def main():
  if len(rows)!=3072:raise ValueError('Incorrect image count')
  evalpixels={r['pixelSha256'] for r in original['rows'] if r['split']!='train'}
  if evalpixels.intersection(r['pixelSha256'] for r in rows):raise ValueError('Evaluation pixel overlap')
+ check_budget(started,time.monotonic(),900)
  manifest.write_text(json.dumps(dict(experiment='R-021',revision=revision,codeSha256=sha256(__file__),fonts=fonts,rows=rows,seconds=time.monotonic()-started),indent=2))
  print('FROZEN',len(rows),'new inputs',flush=True)
 if __name__=='__main__':main()
