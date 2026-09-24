@@ -7,6 +7,7 @@ from PIL import Image
 from fontdna_input import words
 from regression_roles import annotate
 from family_coverage import validate_pixels
+from manifest_links import verify
 from corpus_selection import related
 from cohort_margin import calibrate
 from experiment_budget import check_budget
@@ -19,7 +20,7 @@ def main():
   torch.set_num_threads(2);torch.manual_seed(20260923)
   cache=ROOT.parent/'treasury-label-review-r034';assert sha(cache/'inputs.json')=='b6cbeffda874901ed049184390ff9da7f5d4de9d209976efea3c59c6a30f2d53';assert sha(cache/'features.npy')=='6fe3fef51b1a0afabfe557f7a4cd581752b2c67eb99c7b2e2b74c5c57b2c3779'
   rows=json.loads((cache/'inputs.json').read_text());features=np.load(cache/'features.npy')
-  assets=ROOT.parent/'treasury-label-review-r035-assets';manifest=json.loads((assets/'qualified-manifest.json').read_text());selection=json.loads((assets/'selection.json').read_text());assert manifest['selectionSha256']==sha(assets/'selection.json');extra=manifest['rows'];assert len(extra)==16832
+  assets=ROOT.parent/'treasury-label-review-r035-assets';verify(assets);manifest=json.loads((assets/'qualified-manifest.json').read_text());selection=json.loads((assets/'selection.json').read_text());assert manifest['selectionSha256']==sha(assets/'selection.json');extra=manifest['rows'];assert len(extra)==16832
   train=[r for r in rows if r['split']=='train']+extra;assert len(train)==22144;validate_pixels(train)
   assert not any(related(r['family'],family['family']) for r in train for family in selection['reserved'])
   graph=ROOT.parent/'treasury-label-review-r026-corrected/features.onnx';assert sha(graph)=='95f898f602b2720a10569637283571103b92dd8907de8b66e6ac8ad7c8bf89ef';assert sha(Path(__file__).with_name('fontdna_input.py'))=='52515cf65c3cbed81aadb48e2ac49f8127d62a857957e70a606cba08538ccdf7'
