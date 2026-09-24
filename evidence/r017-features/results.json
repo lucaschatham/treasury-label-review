@@ -839,5 +839,8 @@
       },
       "nearestClass": "BOLD"
     }
-  ]
+  ],
+  "codeSourceCommit": "1916305",
+  "codeSourcePath": "scripts/experiments/audit_features.py",
+  "provenanceNote": "Measurements used this committed source. Later CLI-only output-directory change does not rewrite historical measurements."
 }
