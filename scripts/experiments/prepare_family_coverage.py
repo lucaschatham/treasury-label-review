@@ -2,7 +2,7 @@
 import hashlib, json, re, sys, time
 from pathlib import Path
 from urllib.parse import quote
-from urllib.request import Request, urlopen
+from bounded_download import download
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 from PIL import Image
@@ -13,7 +13,6 @@ from experiment_budget import check_budget
 ROOT=Path(__file__).resolve().parents[2]
 RESEARCH=ROOT.parent/'treasury-label-review-mobilenet'
 sys.path.insert(0,str(RESEARCH/'scripts/experiments'))
-from mobilenet_assets import fetch
 from prepare_mobilenet import render_words, packed_rgb, HEIGHTS
 from heading_classifier import prepare_words, sha256
 
@@ -33,8 +32,7 @@ def main():
    result=path.read_bytes()
   else:
    remaining=900-(time.monotonic()-started)
-   with urlopen(Request(url,headers={'User-Agent':'Treasury-R021-research'}),timeout=min(90,remaining)) as response:
-    result=response.read()
+   result=download(url,remaining)
    check_budget(started,time.monotonic(),900)
    with path.open('xb') as file:file.write(result)
   check_budget(started,time.monotonic(),900)
