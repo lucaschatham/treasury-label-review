@@ -2,6 +2,7 @@
 import hashlib, json, re, sys, time
 from pathlib import Path
 from urllib.parse import quote
+from urllib.request import Request, urlopen
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 from PIL import Image
@@ -28,7 +29,14 @@ def main():
  validate_families(NAMES,blocked,48)
  def bounded_fetch(url,path):
   check_budget(started,time.monotonic(),900)
-  result=fetch(url,path)
+  if path.exists():
+   result=path.read_bytes()
+  else:
+   remaining=900-(time.monotonic()-started)
+   with urlopen(Request(url,headers={'User-Agent':'Treasury-R021-research'}),timeout=min(90,remaining)) as response:
+    result=response.read()
+   check_budget(started,time.monotonic(),900)
+   with path.open('xb') as file:file.write(result)
   check_budget(started,time.monotonic(),900)
   return result
  revision=original['assets']['googleFontsRevision'];rows=[];fonts=[]
