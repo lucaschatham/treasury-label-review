@@ -1,0 +1,4663 @@
+{
+  "experiment": "R-033",
+  "decision": "STOP",
+  "headSha256": "0c7370f8c487f81c0731560584a8a6c04095ad330a8462bf13ba636f67c37f2c",
+  "sourceSha256": "5f1feeb2f48346a08d0d7a0f26dbc4658347f6f5efe28fa21fb2200c361cc174",
+  "codeSha256": "e8cac5d6d5221f9a4eb817435531ca23c96fdb0261d156c90eaeb028f2849ecd",
+  "featureCacheSha256": "71024e92aced6fd0a7a932d02fd893f11b7c19a233cf32fb9e51f488501ccf66",
+  "inputManifestSha256": "a16b99d506b0cbddd1f1be45e16f1d963519087f2bd3ad6f712e9140cd29ee48",
+  "anchorCoefficient": 0.001,
+  "finalSquaredDrift": 9.504703521728516,
+  "epochs": 50,
+  "seed": 20260923,
+  "steps": 3350,
+  "wallSeconds": 3.8582338330015773,
+  "losses": [
+    0.08885172598842364,
+    0.045895818871126245,
+    0.037361417480035505,
+    0.0350338967461417,
+    0.0308865254689286,
+    0.02940765026011574,
+    0.027257673789872164,
+    0.025991652675195417,
+    0.02522257187250835,
+    0.024459237969522155,
+    0.022716225375101637,
+    0.021308605197761486,
+    0.021523033032443985,
+    0.020951633675218517,
+    0.022516674612329077,
+    0.021475361743524893,
+    0.01901899581191255,
+    0.01959054861495744,
+    0.01881412223481865,
+    0.020260157911523954,
+    0.021654791156969853,
+    0.019111666592088208,
+    0.016968684896493134,
+    0.016904518049933127,
+    0.01713963036439312,
+    0.01982129967090354,
+    0.02199703424390572,
+    0.018206989072930457,
+    0.017760230075401156,
+    0.016259062840644992,
+    0.015952696912546655,
+    0.016927203955823807,
+    0.018973423737976978,
+    0.023038973962304306,
+    0.016922752275618156,
+    0.018698451442838604,
+    0.018997232387982198,
+    0.02192237476971167,
+    0.016410774565232333,
+    0.015677074401347496,
+    0.015517698712090947,
+    0.01484539546072483,
+    0.014798410820649631,
+    0.01569136590766373,
+    0.015559243288502764,
+    0.01494606468937735,
+    0.016641528387345485,
+    0.016208473245488172,
+    0.015936084522573807,
+    0.015894183235715575
+  ],
+  "rows": [
+    {
+      "id": "josefinsans-400-9-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.015575909987092018
+    },
+    {
+      "id": "josefinsans-400-9-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.5737381545477547e-05
+    },
+    {
+      "id": "josefinsans-400-9-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.015575909987092018
+    },
+    {
+      "id": "josefinsans-400-9-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.5737381545477547e-05
+    },
+    {
+      "id": "josefinsans-400-12-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.1905776631238041e-07
+    },
+    {
+      "id": "josefinsans-400-12-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.0073845260194503e-06
+    },
+    {
+      "id": "josefinsans-400-12-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.2036196039844071e-07
+    },
+    {
+      "id": "josefinsans-400-12-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.032725549521274e-06
+    },
+    {
+      "id": "josefinsans-400-14-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0009392178617417812
+    },
+    {
+      "id": "josefinsans-400-14-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0003878423594869673
+    },
+    {
+      "id": "josefinsans-400-14-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0009502794709987938
+    },
+    {
+      "id": "josefinsans-400-14-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00038882673834450543
+    },
+    {
+      "id": "josefinsans-400-16-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.952807598281652e-05
+    },
+    {
+      "id": "josefinsans-400-16-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005909514729864895
+    },
+    {
+      "id": "josefinsans-400-16-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.952814146643505e-05
+    },
+    {
+      "id": "josefinsans-400-16-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005385358235798776
+    },
+    {
+      "id": "josefinsans-400-18-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.438368366914801e-05
+    },
+    {
+      "id": "josefinsans-400-18-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.120989175746217e-05
+    },
+    {
+      "id": "josefinsans-400-18-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.440379077801481e-05
+    },
+    {
+      "id": "josefinsans-400-18-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.082320371409878e-05
+    },
+    {
+      "id": "josefinsans-400-24-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0003261682577431202
+    },
+    {
+      "id": "josefinsans-400-24-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.000529108161572367
+    },
+    {
+      "id": "josefinsans-400-24-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0003261682577431202
+    },
+    {
+      "id": "josefinsans-400-24-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005372999585233629
+    },
+    {
+      "id": "josefinsans-400-30-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.006944015622138977
+    },
+    {
+      "id": "josefinsans-400-30-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.013133947737514973
+    },
+    {
+      "id": "josefinsans-400-30-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.006944022141396999
+    },
+    {
+      "id": "josefinsans-400-30-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.012944046407938004
+    },
+    {
+      "id": "josefinsans-400-36-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.014455098658800125
+    },
+    {
+      "id": "josefinsans-400-36-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.005135380197316408
+    },
+    {
+      "id": "josefinsans-400-36-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.014455098658800125
+    },
+    {
+      "id": "josefinsans-400-36-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0051270355470478535
+    },
+    {
+      "id": "josefinsans-700-9-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9838085770606995
+    },
+    {
+      "id": "josefinsans-700-9-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9914292693138123
+    },
+    {
+      "id": "josefinsans-700-9-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9838085770606995
+    },
+    {
+      "id": "josefinsans-700-9-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9914319515228271
+    },
+    {
+      "id": "josefinsans-700-12-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999822378158569
+    },
+    {
+      "id": "josefinsans-700-12-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999998927116394
+    },
+    {
+      "id": "josefinsans-700-12-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999822378158569
+    },
+    {
+      "id": "josefinsans-700-12-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999998927116394
+    },
+    {
+      "id": "josefinsans-700-14-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999991655349731
+    },
+    {
+      "id": "josefinsans-700-14-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999996423721313
+    },
+    {
+      "id": "josefinsans-700-14-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999991655349731
+    },
+    {
+      "id": "josefinsans-700-14-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999996423721313
+    },
+    {
+      "id": "josefinsans-700-16-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999980926513672
+    },
+    {
+      "id": "josefinsans-700-16-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-16-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999980926513672
+    },
+    {
+      "id": "josefinsans-700-16-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-18-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999836683273315
+    },
+    {
+      "id": "josefinsans-700-18-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999954104423523
+    },
+    {
+      "id": "josefinsans-700-18-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.999983549118042
+    },
+    {
+      "id": "josefinsans-700-18-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999538660049438
+    },
+    {
+      "id": "josefinsans-700-24-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999990463256836
+    },
+    {
+      "id": "josefinsans-700-24-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999853372573853
+    },
+    {
+      "id": "josefinsans-700-24-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999990463256836
+    },
+    {
+      "id": "josefinsans-700-24-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999850988388062
+    },
+    {
+      "id": "josefinsans-700-30-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-30-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "josefinsans-700-30-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "josefinsans-700-30-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "josefinsans-700-36-normal-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "josefinsans-700-36-normal-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "josefinsans-700-36-inv-png",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "josefinsans-700-36-inv-jpeg",
+      "family": "josefinsans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "arvo-400-9-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.9543145248899236e-05
+    },
+    {
+      "id": "arvo-400-9-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.955288339189792e-08
+    },
+    {
+      "id": "arvo-400-9-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.9543145248899236e-05
+    },
+    {
+      "id": "arvo-400-9-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 8.16545338011565e-08
+    },
+    {
+      "id": "arvo-400-12-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0002972208021674305
+    },
+    {
+      "id": "arvo-400-12-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.9195902243372984e-05
+    },
+    {
+      "id": "arvo-400-12-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.000302719883620739
+    },
+    {
+      "id": "arvo-400-12-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.919464895967394e-05
+    },
+    {
+      "id": "arvo-400-14-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0018291918095201254
+    },
+    {
+      "id": "arvo-400-14-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005706232041120529
+    },
+    {
+      "id": "arvo-400-14-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0018291918095201254
+    },
+    {
+      "id": "arvo-400-14-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0005695932195521891
+    },
+    {
+      "id": "arvo-400-16-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.001371910679154098
+    },
+    {
+      "id": "arvo-400-16-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.786440927593503e-05
+    },
+    {
+      "id": "arvo-400-16-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0013751279329881072
+    },
+    {
+      "id": "arvo-400-16-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.791521001199726e-05
+    },
+    {
+      "id": "arvo-400-18-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.004075609613209963
+    },
+    {
+      "id": "arvo-400-18-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0006275689229369164
+    },
+    {
+      "id": "arvo-400-18-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.004075609613209963
+    },
+    {
+      "id": "arvo-400-18-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0006274173501878977
+    },
+    {
+      "id": "arvo-400-24-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0006862378213554621
+    },
+    {
+      "id": "arvo-400-24-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.000834752107039094
+    },
+    {
+      "id": "arvo-400-24-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0006862378213554621
+    },
+    {
+      "id": "arvo-400-24-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0008346300455741584
+    },
+    {
+      "id": "arvo-400-30-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00033009418984875083
+    },
+    {
+      "id": "arvo-400-30-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0027872503269463778
+    },
+    {
+      "id": "arvo-400-30-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.00033009418984875083
+    },
+    {
+      "id": "arvo-400-30-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0027851464692503214
+    },
+    {
+      "id": "arvo-400-36-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.365234291180968e-05
+    },
+    {
+      "id": "arvo-400-36-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 8.354915917152539e-05
+    },
+    {
+      "id": "arvo-400-36-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.365234291180968e-05
+    },
+    {
+      "id": "arvo-400-36-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 8.357936167158186e-05
+    },
+    {
+      "id": "arvo-700-9-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999995231628418
+    },
+    {
+      "id": "arvo-700-9-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9897426962852478
+    },
+    {
+      "id": "arvo-700-9-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999995231628418
+    },
+    {
+      "id": "arvo-700-9-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.989753007888794
+    },
+    {
+      "id": "arvo-700-12-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999990463256836
+    },
+    {
+      "id": "arvo-700-12-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9997989535331726
+    },
+    {
+      "id": "arvo-700-12-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999990463256836
+    },
+    {
+      "id": "arvo-700-12-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9997989535331726
+    },
+    {
+      "id": "arvo-700-14-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-14-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "arvo-700-14-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-14-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "arvo-700-16-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-16-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "arvo-700-16-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-16-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "arvo-700-18-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-18-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-18-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-18-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-24-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-24-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "arvo-700-24-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-24-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "arvo-700-30-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-30-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-30-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-30-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-36-normal-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-36-normal-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-36-inv-png",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "arvo-700-36-inv-jpeg",
+      "family": "arvo",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "vollkorn-400-9-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.645895493624266e-06
+    },
+    {
+      "id": "vollkorn-400-9-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.693391986165807e-08
+    },
+    {
+      "id": "vollkorn-400-9-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.607362022099551e-06
+    },
+    {
+      "id": "vollkorn-400-9-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.6954784949093664e-08
+    },
+    {
+      "id": "vollkorn-400-12-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.195572546450421e-05
+    },
+    {
+      "id": "vollkorn-400-12-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.699278633779613e-06
+    },
+    {
+      "id": "vollkorn-400-12-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.169042222201824e-05
+    },
+    {
+      "id": "vollkorn-400-12-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.7387461563630495e-06
+    },
+    {
+      "id": "vollkorn-400-14-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.516914709209232e-06
+    },
+    {
+      "id": "vollkorn-400-14-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.111745503607381e-08
+    },
+    {
+      "id": "vollkorn-400-14-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.5129138420161325e-06
+    },
+    {
+      "id": "vollkorn-400-14-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.101295551592557e-08
+    },
+    {
+      "id": "vollkorn-400-16-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.448480452381773e-05
+    },
+    {
+      "id": "vollkorn-400-16-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.4717882613222173e-07
+    },
+    {
+      "id": "vollkorn-400-16-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.446134047000669e-05
+    },
+    {
+      "id": "vollkorn-400-16-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.301783237930067e-07
+    },
+    {
+      "id": "vollkorn-400-18-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.30117312236689e-05
+    },
+    {
+      "id": "vollkorn-400-18-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.022579433803912e-06
+    },
+    {
+      "id": "vollkorn-400-18-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.30117312236689e-05
+    },
+    {
+      "id": "vollkorn-400-18-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.022579433803912e-06
+    },
+    {
+      "id": "vollkorn-400-24-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.070119782933034e-05
+    },
+    {
+      "id": "vollkorn-400-24-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.174527930445038e-06
+    },
+    {
+      "id": "vollkorn-400-24-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.070119782933034e-05
+    },
+    {
+      "id": "vollkorn-400-24-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 4.13912766816793e-06
+    },
+    {
+      "id": "vollkorn-400-30-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.000294973433483392
+    },
+    {
+      "id": "vollkorn-400-30-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.0107448360940907e-05
+    },
+    {
+      "id": "vollkorn-400-30-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.000294973433483392
+    },
+    {
+      "id": "vollkorn-400-30-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.0090373507409822e-05
+    },
+    {
+      "id": "vollkorn-400-36-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.722344111651182e-05
+    },
+    {
+      "id": "vollkorn-400-36-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 8.762749348534271e-05
+    },
+    {
+      "id": "vollkorn-400-36-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 9.722344111651182e-05
+    },
+    {
+      "id": "vollkorn-400-36-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 8.746595995035022e-05
+    },
+    {
+      "id": "vollkorn-700-9-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.1611933410167694
+    },
+    {
+      "id": "vollkorn-700-9-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.8993963599205017
+    },
+    {
+      "id": "vollkorn-700-9-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.16119332611560822
+    },
+    {
+      "id": "vollkorn-700-9-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.8995125889778137
+    },
+    {
+      "id": "vollkorn-700-12-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9894042015075684
+    },
+    {
+      "id": "vollkorn-700-12-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9955704808235168
+    },
+    {
+      "id": "vollkorn-700-12-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9892320036888123
+    },
+    {
+      "id": "vollkorn-700-12-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9955315589904785
+    },
+    {
+      "id": "vollkorn-700-14-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9942736029624939
+    },
+    {
+      "id": "vollkorn-700-14-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999312162399292
+    },
+    {
+      "id": "vollkorn-700-14-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9942851662635803
+    },
+    {
+      "id": "vollkorn-700-14-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999301433563232
+    },
+    {
+      "id": "vollkorn-700-16-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9989499449729919
+    },
+    {
+      "id": "vollkorn-700-16-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "vollkorn-700-16-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9989510774612427
+    },
+    {
+      "id": "vollkorn-700-16-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "vollkorn-700-18-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999991655349731
+    },
+    {
+      "id": "vollkorn-700-18-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999985694885254
+    },
+    {
+      "id": "vollkorn-700-18-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999991655349731
+    },
+    {
+      "id": "vollkorn-700-18-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999985694885254
+    },
+    {
+      "id": "vollkorn-700-24-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999279975891113
+    },
+    {
+      "id": "vollkorn-700-24-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9998513460159302
+    },
+    {
+      "id": "vollkorn-700-24-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999279975891113
+    },
+    {
+      "id": "vollkorn-700-24-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9998517036437988
+    },
+    {
+      "id": "vollkorn-700-30-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999454021453857
+    },
+    {
+      "id": "vollkorn-700-30-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9996834993362427
+    },
+    {
+      "id": "vollkorn-700-30-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999454021453857
+    },
+    {
+      "id": "vollkorn-700-30-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9996852874755859
+    },
+    {
+      "id": "vollkorn-700-36-normal-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999445676803589
+    },
+    {
+      "id": "vollkorn-700-36-normal-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999423027038574
+    },
+    {
+      "id": "vollkorn-700-36-inv-png",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999445676803589
+    },
+    {
+      "id": "vollkorn-700-36-inv-jpeg",
+      "family": "vollkorn",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999421834945679
+    },
+    {
+      "id": "firasans-400-9-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.006991466507315636
+    },
+    {
+      "id": "firasans-400-9-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.0036890411283820868
+    },
+    {
+      "id": "firasans-400-9-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.007008555345237255
+    },
+    {
+      "id": "firasans-400-9-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 0.003667229786515236
+    },
+    {
+      "id": "firasans-400-12-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.4989821606192777e-09
+    },
+    {
+      "id": "firasans-400-12-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.4915580709716778e-08
+    },
+    {
+      "id": "firasans-400-12-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.4991852204104816e-09
+    },
+    {
+      "id": "firasans-400-12-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 7.165087634319889e-09
+    },
+    {
+      "id": "firasans-400-14-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.722794410052302e-07
+    },
+    {
+      "id": "firasans-400-14-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.8795227535738377e-08
+    },
+    {
+      "id": "firasans-400-14-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 6.74606894790486e-07
+    },
+    {
+      "id": "firasans-400-14-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.9342556828737543e-08
+    },
+    {
+      "id": "firasans-400-16-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.9899707154612543e-09
+    },
+    {
+      "id": "firasans-400-16-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.483953039700282e-06
+    },
+    {
+      "id": "firasans-400-16-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.9899707154612543e-09
+    },
+    {
+      "id": "firasans-400-16-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.4883511287043802e-06
+    },
+    {
+      "id": "firasans-400-18-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 5.954092080484585e-11
+    },
+    {
+      "id": "firasans-400-18-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.4991687891097172e-08
+    },
+    {
+      "id": "firasans-400-18-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 5.937081382079157e-11
+    },
+    {
+      "id": "firasans-400-18-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.498911395003688e-08
+    },
+    {
+      "id": "firasans-400-24-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.3045136405007725e-08
+    },
+    {
+      "id": "firasans-400-24-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.1159095808798156e-08
+    },
+    {
+      "id": "firasans-400-24-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.304148066263224e-08
+    },
+    {
+      "id": "firasans-400-24-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.1789613668943275e-08
+    },
+    {
+      "id": "firasans-400-30-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.5321887081884995e-10
+    },
+    {
+      "id": "firasans-400-30-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.868282750727701e-10
+    },
+    {
+      "id": "firasans-400-30-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 3.5321887081884995e-10
+    },
+    {
+      "id": "firasans-400-30-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 1.866370114012028e-10
+    },
+    {
+      "id": "firasans-400-36-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.323843062423947e-10
+    },
+    {
+      "id": "firasans-400-36-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.0882160445268028e-09
+    },
+    {
+      "id": "firasans-400-36-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.323843062423947e-10
+    },
+    {
+      "id": "firasans-400-36-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "REGULAR",
+      "score": 2.0890247309779397e-09
+    },
+    {
+      "id": "firasans-700-9-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9933179616928101
+    },
+    {
+      "id": "firasans-700-9-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999935626983643
+    },
+    {
+      "id": "firasans-700-9-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9933352470397949
+    },
+    {
+      "id": "firasans-700-9-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999935626983643
+    },
+    {
+      "id": "firasans-700-12-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-12-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-12-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-12-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-14-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "firasans-700-14-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999996423721313
+    },
+    {
+      "id": "firasans-700-14-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "firasans-700-14-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999996423721313
+    },
+    {
+      "id": "firasans-700-16-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-16-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-16-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-16-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-18-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "firasans-700-18-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-18-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "firasans-700-18-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-24-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-24-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-24-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-24-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-30-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-30-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-30-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-30-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-36-normal-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-36-normal-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-36-inv-png",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "firasans-700-36-inv-jpeg",
+      "family": "firasans",
+      "split": "calibration",
+      "category": "generated",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Arial-same-family-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 9.298329217699575e-09
+    },
+    {
+      "id": "Arial-same-family-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999996423721313
+    },
+    {
+      "id": "Arial-larger-heading-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 2.981862579076733e-08
+    },
+    {
+      "id": "Arial-larger-heading-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999994039535522
+    },
+    {
+      "id": "Arial-bold-body-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 9.298329217699575e-09
+    },
+    {
+      "id": "Arial-bold-body-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999996423721313
+    },
+    {
+      "id": "Arial-cap-9-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 8.820765651762486e-05
+    },
+    {
+      "id": "Arial-cap-9-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.888713002204895
+    },
+    {
+      "id": "Arial-cap-12-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 5.808147918173745e-08
+    },
+    {
+      "id": "Arial-cap-12-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999995231628418
+    },
+    {
+      "id": "Arial-cap-14-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 3.3652463571343105e-06
+    },
+    {
+      "id": "Arial-cap-14-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Arial-inverted-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 5.813734560433659e-08
+    },
+    {
+      "id": "Arial-inverted-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999995231628418
+    },
+    {
+      "id": "Arial-jpeg-75-regular",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 2.6060628655066864e-10
+    },
+    {
+      "id": "Arial-jpeg-75-bold",
+      "family": "Arial",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999803304672241
+    },
+    {
+      "id": "Georgia-same-family-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.000525818089954555
+    },
+    {
+      "id": "Georgia-same-family-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999988079071045
+    },
+    {
+      "id": "Georgia-larger-heading-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 7.4939443948096596e-06
+    },
+    {
+      "id": "Georgia-larger-heading-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9998207688331604
+    },
+    {
+      "id": "Georgia-bold-body-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.000525818089954555
+    },
+    {
+      "id": "Georgia-bold-body-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999988079071045
+    },
+    {
+      "id": "Georgia-cap-9-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.0005449072341434658
+    },
+    {
+      "id": "Georgia-cap-9-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999902248382568
+    },
+    {
+      "id": "Georgia-cap-12-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.0004899607738479972
+    },
+    {
+      "id": "Georgia-cap-12-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999779462814331
+    },
+    {
+      "id": "Georgia-cap-14-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.0005367724224925041
+    },
+    {
+      "id": "Georgia-cap-14-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999760389328003
+    },
+    {
+      "id": "Georgia-inverted-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.0004886541282758117
+    },
+    {
+      "id": "Georgia-inverted-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999780654907227
+    },
+    {
+      "id": "Georgia-jpeg-75-regular",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 2.8821054911531974e-06
+    },
+    {
+      "id": "Georgia-jpeg-75-bold",
+      "family": "Georgia",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999836683273315
+    },
+    {
+      "id": "Superclarendon-same-family-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.08226405829191208
+    },
+    {
+      "id": "Superclarendon-same-family-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9996936321258545
+    },
+    {
+      "id": "Superclarendon-larger-heading-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.0019335598917677999
+    },
+    {
+      "id": "Superclarendon-larger-heading-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.998344898223877
+    },
+    {
+      "id": "Superclarendon-bold-body-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.08226405829191208
+    },
+    {
+      "id": "Superclarendon-bold-body-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9996936321258545
+    },
+    {
+      "id": "Superclarendon-cap-9-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.007746878080070019
+    },
+    {
+      "id": "Superclarendon-cap-9-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999656677246094
+    },
+    {
+      "id": "Superclarendon-cap-12-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.0048084380105137825
+    },
+    {
+      "id": "Superclarendon-cap-12-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999899864196777
+    },
+    {
+      "id": "Superclarendon-cap-14-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.6968998312950134
+    },
+    {
+      "id": "Superclarendon-cap-14-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999229907989502
+    },
+    {
+      "id": "Superclarendon-inverted-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.004845733754336834
+    },
+    {
+      "id": "Superclarendon-inverted-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999899864196777
+    },
+    {
+      "id": "Superclarendon-jpeg-75-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.38859060406684875
+    },
+    {
+      "id": "Superclarendon-jpeg-75-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999985694885254
+    },
+    {
+      "id": "PT-Mono-same-family-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 3.7394100218079984e-05
+    },
+    {
+      "id": "PT-Mono-same-family-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-larger-heading-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 4.506924611291652e-08
+    },
+    {
+      "id": "PT-Mono-larger-heading-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-bold-body-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 3.7394100218079984e-05
+    },
+    {
+      "id": "PT-Mono-bold-body-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-cap-9-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 0.0021920958533883095
+    },
+    {
+      "id": "PT-Mono-cap-9-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9370167851448059
+    },
+    {
+      "id": "PT-Mono-cap-12-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.8819629188371323e-10
+    },
+    {
+      "id": "PT-Mono-cap-12-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-cap-14-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.0826148866271978e-09
+    },
+    {
+      "id": "PT-Mono-cap-14-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "PT-Mono-inverted-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.8460905026884689e-10
+    },
+    {
+      "id": "PT-Mono-inverted-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-jpeg-75-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 2.2408555046260492e-12
+    },
+    {
+      "id": "PT-Mono-jpeg-75-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "TI-Nspire-same-family-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 4.216752586216899e-06
+    },
+    {
+      "id": "TI-Nspire-same-family-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9996850490570068
+    },
+    {
+      "id": "TI-Nspire-larger-heading-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 2.5616591301513836e-05
+    },
+    {
+      "id": "TI-Nspire-larger-heading-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9995735287666321
+    },
+    {
+      "id": "TI-Nspire-bold-body-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 4.216752586216899e-06
+    },
+    {
+      "id": "TI-Nspire-bold-body-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9996850490570068
+    },
+    {
+      "id": "TI-Nspire-cap-9-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.5149115824897308e-05
+    },
+    {
+      "id": "TI-Nspire-cap-9-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9884709119796753
+    },
+    {
+      "id": "TI-Nspire-cap-12-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 8.528719627065584e-05
+    },
+    {
+      "id": "TI-Nspire-cap-12-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9998840093612671
+    },
+    {
+      "id": "TI-Nspire-cap-14-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 1.1989047834504163e-06
+    },
+    {
+      "id": "TI-Nspire-cap-14-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9996960163116455
+    },
+    {
+      "id": "TI-Nspire-inverted-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 8.5149695223663e-05
+    },
+    {
+      "id": "TI-Nspire-inverted-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9998849630355835
+    },
+    {
+      "id": "TI-Nspire-jpeg-75-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "REGULAR",
+      "score": 8.917761078919284e-06
+    },
+    {
+      "id": "TI-Nspire-jpeg-75-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "stroke-oracle",
+      "expected": "BOLD",
+      "score": 0.9999161958694458
+    },
+    {
+      "id": "Seravek-0-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 7.215354003164975e-08
+    },
+    {
+      "id": "Seravek-0-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-1-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.5649833651210088e-09
+    },
+    {
+      "id": "Seravek-1-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-2-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.841190172020447e-09
+    },
+    {
+      "id": "Seravek-2-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-3-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.26774092229698e-08
+    },
+    {
+      "id": "Seravek-3-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Seravek-4-regular",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 4.9800186197046514e-09
+    },
+    {
+      "id": "Seravek-4-bold",
+      "family": "Seravek",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-0-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.8865736190208935e-11
+    },
+    {
+      "id": "PT-Mono-0-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-1-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 5.611520137449588e-10
+    },
+    {
+      "id": "PT-Mono-1-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-2-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.50264991560789e-08
+    },
+    {
+      "id": "PT-Mono-2-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-3-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.799206726995408e-09
+    },
+    {
+      "id": "PT-Mono-3-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Mono-4-regular",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.568097206585463e-10
+    },
+    {
+      "id": "PT-Mono-4-bold",
+      "family": "PT-Mono",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "PT-Serif-0-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.0987483278768195e-07
+    },
+    {
+      "id": "PT-Serif-0-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.993198037147522
+    },
+    {
+      "id": "PT-Serif-1-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.624598150508973e-07
+    },
+    {
+      "id": "PT-Serif-1-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9853702783584595
+    },
+    {
+      "id": "PT-Serif-2-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.3347293048582287e-08
+    },
+    {
+      "id": "PT-Serif-2-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9970791339874268
+    },
+    {
+      "id": "PT-Serif-3-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 9.17311915316077e-09
+    },
+    {
+      "id": "PT-Serif-3-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9821023941040039
+    },
+    {
+      "id": "PT-Serif-4-regular",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.780390957468626e-07
+    },
+    {
+      "id": "PT-Serif-4-bold",
+      "family": "PT-Serif",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9908744096755981
+    },
+    {
+      "id": "Superclarendon-0-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.013665914535522461
+    },
+    {
+      "id": "Superclarendon-0-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9996869564056396
+    },
+    {
+      "id": "Superclarendon-1-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.0021724228281527758
+    },
+    {
+      "id": "Superclarendon-1-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9980498552322388
+    },
+    {
+      "id": "Superclarendon-2-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.0013006848748773336
+    },
+    {
+      "id": "Superclarendon-2-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9996671676635742
+    },
+    {
+      "id": "Superclarendon-3-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.0021844785660505295
+    },
+    {
+      "id": "Superclarendon-3-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9957644939422607
+    },
+    {
+      "id": "Superclarendon-4-regular",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.00033003566204570234
+    },
+    {
+      "id": "Superclarendon-4-bold",
+      "family": "Superclarendon",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9986575841903687
+    },
+    {
+      "id": "TI-Nspire-0-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 4.7291749183386855e-07
+    },
+    {
+      "id": "TI-Nspire-0-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9911180138587952
+    },
+    {
+      "id": "TI-Nspire-1-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.3642764315591194e-05
+    },
+    {
+      "id": "TI-Nspire-1-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9886306524276733
+    },
+    {
+      "id": "TI-Nspire-2-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 8.33214869544463e-07
+    },
+    {
+      "id": "TI-Nspire-2-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9280875325202942
+    },
+    {
+      "id": "TI-Nspire-3-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 0.0006145762163214386
+    },
+    {
+      "id": "TI-Nspire-3-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9999849796295166
+    },
+    {
+      "id": "TI-Nspire-4-regular",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 3.6890360206598416e-05
+    },
+    {
+      "id": "TI-Nspire-4-bold",
+      "family": "TI-Nspire",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9998397827148438
+    },
+    {
+      "id": "Hoefler-Text-0-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 5.674294811797154e-07
+    },
+    {
+      "id": "Hoefler-Text-0-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9960430860519409
+    },
+    {
+      "id": "Hoefler-Text-1-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 9.332764534519811e-07
+    },
+    {
+      "id": "Hoefler-Text-1-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9957411289215088
+    },
+    {
+      "id": "Hoefler-Text-2-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.44561888393946e-05
+    },
+    {
+      "id": "Hoefler-Text-2-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9911313652992249
+    },
+    {
+      "id": "Hoefler-Text-3-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.25470716941345e-06
+    },
+    {
+      "id": "Hoefler-Text-3-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9894102811813354
+    },
+    {
+      "id": "Hoefler-Text-4-regular",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 6.882410730213451e-07
+    },
+    {
+      "id": "Hoefler-Text-4-bold",
+      "family": "Hoefler-Text",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 0.9991223216056824
+    },
+    {
+      "id": "Kohinoor-Bangla-0-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.931356329546886e-13
+    },
+    {
+      "id": "Kohinoor-Bangla-0-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-1-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 5.478385757193283e-13
+    },
+    {
+      "id": "Kohinoor-Bangla-1-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-2-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 2.796794371616451e-13
+    },
+    {
+      "id": "Kohinoor-Bangla-2-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-3-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 9.964767997295426e-14
+    },
+    {
+      "id": "Kohinoor-Bangla-3-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "Kohinoor-Bangla-4-regular",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "REGULAR",
+      "score": 1.1389160014391164e-12
+    },
+    {
+      "id": "Kohinoor-Bangla-4-bold",
+      "family": "Kohinoor-Bangla",
+      "split": "challenge",
+      "category": "historical-renderer",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "century-24-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "score": 1.6736275938455947e-05
+    },
+    {
+      "id": "century-24-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "score": 0.9999783039093018
+    },
+    {
+      "id": "century-32-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "score": 0.0007233642390929163
+    },
+    {
+      "id": "century-32-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "score": 0.9999967813491821
+    },
+    {
+      "id": "century-40-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "score": 5.4242533224169165e-05
+    },
+    {
+      "id": "century-40-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "score": 0.9998207688331604
+    },
+    {
+      "id": "century-48-regular",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "REGULAR",
+      "score": 0.00014701581676490605
+    },
+    {
+      "id": "century-48-bold",
+      "family": "Century",
+      "split": "challenge",
+      "category": "century-renderer",
+      "expected": "BOLD",
+      "score": 0.9997506737709045
+    },
+    {
+      "id": "domine-400-12-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 0.002060040133073926
+    },
+    {
+      "id": "domine-400-16-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 5.593046807916835e-06
+    },
+    {
+      "id": "domine-400-24-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 5.183509983908152e-06
+    },
+    {
+      "id": "domine-400-24-1-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 5.183509983908152e-06
+    },
+    {
+      "id": "domine-400-24-0-1",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 4.43552817159798e-05
+    },
+    {
+      "id": "domine-700-12-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.621574878692627
+    },
+    {
+      "id": "domine-700-16-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9049710035324097
+    },
+    {
+      "id": "domine-700-24-0-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.7775156497955322
+    },
+    {
+      "id": "domine-700-24-1-0",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.7774630784988403
+    },
+    {
+      "id": "domine-700-24-0-1",
+      "family": "domine",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.11339038610458374
+    },
+    {
+      "id": "exo2-400-12-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 3.10010350723644e-11
+    },
+    {
+      "id": "exo2-400-16-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 8.144342977800534e-09
+    },
+    {
+      "id": "exo2-400-24-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 6.180026108915104e-13
+    },
+    {
+      "id": "exo2-400-24-1-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 6.180026108915104e-13
+    },
+    {
+      "id": "exo2-400-24-0-1",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 7.602417501952063e-13
+    },
+    {
+      "id": "exo2-700-12-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9999998807907104
+    },
+    {
+      "id": "exo2-700-16-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9999001026153564
+    },
+    {
+      "id": "exo2-700-24-0-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9999963045120239
+    },
+    {
+      "id": "exo2-700-24-1-0",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9999963045120239
+    },
+    {
+      "id": "exo2-700-24-0-1",
+      "family": "exo2",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9999997615814209
+    },
+    {
+      "id": "karla-400-12-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 8.569984999429181e-11
+    },
+    {
+      "id": "karla-400-16-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 4.895711640529044e-07
+    },
+    {
+      "id": "karla-400-24-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 2.6884267256832572e-08
+    },
+    {
+      "id": "karla-400-24-1-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 2.6884267256832572e-08
+    },
+    {
+      "id": "karla-400-24-0-1",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 2.1287295481897672e-08
+    },
+    {
+      "id": "karla-700-12-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9939170479774475
+    },
+    {
+      "id": "karla-700-16-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9758204221725464
+    },
+    {
+      "id": "karla-700-24-0-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9996583461761475
+    },
+    {
+      "id": "karla-700-24-1-0",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9996583461761475
+    },
+    {
+      "id": "karla-700-24-0-1",
+      "family": "karla",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.999165415763855
+    },
+    {
+      "id": "lora-400-12-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.2490615972637897e-06
+    },
+    {
+      "id": "lora-400-16-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 2.9516680655206073e-08
+    },
+    {
+      "id": "lora-400-24-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 3.6361971069709398e-06
+    },
+    {
+      "id": "lora-400-24-1-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 3.6171122701489367e-06
+    },
+    {
+      "id": "lora-400-24-0-1",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 2.2516660180826875e-07
+    },
+    {
+      "id": "lora-700-12-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9997225403785706
+    },
+    {
+      "id": "lora-700-16-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9999979734420776
+    },
+    {
+      "id": "lora-700-24-0-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9961879849433899
+    },
+    {
+      "id": "lora-700-24-1-0",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9964558482170105
+    },
+    {
+      "id": "lora-700-24-0-1",
+      "family": "lora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9937014579772949
+    },
+    {
+      "id": "mulish-400-12-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.1774333730230069e-09
+    },
+    {
+      "id": "mulish-400-16-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 2.1646857639723294e-09
+    },
+    {
+      "id": "mulish-400-24-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 7.337934426754344e-11
+    },
+    {
+      "id": "mulish-400-24-1-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 7.337934426754344e-11
+    },
+    {
+      "id": "mulish-400-24-0-1",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 2.1053188706265935e-11
+    },
+    {
+      "id": "mulish-700-12-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9941694736480713
+    },
+    {
+      "id": "mulish-700-16-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9992321729660034
+    },
+    {
+      "id": "mulish-700-24-0-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9831046462059021
+    },
+    {
+      "id": "mulish-700-24-1-0",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9831046462059021
+    },
+    {
+      "id": "mulish-700-24-0-1",
+      "family": "mulish",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.35160550475120544
+    },
+    {
+      "id": "worksans-400-12-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.1039669178813938e-10
+    },
+    {
+      "id": "worksans-400-16-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 8.147581914697e-11
+    },
+    {
+      "id": "worksans-400-24-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 4.6240883344594863e-10
+    },
+    {
+      "id": "worksans-400-24-1-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 4.6240883344594863e-10
+    },
+    {
+      "id": "worksans-400-24-0-1",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.7773456317815572e-11
+    },
+    {
+      "id": "worksans-700-12-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "worksans-700-16-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "worksans-700-24-0-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "worksans-700-24-1-0",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "worksans-700-24-0-1",
+      "family": "worksans",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "sora-400-12-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 7.348084807290434e-08
+    },
+    {
+      "id": "sora-400-16-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 5.7048644919177605e-08
+    },
+    {
+      "id": "sora-400-24-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.0189841859187254e-08
+    },
+    {
+      "id": "sora-400-24-1-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.0189841859187254e-08
+    },
+    {
+      "id": "sora-400-24-0-1",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.6047444484357243e-09
+    },
+    {
+      "id": "sora-700-12-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "sora-700-16-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "sora-700-24-0-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "sora-700-24-1-0",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "sora-700-24-0-1",
+      "family": "sora",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "trirong-400-12-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.5803903963274024e-08
+    },
+    {
+      "id": "trirong-400-16-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.5734425318214562e-08
+    },
+    {
+      "id": "trirong-400-24-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 4.114439988711638e-08
+    },
+    {
+      "id": "trirong-400-24-1-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 4.114439988711638e-08
+    },
+    {
+      "id": "trirong-400-24-0-1",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "REGULAR",
+      "score": 1.1810349143104304e-08
+    },
+    {
+      "id": "trirong-700-12-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.9930470585823059
+    },
+    {
+      "id": "trirong-700-16-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.8839620351791382
+    },
+    {
+      "id": "trirong-700-24-0-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.999224066734314
+    },
+    {
+      "id": "trirong-700-24-1-0",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.999224066734314
+    },
+    {
+      "id": "trirong-700-24-0-1",
+      "family": "trirong",
+      "split": "qualification",
+      "category": "qualification-1",
+      "expected": "BOLD",
+      "score": 0.999114453792572
+    },
+    {
+      "id": "andadapro-400-12-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 2.845481184010623e-08
+    },
+    {
+      "id": "andadapro-400-16-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.3337096333998488e-06
+    },
+    {
+      "id": "andadapro-400-24-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 6.735134672197773e-10
+    },
+    {
+      "id": "andadapro-400-24-1-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 6.735134672197773e-10
+    },
+    {
+      "id": "andadapro-400-24-0-1",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.6413153058891794e-09
+    },
+    {
+      "id": "andadapro-700-12-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9995312690734863
+    },
+    {
+      "id": "andadapro-700-16-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.989588737487793
+    },
+    {
+      "id": "andadapro-700-24-0-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.3572179675102234
+    },
+    {
+      "id": "andadapro-700-24-1-0",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.3572179675102234
+    },
+    {
+      "id": "andadapro-700-24-0-1",
+      "family": "andadapro",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.222950279712677
+    },
+    {
+      "id": "asul-400-12-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 0.0002885786525439471
+    },
+    {
+      "id": "asul-400-16-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 2.808822046063142e-06
+    },
+    {
+      "id": "asul-400-24-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.5823374269530177e-05
+    },
+    {
+      "id": "asul-400-24-1-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.5816975064808503e-05
+    },
+    {
+      "id": "asul-400-24-0-1",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 4.050891948281787e-05
+    },
+    {
+      "id": "asul-700-12-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.14670120179653168
+    },
+    {
+      "id": "asul-700-16-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.06320372223854065
+    },
+    {
+      "id": "asul-700-24-0-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.12186934053897858
+    },
+    {
+      "id": "asul-700-24-1-0",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.12141681462526321
+    },
+    {
+      "id": "asul-700-24-0-1",
+      "family": "asul",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.021237874403595924
+    },
+    {
+      "id": "cambay-400-12-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 6.25680343091517e-08
+    },
+    {
+      "id": "cambay-400-16-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 7.929781137283598e-11
+    },
+    {
+      "id": "cambay-400-24-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 4.349414925441941e-11
+    },
+    {
+      "id": "cambay-400-24-1-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 4.349414925441941e-11
+    },
+    {
+      "id": "cambay-400-24-0-1",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 4.166990971027351e-12
+    },
+    {
+      "id": "cambay-700-12-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.8005207180976868
+    },
+    {
+      "id": "cambay-700-16-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.7960042357444763
+    },
+    {
+      "id": "cambay-700-24-0-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9955682158470154
+    },
+    {
+      "id": "cambay-700-24-1-0",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9955682158470154
+    },
+    {
+      "id": "cambay-700-24-0-1",
+      "family": "cambay",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.989831805229187
+    },
+    {
+      "id": "chivo-400-12-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.5778949091327377e-05
+    },
+    {
+      "id": "chivo-400-16-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 4.884742565991473e-07
+    },
+    {
+      "id": "chivo-400-24-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 7.453894340869738e-06
+    },
+    {
+      "id": "chivo-400-24-1-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 7.453894340869738e-06
+    },
+    {
+      "id": "chivo-400-24-0-1",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 8.539213922631461e-07
+    },
+    {
+      "id": "chivo-700-12-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "chivo-700-16-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "chivo-700-24-0-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "chivo-700-24-1-0",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "chivo-700-24-0-1",
+      "family": "chivo",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 1.0
+    },
+    {
+      "id": "eczar-400-12-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 0.001662848168052733
+    },
+    {
+      "id": "eczar-400-16-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 4.3582404032349586e-05
+    },
+    {
+      "id": "eczar-400-24-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 2.3076141587807797e-05
+    },
+    {
+      "id": "eczar-400-24-1-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 2.3076141587807797e-05
+    },
+    {
+      "id": "eczar-400-24-0-1",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.8377193555352278e-05
+    },
+    {
+      "id": "eczar-700-12-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.999995231628418
+    },
+    {
+      "id": "eczar-700-16-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999985694885254
+    },
+    {
+      "id": "eczar-700-24-0-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999971389770508
+    },
+    {
+      "id": "eczar-700-24-1-0",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999971389770508
+    },
+    {
+      "id": "eczar-700-24-0-1",
+      "family": "eczar",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999953508377075
+    },
+    {
+      "id": "faustina-400-12-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 2.026905576713034e-06
+    },
+    {
+      "id": "faustina-400-16-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 0.00045699148904532194
+    },
+    {
+      "id": "faustina-400-24-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 8.850271115079522e-06
+    },
+    {
+      "id": "faustina-400-24-1-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 8.850271115079522e-06
+    },
+    {
+      "id": "faustina-400-24-0-1",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 3.038738611849112e-07
+    },
+    {
+      "id": "faustina-700-12-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999626874923706
+    },
+    {
+      "id": "faustina-700-16-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9957457184791565
+    },
+    {
+      "id": "faustina-700-24-0-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9935744404792786
+    },
+    {
+      "id": "faustina-700-24-1-0",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.993933379650116
+    },
+    {
+      "id": "faustina-700-24-0-1",
+      "family": "faustina",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9970266222953796
+    },
+    {
+      "id": "literata-400-12-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 0.004490053281188011
+    },
+    {
+      "id": "literata-400-16-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.2506588973337784e-06
+    },
+    {
+      "id": "literata-400-24-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 3.686831107074795e-08
+    },
+    {
+      "id": "literata-400-24-1-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 3.686831107074795e-08
+    },
+    {
+      "id": "literata-400-24-0-1",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.076171898262146e-07
+    },
+    {
+      "id": "literata-700-12-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999973773956299
+    },
+    {
+      "id": "literata-700-16-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999959468841553
+    },
+    {
+      "id": "literata-700-24-0-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999935626983643
+    },
+    {
+      "id": "literata-700-24-1-0",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999935626983643
+    },
+    {
+      "id": "literata-700-24-0-1",
+      "family": "literata",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.9999864101409912
+    },
+    {
+      "id": "varta-400-12-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 3.705813711452066e-10
+    },
+    {
+      "id": "varta-400-16-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 3.87606668983409e-10
+    },
+    {
+      "id": "varta-400-24-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.3924528197151176e-10
+    },
+    {
+      "id": "varta-400-24-1-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 1.3924528197151176e-10
+    },
+    {
+      "id": "varta-400-24-0-1",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "REGULAR",
+      "score": 3.0410394254859474e-12
+    },
+    {
+      "id": "varta-700-12-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.4204576909542084
+    },
+    {
+      "id": "varta-700-16-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.0003412002115510404
+    },
+    {
+      "id": "varta-700-24-0-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.7736897468566895
+    },
+    {
+      "id": "varta-700-24-1-0",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.7736897468566895
+    },
+    {
+      "id": "varta-700-24-0-1",
+      "family": "varta",
+      "split": "qualification",
+      "category": "qualification-2",
+      "expected": "BOLD",
+      "score": 0.7312465906143188
+    }
+  ],
+  "fullLocalArtifactSha256": "dd2b26ddcf7ff07a8cbdc233ada9ed733253099e03845f2cd253e83c91628cbd",
+  "verificationRerun": "Pinned both cache hashes before loading; exact original head hash and every original prediction reproduced."
+}

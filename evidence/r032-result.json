@@ -1,0 +1,1691 @@
+{
+  "experiment": "R-032",
+  "modelSha256": "dd45b8bcc5586117df5304bd0af53393b45d9e69fefae50f7e3fab61cf803940",
+  "codeSha256": "f066c53d0ff09f4a5081c0986b94a884ed71523dc10bd0c562d2968d0522491c",
+  "cutoff": 0.609006503393253,
+  "maximumLogitDifference": 2.658367156982422e-05,
+  "changedDecisions": 0,
+  "seconds": 3.1261219159932807,
+  "rows": [
+    {
+      "id": "andadapro-400-12-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -28.46811294555664,
+          "paddedLogit": -28.46811294555664,
+          "difference": 0.0
+        },
+        {
+          "width": 224,
+          "naturalLogit": -25.24481201171875,
+          "paddedLogit": -25.24479866027832,
+          "difference": -1.33514404296875e-05
+        }
+      ],
+      "naturalScore": 4.3296783853950545e-13,
+      "paddedScore": 4.3296783853950545e-13,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-400-16-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": -18.22455596923828,
+          "paddedLogit": -18.22455596923828,
+          "difference": 0.0
+        },
+        {
+          "width": 232,
+          "naturalLogit": -21.420438766479492,
+          "paddedLogit": -21.42043685913086,
+          "difference": -1.9073486328125e-06
+        }
+      ],
+      "naturalScore": 4.979911714976096e-10,
+      "paddedScore": 4.979921213412951e-10,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-400-24-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -25.546152114868164,
+          "paddedLogit": -25.546152114868164,
+          "difference": 0.0
+        },
+        {
+          "width": 248,
+          "naturalLogit": -30.200040817260742,
+          "paddedLogit": -30.20004653930664,
+          "difference": 5.7220458984375e-06
+        }
+      ],
+      "naturalScore": 7.661060990391805e-14,
+      "paddedScore": 7.661017153574606e-14,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-400-24-1-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -25.546152114868164,
+          "paddedLogit": -25.546152114868164,
+          "difference": 0.0
+        },
+        {
+          "width": 248,
+          "naturalLogit": -30.200040817260742,
+          "paddedLogit": -30.20004653930664,
+          "difference": 5.7220458984375e-06
+        }
+      ],
+      "naturalScore": 7.661060990391805e-14,
+      "paddedScore": 7.661017153574606e-14,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-400-24-0-1",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": -19.20258903503418,
+          "paddedLogit": -19.20257568359375,
+          "difference": -1.33514404296875e-05
+        },
+        {
+          "width": 232,
+          "naturalLogit": -24.45412254333496,
+          "paddedLogit": -24.454133987426758,
+          "difference": 1.1444091796875e-05
+        }
+      ],
+      "naturalScore": 2.3972289822600936e-11,
+      "paddedScore": 2.397201548308542e-11,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-700-12-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 14.384055137634277,
+          "paddedLogit": 14.384055137634277,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 14.704062461853027,
+          "paddedLogit": 14.704055786132812,
+          "difference": 6.67572021484375e-06
+        }
+      ],
+      "naturalScore": 0.9999994336512056,
+      "paddedScore": 0.9999994336512056,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-700-16-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 9.95848560333252,
+          "paddedLogit": 9.95848560333252,
+          "difference": 0.0
+        },
+        {
+          "width": 232,
+          "naturalLogit": 4.00499963760376,
+          "paddedLogit": 4.005002975463867,
+          "difference": -3.337860107421875e-06
+        }
+      ],
+      "naturalScore": 0.9821018846857855,
+      "paddedScore": 0.9821019433578377,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-700-24-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 2.510378837585449,
+          "paddedLogit": 2.510378837585449,
+          "difference": 0.0
+        },
+        {
+          "width": 248,
+          "naturalLogit": 4.140759468078613,
+          "paddedLogit": 4.140764236450195,
+          "difference": -4.76837158203125e-06
+        }
+      ],
+      "naturalScore": 0.9248662196849474,
+      "paddedScore": 0.9248662196849474,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-700-24-1-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 2.510378837585449,
+          "paddedLogit": 2.510378837585449,
+          "difference": 0.0
+        },
+        {
+          "width": 248,
+          "naturalLogit": 4.140759468078613,
+          "paddedLogit": 4.140764236450195,
+          "difference": -4.76837158203125e-06
+        }
+      ],
+      "naturalScore": 0.9248662196849474,
+      "paddedScore": 0.9248662196849474,
+      "changedDecision": false
+    },
+    {
+      "id": "andadapro-700-24-0-1",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": 18.29011344909668,
+          "paddedLogit": 18.290117263793945,
+          "difference": -3.814697265625e-06
+        },
+        {
+          "width": 232,
+          "naturalLogit": -3.067753791809082,
+          "paddedLogit": -3.067746877670288,
+          "difference": -6.9141387939453125e-06
+        }
+      ],
+      "naturalScore": 0.04445715053436401,
+      "paddedScore": 0.04445744425283004,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-400-12-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 264,
+          "naturalLogit": -0.9425950646400452,
+          "paddedLogit": -0.9425947070121765,
+          "difference": -3.5762786865234375e-07
+        },
+        {
+          "width": 200,
+          "naturalLogit": -1.430629014968872,
+          "paddedLogit": -1.4306024312973022,
+          "difference": -2.658367156982422e-05
+        }
+      ],
+      "naturalScore": 0.19300069533512418,
+      "paddedScore": 0.19300483581369526,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-400-16-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 280,
+          "naturalLogit": 0.6118640303611755,
+          "paddedLogit": 0.611871600151062,
+          "difference": -7.569789886474609e-06
+        },
+        {
+          "width": 216,
+          "naturalLogit": -7.307875633239746,
+          "paddedLogit": -7.307863712310791,
+          "difference": -1.1920928955078125e-05
+        }
+      ],
+      "naturalScore": 0.0006697904550827775,
+      "paddedScore": 0.0006697984343067453,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-400-24-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 288,
+          "naturalLogit": 4.352901458740234,
+          "paddedLogit": 4.352908611297607,
+          "difference": -7.152557373046875e-06
+        },
+        {
+          "width": 216,
+          "naturalLogit": -4.08879280090332,
+          "paddedLogit": -4.088790416717529,
+          "difference": -2.384185791015625e-06
+        }
+      ],
+      "naturalScore": 0.016483203862250342,
+      "paddedScore": 0.016483242513541572,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-400-24-1-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 288,
+          "naturalLogit": 4.353632926940918,
+          "paddedLogit": 4.353630065917969,
+          "difference": 2.86102294921875e-06
+        },
+        {
+          "width": 216,
+          "naturalLogit": -4.086667537689209,
+          "paddedLogit": -4.086674213409424,
+          "difference": 6.67572021484375e-06
+        }
+      ],
+      "naturalScore": 0.016517693011619143,
+      "paddedScore": 0.016517584565836692,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-400-24-0-1",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 280,
+          "naturalLogit": 2.4883499145507812,
+          "paddedLogit": 2.488339900970459,
+          "difference": 1.0013580322265625e-05
+        },
+        {
+          "width": 216,
+          "naturalLogit": -4.116831302642822,
+          "paddedLogit": -4.116832256317139,
+          "difference": 9.5367431640625e-07
+        }
+      ],
+      "naturalScore": 0.016034766355367283,
+      "paddedScore": 0.016034751308632147,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-700-12-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 280,
+          "naturalLogit": 15.697528839111328,
+          "paddedLogit": 15.697535514831543,
+          "difference": -6.67572021484375e-06
+        },
+        {
+          "width": 208,
+          "naturalLogit": 19.344829559326172,
+          "paddedLogit": 19.3448429107666,
+          "difference": -1.33514404296875e-05
+        }
+      ],
+      "naturalScore": 0.9999998477175766,
+      "paddedScore": 0.9999998477185933,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-700-16-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": 17.150379180908203,
+          "paddedLogit": 17.150371551513672,
+          "difference": 7.62939453125e-06
+        },
+        {
+          "width": 224,
+          "naturalLogit": 16.283903121948242,
+          "paddedLogit": 16.283912658691406,
+          "difference": -9.5367431640625e-06
+        }
+      ],
+      "naturalScore": 0.9999999152790741,
+      "paddedScore": 0.9999999152798821,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-700-24-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": 15.22146224975586,
+          "paddedLogit": 15.221463203430176,
+          "difference": -9.5367431640625e-07
+        },
+        {
+          "width": 240,
+          "naturalLogit": 17.65296173095703,
+          "paddedLogit": 17.6529483795166,
+          "difference": 1.33514404296875e-05
+        }
+      ],
+      "naturalScore": 0.9999997548664062,
+      "paddedScore": 0.9999997548666401,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-700-24-1-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": 15.207406997680664,
+          "paddedLogit": 15.207412719726562,
+          "difference": -5.7220458984375e-06
+        },
+        {
+          "width": 240,
+          "naturalLogit": 17.608022689819336,
+          "paddedLogit": 17.60801124572754,
+          "difference": 1.1444091796875e-05
+        }
+      ],
+      "naturalScore": 0.999999751396666,
+      "paddedScore": 0.9999997513980884,
+      "changedDecision": false
+    },
+    {
+      "id": "asul-700-24-0-1",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": 15.272565841674805,
+          "paddedLogit": 15.27257251739502,
+          "difference": -6.67572021484375e-06
+        },
+        {
+          "width": 224,
+          "naturalLogit": 15.802366256713867,
+          "paddedLogit": 15.802376747131348,
+          "difference": -1.049041748046875e-05
+        }
+      ],
+      "naturalScore": 0.9999997670789017,
+      "paddedScore": 0.9999997670804567,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-400-12-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -22.174053192138672,
+          "paddedLogit": -22.174053192138672,
+          "difference": 0.0
+        },
+        {
+          "width": 232,
+          "naturalLogit": -21.03326416015625,
+          "paddedLogit": -21.033262252807617,
+          "difference": -1.9073486328125e-06
+        }
+      ],
+      "naturalScore": 2.3438567059386967e-10,
+      "paddedScore": 2.3438567059386967e-10,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-400-16-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 296,
+          "naturalLogit": -30.784151077270508,
+          "paddedLogit": -30.78413963317871,
+          "difference": -1.1444091796875e-05
+        },
+        {
+          "width": 216,
+          "naturalLogit": -33.83460998535156,
+          "paddedLogit": -33.83460998535156,
+          "difference": 0.0
+        }
+      ],
+      "naturalScore": 2.022160328634882e-15,
+      "paddedScore": 2.022160328634882e-15,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-400-24-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": -30.911434173583984,
+          "paddedLogit": -30.911422729492188,
+          "difference": -1.1444091796875e-05
+        },
+        {
+          "width": 232,
+          "naturalLogit": -33.46240234375,
+          "paddedLogit": -33.462406158447266,
+          "difference": 3.814697265625e-06
+        }
+      ],
+      "naturalScore": 2.9340216278843583e-15,
+      "paddedScore": 2.9340104355014253e-15,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-400-24-1-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": -30.911434173583984,
+          "paddedLogit": -30.911422729492188,
+          "difference": -1.1444091796875e-05
+        },
+        {
+          "width": 232,
+          "naturalLogit": -33.46240234375,
+          "paddedLogit": -33.462406158447266,
+          "difference": 3.814697265625e-06
+        }
+      ],
+      "naturalScore": 2.9340216278843583e-15,
+      "paddedScore": 2.9340104355014253e-15,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-400-24-0-1",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 288,
+          "naturalLogit": -37.731788635253906,
+          "paddedLogit": -37.73179244995117,
+          "difference": 3.814697265625e-06
+        },
+        {
+          "width": 224,
+          "naturalLogit": -33.18130874633789,
+          "paddedLogit": -33.18130874633789,
+          "difference": 0.0
+        }
+      ],
+      "naturalScore": 4.1048037969386874e-17,
+      "paddedScore": 4.104788138384734e-17,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-700-12-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 2.3138070106506348,
+          "paddedLogit": 2.3138070106506348,
+          "difference": 0.0
+        },
+        {
+          "width": 248,
+          "naturalLogit": 2.4189612865448,
+          "paddedLogit": 2.4189703464508057,
+          "difference": -9.059906005859375e-06
+        }
+      ],
+      "naturalScore": 0.9100140924780863,
+      "paddedScore": 0.9100140924780863,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-700-16-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 0.443643718957901,
+          "paddedLogit": 0.443643718957901,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": -1.2488306760787964,
+          "paddedLogit": -1.2488206624984741,
+          "difference": -1.0013580322265625e-05
+        }
+      ],
+      "naturalScore": 0.22290262002575248,
+      "paddedScore": 0.2229043545533287,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-700-24-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 7.954000949859619,
+          "paddedLogit": 7.954000949859619,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 5.286269187927246,
+          "paddedLogit": 5.2862725257873535,
+          "difference": -3.337860107421875e-06
+        }
+      ],
+      "naturalScore": 0.9949648755259166,
+      "paddedScore": 0.994964892247807,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-700-24-1-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 7.954000949859619,
+          "paddedLogit": 7.954000949859619,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 5.286269187927246,
+          "paddedLogit": 5.2862725257873535,
+          "difference": -3.337860107421875e-06
+        }
+      ],
+      "naturalScore": 0.9949648755259166,
+      "paddedScore": 0.994964892247807,
+      "changedDecision": false
+    },
+    {
+      "id": "cambay-700-24-0-1",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": 0.7864018082618713,
+          "paddedLogit": 0.7863907217979431,
+          "difference": 1.1086463928222656e-05
+        },
+        {
+          "width": 224,
+          "naturalLogit": 4.739312171936035,
+          "paddedLogit": 4.739320755004883,
+          "difference": -8.58306884765625e-06
+        }
+      ],
+      "naturalScore": 0.6870582073595981,
+      "paddedScore": 0.6870558236626148,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-400-12-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -17.712841033935547,
+          "paddedLogit": -17.712841033935547,
+          "difference": 0.0
+        },
+        {
+          "width": 232,
+          "naturalLogit": -18.113834381103516,
+          "paddedLogit": -18.11383819580078,
+          "difference": 3.814697265625e-06
+        }
+      ],
+      "naturalScore": 1.3591321203681778e-08,
+      "paddedScore": 1.3591269357005541e-08,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-400-16-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": -25.055362701416016,
+          "paddedLogit": -25.05535316467285,
+          "difference": -9.5367431640625e-06
+        },
+        {
+          "width": 232,
+          "naturalLogit": -16.904430389404297,
+          "paddedLogit": -16.9044189453125,
+          "difference": -1.1444091796875e-05
+        }
+      ],
+      "naturalScore": 1.313996585500444e-11,
+      "paddedScore": 1.314009116808152e-11,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-400-24-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": -20.38933753967285,
+          "paddedLogit": -20.389333724975586,
+          "difference": -3.814697265625e-06
+        },
+        {
+          "width": 232,
+          "naturalLogit": -17.14356803894043,
+          "paddedLogit": -17.14356803894043,
+          "difference": 0.0
+        }
+      ],
+      "naturalScore": 1.3964430092633909e-09,
+      "paddedScore": 1.396448336280873e-09,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-400-24-1-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": -20.38933753967285,
+          "paddedLogit": -20.389333724975586,
+          "difference": -3.814697265625e-06
+        },
+        {
+          "width": 232,
+          "naturalLogit": -17.14356803894043,
+          "paddedLogit": -17.14356803894043,
+          "difference": 0.0
+        }
+      ],
+      "naturalScore": 1.3964430092633909e-09,
+      "paddedScore": 1.396448336280873e-09,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-400-24-0-1",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 296,
+          "naturalLogit": -22.940231323242188,
+          "paddedLogit": -22.940242767333984,
+          "difference": 1.1444091796875e-05
+        },
+        {
+          "width": 216,
+          "naturalLogit": -18.76821517944336,
+          "paddedLogit": -18.768230438232422,
+          "difference": 1.52587890625e-05
+        }
+      ],
+      "naturalScore": 1.0893918519959614e-10,
+      "paddedScore": 1.0893793849669429e-10,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-700-12-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 39.892921447753906,
+          "paddedLogit": 39.892921447753906,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 47.19036865234375,
+          "paddedLogit": 47.190372467041016,
+          "difference": -3.814697265625e-06
+        }
+      ],
+      "naturalScore": 1.0,
+      "paddedScore": 1.0,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-700-16-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": 45.13407516479492,
+          "paddedLogit": 45.13408660888672,
+          "difference": -1.1444091796875e-05
+        },
+        {
+          "width": 232,
+          "naturalLogit": 42.97748565673828,
+          "paddedLogit": 42.977500915527344,
+          "difference": -1.52587890625e-05
+        }
+      ],
+      "naturalScore": 1.0,
+      "paddedScore": 1.0,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-700-24-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 44.82981872558594,
+          "paddedLogit": 44.82981872558594,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 40.59807586669922,
+          "paddedLogit": 40.59807205200195,
+          "difference": 3.814697265625e-06
+        }
+      ],
+      "naturalScore": 1.0,
+      "paddedScore": 1.0,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-700-24-1-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 44.82981872558594,
+          "paddedLogit": 44.82981872558594,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 40.59807586669922,
+          "paddedLogit": 40.59807205200195,
+          "difference": 3.814697265625e-06
+        }
+      ],
+      "naturalScore": 1.0,
+      "paddedScore": 1.0,
+      "changedDecision": false
+    },
+    {
+      "id": "chivo-700-24-0-1",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": 31.24958610534668,
+          "paddedLogit": 31.249584197998047,
+          "difference": 1.9073486328125e-06
+        },
+        {
+          "width": 232,
+          "naturalLogit": 32.985050201416016,
+          "paddedLogit": 32.985042572021484,
+          "difference": 7.62939453125e-06
+        }
+      ],
+      "naturalScore": 0.9999999999999731,
+      "paddedScore": 0.9999999999999731,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-400-12-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -8.081252098083496,
+          "paddedLogit": -8.081252098083496,
+          "difference": 0.0
+        },
+        {
+          "width": 216,
+          "naturalLogit": -11.639716148376465,
+          "paddedLogit": -11.639715194702148,
+          "difference": -9.5367431640625e-07
+        }
+      ],
+      "naturalScore": 8.80910283967205e-06,
+      "paddedScore": 8.80911124061718e-06,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-400-16-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -14.227097511291504,
+          "paddedLogit": -14.227097511291504,
+          "difference": 0.0
+        },
+        {
+          "width": 216,
+          "naturalLogit": -14.365705490112305,
+          "paddedLogit": -14.365699768066406,
+          "difference": -5.7220458984375e-06
+        }
+      ],
+      "naturalScore": 5.768370225344145e-07,
+      "paddedScore": 5.768403232298728e-07,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-400-24-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": -15.428885459899902,
+          "paddedLogit": -15.428876876831055,
+          "difference": -8.58306884765625e-06
+        },
+        {
+          "width": 224,
+          "naturalLogit": -17.10779571533203,
+          "paddedLogit": -17.107789993286133,
+          "difference": -5.7220458984375e-06
+        }
+      ],
+      "naturalScore": 3.716881430098206e-08,
+      "paddedScore": 3.7169026983244066e-08,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-400-24-1-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": -15.428885459899902,
+          "paddedLogit": -15.428876876831055,
+          "difference": -8.58306884765625e-06
+        },
+        {
+          "width": 224,
+          "naturalLogit": -17.10779571533203,
+          "paddedLogit": -17.107789993286133,
+          "difference": -5.7220458984375e-06
+        }
+      ],
+      "naturalScore": 3.716881430098206e-08,
+      "paddedScore": 3.7169026983244066e-08,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-400-24-0-1",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 288,
+          "naturalLogit": -13.52242660522461,
+          "paddedLogit": -13.522418975830078,
+          "difference": -7.62939453125e-06
+        },
+        {
+          "width": 216,
+          "naturalLogit": -20.015478134155273,
+          "paddedLogit": -20.0154972076416,
+          "difference": 1.9073486328125e-05
+        }
+      ],
+      "naturalScore": 2.029496435114995e-09,
+      "paddedScore": 2.0294577259117266e-09,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-700-12-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 25.62418556213379,
+          "paddedLogit": 25.62418556213379,
+          "difference": 0.0
+        },
+        {
+          "width": 224,
+          "naturalLogit": 16.725122451782227,
+          "paddedLogit": 16.72513198852539,
+          "difference": -9.5367431640625e-06
+        }
+      ],
+      "naturalScore": 0.9999999455031267,
+      "paddedScore": 0.9999999455036465,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-700-16-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 24.24802017211914,
+          "paddedLogit": 24.24802017211914,
+          "difference": 0.0
+        },
+        {
+          "width": 232,
+          "naturalLogit": 17.523645401000977,
+          "paddedLogit": 17.52363395690918,
+          "difference": 1.1444091796875e-05
+        }
+      ],
+      "naturalScore": 0.9999999754767802,
+      "paddedScore": 0.9999999754764995,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-700-24-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 17.134361267089844,
+          "paddedLogit": 17.134361267089844,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 16.572612762451172,
+          "paddedLogit": 16.572622299194336,
+          "difference": -9.5367431640625e-06
+        }
+      ],
+      "naturalScore": 0.9999999365245631,
+      "paddedScore": 0.9999999365251684,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-700-24-1-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 17.134361267089844,
+          "paddedLogit": 17.134361267089844,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 16.572612762451172,
+          "paddedLogit": 16.572622299194336,
+          "difference": -9.5367431640625e-06
+        }
+      ],
+      "naturalScore": 0.9999999365245631,
+      "paddedScore": 0.9999999365251684,
+      "changedDecision": false
+    },
+    {
+      "id": "eczar-700-24-0-1",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": 18.111391067504883,
+          "paddedLogit": 18.111398696899414,
+          "difference": -7.62939453125e-06
+        },
+        {
+          "width": 232,
+          "naturalLogit": 14.595953941345215,
+          "paddedLogit": 14.595949172973633,
+          "difference": 4.76837158203125e-06
+        }
+      ],
+      "naturalScore": 0.9999995417974031,
+      "paddedScore": 0.9999995417952182,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-400-12-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": -14.915252685546875,
+          "paddedLogit": -14.915251731872559,
+          "difference": -9.5367431640625e-07
+        },
+        {
+          "width": 224,
+          "naturalLogit": -21.65678596496582,
+          "paddedLogit": -21.656780242919922,
+          "difference": -5.7220458984375e-06
+        }
+      ],
+      "naturalScore": 3.931672722971114e-10,
+      "paddedScore": 3.931695220247249e-10,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-400-16-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -13.884751319885254,
+          "paddedLogit": -13.884751319885254,
+          "difference": 0.0
+        },
+        {
+          "width": 248,
+          "naturalLogit": -19.57251739501953,
+          "paddedLogit": -19.5725154876709,
+          "difference": -1.9073486328125e-06
+        }
+      ],
+      "naturalScore": 3.1605575084632187e-09,
+      "paddedScore": 3.1605635367539912e-09,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-400-24-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -18.38191795349121,
+          "paddedLogit": -18.38191795349121,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": -18.37656021118164,
+          "paddedLogit": -18.376558303833008,
+          "difference": -1.9073486328125e-06
+        }
+      ],
+      "naturalScore": 1.0395238586179072e-08,
+      "paddedScore": 1.0395238586179072e-08,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-400-24-1-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -18.38191795349121,
+          "paddedLogit": -18.38191795349121,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": -18.37656021118164,
+          "paddedLogit": -18.376558303833008,
+          "difference": -1.9073486328125e-06
+        }
+      ],
+      "naturalScore": 1.0395238586179072e-08,
+      "paddedScore": 1.0395238586179072e-08,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-400-24-0-1",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": -17.64246940612793,
+          "paddedLogit": -17.642471313476562,
+          "difference": 1.9073486328125e-06
+        },
+        {
+          "width": 224,
+          "naturalLogit": -21.454299926757812,
+          "paddedLogit": -21.45430564880371,
+          "difference": 5.7220458984375e-06
+        }
+      ],
+      "naturalScore": 4.81410910255677e-10,
+      "paddedScore": 4.814081556082349e-10,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-700-12-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 19.725332260131836,
+          "paddedLogit": 19.725332260131836,
+          "difference": 0.0
+        },
+        {
+          "width": 264,
+          "naturalLogit": 13.315799713134766,
+          "paddedLogit": 13.315781593322754,
+          "difference": 1.811981201171875e-05
+        }
+      ],
+      "naturalScore": 0.9999983517581135,
+      "paddedScore": 0.9999983517282472,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-700-16-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 10.47989273071289,
+          "paddedLogit": 10.47989273071289,
+          "difference": 0.0
+        },
+        {
+          "width": 256,
+          "naturalLogit": 7.547543525695801,
+          "paddedLogit": 7.547553062438965,
+          "difference": -9.5367431640625e-06
+        }
+      ],
+      "naturalScore": 0.9994728739166839,
+      "paddedScore": 0.9994728789410761,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-700-24-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": 7.483511924743652,
+          "paddedLogit": 7.483504772186279,
+          "difference": 7.152557373046875e-06
+        },
+        {
+          "width": 240,
+          "naturalLogit": 11.35869026184082,
+          "paddedLogit": 11.35867977142334,
+          "difference": 1.049041748046875e-05
+        }
+      ],
+      "naturalScore": 0.9994380367187086,
+      "paddedScore": 0.9994380327014784,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-700-24-1-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 312,
+          "naturalLogit": 7.492889404296875,
+          "paddedLogit": 7.492886543273926,
+          "difference": 2.86102294921875e-06
+        },
+        {
+          "width": 240,
+          "naturalLogit": 11.429547309875488,
+          "paddedLogit": 11.429542541503906,
+          "difference": 4.76837158203125e-06
+        }
+      ],
+      "naturalScore": 0.9994432789661308,
+      "paddedScore": 0.9994432773742237,
+      "changedDecision": false
+    },
+    {
+      "id": "faustina-700-24-0-1",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 304,
+          "naturalLogit": 9.890380859375,
+          "paddedLogit": 9.890384674072266,
+          "difference": -3.814697265625e-06
+        },
+        {
+          "width": 232,
+          "naturalLogit": 9.823782920837402,
+          "paddedLogit": 9.823780059814453,
+          "difference": 2.86102294921875e-06
+        }
+      ],
+      "naturalScore": 0.9999458545745727,
+      "paddedScore": 0.9999458544196694,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-400-12-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -9.071137428283691,
+          "paddedLogit": -9.071137428283691,
+          "difference": 0.0
+        },
+        {
+          "width": 248,
+          "naturalLogit": -10.904862403869629,
+          "paddedLogit": -10.904852867126465,
+          "difference": -9.5367431640625e-06
+        }
+      ],
+      "naturalScore": 1.8368363054927834e-05,
+      "paddedScore": 1.836853822690622e-05,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-400-16-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -15.76325798034668,
+          "paddedLogit": -15.76325798034668,
+          "difference": 0.0
+        },
+        {
+          "width": 256,
+          "naturalLogit": -22.202335357666016,
+          "paddedLogit": -22.202333450317383,
+          "difference": -1.9073486328125e-06
+        }
+      ],
+      "naturalScore": 2.2784959905835648e-10,
+      "paddedScore": 2.2785003364739209e-10,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-400-24-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -27.041851043701172,
+          "paddedLogit": -27.041851043701172,
+          "difference": 0.0
+        },
+        {
+          "width": 256,
+          "naturalLogit": -21.249845504760742,
+          "paddedLogit": -21.249841690063477,
+          "difference": -3.814697265625e-06
+        }
+      ],
+      "naturalScore": 1.80249185641101e-12,
+      "paddedScore": 1.80249185641101e-12,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-400-24-1-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -27.041851043701172,
+          "paddedLogit": -27.041851043701172,
+          "difference": 0.0
+        },
+        {
+          "width": 256,
+          "naturalLogit": -21.249845504760742,
+          "paddedLogit": -21.249841690063477,
+          "difference": -3.814697265625e-06
+        }
+      ],
+      "naturalScore": 1.80249185641101e-12,
+      "paddedScore": 1.80249185641101e-12,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-400-24-0-1",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": -23.86395835876465,
+          "paddedLogit": -23.86395835876465,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": -19.14432716369629,
+          "paddedLogit": -19.144336700439453,
+          "difference": 9.5367431640625e-06
+        }
+      ],
+      "naturalScore": 4.325283399472027e-11,
+      "paddedScore": 4.325283399472027e-11,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-700-12-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 17.659475326538086,
+          "paddedLogit": 17.659475326538086,
+          "difference": 0.0
+        },
+        {
+          "width": 256,
+          "naturalLogit": 14.441810607910156,
+          "paddedLogit": 14.441815376281738,
+          "difference": -4.76837158203125e-06
+        }
+      ],
+      "naturalScore": 0.9999994654342717,
+      "paddedScore": 0.9999994654368207,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-700-16-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 17.251623153686523,
+          "paddedLogit": 17.251623153686523,
+          "difference": 0.0
+        },
+        {
+          "width": 256,
+          "naturalLogit": 25.3438663482666,
+          "paddedLogit": 25.343870162963867,
+          "difference": -3.814697265625e-06
+        }
+      ],
+      "naturalScore": 0.9999999678104247,
+      "paddedScore": 0.9999999678104247,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-700-24-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 14.430435180664062,
+          "paddedLogit": 14.430435180664062,
+          "difference": 0.0
+        },
+        {
+          "width": 256,
+          "naturalLogit": 16.04126739501953,
+          "paddedLogit": 16.04126739501953,
+          "difference": 0.0
+        }
+      ],
+      "naturalScore": 0.9999994593186435,
+      "paddedScore": 0.9999994593186435,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-700-24-1-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 14.430435180664062,
+          "paddedLogit": 14.430435180664062,
+          "difference": 0.0
+        },
+        {
+          "width": 256,
+          "naturalLogit": 16.04126739501953,
+          "paddedLogit": 16.04126739501953,
+          "difference": 0.0
+        }
+      ],
+      "naturalScore": 0.9999994593186435,
+      "paddedScore": 0.9999994593186435,
+      "changedDecision": false
+    },
+    {
+      "id": "literata-700-24-0-1",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 320,
+          "naturalLogit": 16.865507125854492,
+          "paddedLogit": 16.865507125854492,
+          "difference": 0.0
+        },
+        {
+          "width": 240,
+          "naturalLogit": 14.680777549743652,
+          "paddedLogit": 14.68078899383545,
+          "difference": -1.1444091796875e-05
+        }
+      ],
+      "naturalScore": 0.9999995790610268,
+      "paddedScore": 0.999999579065844,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-400-12-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 280,
+          "naturalLogit": -21.506874084472656,
+          "paddedLogit": -21.506860733032227,
+          "difference": -1.33514404296875e-05
+        },
+        {
+          "width": 200,
+          "naturalLogit": -20.04068946838379,
+          "paddedLogit": -20.040695190429688,
+          "difference": 5.7220458984375e-06
+        }
+      ],
+      "naturalScore": 4.567549492515256e-10,
+      "paddedScore": 4.567610476287297e-10,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-400-16-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 280,
+          "naturalLogit": -27.50226402282715,
+          "paddedLogit": -27.502267837524414,
+          "difference": 3.814697265625e-06
+        },
+        {
+          "width": 200,
+          "naturalLogit": -33.853614807128906,
+          "paddedLogit": -33.85361099243164,
+          "difference": -3.814697265625e-06
+        }
+      ],
+      "naturalScore": 1.9840924147277588e-15,
+      "paddedScore": 1.984099983454104e-15,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-400-24-0-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 296,
+          "naturalLogit": -28.284990310668945,
+          "paddedLogit": -28.284988403320312,
+          "difference": -1.9073486328125e-06
+        },
+        {
+          "width": 216,
+          "naturalLogit": -32.25027084350586,
+          "paddedLogit": -32.25028610229492,
+          "difference": 1.52587890625e-05
+        }
+      ],
+      "naturalScore": 9.860191116164257e-15,
+      "paddedScore": 9.860040662735772e-15,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-400-24-1-0",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 296,
+          "naturalLogit": -28.284990310668945,
+          "paddedLogit": -28.284988403320312,
+          "difference": -1.9073486328125e-06
+        },
+        {
+          "width": 216,
+          "naturalLogit": -32.25027084350586,
+          "paddedLogit": -32.25028610229492,
+          "difference": 1.52587890625e-05
+        }
+      ],
+      "naturalScore": 9.860191116164257e-15,
+      "paddedScore": 9.860040662735772e-15,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-400-24-0-1",
+      "expected": "REGULAR",
+      "words": [
+        {
+          "width": 264,
+          "naturalLogit": -42.808006286621094,
+          "paddedLogit": -42.80799865722656,
+          "difference": -7.62939453125e-06
+        },
+        {
+          "width": 192,
+          "naturalLogit": -38.978721618652344,
+          "paddedLogit": -38.978721618652344,
+          "difference": 0.0
+        }
+      ],
+      "naturalScore": 2.562825806201075e-19,
+      "paddedScore": 2.562845359084853e-19,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-700-12-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 288,
+          "naturalLogit": 14.311358451843262,
+          "paddedLogit": 14.311372756958008,
+          "difference": -1.430511474609375e-05
+        },
+        {
+          "width": 208,
+          "naturalLogit": 3.053215742111206,
+          "paddedLogit": 3.0532078742980957,
+          "difference": 7.867813110351562e-06
+        }
+      ],
+      "naturalScore": 0.9549211564194026,
+      "paddedScore": 0.9549208177344737,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-700-16-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 288,
+          "naturalLogit": 2.93023419380188,
+          "paddedLogit": 2.9302194118499756,
+          "difference": 1.4781951904296875e-05
+        },
+        {
+          "width": 208,
+          "naturalLogit": -14.503403663635254,
+          "paddedLogit": -14.503399848937988,
+          "difference": -3.814697265625e-06
+        }
+      ],
+      "naturalScore": 5.026336982320428e-07,
+      "paddedScore": 5.026356156301304e-07,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-700-24-0-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 296,
+          "naturalLogit": 12.52237606048584,
+          "paddedLogit": 12.522369384765625,
+          "difference": 6.67572021484375e-06
+        },
+        {
+          "width": 216,
+          "naturalLogit": 1.204802393913269,
+          "paddedLogit": 1.2048027515411377,
+          "difference": -3.5762786865234375e-07
+        }
+      ],
+      "naturalScore": 0.7693780007617963,
+      "paddedScore": 0.7693780642176672,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-700-24-1-0",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 296,
+          "naturalLogit": 12.52237606048584,
+          "paddedLogit": 12.522369384765625,
+          "difference": 6.67572021484375e-06
+        },
+        {
+          "width": 216,
+          "naturalLogit": 1.204802393913269,
+          "paddedLogit": 1.2048027515411377,
+          "difference": -3.5762786865234375e-07
+        }
+      ],
+      "naturalScore": 0.7693780007617963,
+      "paddedScore": 0.7693780642176672,
+      "changedDecision": false
+    },
+    {
+      "id": "varta-700-24-0-1",
+      "expected": "BOLD",
+      "words": [
+        {
+          "width": 280,
+          "naturalLogit": 1.9422659873962402,
+          "paddedLogit": 1.9422686100006104,
+          "difference": -2.6226043701171875e-06
+        },
+        {
+          "width": 208,
+          "naturalLogit": -5.920608043670654,
+          "paddedLogit": -5.920614242553711,
+          "difference": 6.198883056640625e-06
+        }
+      ],
+      "naturalScore": 0.00267638569138875,
+      "paddedScore": 0.0026763691452406937,
+      "changedDecision": false
+    }
+  ]
+}
