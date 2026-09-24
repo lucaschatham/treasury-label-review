@@ -2,8 +2,8 @@
  "url": "http://127.0.0.1:4173",
  "fixtures": 88,
  "rowsRendered": 88,
- "status": "Finished: 88 reviewed, 0 failed, 0 remaining. Total: 60.3 s. First result: 1.3 s from click. Inspect exceptions and make your final decision.",
- "batchSeconds": 60.594,
+ "status": "Finished: 88 reviewed, 0 failed, 0 remaining. Total: 61.2 s. First result: 1.7 s from click. Inspect exceptions and make your final decision.",
+ "batchSeconds": 61.572,
  "verdictAgreement": "0/0",
  "csvUploaded": true,
  "rowsMappedToOwnFile": 88,
@@ -11,9 +11,124 @@
  "expectedFindingsChecked": 88,
  "labelsWithFindingErrors": [
   {
+   "id": "domine-valid-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-wrong-abv-28",
+   "errors": [
+    "Alcohol content: expected mismatch, got review"
+   ]
+  },
+  {
+   "id": "domine-wrong-volume-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-wrong-brand-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-altered-wording-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-title-case-heading-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-missing-warning-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-regular-heading-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-brand-case-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-fl-oz-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "domine-imported-28",
+   "errors": [
+    "Alcohol content: expected match, got review"
+   ]
+  },
+  {
+   "id": "besley-wrong-abv-28",
+   "errors": [
+    "Alcohol content: expected mismatch, got review"
+   ]
+  },
+  {
+   "id": "mulish-valid-28",
+   "errors": [
+    "Government warning: expected match, got review"
+   ]
+  },
+  {
+   "id": "mulish-wrong-abv-28",
+   "errors": [
+    "Government warning: expected match, got review"
+   ]
+  },
+  {
+   "id": "mulish-wrong-volume-28",
+   "errors": [
+    "Government warning: expected match, got review"
+   ]
+  },
+  {
+   "id": "mulish-wrong-brand-28",
+   "errors": [
+    "Government warning: expected match, got review"
+   ]
+  },
+  {
+   "id": "mulish-regular-heading-28",
+   "errors": [
+    "Government warning: expected match, got review"
+   ]
+  },
+  {
+   "id": "mulish-brand-case-28",
+   "errors": [
+    "Government warning: expected match, got review"
+   ]
+  },
+  {
    "id": "mulish-fl-oz-28",
    "errors": [
-    "Net contents: expected match, got mismatch"
+    "Net contents: expected match, got mismatch",
+    "Government warning: expected match, got review"
+   ]
+  },
+  {
+   "id": "mulish-imported-28",
+   "errors": [
+    "Government warning: expected match, got review"
    ]
   },
   {
@@ -26,7 +141,7 @@
  "maxRatioDelta": 0,
  "boldMatched": "0/0",
  "regularFalse": "0/0",
- "lastRowClickToResultMs": 60267.09999999998,
+ "lastRowClickToResultMs": 61245.70000000001,
  "errors": [],
  "comparisons": [
   {
@@ -75,9 +190,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 1297.5999999999767,
-   "ocrMs": 910.2000000000698,
-   "appearanceMs": 23.400000000023283
+   "clickToResultMs": 1657.5,
+   "ocrMs": 989.4000000000233,
+   "appearanceMs": 26
   },
   {
    "file": "averiaseriflibre-wrong-abv-28.png",
@@ -125,9 +240,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 2091,
-   "ocrMs": 703.1000000000931,
-   "appearanceMs": 53
+   "clickToResultMs": 2482.7000000000116,
+   "ocrMs": 752.2999999999884,
+   "appearanceMs": 20.20000000001164
   },
   {
    "file": "averiaseriflibre-wrong-volume-28.png",
@@ -175,9 +290,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 2820.5999999999767,
-   "ocrMs": 667.4000000000233,
-   "appearanceMs": 28.599999999976717
+   "clickToResultMs": 3222.4000000000233,
+   "ocrMs": 652.7000000000116,
+   "appearanceMs": 35.59999999997672
   },
   {
    "file": "averiaseriflibre-wrong-brand-28.png",
@@ -225,9 +340,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 3532.0999999999767,
-   "ocrMs": 654.1999999999534,
-   "appearanceMs": 19.70000000006985
+   "clickToResultMs": 3976.7000000000116,
+   "ocrMs": 699.7000000000116,
+   "appearanceMs": 20.79999999998836
   },
   {
    "file": "averiaseriflibre-altered-wording-28.png",
@@ -275,9 +390,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 4251.199999999953,
-   "ocrMs": 672.2000000000698,
-   "appearanceMs": 13.5
+   "clickToResultMs": 4747.299999999988,
+   "ocrMs": 657.6000000000349,
+   "appearanceMs": 30.70000000001164
   },
   {
    "file": "averiaseriflibre-title-case-heading-28.png",
@@ -325,9 +440,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 4976.29999999993,
-   "ocrMs": 697.3000000000466,
-   "appearanceMs": 0.09999999997671694
+   "clickToResultMs": 5490.099999999977,
+   "ocrMs": 719.6000000000349,
+   "appearanceMs": 0
   },
   {
    "file": "averiaseriflibre-missing-warning-28.png",
@@ -375,8 +490,8 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 5261.599999999977,
-   "ocrMs": 250.90000000002328,
+   "clickToResultMs": 5793.599999999977,
+   "ocrMs": 286.3999999999651,
    "appearanceMs": 0
   },
   {
@@ -425,9 +540,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 5982.699999999953,
-   "ocrMs": 674,
-   "appearanceMs": 12.199999999953434
+   "clickToResultMs": 6547.400000000023,
+   "ocrMs": 721.7999999999884,
+   "appearanceMs": 13
   },
   {
    "file": "averiaseriflibre-brand-case-28.png",
@@ -475,9 +590,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 6740.5,
-   "ocrMs": 699.0999999999767,
-   "appearanceMs": 34
+   "clickToResultMs": 7322.799999999988,
+   "ocrMs": 722.3999999999651,
+   "appearanceMs": 12.900000000023283
   },
   {
    "file": "averiaseriflibre-fl-oz-28.png",
@@ -525,9 +640,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 7458.79999999993,
-   "ocrMs": 666.5,
-   "appearanceMs": 15.29999999993015
+   "clickToResultMs": 8139.299999999988,
+   "ocrMs": 718.6000000000349,
+   "appearanceMs": 35.100000000034925
   },
   {
    "file": "averiaseriflibre-imported-28.png",
@@ -575,9 +690,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 8169.699999999953,
-   "ocrMs": 676.9000000000233,
-   "appearanceMs": 12.599999999976717
+   "clickToResultMs": 8959.799999999988,
+   "ocrMs": 725.5,
+   "appearanceMs": 14.100000000034925
   },
   {
    "file": "domine-valid-28.png",
@@ -596,7 +711,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -619,15 +734,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.3030302576884818,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 8885.099999999977,
-   "ocrMs": 667.4000000000233,
-   "appearanceMs": 12.300000000046566
+   "clickToResultMs": 9660.299999999988,
+   "ocrMs": 655.2000000000116,
+   "appearanceMs": 13.100000000034925
   },
   {
    "file": "domine-wrong-abv-28.png",
@@ -646,7 +763,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "mismatch"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -669,15 +786,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected mismatch, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.3030302576884818,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 9570,
-   "ocrMs": 651.1999999999534,
-   "appearanceMs": 12
+   "clickToResultMs": 10367.599999999977,
+   "ocrMs": 655.2999999999884,
+   "appearanceMs": 20.900000000023283
   },
   {
    "file": "domine-wrong-volume-28.png",
@@ -696,7 +815,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -719,15 +838,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.3030302576884818,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 10298.199999999953,
-   "ocrMs": 694.8999999999069,
-   "appearanceMs": 12.599999999976717
+   "clickToResultMs": 11182.200000000012,
+   "ocrMs": 697,
+   "appearanceMs": 49.5
   },
   {
    "file": "domine-wrong-brand-28.png",
@@ -746,7 +867,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -769,15 +890,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.3030302576884818,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 11002.400000000023,
-   "ocrMs": 662.3000000000466,
-   "appearanceMs": 17.800000000046566
+   "clickToResultMs": 12010,
+   "ocrMs": 696.8999999999651,
+   "appearanceMs": 44.29999999998836
   },
   {
    "file": "domine-altered-wording-28.png",
@@ -796,7 +919,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -819,15 +942,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.3030302576884818,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 11731.199999999953,
-   "ocrMs": 693.9000000000233,
-   "appearanceMs": 12.29999999993015
+   "clickToResultMs": 12751.299999999988,
+   "ocrMs": 692.7000000000116,
+   "appearanceMs": 16.199999999953434
   },
   {
    "file": "domine-title-case-heading-28.png",
@@ -846,7 +971,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -869,14 +994,16 @@
      "status": "review"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "REVIEW",
    "browserRatio": null,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 12400.5,
-   "ocrMs": 645.9000000000233,
+   "clickToResultMs": 13451.900000000023,
+   "ocrMs": 667,
    "appearanceMs": 0
   },
   {
@@ -896,7 +1023,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -919,15 +1046,17 @@
      "status": "review"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "REVIEW",
    "browserRatio": null,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 12688.5,
-   "ocrMs": 273,
-   "appearanceMs": 0
+   "clickToResultMs": 13751.700000000012,
+   "ocrMs": 279.9000000000233,
+   "appearanceMs": 0.1000000000349246
   },
   {
    "file": "domine-regular-heading-28.png",
@@ -946,7 +1075,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -969,15 +1098,17 @@
      "status": "review"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "REVIEW",
    "browserRatio": 1.0549943665785262,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 13499.699999999953,
-   "ocrMs": 720.5,
-   "appearanceMs": 66.70000000006985
+   "clickToResultMs": 14440.5,
+   "ocrMs": 651.7000000000116,
+   "appearanceMs": 14.700000000011642
   },
   {
    "file": "domine-brand-case-28.png",
@@ -996,7 +1127,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -1019,15 +1150,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.3030302576884818,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 14202.699999999953,
-   "ocrMs": 655,
-   "appearanceMs": 24.400000000023283
+   "clickToResultMs": 15149.099999999977,
+   "ocrMs": 668.6999999999534,
+   "appearanceMs": 15
   },
   {
    "file": "domine-fl-oz-28.png",
@@ -1046,7 +1179,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -1069,15 +1202,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.3030302576884818,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 14969.199999999953,
-   "ocrMs": 717,
-   "appearanceMs": 12.899999999906868
+   "clickToResultMs": 15872.599999999977,
+   "ocrMs": 681.8999999999651,
+   "appearanceMs": 16
   },
   {
    "file": "domine-imported-28.png",
@@ -1096,7 +1231,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -1119,15 +1254,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.3030302576884818,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 15703.79999999993,
-   "ocrMs": 696.0999999999767,
-   "appearanceMs": 13.20000000006985
+   "clickToResultMs": 16609.5,
+   "ocrMs": 694.0999999999767,
+   "appearanceMs": 13.299999999988358
   },
   {
    "file": "karla-valid-28.png",
@@ -1175,9 +1312,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 16379.699999999953,
-   "ocrMs": 639.7999999999302,
-   "appearanceMs": 13.79999999993015
+   "clickToResultMs": 17312.20000000001,
+   "ocrMs": 665,
+   "appearanceMs": 13.300000000046566
   },
   {
    "file": "karla-wrong-abv-28.png",
@@ -1225,9 +1362,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 17088.900000000023,
-   "ocrMs": 665.4000000000233,
-   "appearanceMs": 19
+   "clickToResultMs": 18089.400000000023,
+   "ocrMs": 737.2000000000116,
+   "appearanceMs": 14.100000000034925
   },
   {
    "file": "karla-wrong-volume-28.png",
@@ -1275,9 +1412,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 17748.099999999977,
-   "ocrMs": 620.2000000000698,
-   "appearanceMs": 13.5
+   "clickToResultMs": 18820,
+   "ocrMs": 695.4000000000233,
+   "appearanceMs": 12.799999999988358
   },
   {
    "file": "karla-wrong-brand-28.png",
@@ -1325,9 +1462,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 18421.199999999953,
-   "ocrMs": 636.4000000000233,
-   "appearanceMs": 12.79999999993015
+   "clickToResultMs": 19566.900000000023,
+   "ocrMs": 706.6000000000349,
+   "appearanceMs": 14
   },
   {
    "file": "karla-altered-wording-28.png",
@@ -1375,9 +1512,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 19136.5,
-   "ocrMs": 678,
-   "appearanceMs": 12.099999999976717
+   "clickToResultMs": 20296.599999999977,
+   "ocrMs": 690.6999999999534,
+   "appearanceMs": 12.200000000011642
   },
   {
    "file": "karla-title-case-heading-28.png",
@@ -1425,9 +1562,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 19842.5,
-   "ocrMs": 682.2999999999302,
-   "appearanceMs": 0
+   "clickToResultMs": 20986.5,
+   "ocrMs": 666.7999999999884,
+   "appearanceMs": 0.09999999997671694
   },
   {
    "file": "karla-missing-warning-28.png",
@@ -1475,9 +1612,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 20180,
-   "ocrMs": 322.70000000006985,
-   "appearanceMs": 0.09999999997671694
+   "clickToResultMs": 21259.5,
+   "ocrMs": 253.39999999996508,
+   "appearanceMs": 0
   },
   {
    "file": "karla-regular-heading-28.png",
@@ -1525,9 +1662,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 20865.199999999953,
-   "ocrMs": 641.5999999999767,
-   "appearanceMs": 16.800000000046566
+   "clickToResultMs": 21978.20000000001,
+   "ocrMs": 677.3999999999651,
+   "appearanceMs": 17.70000000001164
   },
   {
    "file": "karla-brand-case-28.png",
@@ -1575,9 +1712,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 21574.29999999993,
-   "ocrMs": 668.5999999999767,
-   "appearanceMs": 12.5
+   "clickToResultMs": 22666.099999999977,
+   "ocrMs": 639.7999999999884,
+   "appearanceMs": 17.900000000023283
   },
   {
    "file": "karla-fl-oz-28.png",
@@ -1625,9 +1762,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 22332.900000000023,
-   "ocrMs": 709.7000000000698,
-   "appearanceMs": 15.599999999976717
+   "clickToResultMs": 23402.20000000001,
+   "ocrMs": 693.4000000000233,
+   "appearanceMs": 14.899999999965075
   },
   {
    "file": "karla-imported-28.png",
@@ -1675,9 +1812,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 23057.699999999953,
-   "ocrMs": 687.5999999999767,
-   "appearanceMs": 13.099999999976717
+   "clickToResultMs": 24119.599999999977,
+   "ocrMs": 679.7999999999884,
+   "appearanceMs": 13.399999999965075
   },
   {
    "file": "cambay-valid-28.png",
@@ -1725,9 +1862,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 23738.79999999993,
-   "ocrMs": 644.5,
-   "appearanceMs": 12.5
+   "clickToResultMs": 24774.900000000023,
+   "ocrMs": 611.1000000000349,
+   "appearanceMs": 17
   },
   {
    "file": "cambay-wrong-abv-28.png",
@@ -1775,9 +1912,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 24387.79999999993,
-   "ocrMs": 612.0999999999767,
-   "appearanceMs": 14.900000000023283
+   "clickToResultMs": 25412.099999999977,
+   "ocrMs": 603,
+   "appearanceMs": 14
   },
   {
    "file": "cambay-wrong-volume-28.png",
@@ -1825,9 +1962,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 25094.29999999993,
-   "ocrMs": 667.1999999999534,
-   "appearanceMs": 12.29999999993015
+   "clickToResultMs": 26078.900000000023,
+   "ocrMs": 635,
+   "appearanceMs": 11.799999999988358
   },
   {
    "file": "cambay-wrong-brand-28.png",
@@ -1875,9 +2012,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 25775.900000000023,
-   "ocrMs": 644.2000000000698,
-   "appearanceMs": 15.900000000023283
+   "clickToResultMs": 26744.900000000023,
+   "ocrMs": 629.5999999999767,
+   "appearanceMs": 11.800000000046566
   },
   {
    "file": "cambay-altered-wording-28.png",
@@ -1925,9 +2062,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 26483.79999999993,
-   "ocrMs": 658.2999999999302,
-   "appearanceMs": 16.300000000046566
+   "clickToResultMs": 27444.599999999977,
+   "ocrMs": 666.0999999999767,
+   "appearanceMs": 11.199999999953434
   },
   {
    "file": "cambay-title-case-heading-28.png",
@@ -1975,9 +2112,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 27231.699999999953,
-   "ocrMs": 718.2999999999302,
-   "appearanceMs": 0.09999999997671694
+   "clickToResultMs": 28122.70000000001,
+   "ocrMs": 655.2000000000116,
+   "appearanceMs": 0.1000000000349246
   },
   {
    "file": "cambay-missing-warning-28.png",
@@ -2025,9 +2162,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 27497.400000000023,
-   "ocrMs": 244.80000000004657,
-   "appearanceMs": 0.09999999997671694
+   "clickToResultMs": 28383.900000000023,
+   "ocrMs": 247.10000000003492,
+   "appearanceMs": 0
   },
   {
    "file": "cambay-regular-heading-28.png",
@@ -2075,9 +2212,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 28175.900000000023,
-   "ocrMs": 610.9000000000233,
-   "appearanceMs": 44.60000000009313
+   "clickToResultMs": 29070.099999999977,
+   "ocrMs": 650.1000000000349,
+   "appearanceMs": 12.800000000046566
   },
   {
    "file": "cambay-brand-case-28.png",
@@ -2125,9 +2262,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 28853.599999999977,
-   "ocrMs": 612.6999999999534,
-   "appearanceMs": 23.70000000006985
+   "clickToResultMs": 29696.79999999999,
+   "ocrMs": 586.5,
+   "appearanceMs": 12.099999999976717
   },
   {
    "file": "cambay-fl-oz-28.png",
@@ -2175,9 +2312,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 29549.29999999993,
-   "ocrMs": 612.9000000000233,
-   "appearanceMs": 16.099999999976717
+   "clickToResultMs": 30346.900000000023,
+   "ocrMs": 610,
+   "appearanceMs": 16.70000000001164
   },
   {
    "file": "cambay-imported-28.png",
@@ -2225,9 +2362,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 30296.199999999953,
-   "ocrMs": 701.1999999999534,
-   "appearanceMs": 13.5
+   "clickToResultMs": 31056.79999999999,
+   "ocrMs": 670,
+   "appearanceMs": 17.70000000001164
   },
   {
    "file": "besley-valid-28.png",
@@ -2275,9 +2412,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 31023.900000000023,
-   "ocrMs": 692.9000000000233,
-   "appearanceMs": 12.79999999993015
+   "clickToResultMs": 31791.599999999977,
+   "ocrMs": 699.2999999999884,
+   "appearanceMs": 12.600000000034925
   },
   {
    "file": "besley-wrong-abv-28.png",
@@ -2296,7 +2433,7 @@
     },
     {
      "field": "Alcohol content",
-     "status": "mismatch"
+     "status": "review"
     },
     {
      "field": "Net contents",
@@ -2319,15 +2456,17 @@
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Alcohol content: expected mismatch, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.6457049734717697,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 31728.400000000023,
-   "ocrMs": 671.5999999999767,
-   "appearanceMs": 12
+   "clickToResultMs": 32496.400000000023,
+   "ocrMs": 665.7999999999884,
+   "appearanceMs": 12.299999999988358
   },
   {
    "file": "besley-wrong-volume-28.png",
@@ -2375,9 +2514,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 32574.79999999993,
-   "ocrMs": 806.6000000000931,
-   "appearanceMs": 15.599999999976717
+   "clickToResultMs": 33292.20000000001,
+   "ocrMs": 758.8999999999651,
+   "appearanceMs": 13.399999999965075
   },
   {
    "file": "besley-wrong-brand-28.png",
@@ -2425,9 +2564,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 33433.79999999993,
-   "ocrMs": 816.5999999999767,
-   "appearanceMs": 19.400000000023283
+   "clickToResultMs": 34027.90000000002,
+   "ocrMs": 685.5999999999767,
+   "appearanceMs": 22.20000000001164
   },
   {
    "file": "besley-altered-wording-28.png",
@@ -2475,9 +2614,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 34226.5,
-   "ocrMs": 750.2000000000698,
-   "appearanceMs": 13
+   "clickToResultMs": 34767.29999999999,
+   "ocrMs": 694.2000000000116,
+   "appearanceMs": 12.399999999965075
   },
   {
    "file": "besley-title-case-heading-28.png",
@@ -2525,9 +2664,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 35045.59999999998,
-   "ocrMs": 795.1999999999534,
-   "appearanceMs": 0.09999999997671694
+   "clickToResultMs": 35489,
+   "ocrMs": 697.5,
+   "appearanceMs": 0
   },
   {
    "file": "besley-missing-warning-28.png",
@@ -2575,8 +2714,8 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 35339.29999999993,
-   "ocrMs": 279,
+   "clickToResultMs": 35775.90000000002,
+   "ocrMs": 266.29999999998836,
    "appearanceMs": 0
   },
   {
@@ -2625,9 +2764,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 36183.09999999998,
-   "ocrMs": 804,
-   "appearanceMs": 14.79999999993015
+   "clickToResultMs": 36575.20000000001,
+   "ocrMs": 762.8999999999651,
+   "appearanceMs": 13
   },
   {
    "file": "besley-brand-case-28.png",
@@ -2675,9 +2814,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 36950.69999999995,
-   "ocrMs": 724.4000000000233,
-   "appearanceMs": 15.29999999993015
+   "clickToResultMs": 37275.5,
+   "ocrMs": 661.1000000000349,
+   "appearanceMs": 13.900000000023283
   },
   {
    "file": "besley-fl-oz-28.png",
@@ -2725,9 +2864,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 37678.19999999995,
-   "ocrMs": 677.7999999999302,
-   "appearanceMs": 18.5
+   "clickToResultMs": 38031.29999999999,
+   "ocrMs": 703.0999999999767,
+   "appearanceMs": 15.600000000034925
   },
   {
    "file": "besley-imported-28.png",
@@ -2775,9 +2914,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 38439.5,
-   "ocrMs": 723.5,
-   "appearanceMs": 13.400000000023283
+   "clickToResultMs": 38800.40000000002,
+   "ocrMs": 731.2000000000116,
+   "appearanceMs": 12.699999999953434
   },
   {
    "file": "mulish-valid-28.png",
@@ -2812,22 +2951,24 @@
     },
     {
      "field": "Government warning",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Warning appearance",
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Government warning: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.582399944790254,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 39119.5,
-   "ocrMs": 645,
-   "appearanceMs": 11.5
+   "clickToResultMs": 39529.90000000002,
+   "ocrMs": 689.2000000000116,
+   "appearanceMs": 18.70000000001164
   },
   {
    "file": "mulish-wrong-abv-28.png",
@@ -2862,22 +3003,24 @@
     },
     {
      "field": "Government warning",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Warning appearance",
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Government warning: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.582399944790254,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 39843.79999999993,
-   "ocrMs": 692.4000000000233,
-   "appearanceMs": 11.20000000006985
+   "clickToResultMs": 40237.29999999999,
+   "ocrMs": 673.5999999999767,
+   "appearanceMs": 11.200000000011642
   },
   {
    "file": "mulish-wrong-volume-28.png",
@@ -2912,22 +3055,24 @@
     },
     {
      "field": "Government warning",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Warning appearance",
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Government warning: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.582399944790254,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 40593.29999999993,
-   "ocrMs": 714.5999999999767,
-   "appearanceMs": 12.699999999953434
+   "clickToResultMs": 40919.5,
+   "ocrMs": 648.8999999999651,
+   "appearanceMs": 11.799999999988358
   },
   {
    "file": "mulish-wrong-brand-28.png",
@@ -2962,22 +3107,24 @@
     },
     {
      "field": "Government warning",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Warning appearance",
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Government warning: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.582399944790254,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 41313.79999999993,
-   "ocrMs": 682,
-   "appearanceMs": 11.599999999976717
+   "clickToResultMs": 41601.79999999999,
+   "ocrMs": 649.2999999999884,
+   "appearanceMs": 11.5
   },
   {
    "file": "mulish-altered-wording-28.png",
@@ -3025,9 +3172,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 42020.90000000002,
-   "ocrMs": 668.5999999999767,
-   "appearanceMs": 11.900000000023283
+   "clickToResultMs": 42319.20000000001,
+   "ocrMs": 683.5,
+   "appearanceMs": 11.200000000011642
   },
   {
    "file": "mulish-title-case-heading-28.png",
@@ -3075,8 +3222,8 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 42679.59999999998,
-   "ocrMs": 631.3000000000466,
+   "clickToResultMs": 42943.09999999998,
+   "ocrMs": 601.9000000000233,
    "appearanceMs": 0
   },
   {
@@ -3125,8 +3272,8 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 42975.40000000002,
-   "ocrMs": 275.30000000004657,
+   "clickToResultMs": 43212.29999999999,
+   "ocrMs": 251.10000000003492,
    "appearanceMs": 0
   },
   {
@@ -3162,22 +3309,24 @@
     },
     {
      "field": "Government warning",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Warning appearance",
      "status": "review"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Government warning: expected match, got review"
+   ],
    "browserVerdict": "REVIEW",
    "browserRatio": 0.991825654832231,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 43659.29999999993,
-   "ocrMs": 648.5,
-   "appearanceMs": 10.900000000023283
+   "clickToResultMs": 43869.29999999999,
+   "ocrMs": 621.5,
+   "appearanceMs": 10.800000000046566
   },
   {
    "file": "mulish-brand-case-28.png",
@@ -3212,22 +3361,24 @@
     },
     {
      "field": "Government warning",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Warning appearance",
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Government warning: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.582399944790254,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 44324.79999999993,
-   "ocrMs": 632.2999999999302,
-   "appearanceMs": 11.099999999976717
+   "clickToResultMs": 44546.79999999999,
+   "ocrMs": 639.7000000000116,
+   "appearanceMs": 10.700000000011642
   },
   {
    "file": "mulish-fl-oz-28.png",
@@ -3262,7 +3413,7 @@
     },
     {
      "field": "Government warning",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Warning appearance",
@@ -3270,16 +3421,17 @@
     }
    ],
    "findingErrors": [
-    "Net contents: expected match, got mismatch"
+    "Net contents: expected match, got mismatch",
+    "Government warning: expected match, got review"
    ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.582399944790254,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 45029.19999999995,
-   "ocrMs": 669.9000000000233,
-   "appearanceMs": 12.900000000023283
+   "clickToResultMs": 45215.70000000001,
+   "ocrMs": 631.8999999999651,
+   "appearanceMs": 13.700000000011642
   },
   {
    "file": "mulish-imported-28.png",
@@ -3314,22 +3466,24 @@
     },
     {
      "field": "Government warning",
-     "status": "match"
+     "status": "review"
     },
     {
      "field": "Warning appearance",
      "status": "match"
     }
    ],
-   "findingErrors": [],
+   "findingErrors": [
+    "Government warning: expected match, got review"
+   ],
    "browserVerdict": "MATCH",
    "browserRatio": 1.582399944790254,
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 45707.40000000002,
-   "ocrMs": 643.4000000000233,
-   "appearanceMs": 11.199999999953434
+   "clickToResultMs": 45936,
+   "ocrMs": 685,
+   "appearanceMs": 13.600000000034925
   },
   {
    "file": "arvo-valid-28.png",
@@ -3377,9 +3531,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 46415.90000000002,
-   "ocrMs": 669.5,
-   "appearanceMs": 13.900000000023283
+   "clickToResultMs": 46668.20000000001,
+   "ocrMs": 694.5,
+   "appearanceMs": 12.899999999965075
   },
   {
    "file": "arvo-wrong-abv-28.png",
@@ -3427,9 +3581,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 47126.5,
-   "ocrMs": 673.2999999999302,
-   "appearanceMs": 12.599999999976717
+   "clickToResultMs": 47487.59999999998,
+   "ocrMs": 785.4000000000233,
+   "appearanceMs": 11.899999999965075
   },
   {
    "file": "arvo-wrong-volume-28.png",
@@ -3477,9 +3631,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 47810.40000000002,
-   "ocrMs": 647.2999999999302,
-   "appearanceMs": 13.900000000023283
+   "clickToResultMs": 48301.29999999999,
+   "ocrMs": 763.0999999999767,
+   "appearanceMs": 21.20000000001164
   },
   {
    "file": "arvo-wrong-brand-28.png",
@@ -3527,9 +3681,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 48501.90000000002,
-   "ocrMs": 645,
-   "appearanceMs": 20.099999999976717
+   "clickToResultMs": 49102.79999999999,
+   "ocrMs": 736.5,
+   "appearanceMs": 14.5
   },
   {
    "file": "arvo-altered-wording-28.png",
@@ -3577,9 +3731,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 49178,
-   "ocrMs": 635.5,
-   "appearanceMs": 16.099999999976717
+   "clickToResultMs": 49809.90000000002,
+   "ocrMs": 662.1999999999534,
+   "appearanceMs": 12.700000000011642
   },
   {
    "file": "arvo-title-case-heading-28.png",
@@ -3627,9 +3781,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 49927,
-   "ocrMs": 724.5,
-   "appearanceMs": 0.09999999997671694
+   "clickToResultMs": 50543.40000000002,
+   "ocrMs": 694.3999999999651,
+   "appearanceMs": 0.1000000000349246
   },
   {
    "file": "arvo-missing-warning-28.png",
@@ -3677,8 +3831,8 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 50201,
-   "ocrMs": 259.30000000004657,
+   "clickToResultMs": 50846.5,
+   "ocrMs": 286.20000000001164,
    "appearanceMs": 0
   },
   {
@@ -3727,9 +3881,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 50888.09999999998,
-   "ocrMs": 652.3000000000466,
-   "appearanceMs": 12.29999999993015
+   "clickToResultMs": 51594.20000000001,
+   "ocrMs": 696.4000000000233,
+   "appearanceMs": 17.300000000046566
   },
   {
    "file": "arvo-brand-case-28.png",
@@ -3777,9 +3931,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 51602.90000000002,
-   "ocrMs": 678.1000000000931,
-   "appearanceMs": 11.5
+   "clickToResultMs": 52356.40000000002,
+   "ocrMs": 703.7999999999884,
+   "appearanceMs": 28.900000000023283
   },
   {
    "file": "arvo-fl-oz-28.png",
@@ -3829,9 +3983,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 52378.09999999998,
-   "ocrMs": 725.2999999999302,
-   "appearanceMs": 16.800000000046566
+   "clickToResultMs": 53124.20000000001,
+   "ocrMs": 689.5,
+   "appearanceMs": 20.79999999998836
   },
   {
    "file": "arvo-imported-28.png",
@@ -3879,9 +4033,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 53106.69999999995,
-   "ocrMs": 691.6999999999534,
-   "appearanceMs": 12.800000000046566
+   "clickToResultMs": 53889.09999999998,
+   "ocrMs": 721.7000000000116,
+   "appearanceMs": 12.799999999988358
   },
   {
    "file": "lora-valid-28.png",
@@ -3929,9 +4083,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 53778.69999999995,
-   "ocrMs": 636.2000000000698,
-   "appearanceMs": 12.699999999953434
+   "clickToResultMs": 54586,
+   "ocrMs": 657.0999999999767,
+   "appearanceMs": 16.20000000001164
   },
   {
    "file": "lora-wrong-abv-28.png",
@@ -3979,9 +4133,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 54510.5,
-   "ocrMs": 697,
-   "appearanceMs": 12.5
+   "clickToResultMs": 55350.40000000002,
+   "ocrMs": 727.5999999999767,
+   "appearanceMs": 13.399999999965075
   },
   {
    "file": "lora-wrong-volume-28.png",
@@ -4029,9 +4183,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 55217.79999999993,
-   "ocrMs": 665.2999999999302,
-   "appearanceMs": 17.79999999993015
+   "clickToResultMs": 56034.09999999998,
+   "ocrMs": 644.8000000000466,
+   "appearanceMs": 13
   },
   {
    "file": "lora-wrong-brand-28.png",
@@ -4079,9 +4233,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 55918,
-   "ocrMs": 659,
-   "appearanceMs": 14.300000000046566
+   "clickToResultMs": 56705.59999999998,
+   "ocrMs": 628.8999999999651,
+   "appearanceMs": 17.400000000023283
   },
   {
    "file": "lora-altered-wording-28.png",
@@ -4129,9 +4283,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 56589,
-   "ocrMs": 633.3999999999069,
-   "appearanceMs": 12.300000000046566
+   "clickToResultMs": 57402.59999999998,
+   "ocrMs": 660.6000000000349,
+   "appearanceMs": 12.099999999976717
   },
   {
    "file": "lora-title-case-heading-28.png",
@@ -4179,9 +4333,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 57266,
-   "ocrMs": 652.6999999999534,
-   "appearanceMs": 0.10000000009313226
+   "clickToResultMs": 58085.09999999998,
+   "ocrMs": 657.2000000000116,
+   "appearanceMs": 0
   },
   {
    "file": "lora-missing-warning-28.png",
@@ -4229,8 +4383,8 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 57529.5,
-   "ocrMs": 248.70000000006985,
+   "clickToResultMs": 58402,
+   "ocrMs": 281.79999999998836,
    "appearanceMs": 0
   },
   {
@@ -4279,9 +4433,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 58228.29999999993,
-   "ocrMs": 666.1999999999534,
-   "appearanceMs": 12.5
+   "clickToResultMs": 59125.20000000001,
+   "ocrMs": 683.5,
+   "appearanceMs": 13
   },
   {
    "file": "lora-brand-case-28.png",
@@ -4329,9 +4483,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 58892.40000000002,
-   "ocrMs": 627.3000000000466,
-   "appearanceMs": 12.199999999953434
+   "clickToResultMs": 59790,
+   "ocrMs": 627.0999999999767,
+   "appearanceMs": 12.700000000011642
   },
   {
    "file": "lora-fl-oz-28.png",
@@ -4379,9 +4533,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 59570.79999999993,
-   "ocrMs": 632,
-   "appearanceMs": 15.199999999953434
+   "clickToResultMs": 60504,
+   "ocrMs": 672.5999999999767,
+   "appearanceMs": 13.900000000023283
   },
   {
    "file": "lora-imported-28.png",
@@ -4429,9 +4583,9 @@
    "nodeRatio": null,
    "ratioDelta": null,
    "agrees": null,
-   "clickToResultMs": 60267.09999999998,
-   "ocrMs": 660.8999999999069,
-   "appearanceMs": 12.400000000023283
+   "clickToResultMs": 61245.70000000001,
+   "ocrMs": 701.5999999999767,
+   "appearanceMs": 11.900000000023283
   }
  ],
  "scope": "Built application in headless Chromium on this container; synthetic fixtures; not real-label accuracy."

@@ -53,9 +53,11 @@ function alcoholFinding(declarations, expected) {
   for (const match of text.matchAll(/\b(\d{1,3}(?:\.\d+)?)\s*%/g)) {
     const before = text.slice(Math.max(0, match.index - 15), match.index).split("\n").at(-1);
     const after = text.slice(match.index + match[0].length).split("\n")[0];
+    // "Alc./Vol." is often read as "Ale./Vol." by OCR; a short word followed by "/Vol" still
+    // marks an alcohol declaration, while a bare percentage does not.
     const context =
       /\b(?:alc(?:ohol)?\.?|abv)\s*:?\s*$/i.test(before) ||
-      /^\s*(?:alc(?:ohol)?\b|abv\b|(?:by\s+)?vol\b)/i.test(after);
+      /^\s*(?:alc(?:ohol)?\b|abv\b|(?:by\s+)?vol\b|[a-z]{2,7}\.?\s*\/\s*vol\b)/i.test(after);
     if (context) candidates.push(Number(match[1]));
   }
   const values = unique(candidates);
@@ -186,20 +188,26 @@ export function reviewLabel(rawText, application, layout = null) {
     .slice(warningIndex + heading.length)
     .trimStart()
     .toLowerCase();
-  const warningFound =
-    warningIndex >= 0 &&
-    observedBody.startsWith(body) &&
-    /^(?:\s|$)/.test(observedBody.slice(body.length));
+  const endsCleanly = (prefix) => observedBody.startsWith(prefix) && /^(?:\s|$)/.test(observedBody.slice(prefix.length));
+  const exact = warningIndex >= 0 && endsCleanly(body);
+  // OCR routinely drops a final period at a line end. Every word and every internal mark must
+  // still match; only the trailing period may be absent, and the finding says so.
+  const periodUnread = warningIndex >= 0 && !exact && endsCleanly(body.slice(0, -1));
+  const warningFound = exact || periodUnread;
   results.push(
     entry(
       "Government warning",
       warningFound ? "match" : "review",
-      warningFound
+      exact
         ? "Exact wording and uppercase heading detected"
-        : "Exact wording or uppercase heading not detected",
-      warningFound
+        : periodUnread
+          ? "Exact wording detected; final period not read"
+          : "Exact wording or uppercase heading not detected",
+      exact
         ? "Text check only. The separate appearance check is still required."
-        : "Compare the full reference warning below with the artwork. OCR errors can obscure correct wording.",
+        : periodUnread
+          ? "Every word and internal mark matches; OCR did not read the final period, which is common at a line end. Confirm the period on the artwork. The separate appearance check is still required."
+          : "Compare the full reference warning below with the artwork. OCR errors can obscure correct wording.",
       REQUIRED_WARNING,
     ),
   );
