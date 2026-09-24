@@ -1,6 +1,6 @@
 # Boldness investigation handoff
 
-Updated September 24, 2026. This document summarizes current context; [REQUIREMENTS.md](../REQUIREMENTS.md) remains the canonical attempt ledger. Original product scope is [ASSIGNMENT.md](../ASSIGNMENT.md). Do not recreate RESOLUTIONS.md or replace preserved historical outcomes.
+Updated September 24, 2026 (handover investigation appended below). This document summarizes current context; [REQUIREMENTS.md](../REQUIREMENTS.md) remains the canonical attempt ledger. Original product scope is [ASSIGNMENT.md](../ASSIGNMENT.md). Do not recreate RESOLUTIONS.md or replace preserved historical outcomes.
 
 ## Current state
 
@@ -54,3 +54,7 @@ An experimental browser bicubic resize helper and five pixel-parity fixtures wer
 Historical verification: 94 app tests and build passed before the experimental resize test was added. The intentionally failing R-012 Python regression still records three known errors. Individual helper tests passed where recorded. Do not convert these bounded historical results into a claim that every test or the detector passes today.
 
 Claude review was attempted through the desktop app on September 24, but UI actions did not deliver a verified request or response. The root-cause assessment is Codex's interpretation of repository evidence, not Claude's independent endorsement. No new experiment, model training, runtime change or deployment occurred during this documentation reconciliation.
+
+## Handover investigation, September 24 (later the same day)
+
+An independent review of the repository, evidence and code produced a [decision memo](boldness-decision-memo-2026-09-24.md). Its diagnosis: every detector attempt from R-009 to R-036 tried to recover a *source-weight* label (usWeightClass 400/700) from a heading-only crop, and that label is not a visual property of the crop for heavy-regular faces (Superclarendon 400 stems as thick as Georgia 700 in the R-016 contact sheet; Datatype 400/700 identical outlines; Alfa Slab One's only style is "Regular"). The reviewer and the regulation judge the heading against the remainder of the statement. Two bounded local diagnostics were preregistered and run: R-037 (relative heading-versus-body thickness, integer estimator) failed and identified quantization and a capital-versus-lowercase offset; R-038 (sub-pixel estimator, capitals-only reference, same frozen images) passed its development criterion with the same-face-heavy and bold-body controls correctly rejected. The paired renderer trace proposed above was not run; R-015/R-016/R-017 already cover it and the memo explains why it would not change the decision. The proposed next step, R-039, is OCR-located measurement on full-label fixtures, then integration replacing the cloud call. See REQUIREMENTS.md for the closeouts; no runtime, deployment or reserved-family change occurred.

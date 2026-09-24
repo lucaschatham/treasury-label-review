@@ -8,6 +8,8 @@ All numbered attempts through R-036 are recorded below. No replacement detector 
 
 The strongest supported diagnosis is failed generalization across font families and rendering conditions. R-036 achieved much lower training loss while retaining a near-certain wrong score on Superclarendon regular. Optimization convergence alone is insufficient. Font-relative weight, rendering mismatch and feature loss remain competing explanations, not individually established root causes. Cloud latency is a separate failure mode.
 
+**Handover update, later September 24:** a repository investigation recorded its diagnosis and recommendation in [docs/boldness-decision-memo-2026-09-24.md](docs/boldness-decision-memo-2026-09-24.md) and ran two preregistered local diagnostics, R-037 (failed) and R-038 (capitals-only relative measure passed development), recorded at the end of the attempt history. The paired renderer trace was not run.
+
 The proposed paired renderer trace is **not executed**. R-015, R-016 and R-017 already investigated rendering and representation. Any new trace must first audit those artifacts and identify an unanswered boundary in the current FontDNA pipeline; repeating renderer substitution is not a new experiment. The internal zero-false-approval/95%-recall criterion is an engineering gate, not a numeric requirement in the assignment. It remains unchanged here.
 
 ## UI release verification, September 23, 2026
