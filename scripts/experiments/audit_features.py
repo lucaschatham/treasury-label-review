@@ -1,9 +1,10 @@
-import hashlib,json,sys
+import argparse,hashlib,json,sys
 from pathlib import Path
 import torch,timm,numpy as np
 from PIL import Image,ImageDraw
 from feature_neighbors import rank
-root=Path(__file__).resolve().parents[2];prior=root.parent/'treasury-label-review-mobilenet';out=root/'evidence/r017-features';out.mkdir(exist_ok=False)
+parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,required=True,help='Fresh output directory; existing paths are refused');args=parser.parse_args()
+root=Path(__file__).resolve().parents[2];prior=root.parent/'treasury-label-review-mobilenet';out=args.output;out.mkdir(parents=True,exist_ok=False)
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 mp=prior/'evidence/appearance-mobilenet-inputs-frozen.json';m=json.loads(mp.read_text());qp=root/'evidence/render-diagnostic-r016-corrected/manifest.json';queries=[r for r in json.loads(qp.read_text())['rows'] if r['family'] in ['Arial','Superclarendon']];gallery=[r for r in m['rows'] if r['split']=='train']
 modelpath=root.parent/'treasury-label-review-r012-artifacts/model.pt';assert sha(modelpath)=='62044f837c91a6cd55d223a9f85f540cdac3fe1ceab9ddb1906761a750e2a831'

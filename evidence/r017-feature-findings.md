@@ -17,3 +17,5 @@ A preregistered paired training intervention should test whether adding exposed 
 ## Autoreview corrections
 
 Review of a1b9ba3 found two valid harness issues: unpublished font dependency in the PNG regression and automatic rewriting of tracked replay evidence. The PNG regression now generates a grayscale gradient rather than relying on a private font file. Replay defaults to stdout; writing evidence requires explicit --write-evidence. Focused verification is recorded in goal progress; the detector's expected-behavior suite remains RED by design.
+
+Autoreview follow-up: feature audit now requires an explicit fresh `--output` directory, since committed evidence must never be overwritten. Reproduce with the preserved environment using `python scripts/experiments/audit_features.py --output /tmp/r017-fresh-<unique-id>`. Model/data dependencies remain local as documented.
