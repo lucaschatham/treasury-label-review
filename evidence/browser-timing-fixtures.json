@@ -1,0 +1,261 @@
+{
+ "url": "http://127.0.0.1:4173",
+ "runs": 10,
+ "clickToResultMs": [
+  1022.8000000000466,
+  1096.3000000000466,
+  1105.6000000000931,
+  1118.4000000001397,
+  1119.7000000001863,
+  1119.9000000001397,
+  1131.5,
+  1170.8000000000466,
+  1181.5999999998603,
+  1315.1999999999534
+ ],
+ "maxClickToResultMs": 1315.1999999999534,
+ "environment": "headless Chromium 141.0.7390.37 via Playwright, fresh context per run (uncached), Linux container",
+ "results": [
+  {
+   "run": 1,
+   "fixture": "sumana-h400-b400-20-png",
+   "timings": {
+    "setup": 225.69999999995343,
+    "prepare": 21.199999999953434,
+    "ocr": 753.5,
+    "comparison": 4.199999999953434,
+    "appearance": 15,
+    "render": 2,
+    "total": 796.6999999999534,
+    "clickToResult": 1022.8000000000466,
+    "queue": 0.4000000001396984,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "review",
+    "reason": "not-distinguishable",
+    "ratio": 0.9843553653310249
+   },
+   "errors": [],
+   "summaryText": "sumana-h400-b400-20-png.pngCan't tell if the warning heading is boldNew›"
+  },
+  {
+   "run": 2,
+   "fixture": "sumana-h700-b400-20-png",
+   "timings": {
+    "setup": 193.0999999998603,
+    "prepare": 21.899999999906868,
+    "ocr": 890.6000000000931,
+    "comparison": 4.800000000046566,
+    "appearance": 18,
+    "render": 2,
+    "total": 938,
+    "clickToResult": 1131.5,
+    "queue": 0.4000000001396984,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "match",
+    "reason": "contrast",
+    "ratio": 1.3742137959263894
+   },
+   "errors": [],
+   "summaryText": "sumana-h700-b400-20-png.pngAll 7 checks matchedMachine›"
+  },
+  {
+   "run": 3,
+   "fixture": "sumana-h700-b700-20-png",
+   "timings": {
+    "setup": 223.19999999995343,
+    "prepare": 18.600000000093132,
+    "ocr": 840.9000000001397,
+    "comparison": 3.8999999999068677,
+    "appearance": 15.599999999860302,
+    "render": 1.8999999999068677,
+    "total": 882,
+    "clickToResult": 1105.6000000000931,
+    "queue": 0.4000000001396984,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "review",
+    "reason": "not-distinguishable",
+    "ratio": 0.9604395276588067
+   },
+   "errors": [],
+   "summaryText": "sumana-h700-b700-20-png.pngCan't tell if the warning heading is boldNew›"
+  },
+  {
+   "run": 4,
+   "fixture": "sumana-h400-b400-24-png",
+   "timings": {
+    "setup": 190.80000000004657,
+    "prepare": 25.800000000046566,
+    "ocr": 855.7999999998137,
+    "comparison": 4.100000000093132,
+    "appearance": 17,
+    "render": 1.6999999999534339,
+    "total": 905.0999999998603,
+    "clickToResult": 1096.3000000000466,
+    "queue": 0.4000000001396984,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "review",
+    "reason": "not-distinguishable",
+    "ratio": 0.9783233853175151
+   },
+   "errors": [],
+   "summaryText": "sumana-h400-b400-24-png.pngCan't tell if the warning heading is boldNew›"
+  },
+  {
+   "run": 5,
+   "fixture": "sumana-h700-b400-24-png",
+   "timings": {
+    "setup": 248.10000000009313,
+    "prepare": 21.199999999953434,
+    "ocr": 818.8999999999069,
+    "comparison": 4,
+    "appearance": 23.300000000046566,
+    "render": 2.6000000000931323,
+    "total": 870.9000000001397,
+    "clickToResult": 1119.7000000001863,
+    "queue": 0.6999999999534339,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "match",
+    "reason": "contrast",
+    "ratio": 1.3794360171633624
+   },
+   "errors": [],
+   "summaryText": "sumana-h700-b400-24-png.pngAll 7 checks matchedMachine›"
+  },
+  {
+   "run": 6,
+   "fixture": "sumana-h700-b700-24-png",
+   "timings": {
+    "setup": 237.60000000009313,
+    "prepare": 24.800000000046566,
+    "ocr": 829.0999999998603,
+    "comparison": 4.899999999906868,
+    "appearance": 18.600000000093132,
+    "render": 1.8000000000465661,
+    "total": 880,
+    "clickToResult": 1118.4000000001397,
+    "queue": 0.8000000000465661,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "review",
+    "reason": "not-distinguishable",
+    "ratio": 0.9747204213464596
+   },
+   "errors": [],
+   "summaryText": "sumana-h700-b700-24-png.pngCan't tell if the warning heading is boldNew›"
+  },
+  {
+   "run": 7,
+   "fixture": "sumana-h400-b400-28-png",
+   "timings": {
+    "setup": 230.70000000018626,
+    "prepare": 25.399999999906868,
+    "ocr": 838.6999999999534,
+    "comparison": 3.8999999999068677,
+    "appearance": 18.199999999953434,
+    "render": 1.5,
+    "total": 888.4000000001397,
+    "clickToResult": 1119.9000000001397,
+    "queue": 0.7999999998137355,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "review",
+    "reason": "not-distinguishable",
+    "ratio": 0.9989292874733273
+   },
+   "errors": [],
+   "summaryText": "sumana-h400-b400-28-png.pngCheck government warning against the artwork · +1 moreNew›"
+  },
+  {
+   "run": 8,
+   "fixture": "sumana-h700-b400-28-png",
+   "timings": {
+    "setup": 249.9000000001397,
+    "prepare": 29.9000000001397,
+    "ocr": 861.7999999998137,
+    "comparison": 4.399999999906868,
+    "appearance": 21.5,
+    "render": 2,
+    "total": 920.3999999999069,
+    "clickToResult": 1170.8000000000466,
+    "queue": 0.5,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "match",
+    "reason": "contrast",
+    "ratio": 1.453961346685442
+   },
+   "errors": [],
+   "summaryText": "sumana-h700-b400-28-png.pngCheck government warning against the artworkNew›"
+  },
+  {
+   "run": 9,
+   "fixture": "sumana-h700-b700-28-png",
+   "timings": {
+    "setup": 248.39999999990687,
+    "prepare": 25.5,
+    "ocr": 984.3000000000466,
+    "comparison": 5.899999999906868,
+    "appearance": 47,
+    "render": 2.3999999999068677,
+    "total": 1066.1000000000931,
+    "clickToResult": 1315.1999999999534,
+    "queue": 0.6999999999534339,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "review",
+    "reason": "not-distinguishable",
+    "ratio": 0.9775743396596356
+   },
+   "errors": [],
+   "summaryText": "sumana-h700-b700-28-png.pngCan't tell if the warning heading is boldNew›"
+  },
+  {
+   "run": 10,
+   "fixture": "sumana-h400-b400-28-jpeg",
+   "timings": {
+    "setup": 217.0999999998603,
+    "prepare": 24.199999999953434,
+    "ocr": 911.4000000001397,
+    "comparison": 4.100000000093132,
+    "appearance": 20.9000000001397,
+    "render": 2.5,
+    "total": 964,
+    "clickToResult": 1181.5999999998603,
+    "queue": 0.5,
+    "visibility": "visible",
+    "visibilityEnd": "visible"
+   },
+   "appearance": {
+    "status": "review",
+    "reason": "not-distinguishable",
+    "ratio": 0.9666666666666667
+   },
+   "errors": [],
+   "summaryText": "sumana-h400-b400-28-jpeg.jpgCheck government warning against the artwork · +1 moreNew›"
+  }
+ ],
+ "scope": "Browser click-to-result including OCR initialization on this container; device speed differs elsewhere."
+}
