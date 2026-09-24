@@ -55,7 +55,8 @@ try {
     maxRatioDelta: Math.max(0, ...comparisons.map(c => c.ratioDelta ?? 0)),
     boldMatched: `${comparisons.filter(c => c.expected === 'MATCH' && c.browserVerdict === 'MATCH').length}/${comparisons.filter(c => c.expected === 'MATCH').length}`,
     regularFalse: `${comparisons.filter(c => c.expected === 'REVIEW' && c.browserVerdict === 'MATCH').length}/${comparisons.filter(c => c.expected === 'REVIEW').length}`,
-    lastRowClickToResultMs: Math.max(...comparisons.map(c => c.clickToResultMs ?? 0)), // rows time from the batch click, so the last row equals the batch total errors, comparisons,
+    // Rows time from the batch click, so the last row equals the batch total.
+    lastRowClickToResultMs: Math.max(...comparisons.map(c => c.clickToResultMs ?? 0)), errors, comparisons,
     scope: 'Built application in headless Chromium on this container; synthetic fixtures; not real-label accuracy.' };
   await writeFile(output, JSON.stringify(summary, null, 1));
   console.log(JSON.stringify({ ...summary, comparisons: undefined }, null, 1));
