@@ -1,0 +1,23 @@
+{
+  "experiment": "R-024",
+  "canonicalPolarity": true,
+  "polarityCodeSha256": "4f50176875ec0f765048062b4455d9d035dd89d198f830bad257854b4fd3a3b3",
+  "arm": "canonical",
+  "targetedManifestSha256": "f8ba4edf391cbe59127dc7404e229c884e20556b921de06610bb90e87bb931f0",
+  "excludedEvaluationIds": [],
+  "sourceManifestSha256": "8be07d06783cbcef820dd4c70270b2b69b05ed99e719557235f2dfb56e56fef7",
+  "expandedManifestSha256": "e00d7a381908f1841245e1b2feb8aed681f832ad0b65a1a13f5baa6b7a8282b7",
+  "sourceCheckpointSha256": "46d2c063b18125884c48937afa4c49e18128869e52e8db96df48bf0a4d7ff697",
+  "codeSha256": "abc6bc4a42a8d190bc25216af60e9b478c2afdb2e1dd1b2aa272354c846eb0c0",
+  "seed": 20260923,
+  "steps": 1536,
+  "batchSize": 32,
+  "learningRate": 0.0001,
+  "weightDecay": 0.01,
+  "trainImages": 4288,
+  "trainFamilies": 67,
+  "maxSeconds": 900,
+  "device": "mps",
+  "torch": "2.14.0",
+  "timm": "1.0.30"
+}
