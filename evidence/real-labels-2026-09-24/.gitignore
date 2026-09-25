@@ -1,0 +1,12 @@
+# Commercial artwork has unresolved redistribution rights. Keep source bytes local.
+/images/
+/contact-sheet.jpg
+/review.html
+/field-transcription-candidates.json
+
+/warning-crops/
+/warning-contact-*.jpg
+/warning-prep.json
+/wording-screen.tsv
+/screenshots/
+/annotation-sheet.csv
