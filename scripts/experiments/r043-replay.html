@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><title>R-043 candidate replay</title>
+<script type="module">
+import {weightContrast} from '../../src/weight.js';
+import {referenceSelection,candidateContrast} from './r043-association.mjs';
+window.replayR043=async({base64,blocks,heading})=>{
+  const bitmap=await createImageBitmap(new Blob([Uint8Array.from(atob(base64),c=>c.charCodeAt(0))],{type:'image/png'}));
+  const canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;
+  const ctx=canvas.getContext('2d');ctx.drawImage(bitmap,0,0);bitmap.close();
+  const image=ctx.getImageData(0,0,canvas.width,canvas.height);
+  const baseline=weightContrast(blocks,heading,image);
+  const t=performance.now();const selection=referenceSelection(blocks,heading,image);
+  const candidate=candidateContrast(blocks,heading,image);
+  const measurementMs=performance.now()-t;
+  const selected=selection.capitals.filter(c=>c.box.y1-c.box.y0>=19);
+  ctx.lineWidth=2;
+  if(heading){ctx.strokeStyle='#0088ff';ctx.strokeRect(heading.x0,heading.y0,heading.x1-heading.x0,heading.y1-heading.y0);}
+  for(const c of selected){ctx.strokeStyle='#00bb44';ctx.strokeRect(c.box.x0,c.box.y0,c.box.x1-c.box.x0,c.box.y1-c.box.y0);}
+  return {baseline,candidate,measurementMs,selected,selectionReason:selection.reason,
+    rows:selection.rows.map(row=>row.map(w=>({text:w.text,box:w.bbox}))),
+    wordCount:selection.chain.length,overlayBase64:canvas.toDataURL('image/png').split(',')[1]};
+};
+</script>
