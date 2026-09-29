@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 dist/
 public/ocr/
 .vercel/
@@ -11,3 +11,4 @@ worker/.wrangler/
 worker/.dev.vars
 .gstack/
 __pycache__/
+evidence/r043-local/

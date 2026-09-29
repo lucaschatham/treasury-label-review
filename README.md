@@ -1,6 +1,6 @@
 # Label Review
 
-> **Release status:** this source carries a qualified local warning-heading weight check and no network dependency; it is not yet deployed. Production still runs the September 23 release with the cloud appearance path. See [requirement evidence](REQUIREMENTS.md) and the current-candidate notes below.
+> **Release status, checked September 28, 2026:** the public application serves the September 24 local weight-contrast release, bundle `index-BFitTXDs.js`, recorded at source `5c1a0e6`. R-041's polarity correction is present in this source but has not been promoted. R-043 is an isolated, rejected experiment and is not part of the app runtime. Synthetic qualification does not establish real-label accuracy. See [requirement evidence](REQUIREMENTS.md), [R-043 closeout](evidence/r043-report-2026-09-27.md), and the release record below.
 
 [Application](https://lucaschatham.com/alcohol-by-volume-automated-label-check) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md) · [Attempt history](REQUIREMENTS.md#attempt-history)
 

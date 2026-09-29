@@ -1,0 +1,74 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>R-043 baseline diagnostic</title>
+<script type="module">
+import { createWorker } from 'tesseract.js';
+import { headingBox } from '../../src/appearance.js';
+import { referenceCapitals, weightContrast, backgroundLuminance } from '../../src/weight.js';
+
+window.traceR043 = async ({base64, mime, prepareSource}) => {
+  // Evaluate the verbatim app function; this harness does not maintain a second resize implementation.
+  const prepareImage = (0, eval)(`(${prepareSource})`);
+  const bytes = Uint8Array.from(atob(base64), c => c.charCodeAt(0));
+  const blob = new Blob([bytes], {type: mime});
+  const native = await createImageBitmap(blob);
+  const nativeSize = {width: native.width, height: native.height};
+  native.close();
+  const canvas = await prepareImage(blob);
+  const image = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height);
+  const worker = await createWorker('eng', 1, {
+    workerPath: `${location.origin}/ocr/worker.min.js`,
+    corePath: `${location.origin}/ocr`, langPath: `${location.origin}/ocr`,
+  });
+  await worker.setParameters({tessedit_pageseg_mode: '11'});
+  try {
+    const start = performance.now();
+    const {data} = await worker.recognize(canvas, {}, {text: true, blocks: true});
+    const ocrMs = performance.now() - start;
+    const heading = headingBox(data.blocks, image.width, image.height);
+    const beforeMeasure = performance.now();
+    const result = weightContrast(data.blocks, heading, image);
+    const measureMs = performance.now() - beforeMeasure;
+    const words = (data.blocks || []).flatMap((b, bi) => (b.paragraphs || []).flatMap((p, pi) =>
+      (p.lines || []).flatMap((l, li) => (l.words || []).map((w, wi) => ({
+        block: bi, paragraph: pi, line: li, word: wi, text: w.text, confidence: w.confidence,
+        box: w.bbox, firstSymbol: w.symbols?.[0] ? {text: w.symbols[0].text, confidence: w.symbols[0].confidence, box: w.symbols[0].bbox} : null,
+        symbolCount: w.symbols?.length || 0,
+      })))))
+    const targets = new Set(['according', 'surgeon', 'general', 'consumption']);
+    const valid = b => b && ['x0','x1','y0','y1'].every(k => Number.isInteger(b[k])) &&
+      b.x0 >= 0 && b.y0 >= 0 && b.x1 <= image.width && b.y1 <= image.height && b.x1 > b.x0 && b.y1 > b.y0;
+    const candidates = words.filter(w => targets.has(w.text.replace(/[^A-Za-z]/g, '').toLowerCase())).map(w => {
+      const s = w.firstSymbol;
+      const gates = {
+        'word-confidence': w.confidence >= 80,
+        'word-box': !!valid(w.box),
+        'below-heading': !!heading && w.box.y0 >= heading.y1,
+        'has-symbol': !!s,
+        'symbol-uppercase': !!s && /^[A-Z]$/.test(s.text),
+        'symbol-confidence': !!s && s.confidence >= 80,
+        'symbol-box': !!s && !!valid(s.box),
+        'symbol-inside-word': !!s && s.box.x0 >= w.box.x0 && s.box.x1 <= w.box.x1 && s.box.y0 >= w.box.y0 && s.box.y1 <= w.box.y1,
+        'height-19': !!s && s.box.y1 - s.box.y0 >= 19,
+      };
+      return {...w, gates, rejected: Object.entries(gates).filter(([,passed]) => !passed).map(([name]) => name),
+        passesIgnoringVertical: !!heading && Object.entries(gates).filter(([name]) => name !== 'below-heading').every(([,passed]) => passed)};
+    });
+    const selected = heading ? referenceCapitals(data.blocks, heading, image).filter(c => c.box.y1-c.box.y0 >= 19) : [];
+    // The OCR JSON is replayable evidence, not a new result on regenerated image bytes.
+    window.r043Canvas = canvas;
+    document.body.replaceChildren(canvas);
+    const overlay = document.createElement('canvas');
+    overlay.width = canvas.width; overlay.height = canvas.height;
+    overlay.getContext('2d').drawImage(canvas, 0, 0);
+    const ctx = overlay.getContext('2d'); ctx.lineWidth = 2;
+    const rect = (b, color) => {ctx.strokeStyle = color; ctx.strokeRect(b.x0,b.y0,b.x1-b.x0,b.y1-b.y0);};
+    if (heading) rect(heading, '#0088ff');
+    for (const w of candidates) if (w.firstSymbol?.box) rect(w.firstSymbol.box, w.passesIgnoringVertical ? '#00bb44' : '#ff2222');
+    return {nativeSize, preparedSize: {width: image.width, height: image.height}, heading,
+      result, selected, ringLuminance: heading ? backgroundLuminance(image, heading) : null,
+      candidates, words, text: data.text, blocks: data.blocks, ocrMs, measureMs,
+      preparedBase64: canvas.toDataURL('image/png').split(',')[1], overlayBase64: overlay.toDataURL('image/png').split(',')[1]};
+  } finally {await worker.terminate();}
+};
+</script>

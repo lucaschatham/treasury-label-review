@@ -17,6 +17,15 @@ test("maps each batch image to its own application, including quoted CSV fields"
   assert.equal(jobs[1].application.imported, true);
 });
 
+test("accepts CR-only records and quoted multiline fields", () => {
+  const input = csv.replace("Example, Inc.", 'Example, Inc.\r""Warehouse""')
+    .replace(/\r\n/g, "\r");
+  const applications = parseManifest(input);
+  assert.equal(applications.size, 2);
+  assert.equal(applications.get("a.png").producer, 'Example, Inc.\n"Warehouse"');
+  assert.equal(applications.get("b.png").country, "France");
+});
+
 test("rejects ambiguous, missing, and duplicate batch mappings", () => {
   assert.throws(
     () => parseManifest(csv + "\na.png,Other,Wine,12,750mL,X,false,"),

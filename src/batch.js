@@ -40,7 +40,7 @@ export function parseManifest(text) {
   let row = [],
     cell = "",
     quoted = false;
-  const input = text.replace(/^\uFEFF/, "").replace(/\r\n/g, "\n");
+  const input = text.replace(/^\uFEFF/, "").replace(/\r\n?/g, "\n");
   for (let i = 0; i < input.length; i++) {
     const char = input[i];
     if (char === '"') {
