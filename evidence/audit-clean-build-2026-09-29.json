@@ -1,0 +1,38 @@
+{
+  "recordedAt": "2026-09-29T19:06:27.295909+00:00",
+  "baselineGitRevision": "4e17fe2",
+  "candidate": "Working-tree OCR startup patch plus pinned Playwright audit tooling",
+  "node": "v26.5.0",
+  "npm": "11.17.0",
+  "commands": [
+    "npm ci --no-fund",
+    "npm test",
+    "npm run build",
+    "npm run audit:e2e -- evidence/audit-final.json"
+  ],
+  "result": "All commands exit 0",
+  "tests": {
+    "passed": 87,
+    "failed": 0
+  },
+  "browserWorkflows": {
+    "passed": 9,
+    "failed": 0
+  },
+  "packageLockSha256": "b8c7e0fc4b44626b40b57dfc8d04b5a6112f65033b62a608f9ca729dbc2f94ca",
+  "assets": [
+    {
+      "path": "assets/index-F2kbL9Gr.css",
+      "sha256": "49ef94f3d5806a8da00087270ccee7de742a3938029f2b08f0bb4285437e9056"
+    },
+    {
+      "path": "assets/index-Dzpx1ueF.js",
+      "sha256": "a9d0084d0f733e5a6edf35ba1c3513a716ee3c7e135bd6f8ceb5f89a7e8a2493"
+    },
+    {
+      "path": "assets/exceljs.min-C4q267LY.js",
+      "sha256": "1e8c63a10510927e19db1c2fc28f610232f1b59781b1514381df87b9a089e3cd"
+    }
+  ],
+  "scope": "Fresh dependency installation in a source-only exported directory; modified files copied in before the final install. Historical Python detector experiments are outside npm test. No general classifier accuracy claim."
+}

@@ -1,0 +1,18 @@
+{
+  "recordedAt": "2026-09-29T19:03:16.990Z",
+  "url": "http://127.0.0.1:4185",
+  "browser": "145.0.7632.6",
+  "platform": "darwin arm64",
+  "filter": "OCR model 503",
+  "scope": "Workflow correctness on the sample and controlled inputs; no real-label accuracy claim. Offline case requires assets and worker already loaded.",
+  "checks": [
+    {
+      "name": "OCR model 503 becomes actionable error; reload recovers",
+      "status": "FAIL",
+      "error": "page.waitForFunction: Timeout 15000ms exceeded.",
+      "pageErrors": [
+        "Error: Network error while fetching http://127.0.0.1:4185/ocr/eng.traineddata.gz. Response code: 503"
+      ]
+    }
+  ]
+}

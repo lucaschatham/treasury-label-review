@@ -64,6 +64,10 @@ The [Attempt history](REQUIREMENTS.md#attempt-history) tracks approaches tried, 
 
 ## Verification and reproducibility
 
+For the repeatable browser audit, run `npm ci`, `npx playwright install chromium`, `npm test`, `npm run build`, then `npm run audit:e2e`. The audit starts and closes a local preview server and writes `evidence/audit-latest.json`. It checks real sample OCR, decisions and reset protection, CSV/XLSX association, corrupt-image isolation, upload limits, stop accounting, warm offline operation, mobile layout, and a failed OCR-model download followed by reload recovery. GitHub Actions runs these checks on pull requests and main. Browser checks validate workflows on controlled inputs; they do not establish real-label typography accuracy.
+
+OCR startup failures display an error with reload instructions. Initialization has a 60-second deadline so a missing model cannot leave the interface busy indefinitely. Reload after restoring connectivity; reloading clears this session's images and decisions. The deadline is a recovery bound, not the five-second performance target.
+
 `npm test` covers comparisons, layout fallback, warning exactness, mapping, limits, heading location, the weight-contrast estimator and its abstentions, and the review flow's independence from any network service.
 
 Additional scripts use ImageMagick and installed fonts:

@@ -4,6 +4,7 @@ import { timeStage, finishTiming } from './timing.js';
 import { reviewAppearance } from "./appearance.js";
 import { readLayout, comparisonText } from "./layout.js";
 import { createWorker } from "tesseract.js";
+import { createOcrLoader } from './ocr-startup.js';
 import { createTriage } from "./triage.js";
 import { reviewLabel } from "./review.js";
 import { validateFiles, buildJobs, validateApplication } from "./batch.js";
@@ -80,7 +81,6 @@ function setBusy(busy) {
   dropZone.classList.toggle('disabled',busy);
 }
 let selected = [];
-let workerPromise = null;
 let active = false;
 let stopRequested = false;
 let progressLabel = "";
@@ -172,32 +172,23 @@ stopButton.addEventListener("click", () => {
   stopButton.textContent = "Stopping after the current label…";
 });
 
+const loadWorker = createOcrLoader(createWorker, {
+  workerPath: `${location.origin}/ocr/worker.min.js`,
+  corePath: `${location.origin}/ocr`,
+  langPath: `${location.origin}/ocr`,
+  logger: (message) => {
+    if (active && message.status === "recognizing text")
+      setStatus(
+        `${progressLabel}: ${Math.round(message.progress * 100)}%`,
+        "busy",
+      );
+  },
+});
 function getWorker() {
-  if (!workerPromise) {
-    workerPromise = createWorker("eng", 1, {
-      workerPath: `${location.origin}/ocr/worker.min.js`,
-      corePath: `${location.origin}/ocr`,
-      langPath: `${location.origin}/ocr`,
-      logger: (message) => {
-        if (active && message.status === "recognizing text")
-          setStatus(
-            `${progressLabel}: ${Math.round(message.progress * 100)}%`,
-            "busy",
-          );
-      },
-    })
-      .then(async (worker) => {
-        // Sparse-text segmentation retains large brand headings alongside small warning text.
-        await worker.setParameters({ tessedit_pageseg_mode: "11" });
-        return worker;
-      })
-      .catch((error) => {
-        workerPromise = null;
-        setStatus("OCR setup failed. Review labels will retry.", "error");
-        throw error;
-      });
-  }
-  return workerPromise;
+  return loadWorker().catch(error => {
+    setStatus(error.message, 'error');
+    throw error;
+  });
 }
 
 // Start the same-origin model download while the reviewer enters application data.
