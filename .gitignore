@@ -12,3 +12,6 @@ worker/.dev.vars
 .gstack/
 __pycache__/
 evidence/r043-local/
+
+evidence/r044-local/
+evidence/audit-latest.json
