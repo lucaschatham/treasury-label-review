@@ -28,6 +28,13 @@ async function upload(page,files){await page.locator('#images').setInputFiles(fi
 async function run(name,fn,{mobile=false}={}){
   if(process.env.AUDIT_FILTER && !name.includes(process.env.AUDIT_FILTER))return;
   const context=await browser.newContext({viewport:mobile?{width:390,height:844}:{width:1280,height:900},reducedMotion:'reduce'});
+  if(process.env.AUDIT_COOKIE_FILE){
+    const cookies=(await readFile(process.env.AUDIT_COOKIE_FILE,'utf8')).split('\n').filter(line=>line.includes('\t')).map(line=>{
+      const [domain,,path,secure,expires,name,value]=line.replace(/^#HttpOnly_/,'').split('\t');
+      return {domain,path,secure:secure==='TRUE',expires:Number(expires),name,value};
+    });
+    await context.addCookies(cookies);
+  }
   const page=await context.newPage(),errors=[],requests=[];
   page.on('pageerror',e=>errors.push(e.message));
   context.on('request',r=>requests.push({url:r.url(),method:r.method()}));
