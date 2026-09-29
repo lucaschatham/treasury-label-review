@@ -1,6 +1,6 @@
 # Assignment benchmark and execution checklist
 
-> **Current release, verified September 29, 2026:** source `806f28c`, deployment `dpl_4QkwzA7yW3Yf5V2KbpvHHexHgahz`, bundle `index-DeoXHegv.js`, includes R-041 polarity and the CR-only CSV fix. Fresh anonymous workflow checks and source parity pass. Automated real-label warning verification remains incomplete: the recorded 34-image baseline has 7/33 human-bold headings matched and its ambiguous control at Review. See [audit report](docs/audit-readiness-2026-09-29.md) and [baseline evidence](evidence/audit-real-label-baseline-2026-09-29.json). The new OCR startup repair is pending release verification.
+> **Current release, September 29, 2026:** source `2e8058c`, deployment `dpl_GC9kAsGPU5EBMQuZbf5rZazbieJn`, bundle `index-Dzpx1ueF.js`, includes bounded OCR startup failure recovery. CI, 87 unit tests and nine anonymous production browser scenarios pass. Automated real-label boldness remains incomplete: recorded baseline 7/33 human-bold Matches, ambiguous control at Review. The typography algorithm is unchanged. See [audit report](docs/audit-readiness-2026-09-29.md) and [release evidence](evidence/audit-production-release-2026-09-29.json).
 
 ## Historical investigation handoff, September 24, 2026 (superseded by Path A)
 

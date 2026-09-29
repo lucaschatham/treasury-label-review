@@ -1,6 +1,6 @@
 # Label Review
 
-> **Release status, September 28, 2026:** production now includes R-041’s polarity correction and the CR-only CSV fix, deployed from source `806f28c` as bundle `index-DeoXHegv.js`. Anonymous browser verification passed. R-043 remains an isolated, rejected experiment outside the app runtime. Synthetic qualification does not establish real-label accuracy. See [release evidence](evidence/production-release-2026-09-28.json) and [requirement evidence](REQUIREMENTS.md).
+> **Release status, September 29, 2026:** the OCR startup recovery fix is live from source `2e8058c`, bundle `index-Dzpx1ueF.js`. CI, 87 unit tests, and all nine anonymous production browser scenarios pass. Real-label boldness verification remains incomplete. See [audit report](docs/audit-readiness-2026-09-29.md) and [release evidence](evidence/audit-production-release-2026-09-29.json).
 
 [Application](https://lucaschatham.com/alcohol-by-volume-automated-label-check) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md) · [Attempt history](REQUIREMENTS.md#attempt-history)
 

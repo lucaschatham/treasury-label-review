@@ -1,0 +1,306 @@
+{
+  "recordedAt": "2026-09-29T19:15:40.555399+00:00",
+  "sourceRevision": "2e8058c26143c363f4328a821258be25c6457ef0",
+  "deploymentSourceMetadata": "2e8058c",
+  "verifiedPrHead": "b617bc24fb4e09926be00dce0e246f7805f0a6de",
+  "mainMerge": "614e0f70bba152f81de3fb257a592e71ae87950c",
+  "headDifference": "PR head adds protected-preview cookie support to the audit script; production runtime/build inputs are identical to sourceRevision.",
+  "pullRequest": "https://github.com/lucaschatham/treasury-label-review/pull/5",
+  "projectName": "treasury-label-review",
+  "projectId": "prj_mq5AO5hMT2MhzRFyTKgtm1RrWeRC",
+  "previewDeployment": "dpl_GmGo7EtBgc8Jf7BS7Zb9SSMZaBwo",
+  "productionDeployment": "dpl_GC9kAsGPU5EBMQuZbf5rZazbieJn",
+  "status": 200,
+  "target": "production",
+  "ci": {
+    "conclusion": "success",
+    "headSha": "b617bc24fb4e09926be00dce0e246f7805f0a6de",
+    "jobs": [
+      {
+        "completedAt": "2026-09-29T19:11:42Z",
+        "conclusion": "success",
+        "databaseId": 109573766782,
+        "name": "verify",
+        "startedAt": "2026-09-29T19:10:49Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-09-29T19:10:51Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-09-29T19:10:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:10:53Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 2,
+            "startedAt": "2026-09-29T19:10:51Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:10:55Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "number": 3,
+            "startedAt": "2026-09-29T19:10:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:10:58Z",
+            "conclusion": "success",
+            "name": "Run npm ci",
+            "number": 4,
+            "startedAt": "2026-09-29T19:10:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:10:59Z",
+            "conclusion": "success",
+            "name": "Run npm test",
+            "number": 5,
+            "startedAt": "2026-09-29T19:10:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:11:00Z",
+            "conclusion": "success",
+            "name": "Run npm run build",
+            "number": 6,
+            "startedAt": "2026-09-29T19:10:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:11:21Z",
+            "conclusion": "success",
+            "name": "Run npx playwright install --with-deps chromium",
+            "number": 7,
+            "startedAt": "2026-09-29T19:11:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:11:38Z",
+            "conclusion": "success",
+            "name": "Run npm run audit:e2e",
+            "number": 8,
+            "startedAt": "2026-09-29T19:11:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:11:39Z",
+            "conclusion": "success",
+            "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+            "number": 9,
+            "startedAt": "2026-09-29T19:11:38Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:11:39Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "number": 17,
+            "startedAt": "2026-09-29T19:11:39Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:11:40Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 18,
+            "startedAt": "2026-09-29T19:11:39Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-29T19:11:40Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 19,
+            "startedAt": "2026-09-29T19:11:40Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/lucaschatham/treasury-label-review/actions/runs/36617362618/job/109573766782"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/lucaschatham/treasury-label-review/actions/runs/36617362618"
+  },
+  "bundle": "index-Dzpx1ueF.js",
+  "bundleSha256": "a9d0084d0f733e5a6edf35ba1c3513a716ee3c7e135bd6f8ceb5f89a7e8a2493",
+  "bundleMatchesLocal": true,
+  "noindex": true,
+  "homepageMatchesSavedKnownGood": true,
+  "homepageSha256": "d8addfc9a8643e46e66f2daab646049f431c4a00302346c2098a137b9fed5af5",
+  "homepage": {
+    "url": "https://www.lucaschatham.com/",
+    "images": [
+      {
+        "alt": "Portrait of Lucas Chatham",
+        "loaded": true,
+        "src": "/images/lucas-portrait-clean.jpg"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/brands/imerit-logo.jpg"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/brands/blue-vision-labs-logo.jpg"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/brands/lyft-logo.jpg"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/brands/gymnazo-logo.jpg"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/brands/daybreaker-health-logo.jpg"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/brands/checkfit-logo.jpg"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/brands/monster-fitness-logo.png"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/open-source/nuclear-atlas-radioactive.png"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/side-quests/icons/lab.webp"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/open-source/west-coast-swing-footprints.png"
+      },
+      {
+        "alt": "",
+        "loaded": true,
+        "src": "/images/open-source/remnote-connect-link.png"
+      }
+    ],
+    "links": [
+      {
+        "label": "Skip to content",
+        "href": "#main"
+      },
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Work",
+        "href": "/#work-heading"
+      },
+      {
+        "label": "Side Quests",
+        "href": "/side-quests"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      },
+      {
+        "label": "Work",
+        "href": "/#work-heading"
+      },
+      {
+        "label": "Side Quests",
+        "href": "/side-quests"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      },
+      {
+        "label": "Contact",
+        "href": "mailto:chathamworks@gmail.com?subject=Hard%20problem%3A"
+      },
+      {
+        "label": "iMeritBuilt Ground Control, an enterprise AI operations platform that made quality, throughput, governance, and exceptions visible across 6,000+ annotators, 20+ tools, and five time zones.2022-2024",
+        "href": "/projects/imerit"
+      },
+      {
+        "label": "\u2192Blue Vision Labs (acq'd by Lyft)Scaled computer-vision data ingestion and mapping operations from 3 cities \u2192 2 countries, helping produce a major public autonomous-vehicle street-mapping dataset before Lyft acquired the company.2018-2019",
+        "href": "/projects/blue-vision-labs-lyft"
+      },
+      {
+        "label": "GymnazoHelped turn expert movement coaching into repeatable products, curriculum, and sales systems tied to 209% year-over-year growth, 3,500+ customers, and demand for a third location.2013-2016",
+        "href": "/projects/gymnazo"
+      },
+      {
+        "label": "Daybreaker HealthFounded a diagnostics-driven longevity company that turns fragmented health data into protocols, coaching workflows, and measurable retesting loops.2023-2026",
+        "href": "/projects/daybreaker-health"
+      },
+      {
+        "label": "CheckFitFounded an AI movement coach that turns goals, recovery, nutrition, pain, constraints, and schedule changes into adaptive training decisions.2024-2025",
+        "href": "/projects/checkfit"
+      },
+      {
+        "label": "Monster FitnessScaled a six-agent sales team, wrote the playbook, and helped drive 3\u00d7 annual revenue while NPS improved from 31 \u2192 68.2009-2013",
+        "href": "/projects/monster-fitness"
+      },
+      {
+        "label": "Nuclear AtlasOpen DataNuclear EnergyNuclear Atlas brings scattered nuclear industry facts into one searchable map. Each claim links back to its source so people can check the evidence themselves.MIT",
+        "href": "https://github.com/lucaschatham/nuclear-atlas"
+      },
+      {
+        "label": "Independent Ehlers-Danlos Research CollaborativeRare DiseaseAI ResearchThis public research plan brings patient experience and expert review together to study why Ehlers-Danlos syndrome affects people so differently. It proposes an AI-assisted dataset and evidence navigator that show their sources, uncertainty, and review status.Public Plan",
+        "href": "https://github.com/lucaschatham/independent-eds-research-collaborative"
+      },
+      {
+        "label": "Operation Learn West Coast SwingOpen CurriculumDanceThis is a free, structured guide for learning West Coast Swing, plus a dataset of moves and teaching materials. Every visual links to where it came from, so learners and teachers can verify and improve it.CC BY-SA 4.0",
+        "href": "https://github.com/lucaschatham/operation-learn-west-coast-swing"
+      },
+      {
+        "label": "RemNote ConnectLocal FirstLearningRemNote Connect lets other tools talk to your notes without sending them to someone else\u2019s server. That means you can use scripts, terminal commands, or AI helpers while your data stays on your computer.MIT",
+        "href": "https://github.com/lucaschatham/remnoteconnect"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:chathamworks@gmail.com?subject=Hard%20problem%3A"
+      },
+      {
+        "label": "LinkedIn\u2197",
+        "href": "https://www.linkedin.com/in/lucaschatham/"
+      },
+      {
+        "label": "GitHub\u2197",
+        "href": "https://github.com/lucaschatham"
+      },
+      {
+        "label": "Newsletter\u2197",
+        "href": "https://levelwithlucas.lucaschatham.com/subscribe"
+      },
+      {
+        "label": "",
+        "href": "https://x.com/lukeoutthebox"
+      }
+    ]
+  },
+  "verificationNote": "Initial immediate before-check used curl without following the www redirect and saved its 15-byte redirect body. Corrected comparison follows redirects and matches the saved September 29 known-good homepage byte-for-byte.",
+  "scope": [
+    "OCR startup failure recovery only; typography algorithm unchanged",
+    "87 unit tests; 9 protected-preview and 9 anonymous-production browser scenarios pass",
+    "Boldness accuracy and documented resource-bound limitations remain open"
+  ],
+  "deploymentReadyState": "READY"
+}
