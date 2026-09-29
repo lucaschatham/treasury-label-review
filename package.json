@@ -11,7 +11,8 @@
     "predev": "node scripts/copy-ocr-assets.js",
     "dev": "vite",
     "build": "node scripts/copy-ocr-assets.js && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "audit:e2e": "node scripts/qa/run-audit.mjs"
   },
   "dependencies": {
     "@tesseract.js-data/eng": "1.0.0",
@@ -19,6 +20,7 @@
     "tesseract.js": "7.0.0"
   },
   "devDependencies": {
+    "playwright": "1.58.2",
     "vite": "8.3.0"
   },
   "overrides": {

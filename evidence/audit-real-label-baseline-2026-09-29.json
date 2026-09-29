@@ -1,0 +1,2833 @@
+{
+  "provenance": {
+    "id": "R-044 current baseline",
+    "sourceCommit": "95d2b11b6d800616321dd91ee4ab9e4b52db3a70",
+    "sourceDir": "/Users/HQ/Projects/lucaschatham.com/treasury-label-review-release-20260924/evidence/real-labels-2026-09-24",
+    "created": "2026-09-29T05:54:40.140Z",
+    "codeHashes": {
+      "src/main.js": "422b4fa4f94b62a3813bf6004c469031512a55a9ab224e9235d8ccc88bc849ff",
+      "src/appearance.js": "6419d28b85b4fbc1227ce01bfd073c8cd8e8b745f07fb6f983f165ad377b6ae5",
+      "src/weight.js": "704a93ca8f6cd29ac2d49f26f67952965d08f4516147310a77b550194b845b87",
+      "scripts/experiments/r043-harness.html": "a27cfb0279316704b2b1899fc8aae8c13385c60324a5fd146289d3a0a4b43cc3",
+      "scripts/experiments/r043-trace.mjs": "64f98e4cb2f923df1852b148c4c7394da5094b8f10fb640e350ab8860f9f5ab5"
+    },
+    "ocrAssetHashes": {
+      "eng.traineddata.gz": "45b4cb346724ac1774f1c36f42f182b887bcdb28ebe63e6fff90ac41f3fcff91",
+      "tesseract-core-lstm.wasm": "66b17df6e20c5329a17ffa9c202a47eaa3e32500b253d4c7f38e7f2bc01457c3",
+      "tesseract-core-lstm.wasm.js": "eef5f8b2f8e20e150680b20adaec4a60babafee3adbe8a94583c81fee46e8680",
+      "tesseract-core-relaxedsimd-lstm.wasm": "7985c92d4c64e7267d24cadffe1b2a1da6bf8aa55fdcaf953fe94fe122a24545",
+      "tesseract-core-relaxedsimd-lstm.wasm.js": "861a536cf9ef8e63cb644d57bab39c388f37f7d6b6f60024b741c5f6b39a59b3",
+      "tesseract-core-relaxedsimd.wasm": "45f8c9b516df326b6ae6b493ed3a6289df5cbd10490e7b6ff8bf5b12ea42d1da",
+      "tesseract-core-relaxedsimd.wasm.js": "843074aa5bad1cc6421b74a86201768ced9f244795e4d81435435a61a40ce535",
+      "tesseract-core-simd-lstm.wasm": "34e8d50cac216427d86bf397d610fdd9f49492539bbcdfbfccc4eda20c810bea",
+      "tesseract-core-simd-lstm.wasm.js": "c58b46a4c796c0b8afccf77591d5b875b6896b45d402bbce8caa6f5362447b38",
+      "tesseract-core-simd.wasm": "7d237a13edfeb0fa2f104744fccde0a00e0c076c3e23b7a8fc7af75ec9af2c3e",
+      "tesseract-core-simd.wasm.js": "6b61ef4e911b5cf57e656bbfe983d6e2b3711a02dd164154ddda064566e8e09d",
+      "tesseract-core.wasm": "c7f5ace62ac0ad065e71e9c6725f1d7cdf82e7eda8fba532cbb9563964da7098",
+      "tesseract-core.wasm.js": "0bc6ce3e5fbbd0cd89706cf2fd70960e3372f4f01ee24265b26990808aaeb286",
+      "worker.min.js": "576b7df7e3393e137e51849357c9adb53fe7ac1bb69bfa06cf3d61520f182c6d"
+    },
+    "prepareSourceSha256": "d0120ad517490d1d8c59a6439f238075e243831b3b86116c488118aea5dbc52c",
+    "runtime": "v26.5.0",
+    "platform": "darwin",
+    "scope": "Unchanged baseline in Chromium; diagnostic stage times exclude worker initialization and are not application click-to-result. No candidate or new accuracy qualification."
+  },
+  "completed": 34,
+  "rows": [
+    {
+      "id": "cola-22339001000194-01",
+      "heading": {
+        "x0": 91,
+        "y0": 650,
+        "x1": 411,
+        "y1": 684
+      },
+      "result": {
+        "supportsBold": true,
+        "ratio": 1.3886331164755246,
+        "headingThickness": 4.052756309509277,
+        "referenceThickness": 1.6309387683868408,
+        "headingCap": 34,
+        "referenceCap": 19,
+        "capitals": "SGC",
+        "polarity": "light-on-dark",
+        "reason": "contrast"
+      },
+      "selected": [
+        {
+          "text": "S",
+          "box": {
+            "x0": 260,
+            "y0": 696,
+            "x1": 268,
+            "y1": 715
+          }
+        },
+        {
+          "text": "G",
+          "box": {
+            "x0": 338,
+            "y0": 697,
+            "x1": 347,
+            "y1": 716
+          }
+        },
+        {
+          "text": "C",
+          "box": {
+            "x0": 311,
+            "y0": 797,
+            "x1": 319,
+            "y1": 816
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 260,
+            "y0": 696,
+            "x1": 268,
+            "y1": 715
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 338,
+            "y0": 697,
+            "x1": 347,
+            "y1": 716
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 311,
+            "y0": 797,
+            "x1": 319,
+            "y1": 816
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 50,
+          "symbolConfidence": 99,
+          "capHeight": 18,
+          "rejected": [
+            "word-confidence",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 1200,
+        "height": 1600
+      },
+      "preparedSize": {
+        "width": 1200,
+        "height": 1600
+      },
+      "ocrMs": 1609.5,
+      "measureMs": 3.5
+    },
+    {
+      "id": "cola-23054001000947-01",
+      "heading": null,
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "(GENERAL.",
+          "wordConfidence": 66,
+          "symbolConfidence": 95,
+          "capHeight": 8,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "symbol-uppercase",
+            "height-19"
+          ]
+        },
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 44,
+          "symbolConfidence": 99,
+          "capHeight": 9,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 9,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 1475,
+        "height": 602
+      },
+      "preparedSize": {
+        "width": 1475,
+        "height": 602
+      },
+      "ocrMs": 1085.0999999940395,
+      "measureMs": 0
+    },
+    {
+      "id": "cola-23054001000950-01",
+      "heading": {
+        "x0": 91,
+        "y0": 650,
+        "x1": 411,
+        "y1": 684
+      },
+      "result": {
+        "supportsBold": true,
+        "ratio": 1.3886331164755246,
+        "headingThickness": 4.052756309509277,
+        "referenceThickness": 1.6309387683868408,
+        "headingCap": 34,
+        "referenceCap": 19,
+        "capitals": "SGC",
+        "polarity": "light-on-dark",
+        "reason": "contrast"
+      },
+      "selected": [
+        {
+          "text": "S",
+          "box": {
+            "x0": 260,
+            "y0": 696,
+            "x1": 268,
+            "y1": 715
+          }
+        },
+        {
+          "text": "G",
+          "box": {
+            "x0": 338,
+            "y0": 697,
+            "x1": 347,
+            "y1": 716
+          }
+        },
+        {
+          "text": "C",
+          "box": {
+            "x0": 311,
+            "y0": 797,
+            "x1": 319,
+            "y1": 816
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 260,
+            "y0": 696,
+            "x1": 268,
+            "y1": 715
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 338,
+            "y0": 697,
+            "x1": 347,
+            "y1": 716
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 311,
+            "y0": 797,
+            "x1": 319,
+            "y1": 816
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 50,
+          "symbolConfidence": 99,
+          "capHeight": 18,
+          "rejected": [
+            "word-confidence",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 1200,
+        "height": 1600
+      },
+      "preparedSize": {
+        "width": 1200,
+        "height": 1600
+      },
+      "ocrMs": 1611.1000000089407,
+      "measureMs": 3.5
+    },
+    {
+      "id": "cola-23296001000347-01",
+      "heading": {
+        "x0": 91,
+        "y0": 650,
+        "x1": 411,
+        "y1": 684
+      },
+      "result": {
+        "supportsBold": true,
+        "ratio": 1.3886331164755246,
+        "headingThickness": 4.052756309509277,
+        "referenceThickness": 1.6309387683868408,
+        "headingCap": 34,
+        "referenceCap": 19,
+        "capitals": "SGC",
+        "polarity": "light-on-dark",
+        "reason": "contrast"
+      },
+      "selected": [
+        {
+          "text": "S",
+          "box": {
+            "x0": 260,
+            "y0": 696,
+            "x1": 268,
+            "y1": 715
+          }
+        },
+        {
+          "text": "G",
+          "box": {
+            "x0": 338,
+            "y0": 697,
+            "x1": 347,
+            "y1": 716
+          }
+        },
+        {
+          "text": "C",
+          "box": {
+            "x0": 311,
+            "y0": 797,
+            "x1": 319,
+            "y1": 816
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 260,
+            "y0": 696,
+            "x1": 268,
+            "y1": 715
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 338,
+            "y0": 697,
+            "x1": 347,
+            "y1": 716
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 311,
+            "y0": 797,
+            "x1": 319,
+            "y1": 816
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 50,
+          "symbolConfidence": 99,
+          "capHeight": 18,
+          "rejected": [
+            "word-confidence",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 1200,
+        "height": 1600
+      },
+      "preparedSize": {
+        "width": 1200,
+        "height": 1600
+      },
+      "ocrMs": 1609,
+      "measureMs": 4
+    },
+    {
+      "id": "cola-23296001000366-01",
+      "heading": {
+        "x0": 91,
+        "y0": 650,
+        "x1": 411,
+        "y1": 684
+      },
+      "result": {
+        "supportsBold": true,
+        "ratio": 1.3886331164755246,
+        "headingThickness": 4.052756309509277,
+        "referenceThickness": 1.6309387683868408,
+        "headingCap": 34,
+        "referenceCap": 19,
+        "capitals": "SGC",
+        "polarity": "light-on-dark",
+        "reason": "contrast"
+      },
+      "selected": [
+        {
+          "text": "S",
+          "box": {
+            "x0": 260,
+            "y0": 696,
+            "x1": 268,
+            "y1": 715
+          }
+        },
+        {
+          "text": "G",
+          "box": {
+            "x0": 338,
+            "y0": 697,
+            "x1": 347,
+            "y1": 716
+          }
+        },
+        {
+          "text": "C",
+          "box": {
+            "x0": 311,
+            "y0": 797,
+            "x1": 319,
+            "y1": 816
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 260,
+            "y0": 696,
+            "x1": 268,
+            "y1": 715
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 338,
+            "y0": 697,
+            "x1": 347,
+            "y1": 716
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 311,
+            "y0": 797,
+            "x1": 319,
+            "y1": 816
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 50,
+          "symbolConfidence": 99,
+          "capHeight": 18,
+          "rejected": [
+            "word-confidence",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 1200,
+        "height": 1600
+      },
+      "preparedSize": {
+        "width": 1200,
+        "height": 1600
+      },
+      "ocrMs": 1683.7999999970198,
+      "measureMs": 3.7000000029802322
+    },
+    {
+      "id": "cola-26199001000065-02",
+      "heading": {
+        "x0": 30,
+        "y0": 131,
+        "x1": 155,
+        "y1": 146
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 92,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 90,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 14,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 92,
+          "symbolConfidence": 99,
+          "capHeight": 14,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 460,
+        "height": 557
+      },
+      "preparedSize": {
+        "width": 460,
+        "height": 557
+      },
+      "ocrMs": 579.5,
+      "measureMs": 0.09999999403953552
+    },
+    {
+      "id": "cola-26202001000840-01",
+      "heading": {
+        "x0": 27,
+        "y0": 417,
+        "x1": 200,
+        "y1": 444
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "reference-not-located"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [
+        {
+          "text": "ACCORDING",
+          "box": {
+            "x0": 230,
+            "y0": 420,
+            "x1": 237,
+            "y1": 444
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 421,
+            "y0": 420,
+            "x1": 428,
+            "y1": 445
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 89,
+          "symbolConfidence": 99,
+          "capHeight": 24,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 29,
+          "symbolConfidence": 99,
+          "capHeight": 25,
+          "rejected": [
+            "word-confidence",
+            "below-heading"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 92,
+          "symbolConfidence": 99,
+          "capHeight": 25,
+          "rejected": [
+            "below-heading"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 770,
+        "height": 888
+      },
+      "preparedSize": {
+        "width": 770,
+        "height": 888
+      },
+      "ocrMs": 724.2999999970198,
+      "measureMs": 0.20000000298023224
+    },
+    {
+      "id": "cola-26205001000390-01",
+      "heading": {
+        "x0": 15,
+        "y0": 329,
+        "x1": 376,
+        "y1": 352
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "reference-not-located"
+      },
+      "selected": [
+        {
+          "text": "S",
+          "box": {
+            "x0": 245,
+            "y0": 365,
+            "x1": 260,
+            "y1": 384
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "Surgeon",
+          "box": {
+            "x0": 245,
+            "y0": 365,
+            "x1": 260,
+            "y1": 384
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "Consumption",
+          "wordConfidence": 76,
+          "symbolConfidence": 96,
+          "capHeight": 24,
+          "rejected": [
+            "word-confidence"
+          ]
+        },
+        {
+          "text": "According",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 17,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "Surgeon",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 19,
+          "rejected": []
+        },
+        {
+          "text": "General,",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 18,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 1540,
+        "height": 1021
+      },
+      "preparedSize": {
+        "width": 1540,
+        "height": 1021
+      },
+      "ocrMs": 1241.4000000059605,
+      "measureMs": 0.30000001192092896
+    },
+    {
+      "id": "cola-26216001000317-02",
+      "heading": {
+        "x0": 39,
+        "y0": 611,
+        "x1": 338,
+        "y1": 631
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "reference-not-located"
+      },
+      "selected": [
+        {
+          "text": "C",
+          "box": {
+            "x0": 259,
+            "y0": 668,
+            "x1": 266,
+            "y1": 689
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "According",
+          "box": {
+            "x0": 384,
+            "y0": 610,
+            "x1": 394,
+            "y1": 631
+          }
+        },
+        {
+          "text": "Surgeon",
+          "box": {
+            "x0": 534,
+            "y0": 610,
+            "x1": 540,
+            "y1": 631
+          }
+        },
+        {
+          "text": "General,",
+          "box": {
+            "x0": 609,
+            "y0": 610,
+            "x1": 618,
+            "y1": 631
+          }
+        },
+        {
+          "text": "Consumption",
+          "box": {
+            "x0": 259,
+            "y0": 668,
+            "x1": 266,
+            "y1": 689
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "According",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 21,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "Surgeon",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 21,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "General,",
+          "wordConfidence": 92,
+          "symbolConfidence": 99,
+          "capHeight": 21,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "Consumption",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 21,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 713,
+        "height": 826
+      },
+      "preparedSize": {
+        "width": 713,
+        "height": 826
+      },
+      "ocrMs": 829.4000000059605,
+      "measureMs": 0.29999999701976776
+    },
+    {
+      "id": "cola-26218001000008-02",
+      "heading": {
+        "x0": 57,
+        "y0": 478,
+        "x1": 251,
+        "y1": 517
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "reference-not-located"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [
+        {
+          "text": "ACCORDING",
+          "box": {
+            "x0": 276,
+            "y0": 482,
+            "x1": 285,
+            "y1": 505
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 495,
+            "y0": 482,
+            "x1": 504,
+            "y1": 505
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 662,
+            "y0": 510,
+            "x1": 670,
+            "y1": 533
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 93,
+          "symbolConfidence": 99,
+          "capHeight": 23,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 19,
+          "symbolConfidence": 99,
+          "capHeight": 23,
+          "rejected": [
+            "word-confidence",
+            "below-heading"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 23,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 92,
+          "symbolConfidence": 98,
+          "capHeight": 23,
+          "rejected": [
+            "below-heading"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 941,
+        "height": 797
+      },
+      "preparedSize": {
+        "width": 941,
+        "height": 797
+      },
+      "ocrMs": 359.5,
+      "measureMs": 0.30000001192092896
+    },
+    {
+      "id": "cola-26222001000694-01",
+      "heading": {
+        "x0": 44,
+        "y0": 273,
+        "x1": 496,
+        "y1": 300
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "reference-not-located"
+      },
+      "selected": [
+        {
+          "text": "C",
+          "box": {
+            "x0": 573,
+            "y0": 364,
+            "x1": 592,
+            "y1": 388
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "According",
+          "box": {
+            "x0": 572,
+            "y0": 274,
+            "x1": 596,
+            "y1": 299
+          }
+        },
+        {
+          "text": "Surgeon",
+          "box": {
+            "x0": 823,
+            "y0": 274,
+            "x1": 840,
+            "y1": 300
+          }
+        },
+        {
+          "text": "General,",
+          "box": {
+            "x0": 949,
+            "y0": 274,
+            "x1": 972,
+            "y1": 300
+          }
+        },
+        {
+          "text": "Consumption",
+          "box": {
+            "x0": 573,
+            "y0": 364,
+            "x1": 592,
+            "y1": 388
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "According",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 25,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "Surgeon",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 26,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "General,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 26,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "Consumption",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 24,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 1635,
+        "height": 962
+      },
+      "preparedSize": {
+        "width": 1635,
+        "height": 962
+      },
+      "ocrMs": 1323.3999999910593,
+      "measureMs": 0.29999999701976776
+    },
+    {
+      "id": "cola-26226001000481-01",
+      "heading": {
+        "x0": 24,
+        "y0": 483,
+        "x1": 199,
+        "y1": 497
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 14,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 80,
+          "symbolConfidence": 99,
+          "capHeight": 14,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 555,
+        "height": 738
+      },
+      "preparedSize": {
+        "width": 555,
+        "height": 738
+      },
+      "ocrMs": 612.2000000029802,
+      "measureMs": 0.19999998807907104
+    },
+    {
+      "id": "cola-26228001000039-01",
+      "heading": {
+        "x0": 433,
+        "y0": 184,
+        "x1": 581,
+        "y1": 197
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 16,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 89,
+          "symbolConfidence": 98,
+          "capHeight": 13,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 13,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 788,
+        "height": 581
+      },
+      "preparedSize": {
+        "width": 788,
+        "height": 581
+      },
+      "ocrMs": 681.2000000029802,
+      "measureMs": 0
+    },
+    {
+      "id": "cola-26232001000090-02",
+      "heading": {
+        "x0": 20,
+        "y0": 164,
+        "x1": 364,
+        "y1": 183
+      },
+      "result": {
+        "supportsBold": true,
+        "ratio": 1.5398806041021003,
+        "headingThickness": 3.2006454467773438,
+        "referenceThickness": 2.187897205352783,
+        "headingCap": 19,
+        "referenceCap": 20,
+        "capitals": "ASGC",
+        "polarity": "dark-on-light",
+        "reason": "contrast"
+      },
+      "selected": [
+        {
+          "text": "A",
+          "box": {
+            "x0": 57,
+            "y0": 193,
+            "x1": 73,
+            "y1": 213
+          }
+        },
+        {
+          "text": "S",
+          "box": {
+            "x0": 310,
+            "y0": 193,
+            "x1": 340,
+            "y1": 213
+          }
+        },
+        {
+          "text": "G",
+          "box": {
+            "x0": 437,
+            "y0": 193,
+            "x1": 454,
+            "y1": 213
+          }
+        },
+        {
+          "text": "C",
+          "box": {
+            "x0": 177,
+            "y0": 251,
+            "x1": 212,
+            "y1": 271
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "ACCORDING",
+          "box": {
+            "x0": 57,
+            "y0": 193,
+            "x1": 73,
+            "y1": 213
+          }
+        },
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 310,
+            "y0": 193,
+            "x1": 340,
+            "y1": 213
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 437,
+            "y0": 193,
+            "x1": 454,
+            "y1": 213
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 177,
+            "y0": 251,
+            "x1": 212,
+            "y1": 271
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 1001,
+        "height": 352
+      },
+      "preparedSize": {
+        "width": 1001,
+        "height": 352
+      },
+      "ocrMs": 651.6000000089407,
+      "measureMs": 3.2000000029802322
+    },
+    {
+      "id": "cola-26233001000025-01",
+      "heading": {
+        "x0": 27,
+        "y0": 723,
+        "x1": 239,
+        "y1": 736
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 12,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 12,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 12,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 12,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 542,
+        "height": 894
+      },
+      "preparedSize": {
+        "width": 542,
+        "height": 894
+      },
+      "ocrMs": 933.9000000059605,
+      "measureMs": 0.09999999403953552
+    },
+    {
+      "id": "cola-26233001000026-02",
+      "heading": {
+        "x0": 16,
+        "y0": 735,
+        "x1": 235,
+        "y1": 749
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 13,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 13,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 13,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 13,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 536,
+        "height": 896
+      },
+      "preparedSize": {
+        "width": 536,
+        "height": 896
+      },
+      "ocrMs": 927.2999999970198,
+      "measureMs": 0
+    },
+    {
+      "id": "cola-26233001000352-02",
+      "heading": {
+        "x0": 102,
+        "y0": 709,
+        "x1": 424,
+        "y1": 751
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "reference-not-located"
+      },
+      "selected": [
+        {
+          "text": "C",
+          "box": {
+            "x0": 385,
+            "y0": 823,
+            "x1": 396,
+            "y1": 848
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "ACCORDING",
+          "box": {
+            "x0": 486,
+            "y0": 714,
+            "x1": 498,
+            "y1": 738
+          }
+        },
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 102,
+            "y0": 750,
+            "x1": 112,
+            "y1": 775
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 205,
+            "y0": 750,
+            "x1": 216,
+            "y1": 775
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 385,
+            "y0": 823,
+            "x1": 396,
+            "y1": 848
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 24,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 25,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 25,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 25,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 979,
+        "height": 1032
+      },
+      "preparedSize": {
+        "width": 979,
+        "height": 1032
+      },
+      "ocrMs": 1488.2000000029802,
+      "measureMs": 0.20000000298023224
+    },
+    {
+      "id": "cola-26233001000600-02",
+      "heading": null,
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 73,
+          "symbolConfidence": 97,
+          "capHeight": 9,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL",
+          "wordConfidence": 75,
+          "symbolConfidence": 96,
+          "capHeight": 9,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 61,
+          "symbolConfidence": 97,
+          "capHeight": 9,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 290,
+        "height": 450
+      },
+      "preparedSize": {
+        "width": 290,
+        "height": 450
+      },
+      "ocrMs": 459.70000000298023,
+      "measureMs": 0
+    },
+    {
+      "id": "cola-26233001000603-02",
+      "heading": null,
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 73,
+          "symbolConfidence": 99,
+          "capHeight": 10,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 81,
+          "symbolConfidence": 99,
+          "capHeight": 8,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL",
+          "wordConfidence": 85,
+          "symbolConfidence": 97,
+          "capHeight": 9,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 58,
+          "symbolConfidence": 96,
+          "capHeight": 9,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 291,
+        "height": 450
+      },
+      "preparedSize": {
+        "width": 291,
+        "height": 450
+      },
+      "ocrMs": 450.79999999701977,
+      "measureMs": 0
+    },
+    {
+      "id": "cola-26237001000144-01",
+      "heading": {
+        "x0": 87,
+        "y0": 1276,
+        "x1": 652,
+        "y1": 1307
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": 1.0318059029927924,
+        "headingThickness": 7.505882263183594,
+        "referenceThickness": 7.274509906768799,
+        "headingCap": 31,
+        "referenceCap": 31,
+        "capitals": "SGC",
+        "polarity": "dark-on-light",
+        "reason": "not-distinguishable"
+      },
+      "selected": [
+        {
+          "text": "S",
+          "box": {
+            "x0": 80,
+            "y0": 1324,
+            "x1": 103,
+            "y1": 1355
+          }
+        },
+        {
+          "text": "G",
+          "box": {
+            "x0": 315,
+            "y0": 1324,
+            "x1": 343,
+            "y1": 1355
+          }
+        },
+        {
+          "text": "C",
+          "box": {
+            "x0": 56,
+            "y0": 1468,
+            "x1": 81,
+            "y1": 1499
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "ACCORDING",
+          "box": {
+            "x0": 750,
+            "y0": 1276,
+            "x1": 781,
+            "y1": 1306
+          }
+        },
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 80,
+            "y0": 1324,
+            "x1": 103,
+            "y1": 1355
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 315,
+            "y0": 1324,
+            "x1": 343,
+            "y1": 1355
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 56,
+            "y0": 1468,
+            "x1": 81,
+            "y1": 1499
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 30,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 31,
+          "rejected": []
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 31,
+          "rejected": []
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 31,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 2160,
+        "height": 3024
+      },
+      "preparedSize": {
+        "width": 1286,
+        "height": 1800
+      },
+      "ocrMs": 818.9000000059605,
+      "measureMs": 5.5999999940395355
+    },
+    {
+      "id": "cola-26237001000168-02",
+      "heading": {
+        "x0": 19,
+        "y0": 145,
+        "x1": 363,
+        "y1": 164
+      },
+      "result": {
+        "supportsBold": true,
+        "ratio": 1.4824380133459187,
+        "headingThickness": 3.4126415252685547,
+        "referenceThickness": 2.4232070446014404,
+        "headingCap": 19,
+        "referenceCap": 20,
+        "capitals": "ASGC",
+        "polarity": "dark-on-light",
+        "reason": "contrast"
+      },
+      "selected": [
+        {
+          "text": "A",
+          "box": {
+            "x0": 56,
+            "y0": 174,
+            "x1": 73,
+            "y1": 194
+          }
+        },
+        {
+          "text": "S",
+          "box": {
+            "x0": 309,
+            "y0": 174,
+            "x1": 339,
+            "y1": 194
+          }
+        },
+        {
+          "text": "G",
+          "box": {
+            "x0": 437,
+            "y0": 174,
+            "x1": 453,
+            "y1": 194
+          }
+        },
+        {
+          "text": "C",
+          "box": {
+            "x0": 176,
+            "y0": 232,
+            "x1": 212,
+            "y1": 252
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "ACCORDING",
+          "box": {
+            "x0": 56,
+            "y0": 174,
+            "x1": 73,
+            "y1": 194
+          }
+        },
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 309,
+            "y0": 174,
+            "x1": 339,
+            "y1": 194
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 437,
+            "y0": 174,
+            "x1": 453,
+            "y1": 194
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 176,
+            "y0": 232,
+            "x1": 212,
+            "y1": 252
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 1001,
+        "height": 352
+      },
+      "preparedSize": {
+        "width": 1001,
+        "height": 352
+      },
+      "ocrMs": 575.2999999970198,
+      "measureMs": 3.2000000029802322
+    },
+    {
+      "id": "cola-26237001000210-02",
+      "heading": {
+        "x0": 22,
+        "y0": 148,
+        "x1": 366,
+        "y1": 167
+      },
+      "result": {
+        "supportsBold": true,
+        "ratio": 1.5536515601732566,
+        "headingThickness": 3.7333333492279053,
+        "referenceThickness": 2.529411792755127,
+        "headingCap": 19,
+        "referenceCap": 20,
+        "capitals": "ASGC",
+        "polarity": "dark-on-light",
+        "reason": "contrast"
+      },
+      "selected": [
+        {
+          "text": "A",
+          "box": {
+            "x0": 59,
+            "y0": 176,
+            "x1": 75,
+            "y1": 196
+          }
+        },
+        {
+          "text": "S",
+          "box": {
+            "x0": 312,
+            "y0": 176,
+            "x1": 342,
+            "y1": 196
+          }
+        },
+        {
+          "text": "G",
+          "box": {
+            "x0": 440,
+            "y0": 176,
+            "x1": 456,
+            "y1": 196
+          }
+        },
+        {
+          "text": "C",
+          "box": {
+            "x0": 179,
+            "y0": 235,
+            "x1": 215,
+            "y1": 255
+          }
+        }
+      ],
+      "potentialIgnoringVertical": [
+        {
+          "text": "ACCORDING",
+          "box": {
+            "x0": 59,
+            "y0": 176,
+            "x1": 75,
+            "y1": 196
+          }
+        },
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 312,
+            "y0": 176,
+            "x1": 342,
+            "y1": 196
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 440,
+            "y0": 176,
+            "x1": 456,
+            "y1": 196
+          }
+        },
+        {
+          "text": "CONSUMPTION",
+          "box": {
+            "x0": 179,
+            "y0": 235,
+            "x1": 215,
+            "y1": 255
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 20,
+          "rejected": []
+        }
+      ],
+      "nativeSize": {
+        "width": 1005,
+        "height": 355
+      },
+      "preparedSize": {
+        "width": 1005,
+        "height": 355
+      },
+      "ocrMs": 538.6999999880791,
+      "measureMs": 3.199999988079071
+    },
+    {
+      "id": "cola-26238001000141-01",
+      "heading": {
+        "x0": 1483,
+        "y0": 441,
+        "x1": 1588,
+        "y1": 453
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 76,
+          "symbolConfidence": 99,
+          "capHeight": 10,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 75,
+          "symbolConfidence": 99,
+          "capHeight": 11,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL",
+          "wordConfidence": 72,
+          "symbolConfidence": 99,
+          "capHeight": 11,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 25,
+          "symbolConfidence": 94,
+          "capHeight": 13,
+          "rejected": [
+            "word-confidence",
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 2719,
+        "height": 900
+      },
+      "preparedSize": {
+        "width": 1800,
+        "height": 596
+      },
+      "ocrMs": 1166.8999999910593,
+      "measureMs": 0.10000000894069672
+    },
+    {
+      "id": "cola-26238001000296-01",
+      "heading": null,
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 21,
+          "rejected": [
+            "below-heading"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 2139,
+        "height": 1078
+      },
+      "preparedSize": {
+        "width": 1800,
+        "height": 907
+      },
+      "ocrMs": 1217.2999999970198,
+      "measureMs": 0.09999999403953552
+    },
+    {
+      "id": "cola-26238001000333-01",
+      "heading": {
+        "x0": 98,
+        "y0": 932,
+        "x1": 412,
+        "y1": 950
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "According",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 17,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "Surgeon",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 18,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "General,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 18,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "Consumption",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 18,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 976,
+        "height": 1126
+      },
+      "preparedSize": {
+        "width": 976,
+        "height": 1126
+      },
+      "ocrMs": 1677,
+      "measureMs": 0.10000000894069672
+    },
+    {
+      "id": "cola-26239001000576-01",
+      "heading": {
+        "x0": 23,
+        "y0": 313,
+        "x1": 178,
+        "y1": 330
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 89,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 745,
+        "height": 454
+      },
+      "preparedSize": {
+        "width": 745,
+        "height": 454
+      },
+      "ocrMs": 807.7000000029802,
+      "measureMs": 0.09999999403953552
+    },
+    {
+      "id": "cola-26239001000582-01",
+      "heading": {
+        "x0": 22,
+        "y0": 309,
+        "x1": 173,
+        "y1": 326
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 92,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 92,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 16,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 744,
+        "height": 448
+      },
+      "preparedSize": {
+        "width": 744,
+        "height": 448
+      },
+      "ocrMs": 784.0999999940395,
+      "measureMs": 0.09999999403953552
+    },
+    {
+      "id": "cola-26239001000600-01",
+      "heading": {
+        "x0": 25,
+        "y0": 312,
+        "x1": 180,
+        "y1": 329
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 91,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 15,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 746,
+        "height": 453
+      },
+      "preparedSize": {
+        "width": 746,
+        "height": 453
+      },
+      "ocrMs": 791.5,
+      "measureMs": 0
+    },
+    {
+      "id": "cola-26239001000677-01",
+      "heading": null,
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "According",
+          "wordConfidence": 52,
+          "symbolConfidence": 98,
+          "capHeight": 8,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "Surgeon",
+          "wordConfidence": 85,
+          "symbolConfidence": 97,
+          "capHeight": 8,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "General,",
+          "wordConfidence": 88,
+          "symbolConfidence": 99,
+          "capHeight": 8,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "Consumption",
+          "wordConfidence": 83,
+          "symbolConfidence": 99,
+          "capHeight": 8,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 352,
+        "height": 500
+      },
+      "preparedSize": {
+        "width": 352,
+        "height": 500
+      },
+      "ocrMs": 681.7999999970198,
+      "measureMs": 0
+    },
+    {
+      "id": "prior-bruery-back-1",
+      "heading": {
+        "x0": 130,
+        "y0": 851,
+        "x1": 490,
+        "y1": 898
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "reference-not-located"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [
+        {
+          "text": "ACCORDING",
+          "box": {
+            "x0": 557,
+            "y0": 855,
+            "x1": 596,
+            "y1": 885
+          }
+        },
+        {
+          "text": "SURGEON",
+          "box": {
+            "x0": 841,
+            "y0": 855,
+            "x1": 860,
+            "y1": 885
+          }
+        },
+        {
+          "text": "GENERAL,",
+          "box": {
+            "x0": 993,
+            "y0": 855,
+            "x1": 1013,
+            "y1": 885
+          }
+        }
+      ],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 30,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 30,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 30,
+          "rejected": [
+            "below-heading"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 1250,
+        "height": 1266
+      },
+      "preparedSize": {
+        "width": 1250,
+        "height": 1266
+      },
+      "ocrMs": 1082.5999999940395,
+      "measureMs": 0.29999999701976776
+    },
+    {
+      "id": "prior-lote-maestro-back-2",
+      "heading": null,
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "‘SURGEON",
+          "wordConfidence": 72,
+          "symbolConfidence": 96,
+          "capHeight": 12,
+          "rejected": [
+            "word-confidence",
+            "below-heading",
+            "symbol-uppercase",
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 230,
+        "height": 517
+      },
+      "preparedSize": {
+        "width": 230,
+        "height": 517
+      },
+      "ocrMs": 387.30000001192093,
+      "measureMs": 0
+    },
+    {
+      "id": "prior-ontanon-back-0",
+      "heading": {
+        "x0": 570,
+        "y0": 341,
+        "x1": 717,
+        "y1": 352
+      },
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "heading-too-small"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 85,
+          "symbolConfidence": 99,
+          "capHeight": 11,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 11,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 11,
+          "rejected": [
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 94,
+          "symbolConfidence": 99,
+          "capHeight": 11,
+          "rejected": [
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 1558,
+        "height": 739
+      },
+      "preparedSize": {
+        "width": 1558,
+        "height": 739
+      },
+      "ocrMs": 626.7000000029802,
+      "measureMs": 0
+    },
+    {
+      "id": "prior-vadio-back-0",
+      "heading": null,
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "ACCORDING",
+          "wordConfidence": 93,
+          "symbolConfidence": 99,
+          "capHeight": 8,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "SURGEON",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 10,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 96,
+          "symbolConfidence": 99,
+          "capHeight": 10,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        },
+        {
+          "text": "CONSUMPTION",
+          "wordConfidence": 93,
+          "symbolConfidence": 99,
+          "capHeight": 10,
+          "rejected": [
+            "below-heading",
+            "height-19"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 471,
+        "height": 803
+      },
+      "preparedSize": {
+        "width": 471,
+        "height": 803
+      },
+      "ocrMs": 1045.5,
+      "measureMs": 0.10000000894069672
+    },
+    {
+      "id": "prior-buffalo-trace-back",
+      "heading": null,
+      "result": {
+        "supportsBold": false,
+        "ratio": null,
+        "reason": "missing-heading"
+      },
+      "selected": [],
+      "potentialIgnoringVertical": [],
+      "candidateGates": [
+        {
+          "text": "SURGEON",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 26,
+          "rejected": [
+            "below-heading"
+          ]
+        },
+        {
+          "text": "GENERAL,",
+          "wordConfidence": 95,
+          "symbolConfidence": 99,
+          "capHeight": 26,
+          "rejected": [
+            "below-heading"
+          ]
+        }
+      ],
+      "nativeSize": {
+        "width": 1202,
+        "height": 1064
+      },
+      "preparedSize": {
+        "width": 1202,
+        "height": 1064
+      },
+      "ocrMs": 1982,
+      "measureMs": 0
+    }
+  ]
+}

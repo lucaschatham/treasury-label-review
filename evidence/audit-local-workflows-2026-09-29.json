@@ -1,0 +1,216 @@
+{
+  "recordedAt": "2026-09-29T19:01:39.695Z",
+  "url": "http://127.0.0.1:4184",
+  "browser": "145.0.7632.6",
+  "platform": "darwin arm64",
+  "scope": "Workflow correctness on the sample and controlled inputs; no real-label accuracy claim. Offline case requires assets and worker already loaded.",
+  "checks": [
+    {
+      "name": "sample, human decision, reset protection and reload",
+      "status": "FAIL",
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n",
+      "pageErrors": []
+    },
+    {
+      "name": "CR-only CSV exact filename association and literal hostile filename",
+      "status": "PASS",
+      "durationMs": 1601,
+      "results": [
+        {
+          "name": "Open wrong.png",
+          "findings": [
+            {
+              "field": "Brand name",
+              "status": "match"
+            },
+            {
+              "field": "Class / type",
+              "status": "match"
+            },
+            {
+              "field": "Alcohol content",
+              "status": "mismatch"
+            },
+            {
+              "field": "Net contents",
+              "status": "match"
+            },
+            {
+              "field": "Producer / address",
+              "status": "match"
+            },
+            {
+              "field": "Country of origin",
+              "status": "skip"
+            },
+            {
+              "field": "Government warning",
+              "status": "match"
+            },
+            {
+              "field": "Warning appearance",
+              "status": "match"
+            }
+          ]
+        },
+        {
+          "name": "Open <img src=x onerror=alert(1)>.png",
+          "findings": [
+            {
+              "field": "Brand name",
+              "status": "match"
+            },
+            {
+              "field": "Class / type",
+              "status": "match"
+            },
+            {
+              "field": "Alcohol content",
+              "status": "match"
+            },
+            {
+              "field": "Net contents",
+              "status": "match"
+            },
+            {
+              "field": "Producer / address",
+              "status": "match"
+            },
+            {
+              "field": "Country of origin",
+              "status": "skip"
+            },
+            {
+              "field": "Government warning",
+              "status": "match"
+            },
+            {
+              "field": "Warning appearance",
+              "status": "match"
+            }
+          ]
+        }
+      ],
+      "requestOrigins": [
+        "http://127.0.0.1:4184"
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "real XLSX upload and per-row values",
+      "status": "PASS",
+      "durationMs": 1043,
+      "findings": [
+        {
+          "field": "Brand name",
+          "status": "match"
+        },
+        {
+          "field": "Class / type",
+          "status": "match"
+        },
+        {
+          "field": "Alcohol content",
+          "status": "match"
+        },
+        {
+          "field": "Net contents",
+          "status": "match"
+        },
+        {
+          "field": "Producer / address",
+          "status": "match"
+        },
+        {
+          "field": "Country of origin",
+          "status": "skip"
+        },
+        {
+          "field": "Government warning",
+          "status": "match"
+        },
+        {
+          "field": "Warning appearance",
+          "status": "match"
+        }
+      ],
+      "requestOrigins": [
+        "http://127.0.0.1:4184"
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "corrupt image fails individually; remaining label completes",
+      "status": "PASS",
+      "durationMs": 1021,
+      "rows": [
+        {
+          "name": "Open bad.png",
+          "appearance": {
+            "status": "failed",
+            "reason": "processing"
+          }
+        },
+        {
+          "name": "Open good.png",
+          "appearance": {
+            "status": "match",
+            "reason": "contrast",
+            "ratio": 1.4359143821743123
+          }
+        }
+      ],
+      "requestOrigins": [
+        "http://127.0.0.1:4184"
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "missing spreadsheet association and 301-image limit",
+      "status": "PASS",
+      "durationMs": 188,
+      "requestOrigins": [
+        "http://127.0.0.1:4184"
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "stop retains completed rows and accounts for remaining work",
+      "status": "Stopped: 2 reviewed, 0 failed, 3 remaining. Total: 1.4 s. First result: 0.8 s from click. Inspect exceptions and make your final decision.",
+      "durationMs": 1599,
+      "completedRows": 2,
+      "requestOrigins": [
+        "http://127.0.0.1:4184"
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "warm offline review uses cached worker and local image",
+      "status": "PASS",
+      "durationMs": 1630,
+      "requestOrigins": [
+        "http://127.0.0.1:4184"
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "mobile layout, keyboard details, unchanged source findings",
+      "status": "PASS",
+      "durationMs": 1183,
+      "requestOrigins": [
+        "http://127.0.0.1:4184"
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "OCR model 503 becomes actionable error; reload recovers",
+      "status": "PASS",
+      "durationMs": 1131,
+      "failureMessage": "OCR setup failed. Check your connection, then Reload this page and try again.",
+      "requestOrigins": [
+        "http://127.0.0.1:4184"
+      ],
+      "pageErrors": []
+    }
+  ]
+}

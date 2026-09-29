@@ -1,0 +1,19 @@
+{
+  "recordedAt": "2026-09-29T19:01:51.601Z",
+  "url": "https://lucaschatham.com/alcohol-by-volume-automated-label-check",
+  "httpStatus": 200,
+  "noindex": true,
+  "baselineSource": "4e17fe2",
+  "assets": [
+    {
+      "asset": "/assets/index-DeoXHegv.js",
+      "sha256": "613834657f6f3f2dd43bc1471f663bfca17ef3a0482d2fa7830350286623e46d",
+      "matchesCleanBaseline": true
+    },
+    {
+      "asset": "/assets/index-F2kbL9Gr.css",
+      "sha256": "49ef94f3d5806a8da00087270ccee7de742a3938029f2b08f0bb4285437e9056",
+      "matchesCleanBaseline": true
+    }
+  ]
+}
