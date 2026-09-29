@@ -1,6 +1,6 @@
 # Label Review
 
-> **Release status, checked September 28, 2026:** the public application serves the September 24 local weight-contrast release, bundle `index-BFitTXDs.js`, recorded at source `5c1a0e6`. R-041's polarity correction is present in this source but has not been promoted. R-043 is an isolated, rejected experiment and is not part of the app runtime. Synthetic qualification does not establish real-label accuracy. See [requirement evidence](REQUIREMENTS.md), [R-043 closeout](evidence/r043-report-2026-09-27.md), and the release record below.
+> **Release status, September 28, 2026:** production now includes R-041’s polarity correction and the CR-only CSV fix, deployed from source `806f28c` as bundle `index-DeoXHegv.js`. Anonymous browser verification passed. R-043 remains an isolated, rejected experiment outside the app runtime. Synthetic qualification does not establish real-label accuracy. See [release evidence](evidence/production-release-2026-09-28.json) and [requirement evidence](REQUIREMENTS.md).
 
 [Application](https://lucaschatham.com/alcohol-by-volume-automated-label-check) · [Assignment](ASSIGNMENT.md) · [Requirement evidence](REQUIREMENTS.md) · [Attempt history](REQUIREMENTS.md#attempt-history)
 
@@ -82,11 +82,11 @@ The app origin is `https://github.com/lucaschatham/treasury-label-review.git`; t
 
 [TTB warning guidance](https://www.ttb.gov/regulated-commodities/beverage-alcohol/distilled-spirits/ds-labeling-home/ds-health-warning)
 
-### Current release, September 24, 2026
+### September 24, 2026 release (superseded September 28)
 
 This source replaces the cloud appearance path with the local weight-contrast measurement. Evidence on this branch: independent qualification on eight never-opened font families, 39/40 bold and 0/40 regular headings matched with all 32 bold-body controls left for review (`evidence/r040-result.json`); the same 112 fixtures uploaded as one batch in the built application, 78.8 s, no failures, verdicts identical to the offline run (`evidence/browser-batch-fixtures.json`); uncached sample click-to-result 1.35–1.78 s in headless Chromium including OCR initialization (`evidence/browser-timing-sample.json`). These are synthetic, source-weight fixtures at 20–40 px cap height; accuracy on photographed labels is not claimed.
 
-Production now runs [source 5c1a0e6](https://github.com/lucaschatham/treasury-label-review/tree/5c1a0e66eded9d712ae1ba008600fe63ecd95ec5), deployment `dpl_DDuhxzHRhYV9gsNpUuiAHHszzHV9`, bundle `index-BFitTXDs.js`. Protected preview QA passed before promotion. Three anonymous uncached production sample runs took 1.57, 1.12 and 1.04 seconds, each with local appearance match and ratio 1.4359. HTTP 200, noindex and zero cloud appearance requests were verified; the main homepage was unchanged. The obsolete Vercel variables and treasury-warning-appearance Worker were removed. See [release evidence](evidence/path-a-production-2026-09-24.json). These timings describe this Mac/browser and sample; synthetic qualification does not establish photographed-label accuracy.
+That release ran [source 5c1a0e6](https://github.com/lucaschatham/treasury-label-review/tree/5c1a0e66eded9d712ae1ba008600fe63ecd95ec5), deployment `dpl_DDuhxzHRhYV9gsNpUuiAHHszzHV9`, bundle `index-BFitTXDs.js`. Protected preview QA passed before promotion. Three anonymous uncached production sample runs took 1.57, 1.12 and 1.04 seconds, each with local appearance match and ratio 1.4359. HTTP 200, noindex and zero cloud appearance requests were verified; the main homepage was unchanged. The obsolete Vercel variables and treasury-warning-appearance Worker were removed. See [release evidence](evidence/path-a-production-2026-09-24.json). These timings describe this Mac/browser and sample; synthetic qualification does not establish photographed-label accuracy.
 
 ### Previous release, September 23, 2026
 

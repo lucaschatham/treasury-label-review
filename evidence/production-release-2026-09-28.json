@@ -1,0 +1,102 @@
+{
+  "recordedAt": "2026-09-29T04:47:08.373197+00:00",
+  "sourceSha": "806f28c626ece4c0680398cc26e1877c7a4cddc2",
+  "mainMergeSha": "84da1ada248420b14f18ffa8de52fd80b5a74c94",
+  "pullRequest": "https://github.com/lucaschatham/treasury-label-review/pull/4",
+  "projectName": "treasury-label-review",
+  "projectId": "prj_mq5AO5hMT2MhzRFyTKgtm1RrWeRC",
+  "previewDeploymentId": "dpl_GKAuNxGGUzMrLR7hhEZPVHitNP6C",
+  "productionDeploymentId": "dpl_4QkwzA7yW3Yf5V2KbpvHHexHgahz",
+  "productionTarget": "production",
+  "sourceShaFromVercel": "806f28c626ece4c0680398cc26e1877c7a4cddc2",
+  "url": "https://lucaschatham.com/alcohol-by-volume-automated-label-check",
+  "status": 200,
+  "bundle": "index-DeoXHegv.js",
+  "bundleBytesMatchLocal": true,
+  "noindex": true,
+  "homepageBytesUnchanged": true,
+  "homepageSha256": "d8addfc9a8643e46e66f2daab646049f431c4a00302346c2098a137b9fed5af5",
+  "tests": {
+    "passed": 83,
+    "failed": 0,
+    "build": "pass",
+    "csvRegression": "failed before fix; passed after"
+  },
+  "sampleBrowserChecks": {
+    "preview": {
+      "sampleWorkflow": "PASS: OCR, batch accounting, approval, reload clears results",
+      "csv": "CR-only manifest paired with sample image",
+      "runs": [
+        {
+          "inverted": false,
+          "appearance": {
+            "status": "match",
+            "reason": "contrast",
+            "ratio": 1.4359143821743123
+          },
+          "clickToResultMs": 1067.4000000059605,
+          "pageErrors": [],
+          "requestHosts": [
+            "treasury-label-review-3qdnnfe43-chathamworks-6954s-projects.vercel.app"
+          ]
+        },
+        {
+          "inverted": true,
+          "appearance": {
+            "status": "match",
+            "reason": "contrast",
+            "ratio": 1.4359143821743123
+          },
+          "clickToResultMs": 1271.7999999970198,
+          "pageErrors": [],
+          "requestHosts": [
+            "treasury-label-review-3qdnnfe43-chathamworks-6954s-projects.vercel.app"
+          ]
+        }
+      ]
+    },
+    "production": {
+      "sampleWorkflow": "PASS: OCR, batch accounting, approval, reload clears results",
+      "csv": "CR-only manifest paired with sample image",
+      "runs": [
+        {
+          "inverted": false,
+          "appearance": {
+            "status": "match",
+            "reason": "contrast",
+            "ratio": 1.4359143821743123
+          },
+          "clickToResultMs": 2194.5,
+          "pageErrors": [],
+          "requestHosts": [
+            "lucaschatham.com"
+          ]
+        },
+        {
+          "inverted": true,
+          "appearance": {
+            "status": "match",
+            "reason": "contrast",
+            "ratio": 1.4359143821743123
+          },
+          "clickToResultMs": 1505.300000011921,
+          "pageErrors": [],
+          "requestHosts": [
+            "lucaschatham.com"
+          ]
+        }
+      ]
+    }
+  },
+  "scope": [
+    "R-041 polarity correction and CR-only CSV fix now deployed",
+    "R-043 remains failed and absent from runtime",
+    "Two upload expansion resource risks remain; no claim of clean full audit",
+    "Synthetic regression and sample checks do not establish real-label accuracy"
+  ],
+  "verificationNotes": [
+    "Existing preview protection preserved; authenticated bypass cookie used locally and not committed",
+    "Initial preview browser probes lacked the bypass cookie and timed out; rerun after setting the cookie passed",
+    "Custom QA initially read a nonexistent measurement field; corrected to actual serialized appearance status and ratio before successful runs"
+  ]
+}
